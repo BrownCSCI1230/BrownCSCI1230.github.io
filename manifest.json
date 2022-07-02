@@ -1,0 +1,45 @@
+{
+  "renderer/_default.page.client.jsx": {
+    "file": "assets/renderer/_default.page.client.jsx.6796e96a.js",
+    "src": "renderer/_default.page.client.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/hours.page.jsx",
+      "pages/index.page.jsx",
+      "pages/staff.page.jsx",
+      "renderer/_default.page.server.jsx"
+    ],
+    "css": [
+      "assets/renderer/_default.page.client.jsx.da6a21f6.css"
+    ]
+  },
+  "pages/hours.page.jsx": {
+    "file": "assets/hours.page.d663a4d9.js",
+    "src": "pages/hours.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/index.page.jsx": {
+    "file": "assets/index.page.dd08e46c.js",
+    "src": "pages/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/staff.page.jsx": {
+    "file": "assets/staff.page.15031457.js",
+    "src": "pages/staff.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "renderer/_default.page.server.jsx": {
+    "file": "assets/_default.page.server.b9ccad82.js",
+    "src": "renderer/_default.page.server.jsx",
+    "isDynamicEntry": true
+  }
+}
