@@ -1,1 +1,0 @@
-import{j as r}from"./renderer/_default.page.client.jsx.c834953f.js";const s={title:"Hours"};function o(){return r.exports.jsxs(r.exports.Fragment,{children:[r.exports.jsx("h1",{children:"Hours"}),r.exports.jsx("p",{children:"It's summer\u2014we have no hours."})]})}export{o as Page,s as documentProps};

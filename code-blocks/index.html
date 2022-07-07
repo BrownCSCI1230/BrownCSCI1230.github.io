@@ -3,7 +3,7 @@
       <head>
         <title>Code Blocks | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
-      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.33e8feaa.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.c834953f.js"></head>
+      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.36a63be4.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.e829453f.js"></head>
       <body>
         <div id="page-view">
           <div class="layout"><nav class="sidebar"><div><a href="/">Home</a><a href="/hours">Hours</a><a href="/staff">Staff</a><a href="/code-blocks">Code Blocks</a><a href="/inline-code">Inline Code</a></div></nav><div class="main-content"><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#code-blocks">Code Blocks</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#usage">Usage</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#specifying-a-language">Specifying A Language</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#highlighting-lines">Highlighting Lines</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#showing-line-numbers">Showing Line Numbers</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#examples">Examples</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#plain-text">Plain text</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#markdown">Markdown</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#c">C++</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#xml">XML</a></li></ol></li></ol></li></ol></nav>
@@ -11,6 +11,7 @@
 <p>This is a testing ground for <code>code blocks</code></p>
 <h2 id="usage"><a aria-hidden="true" tabindex="-1" href="#usage"><span class="icon icon-link"></span></a>Usage</h2>
 <h3 id="specifying-a-language"><a aria-hidden="true" tabindex="-1" href="#specifying-a-language"><span class="icon icon-link"></span></a>Specifying A Language</h3>
+<p><strong>Source code:</strong></p>
 <pre class="language-markdown"><code class="language-markdown code-highlight"><span class="code-line highlight-line"><span class="pl-c1">```</span>
 </span><span class="code-line"><span class="pl-c1">I&#x27;m plain text inside a code block.</span>
 </span><span class="code-line"><span class="pl-c1">```</span>
@@ -25,7 +26,17 @@
 </span><span class="code-line"><span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">&#x27;</span>Hello, world!<span class="pl-pds">&#x27;</span></span>)
 </span><span class="code-line"><span class="pl-c1">```</span>
 </span></code></pre>
+<p><strong>Output:</strong></p>
+<pre><code class="code-highlight"><span class="code-line">I&#x27;m plain text inside a code block.
+</span></code></pre>
+<pre class="language-golang"><code class="language-golang code-highlight"><span class="code-line"><span class="pl-k">func</span> <span class="pl-en">main</span>() {
+</span><span class="code-line">  fmt.<span class="pl-c1">Println</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>Hello, 世界<span class="pl-pds">&quot;</span></span>)
+</span><span class="code-line">}
+</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">&#x27;</span>Hello, world!<span class="pl-pds">&#x27;</span></span>)
+</span></code></pre>
 <h3 id="highlighting-lines"><a aria-hidden="true" tabindex="-1" href="#highlighting-lines"><span class="icon icon-link"></span></a>Highlighting Lines</h3>
+<p><strong>Source code:</strong></p>
 <pre class="language-markdown"><code class="language-markdown code-highlight"><span class="code-line highlight-line"><span class="pl-c1">```markdown {1, 3-4}</span>
 </span><span class="code-line"><span class="pl-c1">1. 🌝 I will be highlighted</span>
 </span><span class="code-line"><span class="pl-c1">2. 🌚 I will not</span>
@@ -38,7 +49,17 @@
 </span><span class="code-line highlight-line"><span class="pl-c1">Markdown always expects the language first, after the backticks.</span>
 </span><span class="code-line highlight-line"><span class="pl-c1">```</span>
 </span></code></pre>
+<p><strong>Output:</strong></p>
+<pre class="language-markdown"><code class="language-markdown code-highlight"><span class="code-line highlight-line"><span class="pl-v">1.</span> 🌝 I will be highlighted
+</span><span class="code-line"><span class="pl-v">2.</span> 🌚 I will not
+</span><span class="code-line highlight-line"><span class="pl-v">3.</span> 🌝 We will both...
+</span><span class="code-line highlight-line"><span class="pl-v">4.</span> 🌝 ...be highlighted!
+</span></code></pre>
+<pre><code class="language-{1} code-highlight"><span class="code-line">This will not work!
+</span><span class="code-line">Markdown always expects the language first, after the backticks.
+</span></code></pre>
 <h3 id="showing-line-numbers"><a aria-hidden="true" tabindex="-1" href="#showing-line-numbers"><span class="icon icon-link"></span></a>Showing Line Numbers</h3>
+<p><strong>Source code:</strong></p>
 <pre class="language-markdown"><code class="language-markdown code-highlight"><span class="code-line highlight-line"><span class="pl-c1">```haiku showLineNumbers</span>
 </span><span class="code-line"><span class="pl-c1">This feature is great</span>
 </span><span class="code-line"><span class="pl-c1">for highlighting certain lines</span>
@@ -52,6 +73,7 @@
 </span><span class="code-line"><span class="pl-c1">}</span>
 </span><span class="code-line"><span class="pl-c1">```</span>
 </span></code></pre>
+<p><strong>Output:</strong></p>
 <pre><code class="language-haiku code-highlight"><span class="code-line line-number" line="1">This feature is great
 </span><span class="code-line line-number" line="2">for highlighting certain lines
 </span><span class="code-line line-number" line="3">in your stencil code.
@@ -142,5 +164,5 @@
 </span><span class="code-line line-number" line="31">&lt;/<span class="pl-ent">scenefile</span>&gt;
 </span></code></pre></div></div>
         </div>
-      <script type="module" src="/assets/renderer/_default.page.client.jsx.c834953f.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/code-blocks","pageProps":"!undefined"}}</script></body>
+      <script type="module" src="/assets/renderer/_default.page.client.jsx.e829453f.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/code-blocks","pageProps":"!undefined"}}</script></body>
     </html>
