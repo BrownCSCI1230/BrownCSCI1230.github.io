@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Lab 4 | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.33e8feaa.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.c834953f.js"></head>
+      <body>
+        <div id="page-view">
+          <div class="layout"><nav class="sidebar"><div><a href="/">Home</a><a href="/hours">Hours</a><a href="/staff">Staff</a><a href="/code-blocks">Code Blocks</a><a href="/inline-code">Inline Code</a></div></nav><div class="main-content"><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-8-trimeshez-lab">Lab 8: Trimeshez Lab</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#0-intro">0. Intro</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#1-representing-objects-via-trimeshes">1. Representing Objects via Trimeshes</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#11-level-of-detail-tessellation-level">1.1 Level-of-Detail (Tessellation Level)</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#2-trimeshes-in-code">2. Trimeshes In Code</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#21-a-single-triangle">2.1 A Single Triangle</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#211-per-face-normals">2.1.1 Per-Face Normals</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#212-per-vertex-normals">2.1.2 Per-Vertex Normals</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#213-why-do-normals-and-winding-order-matter">2.1.3 Why Do Normals And Winding Order Matter?</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#22-multiple-triangles-or-a-trimesh">2.2 Multiple Triangles, Or, A Trimesh</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#3-creating-your-own-trimeshes">3. Creating Your Own Trimeshes</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#31-our-stencil-code">3.1 Our Stencil Code</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#32-creating-a-cube">3.2 Creating a Cube</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#321-creating-a-tile">3.2.1 Creating a Tile</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#322-creating-a-face-w-tessellation">3.2.2 Creating a Face, w/ Tessellation</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#323-bringing-it-all-together-creating-a-cube">3.2.3 Bringing It All Together: Creating a Cube</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#33-creating-a-sphere">3.3 Creating a Sphere</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#331-spherical-coordinates-make-things-easier">3.3.1 Spherical Coordinates Make Things Easier</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#332-creating-a-wedge">3.3.2 Creating a Wedge</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#333-creating-a-sphere">3.3.3 Creating a Sphere</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#4-end">4. End</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#food-for-thought">Food For Thought</a></li></ol></li></ol></li></ol></nav>
+<!-- -->
+<h1 id="lab-8-trimeshez-lab"><a aria-hidden="true" tabindex="-1" href="#lab-8-trimeshez-lab"><span class="icon icon-link"></span></a>Lab 8: Trimeshez Lab</h1>
+<h2 id="0-intro"><a aria-hidden="true" tabindex="-1" href="#0-intro"><span class="icon icon-link"></span></a>0. Intro</h2>
+<p>One of the fundamental applications of computer graphics is to display 3D objects and scenes. Recall the Realtime pipeline from lecture below.</p>
+<p><img src="url" alt="realtime pipeline hightlight input data"/></p>
+<p>The first part of the pipeline is the input data where we provide vertex positions, normals, triangle connectivity information, etc. for trimeshes which are collections of triangles. We will use trimeshes to model 3D objects and scenes in this lab and in the Realtime projects.</p>
+<p>In the Realtime projects, you will be displaying scenes made up of the following 3D shapes: Cube, Cone, Cylinder, and Sphere. In this lab, you will be implementing two of the four shapes, Cube and Sphere. In the first Realtime Project, you will implement the remaining shapes, Cylinder and Cone. Throughout the rest of this handout there will be a couple of suggestions that we highly encourage you to consider in your design.</p>
+<p>By the end of this lab, you will:</p>
+<ol>
+<li>Learn to use trimeshes as a way to (approximately) represent an object (&#x27;s surface)</li>
+<li>Implement a Cube and a Sphere</li>
+</ol>
+<h2 id="1-representing-objects-via-trimeshes"><a aria-hidden="true" tabindex="-1" href="#1-representing-objects-via-trimeshes"><span class="icon icon-link"></span></a>1. Representing Objects via Trimeshes</h2>
+<p>We can represent any <del><em>surface</em></del> as a triangle mesh. Conveniently, most objects in the world are defined by a surface. These objects are usually a closed surface bounding a volume like a primitive 3D shape (for example, a Cube).</p>
+<p>![gif of exploding trimesh][url]</p>
+<p>With that said, some things cannot be so easily represented by a trimesh. For example, you don&#x27;t typically think about fog as a surface, so it doesn&#x27;t make sense to represent it as a trimesh. There are other ways to represent objects like fog, such as volumetric rendering. If you&#x27;re interested, you can read more about volumetric rendering <a href="https://en.wikipedia.org/wiki/Volume_rendering">here</a>.</p>
+<h3 id="11-level-of-detail-tessellation-level"><a aria-hidden="true" tabindex="-1" href="#11-level-of-detail-tessellation-level"><span class="icon icon-link"></span></a>1.1 Level-of-Detail (Tessellation Level)</h3>
+<p>Recall from the Ray projects that you represented the 3D shapes as implicit equations. This technically allows for infinite resolution (up to floating point limits). On the other hand, trimeshes are approximations. The more triangles used to represent a surface, the more realistic the rendering, but the more computation is required. The number of triangles used, and thus the level-of-detail of the 3D shape, is called the <del><em>tessellation level</em></del>.</p>
+<p>~[increasing tessellation image][<a href="https://i.stack.imgur.com/ut6do.jpg">https://i.stack.imgur.com/ut6do.jpg</a>]</p>
+<h2 id="2-trimeshes-in-code"><a aria-hidden="true" tabindex="-1" href="#2-trimeshes-in-code"><span class="icon icon-link"></span></a>2. Trimeshes In Code</h2>
+<p>Trimeshes are composed of triangles (duh) which are then composed of vertex positions (for rendering the triangle) and normals (for lighting the triangle).</p>
+<h3 id="21-a-single-triangle"><a aria-hidden="true" tabindex="-1" href="#21-a-single-triangle"><span class="icon icon-link"></span></a>2.1 A Single Triangle</h3>
+<p>As you can probably guess, we render a triangle from a triplet of vertex positions in <code>std::vector&lt;float&gt; vertexPositions</code>. It&#x27;s important to note, in our case, the winding order of the vertices is <del><em>counter-clockwise</em></del>.</p>
+<p>![vertex positions and triangles][url]</p>
+<h4 id="211-per-face-normals"><a aria-hidden="true" tabindex="-1" href="#211-per-face-normals"><span class="icon icon-link"></span></a>2.1.1 Per-Face Normals</h4>
+<p>If we want every point on the triangle to have the same normal, we can use per-face normals. Since we have 3 vertices, we can form two vectors to calculate the normal by taking the cross product of those two vectors.</p>
+<p>![per face normal][<a href="https://i.stack.imgur.com/wzz1l.jpg">https://i.stack.imgur.com/wzz1l.jpg</a>]</p>
+<h4 id="212-per-vertex-normals"><a aria-hidden="true" tabindex="-1" href="#212-per-vertex-normals"><span class="icon icon-link"></span></a>2.1.2 Per-Vertex Normals</h4>
+<p>What if we want every triangle vertex to have a different normal? Then we use per-vertex normals. An example of a situation where we would want per-vertex normals is for curved surfaces.</p>
+<p>![curved surface normals][<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn">https://encrypted-tbn0.gstatic.com/images?q=tbn</a><div></div>&amp;usqp=cau]
+![cone with normals at tip][url]</p>
+<p>For our purposes, we will be using per-vertex normals. Each triangle is represented by a sextuplet of vertex positions and normals in <code>std::vector&lt;float&gt; vertexData</code> (we use <code>vertexData</code> since it&#x27;s shorter than <code>vertexPositionsAndNormals</code>). Again, the winding order of vertices and normals is <del><em>counter-clockwise</em></del>.</p>
+<h4 id="213-why-do-normals-and-winding-order-matter"><a aria-hidden="true" tabindex="-1" href="#213-why-do-normals-and-winding-order-matter"><span class="icon icon-link"></span></a>2.1.3 Why Do Normals And Winding Order Matter?</h4>
+<p>As you&#x27;ve already seen in the Ray projects and in Lab 06 Lighting, you need normals to properly shade objects.</p>
+<p>In this lab and in the Realtime projects, you need the correct winding order of positions and normals to properly render the objects. This is because of backface culling. Backface culling is a rendering technique that determines which side of the triangle is visible.</p>
+<p>![backface culling gif][url]</p>
+<p>You can read more about backface culling <a href="https://www.easytechjunkie.com/what-is-back-face-culling.htm">here</a>.</p>
+<h3 id="22-multiple-triangles-or-a-trimesh"><a aria-hidden="true" tabindex="-1" href="#22-multiple-triangles-or-a-trimesh"><span class="icon icon-link"></span></a>2.2 Multiple Triangles, Or, A Trimesh</h3>
+<p>If you combine multiple triangles together, you&#x27;ll end up with a trimesh! Recall that tessellation levels determines the number of triangles used in the trimesh. How do we represent a collection of triangles? Well, we&#x27;ve already seen a possible solution: just append the additional triangle information onto the back of the list. In our case, this list is still represented as <code>std::vector&lt;float&gt; vertexData</code>.</p>
+<p>![cube vertex data img][url]</p>
+<blockquote>
+<p>Notice that <code>vertexData</code> can contain repeats since the vertex/normal will appear in the same place!</p>
+</blockquote>
+<details><p><summary> Extra: Hand on...surely there&#x27;s a more efficient way to represent a triangle mesh </summary>
+Yes, of course there is a more efficient way! Look at all the repeated vertex data :( Instead of triangle meshes,
+we can use <a href="https://en.wikipedia.org/wiki/Triangle_strip">triangle strips</a>, <a href="https://en.wikipedia.org/wiki/Triangle_fan">triangle fans</a>,
+etc.</p></details>
+<h2 id="3-creating-your-own-trimeshes"><a aria-hidden="true" tabindex="-1" href="#3-creating-your-own-trimeshes"><span class="icon icon-link"></span></a>3. Creating Your Own Trimeshes</h2>
+<p>Well, now we know the most important things:</p>
+<ol>
+<li>A shape can be represented as a variable number of triangles, depending on the level of detail</li>
+<li>A collection of triangles can be represented via a list of positions and normals</li>
+</ol>
+<p>Now, all that remains is to make our own implementation. At a high level, we are going to take a shape, a level of detail, and spit out the list!</p>
+<h3 id="31-our-stencil-code"><a aria-hidden="true" tabindex="-1" href="#31-our-stencil-code"><span class="icon icon-link"></span></a>3.1 Our Stencil Code</h3>
+<p>Take a look at our stencil code. The only files you need to concern yourself with are the files in the shapes folder. Notice that <code>Triangle</code>, <code>Cube</code>, <code>Sphere</code>, <code>Cone</code>, and <code>Cylinder</code> inherit from <code>OpenGLShape</code>. For this lab, you&#x27;ll only be working with <code>Triangle</code>, <code>Cube</code>, and <code>Sphere</code>. Check the comments within the code for how exactly to edit each shape.</p>
+<p>For our purposes, <strong>each shape is centered at the origin and has a radius of 0.5. In other words, they lie in the range [-0.5, 0.5] on all axes.</strong></p>
+<p>You&#x27;ll notice on the left side of the UI, there are toggles to change the shape and sliders to change parameter 1 and parameter 2. The parameters control the tessellation level of each shape. We&#x27;ll go into detail about what specifically the parameters do later in the handout.</p>
+<p>Most importantly, notice that each shape inherits <code>std::vector&lt;float&gt; m_vertexData</code> from <code>OpenGLShape</code>. You&#x27;ll be editing this list with the positions and normals for each shape. <strong>Note that <code>m_vertexData</code> alternates between vertex positions and normals!</strong></p>
+<p>![m_vertexData][url]</p>
+<p>On the right side of the UI, you will eventually see the shapes generated from <code>m_vertexData</code>. You won&#x27;t see anything right now because <code>m_vertexData</code> is empty.</p>
+<div class="task-callout"><p><strong>Task 1</strong></p><p>In the <code>Triangle</code> class, fill out the <code>setVertexData()</code> function stub.</p><p>Use the following coordinate points:</p><ul>
+<li>(-0.5, -0.5, 0)</li>
+<li>(0.5, -0.5, 0)</li>
+<li>(-0.5, 0.5, 0)</li>
+</ul></div>
+<p>Your triangle should look like this:</p>
+<p>![triangle gif][url]</p>
+<p>Notice that if you spin the triangle around, it&#x27;ll disappear. This is backface culling!</p>
+<h3 id="32-creating-a-cube"><a aria-hidden="true" tabindex="-1" href="#32-creating-a-cube"><span class="icon icon-link"></span></a>3.2 Creating a Cube</h3>
+<p>Now that you&#x27;ve rendered a triangle, it&#x27;s time to render a Cube :)</p>
+<h4 id="321-creating-a-tile"><a aria-hidden="true" tabindex="-1" href="#321-creating-a-tile"><span class="icon icon-link"></span></a>3.2.1 Creating a Tile</h4>
+<div class="task-callout"><p><strong>Task 2</strong></p><p>In the <code>Cube</code> class, fill out the <code>makeTile()</code> function stub.</p><p>Uncomment the <code>makeTile()</code> function call in <code>setVertexData()</code>. Note that you&#x27;ll use this function for the next task.</p></div>
+<p>Your tile should look like this:</p>
+<p>![tile gif][url]</p>
+<h4 id="322-creating-a-face-w-tessellation"><a aria-hidden="true" tabindex="-1" href="#322-creating-a-face-w-tessellation"><span class="icon icon-link"></span></a>3.2.2 Creating a Face, w/ Tessellation</h4>
+<p>Now, that you have your tile, you can create one face of the Cube! Notice how parameter 1 controls the number of tiles in each row and column:</p>
+<p>![shape tessellation img][url]</p>
+<div class="task-callout"><p><strong>Task 3</strong></p><p>In the <code>Cube</code> class, fill out the <code>makeFace()</code> function stub.</p><p>Comment out the <code>makeTile()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeFace()</code> function call. This will render the positive z face of the Cube. The face should tessellate differently depending on parameter 1.</p><ul>
+<li>Use the <code>makeTile()</code> function you wrote in the previous task in <code>makeFace()</code>.</li>
+</ul></div>
+<p>Your face should look like this:</p>
+<p>![face tessellation gif][url]</p>
+<h4 id="323-bringing-it-all-together-creating-a-cube"><a aria-hidden="true" tabindex="-1" href="#323-bringing-it-all-together-creating-a-cube"><span class="icon icon-link"></span></a>3.2.3 Bringing It All Together: Creating a Cube</h4>
+<div class="task-callout"><p><strong>Task 4</strong></p><p>Implement all 6 sides of your Cube using the <code>makeFace()</code> function you implemented.</p><p>You should call <code>makeFace()</code> in <code>setVertexData()</code>.</p><ul>
+<li>It might be helpful to draw a diagram of the Cube to figure out the positions of all its corners!</li>
+<li>Remember that the Cube has a radius of 0.5 and lies in the bounds [-0.5, 0.5] on all axes.</li>
+</ul></div>
+<p>Your Cube should look like this:
+![cube gif][url]</p>
+<h3 id="33-creating-a-sphere"><a aria-hidden="true" tabindex="-1" href="#33-creating-a-sphere"><span class="icon icon-link"></span></a>3.3 Creating a Sphere</h3>
+<p>Yay! Congratulations on making your Cube! It&#x27;s time to make a Sphere.</p>
+<p>![sphere parameter gif][url]
+![exploding wedges gif][url]</p>
+<p>We can think of the Sphere like an orange. Oranges are made up of wedges and each wedge is made up segments. We can build an orange (aka a sphere) by procedurally generating a collection of orange wedges.</p>
+<p>As shown above, the shape parameters for Sphere are slightly different than Cube. The first parameter controls the number of &#x27;segments&#x27; (like latitude), and the second parameter controls the number of &#x27;wedges&#x27; (like longitude).</p>
+<p>Like Cube, the Sphere is centered at the origin and has a radius of 0.5, so it lies in the bounds [-0.5, 0.5] on all axes.</p>
+<h4 id="331-spherical-coordinates-make-things-easier"><a aria-hidden="true" tabindex="-1" href="#331-spherical-coordinates-make-things-easier"><span class="icon icon-link"></span></a>3.3.1 Spherical Coordinates Make Things Easier</h4>
+<p>We can represent this &#x27;orange wedge and segment&#x27; idea using spherical coordinates. In terms of spherical coordinates, parameter 1 controls 𝜙 and parameter 2 controls 𝜃.</p>
+<details><summary>Refresher: The Spherical Coordinate System</summary><p>Remember polar coordinates (<em>r</em>, 𝜃) from high school geometry? Spherical coordinates (<em>r</em>, 𝜃, 𝜙) are like polar coordinates but in 3D! The spherical coordinate system specifies a 3D point in space using (<em>r</em>, 𝜃, 𝜙). for more details, read this <a href="https://en.wikipedia.org/wiki/Spherical_coordinate_system">Wikipedia article on the Spherical Coordinate System</a> :)</p></details>
+<table><thead><tr><th align="center">Coordinate</th><th align="center">Diagram</th></tr></thead><tbody><tr><td align="center"><em>r</em>: the radial distance from the origin. For sphere, <code>r=0.5</code></td><td align="center"><img src="handout_images/amog-us-among-us.gif" width="300"/></td></tr><tr><td align="center">𝜃: the polar angle. For sphere, this is in radians.</td><td align="center"><img src="handout_images/amog-us-among-us.gif" width="300"/></td></tr><tr><td align="center">𝜙: the azimuthal angle. For sphere, this is in radians.</td><td align="center"><img src="handout_images/amog-us-among-us.gif" width="300"/></td></tr></tbody></table>
+<h4 id="332-creating-a-wedge"><a aria-hidden="true" tabindex="-1" href="#332-creating-a-wedge"><span class="icon icon-link"></span></a>3.3.2 Creating a Wedge</h4>
+<div class="task-callout"><p><strong>Task 5</strong></p><p>Implement the <code>makeTile()</code> function stub in the <code>Sphere</code> Class.</p><p>This function should look very similar to the <code>makeTile()</code> function in the <code>Cube</code> class.</p><ul>
+<li>Note that the normals are calculated differently from those in Cube.</li>
+<li>The normals for Sphere are per-vertex normals.</li>
+<li>Refer to the diagram for what your normals should look like.</li>
+</ul><p>![sphere normals diagram][url]</p></div>
+<div class="task-callout"><p><strong>Task 6</strong></p><p>Implement the <code>makeWedge()</code> function stub in the <code>Sphere</code> Class.</p><p>Uncomment the <code>makeWedge()</code> function call in <code>setVertexData()</code>.</p><ul>
+<li>Use the <code>makeTile()</code> function from task 5.</li>
+<li>Remember that we are making a wedge, so you need to pay attention to parameter 1 and 𝜙.</li>
+<li>Remember that everything is in radians!</li>
+<li>You may find these function calls helpful:<!-- -->
+<ul>
+<li><code>glm::radians</code></li>
+<li><code>glm::sin</code></li>
+<li><code>glm::cos</code></li>
+</ul>
+</li>
+<li>You may also find these equations useful:<!-- -->
+<ul>
+<li><code>x = r * sin(𝜃) * cos(𝜙)</code></li>
+<li><code>y = r * sin(𝜃) * sin(𝜙)</code></li>
+<li><code>z = r * cos(𝜃)</code></li>
+</ul>
+</li>
+</ul></div>
+<p>Your wedge should look like this:</p>
+<p>![wedge gif][url]</p>
+<h4 id="333-creating-a-sphere"><a aria-hidden="true" tabindex="-1" href="#333-creating-a-sphere"><span class="icon icon-link"></span></a>3.3.3 Creating a Sphere</h4>
+<div class="task-callout"><p><strong>Task 7</strong></p></div>
+<p>| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Implement the <code>makeOrange()</code> function stub in the <code>Sphere</code> Class. |
+| Comment out the <code>makeWedge()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeOrange()</code> function call. <ul><li>Remember that everything is in radians!</li><li>Remember that we are making multiple wedges (aka a Sphere), so you need to pay attention to parameter 2 and 𝜃.</li></ul> |</p>
+<p>Your sphere should look like this:</p>
+<p>![sphere gif][url]</p>
+<h2 id="4-end"><a aria-hidden="true" tabindex="-1" href="#4-end"><span class="icon icon-link"></span></a>4. End</h2>
+<p>Now you&#x27;re ready to show your work to a TA and get checked off! Congrats on finishing the Trimeshez lab.</p>
+<h3 id="food-for-thought"><a aria-hidden="true" tabindex="-1" href="#food-for-thought"><span class="icon icon-link"></span></a>Food For Thought</h3>
+<p>Next week, you&#x27;ll be learning how to use OpenGL to render triangle meshes. OpenGL uses VBOs (vertex buffer objects) which store a list of vertices similar to <code>m_vertexData</code> in this lab. You&#x27;ll learn more about this next week, but we just wanted to give you a brief intro. Good luck!</p></div></div>
+        </div>
+      <script type="module" src="/assets/renderer/_default.page.client.jsx.c834953f.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab8/index","pageProps":"!undefined"}}</script></body>
+    </html>

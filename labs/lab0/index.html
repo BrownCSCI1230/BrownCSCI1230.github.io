@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Lab 0 | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.33e8feaa.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.c834953f.js"></head>
+      <body>
+        <div id="page-view">
+          <div class="layout"><nav class="sidebar"><div><a href="/">Home</a><a href="/hours">Hours</a><a href="/staff">Staff</a><a href="/code-blocks">Code Blocks</a><a href="/inline-code">Inline Code</a></div></nav><div class="main-content"><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-0-welcome">Lab 0: Welcome</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#0-intro-or-introduction">0. Intro, or Introduction</a></li></ol></li></ol></nav>
+<h1 id="lab-0-welcome"><a aria-hidden="true" tabindex="-1" href="#lab-0-welcome"><span class="icon icon-link"></span></a>Lab 0: Welcome</h1>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">auto</span> <span class="pl-en">Plus</span>(<span class="pl-k">auto</span> Increment) {
+</span><span class="code-line line-number" line="2">  <span class="pl-k">return</span> [=](<span class="pl-k">auto</span> x) {
+</span><span class="code-line line-number" line="3">    <span class="pl-k">return</span> x + Increment;
+</span><span class="code-line line-number" line="4">  };
+</span><span class="code-line line-number" line="5">}
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number highlight-line" line="7"><span class="pl-k">auto</span> <span class="pl-en">Apply</span>(<span class="pl-k">auto</span> Operation, <span class="pl-k">auto</span> x) {
+</span><span class="code-line line-number highlight-line" line="8">  <span class="pl-k">return</span> <span class="pl-c1">Operation</span>(x);
+</span><span class="code-line line-number highlight-line" line="9">}
+</span><span class="code-line line-number" line="10">
+</span><span class="code-line line-number" line="11"><span class="pl-k">auto</span> x = Apply(Plus(<span class="pl-c1">20</span>), <span class="pl-c1">22</span>); <span class="pl-c">// x == 42</span>
+</span><span class="code-line line-number" line="12"><span class="pl-k">auto</span> y = Apply(Plus(-<span class="pl-c1">1.1</span>), <span class="pl-c1">4.24</span>); <span class="pl-c">// y == 3.14</span>
+</span><span class="code-line line-number" line="13">
+</span><span class="code-line line-number" line="14"><span class="pl-c">// A very long comment very long comment very long comment very long comment very long comment very long comment</span>
+</span></code></pre>
+<h2 id="0-intro-or-introduction"><a aria-hidden="true" tabindex="-1" href="#0-intro-or-introduction"><span class="icon icon-link"></span></a>0. Intro, or <code>Introduction</code></h2>
+<p>The purpose of <code>lab 0</code> is twofold: to serve as a handy <em>base</em> template for other lab handouts, and to teach you some tricks of the trade! You will get to try your hand at doing certain things like <code>XYZ</code> and <code>ABC</code>, and (hopefully) learn something new in the process. It might also help with your projects (i.e. handouts and algos) 😉.</p>
+<p>In the rest of this 1-2h lab (NB: actually 5 min), you will:</p>
+<div class="task-callout"><p>Hey! a task callout!</p></div>
+<div class="warning-callout"><p>Hey! a warning callout!</p></div>
+<div class="success-callout"><p>Hey! a success callout!</p></div>
+<div class="error-callout"><p>Hey! an error callout!</p></div></div></div>
+        </div>
+      <script type="module" src="/assets/renderer/_default.page.client.jsx.c834953f.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab0/index","pageProps":"!undefined"}}</script></body>
+    </html>

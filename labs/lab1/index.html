@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Lab 1 | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.33e8feaa.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.c834953f.js"></head>
+      <body>
+        <div id="page-view">
+          <div class="layout"><nav class="sidebar"><div><a href="/">Home</a><a href="/hours">Hours</a><a href="/staff">Staff</a><a href="/code-blocks">Code Blocks</a><a href="/inline-code">Inline Code</a></div></nav><div class="main-content"><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-1-setup">Lab 1: Setup</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#0-intro">0. Intro</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#01-dummy">0.1. Dummy</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#011-dummy">0.1.1. Dummy</a><ol class="toc-level toc-level-5"><li class="toc-item toc-item-h5"><a class="toc-link toc-link-h5" href="#0111-dummy">0.1.1.1. Dummy</a><ol class="toc-level toc-level-6"><li class="toc-item toc-item-h6"><a class="toc-link toc-link-h6" href="#01111-dummy">0.1.1.1.1. Dummy</a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#1-qt-and-qtcreator">1. Qt and QtCreator</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#11-local-installation-and-opening-your-first-project">1.1. Local Installation, and Opening Your First Project</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#12-the-qtcreator-interface">1.2. The QtCreator Interface</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#2-c">2. C++</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#21-hello-world">2.1. Hello World</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#22-primitive-types-variables-and-functions">2.2. Primitive Types, Variables and Functions</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#23-create-your-own-types">2.3. Create Your Own Types</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#24-containers-and-strings">2.4. Containers and Strings</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#25-pointers-and-references">2.5. Pointers and References</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#26-pointer-arithmetic">2.6. Pointer Arithmetic</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#27-dynamic-memory-management-and-smart-pointers-consider-moving-to-pencil">2.7. Dynamic Memory Management and Smart Pointers (consider moving to Pencil)</a></li></ol></li></ol></li></ol></nav>
+<!-- -->
+<h1 id="lab-1-setup"><a aria-hidden="true" tabindex="-1" href="#lab-1-setup"><span class="icon icon-link"></span></a>Lab 1: Setup</h1>
+<p><a href="https://github.com/BrownCSCI1230/lab01_setup">Gradescope link</a></p>
+<p>This lab is due on <strong>Sep 13, 2022</strong>.</p>
+<h2 id="0-intro"><a aria-hidden="true" tabindex="-1" href="#0-intro"><span class="icon icon-link"></span></a>0. Intro</h2>
+<p>Welcome to CS123!</p>
+<div class="math math-display"><mjx-container className="MathJax" jax="SVG" display="true"><svg style="vertical-align:-2.262ex" xmlns="http://www.w3.org/2000/svg" width="26.204ex" height="5.656ex" role="img" focusable="false" viewBox="0 -1500 11582 2500" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-57" d="M792 683Q810 680 914 680Q991 680 1003 683H1009V637H996Q931 633 915 598Q912 591 863 438T766 135T716 -17Q711 -22 694 -22Q676 -22 673 -15Q671 -13 593 231L514 477L435 234Q416 174 391 92T358 -6T341 -22H331Q314 -21 310 -15Q309 -14 208 302T104 622Q98 632 87 633Q73 637 35 637H18V683H27Q69 681 154 681Q164 681 181 681T216 681T249 682T276 683H287H298V637H285Q213 637 213 620Q213 616 289 381L364 144L427 339Q490 535 492 546Q487 560 482 578T475 602T468 618T461 628T449 633T433 636T408 637H380V683H388Q397 680 508 680Q629 680 650 683H660V637H647Q576 637 576 619L727 146Q869 580 869 600Q869 605 863 612T839 627T794 637H783V683H792Z"></path><path id="MJX-1-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"></path><path id="MJX-1-TEX-N-20" d=""></path><path id="MJX-1-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path id="MJX-1-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJX-1-TEX-N-76" d="M338 431Q344 429 422 429Q479 429 503 431H508V385H497Q439 381 423 345Q421 341 356 172T288 -2Q283 -11 263 -11Q244 -11 239 -2Q99 359 98 364Q93 378 82 381T43 385H19V431H25L33 430Q41 430 53 430T79 430T104 429T122 428Q217 428 232 431H240V385H226Q187 384 184 370Q184 366 235 234L286 102L377 341V349Q377 363 367 372T349 383T335 385H331V431H338Z"></path><path id="MJX-1-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-1-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"></path><path id="MJX-1-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"></path><path id="MJX-1-TEX-N-68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-1-TEX-N-21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"></path><path id="MJX-1-TEX-N-42" d="M131 622Q124 629 120 631T104 634T61 637H28V683H229H267H346Q423 683 459 678T531 651Q574 627 599 590T624 512Q624 461 583 419T476 360L466 357Q539 348 595 302T651 187Q651 119 600 67T469 3Q456 1 242 0H28V46H61Q103 47 112 49T131 61V622ZM511 513Q511 560 485 594T416 636Q415 636 403 636T371 636T333 637Q266 637 251 636T232 628Q229 624 229 499V374H312L396 375L406 377Q410 378 417 380T442 393T474 417T499 456T511 513ZM537 188Q537 239 509 282T430 336L329 337H229V200V116Q229 57 234 52Q240 47 334 47H383Q425 47 443 53Q486 67 511 104T537 188Z"></path><path id="MJX-1-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"></path><path id="MJX-1-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"></path><path id="MJX-1-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"></path><path id="MJX-1-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-1-TEX-N-2019" d="M78 634Q78 659 95 676T138 694Q166 694 189 668T212 579Q212 525 190 476T146 403T118 379Q114 379 105 388T95 401Q95 404 107 417T133 448T161 500T176 572Q176 584 175 584T170 581T157 576T139 573Q114 573 96 590T78 634Z"></path><path id="MJX-1-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr" transform="translate(0,750)"><g data-mml-node="mtd" transform="translate(2652,0)"><g data-mml-node="mtext"><use data-c="57" xlink:href="#MJX-1-TEX-N-57"></use><use data-c="65" xlink:href="#MJX-1-TEX-N-65" transform="translate(1028,0)"></use><use data-c="20" xlink:href="#MJX-1-TEX-N-20" transform="translate(1472,0)"></use><use data-c="6C" xlink:href="#MJX-1-TEX-N-6C" transform="translate(1722,0)"></use><use data-c="6F" xlink:href="#MJX-1-TEX-N-6F" transform="translate(2000,0)"></use><use data-c="76" xlink:href="#MJX-1-TEX-N-76" transform="translate(2500,0)"></use><use data-c="65" xlink:href="#MJX-1-TEX-N-65" transform="translate(3028,0)"></use><use data-c="20" xlink:href="#MJX-1-TEX-N-20" transform="translate(3472,0)"></use><use data-c="6D" xlink:href="#MJX-1-TEX-N-6D" transform="translate(3722,0)"></use><use data-c="61" xlink:href="#MJX-1-TEX-N-61" transform="translate(4555,0)"></use><use data-c="74" xlink:href="#MJX-1-TEX-N-74" transform="translate(5055,0)"></use><use data-c="68" xlink:href="#MJX-1-TEX-N-68" transform="translate(5444,0)"></use><use data-c="21" xlink:href="#MJX-1-TEX-N-21" transform="translate(6000,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-750)"><g data-mml-node="mtd"><g data-mml-node="mtext"><use data-c="42" xlink:href="#MJX-1-TEX-N-42"></use><use data-c="75" xlink:href="#MJX-1-TEX-N-75" transform="translate(708,0)"></use><use data-c="74" xlink:href="#MJX-1-TEX-N-74" transform="translate(1264,0)"></use><use data-c="20" xlink:href="#MJX-1-TEX-N-20" transform="translate(1653,0)"></use><use data-c="6D" xlink:href="#MJX-1-TEX-N-6D" transform="translate(1903,0)"></use><use data-c="61" xlink:href="#MJX-1-TEX-N-61" transform="translate(2736,0)"></use><use data-c="74" xlink:href="#MJX-1-TEX-N-74" transform="translate(3236,0)"></use><use data-c="68" xlink:href="#MJX-1-TEX-N-68" transform="translate(3625,0)"></use><use data-c="20" xlink:href="#MJX-1-TEX-N-20" transform="translate(4181,0)"></use><use data-c="64" xlink:href="#MJX-1-TEX-N-64" transform="translate(4431,0)"></use><use data-c="6F" xlink:href="#MJX-1-TEX-N-6F" transform="translate(4987,0)"></use><use data-c="65" xlink:href="#MJX-1-TEX-N-65" transform="translate(5487,0)"></use><use data-c="73" xlink:href="#MJX-1-TEX-N-73" transform="translate(5931,0)"></use><use data-c="6E" xlink:href="#MJX-1-TEX-N-6E" transform="translate(6325,0)"></use><use data-c="2019" xlink:href="#MJX-1-TEX-N-2019" transform="translate(6881,0)"></use><use data-c="74" xlink:href="#MJX-1-TEX-N-74" transform="translate(7159,0)"></use><use data-c="20" xlink:href="#MJX-1-TEX-N-20" transform="translate(7548,0)"></use><use data-c="6C" xlink:href="#MJX-1-TEX-N-6C" transform="translate(7798,0)"></use><use data-c="6F" xlink:href="#MJX-1-TEX-N-6F" transform="translate(8076,0)"></use><use data-c="76" xlink:href="#MJX-1-TEX-N-76" transform="translate(8576,0)"></use><use data-c="65" xlink:href="#MJX-1-TEX-N-65" transform="translate(9104,0)"></use><use data-c="20" xlink:href="#MJX-1-TEX-N-20" transform="translate(9548,0)"></use><use data-c="75" xlink:href="#MJX-1-TEX-N-75" transform="translate(9798,0)"></use><use data-c="73" xlink:href="#MJX-1-TEX-N-73" transform="translate(10354,0)"></use><use data-c="2E" xlink:href="#MJX-1-TEX-N-2E" transform="translate(10748,0)"></use><use data-c="2E" xlink:href="#MJX-1-TEX-N-2E" transform="translate(11026,0)"></use><use data-c="2E" xlink:href="#MJX-1-TEX-N-2E" transform="translate(11304,0)"></use></g></g></g></g></g></g></svg></mjx-container></div>
+<p>Here&#x27;s the lighting equation:</p>
+<div class="math math-display"><mjx-container className="MathJax" jax="SVG" display="true"><svg style="vertical-align:-2.819ex" xmlns="http://www.w3.org/2000/svg" width="41.823ex" height="6.984ex" role="img" focusable="false" viewBox="0 -1841 18485.9 3086.9" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-2-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-2-TEX-I-1D706" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z"></path><path id="MJX-2-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-2-TEX-I-1D43E" d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z"></path><path id="MJX-2-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-2-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path><path id="MJX-2-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-2-TEX-LO-2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path><path id="MJX-2-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-2-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-2-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-2-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path id="MJX-2-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"></path><path id="MJX-2-TEX-N-67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z"></path><path id="MJX-2-TEX-N-68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-2-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"></path><path id="MJX-2-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"></path><path id="MJX-2-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-2-TEX-LO-5B" d="M224 -649V1150H455V1099H275V-598H455V-649H224Z"></path><path id="MJX-2-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-2-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-2-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-2-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path><path id="MJX-2-TEX-N-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path><path id="MJX-2-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-2-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-2-TEX-LO-5D" d="M16 1099V1150H247V-649H16V-598H196V1099H16Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-2-TEX-I-1D43C"></use></g><g data-mml-node="mi" transform="translate(473,-150) scale(0.707)"><use data-c="1D706" xlink:href="#MJX-2-TEX-I-1D706"></use></g></g><g data-mml-node="mo" transform="translate(1213,0)"><use data-c="3D" xlink:href="#MJX-2-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(2268.8,0)"><g data-mml-node="mi"><use data-c="1D43E" xlink:href="#MJX-2-TEX-I-1D43E"></use></g><g data-mml-node="mi" transform="translate(882,-150) scale(0.707)"><use data-c="1D44E" xlink:href="#MJX-2-TEX-I-1D44E"></use></g></g><g data-mml-node="msub" transform="translate(3574.9,0)"><g data-mml-node="mi"><use data-c="1D442" xlink:href="#MJX-2-TEX-I-1D442"></use></g><g data-mml-node="TeXAtom" transform="translate(796,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-2-TEX-I-1D44E"></use></g><g data-mml-node="mi" transform="translate(529,0)"><use data-c="1D706" xlink:href="#MJX-2-TEX-I-1D706"></use></g></g></g><g data-mml-node="mo" transform="translate(5429.4,0)"><use data-c="2B" xlink:href="#MJX-2-TEX-N-2B"></use></g><g data-mml-node="munderover" transform="translate(6429.6,0)"><g data-mml-node="mo" transform="translate(570.1,0)"><use data-c="2211" xlink:href="#MJX-2-TEX-LO-2211"></use></g><g data-mml-node="TeXAtom" transform="translate(529.8,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-2-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(878,0)"><use data-c="3D" xlink:href="#MJX-2-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1656,0)"><use data-c="30" xlink:href="#MJX-2-TEX-N-30"></use></g></g><g data-mml-node="TeXAtom" transform="translate(0,1270.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-2-TEX-I-1D45B"></use></g><g data-mml-node="mtext" transform="translate(633,-150) scale(0.707)"><use data-c="6C" xlink:href="#MJX-2-TEX-N-6C"></use><use data-c="69" xlink:href="#MJX-2-TEX-N-69" transform="translate(278,0)"></use><use data-c="67" xlink:href="#MJX-2-TEX-N-67" transform="translate(556,0)"></use><use data-c="68" xlink:href="#MJX-2-TEX-N-68" transform="translate(1056,0)"></use><use data-c="74" xlink:href="#MJX-2-TEX-N-74" transform="translate(1612,0)"></use><use data-c="73" xlink:href="#MJX-2-TEX-N-73" transform="translate(2001,0)"></use></g></g><g data-mml-node="mo" transform="translate(2376.5,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(3154.5,0)"><use data-c="31" xlink:href="#MJX-2-TEX-N-31"></use></g></g></g><g data-mml-node="mrow" transform="translate(9180.4,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="5B" xlink:href="#MJX-2-TEX-LO-5B"></use></g><g data-mml-node="msub" transform="translate(472,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-2-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-2-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(878,0)"><use data-c="1D706" xlink:href="#MJX-2-TEX-I-1D706"></use></g></g></g><g data-mml-node="mo" transform="translate(2250.3,0)"><use data-c="22C5" xlink:href="#MJX-2-TEX-N-22C5"></use></g><g data-mml-node="mo" transform="translate(2750.5,0)"><use data-c="28" xlink:href="#MJX-2-TEX-N-28"></use></g><g data-mml-node="msub" transform="translate(3139.5,0)"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-2-TEX-I-1D458"></use></g><g data-mml-node="mi" transform="translate(554,-150) scale(0.707)"><use data-c="1D451" xlink:href="#MJX-2-TEX-I-1D451"></use></g></g><g data-mml-node="msub" transform="translate(4111.2,0)"><g data-mml-node="mi"><use data-c="1D442" xlink:href="#MJX-2-TEX-I-1D442"></use></g><g data-mml-node="TeXAtom" transform="translate(796,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D451" xlink:href="#MJX-2-TEX-I-1D451"></use></g><g data-mml-node="mi" transform="translate(520,0)"><use data-c="1D706" xlink:href="#MJX-2-TEX-I-1D706"></use></g></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(5737.2,0)"><g data-mml-node="mover"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-2-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(300,16) translate(-250 0)"><use data-c="5E" xlink:href="#MJX-2-TEX-N-5E"></use></g></g></g><g data-mml-node="mo" transform="translate(6337.2,0)"><use data-c="29" xlink:href="#MJX-2-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(6948.4,0)"><use data-c="22C5" xlink:href="#MJX-2-TEX-N-22C5"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(7448.6,0)"><g data-mml-node="mover"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-2-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-150) scale(0.707)"><use data-c="1D45A" xlink:href="#MJX-2-TEX-I-1D45A"></use></g></g><g data-mml-node="mo" transform="translate(692.4,257) translate(-250 0)"><use data-c="5E" xlink:href="#MJX-2-TEX-N-5E"></use></g></g></g><g data-mml-node="mo" transform="translate(8833.4,0) translate(0 -0.5)"><use data-c="5D" xlink:href="#MJX-2-TEX-LO-5D"></use></g></g></g></g></svg></mjx-container></div>
+<p>The purpose of this lab is twofold: to help you get set up to work locally, and to help you learn the basics of C++, the programming language that we&#x27;ll be using in this class.</p>
+<p>In the rest of this 1-2h lab, you will:</p>
+<ol>
+<li>Install Qt and QtCreator locally,<!-- -->
+<ul>
+<li>Learn to nest lists</li>
+<li>Like this</li>
+<li>It just <em>works</em>!<!-- -->
+<ul>
+<li>hehe</li>
+<li><code>:wink:</code> becomes 😉</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Build and run a starter Qt program, and</li>
+<li>Gain some familiarity with basic C++ features.</li>
+</ol>
+<h3 id="01-dummy"><a aria-hidden="true" tabindex="-1" href="#01-dummy"><span class="icon icon-link"></span></a>0.1. Dummy</h3>
+<p>If you know what you&#x27;re doing, you <i>can</i> write code in your preferred IDE or text editor. Do note, however,
+that our course uses a standardized environment for grading—that is to say, we will build and run your
+projects through QtCreator. Therefore, you&#x27;ll probably want to have Qt and QtCreator, if only to test that your
+code works as expected!</p>
+<h4 id="011-dummy"><a aria-hidden="true" tabindex="-1" href="#011-dummy"><span class="icon icon-link"></span></a>0.1.1. Dummy</h4>
+<p>If you know what you&#x27;re doing, you <i>can</i> write code in your preferred IDE or text editor. Do note, however,
+that our course uses a standardized environment for grading—that is to say, we will build and run your
+projects through QtCreator. Therefore, you&#x27;ll probably want to have Qt and QtCreator, if only to test that your
+code works as expected!</p>
+<h5 id="0111-dummy"><a aria-hidden="true" tabindex="-1" href="#0111-dummy"><span class="icon icon-link"></span></a>0.1.1.1. Dummy</h5>
+<p>If you know what you&#x27;re doing, you <i>can</i> write code in your preferred IDE or text editor. Do note, however,
+that our course uses a standardized environment for grading—that is to say, we will build and run your
+projects through QtCreator. Therefore, you&#x27;ll probably want to have Qt and QtCreator, if only to test that your
+code works as expected!</p>
+<h6 id="01111-dummy"><a aria-hidden="true" tabindex="-1" href="#01111-dummy"><span class="icon icon-link"></span></a>0.1.1.1.1. Dummy</h6>
+<p>If you know what you&#x27;re doing, you <i>can</i> write code in your preferred IDE or text editor. Do note, however,
+that our course uses a standardized environment for grading—that is to say, we will build and run your
+projects through QtCreator. Therefore, you&#x27;ll probably want to have Qt and QtCreator, if only to test that your
+code works as expected!</p>
+<h2 id="1-qt-and-qtcreator"><a aria-hidden="true" tabindex="-1" href="#1-qt-and-qtcreator"><span class="icon icon-link"></span></a>1. Qt and QtCreator</h2>
+<p>In CS123, we use <strong>Qt</strong> and <strong>QtCreator</strong> to develop, build, and run all our projects and labs.</p>
+<ul>
+<li><a href="https://www.qt.io">Qt</a> is a software used for building graphical user interfaces (GUIs) and cross-platform applications, e.g. for smart TVs or in-vehicle displays.</li>
+<li><a href="https://www.qt.io/product/development-tools">QtCreator</a> is the integrated development environment (IDE) included with each Qt install. It provides useful tools for developing in C++, which you&#x27;ll learn about later in the course.</li>
+</ul>
+<details><p><summary>But I prefer writing code in VS Code / Emacs / Notepad / ...</summary>
+If you know what you&#x27;re doing, you <i>can</i> write code in your preferred IDE or text editor. Do note, however,
+that our course uses a standardized environment for grading—that is to say, we will build and run your
+projects through QtCreator. Therefore, you&#x27;ll probably want to have Qt and QtCreator, if only to test that your
+code works as expected!</p></details>
+<h3 id="11-local-installation-and-opening-your-first-project"><a aria-hidden="true" tabindex="-1" href="#11-local-installation-and-opening-your-first-project"><span class="icon icon-link"></span></a>1.1. Local Installation, and Opening Your First Project</h3>
+<table><thead><tr><th align="center">Step</th><th align="left">Instruction</th><th align="left">Screenshot</th></tr></thead><tbody><tr><td align="center">1</td><td align="left">Download and open the appropriate Qt installer for your operating system from <a href="https://www.qt.io/download-qt-installer">https://www.qt.io/download-qt-installer</a>.</td><td align="left"><img src="/resources/labs/lab1/download-qt-installer.png" alt="todo"/></td></tr><tr><td align="center">2</td><td align="left">Follow the instructions on the installer to create a free Qt account (or use an existing one).</td><td align="left"><img src="/resources/labs/lab1/create-qt-account.png" alt="todo"/></td></tr><tr><td align="center">3</td><td align="left">When prompted, opt for a <code>Custom Installation</code>.</td><td align="left"><img src="/resources/labs/lab1/custom-installation.png" alt="todo"/></td></tr><tr><td align="center">4</td><td align="left">Minimally, you&#x27;ll need to select <strong>these 3 components:</strong><br/><br/>1. <code>Qt 6.2.4 &gt; [your OS]</code>,<br/>2. <code>Developer and Designer Tools &gt; CMake [some version]</code>, and<br/>3. <code>Developer and Designer Tools &gt; Ninja [some version]</code>.<br/><br/>Note that <code>QtCreator</code>, the Qt IDE, will be installed as well—you do not have to select it.</td><td align="left"><img src="/resources/labs/lab1/selected-components.png" alt="todo"/></td></tr><tr><td align="center">5</td><td align="left">Continue, and finish the installation process.</td><td align="left"><img src="/resources/labs/lab1/finished-install.png" alt="todo"/></td></tr><tr><td align="center">6</td><td align="left">Finally, launch QtCreator, click <code>Open Project...</code>, and, in the pop-up window, select the <code>lab01.pro</code> file located in this repository.<br/><br/><details><summary>What is a <code>.pro</code> file?</summary><br/>A <code>.pro</code> file is a <i>multi-platform</i> project file, which Qt can turn into a <i>platform-specific</i> makefile. It stores configuration information, e.g. what files to include.</details></td><td align="left"><img src="/resources/labs/lab1/open-project.png" alt="todo"/></td></tr></tbody></table>
+<h3 id="12-the-qtcreator-interface"><a aria-hidden="true" tabindex="-1" href="#12-the-qtcreator-interface"><span class="icon icon-link"></span></a>1.2. The QtCreator Interface</h3>
+<p>If you completed all the steps successfully, you should see the following screen. Good work!</p>
+<p>[Insert labelled image here]</p>
+<ul>
+<li>[Include something about &quot;Project View&quot;]</li>
+<li>[Include something about &quot;Projects&quot; aka settings]</li>
+<li>[Include something about &quot;Run&quot;].</li>
+</ul>
+<p>When you&#x27;re ready, hit &quot;run&quot; and proceed to the next section.</p>
+<p>[ Note to TAs: we can make this project run some kind of setup check ]</p>
+<h2 id="2-c"><a aria-hidden="true" tabindex="-1" href="#2-c"><span class="icon icon-link"></span></a>2. C++</h2>
+<h3 id="21-hello-world"><a aria-hidden="true" tabindex="-1" href="#21-hello-world"><span class="icon icon-link"></span></a>2.1. Hello World</h3>
+<p>A simple C++ program that does nothing is provided below:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// A C++ program always starts from the main() function</span>
+</span><span class="code-line"><span class="pl-c">// main() returns an integer indicating the execution state of the program</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">main</span>()-&gt;int {
+</span><span class="code-line">    <span class="pl-c">// you may leave the function body of main() empty if it does nothing</span>
+</span><span class="code-line">    <span class="pl-c">// the compiler automatically inserts &quot;return 0;&quot; for you</span>
+</span><span class="code-line">    <span class="pl-c">// indicating the execution is successful</span>
+</span><span class="code-line">}
+</span></code></pre>
+<p>In a similar way that Python uses <code>import</code>s, C++ uses <code>#include</code>s. The imported functionalities are normally grouped under a namespace, which is denoted with the double colon <code>::</code> symbol. We&#x27;ll use the C++ Standard Library namespace, also known as <em>std</em>, for our Hello World program</p>
+<p>The <strong>input/output library</strong> (<code>iostream</code> library) is part of the C++ standard library that deals with basic input and output. We&#x27;ll use the functionality in this library to get input from the keyboard and output data to the console. The <em>io</em> part of <em>iostream</em> stands for <em>input/output</em>.</p>
+<ul>
+<li>Available any time via <code>#include &lt;iostream&gt;</code></li>
+<li><code>std::cout</code> is how you will print to the command line<!-- -->
+<ul>
+<li>i.e. the output window in QtCreator, your IDE for this course :)</li>
+</ul>
+</li>
+<li><code>&lt;&lt;</code> inserts characters into the current output stream</li>
+<li>Works like string concatenation where the stream is the output string</li>
+<li><code>std::endl</code> ends the line and inserts a newline character</li>
+<li><code>std::cin</code> and <code>std::cerr</code> also exist<!-- -->
+<ul>
+<li><code>std::cin</code> reads from stdin (terminal input)</li>
+<li><code>std::cerr</code> prints to stderr (terminal error messages)</li>
+</ul>
+</li>
+</ul>
+<div class="task-callout"><p>We are ready to write something on the screen!</p><ul>
+<li>Write &quot;Hello World!&quot; in a <code>std::cout &lt;&lt; &quot;&quot; &lt;&lt; std::endl;</code> call in the <code>main</code> function.</li>
+</ul><p>At this point when you run your program you should see &quot;Hello World!&quot;</p><p>Now we can get into the more fun stuff!</p></div>
+<h3 id="22-primitive-types-variables-and-functions"><a aria-hidden="true" tabindex="-1" href="#22-primitive-types-variables-and-functions"><span class="icon icon-link"></span></a>2.2. Primitive Types, Variables and Functions</h3>
+<p>Like many other programming languages, C++ comes with several primitive types including:</p>
+<ul>
+<li>integer-like types (integers, booleans, characters)</li>
+<li>floating point types</li>
+<li>arrays</li>
+<li>functions and lambdas</li>
+<li>pointers and references</li>
+</ul>
+<p>Some of these you might already know from languages you learned before, some, such as pointers and references, are C++ concepts which we&#x27;ll expand in the following sections. It is also worth noting that strings are not a primitive type in C++, string literals are simply character arrays. However, the standard library does provide the <code>std::string</code> type which allows us to perform common string operations.</p>
+<p>C++ is a <em>typed</em> language, meaning that we either have to declare the type when creating a variable:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line"><span class="pl-k">double</span> y = <span class="pl-c1">3.14</span>;
+</span></code></pre>
+<p>or use <code>auto</code> to tell the compiler to deduce the type for us from the initialization. This could be useful if the type name is very long or if we know roughly about what something is, but we&#x27;re not sure about its exact type.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> z = <span class="pl-c1">2.71</span>; <span class="pl-c">// type of z deduced as double</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// I&#x27;m not exactly sure about the type of a string literal</span>
+</span><span class="code-line"><span class="pl-c">// but I can ask the compiler to deduce it for me using auto</span>
+</span><span class="code-line"><span class="pl-k">auto</span> w = <span class="pl-s"><span class="pl-pds">&quot;</span>random string abcd<span class="pl-pds">&quot;</span></span>;
+</span></code></pre>
+<p>The same rules also apply to functions, the basic form of a function requires us to declare its return type, and the type for each parameter.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">PlusOne</span>(<span class="pl-k">int</span> x)-&gt;int {
+</span><span class="code-line">    <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
+</span><span class="code-line">}
+</span></code></pre>
+<p>The return type after <code>-&gt;</code> can be omitted, in such case the compiler will deduce the return type from the return statement in the function body. You may create multiple functions with the same name and this allows you to do something called <em>overloading</em>, which you might have heard from languages like Java.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">PlusOne</span>(<span class="pl-k">int</span> x)-&gt;int {
+</span><span class="code-line">    <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// overloading PlusOne</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">PlusOne</span>(<span class="pl-k">double</span> x) { <span class="pl-c">// return type will be deduced</span>
+</span><span class="code-line">    <span class="pl-k">return</span> x + <span class="pl-c1">1</span>; <span class="pl-c">// return type deduced as double</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> a = PlusOne(<span class="pl-c1">123</span>);  <span class="pl-c">// calls PlusOne&lt;int&gt;</span>
+</span><span class="code-line"><span class="pl-k">auto</span> b = PlusOne(<span class="pl-c1">3.14</span>); <span class="pl-c">// calls PlusOne&lt;double&gt;</span>
+</span></code></pre>
+<p>Now, we can restructure the example above a little bit better if we make <code>PlusOne</code> generic. This is easy to do in C++, we simply change the type of the corresponding parameters to <code>auto</code>, meaning they could be anything.</p>
+<details><p><summary>Hidden magic</summary>
+Your function would technically be a <a href="https://en.cppreference.com/w/cpp/language/function_template#Abbreviated_function_template">
+function template
+</a> if it contains at least one <em>auto</em> parameter.</p></details>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// generic PlusOne</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">PlusOne</span>(<span class="pl-k">auto</span> x) {
+</span><span class="code-line">    <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> a = PlusOne(<span class="pl-c1">123</span>); <span class="pl-c">// a == 124</span>
+</span><span class="code-line"><span class="pl-k">auto</span> b = PlusOne(<span class="pl-c1">3.14</span>); <span class="pl-c">// b == 4.14</span>
+</span></code></pre>
+<p>There are another function-like entities in C++ called <em>lambdas</em>. We&#x27;ll not explain it in detail since functional programming is outside the scope of this lab. However, we encourage you to play with it and ask questions either in TA hours or on Ed. You will likely need to use lambdas for certain extra credit features such as multithreading in your future assignments. Below shows you a toy example to get started with lambdas.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">Plus</span>(<span class="pl-k">auto</span> Increment) {
+</span><span class="code-line">    <span class="pl-k">return</span> [=](<span class="pl-k">auto</span> x) {
+</span><span class="code-line">        <span class="pl-k">return</span> x + Increment;
+</span><span class="code-line">    };
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">Apply</span>(<span class="pl-k">auto</span> Operation, <span class="pl-k">auto</span> x) {
+</span><span class="code-line">    <span class="pl-k">return</span> <span class="pl-c1">Operation</span>(x);
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = Apply(Plus(<span class="pl-c1">20</span>), <span class="pl-c1">22</span>); <span class="pl-c">// x == 42</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = Apply(Plus(-<span class="pl-c1">1.1</span>), <span class="pl-c1">4.24</span>); <span class="pl-c">// y == 3.14</span>
+</span></code></pre>
+<p>You can find more information about lambdas <a href="https://en.cppreference.com/w/cpp/language/lambda">here</a>.</p>
+<p>You&#x27;ve probably noticed that type deduction is very powerful in C++, pushing it to the extreme could make your coding experience largely resemble working with an <em>untyped</em> language like Python or JavaScript. However, overusing it has a negative impact on the readability and maintainability of your code.</p>
+<details><p><summary>Evil don&#x27;t click</summary>
+And crazy compilation errors or even <a href="https://godbolt.org/z/8ozn45cMs">compiler crash</a> if your code
+is buggy in a certain way.</p></details>
+<p>You should be careful to strike a balance between explicit type declaration and type deduction to maximize your
+code readability. The balance would likely be different for everybody, however, as a rule of thumb, we recommend
+to use type deduction for local variables in the function body, and explicitly declare the types in the function
+signature, unless, of course, when your function is generic and you have to use <code>auto</code> for your generic parameters
+and omit the return type if it depends on the generic parameters.</p>
+<div class="task-callout"><p>We can now write functions and use them to process different things!</p><ul>
+<li>Write a function <code>TimesTwo</code> which takes an <code>int</code>, returns an <code>int</code>, and does what the function name suggests.</li>
+<li>Add <code>std::cout &lt;&lt; TimesTwo(21) &lt;&lt; std::endl;</code> to your <code>main</code> function.</li>
+</ul><p>You should see <code>42</code> when you run the program.</p></div>
+<div class="task-callout"><p>Let&#x27;s use what we learned and make <code>TimesTwo</code> more interesting!</p><ul>
+<li>Change the signature of <code>TimesTwo</code> and make it generic.</li>
+<li>You might also need to change the definition in the function body of <code>TimesTwo</code> if you used multiplication for the previous task. Note that multiplication is not defined for <code>std::string</code>, but addition is, so how do you express &quot;times 2&quot; in the form of addition?</li>
+<li>Add the following print statements to your <code>main</code> function</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">std::cout &lt;&lt; TimesTwo(<span class="pl-c1">123</span>) &lt;&lt; std::endl;
+</span><span class="code-line">std::cout &lt;&lt; TimesTwo(<span class="pl-c1">3.14</span>) &lt;&lt; std::endl;
+</span><span class="code-line">std::cout &lt;&lt; TimesTwo(std::string{ <span class="pl-s"><span class="pl-pds">&quot;</span>abc<span class="pl-pds">&quot;</span></span> }) &lt;&lt; std::endl;
+</span></code></pre><p>You should see <code>246</code>, <code>6.28</code> and <code>abcabc</code> when you run the program.</p></div>
+<h3 id="23-create-your-own-types"><a aria-hidden="true" tabindex="-1" href="#23-create-your-own-types"><span class="icon icon-link"></span></a>2.3. Create Your Own Types</h3>
+<p>Similar to how we create custom types in other languages, we can combine existing types to make a data structure, and bundle it with dedicated functions to create new types in C++. Custom types are also known as <em>classes</em> in many languages including C++. We can use the keyword <code>struct</code> or <code>class</code> to create custom types, <code>struct</code>s and <code>class</code>es are almost the exact same thing in C++, with the only difference being that <code>struct</code>s have public member access by default and <code>class</code>es have private access by default. We&#x27;ll use <code>struct</code> to refer to both <code>struct</code>s and <code>class</code>es from here. The basic form of a <code>struct</code> is shown as follows</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">struct</span> <span class="pl-en">Rectangle</span> {
+</span><span class="code-line">    <span class="pl-k">double</span> Length; <span class="pl-c">// data member, also known as a field</span>
+</span><span class="code-line">    <span class="pl-k">double</span> Width = <span class="pl-c1">1</span>; <span class="pl-c">// field can have a default value</span>
+</span><span class="code-line">    <span class="pl-c">// fields must be explicitly typed, you cannot use type deduction here</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-c">// member function, also known as a method</span>
+</span><span class="code-line">    <span class="pl-k">auto</span> <span class="pl-en">CalculateArea</span>()-&gt;double {
+</span><span class="code-line">        <span class="pl-k">return</span> Length * Width;
+</span><span class="code-line">    }
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-c">// member function that modifies the state of an object</span>
+</span><span class="code-line">    <span class="pl-k">auto</span> <span class="pl-en">MakeItSquare</span>(<span class="pl-k">double</span> SideLength)-&gt;void {
+</span><span class="code-line">        Length = SideLength;
+</span><span class="code-line">        Width = SideLength;
+</span><span class="code-line">    }
+</span><span class="code-line">};
+</span></code></pre>
+<p>and here&#x27;s how we can use the <code>Rectangle</code> type that we just created!</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// create an instance of Rectangle</span>
+</span><span class="code-line"><span class="pl-k">auto</span> x = Rectangle{ .<span class="pl-smi">Length</span> = <span class="pl-c1">2</span>, .<span class="pl-smi">Width</span> = <span class="pl-c1">4</span> };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// field names can be omitted</span>
+</span><span class="code-line"><span class="pl-c">// in such case values in the brackets</span>
+</span><span class="code-line"><span class="pl-c">// will be assigned to each field sequentially</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = Rectangle{ <span class="pl-c1">4</span>, <span class="pl-c1">3</span> }; <span class="pl-c">// equivalent to Rectangle{ .Length = 4, .Width = 3 }</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// equivalent to Rectangle{ .Length = 5, .Width = 1 } because of the default value</span>
+</span><span class="code-line"><span class="pl-k">auto</span> z = Rectangle{ <span class="pl-c1">5</span> };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// member access</span>
+</span><span class="code-line"><span class="pl-k">auto</span> OldLength = x.Length;
+</span><span class="code-line">x.Length = <span class="pl-c1">4</span>;
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// call member functions</span>
+</span><span class="code-line"><span class="pl-k">auto</span> NewArea = x.CalculateArea(); <span class="pl-c">// NewArea == 16</span>
+</span><span class="code-line">x.MakeItSquare(OldLength); <span class="pl-c">// now Length = Width = 2 for x</span>
+</span></code></pre>
+<div class="task-callout"><p>Let&#x27;s add more behaviors to our <code>Rectangle</code> type and enhance its capabilities!</p><ul>
+<li>Add a member function <code>CalculatePerimeter</code> to <code>Rectangle</code>.</li>
+<li>Add <code>std::cout &lt;&lt; Rectangle{ 7, 8 }.CalculatePerimeter() &lt;&lt; std::endl;</code> to your <code>main</code> function.</li>
+</ul><p>You should see <code>30</code> when you run the program.</p></div>
+<div class="task-callout"><p>Now that we&#x27;ve seen what we can do with <code>Rectangle</code>, are you ready to create a new type from ground zero?</p><ul>
+<li>Create a <code>Circle</code> type using <code>struct</code>.</li>
+<li><code>Circle</code> should contain a data member <code>Radius</code>, and two member functions <code>CalculateArea</code> and <code>CalculatePerimeter</code>.</li>
+<li>After completing your <code>Circle</code> type, create a few instances of <code>Circle</code> in your <code>main</code> function, and call their member functions.</li>
+</ul><p>See if your <code>Circle</code> instances exhibit the expected behaviors when you run the program.</p></div>
+<p>Oof! Look what we&#x27;ve achieved! You might not believe it but I assure you that we&#x27;ve learned enough to do some non-trivial things in C++. If you had previous experience in object oriented programming, you probably know that there&#x27;s something called <em>polymorphism</em> which allows us to deal with different subtypes in the same way, as long as they&#x27;re derived from the same supertype (a.k.a base type). This however requires us to define an interface (the supertype), and implement the interface for all related types. Sometimes it&#x27;s hard to reason our program this way because more often, we understand things bottom-up rather than top-down. What it means is that instead of defining an interface first, and then implementing the interface for various concrete type, we start from simple concrete types without worrying about what kind of interfaces it satisfies, then we notice that some types <em>happen</em> <em>to</em> exhibit similar behaviors which allow us to process them uniformly. Indeed, this is the case for our <code>Rectangle</code> and <code>Circle</code>, as they come with the same member functions <code>CalculateArea</code> and <code>CalculatePerimeter</code>.</p>
+<p>But we haven&#x27;t declared a common interface for <code>Rectangle</code> and <code>Circle</code>! Can we still write something to deal with them uniformly in C++? And more importantly, have we learned the necessary tool to do that? The answer is yes, and yes we have. Remember the generic functions we learned in the previous section? It has the magic property of allowing us to do <em>anything</em> with the <code>auto</code> parameters. So all we have to do is to pass <code>Rectangle</code> and <code>Circle</code> instances to a generic parameter.</p>
+<details><p><summary>Nerd talk for people who have taken CSCI1730</summary>
+The reason behind this magic is that C++ templates are <a href="https://en.wikipedia.org/wiki/Structural_type_system">
+structurally typed
+</a>, and they do not enforce <a href="https://en.wikipedia.org/wiki/Parametricity">parametricity</a>.</p></details>
+<div class="task-callout"><ul>
+<li>Navigate to the empty function <code>PrintShape</code></li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">PrintShape</span>(<span class="pl-k">auto</span> Shape)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// Your code here</span>
+</span><span class="code-line">}
+</span></code></pre><ul>
+<li>Complete the definition, so when you pass in either a <code>Rectangle</code> object or a <code>Circle</code> object, it prints</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">Area: <span class="pl-c">/* area of the shape */</span>
+</span><span class="code-line">Perimeter: <span class="pl-c">/* perimeter of the shape */</span>
+</span></code></pre><ul>
+<li>Call <code>PrintShape</code> in your <code>main</code> function with different <code>Rectangle</code> and <code>Circle</code> objects.</li>
+</ul><p>See if <code>PrintShape</code> exhibits the expected polymorphic behavior.</p></div>
+<details><p><summary>Nerd talk 2 for people who have taken CSCI1730</summary>
+Generic functions like PrintShape are technically known as parametric polymorphism, which is a universal quantification
+over types. The classic OOP polymorphism, technically known as subtype polymorphism, is an existential quantification
+over types. They both correspond to second order logic and in many cases, one may replace another.</p></details>
+<h3 id="24-containers-and-strings"><a aria-hidden="true" tabindex="-1" href="#24-containers-and-strings"><span class="icon icon-link"></span></a>2.4. Containers and Strings</h3>
+<p>The C++ standard library provides us many useful utilities, and we&#x27;ll focus on three most commonly used things:</p>
+<ul>
+<li>std::array</li>
+<li>std::vector</li>
+<li>std::string</li>
+</ul>
+<p><code>std::array</code> is a fixed length array and we can use it like the following</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>array<span class="pl-pds">&gt;</span></span> <span class="pl-c">// import std::array</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = std::array&lt;<span class="pl-k">int</span>, <span class="pl-c1">3</span>&gt;{}; <span class="pl-c">// need to declare element type and length</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// element type and length can be deduced</span>
+</span><span class="code-line"><span class="pl-c">// if you initialize the array immediately with values</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = std::array{ <span class="pl-c1">3.14</span>, <span class="pl-c1">2.71</span> }; <span class="pl-c">// deduced to std::array&lt;double, 2&gt;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// element access</span>
+</span><span class="code-line"><span class="pl-k">auto</span> z = y[<span class="pl-c1">0</span>]; <span class="pl-c">// z == 3.14</span>
+</span><span class="code-line">x[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// now the first element of x is 42</span>
+</span><span class="code-line"><span class="pl-k">auto</span> [a, b, c] = x; <span class="pl-c">// can be unpacked, a == 42, b == 0, c == 0</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// commonly used array methods</span>
+</span><span class="code-line"><span class="pl-k">auto</span> LengthX = x.size(); <span class="pl-c">// query length</span>
+</span><span class="code-line"><span class="pl-k">auto</span> UnderlyingPointer = x.data(); <span class="pl-c">// we&#x27;ll explain what a pointer is in the following section</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// can be looped over element-wise</span>
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> Element : y)
+</span><span class="code-line">    std::cout &lt;&lt; Element &lt;&lt; <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span>; <span class="pl-c">// prints 3.14 2.71</span>
+</span></code></pre>
+<p>You can learn more about <code>std::array</code> over <a href="https://en.cppreference.com/w/cpp/container/array">here</a>.</p>
+<p><code>std::vector</code> is a dynamic size array, unlike <code>std::array</code>, it allows us to insert or remove elements anytime. It has almost all capabilities of <code>std::array</code>, however, we&#x27;d prefer <code>std::array</code> over <code>std::vector</code> whenever possible because using <code>std::vector</code> triggers dynamic memory allocation (which we&#x27;ll talk about later), and thus it has a performance penalty compared to <code>std::array</code>. Below shows you the basics of <code>std::vector</code></p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>vector<span class="pl-pds">&gt;</span></span> <span class="pl-c">// import std::vector</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = std::vector&lt;<span class="pl-k">int</span>&gt;{}; <span class="pl-c">// need to declare element type</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// element type can be deduced</span>
+</span><span class="code-line"><span class="pl-c">// if you initialize the vector immediately with values</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = std::vector{ <span class="pl-c1">3.14</span>, <span class="pl-c1">2.71</span> }; <span class="pl-c">// deduced to std::vector&lt;double&gt;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// element manipulation</span>
+</span><span class="code-line"><span class="pl-k">auto</span> z = y[<span class="pl-c1">0</span>]; <span class="pl-c">// z == 3.14</span>
+</span><span class="code-line">x.push_back(<span class="pl-c1">42</span>); <span class="pl-c">// add an element to the end of the vector</span>
+</span><span class="code-line">x.push_back(<span class="pl-c1">123</span>); <span class="pl-c">// add another element after the 42 we just inserted</span>
+</span><span class="code-line">x.pop_back(); <span class="pl-c">// remove the element we just added</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// commonly used vector methods</span>
+</span><span class="code-line">x.resize(<span class="pl-c1">10</span>); <span class="pl-c">// resize the vector, change the number of elements it contains</span>
+</span><span class="code-line">y.reserve(<span class="pl-c1">20</span>); <span class="pl-c">// pre-allocate memory for more elements, but the number of elements stays the same</span>
+</span><span class="code-line"><span class="pl-k">auto</span> LengthX = x.size(); <span class="pl-c">// query length</span>
+</span><span class="code-line"><span class="pl-k">auto</span> UnderlyingPointer = x.data(); <span class="pl-c">// we&#x27;ll explain what a pointer is in the following section</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// can be looped over element-wise</span>
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> Element : y)
+</span><span class="code-line">    std::cout &lt;&lt; Element &lt;&lt; <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span>; <span class="pl-c">// prints 3.14 2.71</span>
+</span></code></pre>
+<p>You can learn more about <code>std::vector</code> over <a href="https://en.cppreference.com/w/cpp/container/vector">here</a>.</p>
+<p><code>std::string</code> provides basic string operations in C++, it has many methods which you can find <a href="https://en.cppreference.com/w/cpp/string/basic_string">here</a>. Below shows you how to create string objects, or convert string literals to <code>std::string</code></p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span> <span class="pl-c">// import std::string</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = std::string{}; <span class="pl-c">// create an empty string</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = std::string{ <span class="pl-s"><span class="pl-pds">&quot;</span>abcd hello<span class="pl-pds">&quot;</span></span> };  <span class="pl-c">// convert a string literal to std::string</span>
+</span><span class="code-line">
+</span><span class="code-line">y += <span class="pl-s"><span class="pl-pds">&quot;</span>efgh<span class="pl-pds">&quot;</span></span>; <span class="pl-c">// use + to concatenate strings</span>
+</span></code></pre>
+<p>You might have noticed that it is cumbersome to convert string literals to <code>std::string</code>, and the standard library provides us a convenient solution by simply adding an <em>s</em> <a href="https://en.cppreference.com/w/cpp/string/basic_string/operator%22%22s">suffix</a> after a string literal.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// need to use this namespace to gain access to custom literals in the standard library</span>
+</span><span class="code-line"><span class="pl-k">using</span> <span class="pl-k">namespace</span> <span class="pl-en">std</span>::literals<span class="pl-k">;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-s"><span class="pl-pds">&quot;</span>hello world<span class="pl-pds">&quot;</span></span>s; <span class="pl-c">// x is of type std::string</span>
+</span></code></pre>
+<div class="task-callout"><p>We learned the basics of containers and strings, let&#x27;s try using them!</p><ul>
+<li>Create a container of strings, you&#x27;re free to pick either <code>std::array</code> or <code>std::vector</code>.</li>
+<li>Fill the container with some strings.</li>
+<li>repeat each string element in the container.</li>
+</ul><p>Now print each string element in the container, and see if the result is as expected.</p></div>
+<h3 id="25-pointers-and-references"><a aria-hidden="true" tabindex="-1" href="#25-pointers-and-references"><span class="icon icon-link"></span></a>2.5. Pointers and References</h3>
+<p>Every entity in our program, variables, functions, constants, values that a register cannot hold, they all exist somewhere in memory, and they all have a unique memory location called <em>memory</em> <em>address</em>.</p>
+<p>A pointer is an integer storing a memory address, and it allows us to manipulate the object at that address. We can obtain a pointer to almost anything in C++ by taking its address using the <em>address</em> <em>of</em> operator <code>&amp;</code>. The obtained address will be of a pointer type, denoted by the target object type followed by a star <code>*</code>.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">int</span>* px = &amp;x; <span class="pl-c">// px is a pointer to an integer, pointing to x</span>
+</span><span class="code-line"><span class="pl-k">auto</span> px2 = &amp;x; <span class="pl-c">// type deduction works for pointers too, type of px2 deducted to int*</span>
+</span><span class="code-line"><span class="pl-k">auto</span>* px3 = &amp;x; <span class="pl-c">// partial type deduction works too, px3 is a pointer to some deduced type, auto deduced to int</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// pointer variables themselves also reside somewhere in memory, you can get a pointer to pointer</span>
+</span><span class="code-line"><span class="pl-k">auto</span> ppx = &amp;px; <span class="pl-c">// ppx is of type int**, a pointer to a pointer to an integer</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// let&#x27;s see where x is located in (virtual) memory!</span>
+</span><span class="code-line"><span class="pl-k">auto</span> MemoryAddressOfX = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-k">long</span>&gt;(px); <span class="pl-c">// cast pointer to largest integer type</span>
+</span><span class="code-line">std::cout &lt;&lt; MemoryAddressOfX;
+</span></code></pre>
+<p>The first thing we can do with a pointer is to <em>dereference</em> it, meaning obtaining the entity at the address that the pointer points to. This can be achieved by using the dereference operator which also has the form of a star <code>*</code>. Dereferencing a pointer gives us something called a <em>reference</em>, meaning the entity at a particular memory address. The reference type is denoted by the entity type followed by <code>&amp;</code>. For pointers to non-primitive types, we can also use <code>-&gt;</code> to obtain a reference to its members.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">int</span>* px = &amp;x;
+</span><span class="code-line"><span class="pl-k">int</span>&amp; refx = *px; <span class="pl-c">// obtain a reference to x by dereferencing its pointer</span>
+</span><span class="code-line"><span class="pl-k">int</span>&amp; refx2 = x; <span class="pl-c">// another way to obtain a reference is to directly &#x27;reference&#x27; it.</span>
+</span><span class="code-line">
+</span><span class="code-line">refx = <span class="pl-c1">123</span>; <span class="pl-c">// this sets x to 123 too, because refx and x share the same memory address, they are the exact same thing!</span>
+</span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// you should see 123 here</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> y = Rectangle{ .<span class="pl-smi">Length</span> = <span class="pl-c1">4</span>, .<span class="pl-smi">Width</span> = <span class="pl-c1">2</span> };
+</span><span class="code-line"><span class="pl-k">auto</span> py = &amp;y;
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> a = py-&gt;<span class="pl-en">CalculateArea</span>(); <span class="pl-c">// same as y.CalculateArea()</span>
+</span><span class="code-line"><span class="pl-k">double</span>&amp; yLength = py-&gt;Length; <span class="pl-c">// same as y.Length</span>
+</span><span class="code-line">yLength = <span class="pl-c1">6</span>; <span class="pl-c">// this sets y.Length to 6</span>
+</span><span class="code-line">py-&gt;Width = <span class="pl-c1">3</span>; <span class="pl-c">// this sets y.Width to 3</span>
+</span></code></pre>
+<div class="task-callout"><p>What is the type of <code>*ppx</code>? What about <code>**ppx</code>? Compare your answers with the TA while getting checked off!</p></div>
+<p>One thing we have to be careful with references is that we <strong>always</strong> have to spell out <code>&amp;</code> in the type declaration when creating a reference, whether we&#x27;re using type deduction or not. Otherwise we&#x27;d be creating a copy rather than a reference.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line"><span class="pl-k">int</span>* px = &amp;x;
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">int</span>&amp; refx = *px; <span class="pl-c">// a reference to x, same memory address as x</span>
+</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx2 = x; <span class="pl-c">// also a reference to x, with type deduction, same memory address</span>
+</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx3 = refx; <span class="pl-c">// same, since refx is the same thing as x</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">int</span> y = *px; <span class="pl-c">// this is a copy of x! it&#x27;s a new variable with its own unique address!</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y2 = *px; <span class="pl-c">// again, it&#x27;s a copy with its own unique address!</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y3 = x; <span class="pl-c">// same as above</span>
+</span></code></pre>
+<p>This is because C++ has <em>value</em> <em>semantics</em> by default.</p>
+<details><p><summary>Just to be pedantic...</summary>
+This is known as lvalue-to-rvalue <a href="https://en.cppreference.com/w/cpp/language/implicit_conversion#Lvalue_to_rvalue_conversion">
+type decay
+</a> in C++ terminology.</p></details>
+<p>Now that we know C++ makes a copy when creating something from another, unless specified otherwise (i.e. creating
+a reference). We should really change most of the parameter types in our function signature to references, unless
+it&#x27;s something trivial like an <code>int</code> or <code>double</code>. Otherwise, a full copy will be made for every object we passed
+to the function, and it could lead to serious performance problems!</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">F</span>(std::vector&lt;<span class="pl-k">int</span>&gt; Things)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// empty</span>
+</span><span class="code-line">}
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">BetterF</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; Things)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// empty</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line"><span class="pl-en">F</span>(Things); <span class="pl-c">// &#x27;Things&#x27; will be copied when you call F() because it gets passed by value!</span>
+</span><span class="code-line"><span class="pl-en">BetterF</span>(Things); <span class="pl-c">// no copy will be made here! because &#x27;Things&#x27; gets passed by reference!</span>
+</span><span class="code-line"><span class="pl-c">// This also means if BetterF modifies &#x27;Things&#x27; in any way in its function body, it will be reflected here</span>
+</span></code></pre>
+<p>The same also applies to looping over containers.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// this copies every element in &#x27;Things&#x27;</span>
+</span><span class="code-line"><span class="pl-c">// not ideal if element type is not trivial to copy</span>
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> x : Things)
+</span><span class="code-line">    std::cout &lt;&lt; x &lt;&lt; std::endl;
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; x : Things) <span class="pl-c">// this loops over each element by reference</span>
+</span><span class="code-line">    x += x; <span class="pl-c">// which also enables you to modify the elements</span>
+</span><span class="code-line"><span class="pl-c">// now Things = [2, 4, 6, 8]</span>
+</span></code></pre>
+<div class="task-callout"><p>Let&#x27;s try our hand at references!</p><ul>
+<li>Navigate to the empty function <code>DoubleEachElement</code>, this function takes any container and doubles each element in the container.</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">DoubleEachElement</span>(<span class="pl-c">/* ??? Container */</span>)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// your code here</span>
+</span><span class="code-line">}
+</span></code></pre><ul>
+<li>Uncomment the <code>Container</code> parameter, replace <code>???</code> with a proper type declaration. (hint: references work with generic parameters too!).</li>
+<li>Complete the function body using what we learned.</li>
+<li>Pass different <code>std::array</code> and <code>std::vector</code> objects to <code>DoubleEachElement</code> in your <code>main</code> function.</li>
+</ul><p>Print the results after <code>DoubleEachElement</code> calls, see if it matches your expectation!</p></div>
+<p>One problem with the basic form of references we&#x27;ve learned so far, is that they cannot bind to <em>values</em> (<a href="https://en.cppreference.com/w/cpp/language/value_category#rvalue">rvalue</a> in C++ terminology). The reason is obvious, values such as <code>123</code> or <code>3.14</code> do not have a memory address because they are not stored in memory by some variable. The same applies to function parameters, we cannot pass values to reference parameters.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">BetterF</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; Things)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// empty</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx = x; <span class="pl-c">// OK, bind to a variable</span>
+</span><span class="code-line"><span class="pl-c">// auto&amp; IncorrectRef = 42; // error, (lvalue) reference cannot bind to (r)value</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-en">BetterF</span>(Things); <span class="pl-c">// OK, reference parameter binds to &#x27;Things&#x27;</span>
+</span><span class="code-line"><span class="pl-c">// BetterF(std::vector{ 1, 2, 3, 4 }); // error, (lvalue) reference parameter cannot bind to (r)value</span>
+</span></code></pre>
+<p>This can be inconvenient in some cases. Ideally, we&#x27;d want something that behaves like a reference when we bind it to a variable, and like a new variable when we provide it a value. Luckily, we do have something exactly like this in C++ called <em>forwarding</em> <em>references</em> in the form of <code>auto&amp;&amp;</code>.</p>
+<details><p><summary>Be careful though</summary>
+&amp;&amp; after a concrete type, like int&amp;&amp; or std::vector&lt;int&gt;&amp;&amp;, does not form a forwarding reference! These
+are rvalue references which are outside the scope of this lab. However, you can learn more about rvalue references<!-- --> <!-- -->
+<a href="https://en.cppreference.com/w/cpp/language/reference#Rvalue_references">here</a>, if you&#x27;re interested.</p></details>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">EvenBetterF</span>(<span class="pl-k">auto</span>&amp;&amp; Things)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// empty</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; refx = x; <span class="pl-c">// OK, bind to a variable, same as &#x27;auto&amp; refx = x;&#x27;</span>
+</span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; ForwardRef = <span class="pl-c1">42</span>; <span class="pl-c">// OK, creates a new variable as if &#x27;auto ForwardRef = 42;&#x27;</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-en">EvenBetterF</span>(Things); <span class="pl-c">// OK, reference parameter binds to &#x27;Things&#x27;</span>
+</span><span class="code-line"><span class="pl-en">EvenBetterF</span>(std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> }); <span class="pl-c">// OK, as if the parameter type is non-reference</span>
+</span></code></pre>
+<h3 id="26-pointer-arithmetic"><a aria-hidden="true" tabindex="-1" href="#26-pointer-arithmetic"><span class="icon icon-link"></span></a>2.6. Pointer Arithmetic</h3>
+<p>We&#x27;ve discussed in the previous section that a pointer is an integer storing a memory address. What will happen though, if we perform integer arithmetic on pointers? Consider the following example</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> p = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">int</span>*&gt;(<span class="pl-c1">42</span>); <span class="pl-c">// cast some random integer to a pointer</span>
+</span><span class="code-line">p += <span class="pl-c1">1</span>;
+</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-k">long</span>&gt;(p); <span class="pl-c">// cast pointer back to integer</span>
+</span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// what will you see here?</span>
+</span></code></pre>
+<p>You would probably think <code>x</code> is <code>43</code>, however depending on your hardware platform, you&#x27;re likely to see <code>46</code>! Why is that?</p>
+<p>This is because pointer arithmetic has array semantics, meaning if you have a pointer <code>p</code> pointing to the address of some object of type <code>T</code>, <code>p + n</code> assumes that there is an array of <code>T</code>s stored in contiguous memory, and <code>p + n</code> evaluates to the address of the <code>n</code>-th object after the object that <code>p</code> points to. In the above example, <code>x</code> contains the address of a (hypothetical) integer next to the (hypotetical) integer whose address is <code>42</code>. And therefore the value of <code>x</code> would be <code>42 + sizeof(int)</code>, since <code>sizeof(int)</code> is likely <code>4</code> on most common hardware platforms, you see <code>46</code> when you print out <code>x</code>.</p>
+<p><code>n</code> can also be a negative integer in <code>p + n</code>, let <code>m = -n</code>, <code>p + n</code> would be the same as <code>p - m</code>, meaning the address of the <code>m</code>-th object before <code>*p</code>.</p>
+<div class="task-callout"><ul>
+<li>Head to the empty function <code>PrintEachObject</code>, this function takes a pointer to the first object of an array of objects in memory, and the number of objects we have.</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">PrintEachObject</span>(<span class="pl-k">auto</span>* PointerToTheFirstObject, std::<span class="pl-c1">size_t</span> NumberOfObjects)-&gt;void {
+</span><span class="code-line">    <span class="pl-c">// your code here</span>
+</span><span class="code-line">}
+</span></code></pre><ul>
+<li>Complete the function body, print each object using pointer arithmetic. Hint: <code>*(p + n)</code> is how you dereference <code>p + n</code>.</li>
+<li>Uncomment the supporting code in <code>main()</code> for task 10, execute the program and see if you get the expected result.</li>
+</ul></div>
+<p>Pointer arithmetic is common in C/C++, and <code>*(p + n)</code> is unwieldy, the language therefore defines a syntactic sugar for us to do the exact same thing, we may use the indexing operator <code>p[n]</code> to represent <code>*(p + n)</code>, the indexing operator syntax is the exact same as explicit pointer arithmetic.</p>
+<div class="task-callout"><p>Replace explicit pointer arithmetic in <code>PrintEachObject</code> with the indexing operator. Comment your old code so the TAs can check if you finished task 10 correctly.</p></div>
+<details><summary>Secrets behind C arrays</summary><p>If you have prior experience in C/C++, you may have noticed that we always use <code>std::array&lt;T, N&gt;</code> instead of the C array T[N]. C arrays behave just like a pointer in many cases, and we concluded that this is unnecessary complexity for beginners.</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x1[<span class="pl-c1">3</span>];
+</span><span class="code-line"><span class="pl-k">auto</span> x2 = std::array&lt;<span class="pl-k">int</span>, <span class="pl-c1">3</span>&gt;{};
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> y1 = x1; <span class="pl-c">// this is a pointer! not a copy of the &#x27;x1&#x27; array!</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y2 = x2; <span class="pl-c">// this is a copy of the &#x27;x2&#x27; array!</span>
+</span><span class="code-line">
+</span><span class="code-line">y1[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// this is the same as &#x27;x1[0] = 42&#x27;</span>
+</span><span class="code-line">y2[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// this does nothing to x2, since it&#x27;s a copy</span>
+</span></code></pre><p>The reason behind this oddity is that C arrays automatically decay to the pointer to its first element. Interestingly, the C++ standard only defines the builtin indexing operator on pointers, it is never said that (C) arrays can be indexed. What happens when the compiler sees &#x27;x1[0]&#x27; is that, x1 first decays to a pointer automatically, then the indexing operator defined on <strong>pointers</strong> gets invoked, and then desugar-ed into *(x1 + 0). Pointer arithmetic happens behind the scene every time you manipulate an array!</p></details>
+<h3 id="27-dynamic-memory-management-and-smart-pointers-consider-moving-to-pencil"><a aria-hidden="true" tabindex="-1" href="#27-dynamic-memory-management-and-smart-pointers-consider-moving-to-pencil"><span class="icon icon-link"></span></a>2.7. Dynamic Memory Management and Smart Pointers (consider moving to Pencil)</h3><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></div></div>
+        </div>
+      <script type="module" src="/assets/renderer/_default.page.client.jsx.c834953f.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1/index","pageProps":"!undefined"}}</script></body>
+    </html>

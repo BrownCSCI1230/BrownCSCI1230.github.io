@@ -1,1 +1,0 @@
-import{j as s,F as e,a as r}from"./renderer/_default.page.client.jsx.6796e96a.js";function n(){return s(e,{children:[r("h1",{children:"Hours"}),r("p",{children:"It's summer\u2014we have no hours."})]})}const t={title:"Hours"};export{n as Page,t as documentProps};
