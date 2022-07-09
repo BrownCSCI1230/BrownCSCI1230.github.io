@@ -1,14 +1,17 @@
 {
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.jsx.31d18b5e.js",
+    "file": "assets/renderer/_default.page.client.jsx.c77ede18.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "dynamicImports": [
-      "pages/code-blocks.page.mdx",
-      "pages/hours.page.jsx",
-      "pages/index.page.jsx",
-      "pages/inline-code.page.mdx",
+      "pages/hours.page.mdx",
+      "pages/index.page.mdx",
       "pages/staff.page.mdx",
+      "pages/docs/code-blocks.page.mdx",
+      "pages/docs/index.page.mdx",
+      "pages/docs/inline-code.page.mdx",
+      "pages/labs/index.page.mdx",
+      "pages/projects/index.page.mdx",
       "pages/labs/lab0/index.page.mdx",
       "pages/labs/lab1/index.page.mdx",
       "pages/labs/lab2/index.page.mdx",
@@ -20,51 +23,75 @@
       "renderer/_default.page.server.jsx"
     ],
     "css": [
-      "assets/renderer/_default.page.client.jsx.36a63be4.css"
+      "assets/renderer/_default.page.client.jsx.c859609e.css"
     ]
   },
-  "pages/code-blocks.page.mdx": {
-    "file": "assets/code-blocks.page.65cc0842.js",
-    "src": "pages/code-blocks.page.mdx",
+  "pages/hours.page.mdx": {
+    "file": "assets/hours.page.bf7df5dd.js",
+    "src": "pages/hours.page.mdx",
     "isDynamicEntry": true,
     "imports": [
       "renderer/_default.page.client.jsx"
     ]
   },
-  "pages/hours.page.jsx": {
-    "file": "assets/hours.page.88412a69.js",
-    "src": "pages/hours.page.jsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "renderer/_default.page.client.jsx"
-    ]
-  },
-  "pages/index.page.jsx": {
-    "file": "assets/index.page.2ac6cc80.js",
-    "src": "pages/index.page.jsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "renderer/_default.page.client.jsx"
-    ]
-  },
-  "pages/inline-code.page.mdx": {
-    "file": "assets/inline-code.page.e1e80060.js",
-    "src": "pages/inline-code.page.mdx",
+  "pages/index.page.mdx": {
+    "file": "assets/index.page.0b175ae2.js",
+    "src": "pages/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
       "renderer/_default.page.client.jsx"
     ]
   },
   "pages/staff.page.mdx": {
-    "file": "assets/staff.page.08cb722c.js",
+    "file": "assets/staff.page.48db4b54.js",
     "src": "pages/staff.page.mdx",
     "isDynamicEntry": true,
     "imports": [
       "renderer/_default.page.client.jsx"
     ]
   },
+  "pages/docs/code-blocks.page.mdx": {
+    "file": "assets/code-blocks.page.85beeb41.js",
+    "src": "pages/docs/code-blocks.page.mdx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/docs/index.page.mdx": {
+    "file": "assets/index.page.a37a0094.js",
+    "src": "pages/docs/index.page.mdx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/docs/inline-code.page.mdx": {
+    "file": "assets/inline-code.page.586e3798.js",
+    "src": "pages/docs/inline-code.page.mdx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/labs/index.page.mdx": {
+    "file": "assets/index.page.9b92be22.js",
+    "src": "pages/labs/index.page.mdx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/index.page.292feace.js",
+    "src": "pages/projects/index.page.mdx",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.jsx"
+    ]
+  },
   "pages/labs/lab0/index.page.mdx": {
-    "file": "assets/index.page.0cac7436.js",
+    "file": "assets/index.page.634a08d1.js",
     "src": "pages/labs/lab0/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -72,7 +99,7 @@
     ]
   },
   "pages/labs/lab1/index.page.mdx": {
-    "file": "assets/index.page.12e3914b.js",
+    "file": "assets/index.page.b72cc96b.js",
     "src": "pages/labs/lab1/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -80,7 +107,7 @@
     ]
   },
   "pages/labs/lab2/index.page.mdx": {
-    "file": "assets/index.page.ee7c42a1.js",
+    "file": "assets/index.page.8dc48fd9.js",
     "src": "pages/labs/lab2/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -88,7 +115,7 @@
     ]
   },
   "pages/labs/lab4/index.page.mdx": {
-    "file": "assets/index.page.d50a8ea8.js",
+    "file": "assets/index.page.0f298662.js",
     "src": "pages/labs/lab4/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -96,7 +123,7 @@
     ]
   },
   "pages/labs/lab8/index.page.mdx": {
-    "file": "assets/index.page.2097a054.js",
+    "file": "assets/index.page.4efaaa2c.js",
     "src": "pages/labs/lab8/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -104,7 +131,7 @@
     ]
   },
   "pages/projects/raster/index.page.mdx": {
-    "file": "assets/index.page.b17681eb.js",
+    "file": "assets/index.page.267f10b1.js",
     "src": "pages/projects/raster/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -112,7 +139,7 @@
     ]
   },
   "pages/projects/ray/index.page.mdx": {
-    "file": "assets/index.page.e3e7ad03.js",
+    "file": "assets/index.page.d1eccaf9.js",
     "src": "pages/projects/ray/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -120,7 +147,7 @@
     ]
   },
   "pages/projects/realtime/index.page.mdx": {
-    "file": "assets/index.page.0cbf41bd.js",
+    "file": "assets/index.page.f4925e0c.js",
     "src": "pages/projects/realtime/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
