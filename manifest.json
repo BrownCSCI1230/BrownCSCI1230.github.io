@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.jsx.5da18fd7.js",
+    "file": "assets/renderer/_default.page.client.jsx.04ea13c3.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "dynamicImports": [
@@ -23,11 +23,11 @@
       "renderer/_default.page.server.jsx"
     ],
     "css": [
-      "assets/renderer/_default.page.client.jsx.f57263f5.css"
+      "assets/renderer/_default.page.client.jsx.b61fa1c2.css"
     ]
   },
   "pages/hours.page.mdx": {
-    "file": "assets/hours.page.bd84f56a.js",
+    "file": "assets/hours.page.ad080468.js",
     "src": "pages/hours.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -35,7 +35,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/index.page.0cd25ec1.js",
+    "file": "assets/index.page.0d8f7aa4.js",
     "src": "pages/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -43,7 +43,7 @@
     ]
   },
   "pages/staff.page.mdx": {
-    "file": "assets/staff.page.0980fa94.js",
+    "file": "assets/staff.page.f68c8dca.js",
     "src": "pages/staff.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -51,7 +51,7 @@
     ]
   },
   "pages/docs/code-blocks.page.mdx": {
-    "file": "assets/code-blocks.page.a600621c.js",
+    "file": "assets/code-blocks.page.4b9a5efc.js",
     "src": "pages/docs/code-blocks.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -59,7 +59,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/index.page.a13e0367.js",
+    "file": "assets/index.page.c510d8cb.js",
     "src": "pages/docs/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -67,7 +67,7 @@
     ]
   },
   "pages/docs/inline-code.page.mdx": {
-    "file": "assets/inline-code.page.a69ce25b.js",
+    "file": "assets/inline-code.page.9a032839.js",
     "src": "pages/docs/inline-code.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -75,7 +75,7 @@
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/index.page.56affa8c.js",
+    "file": "assets/index.page.d0778e3a.js",
     "src": "pages/labs/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -83,7 +83,7 @@
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/index.page.9e786698.js",
+    "file": "assets/index.page.df31a002.js",
     "src": "pages/projects/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -91,7 +91,7 @@
     ]
   },
   "pages/labs/lab0/index.page.mdx": {
-    "file": "assets/index.page.2ececf8c.js",
+    "file": "assets/index.page.c7ed2879.js",
     "src": "pages/labs/lab0/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -99,7 +99,7 @@
     ]
   },
   "pages/labs/lab1/index.page.mdx": {
-    "file": "assets/index.page.9cd0854a.js",
+    "file": "assets/index.page.281bafa0.js",
     "src": "pages/labs/lab1/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -107,7 +107,7 @@
     ]
   },
   "pages/labs/lab2/index.page.mdx": {
-    "file": "assets/index.page.9d4485e0.js",
+    "file": "assets/index.page.3c44ef15.js",
     "src": "pages/labs/lab2/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -115,7 +115,7 @@
     ]
   },
   "pages/labs/lab4/index.page.mdx": {
-    "file": "assets/index.page.155c36f4.js",
+    "file": "assets/index.page.a60c7d02.js",
     "src": "pages/labs/lab4/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -123,7 +123,7 @@
     ]
   },
   "pages/labs/lab8/index.page.mdx": {
-    "file": "assets/index.page.2da5330b.js",
+    "file": "assets/index.page.10432532.js",
     "src": "pages/labs/lab8/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -131,7 +131,7 @@
     ]
   },
   "pages/projects/raster/index.page.mdx": {
-    "file": "assets/index.page.075a3404.js",
+    "file": "assets/index.page.9d0b4764.js",
     "src": "pages/projects/raster/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -139,7 +139,7 @@
     ]
   },
   "pages/projects/ray/index.page.mdx": {
-    "file": "assets/index.page.c8ef5b65.js",
+    "file": "assets/index.page.22e75e34.js",
     "src": "pages/projects/ray/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -147,7 +147,7 @@
     ]
   },
   "pages/projects/realtime/index.page.mdx": {
-    "file": "assets/index.page.7ef051e5.js",
+    "file": "assets/index.page.8ffd86b6.js",
     "src": "pages/projects/realtime/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
