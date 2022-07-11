@@ -1,12 +1,11 @@
 {
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.jsx.722d8811.js",
+    "file": "assets/renderer/_default.page.client.jsx.ad1dad92.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "dynamicImports": [
       "pages/hours.page.mdx",
       "pages/index.page.mdx",
-      "pages/staff.page.mdx",
       "pages/docs/code-blocks.page.mdx",
       "pages/docs/cpp-guidelines.page.mdx",
       "pages/docs/index.page.mdx",
@@ -24,11 +23,11 @@
       "renderer/_default.page.server.jsx"
     ],
     "css": [
-      "assets/renderer/_default.page.client.jsx.f9532314.css"
+      "assets/renderer/_default.page.client.jsx.83c955bd.css"
     ]
   },
   "pages/hours.page.mdx": {
-    "file": "assets/hours.page.c935b94b.js",
+    "file": "assets/hours.page.acd2002c.js",
     "src": "pages/hours.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -36,23 +35,15 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/index.page.a7528ae0.js",
+    "file": "assets/index.page.8fd55c82.js",
     "src": "pages/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
       "renderer/_default.page.client.jsx"
     ]
   },
-  "pages/staff.page.mdx": {
-    "file": "assets/staff.page.1afe7fe9.js",
-    "src": "pages/staff.page.mdx",
-    "isDynamicEntry": true,
-    "imports": [
-      "renderer/_default.page.client.jsx"
-    ]
-  },
   "pages/docs/code-blocks.page.mdx": {
-    "file": "assets/code-blocks.page.42717526.js",
+    "file": "assets/code-blocks.page.ca069a3b.js",
     "src": "pages/docs/code-blocks.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -60,7 +51,7 @@
     ]
   },
   "pages/docs/cpp-guidelines.page.mdx": {
-    "file": "assets/cpp-guidelines.page.f6d58139.js",
+    "file": "assets/cpp-guidelines.page.07d1f927.js",
     "src": "pages/docs/cpp-guidelines.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -68,7 +59,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/index.page.3b0985ab.js",
+    "file": "assets/index.page.a4027be3.js",
     "src": "pages/docs/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -76,7 +67,7 @@
     ]
   },
   "pages/docs/inline-code.page.mdx": {
-    "file": "assets/inline-code.page.6aa6b553.js",
+    "file": "assets/inline-code.page.0ca9a979.js",
     "src": "pages/docs/inline-code.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -84,7 +75,7 @@
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/index.page.965d6fa0.js",
+    "file": "assets/index.page.cce3e2cb.js",
     "src": "pages/labs/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -92,7 +83,7 @@
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/index.page.556dbb18.js",
+    "file": "assets/index.page.5ff67f1e.js",
     "src": "pages/projects/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -100,7 +91,7 @@
     ]
   },
   "pages/labs/lab0/index.page.mdx": {
-    "file": "assets/index.page.8b804cdc.js",
+    "file": "assets/index.page.d27bca7f.js",
     "src": "pages/labs/lab0/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -108,7 +99,7 @@
     ]
   },
   "pages/labs/lab1/index.page.mdx": {
-    "file": "assets/index.page.6d975fd9.js",
+    "file": "assets/index.page.c92613be.js",
     "src": "pages/labs/lab1/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -116,7 +107,7 @@
     ]
   },
   "pages/labs/lab2/index.page.mdx": {
-    "file": "assets/index.page.5a9a4de0.js",
+    "file": "assets/index.page.e8149828.js",
     "src": "pages/labs/lab2/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -124,7 +115,7 @@
     ]
   },
   "pages/labs/lab4/index.page.mdx": {
-    "file": "assets/index.page.71f9feb2.js",
+    "file": "assets/index.page.8273b9ad.js",
     "src": "pages/labs/lab4/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -132,7 +123,7 @@
     ]
   },
   "pages/labs/lab8/index.page.mdx": {
-    "file": "assets/index.page.35f7fef2.js",
+    "file": "assets/index.page.b4da335f.js",
     "src": "pages/labs/lab8/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -140,7 +131,7 @@
     ]
   },
   "pages/projects/raster/index.page.mdx": {
-    "file": "assets/index.page.8378c106.js",
+    "file": "assets/index.page.81c26bd0.js",
     "src": "pages/projects/raster/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -148,7 +139,7 @@
     ]
   },
   "pages/projects/ray/index.page.mdx": {
-    "file": "assets/index.page.a021f756.js",
+    "file": "assets/index.page.163e5447.js",
     "src": "pages/projects/ray/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
@@ -156,7 +147,7 @@
     ]
   },
   "pages/projects/realtime/index.page.mdx": {
-    "file": "assets/index.page.14c826cc.js",
+    "file": "assets/index.page.6dd8d2c3.js",
     "src": "pages/projects/realtime/index.page.mdx",
     "isDynamicEntry": true,
     "imports": [
