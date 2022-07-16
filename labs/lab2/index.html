@@ -6,10 +6,10 @@
         <meta name="description" content="We teach computer graphics!">
         <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.8ef8e0dd.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.6b7c91a2.js"></head>
+      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.1e425849.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.f4e4c4d1.js"></head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:0.350s"><div id="a"></div><div id="b"></div><div id="c"></div><div id="d"></div><div id="e"></div><div id="f"></div></a><div id="nav-items" class="no-select"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-2-pencils">Lab 2: Pencils</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#getting-started">Getting Started</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#stencil-code">Stencil Code</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#application-windows">Application Windows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#command-line-arguments">Command Line Arguments</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#representing-colors">Representing Colors</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#grayscale">Grayscale</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rgba">RGBA</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#a-note-on-types-and-memory">A Note On Types and Memory</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#float---uint-conversion">Float - Uint Conversion</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#your-first-canvas">Your First Canvas</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-2d-arrays">Creating 2D Arrays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#modifying-2d-arrays">Modifying 2D Arrays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-rgba-struct">The RGBA Struct</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#the-cs-1230-rgba-struct">The CS 1230 RGBA Struct</a></li></ol></li></ol></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:0.350s"><div id="a"></div><div id="b"></div><div id="c"></div><div id="d"></div><div id="e"></div><div id="f"></div></a><div id="nav-items" class="no-select"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-2-pencils">Lab 2: Pencils</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#getting-started">Getting Started</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#stencil-code">Stencil Code</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#application-windows">Application Windows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#command-line-arguments">Command Line Arguments</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#representing-colors">Representing Colors</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#grayscale">Grayscale</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rgba">RGBA</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#a-note-on-types-and-memory">A Note On Types and Memory</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#float---uint-conversion">Float - Uint Conversion</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#your-first-canvas">Your First Canvas</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-2d-arrays">Creating 2D Arrays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#modifying-2d-arrays">Modifying 2D Arrays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#arrays-of-rgba-values">Arrays of RGBA Values</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#defining-an-rgba-struct">Defining An RGBA Struct</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#using-your-rgba-struct">Using Your RGBA Struct</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#making-pixel-art">Making Pixel Art</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#the-pencil-tool">The Pencil Tool</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#canvas-widget">Canvas Widget</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#mouse-interaction">Mouse Interaction</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-leaky-pencil">Creating a Leaky Pencil</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-proper-pencil">Creating a Proper Pencil</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#end">End</a></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="lab-2-pencils"><a aria-hidden="true" tabindex="-1" href="#lab-2-pencils"><span class="icon icon-link"></span></a>Lab 2: Pencils</h1>
 <ul>
@@ -115,48 +115,76 @@
 </ol>
 <div class="success-callout"><p>In CS 1230, we will store all our pixel data in <strong>row-major order</strong>.</p></div>
 <div class="task-callout"><p>Create a <em>grayscale</em> image using a 2D array.</p><ol>
-<li>In [ todo: function ], initialize a gray canvas of <code>10 x 10</code> pixels by creating a <code>std::vector</code> of <code>float</code>s in [ todo: location], then</li>
-<li>Set the initial value of all its elements to <code>0.123</code>.<!-- -->
+<li>In [ todo: function ], initialize a gray canvas of <code>10 x 10</code> pixels by creating a <code>std::vector</code> of <code>float</code>s in [ todo: location ], then</li>
+<li>Set the initial value of all its elements to <code>0.5f</code> (<code>f</code> means <code>float</code>).<!-- -->
 <ul>
-<li>Do not use any <code>for</code> loops.</li>
-<li>You may find <code>std::fill</code> or the <code>std::vector</code> constructor useful.</li>
+<li>Don&#x27;t forget to ensure that your vector is of the correct length.</li>
+<li>You may find <code>std::fill</code> useful. You may also use a <code>for</code> loop to set each element.</li>
 </ul>
 </li>
 </ol></div>
-<div class="task-callout"><p>Display what your image by passing the vector to <code>displayGrayCanvas()</code> at [ todo: location ], then build and run the application.</p><p>Remember to check that you provided the correct command line arguments.</p></div>
+<div class="task-callout"><p>Display your image by passing the vector to <code>displayGrayCanvas()</code> at [ todo: location ], then build and run the application.</p><p>Remember to check that you provided the correct command line arguments.</p></div>
 <p>If you see a gray box, you&#x27;re good. From now on, we will be using this image as our canvas, and you&#x27;ll figure out how to &#x27;draw&#x27; on it.</p>
 <h3 id="modifying-2d-arrays"><a aria-hidden="true" tabindex="-1" href="#modifying-2d-arrays"><span class="icon icon-link"></span></a>Modifying 2D Arrays</h3>
-<p>[ WIP ]</p>
-<p>By modifying data values in the array you just created, you can make the corresponding points, or pixels turn to different colors.</p>
-<p>You can try changing a random data to 255 and observe what happen.</p>
-<p>A white dot showed up on your canvas, right?</p>
-<p>Your job in this section, is to work our which pixel correspond to which element in the array, and change their values. Refer to the explanation on row-major-order for hint.</p>
-<div class="task-callout"><p>Match this image by indexing and changing values of the vector you just created.</p><p><img src="/public/labs/lab2/pixelHeart.png" alt="todo"/></p></div>
-<h3 id="the-rgba-struct"><a aria-hidden="true" tabindex="-1" href="#the-rgba-struct"><span class="icon icon-link"></span></a>The RGBA Struct</h3>
-<p>Now, let&#x27;s change the canvas to a colorful one. Instead of a <code>std::vector</code> of numbers, we want a <code>std::vector</code> of something that contains all 4 RGBA channels.</p>
-<h4 id="the-cs-1230-rgba-struct"><a aria-hidden="true" tabindex="-1" href="#the-cs-1230-rgba-struct"><span class="icon icon-link"></span></a>The CS 1230 RGBA Struct</h4>
-<p>Since we have to group several related variables together, we should create a <code>struct</code>. A simple example of how to define an RGBA struct is below:</p>
-<pre class="language-c++"><code class="language-c++ code-highlight"><span class="code-line">#<span class="pl-k">ifndef</span> SIMPLE_RGBA
-</span><span class="code-line">#<span class="pl-k">define</span> <span class="pl-en">SIMPLE_RGBA</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">struct</span> <span class="pl-en">SimpleRGBA</span>
-</span><span class="code-line">{
-</span><span class="code-line">	std::<span class="pl-c1">uint8_t</span> r;
-</span><span class="code-line">	std::<span class="pl-c1">uint8_t</span> g;
-</span><span class="code-line">	std::<span class="pl-c1">uint8_t</span> b;
-</span><span class="code-line">	std::<span class="pl-c1">uint8_t</span> a;
-</span><span class="code-line">}
-</span><span class="code-line">
-</span><span class="code-line">#endif
+<p>Now that you&#x27;ve got an image, your next task is to modify it.</p>
+<div class="task-callout"><p>Change the first element of the <code>std::vector</code> you just created from <code>0.5f</code> to <code>1.0f</code>, then re-run the application. The <em>top-left</em> pixel in the resulting image should now be white.</p></div>
+<div class="task-callout"><p>Figure out which pixels correspond to which indices in the array, and change the appropriate pixels&#x27; values to match the following image:</p><p><img src="/labs/lab2/pixelHeart.png" alt="todo"/></p><p><strong>Hint:</strong></p><p>Refer to the diagram on row-major ordering. How can you use a given pixel&#x27;s <code>row</code> and <code>column</code> (or <code>y</code> and <code>x</code> position respectively) to determine its index in the flattened vector?</p></div>
+<h3 id="arrays-of-rgba-values"><a aria-hidden="true" tabindex="-1" href="#arrays-of-rgba-values"><span class="icon icon-link"></span></a>Arrays of RGBA Values</h3>
+<p>Next, we&#x27;d like to modify our canvas to support <strong>color</strong>.</p>
+<p>This will require changing our image representation from a <code>std::vector</code> of scalar <code>float</code> values, to one of <em>something</em> that contains all four <strong>RGBA</strong> values as <code>std::uint8_t</code>s.</p>
+<h4 id="defining-an-rgba-struct"><a aria-hidden="true" tabindex="-1" href="#defining-an-rgba-struct"><span class="icon icon-link"></span></a>Defining An RGBA Struct</h4>
+<p>Incidentally, having to group several related variables together is the perfect use case for a <code>struct</code>, which you learned about in lab 1. The definition of a simple RGBA struct might look something like this:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1">#<span class="pl-k">ifndef</span> SIMPLE_RGBA
+</span><span class="code-line line-number" line="2">#<span class="pl-k">define</span> <span class="pl-en">SIMPLE_RGBA</span>
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number highlight-line" line="4"><span class="pl-k">struct</span> <span class="pl-en">SimpleRGBA</span>
+</span><span class="code-line line-number highlight-line" line="5">{
+</span><span class="code-line line-number highlight-line" line="6">  std::<span class="pl-c1">uint8_t</span> r;
+</span><span class="code-line line-number highlight-line" line="7">  std::<span class="pl-c1">uint8_t</span> g;
+</span><span class="code-line line-number highlight-line" line="8">  std::<span class="pl-c1">uint8_t</span> b;
+</span><span class="code-line line-number highlight-line" line="9">  std::<span class="pl-c1">uint8_t</span> a;
+</span><span class="code-line line-number highlight-line" line="10">}
+</span><span class="code-line line-number" line="11">
+</span><span class="code-line line-number" line="12">#endif <span class="pl-c">// SIMPLE_RGBA</span>
 </span></code></pre>
-<div class="task-callout"><p>Define an RGBA struct in your own project by copying the above code into a <em>new</em> <strong>header file</strong>.</p><details><summary>Step by step: how to create a new file in Qt</summary><ul>
+<details><summary>What are the lines with <code>#ifndef</code>, <code>#define</code>, and <code>#endif</code> doing?</summary><p>This trio of <strong><a href="https://en.wikipedia.org/wiki/Directive_(programming)">preprocessor directives</a></strong> acts as an <strong><a href="https://en.wikipedia.org/wiki/Include_guard">include guard</a></strong>.</p><p>Effectively, it prevents lines <code>2-11</code> from being compiled if the <em>macro</em> <code>SIMPLE_RGBA</code> has already been defined, thus preventing an accidental second definition of the <em>struct</em> <code>SimpleRGBA</code>. This prevents <strong>double-inclusion</strong>, and aids compliance with the <a href="https://en.wikipedia.org/wiki/One_Definition_Rule">one definition rule</a> of C++.</p><p>Every header file should have an include guard. Since these three lines can get unwieldy, a (highly recommended) alternative is to use the following preprocessor directive, <a href="https://en.wikipedia.org/wiki/Pragma_once"><code>#pragma once</code></a>:</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number highlight-line" line="1">#<span class="pl-k">pragma</span> once
+</span><span class="code-line line-number" line="2">
+</span><span class="code-line line-number" line="3"><span class="pl-k">struct</span> <span class="pl-en">foo</span>
+</span><span class="code-line line-number" line="4">{
+</span><span class="code-line line-number" line="5">  <span class="pl-k">int</span> member;
+</span><span class="code-line line-number" line="6">};
+</span></code></pre></details>
+<p>The above code defines a <code>struct</code> with four member variables <code>r</code>, <code>g</code>, <code>b</code>, and <code>a</code>. Instances can be initialized like so:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> white = RGBA{<span class="pl-c1">255</span>, <span class="pl-c1">255</span>, <span class="pl-c1">255</span>, <span class="pl-c1">255</span>}; <span class="pl-c">// Fully opaque white</span>
+</span><span class="code-line"><span class="pl-k">auto</span> green = RGBA{<span class="pl-c1">0</span>,   <span class="pl-c1">255</span>,   <span class="pl-c1">0</span>, <span class="pl-c1">128</span>}; <span class="pl-c">// Partially opaque green</span>
+</span></code></pre>
+<div class="task-callout"><p>Define an RGBA struct in your own project by copying the above code into a new <strong>header file</strong>, <code>SimpleRGBA.h</code>.</p><details><summary>Step by step: how to create a new header file in Qt</summary><ol>
 <li>Right click on the Project side-bar and select <code>Add New</code></li>
 <li>You should see an interface asking you to select the type of file you&#x27;d like to add. Select <code>C/C++ header file</code>.</li>
-</ul><div class="todo-callout"><p>Screenshots</p></div><ul>
+</ol><div class="todo-callout"><p>Screenshots</p></div><ol start="3">
 <li>Follow the interface instructions to define the name and location of your header file.</li>
 <li>In the Project Management section, select <code>Done</code>.</li>
 <li>You should see a new header file appear in your chosen location after a few seconds.</li>
-</ul></details></div><style>
+</ol></details></div>
+<h4 id="using-your-rgba-struct"><a aria-hidden="true" tabindex="-1" href="#using-your-rgba-struct"><span class="icon icon-link"></span></a>Using Your RGBA Struct</h4>
+<p>To use a struct you&#x27;ve defined in one header file in a <em>different</em> file, you must <code>#include</code> that header file in the second file.</p>
+<div class="task-callout"><p>Modify your previous canvas-generating code so that it creates a <code>std::vector</code> of <code>RGBA</code>s instead of <code>float</code>s.</p><ol>
+<li>As before, you want a <code>10 x 10</code> canvas.</li>
+<li>Initialize the RGB values to any color you like, but set all alpha channel values to <code>255</code>.<!-- -->
+<ul>
+<li>Feel free to scroll back up to the <a href="#RGBA">color picker</a>, to select a color!</li>
+</ul>
+</li>
+<li>Pass your canvas to <code>displayColorCanvas()</code> instead of <code>displayGrayCanvas()</code>.</li>
+<li><strong>Remember to change your command line argument from <code>grayscale</code> to <code>color</code>!</strong></li>
+</ol></div>
+<h3 id="making-pixel-art"><a aria-hidden="true" tabindex="-1" href="#making-pixel-art"><span class="icon icon-link"></span></a>Making Pixel Art</h3>
+<h2 id="the-pencil-tool"><a aria-hidden="true" tabindex="-1" href="#the-pencil-tool"><span class="icon icon-link"></span></a>The Pencil Tool</h2>
+<h3 id="canvas-widget"><a aria-hidden="true" tabindex="-1" href="#canvas-widget"><span class="icon icon-link"></span></a>Canvas Widget</h3>
+<h3 id="mouse-interaction"><a aria-hidden="true" tabindex="-1" href="#mouse-interaction"><span class="icon icon-link"></span></a>Mouse Interaction</h3>
+<h3 id="creating-a-leaky-pencil"><a aria-hidden="true" tabindex="-1" href="#creating-a-leaky-pencil"><span class="icon icon-link"></span></a>Creating a Leaky Pencil</h3>
+<h3 id="creating-a-proper-pencil"><a aria-hidden="true" tabindex="-1" href="#creating-a-proper-pencil"><span class="icon icon-link"></span></a>Creating a Proper Pencil</h3>
+<h2 id="end"><a aria-hidden="true" tabindex="-1" href="#end"><span class="icon icon-link"></span></a>End</h2><style>
 mjx-container[jax=&quot;SVG&quot;] {
   direction: ltr;
 }
@@ -274,5 +302,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script type="module" src="/assets/renderer/_default.page.client.jsx.6b7c91a2.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab2","pageProps":"!undefined"}}</script></body>
+      <script type="module" src="/assets/renderer/_default.page.client.jsx.f4e4c4d1.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab2","pageProps":"!undefined"}}</script></body>
     </html>
