@@ -6,7 +6,7 @@
         <meta name="description" content="We teach computer graphics!">
         <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.1398bfc2.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.a22a6670.js"></head>
+      <link rel="stylesheet" type="text/css" href="/assets/renderer/_default.page.client.jsx.95386706.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.jsx.8ee40795.js"></head>
       <body>
         <div id="root">
           <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:0.350s"><div id="a"></div><div id="b"></div><div id="c"></div><div id="d"></div><div id="e"></div><div id="f"></div></a><div id="nav-items" class="no-select"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-8-trimeshes">Lab 8: Trimeshes</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#representing-objects-via-trimeshes">Representing Objects via Trimeshes</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#level-of-detail-tessellation-level">Level-of-Detail (Tessellation Level)</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#trimeshes-in-code">Trimeshes In Code</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#a-single-triangle">A Single Triangle</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#per-face-normals">Per-Face Normals</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#per-vertex-normals">Per-Vertex Normals</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#why-do-normals-and-winding-order-matter">Why Do Normals And Winding Order Matter?</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#multiple-triangles-or-a-trimesh">Multiple Triangles, Or, A Trimesh</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#creating-your-own-trimeshes">Creating Your Own Trimeshes</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#our-stencil-code">Our Stencil Code</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-cube">Creating a Cube</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#creating-a-tile">Creating a Tile</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#creating-a-face-w-tessellation">Creating a Face, w/ Tessellation</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#bringing-it-all-together-creating-a-cube">Bringing It All Together: Creating a Cube</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-sphere">Creating a Sphere</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#spherical-coordinates-make-things-easier">Spherical Coordinates Make Things Easier</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#creating-a-wedge">Creating a Wedge</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#creating-a-sphere-1">Creating a Sphere</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#end">End</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#food-for-thought">Food For Thought</a></li></ol></li></ol></li></ol></nav><main>
@@ -71,7 +71,7 @@ etc.</p></details>
 <p>Most importantly, notice that each shape inherits <code>std::vector&lt;float&gt; m_vertexData</code> from <code>OpenGLShape</code>. You&#x27;ll be editing this list with the positions and normals for each shape. <strong>Note that <code>m_vertexData</code> alternates between vertex positions and normals!</strong></p>
 <p>![m_vertexData][url]</p>
 <p>On the right side of the UI, you will eventually see the shapes generated from <code>m_vertexData</code>. You won&#x27;t see anything right now because <code>m_vertexData</code> is empty.</p>
-<div class="task-callout"><p><strong>Task 1</strong></p><p>In the <code>Triangle</code> class, fill out the <code>setVertexData()</code> function stub.</p><p>Use the following coordinate points:</p><ul>
+<div class="task-callout callout"><p><strong>Task 1</strong></p><p>In the <code>Triangle</code> class, fill out the <code>setVertexData()</code> function stub.</p><p>Use the following coordinate points:</p><ul>
 <li>(-0.5, -0.5, 0)</li>
 <li>(0.5, -0.5, 0)</li>
 <li>(-0.5, 0.5, 0)</li>
@@ -82,19 +82,19 @@ etc.</p></details>
 <h3 id="creating-a-cube"><a href="#creating-a-cube">Creating a Cube</a></h3>
 <p>Now that you&#x27;ve rendered a triangle, it&#x27;s time to render a Cube :)</p>
 <h4 id="creating-a-tile"><a href="#creating-a-tile">Creating a Tile</a></h4>
-<div class="task-callout"><p><strong>Task 2</strong></p><p>In the <code>Cube</code> class, fill out the <code>makeTile()</code> function stub.</p><p>Uncomment the <code>makeTile()</code> function call in <code>setVertexData()</code>. Note that you&#x27;ll use this function for the next task.</p></div>
+<div class="task-callout callout"><p><strong>Task 2</strong></p><p>In the <code>Cube</code> class, fill out the <code>makeTile()</code> function stub.</p><p>Uncomment the <code>makeTile()</code> function call in <code>setVertexData()</code>. Note that you&#x27;ll use this function for the next task.</p></div>
 <p>Your tile should look like this:</p>
 <p>![tile gif][url]</p>
 <h4 id="creating-a-face-w-tessellation"><a href="#creating-a-face-w-tessellation">Creating a Face, w/ Tessellation</a></h4>
 <p>Now, that you have your tile, you can create one face of the Cube! Notice how parameter 1 controls the number of tiles in each row and column:</p>
 <p>![shape tessellation img][url]</p>
-<div class="task-callout"><p><strong>Task 3</strong></p><p>In the <code>Cube</code> class, fill out the <code>makeFace()</code> function stub.</p><p>Comment out the <code>makeTile()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeFace()</code> function call. This will render the positive z face of the Cube. The face should tessellate differently depending on parameter 1.</p><ul>
+<div class="task-callout callout"><p><strong>Task 3</strong></p><p>In the <code>Cube</code> class, fill out the <code>makeFace()</code> function stub.</p><p>Comment out the <code>makeTile()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeFace()</code> function call. This will render the positive z face of the Cube. The face should tessellate differently depending on parameter 1.</p><ul>
 <li>Use the <code>makeTile()</code> function you wrote in the previous task in <code>makeFace()</code>.</li>
 </ul></div>
 <p>Your face should look like this:</p>
 <p>![face tessellation gif][url]</p>
 <h4 id="bringing-it-all-together-creating-a-cube"><a href="#bringing-it-all-together-creating-a-cube">Bringing It All Together: Creating a Cube</a></h4>
-<div class="task-callout"><p><strong>Task 4</strong></p><p>Implement all 6 sides of your Cube using the <code>makeFace()</code> function you implemented.</p><p>You should call <code>makeFace()</code> in <code>setVertexData()</code>.</p><ul>
+<div class="task-callout callout"><p><strong>Task 4</strong></p><p>Implement all 6 sides of your Cube using the <code>makeFace()</code> function you implemented.</p><p>You should call <code>makeFace()</code> in <code>setVertexData()</code>.</p><ul>
 <li>It might be helpful to draw a diagram of the Cube to figure out the positions of all its corners!</li>
 <li>Remember that the Cube has a radius of 0.5 and lies in the bounds [-0.5, 0.5] on all axes.</li>
 </ul></div>
@@ -112,12 +112,12 @@ etc.</p></details>
 <details><summary>Refresher: The Spherical Coordinate System</summary><p>Remember polar coordinates (<em>r</em>, 𝜃) from high school geometry? Spherical coordinates (<em>r</em>, 𝜃, 𝜙) are like polar coordinates but in 3D! The spherical coordinate system specifies a 3D point in space using (<em>r</em>, 𝜃, 𝜙). for more details, read this <a href="https://en.wikipedia.org/wiki/Spherical_coordinate_system">Wikipedia article on the Spherical Coordinate System</a> :)</p></details>
 <table><thead><tr><th align="center">Coordinate</th><th align="center">Diagram</th></tr></thead><tbody><tr><td align="center"><em>r</em>: the radial distance from the origin. For sphere, <code>r=0.5</code></td><td align="center"><img src="handout_images/amog-us-among-us.gif" width="300"/></td></tr><tr><td align="center">𝜃: the polar angle. For sphere, this is in radians.</td><td align="center"><img src="handout_images/amog-us-among-us.gif" width="300"/></td></tr><tr><td align="center">𝜙: the azimuthal angle. For sphere, this is in radians.</td><td align="center"><img src="handout_images/amog-us-among-us.gif" width="300"/></td></tr></tbody></table>
 <h4 id="creating-a-wedge"><a href="#creating-a-wedge">Creating a Wedge</a></h4>
-<div class="task-callout"><p><strong>Task 5</strong></p><p>Implement the <code>makeTile()</code> function stub in the <code>Sphere</code> Class.</p><p>This function should look very similar to the <code>makeTile()</code> function in the <code>Cube</code> class.</p><ul>
+<div class="task-callout callout"><p><strong>Task 5</strong></p><p>Implement the <code>makeTile()</code> function stub in the <code>Sphere</code> Class.</p><p>This function should look very similar to the <code>makeTile()</code> function in the <code>Cube</code> class.</p><ul>
 <li>Note that the normals are calculated differently from those in Cube.</li>
 <li>The normals for Sphere are per-vertex normals.</li>
 <li>Refer to the diagram for what your normals should look like.</li>
 </ul><p>![sphere normals diagram][url]</p></div>
-<div class="task-callout"><p><strong>Task 6</strong></p><p>Implement the <code>makeWedge()</code> function stub in the <code>Sphere</code> Class.</p><p>Uncomment the <code>makeWedge()</code> function call in <code>setVertexData()</code>.</p><ul>
+<div class="task-callout callout"><p><strong>Task 6</strong></p><p>Implement the <code>makeWedge()</code> function stub in the <code>Sphere</code> Class.</p><p>Uncomment the <code>makeWedge()</code> function call in <code>setVertexData()</code>.</p><ul>
 <li>Use the <code>makeTile()</code> function from task 5.</li>
 <li>Remember that we are making a wedge, so you need to pay attention to parameter 1 and 𝜙.</li>
 <li>Remember that everything is in radians!</li>
@@ -139,7 +139,7 @@ etc.</p></details>
 <p>Your wedge should look like this:</p>
 <p>![wedge gif][url]</p>
 <h4 id="creating-a-sphere-1"><a href="#creating-a-sphere-1">Creating a Sphere</a></h4>
-<div class="task-callout"><p><strong>Task 7</strong></p></div>
+<div class="task-callout callout"><p><strong>Task 7</strong></p></div>
 <p>| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Implement the <code>makeOrange()</code> function stub in the <code>Sphere</code> Class. |
 | Comment out the <code>makeWedge()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeOrange()</code> function call. <ul><li>Remember that everything is in radians!</li><li>Remember that we are making multiple wedges (aka a Sphere), so you need to pay attention to parameter 2 and 𝜃.</li></ul> |</p>
@@ -150,5 +150,5 @@ etc.</p></details>
 <h3 id="food-for-thought"><a href="#food-for-thought">Food For Thought</a></h3>
 <p>Next week, you&#x27;ll be learning how to use OpenGL to render triangle meshes. OpenGL uses VBOs (vertex buffer objects) which store a list of vertices similar to <code>m_vertexData</code> in this lab. You&#x27;ll learn more about this next week, but we just wanted to give you a brief intro. Good luck!</p></main></div>
         </div>
-      <script type="module" src="/assets/renderer/_default.page.client.jsx.a22a6670.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab8","pageProps":"!undefined"}}</script></body>
+      <script type="module" src="/assets/renderer/_default.page.client.jsx.8ee40795.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab8","pageProps":"!undefined"}}</script></body>
     </html>
