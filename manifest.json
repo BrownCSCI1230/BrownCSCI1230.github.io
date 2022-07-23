@@ -9,7 +9,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.7cc0c03f.js",
+    "file": "assets/pages/index.page.1e46b40e.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -18,7 +18,7 @@
     ]
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.237045f7.js",
+    "file": "assets/renderer/_default.page.client.3f94d57e.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -26,7 +26,7 @@
       "_chunk-903e764a.js"
     ],
     "css": [
-      "assets/index.7c04dde9.css"
+      "assets/index.3fd591fa.css"
     ]
   },
   "pages/docs/code-blocks.page.mdx": {
@@ -75,7 +75,7 @@
     ]
   },
   "pages/labs/lab0.page.mdx": {
-    "file": "assets/pages/labs/lab0.page.a1048057.js",
+    "file": "assets/pages/labs/lab0.page.3b6ebbff.js",
     "src": "pages/labs/lab0.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -84,7 +84,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.800351af.js",
+    "file": "assets/pages/labs/lab1.page.7b579269.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -120,7 +120,7 @@
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.0675f749.js",
+    "file": "assets/pages/labs/lab4.page.e6d9ebdf.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -140,7 +140,7 @@
     ]
   },
   "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.b7840776.js",
+    "file": "assets/pages/labs/lab6.page.a332deed.js",
     "src": "pages/labs/lab6.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -160,7 +160,7 @@
     ]
   },
   "pages/labs/lab8.page.mdx": {
-    "file": "assets/pages/labs/lab8.page.82396810.js",
+    "file": "assets/pages/labs/lab8.page.72a043a0.js",
     "src": "pages/labs/lab8.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -205,11 +205,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.565923dc.js",
+    "file": "assets/entry-client-routing.eb50712c.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-fa5bfae3.js"
+      "_chunk-fc060bbf.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
@@ -238,11 +238,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.14b56cd2.js",
+    "file": "assets/entry-server-routing.fb29be3f.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-fa5bfae3.js"
+      "_chunk-fc060bbf.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
@@ -279,15 +279,15 @@
       "_chunk-903e764a.js"
     ]
   },
-  "_chunk-fa5bfae3.js": {
-    "file": "assets/chunk-fa5bfae3.js"
+  "_chunk-fc060bbf.js": {
+    "file": "assets/chunk-fc060bbf.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
     "src": "renderer/_default.page.server.jsx?extractStyles&lang.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.7c04dde9.css"
+      "assets/index.3fd591fa.css"
     ]
   }
 }
