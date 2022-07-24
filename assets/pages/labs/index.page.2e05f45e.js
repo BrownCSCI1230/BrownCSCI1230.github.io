@@ -13,6 +13,6 @@ import{j as s}from"../../chunk-903e764a.js";const t={title:"Labs",hideTOC:!0};fu
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab7",children:"Terrain"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab8",children:"Trimeshes"})}),`
 `,s.exports.jsx(e.li,{children:"VBOs and VAOs"}),`
-`,s.exports.jsx(e.li,{children:"Shaders"}),`
+`,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab10",children:"Shaders"})}),`
 `,s.exports.jsx(e.li,{children:"Textures and FBOs"}),`
-`]})]})]})}function i(r={}){const{wrapper:e}=r.components||{};return e?s.exports.jsx(e,Object.assign({},r,{children:s.exports.jsx(n,r)})):n(r)}export{i as default,t as documentProps};
+`]})]})]})}function a(r={}){const{wrapper:e}=r.components||{};return e?s.exports.jsx(e,Object.assign({},r,{children:s.exports.jsx(n,r)})):n(r)}export{a as default,t as documentProps};

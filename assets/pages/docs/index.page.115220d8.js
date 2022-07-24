@@ -3,7 +3,7 @@ import{j as e}from"../../chunk-903e764a.js";const c={title:"Docs",hideTOC:!0};fu
 `,e.exports.jsx(s.p,{children:"These are documents for staff and students' reference."}),`
 `,e.exports.jsx(s.h2,{id:"students",children:e.exports.jsx(s.a,{href:"#students",children:"Students"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"GitHub Guide"}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/code-readability",children:"Code Readability"})}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"staff",children:e.exports.jsx(s.a,{href:"#staff",children:"Staff"})}),`
 `,e.exports.jsxs(s.ul,{children:[`

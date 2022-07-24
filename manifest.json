@@ -18,7 +18,7 @@
     ]
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.3f94d57e.js",
+    "file": "assets/renderer/_default.page.client.ab7c6219.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -26,12 +26,21 @@
       "_chunk-903e764a.js"
     ],
     "css": [
-      "assets/index.3fd591fa.css"
+      "assets/index.d1dc7fdb.css"
     ]
   },
   "pages/docs/code-blocks.page.mdx": {
     "file": "assets/pages/docs/code-blocks.page.b9cc9a7c.js",
     "src": "pages/docs/code-blocks.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
+    ]
+  },
+  "pages/docs/code-readability.page.mdx": {
+    "file": "assets/pages/docs/code-readability.page.995a8c52.js",
+    "src": "pages/docs/code-readability.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -48,7 +57,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.6d7ba01f.js",
+    "file": "assets/pages/docs/index.page.115220d8.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -66,7 +75,7 @@
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.08f10f21.js",
+    "file": "assets/pages/labs/index.page.2e05f45e.js",
     "src": "pages/labs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -90,6 +99,16 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js"
+    ]
+  },
+  "pages/labs/lab10.page.mdx": {
+    "file": "assets/pages/labs/lab10.page.647c877c.js",
+    "src": "pages/labs/lab10.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-30f40460.js"
     ]
   },
   "pages/labs/lab11.page.mdx": {
@@ -205,14 +224,15 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.eb50712c.js",
+    "file": "assets/entry-client-routing.60fb0384.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-fc060bbf.js"
+      "_chunk-506b63ef.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
+      "pages/docs/code-readability.page.mdx",
       "pages/docs/cpp-guidelines.page.mdx",
       "pages/docs/index.page.mdx",
       "pages/docs/inline-code.page.mdx",
@@ -221,6 +241,7 @@
       "pages/labs/index.page.mdx",
       "pages/labs/lab0.page.mdx",
       "pages/labs/lab1.page.mdx",
+      "pages/labs/lab10.page.mdx",
       "pages/labs/lab11.page.mdx",
       "pages/labs/lab12.page.mdx",
       "pages/labs/lab2.page.mdx",
@@ -238,14 +259,15 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.fb29be3f.js",
+    "file": "assets/entry-server-routing.7516ed2d.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-fc060bbf.js"
+      "_chunk-506b63ef.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
+      "pages/docs/code-readability.page.mdx",
       "pages/docs/cpp-guidelines.page.mdx",
       "pages/docs/index.page.mdx",
       "pages/docs/inline-code.page.mdx",
@@ -254,6 +276,7 @@
       "pages/labs/index.page.mdx",
       "pages/labs/lab0.page.mdx",
       "pages/labs/lab1.page.mdx",
+      "pages/labs/lab10.page.mdx",
       "pages/labs/lab11.page.mdx",
       "pages/labs/lab12.page.mdx",
       "pages/labs/lab2.page.mdx",
@@ -279,15 +302,15 @@
       "_chunk-903e764a.js"
     ]
   },
-  "_chunk-fc060bbf.js": {
-    "file": "assets/chunk-fc060bbf.js"
+  "_chunk-506b63ef.js": {
+    "file": "assets/chunk-506b63ef.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
     "src": "renderer/_default.page.server.jsx?extractStyles&lang.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.3fd591fa.css"
+      "assets/index.d1dc7fdb.css"
     ]
   }
 }
