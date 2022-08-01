@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.9433c565.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.0b80a650.css">
         <meta charset="UTF-8">
         <title>Lab 1 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
@@ -486,8 +486,7 @@ to the function, and it could lead to serious performance problems!</p>
 </span><span class="code-line">y2[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// this does nothing to x2, since it&#x27;s a copy</span>
 </span></code></pre><p>The reason behind this oddity is that C arrays automatically decay to the pointer to its first element. Interestingly, the C++ standard only defines the builtin indexing operator on pointers, it is never said that (C) arrays can be indexed. What happens when the compiler sees <code>x1[0]</code> is that, <code>x1</code> first decays to a pointer automatically, then the indexing operator defined on <strong>pointers</strong> gets invoked, and then desugar-ed into <code>*(x1 + 0)</code>. Pointer arithmetic happens behind the scene every time you manipulate an array!</p></details>
 <h2 id="end"><a href="#end">End</a></h2>
-<nav class="toc"><ol class="toc-level toc-level-1"></ol></nav><main><hr/>
-<p>Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6">anonymous feedback form</a>.</p></main></main></div>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.722506b4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.0c362bb1.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-d0780864.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.722506b4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-4f37483a.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.8c83d814.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.1244eaec.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.8c83d814.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-8d7e8324.js"></body>
     </html>

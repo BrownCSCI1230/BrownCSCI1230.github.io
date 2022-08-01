@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.0b80a650.css">
+        <meta charset="UTF-8">
+        <title>Code Readability Guidelines | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#code-readability-guidelines">Code Readability Guidelines</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#naming">Naming</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#casing-recommendations">Casing Recommendations</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#whitespace">Whitespace</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#comments">Comments</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#line-width">Line Width</a></li></ol></li></ol></nav><main>
+<h1 id="code-readability-guidelines"><a href="#code-readability-guidelines">Code Readability Guidelines</a></h1>
+<p>Follow these guidelines, and you&#x27;ll have prettier code. Your grades will look better, too!</p>
+<h2 id="naming"><a href="#naming">Naming</a></h2>
+<p><strong>Name your variables appropriately.</strong></p>
+<p><code>Humans</code> are not <code>Computers</code>.</p>
+<p><code>TAs</code> are a subclass of <code>Humans</code>, and so are <code>You</code>. Use good naming practices!</p>
+<div class="success-callout callout"><details><summary><strong>Good Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">float</span> <span class="pl-en">quadraticFormula</span>(<span class="pl-k">float</span> a, <span class="pl-k">float</span> b, <span class="pl-k">float</span> c) {
+</span><span class="code-line line-number" line="2">  <span class="pl-k">float</span> top = b * b - <span class="pl-c1">sqrt</span>(<span class="pl-c1">4</span> * a * c);
+</span><span class="code-line line-number" line="3">  <span class="pl-k">float</span> bottom = <span class="pl-c1">2</span> * a;
+</span><span class="code-line line-number" line="4">  <span class="pl-k">float</span> result = top / bottom;
+</span><span class="code-line line-number" line="5">  <span class="pl-k">return</span> result;
+</span><span class="code-line line-number" line="6">}
+</span></code></pre></details></div>
+<div class="error-callout callout"><details><summary><strong>Bad Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">float</span> <span class="pl-en">Qf</span>(<span class="pl-k">float</span> a, <span class="pl-k">float</span> b, <span class="pl-k">float</span> c) {
+</span><span class="code-line line-number" line="2">  <span class="pl-k">float</span> t = b * b - <span class="pl-c1">sqrtf</span>(<span class="pl-c1">4</span> * a * c);
+</span><span class="code-line line-number" line="3">  <span class="pl-k">float</span> bm = <span class="pl-c1">2</span> * a;
+</span><span class="code-line line-number" line="4">  <span class="pl-k">float</span> r = t / bm;
+</span><span class="code-line line-number" line="5">  <span class="pl-k">return</span> r;
+</span><span class="code-line line-number" line="6">}
+</span></code></pre></details></div>
+<h3 id="casing-recommendations"><a href="#casing-recommendations">Casing Recommendations</a></h3>
+<ul>
+<li>Class and file names should be <code>StyledLikeThis</code>.</li>
+<li>Variable and function names should be <code>styledLikeThis</code>.</li>
+<li>Constants and macros should be <code>STYLED_LIKE_THIS</code>.</li>
+</ul>
+<h2 id="whitespace"><a href="#whitespace">Whitespace</a></h2>
+<p><strong>Indent your code.</strong></p>
+<p>Indents make your code much more readable. It also helps you keep track of scope and avoid nasty little typos!</p>
+<p><strong>Use newlines to denote sections of code</strong>.</p>
+<p>If your code can be broken into smaller sections (or even better—well-named helper functions), <em>do it!</em></p>
+<div class="success-callout callout"><details><summary><strong>Good Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">int</span> <span class="pl-en">getFibonacciAt</span>(<span class="pl-k">int</span> index) {
+</span><span class="code-line line-number" line="2">  <span class="pl-k">if</span> (index == <span class="pl-c1">0</span>) <span class="pl-k">return</span> <span class="pl-c1">0</span>;
+</span><span class="code-line line-number" line="3">  <span class="pl-k">if</span> (index == <span class="pl-c1">1</span>) <span class="pl-k">return</span> <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5">  <span class="pl-k">int</span> num1 = <span class="pl-c1">0</span>;
+</span><span class="code-line line-number" line="6">  <span class="pl-k">int</span> num2 = <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="7">  <span class="pl-k">int</span> num3 = <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="8">
+</span><span class="code-line line-number" line="9">  <span class="pl-k">while</span> (index &gt; <span class="pl-c1">2</span>) {
+</span><span class="code-line line-number" line="10">    <span class="pl-k">int</span> prevNum3 = num3;
+</span><span class="code-line line-number" line="11">
+</span><span class="code-line line-number" line="12">    num3 = num1 + num2;
+</span><span class="code-line line-number" line="13">    num1 = num2;
+</span><span class="code-line line-number" line="14">    num2 = prevNum3;
+</span><span class="code-line line-number" line="15">
+</span><span class="code-line line-number" line="16">    index --;
+</span><span class="code-line line-number" line="17">  }
+</span><span class="code-line line-number" line="18">
+</span><span class="code-line line-number" line="19">  <span class="pl-k">return</span> num3;
+</span><span class="code-line line-number" line="20">}
+</span></code></pre></details></div>
+<div class="error-callout callout"><details><summary><strong>Bad Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">int</span> <span class="pl-en">getFibonacciAt</span>(<span class="pl-k">int</span> index) {
+</span><span class="code-line line-number" line="2"><span class="pl-k">if</span> (index == <span class="pl-c1">0</span>) <span class="pl-k">return</span> <span class="pl-c1">0</span>;
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5"><span class="pl-k">if</span> (index == <span class="pl-c1">1</span>) <span class="pl-k">return</span> <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="6"><span class="pl-k">int</span> num1 =           <span class="pl-c1">0</span>;
+</span><span class="code-line line-number" line="7"><span class="pl-k">int</span> num2 = <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="8">
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10">
+</span><span class="code-line line-number" line="11">
+</span><span class="code-line line-number" line="12"><span class="pl-k">int</span> num3 = <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="13">    <span class="pl-k">while</span> (index    &gt; <span class="pl-c1">2</span>) {
+</span><span class="code-line line-number" line="14"><span class="pl-k">int</span> prevNum3 = num3;
+</span><span class="code-line line-number" line="15">num3 =       num1 + num2;
+</span><span class="code-line line-number" line="16">num1 =   num2;
+</span><span class="code-line line-number" line="17">num2 = prevNum3;
+</span><span class="code-line line-number" line="18">            index --;
+</span><span class="code-line line-number" line="19">}
+</span><span class="code-line line-number" line="20">               <span class="pl-k">return</span>
+</span><span class="code-line line-number" line="21">num3;
+</span><span class="code-line line-number" line="22">}
+</span></code></pre><blockquote>
+<p>This is only <em>slightly</em> exaggerated. Students have submitted worse! 😪</p>
+</blockquote></details></div>
+<h2 id="comments"><a href="#comments">Comments</a></h2>
+<p><strong>Comments make your code more readable and maintainable</strong>.</p>
+<div class="success-callout callout"><details><summary><strong>Good Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-c">// Levenshtein edit distance. Calculates the minimum</span>
+</span><span class="code-line line-number" line="2"><span class="pl-c">// number of changes (removing, adding, or substituting</span>
+</span><span class="code-line line-number" line="3"><span class="pl-c">// a character) required to make one word the same as</span>
+</span><span class="code-line line-number" line="4"><span class="pl-c">// another word. Is case sensitive.</span>
+</span><span class="code-line line-number" line="5"><span class="pl-k">int</span> <span class="pl-en">led</span>(std::string word1, std::string word2) {
+</span><span class="code-line line-number" line="6">  <span class="pl-c">// Get the length of the two words for future use.</span>
+</span><span class="code-line line-number" line="7">  <span class="pl-k">int</span> len1 = word1.<span class="pl-c1">size</span>();
+</span><span class="code-line line-number" line="8">  <span class="pl-k">int</span> len2 = word2.<span class="pl-c1">size</span>();
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10">  <span class="pl-c">// If either word is empty, then the edit distance</span>
+</span><span class="code-line line-number" line="11">  <span class="pl-c">// is the length of the other one.</span>
+</span><span class="code-line line-number" line="12">  <span class="pl-k">if</span> (len1 == <span class="pl-c1">0</span>) <span class="pl-k">return</span> len2;
+</span><span class="code-line line-number" line="13">  <span class="pl-k">if</span> (len2 == <span class="pl-c1">0</span>) <span class="pl-k">return</span> len1;
+</span><span class="code-line line-number" line="14">
+</span><span class="code-line line-number" line="15">  <span class="pl-c">// Obtain the cost of editing the last character of</span>
+</span><span class="code-line line-number" line="16">  <span class="pl-c">// either string.</span>
+</span><span class="code-line line-number" line="17">  <span class="pl-k">bool</span> lastCharsEqual = word1[len1 - <span class="pl-c1">1</span>] == word2[len2 - <span class="pl-c1">1</span>];
+</span><span class="code-line line-number" line="18">  <span class="pl-k">int</span> cost = lastCharsEqual ? <span class="pl-c1">0</span> : <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="19">
+</span><span class="code-line line-number" line="20">  <span class="pl-c">// Remove the last character from both strings for</span>
+</span><span class="code-line line-number" line="21">  <span class="pl-c">// the next recursive iteration.</span>
+</span><span class="code-line line-number" line="22">  std::string short1 = word1.<span class="pl-c1">substr</span>(<span class="pl-c1">0</span>, len1 - <span class="pl-c1">1</span>);
+</span><span class="code-line line-number" line="23">  std::string short2 = word2.<span class="pl-c1">substr</span>(<span class="pl-c1">0</span>, len2 - <span class="pl-c1">1</span>);
+</span><span class="code-line line-number" line="24">
+</span><span class="code-line line-number" line="25">  <span class="pl-c">// Finally, return the minimum edit distance if we</span>
+</span><span class="code-line line-number" line="26">  <span class="pl-c">// remove a character:</span>
+</span><span class="code-line line-number" line="27">  <span class="pl-k">return</span> <span class="pl-c1">std::min</span>(<span class="pl-c1">std::min</span>(
+</span><span class="code-line line-number" line="28">    <span class="pl-c1">led</span>(short1, word2) + <span class="pl-c1">1</span>,    <span class="pl-c">// from word1,</span>
+</span><span class="code-line line-number" line="29">    <span class="pl-c1">led</span>(word1, short2) + <span class="pl-c1">1</span>),   <span class="pl-c">// from word2,</span>
+</span><span class="code-line line-number" line="30">    <span class="pl-c1">led</span>(short1, short2) + cost <span class="pl-c">// Or from both.</span>
+</span><span class="code-line line-number" line="31">  );
+</span><span class="code-line line-number" line="32">}
+</span></code></pre><blockquote>
+</blockquote></details></div>
+<div class="error-callout callout"><details><summary><strong>Bad Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">int</span> <span class="pl-en">led</span>(std::string word1, std::string word2) {
+</span><span class="code-line line-number" line="2">  <span class="pl-k">int</span> len1 = word1.<span class="pl-c1">size</span>();
+</span><span class="code-line line-number" line="3">  <span class="pl-k">int</span> len2 = word2.<span class="pl-c1">size</span>();
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5">  <span class="pl-k">if</span> (len1 == <span class="pl-c1">0</span>) <span class="pl-k">return</span> len2;
+</span><span class="code-line line-number" line="6">  <span class="pl-k">if</span> (len2 == <span class="pl-c1">0</span>) <span class="pl-k">return</span> len1;
+</span><span class="code-line line-number" line="7">
+</span><span class="code-line line-number" line="8">  <span class="pl-k">bool</span> lastCharsEqual = word1[len1 - <span class="pl-c1">1</span>] == word2[len2 - <span class="pl-c1">1</span>];
+</span><span class="code-line line-number" line="9">  <span class="pl-k">int</span> cost = lastCharsEqual ? <span class="pl-c1">0</span> : <span class="pl-c1">1</span>;
+</span><span class="code-line line-number" line="10">
+</span><span class="code-line line-number" line="11">  std::string short1 = word1.<span class="pl-c1">substr</span>(<span class="pl-c1">0</span>, len1 - <span class="pl-c1">1</span>);
+</span><span class="code-line line-number" line="12">  std::string short2 = word2.<span class="pl-c1">substr</span>(<span class="pl-c1">0</span>, len2 - <span class="pl-c1">1</span>);
+</span><span class="code-line line-number" line="13">
+</span><span class="code-line line-number" line="14">  <span class="pl-k">return</span> <span class="pl-c1">std::min</span>(<span class="pl-c1">std::min</span>(
+</span><span class="code-line line-number" line="15">    <span class="pl-c1">led</span>(short1, word2) + <span class="pl-c1">1</span>,
+</span><span class="code-line line-number" line="16">    <span class="pl-c1">led</span>(word1, short2) + <span class="pl-c1">1</span>),
+</span><span class="code-line line-number" line="17">    <span class="pl-c1">led</span>(short1, short2) + cost
+</span><span class="code-line line-number" line="18">  );
+</span><span class="code-line line-number" line="19">}
+</span></code></pre></details></div>
+<h2 id="line-width"><a href="#line-width">Line Width</a></h2>
+<p><strong>Keep your lines to a reasonable length.</strong></p>
+<p>Unfortunately, not everyone codes on an ultrawide monitor.</p>
+<div class="success-callout callout"><details><summary><strong>Good Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">int</span> <span class="pl-en">addFiveNumbers</span>(<span class="pl-k">int</span> num1, <span class="pl-k">int</span> num2, <span class="pl-k">int</span> num3, <span class="pl-k">int</span> num4, <span class="pl-k">int</span> num5) {
+</span><span class="code-line line-number" line="2">  <span class="pl-k">return</span> (num1 + num2 + num3 + num4 + num5);
+</span><span class="code-line line-number" line="3">}
+</span></code></pre></details></div>
+<div class="error-callout callout"><details><summary><strong>Bad Example</strong></summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="1"><span class="pl-k">int</span> <span class="pl-en">addFiveNumbers</span>(<span class="pl-k">int</span> num1, <span class="pl-k">int</span> num2, <span class="pl-k">int</span> num3, <span class="pl-k">int</span> num4, <span class="pl-k">int</span> num5) { <span class="pl-k">return</span> (num1 + num2 + num3 + num4 + num5); }
+</span></code></pre></details></div></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/code-readability-guidelines"}}</script><script type="module" src="/assets/entry-client-routing.8c83d814.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/code-readability-guidelines.page.a34a373a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.8c83d814.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-8d7e8324.js"></body>
+    </html>
