@@ -9,7 +9,7 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#textures-and-fbos-lab">Textures and FBOs Lab</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#textures">Textures</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-a-texture">What is a Texture?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-texture-on-the-cpu">Creating a Texture on the CPU</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#qimages">QImages</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#opengl-textures">OpenGL Textures</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo">Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#fullscreen-quads">Fullscreen Quads</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#uv-coordinates">UV Coordinates</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#sampling-a-texture-in-a-shader">Sampling a Texture in a Shader</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#framebuffer-objects">Framebuffer Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-an-fbo">What is an FBO?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbo-contain">What does an FBO contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbos-attached-buffer-contain">What does an FBO&#x27;s attached buffer contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#making-our-own-fbo">Making our own FBO</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#drawing-with-our-fbo">Drawing with our FBO</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#where-did-it-go">Where did it go?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#back-to-basics">Back to Basics</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#glviewport">glViewport</a></li></ol></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#textures-and-fbos-lab">Textures and FBOs Lab</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#textures">Textures</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-a-texture">What is a Texture?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-texture-on-the-cpu">Creating a Texture on the CPU</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#qimages">QImages</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#opengl-textures">OpenGL Textures</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo">Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#fullscreen-quads">Fullscreen Quads</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#uv-coordinates">UV Coordinates</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#sampling-a-texture-in-a-shader">Sampling a Texture in a Shader</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#framebuffer-objects">Framebuffer Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-an-fbo">What is an FBO?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbo-contain">What does an FBO contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbos-attached-buffer-contain">What does an FBO&#x27;s attached buffer contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#making-our-own-fbo">Making our own FBO</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#drawing-with-our-fbo">Drawing with our FBO</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#return-of-the-sphere">Return of the Sphere</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#back-to-basics">Back to Basics</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#glviewport">glViewport</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#fbo-functionality">FBO Functionality</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#post-processing">Post Processing</a></li></ol></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="textures-and-fbos-lab"><a href="#textures-and-fbos-lab">Textures and FBOs Lab</a></h1>
 <h2 id="intro"><a href="#intro">Intro</a></h2>
@@ -64,13 +64,13 @@ To start, we need to generate a texture using the following function:</p>
 generated texture. Multiple buffers can be filled in using a pointer to the first
 element of an array of sufficient size or some pointer followed by sufficient allocated
 space.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a texture and store it’s id in <code>m_test_texture</code>.</p></div>
-<p>Before we work with the texture, we need to bind it to the state machine using:
-void glBindTexture(GLenum target, GLuint texture)</p>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a texture and store it’s id in <code>m_kitten_texture</code>.</p></div>
+<p>Before we work with the texture, we need to bind it to the state machine using:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindTexture.xhtml"><strong>void glBindTexture(GLenum target, GLuint texture);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of texture we are binding. Since we are using a 2D
 texture, our target will be <code>GL_TEXTURE_2D</code>.</p><p><strong><code>texture</code> :</strong> This is the id of the texture we just generated.</p></div>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, bind our <code>m_kitten_texture</code>.</p></div>
 <p>Now we have an empty texture sitting in the <code>GL_TEXTURE_2D</code> target in our state machine.
 Let’s fill it with our QImage using:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
@@ -102,7 +102,7 @@ GL_TEXTURE_2D target.</p></div>
 for it just how we did in the shaders lab for different data types!</p>
 <p>Let’s begin by creating a uniform variable in our shader that will hold our texture.
 The data type of a texture is known as sampler2D.</p>
-<div class="task-callout callout"><p>Add a <code>sampler2D</code> uniform variable to the <code>fbo.frag</code> shader file.</p></div>
+<div class="task-callout callout"><p>Add a <code>sampler2D</code> uniform variable to the <code>texture.frag</code> shader file.</p></div>
 <p>Now how do we set this variable? How textures work in OpenGL is using a concept called
 texture slots.</p>
 <p>So far, we have told you that you can just bind a texture using the <code>glBindTexture</code> call.
@@ -129,22 +129,25 @@ format of <code>GL_TEXTUREi</code>, where i is an integer representing the slot 
 slot to slot 0.</p></div>
 <p>To set the uniform value, it is represented by an int that correlates to the texture
 slot we want to use and sample from.</p>
-<div class="task-callout callout"><p>In &#x27;PaintGL&#x27;, set the uniform value for your sampler2D you created in your fragment shader
-to be the same texture slot number we bound our texture to.</p></div>
+<div class="task-callout callout"><p>In <code>IntializeGL</code>, set the uniform value for your sampler2D you created in your fragment shader
+to be the same texture slot number we bound our texture to. Remember to call <code>glUseProgram</code>
+and get the variable location before setting it! Also be sure to return to default state
+of program 0 afterwards.</p><p>In <code>PaintGL</code>, before calling <code>glDrawArrays</code>, be sure to bind our <code>m_kitten_texture</code> to
+texture slot 0.</p></div>
 <h3 id="using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates"><a href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a></h3>
 <p>As we have set our uniform variable for our texture, we are going to be using them
 within our shader program! However, we currently have no triangles to draw our textures
 on.</p>
 <h4 id="fullscreen-quads"><a href="#fullscreen-quads">Fullscreen Quads</a></h4>
 <p>If you recall the OpenGL coordinate system, we can see the limits of the screen as follows:</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>OpenGL Coordinate System</figcaption></figure>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>OpenGL Coordinate System</figcaption></figure>
 <p>What we can do with this is use it to construct what is known as a <strong>fullscreen quad</strong>.
 Think of a fullscreen quad as a projector screen that we drape down in our scene that
 happense to be <em>just</em> the right size to cover the entire screen so that we can&#x27;t see
 behind it, but also can see it in its entirety!</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, notice the fullscreen quad VBO data <code>m_fullscreen_data</code>. Edit it
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, notice the fullscreen quad VBO data <code>fullscreen_quad_data</code>. Edit it
 in order to be the correct size of the screen.</p></div>
-<div class="task-callout callout"><p>Mess around with <code>m_fullscreen_data</code> data! What happens when you change the z coordinate?
+<div class="task-callout callout"><p>Mess around with <code>fullscreen_quad_data</code>! What happens when you change the z coordinate?
 What happens when you only change a single vertex?</p></div>
 <h4 id="uv-coordinates"><a href="#uv-coordinates">UV Coordinates</a></h4>
 <p>Great! Now we have the shape which we&#x27;ll plaster our texture, but how do we (texture-)map
@@ -152,23 +155,24 @@ the image to the surface? In steps a new vertex attribute: UV coordinates!</p>
 <p>The UV coordinate attribute tells us at what point in the sampled texture should each
 vertex correspond to. The lower left corner is set to be (0, 0) and the upper right corner
 to be (1, 1) as in the following image:</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab11/UVCoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>UV Coordinates in OpenGL</figcaption></figure>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab11/UVCoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>UV Coordinates in OpenGL</figcaption></figure>
 <div class="task-callout callout"><p>Pick 6 corresponding UV coordinates to pair with each vertex position in <code>m_fullscreen_data</code>.
 Make sure the bottom left corner of the fullscreen quad correlates with the bottom left corner
 of the texture and the upper right corner of the fullscreen quad correlates with the
 upper right corner of the texture!</p></div>
 <div class="task-callout callout"><p>In <code>InitializeGL</code>, update the VAO attribute information to include the newly added UV
 coordinates. Make sure to update the position attribute as well!</p></div>
-<div class="task-callout callout"><p>Add the UV attribute as a layout variable in <code>fbo.vert</code>.</p></div>
-<div class="task-callout callout"><p>Create an in/out variable pair to pass the UV coordinates from the <code>fbo.vert</code> to
-<code>fbo.frag</code>.</p></div>
+<div class="task-callout callout"><p>Add the UV attribute as a layout variable in <code>texture.vert</code>.</p></div>
+<div class="task-callout callout"><p>Create an in/out variable pair to pass the UV coordinates from the <code>texture.vert</code> to
+<code>texture..frag</code>. Also be sure to set the out variable of texture.vert to be equal to
+the layout input variable we created in the last step!</p></div>
 <h4 id="sampling-a-texture-in-a-shader"><a href="#sampling-a-texture-in-a-shader">Sampling a Texture in a Shader</a></h4>
 <p>Now we want to set our fragment color to be our texture at our pre-selected UV coordinates.
 In GLSL, the function to sample a texture uniform which is of type sampler2D is:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/texture.xhtml"><strong>gvec4 texture(gsampler2D sampler, vec2 P);</strong></a></p>
 </blockquote></p><p><strong><code>sampler</code> :</strong> This is the name of the sampler2D we wish to sample from.</p><p><strong><code>P</code> :</strong> This is the UV coordinate we wish to sample the texture at.</p></div>
-<div class="task-callout callout"><p>In <code>fbo.frag</code>, set the fragment color based on the texture color at the fragment&#x27;s
+<div class="task-callout callout"><p>In <code>texture.frag</code>, set the fragment color based on the texture color at the fragment&#x27;s
 UV coordinate.</p></div>
 <h2 id="framebuffer-objects"><a href="#framebuffer-objects">Framebuffer Objects</a></h2>
 <h3 id="what-is-an-fbo"><a href="#what-is-an-fbo">What is an FBO?</a></h3>
@@ -209,11 +213,13 @@ we draw two triangles on top of one another, OpenGL can tell which should displa
 <p><strong>Stencil buffers</strong> contain information that is generated by special masks that enables certain
 pixels to be drawn or not. This is not important at the moment, but if you wish to draw
 something like outlines or recursive portals, this comes in handy!</p>
+<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><img src="/labs/lab11/fboattachments.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>FBO Attachments</figcaption></figure>
 <h3 id="making-our-own-fbo"><a href="#making-our-own-fbo">Making our own FBO</a></h3>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate an empty texture, <code>m_fbo_texture</code> and bind it to texture slot</p><ol>
-<li>This will be used to store our color buffer! To generate an empty texture, when
-calling <code>glTexImage2D</code>, pass in a nullptr for the data.</li>
-</ol></div>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate an empty texture, <code>m_fbo_texture</code> and bind it to texture slot 1.
+This will be used to store our color buffer! To generate an empty texture, when
+calling <code>glTexImage2D</code>, pass in a nullptr for the data. Be sure to set the same minify and
+magnify parameters as well as return to default state by unbinding our texture once we have
+set all its parameters.</p></div>
 <p>In order to add a color attachment to our framebuffer, we first need to make one! The function
 to do this is:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
@@ -249,7 +255,7 @@ When we look at how things are drawn with FBOs soon, you will get a better under
 generated RBO. This way you can refer to it later by the same stored id.
 Multiple RBOs can be filled in using a pointer to the first element of an array of
 sufficient size or some pointer followed by sufficient allocated space.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a renderbuffer and store it in <code>m_rbo</code>.</p></div>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a renderbuffer and store it in <code>m_fbo_renderbuffer</code>.</p></div>
 <p>Next, just like with a texture, we need to bind it to work on it. The only difference being
 that there are no renderbuffer slots unlike with textures. This is because renderbuffers
 can only be written to and not sampled from in a shader, so there is no reason to have multiple
@@ -277,12 +283,19 @@ call specifically for renderbuffers instead of textures:</p>
 <code>glBindFramebuffer</code>, use <code>GL_FRAMEBUFFER</code>.</p><p><strong><code>attachment</code> :</strong> This is the specific attachment we wish to add, since we are attaching
 a depth and stencil buffer, use <code>GL_DEPTH_STENCIL_ATTACHMENT</code>.</p><p><strong><code>renderbuffertarget</code> :</strong> This indicates the type of renderbuffer we are using. In our case, use
 <code>GL_RENDERBUFFER</code>.</p><p><strong><code>renderbuffer</code> :</strong> Here we place the renderbuffer object we wish to use. In our case this is
-<code>m_rbo</code>.</p></div>
+<code>m_fbo_renderbuffer</code>.</p></div>
 <div class="task-callout callout"><p>In <code>InitializeGL</code>, add our depth and stencil attachment to <code>m_fbo</code>.</p></div>
+<div class="task-callout callout"><p>Before exiting <code>InitializeGL</code>, make sure to return to default state by unbinding our
+renderbuffer and framebuffers by binding id 0 for both.</p></div>
 <h2 id="drawing-with-our-fbo"><a href="#drawing-with-our-fbo">Drawing with our FBO</a></h2>
-<h3 id="where-did-it-go"><a href="#where-did-it-go">Where did it go?</a></h3>
-<p>Let&#x27;s see what happens when we draw to our FBO! OpenGL draws to whichever FBO is currently
-bound so lets switch that.</p>
+<h3 id="return-of-the-sphere"><a href="#return-of-the-sphere">Return of the Sphere</a></h3>
+<p>Let&#x27;s see what happens when we draw to our FBO! But first, lets get our sphere from
+lab 10 showing on the screen again.</p>
+<div class="task-callout callout"><p>In <code>PaintGL</code>, comment out your current code. Uncomment the segment labeled for this task
+which should get us back to the sphere from the previous lab.</p></div>
+<p>At this point, you should see the same sphere you saw in lab 10 on your screen.</p>
+<p>Next, lets try drawing to our custom framebuffer! In OpenGL, <code>glDrawArrays</code> will utilize
+whichever framebuffer is currently bound, so lets change the current FBO.</p>
 <div class="task-callout callout"><p>In <code>PaintGL</code>, before calling <code>glClear</code>, bind our FBO.</p></div>
 <p>If you run the program, you should see a black screen. What happened?</p>
 <p>Instead of drawing to the screen, we drew to an <strong>offscreen</strong> framebuffer. So where is our
@@ -291,30 +304,31 @@ color information.</p>
 <h3 id="back-to-basics"><a href="#back-to-basics">Back to Basics</a></h3>
 <p>To fix this, lets create a way to just draw our color buffer back onto the screen. Luckily
 this is the exact same operation we have been doing in <code>texture.vert</code> and <code>texture.frag</code>.</p>
-<div class="task-callout callout"><p>Copy <code>texture.vert</code> into <code>postprocessing.vert</code> and <code>texture.frag</code> into <code>postprocessing.frag</code>.</p></div>
 <p>Next, lets make sure we draw to the default framebuffer after we already drew offscreen.</p>
-<div class="task-callout callout"><p>In <code>PaintGL</code>, after unbinding the <code>m_texture_shader</code>, bind framebuffer 0.</p></div>
+<div class="task-callout callout"><p>In <code>PaintGL</code>, after unbinding the <code>m_phong_shader</code>, bind framebuffer 0.</p></div>
 <p>Next we can clear the screen again.</p>
 <div class="task-callout callout"><p>After binding the default framebuffer, clear the screen.</p></div>
-<p>Now we want to use the appropriate program, <code>m_postprocessing_shader</code>.</p>
-<div class="task-callout callout"><p>After clearing the screen, use the <code>m_postprocessing_shader</code> program.</p></div>
+<p>Now we want to use the appropriate program, <code>m_texture_shader</code>.</p>
+<div class="task-callout callout"><p>After clearing the screen, use the <code>m_texture_shader</code> program.</p></div>
 <p>In order to draw onto the screen, we need to draw something. Luckily for us, we can
-reuse our fullscreen quad to draw our texture onto the entirety of the screen.</p>
-<div class="task-callout callout"><p>After using the <code>m_postprocessing_shader</code> program, bind our fullscreen quad vao.</p></div>
+use our fullscreen quad to draw our fbo texture onto the entirety of the screen.</p>
+<div class="task-callout callout"><p>After using the <code>m_texture_shader</code> program, bind our fullscreen quad vao.</p></div>
+<p>Before drawing lets bind our appropriate texture to be sampled</p>
+<div class="task-callout callout"><p>After binding our VAO in <code>PaintGL</code>, bind <code>m_fbo_texture</code> to texture slot 0.</p></div>
 <p>Next, we can draw like we usually do.</p>
-<div class="task-callout callout"><p>After binding our <code>vao</code>, draw it using <code>glDrawArrays</code>.</p></div>
+<div class="task-callout callout"><p>After binding our texture, draw the fullscreen quad using <code>glDrawArrays</code>.</p></div>
 <p>For consistency, remember afterwards to return to the default state!</p>
-<div class="task-callout callout"><p>After drawing for the second time in <code>PaintGL</code>, unbind our VAO, and make sure to
-unbind our current shader program.</p></div>
-<p>If you run the program now, you <strong>still</strong> may see a black screen. Why is this?
+<div class="task-callout callout"><p>After drawing for the second time in <code>PaintGL</code>, unbind our VAO, texture, and make sure to
+unbind our current shader program as well.</p></div>
+<p>IMPORTANT STILL WORKING ON FIX:
+If you run the program now, you <strong>still</strong> may see a black screen. Why is this?
 On some devices, the default framebuffer does not actually correspond to slot 0!
-However, we can find out what framebuffer is intially bound by doing the following:</p>
-<div class="task-callout callout"><p>Near the start of <code>InitializeGL</code>, call <code>glGetIntegerv(GL_FRAMEBUFFER_BINDING, &amp;m_default_fbo);</code>.
-This will store the default FBO id somewhere we can reference later.</p></div>
-<p>Now we can fix our black screen.</p>
-<div class="task-callout callout"><p>In <code>PaintGL</code>, when binding the default framebuffer, replace our previous index of 0 with that
-of <code>m_default_fbo</code>.</p></div>
-<p>Now run the program. You might notice that some of the borders are off. Why is this?</p>
+Instead, the default may begin at a value of 1. Then for each FBO that is created, the default
+value will increment by 1. That is since we created 1 fbo of our own, the default
+fbo will be of value 2. Try replacing <code>glBindFramebuffer(GL_FRAMEBUFFER, 0)</code> with
+<code>glBindFramebuffer(GL_FRAMEBUFFER, 2)</code>. If nothing still shows up, please let a TA
+know.</p>
+<p>At this point, you might notice that some of the borders are off. Why is this?</p>
 <h3 id="glviewport"><a href="#glviewport">glViewport</a></h3>
 <p>This is because when we drew to our custom framebuffer, we never told OpenGL what size &quot;screen&quot;
 it was drawing to! This is self-inferred when drawing to the application window or default
@@ -323,15 +337,30 @@ dimensions.</p>
 <p>The function to do this is:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glViewport.xhtml"><strong>void glViewport(GLint x, GLint y, GLsizei width, GLsizei height);</strong></a></p>
-</blockquote></p><p><strong><code>x</code> :</strong> This is the x coordinate of teh lower left corner of our screen. For our purposes
-this is 0.</p><p><strong><code>y</code> :</strong> This is the y coordinate of teh lower left corner of our screen. For our purposes
+</blockquote></p><p><strong><code>x</code> :</strong> This is the x coordinate of the lower left corner of our screen. For our purposes
+this is 0.</p><p><strong><code>y</code> :</strong> This is the y coordinate of the lower left corner of our screen. For our purposes
 this is also 0.</p><p><strong><code>width</code> :</strong> This is the width of our FBO we wish to draw to. Our window is of size
-600 x 400 and as such the width should be 600.</p><p><strong><code>height</code> :</strong> Similarly to width, this specifies the height of the FBO we are drawing to.
-Our window is of size 600 x 400 and as such the height should be 400.</p></div>
+600 x 400 and as such the width should be 600. If you wish to automate this, use
+<code>size().width()</code> instead.</p><p><strong><code>height</code> :</strong> Similarly to width, this specifies the height of the FBO we are drawing to.
+Our window is of size 600 x 400 and as such the height should be 400. If you wish to automate this, use
+<code>size().height()</code> instead.</p></div>
 <div class="task-callout callout"><p>In <code>PaintGL</code>, after binding <code>m_fbo</code>, set the viewport to the appropriate size.</p></div>
-<p>At this stage, you should finally be back to seeing the same cute kitten you saw a few
-steps ago!</p>
+<p>At this stage, you should finally be back to seeing the same sphere you saw a few
+steps ago! But again, something may be off. You may be able to see through the front half
+of the sphere into the back!</p>
+<h2 id="fbo-functionality"><a href="#fbo-functionality">FBO Functionality</a></h2>
+<h3 id="post-processing"><a href="#post-processing">Post Processing</a></h3>
+<p>So far in our post-processing shader, we have done nothing but redraw our scene as is.
+Lets take advantage of having the pixels at our disposal and make some alterations.</p>
+<p>If we wish to invert our colors, since each color value in OpenGL is on a 0 to 1 scale,
+we can simply take any color cahnnel value and subtract it from 1 in order to get the
+inverse of that color channel.</p>
+<div class="task-callout callout"><p>In <code>postprocessing.frag</code> invert the channels of fragColor.</p></div>
+<p>If you run the program, you should see your sphere has been warped into an inverse shadow
+realm! There are many cool effects you can apply using framebuffers, including: kernel-based
+image filtering which you will do in Realtime 2, particle effects which you can do in lab #,
+or even draw portals with usage of the FBO&#x27;s stencil attachment!</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.8c83d814.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.0dfd8714.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.8c83d814.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-8d7e8324.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.fd844f79.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.4a8a53c0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.fd844f79.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-042e0972.js"></body>
     </html>

@@ -30,6 +30,7 @@ can be used for drawing on the <em>GPU</em>.</p>
 vector that doesn’t have a clue about the meaning behind the data that is in it.</p>
 <p>The VAO on the other hand acts as a translation manual for the GPU to understand
 what data and what format of data is inside a Vertex Buffer Object.</p>
+<p>[Explain how VAO is NOT an array]</p>
 <h3 id="using-the-khronos-documentation"><a href="#using-the-khronos-documentation">Using the Khronos Documentation</a></h3>
 <p>Before we jump into learning a new API, it always is good practice to explore its documentation!</p>
 <p>Most APIs come with some form of documentation on how you can use them.
@@ -67,13 +68,13 @@ In OpenGL, this meta-object is called the <strong>context</strong>.
 In this way, you will have to change your programming mindset when looking at OpenGL
 functions. In fact, there are 2 &quot;genres&quot; of functions you will generally work with:</p>
 <ol>
-<li><strong>State Setting</strong>. This indicate a function changes the state of the current OpenGL
+<li><strong>State Setting</strong>. This indicates a function changes the state of the current OpenGL
 context.</li>
 <li><strong>State Using</strong>. This indicates a function uses the current state parameters in order
 to achieve an output.</li>
 </ol>
 <p>Just how action and comedy came together to bring us the Spy Kids film franchise, these function &quot;genres&quot; are
-<strong>NOT</strong> nutually exclusive and some functions will do both!</p>
+<strong>NOT</strong> mutually exclusive and some functions will do both!</p>
 <p>Because of this unique behavior, it is important to be careful about managing OpenGL’s
 state during the execution of your programs. There are two strategies for this:</p>
 <ol>
@@ -86,7 +87,7 @@ state parameters, restore the parameter to its previous value after you’re don
 <p>For the purposes of these labs, we will primarily be using the second option, which you will
 get more experience with in section 4.</p>
 <figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/State_Machine.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of OpenGL State Machine</figcaption></figure>
-<div class="task-callout callout"><p>Search the docs for the <code>glSetClearColor</code> function and call at the start of <code>initializeGL</code>
+<div class="task-callout callout"><p>Search the docs for the <code>glClearColor</code> function and call at the start of <code>initializeGL</code>
 to <strong>set our default state</strong> and change the background color to anything you like! Run the program
 to see what it does.</p></div>
 <h2 id="vertex-buffer-objects"><a href="#vertex-buffer-objects">Vertex Buffer Objects</a></h2>
@@ -117,7 +118,8 @@ As said before, OpenGL is a state machine, so in order to interact with our crea
 buffer, we need to bind it to the current state. The OpenGL function to do this is:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindBuffer.xhtml"><strong>void glBindBuffer(GLenum target, GLuint buffer);</strong></a></p>
-</blockquote></p><p><strong><code>target</code> :</strong> This is an enumerable indicating which type of buffer you are binding</p><p><strong><code>buffer</code> :</strong> This indicates the specific buffer id that should be bound
+</blockquote></p><p><strong><code>target</code> :</strong> This is an enumerable indicating which type of buffer you are binding. For
+our purposes, use <code>GL_ARRAY_BUFFER</code>.</p><p><strong><code>buffer</code> :</strong> This indicates the specific buffer id that should be bound
 (hint: remember the GLuint we created in the last step?)</p></div>
 <div class="task-callout callout"><p>In <code>InitializeGL</code>, bind your previously created VBO.</p></div>
 <p>Now our state is all set up to shove our data into our buffer container!
@@ -131,7 +133,7 @@ and in part 2 you will learn about more attributes vertices can hold!</p>
 <figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>OpenGL Coordinate System</figcaption></figure>
 <p>Take note of the x and y ranges of -1 to 1. As a reminder: in OpenGL,
 triangles are defined in a counter clockwise direction.</p>
-<div class="task-callout callout"><p>Pick 3 points that would make a nice triangle.</p></div>
+<div class="task-callout callout"><p>Pick 3 points that would make a nice triangle. Make sure to pick z values of 0 as well!</p></div>
 <h4 id="putting-data-into-a-vbo"><a href="#putting-data-into-a-vbo">Putting Data Into a VBO</a></h4>
 <p>Now how will we actually put this information into our VBO? Let&#x27;s take a
 look at the function to do so first:</p>
@@ -171,6 +173,9 @@ containing positions, colors, and texture coordinates:</p>
 <p>[image here]</p>
 <div class="task-callout callout"><p>Add colors of your choosing as RGB values to each vertex and integrate them
 into your previous triangle data vector in <code>InitializeGL</code>.</p></div>
+<details><summary>Does your <code>std::vector</code> look familiar?</summary><p>It should! This is the same format of data we worked with in the last lab!
+Without knowing it, you were actually creating VBO/VAO ready data with position
+and normal attributes! Keep that in mind when working on the project!</p></details>
 <h3 id="creating-a-vao"><a href="#creating-a-vao">Creating a VAO</a></h3>
 <p>Now let’s tell OpenGL that we have this extra attribute by making a VAO!
 The function to do this is:</p>
@@ -198,9 +203,9 @@ of our VBO.</p>
 <p>For the first part, we call on the following function:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glEnableVertexAttribArray.xhtml"><strong>void glEnableVertexAttribArray(GLuint index);</strong></a></p>
-</blockquote></p><p><strong><code>index</code> :</strong> This indicates the index of the attribute we are identifying.
-Indexing should start from 0 for the first attribute, so would be 1 for the
-second, 2 for the third and so forth.</p></div>
+</blockquote></p><p><strong><code>index</code> :</strong> This indicates the index of the attribute we are identifying. By index, this
+refers not to an index into our data array, but rather, if we were to list our attributes
+as follows:</p><p>[position, color, UV]</p><p>Then the position would correlate with index 0, color with 1, and UV with 2.</p></div>
 <p>For the second part, we use a more complex function:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glVertexAttribPointer.xhtml"><strong>void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean
@@ -215,16 +220,13 @@ in the array of data. However, this more so refers to the offset into the array 
 which you will find this attribute. That is in the figure 1
 (figure showing position,color,uv), the offset of the color attribute is
 3*sizeof(GLfloat). But to cast this into a void*, we need to use:
-<code>reinterperet_cast&lt;GLvoid*&gt;(offset value)</code></p><figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of Vertex Attribute layouts</figcaption></figure></div>
+<code>reinterpret_cast&lt;GLvoid*&gt;(offset value)</code></p><figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of Vertex Attribute layouts</figcaption></figure></div>
 <blockquote>
 <p>Note: These two functions will assume they apply to whichever VBO is currently bound,
 so be careful of your state when using them. As a matter of fact, you can store separate
 attributes of the same object in different VBOs and link them together in a single VAO!</p>
 </blockquote>
 <div class="task-callout callout"><p>Add the two attributes of position and color to your VAO in <code>InitializeGL</code>.</p></div>
-<details><summary>Does your <code>std::vector</code> look familiar?</summary><p>It should! This is the same format of data we worked with in the last lab!
-Without knowing it, you were actually creating VBO/VAO ready data with position
-and normal attributes! Keep that in mind when working on the project!</p></details>
 <h2 id="unbinding-objects"><a href="#unbinding-objects">Unbinding Objects</a></h2>
 <p>In section 1.2, we discussed common approaches to handling the OpenGL state machine.
 Here, we will implement these ideas by keeping a common default state set. When we
@@ -265,7 +267,7 @@ As such, no loops will need to be present in this section of the lab.</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDrawArrays.xhtml"><strong>void glDrawArrays(GLenum mode, GLint first, GLsizei count);</strong></a></p>
 </blockquote></p><p><strong><code>mode</code> :</strong> This indicates the type of primitive to render, for our case, use GL_TRIANGLES.</p><p><strong><code>first</code> :</strong> This indicates the starting index for OpenGL to look in our VBO, and will most usually be 0.</p><p><strong><code>count</code> :</strong> This indicates how many vertices to draw.</p></div>
-<div class="task-callout callout"><p>At the end of <code>PaintGL</code>, draw our triangle.</p></div>
+<div class="task-callout callout"><p>In the middle of <code>PaintGL</code>, draw our triangle.</p></div>
 <div class="task-callout callout"><p>After drawing the triangle in <code>PaintGL</code>, return to default state by unbinding our VAO.</p></div>
 <h2 id="memory-management"><a href="#memory-management">Memory Management</a></h2>
 <p>So far, by calling <code>glGenBuffers</code> and <code>glGenVertexArrays</code>, we have <em>allocated</em> space
@@ -399,5 +401,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.8c83d814.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.5440e682.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.8c83d814.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-8d7e8324.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.fd844f79.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.543efbb5.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.fd844f79.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-042e0972.js"></body>
     </html>

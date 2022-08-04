@@ -19,6 +19,7 @@ can be used for drawing on the `,e.exports.jsx(t.em,{children:"GPU"}),"."]}),`
 vector that doesn\u2019t have a clue about the meaning behind the data that is in it.`}),`
 `,e.exports.jsx(t.p,{children:`The VAO on the other hand acts as a translation manual for the GPU to understand
 what data and what format of data is inside a Vertex Buffer Object.`}),`
+`,e.exports.jsx(t.p,{children:"[Explain how VAO is NOT an array]"}),`
 `,e.exports.jsx(t.h3,{id:"using-the-khronos-documentation",children:e.exports.jsx(t.a,{href:"#using-the-khronos-documentation",children:"Using the Khronos Documentation"})}),`
 `,e.exports.jsx(t.p,{children:"Before we jump into learning a new API, it always is good practice to explore its documentation!"}),`
 `,e.exports.jsx(t.p,{children:`Most APIs come with some form of documentation on how you can use them.
@@ -56,13 +57,13 @@ In OpenGL, this meta-object is called the `,e.exports.jsx(t.strong,{children:"co
 In this way, you will have to change your programming mindset when looking at OpenGL
 functions. In fact, there are 2 "genres" of functions you will generally work with:`]}),`
 `,e.exports.jsxs(t.ol,{children:[`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"State Setting"}),`. This indicate a function changes the state of the current OpenGL
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"State Setting"}),`. This indicates a function changes the state of the current OpenGL
 context.`]}),`
 `,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"State Using"}),`. This indicates a function uses the current state parameters in order
 to achieve an output.`]}),`
 `]}),`
 `,e.exports.jsxs(t.p,{children:[`Just how action and comedy came together to bring us the Spy Kids film franchise, these function "genres" are
-`,e.exports.jsx(t.strong,{children:"NOT"})," nutually exclusive and some functions will do both!"]}),`
+`,e.exports.jsx(t.strong,{children:"NOT"})," mutually exclusive and some functions will do both!"]}),`
 `,e.exports.jsx(t.p,{children:`Because of this unique behavior, it is important to be careful about managing OpenGL\u2019s
 state during the execution of your programs. There are two strategies for this:`}),`
 `,e.exports.jsxs(t.ol,{children:[`
@@ -75,7 +76,7 @@ state parameters, restore the parameter to its previous value after you\u2019re 
 `,e.exports.jsx(t.p,{children:`For the purposes of these labs, we will primarily be using the second option, which you will
 get more experience with in section 4.`}),`
 `,e.exports.jsx(n,{images:[{src:"/labs/lab9/State_Machine.png",alt:"TODO"}],figNumber:2,targetWidth:"95%",figCaption:"Visualization of OpenGL State Machine"}),`
-`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Search the docs for the ",e.exports.jsx(t.code,{children:"glSetClearColor"})," function and call at the start of ",e.exports.jsx(t.code,{children:"initializeGL"}),`
+`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Search the docs for the ",e.exports.jsx(t.code,{children:"glClearColor"})," function and call at the start of ",e.exports.jsx(t.code,{children:"initializeGL"}),`
 to `,e.exports.jsx(t.strong,{children:"set our default state"}),` and change the background color to anything you like! Run the program
 to see what it does.`]})}),`
 `,e.exports.jsx(t.h2,{id:"vertex-buffer-objects",children:e.exports.jsx(t.a,{href:"#vertex-buffer-objects",children:"Vertex Buffer Objects"})}),`
@@ -106,7 +107,8 @@ As said before, OpenGL is a state machine, so in order to interact with our crea
 buffer, we need to bind it to the current state. The OpenGL function to do this is:`}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindBuffer.xhtml",children:e.exports.jsx(t.strong,{children:"void glBindBuffer(GLenum target, GLuint buffer);"})})}),`
-`]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"target"})," :"]})," This is an enumerable indicating which type of buffer you are binding"]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"buffer"})," :"]}),` This indicates the specific buffer id that should be bound
+`]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"target"})," :"]}),` This is an enumerable indicating which type of buffer you are binding. For
+our purposes, use `,e.exports.jsx(t.code,{children:"GL_ARRAY_BUFFER"}),"."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"buffer"})," :"]}),` This indicates the specific buffer id that should be bound
 (hint: remember the GLuint we created in the last step?)`]})]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"InitializeGL"}),", bind your previously created VBO."]})}),`
 `,e.exports.jsx(t.p,{children:`Now our state is all set up to shove our data into our buffer container!
@@ -120,7 +122,7 @@ and in part 2 you will learn about more attributes vertices can hold!`}),`
 `,e.exports.jsx(n,{images:[{src:"/labs/lab9/openglcoordinates.png",alt:"TODO"}],figNumber:1,targetWidth:"95%",figCaption:"OpenGL Coordinate System"}),`
 `,e.exports.jsx(t.p,{children:`Take note of the x and y ranges of -1 to 1. As a reminder: in OpenGL,
 triangles are defined in a counter clockwise direction.`}),`
-`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsx(t.p,{children:"Pick 3 points that would make a nice triangle."})}),`
+`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsx(t.p,{children:"Pick 3 points that would make a nice triangle. Make sure to pick z values of 0 as well!"})}),`
 `,e.exports.jsx(t.h4,{id:"putting-data-into-a-vbo",children:e.exports.jsx(t.a,{href:"#putting-data-into-a-vbo",children:"Putting Data Into a VBO"})}),`
 `,e.exports.jsx(t.p,{children:`Now how will we actually put this information into our VBO? Let's take a
 look at the function to do so first:`}),`
@@ -160,6 +162,9 @@ containing positions, colors, and texture coordinates:`}),`
 `,e.exports.jsx(t.p,{children:"[image here]"}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:[`Add colors of your choosing as RGB values to each vertex and integrate them
 into your previous triangle data vector in `,e.exports.jsx(t.code,{children:"InitializeGL"}),"."]})}),`
+`,e.exports.jsxs("details",{children:[e.exports.jsxs("summary",{children:["Does your ",e.exports.jsx(t.code,{children:"std::vector"})," look familiar?"]}),e.exports.jsx(t.p,{children:`It should! This is the same format of data we worked with in the last lab!
+Without knowing it, you were actually creating VBO/VAO ready data with position
+and normal attributes! Keep that in mind when working on the project!`})]}),`
 `,e.exports.jsx(t.h3,{id:"creating-a-vao",children:e.exports.jsx(t.a,{href:"#creating-a-vao",children:"Creating a VAO"})}),`
 `,e.exports.jsx(t.p,{children:`Now let\u2019s tell OpenGL that we have this extra attribute by making a VAO!
 The function to do this is:`}),`
@@ -187,9 +192,9 @@ of our VBO.`}),`
 `,e.exports.jsx(t.p,{children:"For the first part, we call on the following function:"}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glEnableVertexAttribArray.xhtml",children:e.exports.jsx(t.strong,{children:"void glEnableVertexAttribArray(GLuint index);"})})}),`
-`]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"index"})," :"]}),` This indicates the index of the attribute we are identifying.
-Indexing should start from 0 for the first attribute, so would be 1 for the
-second, 2 for the third and so forth.`]})]}),`
+`]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"index"})," :"]}),` This indicates the index of the attribute we are identifying. By index, this
+refers not to an index into our data array, but rather, if we were to list our attributes
+as follows:`]}),e.exports.jsx(t.p,{children:"[position, color, UV]"}),e.exports.jsx(t.p,{children:"Then the position would correlate with index 0, color with 1, and UV with 2."})]}),`
 `,e.exports.jsx(t.p,{children:"For the second part, we use a more complex function:"}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glVertexAttribPointer.xhtml",children:e.exports.jsx(t.strong,{children:`void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean
@@ -204,16 +209,13 @@ in the array of data. However, this more so refers to the offset into the array 
 which you will find this attribute. That is in the figure 1
 (figure showing position,color,uv), the offset of the color attribute is
 3*sizeof(GLfloat). But to cast this into a void*, we need to use:
-`,e.exports.jsx(t.code,{children:"reinterperet_cast<GLvoid*>(offset value)"})]}),e.exports.jsx(n,{images:[{src:"/labs/lab9/Stride_Offset_White_Background.png",alt:"TODO"}],figNumber:2,targetWidth:"95%",figCaption:"Visualization of Vertex Attribute layouts"})]}),`
+`,e.exports.jsx(t.code,{children:"reinterpret_cast<GLvoid*>(offset value)"})]}),e.exports.jsx(n,{images:[{src:"/labs/lab9/Stride_Offset_White_Background.png",alt:"TODO"}],figNumber:2,targetWidth:"95%",figCaption:"Visualization of Vertex Attribute layouts"})]}),`
 `,e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:`Note: These two functions will assume they apply to whichever VBO is currently bound,
 so be careful of your state when using them. As a matter of fact, you can store separate
 attributes of the same object in different VBOs and link them together in a single VAO!`}),`
 `]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Add the two attributes of position and color to your VAO in ",e.exports.jsx(t.code,{children:"InitializeGL"}),"."]})}),`
-`,e.exports.jsxs("details",{children:[e.exports.jsxs("summary",{children:["Does your ",e.exports.jsx(t.code,{children:"std::vector"})," look familiar?"]}),e.exports.jsx(t.p,{children:`It should! This is the same format of data we worked with in the last lab!
-Without knowing it, you were actually creating VBO/VAO ready data with position
-and normal attributes! Keep that in mind when working on the project!`})]}),`
 `,e.exports.jsx(t.h2,{id:"unbinding-objects",children:e.exports.jsx(t.a,{href:"#unbinding-objects",children:"Unbinding Objects"})}),`
 `,e.exports.jsxs(t.p,{children:[`In section 1.2, we discussed common approaches to handling the OpenGL state machine.
 Here, we will implement these ideas by keeping a common default state set. When we
@@ -254,7 +256,7 @@ As such, no loops will need to be present in this section of the lab.`}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDrawArrays.xhtml",children:e.exports.jsx(t.strong,{children:"void glDrawArrays(GLenum mode, GLint first, GLsizei count);"})})}),`
 `]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"mode"})," :"]})," This indicates the type of primitive to render, for our case, use GL_TRIANGLES."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"first"})," :"]})," This indicates the starting index for OpenGL to look in our VBO, and will most usually be 0."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"count"})," :"]})," This indicates how many vertices to draw."]})]}),`
-`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["At the end of ",e.exports.jsx(t.code,{children:"PaintGL"}),", draw our triangle."]})}),`
+`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In the middle of ",e.exports.jsx(t.code,{children:"PaintGL"}),", draw our triangle."]})}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["After drawing the triangle in ",e.exports.jsx(t.code,{children:"PaintGL"}),", return to default state by unbinding our VAO."]})}),`
 `,e.exports.jsx(t.h2,{id:"memory-management",children:e.exports.jsx(t.a,{href:"#memory-management",children:"Memory Management"})}),`
 `,e.exports.jsxs(t.p,{children:["So far, by calling ",e.exports.jsx(t.code,{children:"glGenBuffers"})," and ",e.exports.jsx(t.code,{children:"glGenVertexArrays"}),", we have ",e.exports.jsx(t.em,{children:"allocated"}),` space

@@ -30,39 +30,53 @@
     ]
   },
   "pages/docs/code-blocks.page.mdx": {
-    "file": "assets/pages/docs/code-blocks.page.b9cc9a7c.js",
+    "file": "assets/pages/docs/code-blocks.page.34a3d69d.js",
     "src": "pages/docs/code-blocks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/docs/code-readability-guidelines.page.mdx": {
-    "file": "assets/pages/docs/code-readability-guidelines.page.a34a373a.js",
+    "file": "assets/pages/docs/code-readability-guidelines.page.e77fcac3.js",
     "src": "pages/docs/code-readability-guidelines.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
+    ]
+  },
+  "pages/docs/collaboration-policy.page.mdx": {
+    "file": "assets/pages/docs/collaboration-policy.page.395ef552.js",
+    "src": "pages/docs/collaboration-policy.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/docs/cpp-guidelines.page.mdx": {
-    "file": "assets/pages/docs/cpp-guidelines.page.710a1c87.js",
+    "file": "assets/pages/docs/cpp-guidelines.page.71418a19.js",
     "src": "pages/docs/cpp-guidelines.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/docs/github-gradescope-guide.page.mdx": {
-    "file": "assets/pages/docs/github-gradescope-guide.page.900aa982.js",
+    "file": "assets/pages/docs/github-gradescope-guide.page.4320627f.js",
     "src": "pages/docs/github-gradescope-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/docs/index.page.mdx": {
@@ -75,21 +89,23 @@
     ]
   },
   "pages/docs/inline-code.page.mdx": {
-    "file": "assets/pages/docs/inline-code.page.9bd04377.js",
+    "file": "assets/pages/docs/inline-code.page.dfc73a01.js",
     "src": "pages/docs/inline-code.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/docs/preventing-memory-leaks.page.mdx": {
-    "file": "assets/pages/docs/preventing-memory-leaks.page.79443ac1.js",
+    "file": "assets/pages/docs/preventing-memory-leaks.page.b3417fb9.js",
     "src": "pages/docs/preventing-memory-leaks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/labs/dummy.page.mdx": {
@@ -132,7 +148,7 @@
     ]
   },
   "pages/labs/lab11.page.mdx": {
-    "file": "assets/pages/labs/lab11.page.0dfd8714.js",
+    "file": "assets/pages/labs/lab11.page.4a8a53c0.js",
     "src": "pages/labs/lab11.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -175,7 +191,7 @@
     ]
   },
   "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.38909f3e.js",
+    "file": "assets/pages/labs/lab6.page.9e87bd53.js",
     "src": "pages/labs/lab6.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -208,7 +224,7 @@
     ]
   },
   "pages/labs/lab9.page.mdx": {
-    "file": "assets/pages/labs/lab9.page.5440e682.js",
+    "file": "assets/pages/labs/lab9.page.543efbb5.js",
     "src": "pages/labs/lab9.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -391,15 +407,16 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.8c83d814.js",
+    "file": "assets/entry-client-routing.fd844f79.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-8d7e8324.js"
+      "_chunk-042e0972.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
       "pages/docs/code-readability-guidelines.page.mdx",
+      "pages/docs/collaboration-policy.page.mdx",
       "pages/docs/cpp-guidelines.page.mdx",
       "pages/docs/github-gradescope-guide.page.mdx",
       "pages/docs/index.page.mdx",
@@ -441,15 +458,16 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.76de578b.js",
+    "file": "assets/entry-server-routing.0eb135ce.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-8d7e8324.js"
+      "_chunk-042e0972.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
       "pages/docs/code-readability-guidelines.page.mdx",
+      "pages/docs/collaboration-policy.page.mdx",
       "pages/docs/cpp-guidelines.page.mdx",
       "pages/docs/github-gradescope-guide.page.mdx",
       "pages/docs/index.page.mdx",
@@ -505,8 +523,8 @@
       "_chunk-903e764a.js"
     ]
   },
-  "_chunk-8d7e8324.js": {
-    "file": "assets/chunk-8d7e8324.js"
+  "_chunk-042e0972.js": {
+    "file": "assets/chunk-042e0972.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
