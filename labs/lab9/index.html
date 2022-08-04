@@ -30,7 +30,9 @@ can be used for drawing on the <em>GPU</em>.</p>
 vector that doesn’t have a clue about the meaning behind the data that is in it.</p>
 <p>The VAO on the other hand acts as a translation manual for the GPU to understand
 what data and what format of data is inside a Vertex Buffer Object.</p>
-<p>[Explain how VAO is NOT an array]</p>
+<p>While VAO has &quot;array&quot; in its name, a VAO is <strong>NOT</strong> an array of vertex values. Instead,
+it can represent an array of <em>properties</em> or <em>attributes</em> of our VBO. Each entry in
+this array contains information about where this attribute is located in the VBO.</p>
 <h3 id="using-the-khronos-documentation"><a href="#using-the-khronos-documentation">Using the Khronos Documentation</a></h3>
 <p>Before we jump into learning a new API, it always is good practice to explore its documentation!</p>
 <p>Most APIs come with some form of documentation on how you can use them.
@@ -87,6 +89,9 @@ state parameters, restore the parameter to its previous value after you’re don
 <p>For the purposes of these labs, we will primarily be using the second option, which you will
 get more experience with in section 4.</p>
 <figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/State_Machine.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of OpenGL State Machine</figcaption></figure>
+<blockquote>
+<p>Note: Through this lab, you will primarily be working in the glRenderer.cpp file!</p>
+</blockquote>
 <div class="task-callout callout"><p>Search the docs for the <code>glClearColor</code> function and call at the start of <code>initializeGL</code>
 to <strong>set our default state</strong> and change the background color to anything you like! Run the program
 to see what it does.</p></div>
@@ -130,7 +135,7 @@ an array that represents a triangle.</p>
 vertices are just positions, although in in the last lab you worked with vertex normals
 and in part 2 you will learn about more attributes vertices can hold!</p>
 <p>As a reminder in OpenGL, the screen is defined as in the image below:</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>OpenGL Coordinate System</figcaption></figure>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>OpenGL Coordinate System</figcaption></figure>
 <p>Take note of the x and y ranges of -1 to 1. As a reminder: in OpenGL,
 triangles are defined in a counter clockwise direction.</p>
 <div class="task-callout callout"><p>Pick 3 points that would make a nice triangle. Make sure to pick z values of 0 as well!</p></div>
@@ -168,9 +173,9 @@ position. Consider colors, texture coordinates, or, as you saw in the previous l
 normals. These can also be unique to each vertex and it is our job to tell OpenGL what
 attributes we care about.</p>
 <p>When adding multiple attributes, they should appear in the same order and be repeated
-per vertex in our data. Consider the following image which shows a data layout
-containing positions, colors, and texture coordinates:</p>
-<p>[image here]</p>
+per vertex in our data. Consider again figure which shows a data layout
+containing positions and colors interleaved:</p>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/VBO_VAO_Overview.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Visualization of VBOs and VAOs</figcaption></figure>
 <div class="task-callout callout"><p>Add colors of your choosing as RGB values to each vertex and integrate them
 into your previous triangle data vector in <code>InitializeGL</code>.</p></div>
 <details><summary>Does your <code>std::vector</code> look familiar?</summary><p>It should! This is the same format of data we worked with in the last lab!
@@ -220,12 +225,14 @@ in the array of data. However, this more so refers to the offset into the array 
 which you will find this attribute. That is in the figure 1
 (figure showing position,color,uv), the offset of the color attribute is
 3*sizeof(GLfloat). But to cast this into a void*, we need to use:
-<code>reinterpret_cast&lt;GLvoid*&gt;(offset value)</code></p><figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of Vertex Attribute layouts</figcaption></figure></div>
+<code>reinterpret_cast&lt;void*&gt;(offset value)</code></p><figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>Visualization of Vertex Attribute layouts</figcaption></figure></div>
 <blockquote>
 <p>Note: These two functions will assume they apply to whichever VBO is currently bound,
 so be careful of your state when using them. As a matter of fact, you can store separate
-attributes of the same object in different VBOs and link them together in a single VAO!</p>
+attributes of the same object in different VBOs and link them together in a single VAO as
+in figure 5 below!</p>
 </blockquote>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><img src="/labs/lab9/VAOMultiple.png" alt="TODO"/></div><figcaption><strong>Figure 5: </strong>VAOs w/ Single and Multiple VBOs</figcaption></figure>
 <div class="task-callout callout"><p>Add the two attributes of position and color to your VAO in <code>InitializeGL</code>.</p></div>
 <h2 id="unbinding-objects"><a href="#unbinding-objects">Unbinding Objects</a></h2>
 <p>In section 1.2, we discussed common approaches to handling the OpenGL state machine.
@@ -238,7 +245,7 @@ return to that starting condition before we exit the <code>initializeGL</code> f
 <p>Great! Now you are ready to draw the triangle you have worked so hard to create.
 To do this, these are the general steps you will want to follow each frame.</p>
 <ol>
-<li>Clear the screen using <code>glClear(COLOR_BUFFER_BIT | DEPTH_BUFFER_BIT);</code></li>
+<li>Clear the screen using <code>glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</code></li>
 <li>For each shader you want to use:<!-- -->
 <ol>
 <li>Bind the shader using <code>glUseProgram(GLuint program);</code></li>
@@ -249,15 +256,15 @@ To do this, these are the general steps you will want to follow each frame.</p>
 <li>Unbind the VAO</li>
 </ol>
 </li>
-<li>Unbind the shader using glUseProgram(0)</li>
+<li>Unbind the shader using <code>glUseProgram(0);</code></li>
 </ol>
 </li>
 </ol>
 <blockquote>
 <p>Note: Notice how all operations including a specific shader and VAO are surrounded by a Bind and Unbind call!</p>
 </blockquote>
-<p>For this, you will only be responsible for steps 1 and 2.ii.a through 2.ii.c.
-While these loops are best to keep in mind, oftentimes such as this one you
+<p>For this, you will only be responsible for steps 1 and 2.2.1 through 2.2.3.
+While steps 2 and 2.2 can run as loops for each shader and for each VAO, oftentimes such as this one you
 will only work with a single shader program and in this case, a single VAO.
 As such, no loops will need to be present in this section of the lab.</p>
 <div class="task-callout callout"><p>In <code>PaintGL</code>, before <code>glUseProgram</code>, clear the screen.</p></div>
@@ -401,5 +408,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.fd844f79.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.543efbb5.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.fd844f79.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-042e0972.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.886ad6bf.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.ef2c07c1.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.886ad6bf.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-042e0972.js"></body>
     </html>

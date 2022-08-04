@@ -85,6 +85,7 @@ we will use the value of 0 to indicate no border.</p><p><strong><code>format</co
 sample image uses <code>GL_RGBA</code>.</p><p><strong><code>type</code> :</strong> This indicates the data type of the input pixel data. We will use <code>GL_UNSIGNED_BYTE</code>
 since it assigns 8 bits per component of R, G, B, and A.</p><p><strong><code>data</code> :</strong> This is the pointer to our pixel data. We can get this from our <code>QImage</code>
 by using the associated <code>bits()</code> function.</p></div>
+<p>[TODO ADD DROPDOWN ABOUT MIPMAPS]</p>
 <div class="task-callout callout"><p>After binding our texture in <code>InitializeGL</code>, load our <code>m_image</code> variable into <code>m_kitten_texture</code>.</p></div>
 <p>Before we use the texture, we need to specify some behavior it should take on in particular if the image needs to be scaled up or down. Consider the situation where our fragment lies between two pixels in our texture. Which color should it output? These are parameters we can control and in our case we can ask for OpenGL to linearly interpolate between the nearby pixels.</p>
 <p>How do we set these parameters? The function to do so is:</p>
@@ -96,7 +97,7 @@ for a list of parameters and their possible values.</p></div>
 <div class="task-callout callout"><p>After adding our image data in <code>IntializeGL</code>, use this function to set the minify
 and magnify filters to use linear interpolation.</p></div>
 <div class="task-callout callout"><p>After setting our parameters in <code>InitializeGL</code>, unbind our texture from the
-GL_TEXTURE_2D target.</p></div>
+GL_TEXTURE_2D target. We can do this by binding texture 0.</p></div>
 <h3 id="passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo"><a href="#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo">Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo</a></h3>
 <p>Now, how do we work with the texture we just created? We can create a uniform variable
 for it just how we did in the shaders lab for different data types!</p>
@@ -124,7 +125,8 @@ indicate which slot index should be sampled in our shader.</p>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glActiveTexture.xhtml"><strong>void glActiveTexture(GLenum texture);</strong></a></p>
 </blockquote></p><p><strong><code>texture</code> :</strong> This is an enumerable that represents the texture slot. They are in the
 format of <code>GL_TEXTUREi</code>, where i is an integer representing the slot number.</p></div>
-<p>The second call is the same binding call we have seen before!</p>
+<p>[CHANGE TO MEAN: TO PROPERLY DO THIS WE NEED TO EXPLICITLY SET OUR TEXTURE SLOT]
+The second call is the same binding call we have seen before!</p>
 <div class="task-callout callout"><p>Before we previously bound our texture in <code>InitializeGL</code>, manually set the active texture
 slot to slot 0.</p></div>
 <p>To set the uniform value, it is represented by an int that correlates to the texture
@@ -186,7 +188,7 @@ UV coordinate.</p></div>
 <li>Object: Something, in this case a container that holds other information</li>
 </ul>
 <h3 id="what-does-an-fbo-contain"><a href="#what-does-an-fbo-contain">What does an FBO contain?</a></h3>
-<p>Framebuffers contain things in OpenGL known as *<em>attachments</em>. These include color buffers,
+<p>Framebuffers contain things in OpenGL known as <em>attachments</em>. These include color buffers,
 depth buffers, and stencil buffers which you will learn more about shortly. Each buffer
 is represented by a sub-object being either:</p>
 <ol>
@@ -362,5 +364,5 @@ image filtering which you will do in Realtime 2, particle effects which you can 
 or even draw portals with usage of the FBO&#x27;s stencil attachment!</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.fd844f79.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.4a8a53c0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.fd844f79.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-042e0972.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.886ad6bf.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.fe713c97.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.886ad6bf.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-042e0972.js"></body>
     </html>

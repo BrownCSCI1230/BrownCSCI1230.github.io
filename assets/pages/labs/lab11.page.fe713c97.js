@@ -74,6 +74,7 @@ we will use the value of 0 to indicate no border.`]}),e.exports.jsxs(t.p,{childr
 sample image uses `,e.exports.jsx(t.code,{children:"GL_RGBA"}),"."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"type"})," :"]})," This indicates the data type of the input pixel data. We will use ",e.exports.jsx(t.code,{children:"GL_UNSIGNED_BYTE"}),`
 since it assigns 8 bits per component of R, G, B, and A.`]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"data"})," :"]})," This is the pointer to our pixel data. We can get this from our ",e.exports.jsx(t.code,{children:"QImage"}),`
 by using the associated `,e.exports.jsx(t.code,{children:"bits()"})," function."]})]}),`
+`,e.exports.jsx(t.p,{children:"[TODO ADD DROPDOWN ABOUT MIPMAPS]"}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["After binding our texture in ",e.exports.jsx(t.code,{children:"InitializeGL"}),", load our ",e.exports.jsx(t.code,{children:"m_image"})," variable into ",e.exports.jsx(t.code,{children:"m_kitten_texture"}),"."]})}),`
 `,e.exports.jsx(t.p,{children:"Before we use the texture, we need to specify some behavior it should take on in particular if the image needs to be scaled up or down. Consider the situation where our fragment lies between two pixels in our texture. Which color should it output? These are parameters we can control and in our case we can ask for OpenGL to linearly interpolate between the nearby pixels."}),`
 `,e.exports.jsx(t.p,{children:"How do we set these parameters? The function to do so is:"}),`
@@ -85,7 +86,7 @@ for a list of parameters and their possible values.`]})]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["After adding our image data in ",e.exports.jsx(t.code,{children:"IntializeGL"}),`, use this function to set the minify
 and magnify filters to use linear interpolation.`]})}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["After setting our parameters in ",e.exports.jsx(t.code,{children:"InitializeGL"}),`, unbind our texture from the
-GL_TEXTURE_2D target.`]})}),`
+GL_TEXTURE_2D target. We can do this by binding texture 0.`]})}),`
 `,e.exports.jsx(t.h3,{id:"passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo",children:e.exports.jsx(t.a,{href:"#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo",children:"Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo"})}),`
 `,e.exports.jsx(t.p,{children:`Now, how do we work with the texture we just created? We can create a uniform variable
 for it just how we did in the shaders lab for different data types!`}),`
@@ -113,7 +114,8 @@ indicate which slot index should be sampled in our shader.`}),`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glActiveTexture.xhtml",children:e.exports.jsx(t.strong,{children:"void glActiveTexture(GLenum texture);"})})}),`
 `]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"texture"})," :"]}),` This is an enumerable that represents the texture slot. They are in the
 format of `,e.exports.jsx(t.code,{children:"GL_TEXTUREi"}),", where i is an integer representing the slot number."]})]}),`
-`,e.exports.jsx(t.p,{children:"The second call is the same binding call we have seen before!"}),`
+`,e.exports.jsx(t.p,{children:`[CHANGE TO MEAN: TO PROPERLY DO THIS WE NEED TO EXPLICITLY SET OUR TEXTURE SLOT]
+The second call is the same binding call we have seen before!`}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Before we previously bound our texture in ",e.exports.jsx(t.code,{children:"InitializeGL"}),`, manually set the active texture
 slot to slot 0.`]})}),`
 `,e.exports.jsx(t.p,{children:`To set the uniform value, it is represented by an int that correlates to the texture
@@ -175,7 +177,7 @@ UV coordinate.`]})}),`
 `,e.exports.jsx(t.li,{children:"Object: Something, in this case a container that holds other information"}),`
 `]}),`
 `,e.exports.jsx(t.h3,{id:"what-does-an-fbo-contain",children:e.exports.jsx(t.a,{href:"#what-does-an-fbo-contain",children:"What does an FBO contain?"})}),`
-`,e.exports.jsxs(t.p,{children:["Framebuffers contain things in OpenGL known as *",e.exports.jsx(t.em,{children:"attachments"}),`. These include color buffers,
+`,e.exports.jsxs(t.p,{children:["Framebuffers contain things in OpenGL known as ",e.exports.jsx(t.em,{children:"attachments"}),`. These include color buffers,
 depth buffers, and stencil buffers which you will learn more about shortly. Each buffer
 is represented by a sub-object being either:`]}),`
 `,e.exports.jsxs(t.ol,{children:[`

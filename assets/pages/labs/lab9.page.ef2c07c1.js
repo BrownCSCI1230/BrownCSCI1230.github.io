@@ -19,7 +19,9 @@ can be used for drawing on the `,e.exports.jsx(t.em,{children:"GPU"}),"."]}),`
 vector that doesn\u2019t have a clue about the meaning behind the data that is in it.`}),`
 `,e.exports.jsx(t.p,{children:`The VAO on the other hand acts as a translation manual for the GPU to understand
 what data and what format of data is inside a Vertex Buffer Object.`}),`
-`,e.exports.jsx(t.p,{children:"[Explain how VAO is NOT an array]"}),`
+`,e.exports.jsxs(t.p,{children:['While VAO has "array" in its name, a VAO is ',e.exports.jsx(t.strong,{children:"NOT"}),` an array of vertex values. Instead,
+it can represent an array of `,e.exports.jsx(t.em,{children:"properties"})," or ",e.exports.jsx(t.em,{children:"attributes"}),` of our VBO. Each entry in
+this array contains information about where this attribute is located in the VBO.`]}),`
 `,e.exports.jsx(t.h3,{id:"using-the-khronos-documentation",children:e.exports.jsx(t.a,{href:"#using-the-khronos-documentation",children:"Using the Khronos Documentation"})}),`
 `,e.exports.jsx(t.p,{children:"Before we jump into learning a new API, it always is good practice to explore its documentation!"}),`
 `,e.exports.jsx(t.p,{children:`Most APIs come with some form of documentation on how you can use them.
@@ -76,6 +78,9 @@ state parameters, restore the parameter to its previous value after you\u2019re 
 `,e.exports.jsx(t.p,{children:`For the purposes of these labs, we will primarily be using the second option, which you will
 get more experience with in section 4.`}),`
 `,e.exports.jsx(n,{images:[{src:"/labs/lab9/State_Machine.png",alt:"TODO"}],figNumber:2,targetWidth:"95%",figCaption:"Visualization of OpenGL State Machine"}),`
+`,e.exports.jsxs(t.blockquote,{children:[`
+`,e.exports.jsx(t.p,{children:"Note: Through this lab, you will primarily be working in the glRenderer.cpp file!"}),`
+`]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Search the docs for the ",e.exports.jsx(t.code,{children:"glClearColor"})," function and call at the start of ",e.exports.jsx(t.code,{children:"initializeGL"}),`
 to `,e.exports.jsx(t.strong,{children:"set our default state"}),` and change the background color to anything you like! Run the program
 to see what it does.`]})}),`
@@ -119,7 +124,7 @@ an array that represents a triangle.`}),`
 vertices are just positions, although in in the last lab you worked with vertex normals
 and in part 2 you will learn about more attributes vertices can hold!`}),`
 `,e.exports.jsx(t.p,{children:"As a reminder in OpenGL, the screen is defined as in the image below:"}),`
-`,e.exports.jsx(n,{images:[{src:"/labs/lab9/openglcoordinates.png",alt:"TODO"}],figNumber:1,targetWidth:"95%",figCaption:"OpenGL Coordinate System"}),`
+`,e.exports.jsx(n,{images:[{src:"/labs/lab9/openglcoordinates.png",alt:"TODO"}],figNumber:3,targetWidth:"95%",figCaption:"OpenGL Coordinate System"}),`
 `,e.exports.jsx(t.p,{children:`Take note of the x and y ranges of -1 to 1. As a reminder: in OpenGL,
 triangles are defined in a counter clockwise direction.`}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsx(t.p,{children:"Pick 3 points that would make a nice triangle. Make sure to pick z values of 0 as well!"})}),`
@@ -157,9 +162,9 @@ position. Consider colors, texture coordinates, or, as you saw in the previous l
 normals. These can also be unique to each vertex and it is our job to tell OpenGL what
 attributes we care about.`}),`
 `,e.exports.jsx(t.p,{children:`When adding multiple attributes, they should appear in the same order and be repeated
-per vertex in our data. Consider the following image which shows a data layout
-containing positions, colors, and texture coordinates:`}),`
-`,e.exports.jsx(t.p,{children:"[image here]"}),`
+per vertex in our data. Consider again figure which shows a data layout
+containing positions and colors interleaved:`}),`
+`,e.exports.jsx(n,{images:[{src:"/labs/lab9/VBO_VAO_Overview.png",alt:"TODO"}],figNumber:1,targetWidth:"95%",figCaption:"Visualization of VBOs and VAOs"}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:[`Add colors of your choosing as RGB values to each vertex and integrate them
 into your previous triangle data vector in `,e.exports.jsx(t.code,{children:"InitializeGL"}),"."]})}),`
 `,e.exports.jsxs("details",{children:[e.exports.jsxs("summary",{children:["Does your ",e.exports.jsx(t.code,{children:"std::vector"})," look familiar?"]}),e.exports.jsx(t.p,{children:`It should! This is the same format of data we worked with in the last lab!
@@ -209,12 +214,14 @@ in the array of data. However, this more so refers to the offset into the array 
 which you will find this attribute. That is in the figure 1
 (figure showing position,color,uv), the offset of the color attribute is
 3*sizeof(GLfloat). But to cast this into a void*, we need to use:
-`,e.exports.jsx(t.code,{children:"reinterpret_cast<GLvoid*>(offset value)"})]}),e.exports.jsx(n,{images:[{src:"/labs/lab9/Stride_Offset_White_Background.png",alt:"TODO"}],figNumber:2,targetWidth:"95%",figCaption:"Visualization of Vertex Attribute layouts"})]}),`
+`,e.exports.jsx(t.code,{children:"reinterpret_cast<void*>(offset value)"})]}),e.exports.jsx(n,{images:[{src:"/labs/lab9/Stride_Offset_White_Background.png",alt:"TODO"}],figNumber:4,targetWidth:"95%",figCaption:"Visualization of Vertex Attribute layouts"})]}),`
 `,e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:`Note: These two functions will assume they apply to whichever VBO is currently bound,
 so be careful of your state when using them. As a matter of fact, you can store separate
-attributes of the same object in different VBOs and link them together in a single VAO!`}),`
+attributes of the same object in different VBOs and link them together in a single VAO as
+in figure 5 below!`}),`
 `]}),`
+`,e.exports.jsx(n,{images:[{src:"/labs/lab9/VAOMultiple.png",alt:"TODO"}],figNumber:5,targetWidth:"80%",figCaption:"VAOs w/ Single and Multiple VBOs"}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Add the two attributes of position and color to your VAO in ",e.exports.jsx(t.code,{children:"InitializeGL"}),"."]})}),`
 `,e.exports.jsx(t.h2,{id:"unbinding-objects",children:e.exports.jsx(t.a,{href:"#unbinding-objects",children:"Unbinding Objects"})}),`
 `,e.exports.jsxs(t.p,{children:[`In section 1.2, we discussed common approaches to handling the OpenGL state machine.
@@ -227,7 +234,7 @@ return to that starting condition before we exit the `,e.exports.jsx(t.code,{chi
 `,e.exports.jsx(t.p,{children:`Great! Now you are ready to draw the triangle you have worked so hard to create.
 To do this, these are the general steps you will want to follow each frame.`}),`
 `,e.exports.jsxs(t.ol,{children:[`
-`,e.exports.jsxs(t.li,{children:["Clear the screen using ",e.exports.jsx(t.code,{children:"glClear(COLOR_BUFFER_BIT | DEPTH_BUFFER_BIT);"})]}),`
+`,e.exports.jsxs(t.li,{children:["Clear the screen using ",e.exports.jsx(t.code,{children:"glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);"})]}),`
 `,e.exports.jsxs(t.li,{children:["For each shader you want to use:",`
 `,e.exports.jsxs(t.ol,{children:[`
 `,e.exports.jsxs(t.li,{children:["Bind the shader using ",e.exports.jsx(t.code,{children:"glUseProgram(GLuint program);"})]}),`
@@ -238,15 +245,15 @@ To do this, these are the general steps you will want to follow each frame.`}),`
 `,e.exports.jsx(t.li,{children:"Unbind the VAO"}),`
 `]}),`
 `]}),`
-`,e.exports.jsx(t.li,{children:"Unbind the shader using glUseProgram(0)"}),`
+`,e.exports.jsxs(t.li,{children:["Unbind the shader using ",e.exports.jsx(t.code,{children:"glUseProgram(0);"})]}),`
 `]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:"Note: Notice how all operations including a specific shader and VAO are surrounded by a Bind and Unbind call!"}),`
 `]}),`
-`,e.exports.jsx(t.p,{children:`For this, you will only be responsible for steps 1 and 2.ii.a through 2.ii.c.
-While these loops are best to keep in mind, oftentimes such as this one you
+`,e.exports.jsx(t.p,{children:`For this, you will only be responsible for steps 1 and 2.2.1 through 2.2.3.
+While steps 2 and 2.2 can run as loops for each shader and for each VAO, oftentimes such as this one you
 will only work with a single shader program and in this case, a single VAO.
 As such, no loops will need to be present in this section of the lab.`}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"PaintGL"}),", before ",e.exports.jsx(t.code,{children:"glUseProgram"}),", clear the screen."]})}),`
