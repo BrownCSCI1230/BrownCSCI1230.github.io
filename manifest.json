@@ -80,7 +80,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.71b59623.js",
+    "file": "assets/pages/docs/index.page.125e2dd8.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -106,6 +106,25 @@
     "imports": [
       "_chunk-903e764a.js",
       "_chunk-b2e2a089.js"
+    ]
+  },
+  "pages/docs/scenefile-documentation.page.mdx": {
+    "file": "assets/pages/docs/scenefile-documentation.page.40a5b6d3.js",
+    "src": "pages/docs/scenefile-documentation.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.1bc3269c.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
     ]
   },
   "pages/labs/dummy.page.mdx": {
@@ -232,15 +251,6 @@
       "_chunk-903e764a.js",
       "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.1bc3269c.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
     ]
   },
   "pages/projects/final/index.page.mdx": {
@@ -407,11 +417,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.bffa8a2e.js",
+    "file": "assets/entry-client-routing.da84d547.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-042e0972.js"
+      "_chunk-ab7d0d05.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
@@ -422,6 +432,7 @@
       "pages/docs/index.page.mdx",
       "pages/docs/inline-code.page.mdx",
       "pages/docs/preventing-memory-leaks.page.mdx",
+      "pages/docs/scenefile-documentation.page.mdx",
       "pages/hours.page.mdx",
       "pages/index.page.mdx",
       "pages/labs/dummy.page.mdx",
@@ -458,11 +469,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.8fe2165e.js",
+    "file": "assets/entry-server-routing.5497bbaf.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-042e0972.js"
+      "_chunk-ab7d0d05.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
@@ -473,6 +484,7 @@
       "pages/docs/index.page.mdx",
       "pages/docs/inline-code.page.mdx",
       "pages/docs/preventing-memory-leaks.page.mdx",
+      "pages/docs/scenefile-documentation.page.mdx",
       "pages/hours.page.mdx",
       "pages/index.page.mdx",
       "pages/labs/dummy.page.mdx",
@@ -523,8 +535,8 @@
       "_chunk-903e764a.js"
     ]
   },
-  "_chunk-042e0972.js": {
-    "file": "assets/chunk-042e0972.js"
+  "_chunk-ab7d0d05.js": {
+    "file": "assets/chunk-ab7d0d05.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",

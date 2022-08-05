@@ -6,6 +6,7 @@ import{j as e}from"../../chunk-903e764a.js";const i={title:"Docs",hideTOC:!0};fu
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/collaboration-policy",children:"Collaboration Policy"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide",children:"Github + Gradescope Guide"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/scenefile-documentation",children:"Scenefile Documentation"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Coding",`
