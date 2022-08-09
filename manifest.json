@@ -9,7 +9,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.f6186b61.js",
+    "file": "assets/pages/index.page.efeb2e26.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -26,7 +26,7 @@
       "_chunk-903e764a.js"
     ],
     "css": [
-      "assets/index.25053dba.css"
+      "assets/index.9059ccae.css"
     ]
   },
   "pages/docs/code-blocks.page.mdx": {
@@ -50,7 +50,7 @@
     ]
   },
   "pages/docs/collaboration-policy.page.mdx": {
-    "file": "assets/pages/docs/collaboration-policy.page.395ef552.js",
+    "file": "assets/pages/docs/collaboration-policy.page.e6ba1f66.js",
     "src": "pages/docs/collaboration-policy.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -137,7 +137,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.197ec6a5.js",
+    "file": "assets/pages/labs/lab1.page.2bbcc0e8.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,7 +179,7 @@
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.8bb74f7e.js",
+    "file": "assets/pages/labs/lab4.page.d3be6392.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -387,7 +387,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.53800600.js",
+    "file": "assets/entry-client-routing.532859a0.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -436,7 +436,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.02c62d83.js",
+    "file": "assets/entry-server-routing.fb1b90e5.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -507,7 +507,7 @@
     "src": "renderer/_default.page.server.jsx?extractStyles&lang.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.25053dba.css"
+      "assets/index.9059ccae.css"
     ]
   }
 }
