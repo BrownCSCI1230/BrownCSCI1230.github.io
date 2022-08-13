@@ -70,7 +70,7 @@
     ]
   },
   "pages/docs/dummy-page.page.mdx": {
-    "file": "assets/pages/docs/dummy-page.page.d90c98cd.js",
+    "file": "assets/pages/docs/dummy-page.page.5ff52b12.js",
     "src": "pages/docs/dummy-page.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -397,7 +397,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.c07a9f8e.js",
+    "file": "assets/entry-client-routing.f5ef71c5.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -447,7 +447,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.cee7c7ec.js",
+    "file": "assets/entry-server-routing.ed728519.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
