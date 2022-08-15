@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.9433c565.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
         <meta charset="UTF-8">
         <title>Lab 1 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
@@ -9,7 +9,7 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-1-setup-and-c">Lab 1: Setup and C++</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#objectives">Objectives</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#getting-started">Getting Started</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#qt-and-qt-creator">Qt and Qt Creator</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#installation">Installation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#interface">Interface</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#building-and-running">Building and Running</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#c">C++</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#hello-world">Hello World</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#include-ing-files">#Include-ing Files</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#accessing-things-in-a-namespace">Accessing Things in a Namespace</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#primitive-types">Primitive Types</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#variables">Variables</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#functions">Functions</a><ol class="toc-level toc-level-5"><li class="toc-item toc-item-h5"><a class="toc-link toc-link-h5" href="#overloading">Overloading</a></li><li class="toc-item toc-item-h5"><a class="toc-link toc-link-h5" href="#generic-functions">Generic Functions</a></li></ol></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#a-warning-about-type-deduction">A Warning About Type Deduction</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#structs-and-classes">Structs and Classes</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#generic-functions-reprise">Generic Functions (Reprise)</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#other-standard-library-utilities">Other Standard Library Utilities</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#arrays">Arrays</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#vectors">Vectors</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#tuples">Tuples</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#strings">Strings</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#pointers-and-references">Pointers and References</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#pointer-arithmetic">Pointer Arithmetic</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#end">End</a></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-1-setup-and-c">Lab 1: Setup and C++</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#objectives">Objectives</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#getting-started">Getting Started</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#qt-and-qt-creator">Qt and Qt Creator</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#installation">Installation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#interface">Interface</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#building-and-running">Building and Running</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#c">C++</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#hello-world">Hello World</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#include-ing-files">#Include-ing Files</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#accessing-things-in-a-namespace">Accessing Things in a Namespace</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#primitive-types">Primitive Types</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#variables">Variables</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#functions">Functions</a><ol class="toc-level toc-level-5"><li class="toc-item toc-item-h5"><a class="toc-link toc-link-h5" href="#overloading">Overloading</a></li><li class="toc-item toc-item-h5"><a class="toc-link toc-link-h5" href="#generic-functions">Generic Functions</a></li><li class="toc-item toc-item-h5"><a class="toc-link toc-link-h5" href="#extra-lambdas">Extra: Lambdas</a></li></ol></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#a-warning-about-type-deduction">A Warning About Type Deduction</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#structs-and-classes">Structs and Classes</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#generic-functions-reprise">Generic Functions (Reprise)</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#other-standard-library-utilities">Other Standard Library Utilities</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#arrays">Arrays</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#vectors">Vectors</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#tuples">Tuples</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#strings">Strings</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#pointers-and-references">Pointers and References</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#pointer-arithmetic">Pointer Arithmetic</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#end">End</a></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="lab-1-setup-and-c"><a href="#lab-1-setup-and-c">Lab 1: Setup and C++</a></h1>
 <p><a href="todo">Github Classroom</a></p>
@@ -47,7 +47,7 @@
 <details><summary>But I&#x27;d rather work in <strong>VS Code / Emacs / Notepad++ / etc</strong>, instead of in <strong>Qt Creator</strong>!</summary><p>If you know what you&#x27;re doing, you may certainly write code in your IDE of choice. In the past, students have successfully used other IDEs for writing code, before using Qt Creator to build and run their projects.</p><p>That being said, the CS 1230 course staff <em>will</em> be using Qt Creator to grade your assignments. Thus, you&#x27;ll probably want to install Qt Creator anyway, if only to test that your code works as expected when running with it.</p></details>
 <h3 id="installation"><a href="#installation">Installation</a></h3>
 <div class="warning-callout callout"><p>Qt and Qt Creator will take up ~3GB of space in total.</p></div>
-<div class="table-wrapper"><table><thead><tr><th align="left"><div style="min-width:350px">Instruction</div></th><th align="left">Screenshot</th></tr></thead><tbody><tr><td align="left"><strong>Download</strong> and open the appropriate Qt installer for your operating system from <a href="https://www.qt.io/download-qt-installer">the Qt installer page</a>.</td><td align="left"><img src="/labs/lab1/download-qt-installer.png" alt="todo"/></td></tr><tr><td align="left">Follow the instructions on the installer to <strong>create a free Qt account</strong> (or use an existing one).</td><td align="left"><img src="/labs/lab1/create-qt-account.png" alt="todo"/></td></tr><tr><td align="left">When prompted, <strong>opt for a <code>Custom Installation</code></strong>.</td><td align="left"><img src="/labs/lab1/custom-installation.png" alt="todo"/></td></tr><tr><td align="left">On the next page, <strong>select (at least) these three</strong>:<br/><br/>1. <code>Qt 6.2.4 &gt; MinGW [...]</code> (Windows) or <code>Qt 6.2.4 &gt; MacOS</code> (MacOS),<br/>2. <code>Dev. and Designer Tools &gt; CMake [...]</code>, and<br/>3. <code>Dev. and Designer Tools &gt; Ninja [...]</code>.<br/><br/>Note 1: Qt Creator will be installed as well. You do not have to select it.<br/><br/>Note 2: you may opt to install more components, but be warned that this will take up a lot more space on your machine!</td><td align="left"><img src="/labs/lab1/selected-components.png" alt="todo"/></td></tr><tr><td align="left">Proceed with the installation. Once finished, <strong>launch Qt Creator</strong>.</td><td align="left"><img src="/labs/lab1/finished-install.png" alt="todo"/></td></tr><tr><td align="left">Finally, in the Qt Creator window, click <code>Open Project</code>. In the file browser that appears, <strong>choose the <code>CMakeLists.txt</code> file</strong> located in this your copy of this lab&#x27;s repository.<br/><br/></td><td align="left"><img src="/labs/lab1/open-project.png" alt="todo"/></td></tr></tbody></table></div>
+<div class="table-wrapper"><table><thead><tr><th align="left"><div style="min-width:350px">Instruction</div></th><th align="left">Screenshot</th></tr></thead><tbody><tr><td align="left"><strong>Download</strong> and open the appropriate Qt installer for your operating system from <a href="https://www.qt.io/download-qt-installer">the Qt installer page</a>.</td><td align="left"><img src="/labs/lab1/download-qt-installer.png" alt="todo"/></td></tr><tr><td align="left">Follow the instructions on the installer to <strong>create a free Qt account</strong> (or use an existing one).</td><td align="left"><img src="/labs/lab1/create-qt-account.png" alt="todo"/></td></tr><tr><td align="left">When prompted, <strong>opt for a <code>Custom Installation</code></strong>.</td><td align="left"><img src="/labs/lab1/custom-installation.png" alt="todo"/></td></tr><tr><td align="left">On the next page, <strong>select (at least) these three</strong>:<br/><br/>1. <code>Qt 6.2.4 &gt; MinGW [...]</code> (Windows) or <code>Qt 6.2.4 &gt; MacOS</code> (MacOS),<br/>2. <code>Dev. and Designer Tools &gt; CMake [...]</code>, and<br/>3. <code>Dev. and Designer Tools &gt; Ninja [...]</code>.<br/><br/>Note 1: Qt Creator will be installed as well. You do not have to select it.<br/><br/>Note 2: you may opt to install more components, but be warned that this will take up a lot more space on your machine!</td><td align="left"><img src="/labs/lab1/selected-components.png" alt="todo"/></td></tr><tr><td align="left">Proceed with the installation. Once finished, <strong>launch Qt Creator</strong>.</td><td align="left"><img src="/labs/lab1/finished-install.png" alt="todo"/></td></tr><tr><td align="left">Finally, in the Qt Creator window, click <code>Open Project</code>. In the file browser that appears, <strong>choose the <code>CMakeLists.txt</code> file</strong> located in this your copy of this lab&#x27;s repository.</td><td align="left"><img src="/labs/lab1/open-project.png" alt="todo"/></td></tr></tbody></table></div>
 <h3 id="interface"><a href="#interface">Interface</a></h3>
 <p>If you completed all the steps successfully, you should see the following screen. Good work!</p>
 <div class="todo-callout callout"><p>Insert labelled image here</p></div>
@@ -127,73 +127,78 @@
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
 </span><span class="code-line">}
 </span></code></pre>
-<p>Just as with variables, we may use <code>auto</code> in place of the return type—the compiler will deduce the return type from the <code>return</code> statement in the function body.</p>
+<p>Just as with variables, we may use <code>auto</code> in place of the return type—the compiler will deduce the return type from the <code>return</code> statement in the function body. We may also use <code>auto</code> for trailing return type declaration, this could be useful if you want to explicitly specify the return type, but the return type might be complicated, and we can therefore reduce visual clutter by separating the return type and the function name using trailing return type declaration.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">double</span> x) {
+</span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>; <span class="pl-c">// Return type deduced as double</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// trailing return type declaration, same as &quot;float plusOne(float x)&quot;</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">float</span> x)-&gt;float {
+</span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
+</span><span class="code-line">}
+</span></code></pre>
 <h5 id="overloading"><a href="#overloading">Overloading</a></h5>
 <p>Defining multiple functions with the same names, but different type annotations, allows you to do something called <strong><em>overloading</em></strong>, which you might be familiar with from languages like Java.</p>
-<details><summary>Example</summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line highlight-line"><span class="pl-k">float</span> <span class="pl-en">plusOne</span>(<span class="pl-k">float</span> x) {
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line highlight-line"><span class="pl-k">int</span> <span class="pl-en">plusOne</span>(<span class="pl-k">int</span> x) {
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
 </span><span class="code-line">}
 </span><span class="code-line">
 </span><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">double</span> x) {
-</span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>; <span class="pl-c">// Return type deduced as double</span>
-</span><span class="code-line">}
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">auto</span> x = plusOne(<span class="pl-c1">3</span>.<span class="pl-c1">14f</span>); <span class="pl-c">// calls plusOne (float); note the float literal</span>
-</span><span class="code-line"><span class="pl-k">auto</span> y = plusOne(<span class="pl-c1">2.71</span>);  <span class="pl-c">// calls plusOne (double)</span>
-</span></code></pre></details>
-<h5 id="generic-functions"><a href="#generic-functions">Generic Functions</a></h5>
-<p>We can improve the code in the example above by making our function generic. This is easy to do in C++: we simply change the type of its input parameter to <code>auto</code>.</p>
-<details><summary>Example</summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">auto</span> x) {
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
 </span><span class="code-line">}
 </span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">auto</span> a = plusOne(<span class="pl-c1">1230</span>); <span class="pl-c">// a == 1231 (int)</span>
-</span><span class="code-line"><span class="pl-k">auto</span> b = plusOne(<span class="pl-c1">6</span>.<span class="pl-c1">5f</span>); <span class="pl-c">// b == 7.5f (float)</span>
-</span><span class="code-line"><span class="pl-k">auto</span> c = plusOne(<span class="pl-c1">3.14</span>); <span class="pl-c">// c == 4.14 (double)</span>
-</span><span class="code-line">`
+</span><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">float</span> x)-&gt;float {
+</span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
+</span><span class="code-line">}
 </span><span class="code-line">
-</span><span class="code-line">A function with at least one `<span class="pl-k">auto</span>` parameter, such as <span class="pl-c1">this</span> generic `plusOne`, is known as a **[function <span class="pl-k">template</span>](https:<span class="pl-c">//en.cppreference.com/w/cpp/language/function_template#Abbreviated_function_template)**.</span>
+</span><span class="code-line"><span class="pl-k">auto</span> x = plusOne(<span class="pl-c1">42</span>); <span class="pl-c">// calls plusOne&lt;int&gt;</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = plusOne(<span class="pl-c1">3</span>.<span class="pl-c1">14f</span>); <span class="pl-c">// calls plusOne&lt;float&gt;; note the float literal</span>
+</span><span class="code-line"><span class="pl-k">auto</span> z = plusOne(<span class="pl-c1">2.71</span>);  <span class="pl-c">// calls plusOne&lt;double&gt;</span>
+</span></code></pre>
+<h5 id="generic-functions"><a href="#generic-functions">Generic Functions</a></h5>
+<p>We can improve the code in the example above by making our function generic. This is easy to do in C++: we simply change the type of its input parameter to <code>auto</code>.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">auto</span> x) {
+</span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
+</span><span class="code-line">}
 </span><span class="code-line">
-</span><span class="code-line">&lt;/details&gt;
+</span><span class="code-line"><span class="pl-k">auto</span> a = plusOne(<span class="pl-c1">1230</span>); <span class="pl-c">// a == 1231, instantiates plusOne&lt;int&gt;</span>
+</span><span class="code-line"><span class="pl-k">auto</span> b = plusOne(<span class="pl-c1">6</span>.<span class="pl-c1">5f</span>); <span class="pl-c">// b == 7.5f, instantiates plusOne&lt;float&gt;</span>
+</span><span class="code-line"><span class="pl-k">auto</span> c = plusOne(<span class="pl-c1">3.14</span>); <span class="pl-c">// c == 4.14, instantiates plusOne&lt;double&gt;</span>
+</span></code></pre>
+<details><p><summary>What actually is an <code>auto</code> parameter?</summary>A function with at least one <code>auto</code> parameter, such as
+this generic <code>plusOne</code>, is known as an <strong><a href="https://en.cppreference.com/w/cpp/language/function_template#Abbreviated_function_template">abbreviated function template</a></strong>.</p></details>
+<h5 id="extra-lambdas"><a href="#extra-lambdas">Extra: Lambdas</a></h5>
+<p>There are also function-like entities in C++ called <em>lambdas</em>. We&#x27;ll not explain them in detail since functional programming is outside the scope of this lab. However, you are welcome to play with them and ask questions about them on Ed.</p>
+<p>You may need to use lambdas for certain extra credit features, such as multithreading, in your future assignments. To get you started, a toy example is shown below.</p>
+<details><summary>Lambda example</summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">plus</span>(<span class="pl-k">auto</span> increment) {
+</span><span class="code-line">  <span class="pl-k">return</span> [=](<span class="pl-k">auto</span> x) {
+</span><span class="code-line">    <span class="pl-k">return</span> x + increment;
+</span><span class="code-line">  };
+</span><span class="code-line">}
 </span><span class="code-line">
-</span><span class="code-line">##### Extra: Lambdas
+</span><span class="code-line"><span class="pl-c">// Observe that functions are &quot;first-class&quot; in C++</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">apply</span>(<span class="pl-k">auto</span> operation, <span class="pl-k">auto</span> x) {
+</span><span class="code-line">  <span class="pl-k">return</span> <span class="pl-c1">operation</span>(x);
+</span><span class="code-line">}
 </span><span class="code-line">
-</span><span class="code-line">&lt;details&gt;
-</span><span class="code-line">  &lt;summary&gt;Extra: what are lambdas?&lt;/summary&gt;
-</span><span class="code-line">
-</span><span class="code-line">There are also function-like entities in C++ called _lambdas_. We<span class="pl-s"><span class="pl-pds">&#x27;</span>ll not explain them in detail since functional programming is outside the scope of this lab. However, you are welcome to play with them and ask questions about them on Ed.</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-s">You may need to use lambdas for certain extra credit features, such as multithreading, in your future assignments. To get you started, a toy example is shown below.</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-s">```cpp</span>
-</span><span class="code-line"><span class="pl-s">auto plus(auto increment) {</span>
-</span><span class="code-line"><span class="pl-s">  return [=](auto x) {</span>
-</span><span class="code-line"><span class="pl-s">    return x + increment;</span>
-</span><span class="code-line"><span class="pl-s">  };</span>
-</span><span class="code-line"><span class="pl-s">}</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-s">// Observe that functions are &quot;first-class&quot; in C++</span>
-</span><span class="code-line"><span class="pl-s">auto apply(auto operation, auto x) {</span>
-</span><span class="code-line"><span class="pl-s">  return operation(x);</span>
-</span><span class="code-line"><span class="pl-s">}</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-s">auto x = apply(plus(20), 22); // x == 42</span>
-</span><span class="code-line"><span class="pl-s">auto y = apply(plus(-1.1), 4.24); // y == 3.14</span>
-</span></code></pre><p>You can find more information about lambdas <a href="https://en.cppreference.com/w/cpp/language/lambda">here</a>.</p></details>
+</span><span class="code-line"><span class="pl-k">auto</span> x = apply(plus(<span class="pl-c1">20</span>), <span class="pl-c1">22</span>); <span class="pl-c">// x == 42</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = apply(plus(-<span class="pl-c1">1.1</span>), <span class="pl-c1">4.24</span>); <span class="pl-c">// y == 3.14</span>
+</span></code></pre></details>
+<p>You can find more information about lambdas <a href="https://en.cppreference.com/w/cpp/language/lambda">here</a>.</p>
 <h4 id="a-warning-about-type-deduction"><a href="#a-warning-about-type-deduction">A Warning About Type Deduction</a></h4>
-<div class="warning-callout callout"><p>Type deduction is very powerful in C++. However, overusing it has a negative impact on the readability and maintainability of your code, and it can cause unexpected compilation errors/crashes.</p></div>
+<div class="warning-callout callout"><p>Type deduction is very powerful in C++. For instance, most typed languages do not allow type deduction on function signatures like C++. However, overusing it has a negative impact on the readability and maintainability of your code, and it can cause unexpected compilation errors/crashes.</p></div>
 <p>You should be very careful to strike a balance between type declaration and type deduction to maximize your code clarity. We recommend only using <code>auto</code> for <em>local variables in function bodies</em> and for <a href="(#generic-functions)">&quot;generic&quot; functions</a>. Whenever possible, explicitly declare types in function signatures.</p>
 <div class="task-callout callout"><p>We can now write functions and use them to process different things!</p><ol>
-<li>Write a function <code>TimesTwo</code> which takes an <code>int</code>, returns an <code>int</code>, and does what the function name suggests.</li>
-<li>Add <code>std::cout &lt;&lt; TimesTwo(21) &lt;&lt; std::endl;</code> to your <code>main</code> function.</li>
+<li>Write a function <code>timesTwo</code> which takes an <code>int</code>, returns an <code>int</code>, and does what the function name suggests.</li>
+<li>Add <code>std::cout &lt;&lt; timesTwo(21) &lt;&lt; std::endl;</code> to your <code>main</code> function.</li>
 </ol><p>You should see <code>42</code> when you run the program.</p></div>
-<div class="task-callout callout"><p>Let&#x27;s use what we learned and make <code>TimesTwo</code> more interesting!</p><ol>
-<li>Change the signature of <code>TimesTwo</code> and make it generic.</li>
-<li>You might also need to change the definition in the function body of <code>TimesTwo</code> if you used multiplication for the previous task. Note that multiplication is not defined for <code>std::string</code>, but addition is, so how do you express &quot;times 2&quot; in the form of addition?</li>
+<div class="task-callout callout"><p>Let&#x27;s use what we learned and make <code>timesTwo</code> more interesting!</p><ol>
+<li>Change the signature of <code>timesTwo</code> and make it generic.</li>
+<li>You might also need to change the definition in the function body of <code>timesTwo</code> if you used multiplication for the previous task. Note that multiplication is not defined for <code>std::string</code>, but addition is, so how do you express &quot;times 2&quot; in the form of addition?</li>
 <li>Add the following print statements to your <code>main</code> function</li>
-</ol><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">std::cout &lt;&lt; TimesTwo(<span class="pl-c1">123</span>) &lt;&lt; std::endl;
-</span><span class="code-line">std::cout &lt;&lt; TimesTwo(<span class="pl-c1">3.14</span>) &lt;&lt; std::endl;
-</span><span class="code-line">std::cout &lt;&lt; TimesTwo(std::string{ <span class="pl-s"><span class="pl-pds">&quot;</span>abc<span class="pl-pds">&quot;</span></span> }) &lt;&lt; std::endl;
+</ol><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">std::cout &lt;&lt; timesTwo(<span class="pl-c1">123</span>) &lt;&lt; std::endl;
+</span><span class="code-line">std::cout &lt;&lt; timesTwo(<span class="pl-c1">3.14</span>) &lt;&lt; std::endl;
+</span><span class="code-line">std::cout &lt;&lt; timesTwo(std::string{ <span class="pl-s"><span class="pl-pds">&quot;</span>abc<span class="pl-pds">&quot;</span></span> }) &lt;&lt; std::endl;
 </span></code></pre><p>You should see <code>246</code>, <code>6.28</code> and <code>abcabc</code> when you run the program.</p></div>
 <h3 id="structs-and-classes"><a href="#structs-and-classes">Structs and Classes</a></h3>
 <p>Going beyond primitives, we can create custom types in C++ by combining existing types and bundling them with functions.</p>
@@ -243,7 +248,7 @@
 </span><span class="code-line"><span class="pl-k">auto</span> newArea = x.calculateArea(); <span class="pl-c">// newArea == 16</span>
 </span><span class="code-line">x.makeItASquare(oldLength);       <span class="pl-c">// x.length == x.width == 2</span>
 </span></code></pre>
-<details><summary>A warning about constructors and other special member functions</summary><p>If you have any experience in class-based OOP, you probably know that you can use <strong>constructors</strong> to initialize an object, instead of initializing it field-by-field (aggregate initialization).</p><p>However, we generally recommend that you <em>do not</em> manually define your own constructors.</p><p>Instead, we suggest using <strong><a href="https://en.cppreference.com/w/cpp/language/aggregate_initialization">aggregate types</a></strong> where possible.</p><p>Improper handling of constructors and other special member functions* can break <em><a href="https://isocpp.org/wiki/faq/value-vs-ref-semantics">value semantics</a></em> for your type, and cause unexpected bugs or resource leaks.</p><p>And, while it is entirely possible that you may never encounter or notice such a bug even if you do use special member functions, we still recommend using aggregate types as the less error-prone option.</p><p>* special member functions = constructors, copy constructors, move constructors, copy assignment operators, move assignment operators, and destructors</p></details>
+<details><summary>A warning about constructors and other special member functions</summary><p>If you have any experience in class-based OOP, you probably know that you can use <strong>constructors</strong> to initialize an object, instead of initializing it field-by-field (aggregate initialization).</p><p>However, we generally recommend that you <em>do not</em> manually define your own constructors.</p><p>Instead, we suggest using <strong><a href="https://en.cppreference.com/w/cpp/language/aggregate_initialization">aggregate types</a></strong> where possible.</p><p>Improper handling of constructors and other special member functions* can break <em><a href="https://isocpp.org/wiki/faq/value-vs-ref-semantics">value semantics</a></em> for your type, and cause unexpected bugs or resource leaks.</p><p>And, while it is entirely possible that you may never encounter or notice such a bug even if you do use special member functions, we still recommend using aggregate types as the less error-prone option.</p><p>* special member functions = default constructors, copy constructors, move constructors, copy assignment operators, move assignment operators, and destructors</p></details>
 <div class="task-callout callout"><p>Let&#x27;s add more behaviors to our <code>Rectangle</code> type and enhance its capabilities!</p><ol>
 <li>Add a method <code>calculatePerimeter</code> to <code>Rectangle</code>.</li>
 <li>Add <code>std::cout &lt;&lt; Rectangle{ 7, 8 }.calculatePerimeter() &lt;&lt; std::endl;</code> to your <code>main</code> function.</li>
@@ -256,8 +261,31 @@
 <p>Now, we have 2 types <code>Rectangle</code> and <code>Circle</code>, with the same member functions <code>calculateArea</code> and <code>calculatePerimeter</code>. Can we define one <code>printShape</code> function that works for both types?</p>
 <h4 id="generic-functions-reprise"><a href="#generic-functions-reprise">Generic Functions (Reprise)</a></h4>
 <p>If you have previous experience in OOP, you might think to define a <code>Shape</code> interface, have <code>Rectangle</code> and <code>Circle</code> both implement <code>Shape</code>, then define <code>printShape</code> on <code>Shape</code>. This is unnecessary in C++.</p>
-<p>Remember the generic functions we learned in the previous section? If a function has a parameter of <code>auto</code> type, we can pass <code>Rectangle</code> and <code>Circle</code> instances to it just like that!</p>
-<details><summary>Extra: for those who have taken CS 1730</summary><p>The reason behind this magic is that C++ templates are <a href="https://en.wikipedia.org/wiki/Structural_type_system">structurally typed</a>, and they do not enforce <a href="https://en.wikipedia.org/wiki/Parametricity">parametricity</a>.</p></details>
+<p>Remember the generic functions we learned in the previous section? If a function has a parameter of <code>auto</code> type, it is allowed to be anything! We can pass <code>Rectangle</code> and <code>Circle</code> instances to it just like that!</p>
+<details><summary>Extra: for those who have taken CS 1730</summary><p>The reason behind this magic is that C++ templates are <a href="https://en.wikipedia.org/wiki/Structural_type_system">structurally typed</a>, and they do not enforce <a href="https://en.wikipedia.org/wiki/Parametricity">parametricity</a>. The lack of parametricity means when a type parameter gets reified by an actual type <code>T</code>, the type information of <code>T</code> is <strong>not</strong> erased in the body of the function template. This allows template definition to rely on any adhoc property of <code>T</code>, including inspecting what <code>T</code> actually is. Such capability enables templates to simulate features commonly seen in a dependently-typed system, or an untyped language.</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// a function template that only accepts containers with no more than 42 elements</span>
+</span><span class="code-line"><span class="pl-c">// simulating a dependently typed function</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">f</span>(<span class="pl-k">auto</span> x) requires (x.size() &lt;= 42) {
+</span><span class="code-line">    <span class="pl-c">// empty</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-en">f</span>(std::array&lt;<span class="pl-k">int</span>, <span class="pl-c1">10</span>&gt;{}); <span class="pl-c">// OK</span>
+</span><span class="code-line"><span class="pl-c">// f(std::array&lt;int, 43&gt;{}); &lt;- error</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// a function template whose return type depends on its input</span>
+</span><span class="code-line"><span class="pl-c">// simulating an untyped function</span>
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">g</span>(<span class="pl-k">auto</span> x) {
+</span><span class="code-line">    <span class="pl-c">// if the input can be invoked like a function</span>
+</span><span class="code-line">    <span class="pl-c">// the return type is the same as the input&#x27;s return type</span>
+</span><span class="code-line">    <span class="pl-k">if</span> <span class="pl-k">constexpr</span> (requires { <span class="pl-c1">x</span>(); })
+</span><span class="code-line">        <span class="pl-k">return</span> <span class="pl-c1">x</span>();
+</span><span class="code-line">    <span class="pl-c">// otherwise return type is int</span>
+</span><span class="code-line">    <span class="pl-k">else</span>
+</span><span class="code-line">        <span class="pl-k">return</span> <span class="pl-c1">42</span>;
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = g([] { <span class="pl-k">return</span> <span class="pl-c1">2.71</span>; }); <span class="pl-c">// x is of type double</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y = g(<span class="pl-s"><span class="pl-pds">&quot;</span>aaa<span class="pl-pds">&quot;</span></span>); <span class="pl-c">// y is of type int</span>
+</span></code></pre></details>
 <div class="task-callout callout"><p>Navigate to the empty function <code>printShape</code>.</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">printShape</span>(<span class="pl-k">auto</span> shape) {
 </span><span class="code-line">  <span class="pl-c">// Your code here</span>
 </span><span class="code-line">}
@@ -287,9 +315,8 @@
 </span><span class="code-line line-number" line="17"><span class="pl-k">auto</span> underlyingPointer = x.data(); <span class="pl-c">// we&#x27;ll explain pointers later</span>
 </span><span class="code-line line-number" line="18">
 </span><span class="code-line line-number" line="19"><span class="pl-c">// Arrays can be looped over element-wise</span>
-</span><span class="code-line line-number" line="20"><span class="pl-k">for</span> (<span class="pl-k">auto</span> element : y) {
+</span><span class="code-line line-number" line="20"><span class="pl-k">for</span> (<span class="pl-k">auto</span> element : y)
 </span><span class="code-line line-number" line="21">  std::cout &lt;&lt; element &lt;&lt; std::endl; <span class="pl-c">// prints 3.14, then 2.71</span>
-</span><span class="code-line line-number" line="22">}
 </span></code></pre></details>
 <h4 id="vectors"><a href="#vectors">Vectors</a></h4>
 <p><a href="https://en.cppreference.com/w/cpp/container/vector"><code>std::vector</code></a> is a dynamic-length array. Unlike <code>std::array</code>, it allows us to insert or remove elements any time, and it has mostly the same capabilities as <code>std::array</code>. However, <code>std::array</code> is slightly more performant as it doesn&#x27;t require dynamic memory allocation.</p>
@@ -297,7 +324,7 @@
 </span><span class="code-line line-number" line="2">
 </span><span class="code-line line-number" line="3"><span class="pl-k">auto</span> x = std::vector&lt;<span class="pl-k">int</span>&gt;{}; <span class="pl-c">// Must declare element type</span>
 </span><span class="code-line line-number" line="4">
-</span><span class="code-line line-number" line="5"><span class="pl-c">// Element type and length can be deduced if you immediately initialize</span>
+</span><span class="code-line line-number" line="5"><span class="pl-c">// Element type can be deduced if you immediately initialize</span>
 </span><span class="code-line line-number" line="6"><span class="pl-c">// the vector with values</span>
 </span><span class="code-line line-number" line="7"><span class="pl-k">auto</span> y = std::vector{ <span class="pl-c1">3</span>.<span class="pl-c1">14f</span>, <span class="pl-c1">2</span>.<span class="pl-c1">71f</span> };
 </span><span class="code-line line-number" line="8">
@@ -307,18 +334,15 @@
 </span><span class="code-line line-number" line="12">x.push_back(<span class="pl-c1">123</span>); <span class="pl-c">// add another element after the 42 we just inserted</span>
 </span><span class="code-line line-number" line="13">x.pop_back(); <span class="pl-c">// remove the element we just added</span>
 </span><span class="code-line line-number" line="14">
-</span><span class="code-line line-number" line="15"><span class="pl-k">auto</span> [a, b, c] = x; <span class="pl-c">// Arrays can be unpacked: a == 42, b == 0, c == 0</span>
-</span><span class="code-line line-number" line="16">
-</span><span class="code-line line-number" line="17"><span class="pl-c">// Commonly used vector methods</span>
-</span><span class="code-line line-number" line="18"><span class="pl-k">auto</span> lengthX = x.size();
-</span><span class="code-line line-number" line="19">y.reserve(<span class="pl-c1">20</span>); <span class="pl-c">// Pre-allocate memory for more elements. Its length stays the same</span>
-</span><span class="code-line line-number" line="20">x.resize(<span class="pl-c1">10</span>); <span class="pl-c">// Resize the vector, actually changing its number of elements (length)</span>
-</span><span class="code-line line-number" line="21"><span class="pl-k">auto</span> underlyingPointer = x.data(); <span class="pl-c">// we&#x27;ll explain pointers Lvalue_to_rvalue_conversion</span>
-</span><span class="code-line line-number" line="22">
-</span><span class="code-line line-number" line="23"><span class="pl-c">// Vectors can be looped over element-wise</span>
-</span><span class="code-line line-number" line="24"><span class="pl-k">for</span> (<span class="pl-k">auto</span> element : y) {
-</span><span class="code-line line-number" line="25">  std::cout &lt;&lt; element &lt;&lt; <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span>; <span class="pl-c">// prints 3.14, then 2.71</span>
-</span><span class="code-line line-number" line="26">}
+</span><span class="code-line line-number" line="15"><span class="pl-c">// Commonly used vector methods</span>
+</span><span class="code-line line-number" line="16"><span class="pl-k">auto</span> lengthX = x.size();
+</span><span class="code-line line-number" line="17">y.reserve(<span class="pl-c1">20</span>); <span class="pl-c">// Pre-allocate memory for more elements. Its length stays the same</span>
+</span><span class="code-line line-number" line="18">x.resize(<span class="pl-c1">10</span>); <span class="pl-c">// Resize the vector, actually changing its number of elements (length)</span>
+</span><span class="code-line line-number" line="19"><span class="pl-k">auto</span> underlyingPointer = x.data(); <span class="pl-c">// we&#x27;ll explain pointers later</span>
+</span><span class="code-line line-number" line="20">
+</span><span class="code-line line-number" line="21"><span class="pl-c">// Vectors can be looped over element-wise</span>
+</span><span class="code-line line-number" line="22"><span class="pl-k">for</span> (<span class="pl-k">auto</span> element : y)
+</span><span class="code-line line-number" line="23">  std::cout &lt;&lt; element &lt;&lt; <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span>; <span class="pl-c">// prints 3.14, then 2.71</span>
 </span></code></pre></details>
 <h4 id="tuples"><a href="#tuples">Tuples</a></h4>
 <p><a href="https://en.cppreference.com/w/cpp/utility/tuple"><code>std::tuple</code></a> is a heterogeneous container—it is capable of storing elements of <em>different</em> types. It is most commonly used to achieve <strong>multiple return values</strong> in C++.</p>
@@ -346,13 +370,14 @@
 </span><span class="code-line line-number" line="3"><span class="pl-k">auto</span> x = std::string{}; <span class="pl-c">// Create an empty string</span>
 </span><span class="code-line line-number" line="4"><span class="pl-k">auto</span> y = std::string{ <span class="pl-s"><span class="pl-pds">&quot;</span>hello!<span class="pl-pds">&quot;</span></span> };  <span class="pl-c">// Convert a string literal to a std::string</span>
 </span><span class="code-line line-number" line="5">
-</span><span class="code-line line-number" line="6">std::string z = <span class="pl-s"><span class="pl-pds">&quot;</span>abcd<span class="pl-pds">&quot;</span></span>; <span class="pl-c">// Initialize a std::string</span>
-</span><span class="code-line line-number" line="7">z += <span class="pl-s"><span class="pl-pds">&quot;</span>efgh<span class="pl-pds">&quot;</span></span>; <span class="pl-c">// Use + to concatenate strings</span>
+</span><span class="code-line line-number" line="6"><span class="pl-k">using</span> <span class="pl-k">namespace</span> <span class="pl-en">std</span>::literals<span class="pl-k">;</span> <span class="pl-c">// use this namespace to create std::string literals</span>
+</span><span class="code-line line-number" line="7"><span class="pl-k">auto</span> z = <span class="pl-s"><span class="pl-pds">&quot;</span>abcd<span class="pl-pds">&quot;</span></span>s; <span class="pl-c">// Create a std::string literal, note the s suffix</span>
+</span><span class="code-line line-number" line="8">z += <span class="pl-s"><span class="pl-pds">&quot;</span>efgh<span class="pl-pds">&quot;</span></span>; <span class="pl-c">// Use + to concatenate strings</span>
 </span></code></pre></details>
 <div class="task-callout callout"><p>Now that we&#x27;ve learned the basics of containers and strings, let&#x27;s try using them!</p><ol>
 <li>Create an array of <code>std::strings</code>. You&#x27;re free to pick either <code>std::array</code> or <code>std::vector</code>.</li>
 <li>Fill the container with some strings.</li>
-<li>Repeat each string element in the container.</li>
+<li>Apply <code>timesTwo</code> to each string element in the container. Hint: you cannot use the range-for loop you saw above to modify container elements, you&#x27;ll see why in the following section when we explain references.</li>
 <li>Print each string element in the container, and see if the result is what you expect.</li>
 </ol></div>
 <h3 id="pointers-and-references"><a href="#pointers-and-references">Pointers and References</a></h3>
@@ -375,14 +400,14 @@
 </span><span class="code-line"><span class="pl-k">int</span>&amp; refx2 = x; <span class="pl-c">// another way to obtain a reference is to directly &#x27;reference&#x27; it.</span>
 </span><span class="code-line">refx = <span class="pl-c1">123</span>; <span class="pl-c">// this sets x to 123 too, because refx and x share the same memory address, they are the exact same thing!</span>
 </span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// you should see 123 here</span>
-</span><span class="code-line"><span class="pl-k">auto</span> y = Rectangle{ .<span class="pl-smi">Length</span> = <span class="pl-c1">4</span>, .<span class="pl-smi">Width</span> = <span class="pl-c1">2</span> };
+</span><span class="code-line"><span class="pl-k">auto</span> y = Rectangle{ .<span class="pl-smi">length</span> = <span class="pl-c1">4</span>, .<span class="pl-smi">width</span> = <span class="pl-c1">2</span> };
 </span><span class="code-line"><span class="pl-k">auto</span> py = &amp;y;
-</span><span class="code-line"><span class="pl-k">auto</span> a = py-&gt;<span class="pl-en">CalculateArea</span>(); <span class="pl-c">// same as y.CalculateArea()</span>
-</span><span class="code-line"><span class="pl-k">double</span>&amp; yLength = py-&gt;Length; <span class="pl-c">// same as y.Length</span>
-</span><span class="code-line">yLength = <span class="pl-c1">6</span>; <span class="pl-c">// this sets y.Length to 6</span>
-</span><span class="code-line">py-&gt;Width = <span class="pl-c1">3</span>; <span class="pl-c">// this sets y.Width to 3</span>
+</span><span class="code-line"><span class="pl-k">auto</span> a = py-&gt;<span class="pl-en">calculateArea</span>(); <span class="pl-c">// same as y.calculateArea()</span>
+</span><span class="code-line"><span class="pl-k">double</span>&amp; yLength = py-&gt;length; <span class="pl-c">// same as y.length</span>
+</span><span class="code-line">yLength = <span class="pl-c1">6</span>; <span class="pl-c">// this sets y.length to 6</span>
+</span><span class="code-line">py-&gt;width = <span class="pl-c1">3</span>; <span class="pl-c">// this sets y.width to 3</span>
 </span></code></pre>
-<div class="task-callout callout"><p>What is the type of <code>*ppx</code>? What about <code>**ppx</code>? Compare your answers with the TA while getting checked off!</p></div>
+<div class="task-callout callout"><p>What is the type of <code>*ppx</code>? What about <code>**ppx</code>? Uncomment the support code for task 9, and write your answer in <code>static_assert</code>s. The program will only compile if you answer correctly.</p></div>
 <p>One thing we have to be careful with references is that we <strong>always</strong> have to spell out <code>&amp;</code> in the type declaration when creating a reference, whether we&#x27;re using type deduction or not. Otherwise we&#x27;d be creating a copy rather than a reference.</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
 </span><span class="code-line"><span class="pl-k">int</span>* px = &amp;x;
@@ -402,63 +427,63 @@ type decay
 a reference). We should really change most of the parameter types in our function signature to references, unless
 it&#x27;s something trivial like an <code>int</code> or <code>double</code>. Otherwise, a full copy will be made for every object we passed
 to the function, and it could lead to serious performance problems!</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">F</span>(std::vector&lt;<span class="pl-k">int</span>&gt; Things) {
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">func</span>(std::vector&lt;<span class="pl-k">int</span>&gt; things) {
 </span><span class="code-line">    <span class="pl-c">// empty</span>
 </span><span class="code-line">}
-</span><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">BetterF</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; Things) {
+</span><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">betterFunc</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; things) {
 </span><span class="code-line">    <span class="pl-c">// empty</span>
 </span><span class="code-line">}
-</span><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
-</span><span class="code-line"><span class="pl-en">F</span>(Things); <span class="pl-c">// &#x27;Things&#x27; will be copied when you call F() because it gets passed by value!</span>
-</span><span class="code-line"><span class="pl-en">BetterF</span>(Things); <span class="pl-c">// no copy will be made here! because &#x27;Things&#x27; gets passed by reference!</span>
-</span><span class="code-line"><span class="pl-c">// This also means if BetterF modifies &#x27;Things&#x27; in any way in its function body, it will be reflected here</span>
+</span><span class="code-line"><span class="pl-k">auto</span> things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line"><span class="pl-en">func</span>(things); <span class="pl-c">// &#x27;things&#x27; will be copied when you call func() because it gets passed by value!</span>
+</span><span class="code-line"><span class="pl-en">betterFunc</span>(things); <span class="pl-c">// no copy will be made here! because &#x27;things&#x27; gets passed by reference!</span>
+</span><span class="code-line"><span class="pl-c">// This also means if betterFunc modifies &#x27;things&#x27; in any way in its function body, it will be reflected here</span>
 </span></code></pre>
-<p>The same also applies to looping over containers.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
-</span><span class="code-line"><span class="pl-c">// this copies every element in &#x27;Things&#x27;</span>
+<p>The same also applies to looping over containers. You need to use reference in a range-for loop to modify elements.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line"><span class="pl-c">// this copies every element in &#x27;things&#x27;</span>
 </span><span class="code-line"><span class="pl-c">// not ideal if element type is not trivial to copy</span>
-</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> x : Things)
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> x : things)
 </span><span class="code-line">    std::cout &lt;&lt; x &lt;&lt; std::endl;
-</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; x : Things) <span class="pl-c">// this loops over each element by reference</span>
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; x : things) <span class="pl-c">// this loops over each element by reference</span>
 </span><span class="code-line">    x += x; <span class="pl-c">// which also enables you to modify the elements</span>
-</span><span class="code-line"><span class="pl-c">// now Things = [2, 4, 6, 8]</span>
+</span><span class="code-line"><span class="pl-c">// now things = [2, 4, 6, 8]</span>
 </span></code></pre>
 <div class="task-callout callout"><p>Let&#x27;s try our hand at references!</p><ul>
-<li>Navigate to the empty function <code>DoubleEachElement</code>, this function takes any container and doubles each element in the container.</li>
-</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">DoubleEachElement</span>(<span class="pl-c">/* ??? Container */</span>) {
+<li>Navigate to the empty function <code>doubleEachElement</code>, this function takes any container and doubles each element in the container.</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">doubleEachElement</span>(<span class="pl-c">/* ??? container */</span>) {
 </span><span class="code-line">    <span class="pl-c">// your code here</span>
 </span><span class="code-line">}
 </span></code></pre><ul>
-<li>Uncomment the <code>Container</code> parameter, replace <code>???</code> with a proper type declaration. (hint: references work with generic parameters too!).</li>
+<li>Uncomment the <code>container</code> parameter, replace <code>???</code> with a proper type declaration. (hint: references work with generic parameters too!).</li>
 <li>Complete the function body using what we learned.</li>
-<li>Pass different <code>std::array</code> and <code>std::vector</code> objects to <code>DoubleEachElement</code> in your <code>main</code> function.</li>
-</ul><p>Print the results after <code>DoubleEachElement</code> calls, see if it matches your expectation!</p></div>
+<li>Pass different <code>std::array</code> and <code>std::vector</code> objects to <code>doubleEachElement</code> in your <code>main</code> function.</li>
+</ul><p>Print the results after <code>doubleEachElement</code> calls, see if it matches your expectation!</p></div>
 <p>One problem with the basic form of references we&#x27;ve learned so far, is that they cannot bind to <em>values</em> (<a href="https://en.cppreference.com/w/cpp/language/value_category#rvalue">rvalue</a> in C++ terminology). The reason is obvious, values such as <code>123</code> or <code>3.14</code> do not have a memory address because they are not stored in memory by some variable. The same applies to function parameters, we cannot pass values to reference parameters.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">BetterF</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; Things) {
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">betterFunc</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; things) {
 </span><span class="code-line">    <span class="pl-c">// empty</span>
 </span><span class="code-line">}
 </span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
-</span><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line"><span class="pl-k">auto</span> things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
 </span><span class="code-line"><span class="pl-k">auto</span>&amp; refx = x; <span class="pl-c">// OK, bind to a variable</span>
-</span><span class="code-line"><span class="pl-c">// auto&amp; IncorrectRef = 42; // error, (lvalue) reference cannot bind to (r)value</span>
-</span><span class="code-line"><span class="pl-en">BetterF</span>(Things); <span class="pl-c">// OK, reference parameter binds to &#x27;Things&#x27;</span>
-</span><span class="code-line"><span class="pl-c">// BetterF(std::vector{ 1, 2, 3, 4 }); // error, (lvalue) reference parameter cannot bind to (r)value</span>
+</span><span class="code-line"><span class="pl-c">// auto&amp; incorrectRef = 42; // error, (lvalue) reference cannot bind to (r)value</span>
+</span><span class="code-line"><span class="pl-en">betterFunc</span>(things); <span class="pl-c">// OK, reference parameter binds to &#x27;things&#x27;</span>
+</span><span class="code-line"><span class="pl-c">// betterFunc(std::vector{ 1, 2, 3, 4 }); // error, (lvalue) reference parameter cannot bind to (r)value</span>
 </span></code></pre>
 <p>This can be inconvenient in some cases. Ideally, we&#x27;d want something that behaves like a reference when we bind it to a variable, and like a new variable when we provide it a value. Luckily, we do have something exactly like this in C++ called <em>forwarding</em> <em>references</em> in the form of <code>auto&amp;&amp;</code>.</p>
 <details><summary>Be careful though</summary><p><code>&amp;&amp;</code> after a concrete type, like <code>int&amp;&amp;</code> or <code>std::vector&lt;int&gt;&amp;&amp;</code>, does not form a forwarding reference! These are <em>rvalue references</em> which are outside the scope of this lab. You can learn more about rvalue references <a href="https://en.cppreference.com/w/cpp/language/reference#Rvalue_references">here</a>, if you&#x27;re interested.</p></details>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">EvenBetterF</span>(<span class="pl-k">auto</span>&amp;&amp; Things) {
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">evenBetterFunc</span>(<span class="pl-k">auto</span>&amp;&amp; things) {
 </span><span class="code-line">  <span class="pl-c">// empty</span>
 </span><span class="code-line">}
 </span><span class="code-line">
 </span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
-</span><span class="code-line"><span class="pl-k">auto</span> Things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
+</span><span class="code-line"><span class="pl-k">auto</span> things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
 </span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; refx = x; <span class="pl-c">// OK, bind to a variable, same as &#x27;auto&amp; refx = x;&#x27;</span>
-</span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; ForwardRef = <span class="pl-c1">42</span>; <span class="pl-c">// OK, creates a new variable as if &#x27;auto ForwardRef = 42;&#x27;</span>
-</span><span class="code-line"><span class="pl-en">EvenBetterF</span>(Things); <span class="pl-c">// OK, reference parameter binds to &#x27;Things&#x27;</span>
-</span><span class="code-line"><span class="pl-en">EvenBetterF</span>(std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> }); <span class="pl-c">// OK, as if the parameter type is non-reference</span>
+</span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; forwardRef = <span class="pl-c1">42</span>; <span class="pl-c">// OK, creates a new variable as if &#x27;auto forwardRef = 42;&#x27;</span>
+</span><span class="code-line"><span class="pl-en">evenBetterFunc</span>(things); <span class="pl-c">// OK, reference parameter binds to &#x27;things&#x27;</span>
+</span><span class="code-line"><span class="pl-en">evenBetterFunc</span>(std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> }); <span class="pl-c">// OK, as if the parameter type is non-reference</span>
 </span></code></pre>
 <h3 id="pointer-arithmetic"><a href="#pointer-arithmetic">Pointer Arithmetic</a></h3>
-<p>We&#x27;ve discussed in the previous section that a pointer is an integer storing a memory address. What will happen though, if we perform integer arithmetic on pointers? Consider the following example</p>
+<p>We&#x27;ve discussed in the previous section that a pointer is an integer storing a memory address. What will happen though, if we perform integer arithmetics on pointers? Consider the following example</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> p = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">int</span>*&gt;(<span class="pl-c1">42</span>); <span class="pl-c">// cast some random integer to a pointer</span>
 </span><span class="code-line">p += <span class="pl-c1">1</span>;
 </span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-k">long</span>&gt;(p); <span class="pl-c">// cast pointer back to integer</span>
@@ -468,16 +493,16 @@ to the function, and it could lead to serious performance problems!</p>
 <p>This is because pointer arithmetic has array semantics, meaning if you have a pointer <code>p</code> pointing to the address of some object of type <code>T</code>, <code>p + n</code> assumes that there is an array of <code>T</code>s stored in contiguous memory, and <code>p + n</code> evaluates to the address of the <code>n</code>-th object after the object that <code>p</code> points to. In the above example, <code>x</code> contains the address of a (hypothetical) integer next to the (hypotetical) integer whose address is <code>42</code>. And therefore the value of <code>x</code> would be <code>42 + sizeof(int)</code>, since <code>sizeof(int)</code> is likely <code>4</code> on most common hardware platforms, you see <code>46</code> when you print out <code>x</code>.</p>
 <p><code>n</code> can also be a negative integer in <code>p + n</code>, let <code>m = -n</code>, <code>p + n</code> would be the same as <code>p - m</code>, meaning the address of the <code>m</code>-th object before <code>*p</code>.</p>
 <div class="task-callout callout"><ul>
-<li>Head to the empty function <code>PrintEachObject</code>, this function takes a pointer to the first object of an array of objects in memory, and the number of objects we have.</li>
-</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">PrintEachObject</span>(<span class="pl-k">auto</span>* PointerToTheFirstObject, std::<span class="pl-c1">size_t</span> NumberOfObjects) {
+<li>Head to the empty function <code>printEachObject</code>, this function takes a pointer to the first object of an array of objects in memory, and the number of objects we have.</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">printEachObject</span>(<span class="pl-k">auto</span>* pointerToTheFirstObject, std::<span class="pl-c1">size_t</span> numberOfObjects) {
 </span><span class="code-line">  <span class="pl-c">// your code here</span>
 </span><span class="code-line">}
 </span></code></pre><ul>
 <li>Complete the function body, print each object using pointer arithmetic. Hint: <code>*(p + n)</code> is how you dereference <code>p + n</code>.</li>
-<li>Uncomment the supporting code in <code>main()</code> for task 10, execute the program and see if you get the expected result.</li>
+<li>Uncomment the supporting code in <code>main()</code> for task 11, execute the program and see if you get the expected result.</li>
 </ul></div>
 <p>Pointer arithmetic is common in C/C++, and <code>*(p + n)</code> is unwieldy, the language therefore defines a syntactic sugar for us to do the exact same thing, we may use the indexing operator <code>p[n]</code> to represent <code>*(p + n)</code>, the indexing operator syntax is the exact same as explicit pointer arithmetic.</p>
-<div class="task-callout callout"><p>Replace explicit pointer arithmetic in <code>PrintEachObject</code> with the indexing operator. Keep your old implementation as commented-out code, so the TAs can check that you completed the previous task correctly.</p></div>
+<div class="task-callout callout"><p>Replace explicit pointer arithmetic in <code>printEachObject</code> with the indexing operator. Keep your old implementation as commented-out code, so the TAs can check that you completed the previous task correctly.</p></div>
 <details><summary>Secrets behind C arrays</summary><p>If you have prior experience in C/C++, you may have noticed that we always use <code>std::array&lt;T, N&gt;</code> instead of the C array <code>T[N]</code>. C arrays behave just like a pointer in many cases, and we concluded that this is unnecessary complexity for beginners.</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x1[<span class="pl-c1">3</span>];
 </span><span class="code-line"><span class="pl-k">auto</span> x2 = std::array&lt;<span class="pl-k">int</span>, <span class="pl-c1">3</span>&gt;{};
 </span><span class="code-line"><span class="pl-k">auto</span> y1 = x1; <span class="pl-c">// this is a pointer! not a copy of the &#x27;x1&#x27; array!</span>
@@ -486,8 +511,7 @@ to the function, and it could lead to serious performance problems!</p>
 </span><span class="code-line">y2[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// this does nothing to x2, since it&#x27;s a copy</span>
 </span></code></pre><p>The reason behind this oddity is that C arrays automatically decay to the pointer to its first element. Interestingly, the C++ standard only defines the builtin indexing operator on pointers, it is never said that (C) arrays can be indexed. What happens when the compiler sees <code>x1[0]</code> is that, <code>x1</code> first decays to a pointer automatically, then the indexing operator defined on <strong>pointers</strong> gets invoked, and then desugar-ed into <code>*(x1 + 0)</code>. Pointer arithmetic happens behind the scene every time you manipulate an array!</p></details>
 <h2 id="end"><a href="#end">End</a></h2>
-<nav class="toc"><ol class="toc-level toc-level-1"></ol></nav><main><hr/>
-<p>Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6">anonymous feedback form</a>.</p></main></main></div>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.722506b4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.0c362bb1.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-d0780864.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.7254b951.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.722506b4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-4f37483a.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.5837d071.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.66ccf693.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.9773863d.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.5837d071.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-ff3d8afd.js"></body>
     </html>
