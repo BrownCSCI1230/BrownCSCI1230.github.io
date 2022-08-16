@@ -9,7 +9,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.6f249568.js",
+    "file": "assets/pages/index.page.060bbd1f.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -17,8 +17,17 @@
       "_chunk-903e764a.js"
     ]
   },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.ff67b435.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
+    ]
+  },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.7254b951.js",
+    "file": "assets/renderer/_default.page.client.590dfa6e.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -60,7 +69,7 @@
     ]
   },
   "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.384f00ba.js",
+    "file": "assets/pages/docs/course-missive.page.b1a7b572.js",
     "src": "pages/docs/course-missive.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -99,7 +108,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.02d7dcaf.js",
+    "file": "assets/pages/docs/index.page.c09d8586.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -135,15 +144,6 @@
     "imports": [
       "_chunk-903e764a.js",
       "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.6bc5b22e.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
     ]
   },
   "pages/labs/index.page.mdx": {
@@ -198,12 +198,13 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.cc1e139d.js",
+    "file": "assets/pages/labs/lab3.page.563a9c7b.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js",
+      "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
     ]
   },
@@ -230,7 +231,7 @@
     ]
   },
   "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.a2ee5704.js",
+    "file": "assets/pages/labs/lab6.page.715ff13e.js",
     "src": "pages/labs/lab6.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -271,6 +272,15 @@
       "_chunk-903e764a.js",
       "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.6bc5b22e.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
     ]
   },
   "pages/projects/final/index.page.mdx": {
@@ -344,22 +354,24 @@
     ]
   },
   "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.e14897f1.js",
+    "file": "assets/pages/projects/ray/2-algo.page.335cb4b4.js",
     "src": "pages/projects/ray/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js",
+      "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
     ]
   },
   "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.763221ae.js",
+    "file": "assets/pages/projects/ray/2.page.2f49808f.js",
     "src": "pages/projects/ray/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js",
+      "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
     ]
   },
@@ -407,11 +419,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.94aa2b05.js",
+    "file": "assets/entry-client-routing.c7216da1.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-ff3d8afd.js"
+      "_chunk-adefa4dc.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
@@ -439,6 +451,7 @@
       "pages/labs/lab7.page.mdx",
       "pages/labs/lab8.page.mdx",
       "pages/labs/lab9.page.mdx",
+      "pages/lectures.page.mdx",
       "pages/projects/final/index.page.mdx",
       "pages/projects/index.page.mdx",
       "pages/projects/raster/1-algo.page.mdx",
@@ -458,11 +471,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.2bad7c8c.js",
+    "file": "assets/entry-server-routing.3ad89936.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-ff3d8afd.js"
+      "_chunk-adefa4dc.js"
     ],
     "dynamicImports": [
       "pages/docs/code-blocks.page.mdx",
@@ -490,6 +503,7 @@
       "pages/labs/lab7.page.mdx",
       "pages/labs/lab8.page.mdx",
       "pages/labs/lab9.page.mdx",
+      "pages/lectures.page.mdx",
       "pages/projects/final/index.page.mdx",
       "pages/projects/index.page.mdx",
       "pages/projects/raster/1-algo.page.mdx",
@@ -523,8 +537,8 @@
       "_chunk-903e764a.js"
     ]
   },
-  "_chunk-ff3d8afd.js": {
-    "file": "assets/chunk-ff3d8afd.js"
+  "_chunk-adefa4dc.js": {
+    "file": "assets/chunk-adefa4dc.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
