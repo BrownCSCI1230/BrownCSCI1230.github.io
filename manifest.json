@@ -98,12 +98,13 @@
     ]
   },
   "pages/docs/github-gradescope-guide.page.mdx": {
-    "file": "assets/pages/docs/github-gradescope-guide.page.e0cecb98.js",
+    "file": "assets/pages/docs/github-gradescope-guide.page.048d7104.js",
     "src": "pages/docs/github-gradescope-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-83577a7c.js",
+      "_chunk-858807b0.js",
       "_chunk-da990835.js"
     ]
   },
@@ -419,7 +420,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.a27dca89.js",
+    "file": "assets/entry-client-routing.702aa098.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -471,7 +472,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.c51c8bca.js",
+    "file": "assets/entry-server-routing.13c293b0.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
