@@ -128,12 +128,13 @@
     ]
   },
   "pages/docs/preventing-memory-leaks.page.mdx": {
-    "file": "assets/pages/docs/preventing-memory-leaks.page.ae554cd3.js",
+    "file": "assets/pages/docs/preventing-memory-leaks.page.aa7a8659.js",
     "src": "pages/docs/preventing-memory-leaks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-83577a7c.js",
+      "_chunk-858807b0.js",
       "_chunk-da990835.js"
     ]
   },
@@ -420,7 +421,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.1c3db870.js",
+    "file": "assets/entry-client-routing.af3f87cd.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -472,7 +473,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.325c0929.js",
+    "file": "assets/entry-server-routing.51bb4f29.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
