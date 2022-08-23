@@ -296,48 +296,6 @@
       "_chunk-6daa152b.js"
     ]
   },
-  "pages/projects/raster/1-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo.page.b8e38ad0.js",
-    "src": "pages/projects/raster/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-e052a03f.js",
-      "_chunk-6daa152b.js"
-    ]
-  },
-  "pages/projects/raster/1.page.mdx": {
-    "file": "assets/pages/projects/raster/1.page.1809a843.js",
-    "src": "pages/projects/raster/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-e052a03f.js",
-      "_chunk-6daa152b.js",
-      "_chunk-ded7f5eb.js"
-    ]
-  },
-  "pages/projects/raster/2-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo.page.7f97559b.js",
-    "src": "pages/projects/raster/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-e052a03f.js",
-      "_chunk-6daa152b.js",
-      "_chunk-ded7f5eb.js"
-    ]
-  },
-  "pages/projects/raster/2.page.mdx": {
-    "file": "assets/pages/projects/raster/2.page.5f4c1066.js",
-    "src": "pages/projects/raster/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-e052a03f.js",
-      "_chunk-6daa152b.js"
-    ]
-  },
   "pages/projects/ray/1-algo.page.mdx": {
     "file": "assets/pages/projects/ray/1-algo.page.f2f58b71.js",
     "src": "pages/projects/ray/1-algo.page.mdx",
@@ -421,6 +379,48 @@
       "_chunk-e052a03f.js",
       "_chunk-6daa152b.js",
       "_chunk-ded7f5eb.js"
+    ]
+  },
+  "pages/projects/raster/1-algo.page.mdx": {
+    "file": "assets/pages/projects/raster/1-algo.page.b8e38ad0.js",
+    "src": "pages/projects/raster/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-e052a03f.js",
+      "_chunk-6daa152b.js"
+    ]
+  },
+  "pages/projects/raster/1.page.mdx": {
+    "file": "assets/pages/projects/raster/1.page.1809a843.js",
+    "src": "pages/projects/raster/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-e052a03f.js",
+      "_chunk-6daa152b.js",
+      "_chunk-ded7f5eb.js"
+    ]
+  },
+  "pages/projects/raster/2-algo.page.mdx": {
+    "file": "assets/pages/projects/raster/2-algo.page.7f97559b.js",
+    "src": "pages/projects/raster/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-e052a03f.js",
+      "_chunk-6daa152b.js",
+      "_chunk-ded7f5eb.js"
+    ]
+  },
+  "pages/projects/raster/2.page.mdx": {
+    "file": "assets/pages/projects/raster/2.page.5f4c1066.js",
+    "src": "pages/projects/raster/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-e052a03f.js",
+      "_chunk-6daa152b.js"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
