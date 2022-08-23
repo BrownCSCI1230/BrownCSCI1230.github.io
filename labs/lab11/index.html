@@ -217,78 +217,68 @@ pixels to be drawn or not. This is not important at the moment, but if you wish 
 something like outlines or recursive portals, this comes in handy!</p>
 <figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><img src="/labs/lab11/fboattachments.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>FBO Attachments</figcaption></figure>
 <h3 id="making-our-own-fbo"><a href="#making-our-own-fbo">Making our own FBO</a></h3>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate an empty texture, <code>m_fbo_texture</code> and bind it to texture slot 1.
-This will be used to store our color buffer! To generate an empty texture, when
-calling <code>glTexImage2D</code>, pass in a nullptr for the data. Be sure to set the same minify and
-magnify parameters as well as return to default state by unbinding our texture once we have
-set all its parameters.</p></div>
-<p>In order to add a color attachment to our framebuffer, we first need to make one! The function
-to do this is:</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p>Next, we will generate and bind our own FBO.</p>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate and FBO and store it in <code>m_fbo</code>. Then bind it. You may find the following useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenFramebuffers.xhtml"><strong>void glGenFramebuffers(GLsizei n, GLuint *framebuffers);</strong></a></p>
 </blockquote></p><p><strong><code>n</code> :</strong> This indicates the number of framebuffer objects to create.</p><p><strong><code>framebuffers</code> :</strong> This is the pointer this function will fill in with an id for the
 generated FBO. This way you can refer to it later by the same stored id.
 Multiple FBOs can be filled in using a pointer to the first element of an array of
-sufficient size or some pointer followed by sufficient allocated space.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a framebuffer and store it in <code>m_fbo</code>.</p></div>
-<p>In order to actually <em>alter</em> our framebuffer, we need to bind it to the state machine.
-The function to do this is:</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
+sufficient size or some pointer followed by sufficient allocated space.</p></div><div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindFramebuffer.xhtml"><strong>void glBindFramebuffer(GLenum target, GLuint framebuffer);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of framebuffer we wish to bind. For our purposes,
-use <code>GL_FRAMEBUFFER</code>.</p><p><strong><code>framebuffer</code> :</strong> This is id of the FBO we wish to bind.</p></div>
-<div class="task-callout callout"><p>After generating our FBO in <code>InitializeGL</code>, bind <code>m_fbo</code>.</p></div>
-<p>Now we can attach our color buffer! The function to do this is:</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
+use <code>GL_FRAMEBUFFER</code>.</p><p><strong><code>framebuffer</code> :</strong> This is id of the FBO we wish to bind.</p></div></div>
+<p>Before we configure our FBO, we need to generate containers for its attachments. As stated
+previously, these can either be Textures or Renderbuffers. Let&#x27;s try using a Texture in place
+of our color attachment.</p>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate an empty texture, <code>m_fbo_texture</code> and bind it to texture slot 1.
+This will be used to store our color buffer.</p><blockquote>
+<p>To generate an empty texture, when calling <code>glTexImage2D</code>, pass in a nullptr for the data.
+Be sure to set the same minify and magnify parameters as well as return to default state by
+unbinding our texture once we haveset all its parameters.</p>
+</blockquote></div>
+<p>Next let&#x27;s use instead a Renderbuffer to store our depth and stencil attachments.</p>
+<details><p><summary>Why not use another Texture?</summary>
+If you recall, as opposed to Textures, Renderbuffers can only be written to. This allows
+for OpenGL to make some behind-the-scenes optimizations. For depth information, we
+do not need to sample it like we do a texture. Later on, we will redraw our FBO by
+using its color attachment texture just how we did the <code>m_kitten_texture</code> to draw back
+to the screen. But depth calculations are all self contained during the render process
+and we do not need to sample it for our purposes.</p></details>
+<div class="task-callout callout"><p>Generate a renderbuffer, bind it, then set its configuration using <code>glRenderbufferStorage</code>. You
+may find the following functions useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenRenderbuffers.xhtml"><strong>void glGenRenderbuffers(GLsizei n, GLuint *renderbuffers);</strong></a></p>
+</blockquote></p><p><strong><code>n</code> :</strong> This indicates the number of renderbuffer objects to create.</p><p><strong><code>renderbuffers</code> :</strong> This is the pointer this function will fill in with an id for the
+generated RBO. This way you can refer to it later by the same stored id.
+Multiple RBOs can be filled in using a pointer to the first element of an array of
+sufficient size or some pointer followed by sufficient allocated space.</p></div><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindRenderbuffer.xhtml"><strong>void glBindRenderbuffer(GLenum target, GLuint renderbuffer);</strong></a></p>
+</blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of renderbuffer we wish to bind. For our purposes,
+use <code>GL_RENDERBUFFER</code>.</p><p><strong><code>renderbuffer</code> :</strong> This is id of the RBO we wish to bind.</p></div><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glRenderbufferStorage.xhtml"><strong>void glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);</strong></a></p>
+</blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of framebuffer we wish to work with. For our purposes,
+use <code>GL_RENDERBUFFER</code>.</p><p><strong><code>internalformat</code> :</strong> This indicates the pixel data format that will be contained within
+the renderbuffer. We wiil be using <code>GL_DEPTH24_STENCIL8</code> which indicates 24 bits will be
+used for the depth component and 8 for the stencil component.</p><p><strong><code>width</code> :</strong> This is the width of the desired renderbuffer.</p><p><strong><code>height</code> :</strong> This is the height of the desired renderbuffer.</p></div><blockquote>
+<p>Be sure to unbind our Renderbuffer once we have set its configuration.</p>
+</blockquote></div>
+<p>Now we can attach both of our attachemnts to the FBO we generated</p>
+<div class="task-callout callout"><p>In <code>InitializeGL</code> after binding our FBO, attach both the color and depth/stencil attachemnts.
+You may find the following functions useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glFramebufferTexture2D.xhtml"><strong>void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of framebuffer we are working with. Just like in
 <code>glBindFramebuffer</code>, use <code>GL_FRAMEBUFFER</code>.</p><p><strong><code>attachment</code> :</strong> This is the specific attachment we wish to add, since we are attaching
 a color buffer, use <code>GL_COLOR_ATTACHMENT</code>.</p><p><strong><code>textarget</code> :</strong> This indicates the type of texture we are using. In our case, use
 <code>GL_TEXTURE_2D</code>.</p><p><strong><code>texture</code> :</strong> Here we place the texture object we wish to use. In our case this is
 <code>m_fbo_texture</code>.</p><p><strong><code>level</code> :</strong> This specifies which mipmap or level of detail texture we want to use.
-We want full detail so use 0.</p></div>
-<div class="task-callout callout"><p>After binding our FBO in <code>InitializeGL</code>, add a color attachment.</p></div>
-<p>Great! Now we are going to use a <strong>renderbuffer</strong> to store the depth and stencil attachments.
-When we look at how things are drawn with FBOs soon, you will get a better understanding!</p>
-<p>To generate a renderbuffer, the function is:</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenRenderbuffers.xhtml"><strong>void glGenRenderbuffers(GLsizei n, GLuint *renderbuffers);</strong></a></p>
-</blockquote></p><p><strong><code>n</code> :</strong> This indicates the number of renderbuffer objects to create.</p><p><strong><code>renderbuffers</code> :</strong> This is the pointer this function will fill in with an id for the
-generated RBO. This way you can refer to it later by the same stored id.
-Multiple RBOs can be filled in using a pointer to the first element of an array of
-sufficient size or some pointer followed by sufficient allocated space.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a renderbuffer and store it in <code>m_fbo_renderbuffer</code>.</p></div>
-<p>Next, just like with a texture, we need to bind it to work on it. The only difference being
-that there are no renderbuffer slots unlike with textures. This is because renderbuffers
-can only be written to and not sampled from in a shader, so there is no reason to have multiple
-slots for shaders to use as samplers!</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindRenderbuffer.xhtml"><strong>void glBindRenderbuffer(GLenum target, GLuint renderbuffer);</strong></a></p>
-</blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of renderbuffer we wish to bind. For our purposes,
-use <code>GL_RENDERBUFFER</code>.</p><p><strong><code>renderbuffer</code> :</strong> This is id of the RBO we wish to bind.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, bind the renderbuffer we just generated.</p></div>
-<p>Next, just as a texture needed to have parameters such as width, height, and pixel data set
-by glTexImage2D, renderbuffers require a similar call. The only difference is we cannot pass
-in any pixel data since renderbuffers are read only. This makes the call a bit shorter:</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glRenderbufferStorage.xhtml"><strong>void glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);</strong></a></p>
-</blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of framebuffer we wish to work with. For our purposes,
-use <code>GL_RENDERBUFFER</code>.</p><p><strong><code>internalformat</code> :</strong> This indicates the pixel data format that will be contained within
-the renderbuffer. We wiil be using <code>GL_DEPTH24_STENCIL8</code> which indicates 24 bits will be
-used for the depth component and 8 for the stencil component.</p><p><strong><code>width</code> :</strong> This is the width of the desired renderbuffer.</p><p><strong><code>height</code> :</strong> This is the height of the desired renderbuffer.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, set our renderbuffers format by using the <code>glRenderbufferStorage</code> call.</p></div>
-<p>In order to add our attachment, instead of using glFramebufferTexture2D, we use a similar
-call specifically for renderbuffers instead of textures:</p>
-<div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glFramebufferTexture2D.xhtml"><strong>void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);</strong></a></p>
+We want full detail so use 0.</p></div><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glFramebufferRenderbuffer.xhtml"><strong>void glFramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This indicates the type of framebuffer we are working with. Just like in
 <code>glBindFramebuffer</code>, use <code>GL_FRAMEBUFFER</code>.</p><p><strong><code>attachment</code> :</strong> This is the specific attachment we wish to add, since we are attaching
 a depth and stencil buffer, use <code>GL_DEPTH_STENCIL_ATTACHMENT</code>.</p><p><strong><code>renderbuffertarget</code> :</strong> This indicates the type of renderbuffer we are using. In our case, use
 <code>GL_RENDERBUFFER</code>.</p><p><strong><code>renderbuffer</code> :</strong> Here we place the renderbuffer object we wish to use. In our case this is
-<code>m_fbo_renderbuffer</code>.</p></div>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, add our depth and stencil attachment to <code>m_fbo</code>.</p></div>
-<div class="task-callout callout"><p>Before exiting <code>InitializeGL</code>, make sure to return to default state by unbinding our
-renderbuffer and framebuffers by binding id 0 for both.</p></div>
+<code>m_fbo_renderbuffer</code>.</p></div></div>
+<div class="task-callout callout"><p>Return to default state by unbinding our FBO. Do this by binding the FBO with id: <code>DEFAULT_FBO</code>.
+This is a const GLuint currently set to 0, but may not work properly which you will find out later.</p></div>
 <h2 id="drawing-with-our-fbo"><a href="#drawing-with-our-fbo">Drawing with our FBO</a></h2>
 <h3 id="return-of-the-sphere"><a href="#return-of-the-sphere">Return of the Sphere</a></h3>
 <p>Let&#x27;s see what happens when we draw to our FBO! But first, lets get our sphere from
@@ -364,5 +354,5 @@ image filtering which you will do in Realtime 2, particle effects which you can 
 or even draw portals with usage of the FBO&#x27;s stencil attachment!</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.af3f87cd.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.c7f3917c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-83577a7c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-858807b0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-da990835.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.c7d8271f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.af3f87cd.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-adefa4dc.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.5f47a8a9.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.469f90e9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e052a03f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-ded7f5eb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-6daa152b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.6384c4e9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.5f47a8a9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-adefa4dc.js"></body>
     </html>
