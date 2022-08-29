@@ -22,7 +22,7 @@ In this class, we will be storing pixel data as a 1D array. In order to edit the
 `,a.exports.jsx(e.h2,{id:"getting-started",children:a.exports.jsx(e.a,{href:"#getting-started",children:"Getting Started"})}),`
 `,a.exports.jsxs(e.div,{className:"warning-callout callout",children:[a.exports.jsxs(e.p,{children:["All subsequent labs and projects in CS 1230 will follow these same getting-started instructions. ",a.exports.jsx(e.em,{children:"We won't repeat them again!"})]}),a.exports.jsx(e.p,{children:"If you have doubts or questions at any point, be sure to check with a TA or ask on Ed."})]}),`
 `,a.exports.jsx(e.h3,{id:"stencil-code",children:a.exports.jsx(e.a,{href:"#stencil-code",children:"Stencil Code"})}),`
-`,a.exports.jsxs(e.p,{children:["Like in lab 1, we've provided you with some ",a.exports.jsx(e.a,{href:"todo",children:"stencil code"})," to get you started. As always, you should ",a.exports.jsx(e.code,{children:"git clone"})," this repository to your local machine and open the project in QtCreator."]}),`
+`,a.exports.jsxs(e.p,{children:["Like in lab 1, we've provided you with some stencil code to get you started. As always, you should ",a.exports.jsx(e.code,{children:"git clone"})," this repository to your local machine and open the project in QtCreator."]}),`
 `,a.exports.jsx(e.h3,{id:"command-line-arguments",children:a.exports.jsx(e.a,{href:"#command-line-arguments",children:"Command Line Arguments"})}),`
 `,a.exports.jsx(e.p,{children:`Many labs and projects in CS123 will use command line arguments to toggle between different configurations, and this lab is
 no different. In this lab, you will be using command line arguments to select the type of canvas you wish to use.`}),`
