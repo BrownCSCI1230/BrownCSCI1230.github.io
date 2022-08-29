@@ -33,7 +33,7 @@ vector that doesn’t have a clue about the meaning behind the data that is in i
 what data and what format of data is inside a Vertex Buffer Object.</p>
 <p>While VAO has &quot;array&quot; in its name, a VAO is <strong>NOT</strong> an array of vertex values. Instead,
 it can represent an array of <em>properties</em> or <em>attributes</em> of our VBO. Each entry in
-this array contains information about where this attribute is located in the VBO.</p>
+this array contains metadata about where this attribute is located in the VBO.</p>
 <h3 id="using-the-khronos-documentation"><a href="#using-the-khronos-documentation">Using the Khronos Documentation</a></h3>
 <p>Before we jump into learning a new API, it always is good practice to explore its documentation!</p>
 <p>Most APIs come with some form of documentation on how you can use them.
@@ -331,6 +331,8 @@ As such, no loops will need to be present in this section of the lab.</p>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDrawArrays.xhtml"><strong>void glDrawArrays(GLenum mode, GLint first, GLsizei count);</strong></a></p>
 </blockquote></p><p><strong><code>mode</code> :</strong> This indicates the type of primitive to render, for our case, use GL_TRIANGLES.</p><p><strong><code>first</code> :</strong> This indicates the starting index for OpenGL to look in our VBO, and will most usually be 0.</p><p><strong><code>count</code> :</strong> This indicates how many vertices to draw.</p></div></div>
 <div class="task-callout callout"><p>After drawing the triangle in <code>PaintGL</code>, return to default state by unbinding our VAO.</p></div>
+<p>At this stage, you finally will be able see an iconic rainbow triangle somewhat similar to this!</p>
+<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/FinalTriangle.png" alt="TODO"/></div><figcaption><strong>Figure 6: </strong>Colorful Triangle</figcaption></figure>
 <h2 id="memory-management"><a href="#memory-management">Memory Management</a></h2>
 <p>So far, by calling <code>glGenBuffers</code> and <code>glGenVertexArrays</code>, we have <em>allocated</em> space
 to store our data and objects. Unlike smart pointers however, this memory is <strong>not</strong>
@@ -463,5 +465,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.5f47a8a9.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.1accea60.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e052a03f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-ded7f5eb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-6daa152b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.6384c4e9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.5f47a8a9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-adefa4dc.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.5591ea62.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.a8e438f6.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e052a03f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-ded7f5eb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-6daa152b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.6384c4e9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.5591ea62.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-adefa4dc.js"></body>
     </html>
