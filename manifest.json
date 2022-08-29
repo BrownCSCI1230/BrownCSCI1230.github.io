@@ -158,7 +158,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.65de8a70.js",
+    "file": "assets/pages/labs/lab1.page.95eb65a4.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -190,7 +190,7 @@
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.09348b27.js",
+    "file": "assets/pages/labs/lab2.page.aba1f9fe.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -212,7 +212,7 @@
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.0ce0cfe5.js",
+    "file": "assets/pages/labs/lab4.page.b231c7f9.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -223,7 +223,7 @@
     ]
   },
   "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.a53dfd27.js",
+    "file": "assets/pages/labs/lab5.page.c5d64b05.js",
     "src": "pages/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -339,23 +339,25 @@
     ]
   },
   "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.f2f58b71.js",
+    "file": "assets/pages/projects/ray/1-algo.page.2c1f79c1.js",
     "src": "pages/projects/ray/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-e052a03f.js",
-      "_chunk-6daa152b.js"
+      "_chunk-6daa152b.js",
+      "_chunk-ded7f5eb.js"
     ]
   },
   "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.6bb6442d.js",
+    "file": "assets/pages/projects/ray/1.page.b686116b.js",
     "src": "pages/projects/ray/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-e052a03f.js",
-      "_chunk-6daa152b.js"
+      "_chunk-6daa152b.js",
+      "_chunk-ded7f5eb.js"
     ]
   },
   "pages/projects/ray/2-algo.page.mdx": {
@@ -424,7 +426,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.5591ea62.js",
+    "file": "assets/entry-client-routing.137ee1e0.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -476,7 +478,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.832504ae.js",
+    "file": "assets/entry-server-routing.84cc6b23.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
