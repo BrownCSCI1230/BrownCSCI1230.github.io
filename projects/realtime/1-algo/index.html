@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
+        <meta charset="UTF-8">
+        <title>Project 5 (Algo) | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#project-5-logan-give-us-a-name-algo">Project 5: Logan Give Us A Name (Algo)</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#projection-matrices">Projection Matrices</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#visuals-question-wip">Visuals (QUESTION WIP)</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#scaling">Scaling</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#unhinging">Unhinging</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#vertex-attributes">Vertex Attributes</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#vertex-buffer-format">Vertex Buffer Format</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#vertex-arrays">Vertex Arrays</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#realtime-pipeline">Realtime Pipeline</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#31">3.1</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#32">3.2</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#program-analysis">Program Analysis</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#erroneous-code">Erroneous Code</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#predict-the-render">Predict the Render</a></li></ol></li></ol></li></ol></nav><main>
+<!-- -->
+<h1 id="project-5-logan-give-us-a-name-algo"><a href="#project-5-logan-give-us-a-name-algo">Project 5: Logan Give Us A Name (Algo)</a></h1>
+<p>You can find the handout for this project <a href="/projects/realtime/1">here</a>.</p>
+<h2 id="projection-matrices"><a href="#projection-matrices">Projection Matrices</a></h2>
+<p>In lecture, we learned the two matrices that describe the camera: view and projection. In ray, you learned how to generate a view matrix from a position, look, and up vector. In realtime, you will explore the concept of a projection matrix which covers the geometry of a view frustum!</p>
+<h3 id="visuals-question-wip"><a href="#visuals-question-wip">Visuals (QUESTION WIP)</a></h3>
+<p>What does it (the scene) look like when we shape frustum into a cube?</p>
+<p>[initial frustum scene here]</p>
+<p>[3-4 cube shaped scenes here]</p>
+<h4 id="scaling"><a href="#scaling">Scaling</a></h4>
+<p>Given a far plane of 100, height angle of 30 degrees, and a width angle of 45 degrees, what would the scaling matrix look like? Refer to <a href="https://docs.google.com/presentation/d/1X8VHq-21yZbckzthbTDW_kKiRRlq3gWV/edit#slide=id.p60">this lecture</a> for a reminder.</p>
+<h4 id="unhinging"><a href="#unhinging">Unhinging</a></h4>
+<p>Given a near plane distance of 0.1 and a far plane distance of 100, what would the parallelization matrix look like? Refer to <a href="https://docs.google.com/presentation/d/1X8VHq-21yZbckzthbTDW_kKiRRlq3gWV/edit#slide=id.p67">this lecture</a> for a reminder.</p>
+<h2 id="vertex-attributes"><a href="#vertex-attributes">Vertex Attributes</a></h2>
+<h3 id="vertex-buffer-format"><a href="#vertex-buffer-format">Vertex Buffer Format</a></h3>
+<p>Using x_1, y_1, z_1 to represent a single vertex&#x27;s position, r_1, g_1, b_1 for color and u_1, v_1 for texture coordinates, fill in the following array for <strong>2 vertices</strong> which have <strong>position</strong>, color, and <strong>texture coordinate</strong> attributes</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead></table></div>
+<h3 id="vertex-arrays"><a href="#vertex-arrays">Vertex Arrays</a></h3>
+<p>For each attribute (position, color, and texture coordinate), please provide the stride and offset in bytes using <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.025ex" xmlns="http://www.w3.org/2000/svg" width="1.294ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 572 453" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-1-TEX-I-1D465"></use></g></g></g></svg></mjx-container></span> to reference <code>size_of(GL_float)</code>.</p>
+<p>TODO TAble</p>
+<div class="table-wrapper"><table><thead><tr><th align="left"></th><th align="left">Stride</th><th align="left">Offset</th><th align="left">Position</th></tr></thead><tbody><tr><td align="left">Position</td><td align="left"></td><td align="left"></td><td align="left"></td></tr><tr><td align="left">Color</td><td align="left"></td><td align="left"></td><td align="left"></td></tr><tr><td align="left">Texture Coordinates</td><td align="left"></td><td align="left"></td><td align="left"></td></tr></tbody></table></div>
+<h2 id="realtime-pipeline"><a href="#realtime-pipeline">Realtime Pipeline</a></h2>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/algos/realtime1/pipeline.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Realtime Pipeline</figcaption></figure>
+<h3 id="31"><a href="#31">3.1</a></h3>
+<p>What does rasterization do? How does rasterization fit into the realtime pipeline in terms of inputs and outputs?</p>
+<h3 id="32"><a href="#32">3.2</a></h3>
+<p>We can perform the same types of computation in both fragment and vertex shader. Compare the performance considerations associated with applying coordinate transforms in the vertex shader vs the in fragment shader. Is this a good idea? why or why not?</p>
+<h2 id="program-analysis"><a href="#program-analysis">Program Analysis</a></h2>
+<h3 id="erroneous-code"><a href="#erroneous-code">Erroneous Code</a></h3>
+<p>Consider the following initializeGL pseudo-code:</p>
+<pre><code class="code-highlight"><span class="code-line">	create vbo
+</span><span class="code-line">	bind vbo
+</span><span class="code-line">	fill vbo with data
+</span><span class="code-line">	unbind vbo
+</span><span class="code-line">	create vao
+</span><span class="code-line">	bind vao
+</span><span class="code-line">	set vao attributes
+</span><span class="code-line">	unbind vao
+</span></code></pre>
+<p>What would be the issue if a student tries to draw their vao in paintGL?
+How could you change this pseudo-code to remove the error?</p>
+<h3 id="predict-the-render"><a href="#predict-the-render">Predict the Render</a></h3>
+<p>Given a VBO of:</p>
+<p>TODO table</p>
+<div class="table-wrapper"><table><thead><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>...</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th></tr></thead></table></div>
+<p>And VAO attribute code of:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-en">glEnableVertexAttribArray</span>(<span class="pl-c1">0</span>);
+</span><span class="code-line"><span class="pl-en">glEnableVertexAttribArray</span>(<span class="pl-c1">1</span>);
+</span><span class="code-line"><span class="pl-en">glVertexAttribPointer</span>(<span class="pl-c1">0</span>, <span class="pl-c1">3</span>, GL_FLOAT, GL_FALSE, <span class="pl-c1">6</span> * <span class="pl-k">sizeof</span>(GLfloat), nullptr);
+</span><span class="code-line"><span class="pl-en">glVertexAttribPointer</span>(<span class="pl-c1">1</span>, <span class="pl-c1">3</span>, GL_FLOAT, GL_FALSE, <span class="pl-c1">6</span> * <span class="pl-k">sizeof</span>(GLfloat), reinterpret_cast&lt;void *&gt;(<span class="pl-c1">3</span> * <span class="pl-k">sizeof</span>(GLfloat)));
+</span></code></pre>
+<p>How many vertices and how many triangles are described in the VBO?</p>
+<p>If the VAO attribute code was changed to:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-en">glEnableVertexAttribArray</span>(<span class="pl-c1">0</span>);
+</span><span class="code-line"><span class="pl-en">glVertexAttribPointer</span>(<span class="pl-c1">0</span>, <span class="pl-c1">3</span>, GL_FLOAT, GL_FALSE, <span class="pl-c1">3</span> * <span class="pl-k">sizeof</span>(GLfloat), nullptr);
+</span></code></pre>
+<p>How many vertices and how many triangles are now described in the VBO?</p>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/realtime/1-algo"}}</script><script type="module" src="/assets/entry-client-routing.f2b65f6c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/realtime/1-algo.page.90827914.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.f2b65f6c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
+    </html>

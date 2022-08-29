@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
+        <meta charset="UTF-8">
+        <title>Preventing Memory Leaks | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#preventing-memory-leaks">Preventing Memory Leaks</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#valgrind-memory-analyzer">Valgrind Memory Analyzer</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#preventing-memory-leaks-1">Preventing Memory Leaks</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#gpu-memory-leaks">GPU Memory Leaks</a></li></ol></li></ol></nav><main>
+<!-- -->
+<h1 id="preventing-memory-leaks"><a href="#preventing-memory-leaks">Preventing Memory Leaks</a></h1>
+<p>Preventing and detecting memory leaks is a crucial part of coding in C++. This doc describes the Valgrind Memory Analyzer, a built-in tool in QtCreator that automatically detects memory leaks, as well as some design patterns to keep in mind in order to prevent memory leaks from ever happening.</p>
+<h2 id="valgrind-memory-analyzer"><a href="#valgrind-memory-analyzer">Valgrind Memory Analyzer</a></h2>
+<p>Valgrind is a great tool for automatically detecting memory leaks, and it is built in to QtCreator. To use it, select Analyze &gt; Valgrind Memory Analyzer.</p>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/preventing-memory-leaks/image1.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Running Valgrind Memory Analyzer in Qt</figcaption></figure>
+<p>This will run your program, keeping track of the memory that is allocated and freed. After the program has finished running, you will see a message indicating any leaks that occurred. In the example below, we never deleted the ConstantBrush, so 32 bytes of memory were leaked. The message points us to the exact line where this memory was allocated.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/preventing-memory-leaks/image2.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Valgrind Shows 32 Bytes of Memory Leaked</figcaption></figure>
+<p>If no memory was leaked during the execution of your program, you will not see any messages displayed in that section, as shown below.</p>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/preventing-memory-leaks/image3.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>Valgrind Shows No Bytes of Memory Leaked</figcaption></figure>
+<p>Note that if no messages are displayed, it does not necessarily mean that your program is leak-free. It only means that no leaks occurred during that run of the program. For example, the code below only deletes the object if myBoolean is true. If myBoolean happened to be true when running Valgrind Memory Analyzer, no leak messages would show up, but your program can still leak memory if myBoolean is false.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">    MyObject *object = <span class="pl-k">new</span> MyObject();
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-k">if</span>(myBoolean) {
+</span><span class="code-line">        <span class="pl-k">delete</span> object;
+</span><span class="code-line">    }
+</span></code></pre>
+<p>Valgrind can be a very useful tool for detecting memory leaks, but it will not find them if you don’t explicitly cause a certain branch of code to be executed while using it. As a result, you want to make sure you design your program such that memory leaks can be prevented in the first place.</p>
+<h2 id="preventing-memory-leaks-1"><a href="#preventing-memory-leaks-1">Preventing Memory Leaks</a></h2>
+<p>The rule of thumb for creating objects in C++ is that every <code>new</code> should correspond to exactly one <code>delete</code>. You shouldn’t need to worry about this if you’re using smart pointers! Remember, don’t allocate dynamic memory to a raw pointer. Another source of common errors is arrays/vectors. As usual, using vectors over arrays whenever possible will solve many of your problems. You might run into the issue where you access or write to indices past the length of the
+vector. If you see unexplained segfaults, check your indices!</p>
+<h2 id="gpu-memory-leaks"><a href="#gpu-memory-leaks">GPU Memory Leaks</a></h2>
+<p>Valgrind will only catch CPU memory leaks, but you can leak GPU memory as well. To avoid this, make sure that each call to a <code>glGen*()</code> function (usually in a constructor) is matched with its corresponding <code>glDelete*()</code> function (usually in the destructor). If you’re using the GL datatype classes you implemented in the labs, you probably won’t need to worry about this either.</p>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/preventing-memory-leaks"}}</script><script type="module" src="/assets/entry-client-routing.f2b65f6c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/preventing-memory-leaks.page.ad14af8f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.f2b65f6c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
+    </html>
