@@ -173,14 +173,7 @@ import{j as e}from"../../chunk-e052a03f.js";import{I as t}from"../../chunk-ded7f
 `,e.exports.jsx(t,{images:[{src:"/labs/lab3/shiftLeftRight.gif",alt:"Shift Left and Right filter."}],figNumber:10,figCaption:"Shift Left and Shift Right Expected Outputs"}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Now you are ready to show your program to a TA to get checked off!"}),`
-`,e.exports.jsx(s.p,{children:"Be prepared to answer one or more of the following:"}),`
-`,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"What do the pixel values in a grayscale image represent?"}),`
-`,e.exports.jsx(s.li,{children:"Describe the process of convolving an image with a kernel."}),`
-`,e.exports.jsx(s.li,{children:"What happens when the kernel exceeds the boundary of an image?"}),`
-`,e.exports.jsx(s.li,{children:"Provide a kernel to shift an image three pixels downwards."}),`
-`,e.exports.jsx(s.li,{children:"Provide a kernel to shift an image five pixels upwards."}),`
-`]}),`
+`,e.exports.jsxs(s.p,{children:["Be prepared to show the TA your working ",e.exports.jsx(s.code,{children:"grayscale"}),", ",e.exports.jsx(s.code,{children:"invert"}),", ",e.exports.jsx(s.code,{children:"identity"}),", ",e.exports.jsx(s.code,{children:"shiftLeft"}),", and ",e.exports.jsx(s.code,{children:"shiftRight"})," filters."]}),`
 `,e.exports.jsx(a,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

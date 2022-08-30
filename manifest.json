@@ -211,7 +211,7 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.4d07f5f6.js",
+    "file": "assets/pages/labs/lab3.page.8297dc45.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -436,7 +436,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.cda5316e.js",
+    "file": "assets/entry-client-routing.50151e06.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -489,7 +489,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.451f7e18.js",
+    "file": "assets/entry-server-routing.fe763710.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
