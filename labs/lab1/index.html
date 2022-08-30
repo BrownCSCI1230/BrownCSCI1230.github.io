@@ -393,39 +393,71 @@ this generic <code>plusOne</code>, is known as an <strong><a href="https://en.cp
 </span><span class="code-line"><span class="pl-k">auto</span> MemoryAddressOfX = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-k">long</span>&gt;(px); <span class="pl-c">// cast pointer to largest integer type</span>
 </span><span class="code-line">std::cout &lt;&lt; MemoryAddressOfX;
 </span></code></pre>
-<p>The first thing we can do with a pointer is to <em>dereference</em> it, meaning obtaining the entity at the address that the pointer points to. This can be achieved by using the dereference operator which also has the form of a star <code>*</code>. Dereferencing a pointer gives us something called a <em>reference</em>, meaning the entity at a particular memory address. The reference type is denoted by the entity type followed by <code>&amp;</code>. For pointers to non-primitive types, we can also use <code>-&gt;</code> to obtain a reference to its members.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
-</span><span class="code-line"><span class="pl-k">int</span>* px = &amp;x;
-</span><span class="code-line"><span class="pl-k">int</span>&amp; refx = *px; <span class="pl-c">// obtain a reference to x by dereferencing its pointer</span>
-</span><span class="code-line"><span class="pl-k">int</span>&amp; refx2 = x; <span class="pl-c">// another way to obtain a reference is to directly &#x27;reference&#x27; it.</span>
-</span><span class="code-line">refx = <span class="pl-c1">123</span>; <span class="pl-c">// this sets x to 123 too, because refx and x share the same memory address, they are the exact same thing!</span>
-</span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// you should see 123 here</span>
+<p>The first thing we can do with a pointer is to access the entity at the address that the pointer points to. This can be achieved by using the <em>dereference</em> operator which also has the form of a star <code>*</code>. For pointers to non-primitive types, we can also use <code>-&gt;</code> to access its members.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
 </span><span class="code-line"><span class="pl-k">auto</span> y = Rectangle{ .<span class="pl-smi">length</span> = <span class="pl-c1">4</span>, .<span class="pl-smi">width</span> = <span class="pl-c1">2</span> };
-</span><span class="code-line"><span class="pl-k">auto</span> py = &amp;y;
+</span><span class="code-line"><span class="pl-k">auto</span> px = &amp;x;
+</span><span class="code-line"><span class="pl-k">auto</span>* py = &amp;y; <span class="pl-c">// you could still write out * along with auto to make it extra clear that it is a pointer.</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// This is how we access the object that a pointer points to</span>
+</span><span class="code-line"><span class="pl-k">auto</span> x2 = *px; <span class="pl-c">// x2 == x == 42</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y2 = *py; <span class="pl-c">// y2 == y == Rectangle{ .length = 4, .width = 2 }</span>
 </span><span class="code-line"><span class="pl-k">auto</span> a = py-&gt;<span class="pl-en">calculateArea</span>(); <span class="pl-c">// same as y.calculateArea()</span>
-</span><span class="code-line"><span class="pl-k">double</span>&amp; yLength = py-&gt;length; <span class="pl-c">// same as y.length</span>
-</span><span class="code-line">yLength = <span class="pl-c1">6</span>; <span class="pl-c">// this sets y.length to 6</span>
-</span><span class="code-line">py-&gt;width = <span class="pl-c1">3</span>; <span class="pl-c">// this sets y.width to 3</span>
+</span><span class="code-line"><span class="pl-k">auto</span> yLength = py-&gt;length; <span class="pl-c">// same as y.length</span>
 </span></code></pre>
-<div class="task-callout callout"><p>What is the type of <code>*ppx</code>? What about <code>**ppx</code>? Uncomment the support code for task 9, and write your answer in <code>static_assert</code>s. The program will only compile if you answer correctly.</p></div>
+<p>Dereferencing a pointer also allows us to modify the object that it points to</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line"><span class="pl-k">auto</span> y = Rectangle{ .<span class="pl-smi">length</span> = <span class="pl-c1">4</span>, .<span class="pl-smi">width</span> = <span class="pl-c1">2</span> };
+</span><span class="code-line"><span class="pl-k">auto</span> px = &amp;x;
+</span><span class="code-line"><span class="pl-k">auto</span> py = &amp;y;
+</span><span class="code-line">
+</span><span class="code-line">*px = <span class="pl-c1">123</span>; <span class="pl-c">// this sets x to 123</span>
+</span><span class="code-line">py-&gt;width = <span class="pl-c1">3</span>; <span class="pl-c">// this sets y.width to 3</span>
+</span><span class="code-line">
+</span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// you should see 123 here</span>
+</span><span class="code-line">std::cout &lt;&lt; y.width; <span class="pl-c">// you should see 3 here</span>
+</span></code></pre>
+<div class="task-callout callout"><p>Let’s see what we can do with pointer!</p><ul>
+<li>Navigate to the empty function <code>inplaceTimesTwo</code>, it has the same functionality as our previous generic <code>timesTwo</code>, however, it modifies the input variable inplace rather than return a new value.</li>
+</ul><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">inplaceTimesTwo</span>(<span class="pl-c">/* ??? pointerToSomeVariable */</span>) {
+</span><span class="code-line">    <span class="pl-c">// your code here</span>
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">21</span>;
+</span><span class="code-line"><span class="pl-k">auto</span> y = std::string{ <span class="pl-s"><span class="pl-pds">&quot;</span>abcd<span class="pl-pds">&quot;</span></span> };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-en">inplaceTimesTwo</span>(&amp;x);
+</span><span class="code-line"><span class="pl-en">inplaceTimesTwo</span>(&amp;y);
+</span><span class="code-line">
+</span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// you should see 42 here</span>
+</span><span class="code-line">std::cout &lt;&lt; y; <span class="pl-c">// you should see &quot;abcdabcd&quot; here</span>
+</span></code></pre><ul>
+<li>Uncomment the <code>pointerToSomeVariable</code> parameter, replace <code>???</code> with a proper type declaration. (hint: both <code>auto</code> and <code>auto*</code> can represent a pointer of any type).</li>
+<li>Complete the function body using what we learned.</li>
+<li>Uncomment the supporting code in <code>main()</code> for task ?, execute the program and see if you get the expected result.</li>
+</ul></div>
+<p>You might’ve noticed that pointers are somewhat unwieldy to use; we have to first take the address of something, then dereference the pointer. This can be simplified by the use of <em>references</em>. A reference is essentially a dereferenced pointer, meaning the entity at a particular memory address. You can find more information about the connection between pointers and references here [???]. The reference type is denoted by the entity type followed by <code>&amp;</code>.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
+</span><span class="code-line"><span class="pl-k">int</span>&amp; refx = x; <span class="pl-c">// a reference to x, it has the same memory address as x</span>
+</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx2 = x; <span class="pl-c">// we may use type deduction with references, type of refx2 deducted to int&amp;</span>
+</span><span class="code-line">
+</span><span class="code-line">refx = <span class="pl-c1">123</span>; <span class="pl-c">// this sets x to 123 because refx and x share the same memory address</span>
+</span><span class="code-line">std::cout &lt;&lt; x; <span class="pl-c">// you should see 123 here</span>
+</span></code></pre>
 <p>One thing we have to be careful with references is that we <strong>always</strong> have to spell out <code>&amp;</code> in the type declaration when creating a reference, whether we&#x27;re using type deduction or not. Otherwise we&#x27;d be creating a copy rather than a reference.</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> x = <span class="pl-c1">42</span>;
-</span><span class="code-line"><span class="pl-k">int</span>* px = &amp;x;
-</span><span class="code-line"><span class="pl-k">int</span>&amp; refx = *px; <span class="pl-c">// a reference to x, same memory address as x</span>
-</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx2 = x; <span class="pl-c">// also a reference to x, with type deduction, same memory address</span>
-</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx3 = refx; <span class="pl-c">// same, since refx is the same thing as x</span>
-</span><span class="code-line"><span class="pl-k">int</span> y = *px; <span class="pl-c">// this is a copy of x! it&#x27;s a new variable with its own unique address!</span>
-</span><span class="code-line"><span class="pl-k">auto</span> y2 = *px; <span class="pl-c">// again, it&#x27;s a copy with its own unique address!</span>
-</span><span class="code-line"><span class="pl-k">auto</span> y3 = x; <span class="pl-c">// same as above</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">int</span>&amp; refx = x; <span class="pl-c">// a reference to x, same memory address as x</span>
+</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx2 = x; <span class="pl-c">// a reference to x, same memory address as x</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">int</span> y = x; <span class="pl-c">// this is a copy of x! it&#x27;s a new variable with its own unique address!</span>
+</span><span class="code-line"><span class="pl-k">auto</span> y2 = x; <span class="pl-c">// again, it&#x27;s a copy with its own unique address!</span>
 </span></code></pre>
 <p>This is because C++ has <em>value semantics</em> by default.</p>
 <details><summary>Just to be pedantic...</summary><p>This is known as lvalue-to-rvalue <a href="https://en.cppreference.com/w/cpp/language/implicit_conversion#Lvalue_to_rvalue_conversion">
 type decay
 </a> in C++ terminology.</p></details>
-<p>Now that we know C++ makes a copy when creating something from another, unless specified otherwise (i.e. creating
-a reference). We should really change most of the parameter types in our function signature to references, unless
-it&#x27;s something trivial like an <code>int</code> or <code>double</code>. Otherwise, a full copy will be made for every object we passed
-to the function, and it could lead to serious performance problems!</p>
+<p>Now that we know C++ makes a copy when creating something from another, unless specified otherwise (i.e. creating a reference). We should really change most of the parameter types in our function signature to references, unless it&#x27;s something trivial like an <code>int</code> or <code>double</code>. Otherwise, a full copy will be made for every object we passed to the function, and it could lead to serious performance problems!</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">func</span>(std::vector&lt;<span class="pl-k">int</span>&gt; things) {
 </span><span class="code-line">    <span class="pl-c">// empty</span>
 </span><span class="code-line">}
@@ -453,34 +485,8 @@ to the function, and it could lead to serious performance problems!</p>
 </span><span class="code-line">    <span class="pl-c">// your code here</span>
 </span><span class="code-line">}
 </span></code></pre><ul>
-<li>Uncomment the <code>container</code> parameter, replace <code>???</code> with a proper type declaration. (hint: references work with generic parameters too!).</li>
-<li>Complete the function body using what we learned.</li>
 <li>Pass different <code>std::array</code> and <code>std::vector</code> objects to <code>doubleEachElement</code> in your <code>main</code> function.</li>
 </ul><p>Print the results after <code>doubleEachElement</code> calls, see if it matches your expectation!</p></div>
-<p>One problem with the basic form of references we&#x27;ve learned so far, is that they cannot bind to <em>values</em> (<a href="https://en.cppreference.com/w/cpp/language/value_category#rvalue">rvalue</a> in C++ terminology). The reason is obvious, values such as <code>123</code> or <code>3.14</code> do not have a memory address because they are not stored in memory by some variable. The same applies to function parameters, we cannot pass values to reference parameters.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">betterFunc</span>(std::vector&lt;<span class="pl-k">int</span>&gt;&amp; things) {
-</span><span class="code-line">    <span class="pl-c">// empty</span>
-</span><span class="code-line">}
-</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
-</span><span class="code-line"><span class="pl-k">auto</span> things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
-</span><span class="code-line"><span class="pl-k">auto</span>&amp; refx = x; <span class="pl-c">// OK, bind to a variable</span>
-</span><span class="code-line"><span class="pl-c">// auto&amp; incorrectRef = 42; // error, (lvalue) reference cannot bind to (r)value</span>
-</span><span class="code-line"><span class="pl-en">betterFunc</span>(things); <span class="pl-c">// OK, reference parameter binds to &#x27;things&#x27;</span>
-</span><span class="code-line"><span class="pl-c">// betterFunc(std::vector{ 1, 2, 3, 4 }); // error, (lvalue) reference parameter cannot bind to (r)value</span>
-</span></code></pre>
-<p>This can be inconvenient in some cases. Ideally, we&#x27;d want something that behaves like a reference when we bind it to a variable, and like a new variable when we provide it a value. Luckily, we do have something exactly like this in C++ called <em>forwarding</em> <em>references</em> in the form of <code>auto&amp;&amp;</code>.</p>
-<details><summary>Be careful though</summary><p><code>&amp;&amp;</code> after a concrete type, like <code>int&amp;&amp;</code> or <code>std::vector&lt;int&gt;&amp;&amp;</code>, does not form a forwarding reference! These are <em>rvalue references</em> which are outside the scope of this lab. You can learn more about rvalue references <a href="https://en.cppreference.com/w/cpp/language/reference#Rvalue_references">here</a>, if you&#x27;re interested.</p></details>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">void</span> <span class="pl-en">evenBetterFunc</span>(<span class="pl-k">auto</span>&amp;&amp; things) {
-</span><span class="code-line">  <span class="pl-c">// empty</span>
-</span><span class="code-line">}
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">auto</span> x = <span class="pl-c1">42</span>;
-</span><span class="code-line"><span class="pl-k">auto</span> things = std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> };
-</span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; refx = x; <span class="pl-c">// OK, bind to a variable, same as &#x27;auto&amp; refx = x;&#x27;</span>
-</span><span class="code-line"><span class="pl-k">auto</span>&amp;&amp; forwardRef = <span class="pl-c1">42</span>; <span class="pl-c">// OK, creates a new variable as if &#x27;auto forwardRef = 42;&#x27;</span>
-</span><span class="code-line"><span class="pl-en">evenBetterFunc</span>(things); <span class="pl-c">// OK, reference parameter binds to &#x27;things&#x27;</span>
-</span><span class="code-line"><span class="pl-en">evenBetterFunc</span>(std::vector{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span> }); <span class="pl-c">// OK, as if the parameter type is non-reference</span>
-</span></code></pre>
 <h3 id="pointer-arithmetic"><a href="#pointer-arithmetic">Pointer Arithmetic</a></h3>
 <p>We&#x27;ve discussed in the previous section that a pointer is an integer storing a memory address. What will happen though, if we perform integer arithmetics on pointers? Consider the following example</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> p = <span class="pl-k">reinterpret_cast</span>&lt;<span class="pl-k">int</span>*&gt;(<span class="pl-c1">42</span>); <span class="pl-c">// cast some random integer to a pointer</span>
@@ -512,5 +518,5 @@ to the function, and it could lead to serious performance problems!</p>
 <h2 id="end"><a href="#end">End</a></h2>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.f2b65f6c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.014a5d8d.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.f2b65f6c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.cda5316e.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.49398365.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e052a03f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-6daa152b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.6384c4e9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.cda5316e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
     </html>
