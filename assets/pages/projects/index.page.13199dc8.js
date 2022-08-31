@@ -16,8 +16,8 @@ import{j as e}from"../../chunk-47a93a9e.js";const n={title:"Projects",hideTOC:!0
 `]}),`
 `,e.exports.jsxs(r.li,{children:[e.exports.jsx(r.strong,{children:"Realtime"}),`
 `,e.exports.jsxs(r.ul,{children:[`
-`,e.exports.jsxs(r.li,{children:["Project 5: ",e.exports.jsx(r.a,{href:"/projects/realtime/1",children:"Logan Give Us A Name"})," (",e.exports.jsx(r.a,{href:"/projects/realtime/1-algo",children:"algo"}),")"]}),`
-`,e.exports.jsxs(r.li,{children:["Project 6: ",e.exports.jsx(r.a,{href:"/projects/realtime/2",children:"Logan Give Us Another Name"})," (",e.exports.jsx(r.a,{href:"/projects/realtime/2-algo",children:"algo"}),")"]}),`
+`,e.exports.jsxs(r.li,{children:["Project 5: ",e.exports.jsx(r.a,{href:"/projects/realtime/1",children:"Lights, Camera, ..."})," (",e.exports.jsx(r.a,{href:"/projects/realtime/1-algo",children:"algo"}),")"]}),`
+`,e.exports.jsxs(r.li,{children:["Project 6: ",e.exports.jsx(r.a,{href:"/projects/realtime/2",children:"...Action!"})," (",e.exports.jsx(r.a,{href:"/projects/realtime/2-algo",children:"algo"}),")"]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(r.li,{children:[e.exports.jsx(r.strong,{children:"Final"}),`
