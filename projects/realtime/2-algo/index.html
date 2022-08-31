@@ -14,23 +14,140 @@
 <h1 id="project-6-action-algo"><a href="#project-6-action-algo">Project 6: ...Action! (Algo)</a></h1>
 <p>You can find the handout for this project <a href="/projects/realtime/2">here</a>.</p>
 <h2 id="camera-rotation"><a href="#camera-rotation">Camera Rotation</a></h2>
-<p>Given an angle of 90 degrees about the axis (1, 1, 1), use rodrigues’s formula to find the appropriate rotation matrix. Refer to <a href="https://docs.google.com/presentation/d/1WqbpmPNVkuR03OGYc_nEs78VSHf6vLGK/edit#slide=id.p100">this lecture</a> for a reminder!</p>
+<p>How would you compute the matrix for a rotation of 90 degrees about the axis <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.664ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2945.3 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-1-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-1-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-1-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="5B" xlink:href="#MJX-1-TEX-N-5B"></use></g><g data-mml-node="mn" transform="translate(278,0)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(778,0)"><use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1222.7,0)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(1722.7,0)"><use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2167.3,0)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(2667.3,0)"><use data-c="5D" xlink:href="#MJX-1-TEX-N-5D"></use></g></g></g></svg></mjx-container></span>?
+Hint: we are not expecting you to provide expressions for every entry of the matrix; a one-line matrix/vector expression should suffice.</p>
 <h2 id="shader-uniforms"><a href="#shader-uniforms">Shader Uniforms</a></h2>
-<p>Given a texture object of m_tex1 and a shader object m_shader, please write pseudocode to set m_tex1 to be set to a uniform variable “texture1” contained in m_shader’s source code. Assume nothing about the current state!</p>
+<p>Given a texture object of <code>m_tex1</code> and a shader object <code>m_shader</code>, please write pseudocode to set <code>m_tex1 </code>to be set to a uniform variable <code>texture1</code> contained in <code>m_shader</code>’s source code. Assume nothing about the current state!</p>
 <h2 id="textures-renderbuffers-framebuffers-oh-my"><a href="#textures-renderbuffers-framebuffers-oh-my">Textures, Renderbuffers, Framebuffers Oh My!</a></h2>
 <h3 id="concept"><a href="#concept">Concept</a></h3>
 <p>For a framebuffer with color and depth attachments, please draw a schematic/diagram of the framebuffer indicating which attachments are textures and which are renderbuffers and why. Assume the usage of the framebuffer will be to draw a scene with a grayscale filter applied.</p>
 <h3 id="functional-understanding"><a href="#functional-understanding">Functional Understanding</a></h3>
 <h4 id="glteximage2d"><a href="#glteximage2d">glTexImage2D</a></h4>
-<p>What is the difference between <code>internal format</code> and <code>format</code> in the call glTexImage2D?</p>
+<p>What is the difference between <code>internal format</code> and <code>format</code> in the call <code>glTexImage2D</code>?</p>
 <h4 id="gltexparameteri"><a href="#gltexparameteri">glTexParameteri</a></h4>
-<p>What is the difference between using GL_NEAREST and GL_LINEAR when setting magnification and minification filters in glTexParameteri?</p>
+<p>What is the difference between using <code>GL_NEAREST</code> and <code>GL_LINEAR</code> when setting magnification and minification filters in <code>glTexParameteri</code>?</p>
 <h2 id="realtime-vs-ray"><a href="#realtime-vs-ray">Realtime vs. Ray</a></h2>
 <h3 id="recursive-reflections"><a href="#recursive-reflections">Recursive Reflections</a></h3>
-<p>Why do you think we are not implementing recursive reflections in realtime 2? This question is open-ended, full points will be awarded to a well thought out answer.</p>
+<p>Why do you think we are not implementing recursive reflections in this assignment? This question is open-ended; any well-thought-out answer will suffice.</p>
 <h3 id="differences"><a href="#differences">Differences</a></h3>
-<p>Apart from recursive reflections, what are the advantages to using offline rendering as opposed to realtime rendering? What are the advantages to using realtime rendering as opposed to offline? This question is open-ended, full points will be awarded to a well thought out answer.</p>
-<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
+<p>Apart from recursive reflections, what are the advantages to using offline rendering as opposed to realtime rendering? What are the advantages to using realtime rendering as opposed to offline? This question is open-ended; any well-thought-out answer will suffice.</p>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/realtime/2-algo"}}</script><script type="module" src="/assets/entry-client-routing.b6f98480.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/realtime/2-algo.page.e09c2f85.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.b6f98480.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5a4b3448.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/realtime/2-algo"}}</script><script type="module" src="/assets/entry-client-routing.538295f4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/realtime/2-algo.page.861b76ab.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.538295f4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5a4b3448.js"></body>
     </html>
