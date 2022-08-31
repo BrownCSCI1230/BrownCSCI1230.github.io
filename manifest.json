@@ -158,6 +158,15 @@
       "_chunk-9ad3b198.js"
     ]
   },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.0d01646a.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-47a93a9e.js"
+    ]
+  },
   "pages/labs/index.page.mdx": {
     "file": "assets/pages/labs/index.page.c313724a.js",
     "src": "pages/labs/index.page.mdx",
@@ -168,7 +177,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.5ed40f27.js",
+    "file": "assets/pages/labs/lab1.page.5c265010.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -178,7 +187,7 @@
     ]
   },
   "pages/labs/lab10.page.mdx": {
-    "file": "assets/pages/labs/lab10.page.3675d677.js",
+    "file": "assets/pages/labs/lab10.page.bcd99682.js",
     "src": "pages/labs/lab10.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -189,7 +198,7 @@
     ]
   },
   "pages/labs/lab11.page.mdx": {
-    "file": "assets/pages/labs/lab11.page.67826333.js",
+    "file": "assets/pages/labs/lab11.page.72a75e2f.js",
     "src": "pages/labs/lab11.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -287,15 +296,6 @@
       "_chunk-9ad3b198.js"
     ]
   },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.e8cf0f54.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-47a93a9e.js"
-    ]
-  },
   "pages/projects/final/index.page.mdx": {
     "file": "assets/pages/projects/final/index.page.c0f7a178.js",
     "src": "pages/projects/final/index.page.mdx",
@@ -360,7 +360,7 @@
     ]
   },
   "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.96e0cf95.js",
+    "file": "assets/pages/projects/ray/1.page.7f0f61ab.js",
     "src": "pages/projects/ray/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -382,7 +382,7 @@
     ]
   },
   "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.fe51a9d8.js",
+    "file": "assets/pages/projects/ray/2.page.d37492af.js",
     "src": "pages/projects/ray/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -436,7 +436,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.57f4ea7f.js",
+    "file": "assets/entry-client-routing.eb265621.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -489,7 +489,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.f5045f1c.js",
+    "file": "assets/entry-server-routing.f686d043.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

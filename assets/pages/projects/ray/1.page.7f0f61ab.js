@@ -9,19 +9,18 @@ import{j as e}from"../../../chunk-47a93a9e.js";import{M as o}from"../../../chunk
 `,e.exports.jsx(t.h2,{id:"requirements",children:e.exports.jsx(t.a,{href:"#requirements",children:"Requirements"})}),`
 `,e.exports.jsx(t.p,{children:"This assignment is out of 100 points"}),`
 `,e.exports.jsxs(t.ul,{children:[`
-`,e.exports.jsxs(t.li,{children:["Parsing the scene ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
-`,e.exports.jsxs(t.li,{children:["Casting ray from camera ",e.exports.jsx(t.strong,{children:"(10pts)"})]}),`
-`,e.exports.jsxs(t.li,{children:["Intersection check pipeline ",e.exports.jsx(t.strong,{children:"(35pts)"})]}),`
-`,e.exports.jsxs(t.li,{children:["Four shape primitives (implicit functions and normals) ",e.exports.jsx(t.strong,{children:"(20pts)"}),":",`
+`,e.exports.jsxs(t.li,{children:["Scene Parser Integration ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
+`,e.exports.jsxs(t.li,{children:["Camera ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
+`,e.exports.jsxs(t.li,{children:["Shape Implementations ",e.exports.jsx(t.strong,{children:"(20pts)"}),":",`
 `,e.exports.jsxs(t.ul,{children:[`
 `,e.exports.jsxs(t.li,{children:["Cube ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
 `,e.exports.jsxs(t.li,{children:["Sphere ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
-`,e.exports.jsxs(t.li,{children:["Cylinder ",e.exports.jsx(t.strong,{children:"(10pts)"})]}),`
-`,e.exports.jsxs(t.li,{children:["Cone ",e.exports.jsx(t.strong,{children:"(10pts)"})]}),`
+`,e.exports.jsxs(t.li,{children:["Cylinder ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
+`,e.exports.jsxs(t.li,{children:["Cone ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
 `]}),`
 `]}),`
-`,e.exports.jsxs(t.li,{children:["Efficiency ",e.exports.jsx(t.strong,{children:"(15pts)"})]}),`
-`,e.exports.jsxs(t.li,{children:["Software Engineering & Stability ",e.exports.jsx(t.strong,{children:"(10pts)"})]}),`
+`,e.exports.jsxs(t.li,{children:["Intersection pipeline ",e.exports.jsx(t.strong,{children:"(40pts)"})]}),`
+`,e.exports.jsxs(t.li,{children:["Software Engineering, Efficiency, & Stability ",e.exports.jsx(t.strong,{children:"(25pts)"})]}),`
 `,e.exports.jsxs(t.li,{children:["README ",e.exports.jsx(t.strong,{children:"(5pts)"})]}),`
 `]}),`
 `,e.exports.jsx(t.h3,{id:"parsing-the-scene",children:e.exports.jsx(t.a,{href:"#parsing-the-scene",children:"Parsing the scene"})}),`
@@ -91,25 +90,44 @@ You can refer to the answer to Question 4.2 in the ray 1 ALGO for the correct ma
 `,e.exports.jsx(t.p,{children:"To roughly sum it up, you are required to implement texture mapping, different light sources, and phong lighting model with shadow and reflection in your next assignment."}),`
 `,e.exports.jsx(t.h2,{id:"extra-credits",children:e.exports.jsx(t.a,{href:"#extra-credits",children:"Extra Credits"})}),`
 `,e.exports.jsxs(t.ul,{children:[`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Acceleration data structure"}),": There are various ways to build an acceleration data structure. Here are the approaches that are covered in the lecture.",`
+`,e.exports.jsxs(t.li,{children:[`
+`,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Acceleration data structure"}),": There are various ways to build an acceleration data structure. Here are the approaches that are covered in the lecture."]}),`
 `,e.exports.jsxs(t.ul,{children:[`
-`,e.exports.jsx(t.li,{children:"Octree"}),`
-`,e.exports.jsx(t.li,{children:"BVH"}),`
-`,e.exports.jsx(t.li,{children:"KD-Tree"}),`
+`,e.exports.jsx(t.li,{children:"(5pts) Octree"}),`
+`,e.exports.jsx(t.li,{children:"(10pts) BVH"}),`
+`,e.exports.jsx(t.li,{children:"(10pts) KD-Tree"}),`
 `]}),`
 `]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Parallelization"}),": There are many ways to parallelize your code. It can be as simple as one line of code in OpenMP. It can also go up to a carefully designed task scheduler that acts like Cinebench. Evidently, the grades you receive will be based on the complexity of your implementation. If you have more questions on the rubric and design choice, come to TA hours and we are happy to help."]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Anti-aliasing"}),": As we are only shooting one ray through the center of each pixel, it can be expected that there will be aliasing. In your filter project, you\u2019ve learnt some ways to fix aliasing as a post-processing approach. Try to figure out if you can integrate your filter into your ray tracer as a post-processing module for your output image."]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Super-sampling"}),": As mentioned above, the source of aliasing is the low number of samples. So the most direct way to resolve it is to increase the number of samples. Here are a few ways to do super-sampling.",`
+`,e.exports.jsxs(t.li,{children:[`
+`,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Parallelization"}),`:\r
+There are many ways to parallelize your code. It can be as simple as one line of code in OpenMP.\r
+It can also go up to a carefully designed task scheduler that acts like Cinebench.\r
+Evidently, the grades you receive will be based on the complexity of your implementation.\r
+If you have more questions on the rubric and design choice, come to TA hours and we are happy to help.`]}),`
 `,e.exports.jsxs(t.ul,{children:[`
-`,e.exports.jsx(t.li,{children:"Naive super-sampling"}),`
-`,e.exports.jsx(t.li,{children:"Adaptive super-sampling"}),`
-`,e.exports.jsxs(t.li,{children:["A quick comparison between baseline and super-sampling",`
+`,e.exports.jsx(t.li,{children:"(1pt) Level 1"}),`
+`,e.exports.jsx(t.li,{children:"(2pt) Level 2"}),`
+`,e.exports.jsx(t.li,{children:"(4pt) Level 3"}),`
+`,e.exports.jsx(t.li,{children:"(8pt) Level 4"}),`
+`]}),`
+`]}),`
+`,e.exports.jsxs(t.li,{children:[`
+`,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Anti-aliasing (3pts)"}),`:\r
+As we are only shooting one ray through the center of each pixel, it can be expected that there will be aliasing.\r
+In your filter project, you\u2019ve learnt some ways to fix aliasing as a post-processing approach.\r
+Try to figure out if you can integrate your filter into your ray tracer as a post-processing module for your output image.`]}),`
+`]}),`
+`,e.exports.jsxs(t.li,{children:[`
+`,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Super-sampling"}),`:\r
+As mentioned above, the source of aliasing is the low number of samples.\r
+So the most direct way to resolve it is to increase the number of samples. Here are a few ways to do super-sampling.`]}),`
+`,e.exports.jsxs(t.ul,{children:[`
+`,e.exports.jsx(t.li,{children:"(3pts) Naive super-sampling"}),`
+`,e.exports.jsx(t.li,{children:"(6pts) Adaptive super-sampling"}),`
+`]}),`
+`]}),`
+`]}),`
 `,e.exports.jsx(s,{images:[{src:"/projects/ray1/cylinder_texture.png",alt:"TODO"},{src:"/projects/ray1/cylinder_texture_MSAA.png",alt:"TODO"}],figNumber:4,targetWidth:"20%",figCaption:"Left: Baseline; Right: MSAA"}),`
-`]}),`
-`]}),`
-`]}),`
-`]}),`
 `,e.exports.jsx(t.h2,{id:"readme",children:e.exports.jsx(t.a,{href:"#readme",children:"README"})}),`
 `,e.exports.jsx(t.p,{children:"You must submit a README in Markdown format. This file should contain basic information about your design choices. You should also include any known bugs or any extra credits you\u2019ve implemented."}),`
 `,e.exports.jsxs(t.p,{children:["For extra credits, please describe what you've done and roughly point out the related code segment. If you implement any extra feature that requires you to add a parameter for the QSettings and the ",e.exports.jsx(t.code,{children:"RayTracer::Config"}),", please also document it accordingly so that the TAs won't miss anything when grading your assignment."]}),`

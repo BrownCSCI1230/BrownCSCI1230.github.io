@@ -9,7 +9,7 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-11-textures-and-fbos">Lab 11: Textures and FBOs</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#textures">Textures</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-a-texture">What is a Texture?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-texture-on-the-cpu">Creating a Texture on the CPU</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#qimages">QImages</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#opengl-textures">OpenGL Textures</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo">Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#fullscreen-quads">Fullscreen Quads</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#uv-coordinates">UV Coordinates</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#sampling-a-texture-in-a-shader">Sampling a Texture in a Shader</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#framebuffer-objects">Framebuffer Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-an-fbo">What is an FBO?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbo-contain">What does an FBO contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbos-attached-buffer-contain">What does an FBO&#x27;s attached buffer contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#making-our-own-fbo">Making our own FBO</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#drawing-with-our-fbo">Drawing with our FBO</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#return-of-the-sphere">Return of the Sphere</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#back-to-basics">Back to Basics</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#glviewport">glViewport</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#fbo-functionality">FBO Functionality</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#post-processing">Post Processing</a></li></ol></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-11-textures-and-fbos">Lab 11: Textures and FBOs</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#textures">Textures</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-a-texture">What is a Texture?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-texture-on-the-cpu">Creating a Texture on the CPU</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#qimages">QImages</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#opengl-textures">OpenGL Textures</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo">Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#fullscreen-quads">Fullscreen Quads</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#uv-coordinates">UV Coordinates</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#sampling-a-texture-in-a-shader">Sampling a Texture in a Shader</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#framebuffer-objects-fbos">Framebuffer Objects (FBOs)</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-is-an-fbo">What is an FBO?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbo-contain">What does an FBO contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#what-does-an-fbos-attached-buffer-contain">What does an FBO&#x27;s attached buffer contain?</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#making-our-own-fbo">Making our own FBO</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#drawing-with-our-fbo">Drawing with our FBO</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#return-of-the-sphere">Return of the Sphere</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#back-to-basics">Back to Basics</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#glviewport">glViewport</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#fbo-functionality">FBO Functionality</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#post-processing">Post Processing</a></li></ol></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="lab-11-textures-and-fbos"><a href="#lab-11-textures-and-fbos">Lab 11: Textures and FBOs</a></h1>
 <ul>
@@ -17,8 +17,8 @@
 <li><a href="https://forms.gle/ZYY519pzSvu8YaZK6">Anonymous feedback form</a></li>
 </ul>
 <h2 id="intro"><a href="#intro">Intro</a></h2>
-<p>In lab 9, you learned how OpenGL stores vertex data in two types of objects called
-vertex buffer objects and vertex array objects. You learned about how to work with
+<p>In Lab 9, you learned how OpenGL stores vertex data in two types of objects called
+vertex buffer objects (VBOs) and vertex array objects (VAOs). You learned about how to work with
 scene data in real time. But what about working with 2-dimensional data? In previous
 projects you worked with a canvas object that displayed your results onto the screen.
 But how does this work in OpenGL? So far, we have seen the real time pipeline up to
@@ -42,25 +42,24 @@ framebuffer objects comes in!</p>
 <p>Before we dive into the 2D data we draw to, let’s think about a common form of
 2D data we use in our own scenes…Textures!</p>
 <h3 id="what-is-a-texture"><a href="#what-is-a-texture">What is a Texture?</a></h3>
-<p>A texture is a 2D image (although any dimensional textures can exist such as volume noise)
-which has the ability to be read from and written to. The object can flow between the CPU
-and GPU the same as vertex data to be read in a shader.</p>
+<p>In OpenGL, a texture is a regular grid of values which can be read from and written to. We&#x27;ll only be interacting with 2D textures in this lab, though OpenGL also supports 1D and 3D (i.e. volumetric) textures. Texture data can flow between the CPU
+and GPU (just like vertex data) to be read in a shader.</p>
 <h3 id="creating-a-texture-on-the-cpu"><a href="#creating-a-texture-on-the-cpu">Creating a Texture on the CPU</a></h3>
 <h4 id="qimages"><a href="#qimages">QImages</a></h4>
 <p>In Qt creator, the most common form of an image is called a <code>QImage</code>. Let’s create one
 of our own!</p>
-<p>The <a href="https://doc.qt.io/qt-6/qimage.html#QImage-8"><code>QImage</code> constructor</a> takes in two parameters,
+<p>The <a href="https://doc.qt.io/qt-6/qimage.html#QImage-8"><code>QImage</code> constructor</a> takes in two parameters:
 a file path formatted as a <code>QString</code>, and a format specification which is optional.</p>
 <div class="task-callout callout"><p>In <code>InitializeGL</code>, store a <code>QImage</code> in the <code>m_image</code> member variable using the relative file path of the
 <strong>kitten.png</strong> image in our project</p></div>
 <p>Now let’s format our <code>QImage</code> to fit OpenGL standards. Unlike OpenGL which has its
-UV coordinate (which you will learn about soon) origin at the <em>bottom left</em>, a <code>QImage</code>
+UV coordinate space (which you will learn about soon) origin at the <em>bottom left</em>, a <code>QImage</code>
 stores it in the <em>top left</em>. Therefore one of our tasks is to mirror the image vertically.
-The second is we need to ensure that we have 4, 8-bit color channels for R, G, B, and A.</p>
+The second is we need to ensure that we have 8-bit color channels for R, G, B, and A (4 channels in total).</p>
 <div class="task-callout callout"><p>To do this let’s overwrite our <code>m_image</code> to be:</p><pre><code class="code-highlight"><span class="code-line">	m_image = m_image.convertToFormat(QImage::Format_RGBA8888).mirrored();
 </span></code></pre></div>
 <h4 id="opengl-textures"><a href="#opengl-textures">OpenGL Textures</a></h4>
-<p>Great, now we have our Qt formatted image, let’s put it in an OpenGL texture.
+<p>Now that we have our Qt formatted image, let’s put it in an OpenGL texture.
 To start, we need to generate a texture using the following function:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenTextures.xhtml"><strong>void glGenTextures(GLsizei n, GLuint * textures);</strong></a></p>
@@ -96,7 +95,7 @@ by using the associated <code>bits()</code> function.</p></div>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glTexParameter.xhtml"><strong>void glTexParameteri(GLenum target, GLenum pname, GLint param);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This indicates the target we bound our texture to. For our purposes, use
-<code>GL_TEXTURE_2D</code>.</p><p><strong><code>pname</code> :</strong> This is an enumerable for the parameter we wish to set.</p><p><strong><code>param</code> :</strong> This is the value we wish to set for our chosen parameter. See the documentation
+<code>GL_TEXTURE_2D</code>.</p><p><strong><code>pname</code> :</strong> This is an enum for the parameter we wish to set.</p><p><strong><code>param</code> :</strong> This is the value we wish to set for our chosen parameter. See the documentation
 for a list of parameters and their possible values.</p></div>
 <div class="task-callout callout"><p>After adding our image data in <code>IntializeGL</code>, use this function to set the minify
 and magnify filters to use linear interpolation.</p></div>
@@ -127,10 +126,10 @@ indicate which slot index should be sampled in our shader.</p>
 <p>The first call is:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glActiveTexture.xhtml"><strong>void glActiveTexture(GLenum texture);</strong></a></p>
-</blockquote></p><p><strong><code>texture</code> :</strong> This is an enumerable that represents the texture slot. They are in the
+</blockquote></p><p><strong><code>texture</code> :</strong> This is an enum that represents the texture slot. They are in the
 format of <code>GL_TEXTUREi</code>, where i is an integer representing the slot number.</p></div>
 <p>[CHANGE TO MEAN: TO PROPERLY DO THIS WE NEED TO EXPLICITLY SET OUR TEXTURE SLOT]
-The second call is the same binding call we have seen before!</p>
+The second call is the same binding call we have seen before.</p>
 <div class="task-callout callout"><p>Before we previously bound our texture in <code>InitializeGL</code>, manually set the active texture
 slot to slot 0.</p></div>
 <p>To set the uniform value, it is represented by an int that correlates to the texture
@@ -142,7 +141,7 @@ of program 0 afterwards.</p><p>In <code>PaintGL</code>, before calling <code>glD
 texture slot 0.</p></div>
 <h3 id="using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates"><a href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a></h3>
 <p>As we have set our uniform variable for our texture, we are going to be using them
-within our shader program! However, we currently have no triangles to draw our textures
+within our shader program. However, we currently have no triangles to draw our textures
 on.</p>
 <h4 id="fullscreen-quads"><a href="#fullscreen-quads">Fullscreen Quads</a></h4>
 <p>If you recall the OpenGL coordinate system, we can see the limits of the screen as follows:</p>
@@ -150,7 +149,7 @@ on.</p>
 <p>What we can do with this is use it to construct what is known as a <strong>fullscreen quad</strong>.
 Think of a fullscreen quad as a projector screen that we drape down in our scene that
 happense to be <em>just</em> the right size to cover the entire screen so that we can&#x27;t see
-behind it, but also can see it in its entirety!</p>
+behind it, but also can see it in its entirety.</p>
 <div class="task-callout callout"><p>In <code>InitializeGL</code>, notice the fullscreen quad VBO data <code>fullscreen_quad_data</code>. Edit it
 in order to be the correct size of the screen.</p></div>
 <div class="task-callout callout"><p>Mess around with <code>fullscreen_quad_data</code>! What happens when you change the z coordinate?
@@ -170,29 +169,29 @@ upper right corner of the texture!</p></div>
 coordinates. Make sure to update the position attribute as well!</p></div>
 <div class="task-callout callout"><p>Add the UV attribute as a layout variable in <code>texture.vert</code>.</p></div>
 <div class="task-callout callout"><p>Create an in/out variable pair to pass the UV coordinates from the <code>texture.vert</code> to
-<code>texture..frag</code>. Also be sure to set the out variable of texture.vert to be equal to
+<code>texture.frag</code>. Also be sure to set the out variable of texture.vert to be equal to
 the layout input variable we created in the last step!</p></div>
 <h4 id="sampling-a-texture-in-a-shader"><a href="#sampling-a-texture-in-a-shader">Sampling a Texture in a Shader</a></h4>
 <p>Now we want to set our fragment color to be our texture at our pre-selected UV coordinates.
-In GLSL, the function to sample a texture uniform which is of type sampler2D is:</p>
+In GLSL, the function to sample a texture uniform which is of type <code>sampler2D</code> is:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/texture.xhtml"><strong>gvec4 texture(gsampler2D sampler, vec2 P);</strong></a></p>
 </blockquote></p><p><strong><code>sampler</code> :</strong> This is the name of the sampler2D we wish to sample from.</p><p><strong><code>P</code> :</strong> This is the UV coordinate we wish to sample the texture at.</p></div>
 <div class="task-callout callout"><p>In <code>texture.frag</code>, set the fragment color based on the texture color at the fragment&#x27;s
 UV coordinate.</p></div>
-<h2 id="framebuffer-objects"><a href="#framebuffer-objects">Framebuffer Objects</a></h2>
+<h2 id="framebuffer-objects-fbos"><a href="#framebuffer-objects-fbos">Framebuffer Objects (FBOs)</a></h2>
 <h3 id="what-is-an-fbo"><a href="#what-is-an-fbo">What is an FBO?</a></h3>
 <blockquote>
-<p>Framebuffer: A portion of memory containing bitmaps that can drive displays.</p>
+<p><strong>Framebuffer</strong>: A portion of memory containing bitmaps that can drive displays.</p>
 </blockquote>
-<p>Fancy language aside, lets breakdown the word itself into components:</p>
+<p>Fancy language aside, lets break down the word itself into components:</p>
 <ul>
 <li>Frame: Canvas, screen space, originally used for the term of &quot;next/current frame&quot;</li>
 <li>Buffer: Data storage</li>
 <li>Object: Something, in this case a container that holds other information</li>
 </ul>
 <h3 id="what-does-an-fbo-contain"><a href="#what-does-an-fbo-contain">What does an FBO contain?</a></h3>
-<p>Framebuffers contain things in OpenGL known as <em>attachments</em>. These include color buffers,
+<p>Framebuffers contain things in OpenGL known as <strong>attachments</strong>. These include color buffers,
 depth buffers, and stencil buffers which you will learn more about shortly. Each buffer
 is represented by a sub-object being either:</p>
 <ol>
@@ -215,14 +214,14 @@ the <strong>color buffer</strong> to whatever we choose!</p>
 <p><strong>Depth buffers</strong> contain information about how far away a specific pixel is from the camera.
 We can write to the depth buffer by calling <code>glEnable(GL_DEPTH_TEST)</code>. This allows
 OpenGL to store depth information in the default framebuffer&#x27;s depth buffer such that if
-we draw two triangles on top of one another, OpenGL can tell which should display on top!</p>
+we draw two triangles on top of one another, OpenGL can tell which should display on top.</p>
 <p><strong>Stencil buffers</strong> contain information that is generated by special masks that enables certain
 pixels to be drawn or not. This is not important at the moment, but if you wish to draw
-something like outlines or recursive portals, this comes in handy!</p>
+something like outlines or recursive portals, this comes in handy.</p>
 <figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><img src="/labs/lab11/fboattachments.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>FBO Attachments</figcaption></figure>
 <h3 id="making-our-own-fbo"><a href="#making-our-own-fbo">Making our own FBO</a></h3>
 <p>Next, we will generate and bind our own FBO.</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate and FBO and store it in <code>m_fbo</code>. Then bind it. You may find the following useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate an FBO and store it in <code>m_fbo</code>. Then bind it. You may find the following useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenFramebuffers.xhtml"><strong>void glGenFramebuffers(GLsizei n, GLuint *framebuffers);</strong></a></p>
 </blockquote></p><p><strong><code>n</code> :</strong> This indicates the number of framebuffer objects to create.</p><p><strong><code>framebuffers</code> :</strong> This is the pointer this function will fill in with an id for the
 generated FBO. This way you can refer to it later by the same stored id.
@@ -265,7 +264,7 @@ the renderbuffer. We wiil be using <code>GL_DEPTH24_STENCIL8</code> which indica
 used for the depth component and 8 for the stencil component.</p><p><strong><code>width</code> :</strong> This is the width of the desired renderbuffer.</p><p><strong><code>height</code> :</strong> This is the height of the desired renderbuffer.</p></div><blockquote>
 <p>Be sure to unbind our Renderbuffer once we have set its configuration.</p>
 </blockquote></div>
-<p>Now we can attach both of our attachemnts to the FBO we generated</p>
+<p>Now we can attach both of our attachments to the FBO we generated</p>
 <div class="task-callout callout"><p>In <code>InitializeGL</code> after binding our FBO, attach both the color and depth/stencil attachemnts.
 You may find the following functions useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glFramebufferTexture2D.xhtml"><strong>void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);</strong></a></p>
@@ -354,9 +353,9 @@ inverse of that color channel.</p>
 <div class="task-callout callout"><p>In <code>postprocessing.frag</code> invert the channels of fragColor.</p></div>
 <p>If you run the program, you should see your sphere has been warped into an inverse shadow
 realm! There are many cool effects you can apply using framebuffers, including: kernel-based
-image filtering which you will do in Realtime 2, particle effects which you can do in lab #,
+image filtering which you will do in Realtime 2, particle effects,
 or even draw portals with usage of the FBO&#x27;s stencil attachment!</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.57f4ea7f.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.67826333.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.57f4ea7f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.eb265621.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.72a75e2f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.eb265621.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
     </html>

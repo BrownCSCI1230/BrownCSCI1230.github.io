@@ -1,4 +1,4 @@
-import{j as e}from"../../chunk-47a93a9e.js";import{I as s}from"../../chunk-e84bc917.js";import{M as n}from"../../chunk-9ad3b198.js";const c={title:"Lab 11"};function o(r){const t=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",ul:"ul",h2:"h2",p:"p",strong:"strong",em:"em",h3:"h3",h4:"h4",code:"code",div:"div",pre:"pre",span:"span",blockquote:"blockquote"},r.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(t.nav,{className:"toc",children:e.exports.jsx(t.ol,{className:"toc-level toc-level-1",children:e.exports.jsxs(t.li,{className:"toc-item toc-item-h1",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h1",href:"#lab-11-textures-and-fbos",children:"Lab 11: Textures and FBOs"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-2",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#intro",children:"Intro"})}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#textures",children:"Textures"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-is-a-texture",children:"What is a Texture?"})}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#creating-a-texture-on-the-cpu",children:"Creating a Texture on the CPU"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#qimages",children:"QImages"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#opengl-textures",children:"OpenGL Textures"})})]})]}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo",children:"Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo"})}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates",children:"Using a Texture in the GPU: Fullscreen Quads and UV Coordinates"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#fullscreen-quads",children:"Fullscreen Quads"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#uv-coordinates",children:"UV Coordinates"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#sampling-a-texture-in-a-shader",children:"Sampling a Texture in a Shader"})})]})]})]})]}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#framebuffer-objects",children:"Framebuffer Objects"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-is-an-fbo",children:"What is an FBO?"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-does-an-fbo-contain",children:"What does an FBO contain?"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-does-an-fbos-attached-buffer-contain",children:"What does an FBO's attached buffer contain?"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#making-our-own-fbo",children:"Making our own FBO"})})]})]}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#drawing-with-our-fbo",children:"Drawing with our FBO"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#return-of-the-sphere",children:"Return of the Sphere"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#back-to-basics",children:"Back to Basics"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#glviewport",children:"glViewport"})})]})]}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#fbo-functionality",children:"FBO Functionality"}),e.exports.jsx(t.ol,{className:"toc-level toc-level-3",children:e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#post-processing",children:"Post Processing"})})})]})]})]})})}),e.exports.jsxs(t.main,{children:[`
+import{j as e}from"../../chunk-47a93a9e.js";import{I as s}from"../../chunk-e84bc917.js";import{M as n}from"../../chunk-9ad3b198.js";const c={title:"Lab 11"};function o(r){const t=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",ul:"ul",h2:"h2",p:"p",strong:"strong",em:"em",h3:"h3",h4:"h4",code:"code",div:"div",pre:"pre",span:"span",blockquote:"blockquote"},r.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(t.nav,{className:"toc",children:e.exports.jsx(t.ol,{className:"toc-level toc-level-1",children:e.exports.jsxs(t.li,{className:"toc-item toc-item-h1",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h1",href:"#lab-11-textures-and-fbos",children:"Lab 11: Textures and FBOs"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-2",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#intro",children:"Intro"})}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#textures",children:"Textures"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-is-a-texture",children:"What is a Texture?"})}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#creating-a-texture-on-the-cpu",children:"Creating a Texture on the CPU"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#qimages",children:"QImages"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#opengl-textures",children:"OpenGL Textures"})})]})]}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#passing-a-texture-to-the-gpu-uniforms-2-electric-boogaloo",children:"Passing A Texture To The GPU: Uniforms 2 Electric Boogaloo"})}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates",children:"Using a Texture in the GPU: Fullscreen Quads and UV Coordinates"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#fullscreen-quads",children:"Fullscreen Quads"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#uv-coordinates",children:"UV Coordinates"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h4",href:"#sampling-a-texture-in-a-shader",children:"Sampling a Texture in a Shader"})})]})]})]})]}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#framebuffer-objects-fbos",children:"Framebuffer Objects (FBOs)"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-is-an-fbo",children:"What is an FBO?"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-does-an-fbo-contain",children:"What does an FBO contain?"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#what-does-an-fbos-attached-buffer-contain",children:"What does an FBO's attached buffer contain?"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#making-our-own-fbo",children:"Making our own FBO"})})]})]}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#drawing-with-our-fbo",children:"Drawing with our FBO"}),e.exports.jsxs(t.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#return-of-the-sphere",children:"Return of the Sphere"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#back-to-basics",children:"Back to Basics"})}),e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#glviewport",children:"glViewport"})})]})]}),e.exports.jsxs(t.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(t.a,{className:"toc-link toc-link-h2",href:"#fbo-functionality",children:"FBO Functionality"}),e.exports.jsx(t.ol,{className:"toc-level toc-level-3",children:e.exports.jsx(t.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(t.a,{className:"toc-link toc-link-h3",href:"#post-processing",children:"Post Processing"})})})]})]})]})})}),e.exports.jsxs(t.main,{children:[`
 `,`
 `,e.exports.jsx(t.h1,{id:"lab-11-textures-and-fbos",children:e.exports.jsx(t.a,{href:"#lab-11-textures-and-fbos",children:"Lab 11: Textures and FBOs"})}),`
 `,e.exports.jsxs(t.ul,{children:[`
@@ -6,8 +6,8 @@ import{j as e}from"../../chunk-47a93a9e.js";import{I as s}from"../../chunk-e84bc
 `,e.exports.jsx(t.li,{children:e.exports.jsx(t.a,{href:"https://forms.gle/ZYY519pzSvu8YaZK6",children:"Anonymous feedback form"})}),`
 `]}),`
 `,e.exports.jsx(t.h2,{id:"intro",children:e.exports.jsx(t.a,{href:"#intro",children:"Intro"})}),`
-`,e.exports.jsxs(t.p,{children:[`In lab 9, you learned how OpenGL stores vertex data in two types of objects called\r
-vertex buffer objects and vertex array objects. You learned about how to work with\r
+`,e.exports.jsxs(t.p,{children:[`In Lab 9, you learned how OpenGL stores vertex data in two types of objects called\r
+vertex buffer objects (VBOs) and vertex array objects (VAOs). You learned about how to work with\r
 scene data in real time. But what about working with 2-dimensional data? In previous\r
 projects you worked with a canvas object that displayed your results onto the screen.\r
 But how does this work in OpenGL? So far, we have seen the real time pipeline up to\r
@@ -31,25 +31,24 @@ framebuffer objects comes in!`]}),`
 `,e.exports.jsx(t.p,{children:`Before we dive into the 2D data we draw to, let\u2019s think about a common form of\r
 2D data we use in our own scenes\u2026Textures!`}),`
 `,e.exports.jsx(t.h3,{id:"what-is-a-texture",children:e.exports.jsx(t.a,{href:"#what-is-a-texture",children:"What is a Texture?"})}),`
-`,e.exports.jsx(t.p,{children:`A texture is a 2D image (although any dimensional textures can exist such as volume noise)\r
-which has the ability to be read from and written to. The object can flow between the CPU\r
-and GPU the same as vertex data to be read in a shader.`}),`
+`,e.exports.jsx(t.p,{children:`In OpenGL, a texture is a regular grid of values which can be read from and written to. We'll only be interacting with 2D textures in this lab, though OpenGL also supports 1D and 3D (i.e. volumetric) textures. Texture data can flow between the CPU\r
+and GPU (just like vertex data) to be read in a shader.`}),`
 `,e.exports.jsx(t.h3,{id:"creating-a-texture-on-the-cpu",children:e.exports.jsx(t.a,{href:"#creating-a-texture-on-the-cpu",children:"Creating a Texture on the CPU"})}),`
 `,e.exports.jsx(t.h4,{id:"qimages",children:e.exports.jsx(t.a,{href:"#qimages",children:"QImages"})}),`
 `,e.exports.jsxs(t.p,{children:["In Qt creator, the most common form of an image is called a ",e.exports.jsx(t.code,{children:"QImage"}),`. Let\u2019s create one\r
 of our own!`]}),`
-`,e.exports.jsxs(t.p,{children:["The ",e.exports.jsxs(t.a,{href:"https://doc.qt.io/qt-6/qimage.html#QImage-8",children:[e.exports.jsx(t.code,{children:"QImage"})," constructor"]}),` takes in two parameters,\r
+`,e.exports.jsxs(t.p,{children:["The ",e.exports.jsxs(t.a,{href:"https://doc.qt.io/qt-6/qimage.html#QImage-8",children:[e.exports.jsx(t.code,{children:"QImage"})," constructor"]}),` takes in two parameters:\r
 a file path formatted as a `,e.exports.jsx(t.code,{children:"QString"}),", and a format specification which is optional."]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"InitializeGL"}),", store a ",e.exports.jsx(t.code,{children:"QImage"})," in the ",e.exports.jsx(t.code,{children:"m_image"}),` member variable using the relative file path of the\r
 `,e.exports.jsx(t.strong,{children:"kitten.png"})," image in our project"]})}),`
 `,e.exports.jsxs(t.p,{children:["Now let\u2019s format our ",e.exports.jsx(t.code,{children:"QImage"}),` to fit OpenGL standards. Unlike OpenGL which has its\r
-UV coordinate (which you will learn about soon) origin at the `,e.exports.jsx(t.em,{children:"bottom left"}),", a ",e.exports.jsx(t.code,{children:"QImage"}),`\r
+UV coordinate space (which you will learn about soon) origin at the `,e.exports.jsx(t.em,{children:"bottom left"}),", a ",e.exports.jsx(t.code,{children:"QImage"}),`\r
 stores it in the `,e.exports.jsx(t.em,{children:"top left"}),`. Therefore one of our tasks is to mirror the image vertically.\r
-The second is we need to ensure that we have 4, 8-bit color channels for R, G, B, and A.`]}),`
+The second is we need to ensure that we have 8-bit color channels for R, G, B, and A (4 channels in total).`]}),`
 `,e.exports.jsxs(t.div,{className:"task-callout callout",children:[e.exports.jsxs(t.p,{children:["To do this let\u2019s overwrite our ",e.exports.jsx(t.code,{children:"m_image"})," to be:"]}),e.exports.jsx(t.pre,{children:e.exports.jsx(t.code,{className:"code-highlight",children:e.exports.jsx(t.span,{className:"code-line",children:`	m_image = m_image.convertToFormat(QImage::Format_RGBA8888).mirrored();
 `})})})]}),`
 `,e.exports.jsx(t.h4,{id:"opengl-textures",children:e.exports.jsx(t.a,{href:"#opengl-textures",children:"OpenGL Textures"})}),`
-`,e.exports.jsx(t.p,{children:`Great, now we have our Qt formatted image, let\u2019s put it in an OpenGL texture.\r
+`,e.exports.jsx(t.p,{children:`Now that we have our Qt formatted image, let\u2019s put it in an OpenGL texture.\r
 To start, we need to generate a texture using the following function:`}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenTextures.xhtml",children:e.exports.jsx(t.strong,{children:"void glGenTextures(GLsizei n, GLuint * textures);"})})}),`
@@ -85,7 +84,7 @@ by using the associated `,e.exports.jsx(t.code,{children:"bits()"})," function."
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glTexParameter.xhtml",children:e.exports.jsx(t.strong,{children:"void glTexParameteri(GLenum target, GLenum pname, GLint param);"})})}),`
 `]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"target"})," :"]}),` This indicates the target we bound our texture to. For our purposes, use\r
-`,e.exports.jsx(t.code,{children:"GL_TEXTURE_2D"}),"."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"pname"})," :"]})," This is an enumerable for the parameter we wish to set."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"param"})," :"]}),` This is the value we wish to set for our chosen parameter. See the documentation\r
+`,e.exports.jsx(t.code,{children:"GL_TEXTURE_2D"}),"."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"pname"})," :"]})," This is an enum for the parameter we wish to set."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"param"})," :"]}),` This is the value we wish to set for our chosen parameter. See the documentation\r
 for a list of parameters and their possible values.`]})]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["After adding our image data in ",e.exports.jsx(t.code,{children:"IntializeGL"}),`, use this function to set the minify\r
 and magnify filters to use linear interpolation.`]})}),`
@@ -116,10 +115,10 @@ indicate which slot index should be sampled in our shader.`}),`
 `,e.exports.jsx(t.p,{children:"The first call is:"}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glActiveTexture.xhtml",children:e.exports.jsx(t.strong,{children:"void glActiveTexture(GLenum texture);"})})}),`
-`]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"texture"})," :"]}),` This is an enumerable that represents the texture slot. They are in the\r
+`]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"texture"})," :"]}),` This is an enum that represents the texture slot. They are in the\r
 format of `,e.exports.jsx(t.code,{children:"GL_TEXTUREi"}),", where i is an integer representing the slot number."]})]}),`
 `,e.exports.jsx(t.p,{children:`[CHANGE TO MEAN: TO PROPERLY DO THIS WE NEED TO EXPLICITLY SET OUR TEXTURE SLOT]\r
-The second call is the same binding call we have seen before!`}),`
+The second call is the same binding call we have seen before.`}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Before we previously bound our texture in ",e.exports.jsx(t.code,{children:"InitializeGL"}),`, manually set the active texture\r
 slot to slot 0.`]})}),`
 `,e.exports.jsx(t.p,{children:`To set the uniform value, it is represented by an int that correlates to the texture\r
@@ -131,7 +130,7 @@ of program 0 afterwards.`]}),e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t
 texture slot 0.`]})]}),`
 `,e.exports.jsx(t.h3,{id:"using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates",children:e.exports.jsx(t.a,{href:"#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates",children:"Using a Texture in the GPU: Fullscreen Quads and UV Coordinates"})}),`
 `,e.exports.jsx(t.p,{children:`As we have set our uniform variable for our texture, we are going to be using them\r
-within our shader program! However, we currently have no triangles to draw our textures\r
+within our shader program. However, we currently have no triangles to draw our textures\r
 on.`}),`
 `,e.exports.jsx(t.h4,{id:"fullscreen-quads",children:e.exports.jsx(t.a,{href:"#fullscreen-quads",children:"Fullscreen Quads"})}),`
 `,e.exports.jsx(t.p,{children:"If you recall the OpenGL coordinate system, we can see the limits of the screen as follows:"}),`
@@ -139,7 +138,7 @@ on.`}),`
 `,e.exports.jsxs(t.p,{children:["What we can do with this is use it to construct what is known as a ",e.exports.jsx(t.strong,{children:"fullscreen quad"}),`.\r
 Think of a fullscreen quad as a projector screen that we drape down in our scene that\r
 happense to be `,e.exports.jsx(t.em,{children:"just"}),` the right size to cover the entire screen so that we can't see\r
-behind it, but also can see it in its entirety!`]}),`
+behind it, but also can see it in its entirety.`]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"InitializeGL"}),", notice the fullscreen quad VBO data ",e.exports.jsx(t.code,{children:"fullscreen_quad_data"}),`. Edit it\r
 in order to be the correct size of the screen.`]})}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Mess around with ",e.exports.jsx(t.code,{children:"fullscreen_quad_data"}),`! What happens when you change the z coordinate?\r
@@ -159,29 +158,29 @@ upper right corner of the texture!`]})}),`
 coordinates. Make sure to update the position attribute as well!`]})}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Add the UV attribute as a layout variable in ",e.exports.jsx(t.code,{children:"texture.vert"}),"."]})}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Create an in/out variable pair to pass the UV coordinates from the ",e.exports.jsx(t.code,{children:"texture.vert"}),` to\r
-`,e.exports.jsx(t.code,{children:"texture..frag"}),`. Also be sure to set the out variable of texture.vert to be equal to\r
+`,e.exports.jsx(t.code,{children:"texture.frag"}),`. Also be sure to set the out variable of texture.vert to be equal to\r
 the layout input variable we created in the last step!`]})}),`
 `,e.exports.jsx(t.h4,{id:"sampling-a-texture-in-a-shader",children:e.exports.jsx(t.a,{href:"#sampling-a-texture-in-a-shader",children:"Sampling a Texture in a Shader"})}),`
-`,e.exports.jsx(t.p,{children:`Now we want to set our fragment color to be our texture at our pre-selected UV coordinates.\r
-In GLSL, the function to sample a texture uniform which is of type sampler2D is:`}),`
+`,e.exports.jsxs(t.p,{children:[`Now we want to set our fragment color to be our texture at our pre-selected UV coordinates.\r
+In GLSL, the function to sample a texture uniform which is of type `,e.exports.jsx(t.code,{children:"sampler2D"})," is:"]}),`
 `,e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/texture.xhtml",children:e.exports.jsx(t.strong,{children:"gvec4 texture(gsampler2D sampler, vec2 P);"})})}),`
 `]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"sampler"})," :"]})," This is the name of the sampler2D we wish to sample from."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"P"})," :"]})," This is the UV coordinate we wish to sample the texture at."]})]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"texture.frag"}),`, set the fragment color based on the texture color at the fragment's\r
 UV coordinate.`]})}),`
-`,e.exports.jsx(t.h2,{id:"framebuffer-objects",children:e.exports.jsx(t.a,{href:"#framebuffer-objects",children:"Framebuffer Objects"})}),`
+`,e.exports.jsx(t.h2,{id:"framebuffer-objects-fbos",children:e.exports.jsx(t.a,{href:"#framebuffer-objects-fbos",children:"Framebuffer Objects (FBOs)"})}),`
 `,e.exports.jsx(t.h3,{id:"what-is-an-fbo",children:e.exports.jsx(t.a,{href:"#what-is-an-fbo",children:"What is an FBO?"})}),`
 `,e.exports.jsxs(t.blockquote,{children:[`
-`,e.exports.jsx(t.p,{children:"Framebuffer: A portion of memory containing bitmaps that can drive displays."}),`
+`,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Framebuffer"}),": A portion of memory containing bitmaps that can drive displays."]}),`
 `]}),`
-`,e.exports.jsx(t.p,{children:"Fancy language aside, lets breakdown the word itself into components:"}),`
+`,e.exports.jsx(t.p,{children:"Fancy language aside, lets break down the word itself into components:"}),`
 `,e.exports.jsxs(t.ul,{children:[`
 `,e.exports.jsx(t.li,{children:'Frame: Canvas, screen space, originally used for the term of "next/current frame"'}),`
 `,e.exports.jsx(t.li,{children:"Buffer: Data storage"}),`
 `,e.exports.jsx(t.li,{children:"Object: Something, in this case a container that holds other information"}),`
 `]}),`
 `,e.exports.jsx(t.h3,{id:"what-does-an-fbo-contain",children:e.exports.jsx(t.a,{href:"#what-does-an-fbo-contain",children:"What does an FBO contain?"})}),`
-`,e.exports.jsxs(t.p,{children:["Framebuffers contain things in OpenGL known as ",e.exports.jsx(t.em,{children:"attachments"}),`. These include color buffers,\r
+`,e.exports.jsxs(t.p,{children:["Framebuffers contain things in OpenGL known as ",e.exports.jsx(t.strong,{children:"attachments"}),`. These include color buffers,\r
 depth buffers, and stencil buffers which you will learn more about shortly. Each buffer\r
 is represented by a sub-object being either:`]}),`
 `,e.exports.jsxs(t.ol,{children:[`
@@ -204,14 +203,14 @@ the `,e.exports.jsx(t.strong,{children:"color buffer"})," to whatever we choose!
 `,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Depth buffers"}),` contain information about how far away a specific pixel is from the camera.\r
 We can write to the depth buffer by calling `,e.exports.jsx(t.code,{children:"glEnable(GL_DEPTH_TEST)"}),`. This allows\r
 OpenGL to store depth information in the default framebuffer's depth buffer such that if\r
-we draw two triangles on top of one another, OpenGL can tell which should display on top!`]}),`
+we draw two triangles on top of one another, OpenGL can tell which should display on top.`]}),`
 `,e.exports.jsxs(t.p,{children:[e.exports.jsx(t.strong,{children:"Stencil buffers"}),` contain information that is generated by special masks that enables certain\r
 pixels to be drawn or not. This is not important at the moment, but if you wish to draw\r
-something like outlines or recursive portals, this comes in handy!`]}),`
+something like outlines or recursive portals, this comes in handy.`]}),`
 `,e.exports.jsx(s,{images:[{src:"/labs/lab11/fboattachments.png",alt:"TODO"}],figNumber:4,targetWidth:"80%",figCaption:"FBO Attachments"}),`
 `,e.exports.jsx(t.h3,{id:"making-our-own-fbo",children:e.exports.jsx(t.a,{href:"#making-our-own-fbo",children:"Making our own FBO"})}),`
 `,e.exports.jsx(t.p,{children:"Next, we will generate and bind our own FBO."}),`
-`,e.exports.jsxs(t.div,{className:"task-callout callout",children:[e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"InitializeGL"}),", generate and FBO and store it in ",e.exports.jsx(t.code,{children:"m_fbo"}),". Then bind it. You may find the following useful:"]}),e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
+`,e.exports.jsxs(t.div,{className:"task-callout callout",children:[e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"InitializeGL"}),", generate an FBO and store it in ",e.exports.jsx(t.code,{children:"m_fbo"}),". Then bind it. You may find the following useful:"]}),e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenFramebuffers.xhtml",children:e.exports.jsx(t.strong,{children:"void glGenFramebuffers(GLsizei n, GLuint *framebuffers);"})})}),`
 `]})}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"n"})," :"]})," This indicates the number of framebuffer objects to create."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"framebuffers"})," :"]}),` This is the pointer this function will fill in with an id for the\r
 generated FBO. This way you can refer to it later by the same stored id.\r
@@ -254,7 +253,7 @@ the renderbuffer. We wiil be using `,e.exports.jsx(t.code,{children:"GL_DEPTH24_
 used for the depth component and 8 for the stencil component.`]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"width"})," :"]})," This is the width of the desired renderbuffer."]}),e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"height"})," :"]})," This is the height of the desired renderbuffer."]})]}),e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:"Be sure to unbind our Renderbuffer once we have set its configuration."}),`
 `]})]}),`
-`,e.exports.jsx(t.p,{children:"Now we can attach both of our attachemnts to the FBO we generated"}),`
+`,e.exports.jsx(t.p,{children:"Now we can attach both of our attachments to the FBO we generated"}),`
 `,e.exports.jsxs(t.div,{className:"task-callout callout",children:[e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"InitializeGL"}),` after binding our FBO, attach both the color and depth/stencil attachemnts.\r
 You may find the following functions useful:`]}),e.exports.jsxs(t.div,{className:"success-callout callout",children:[e.exports.jsx("p",{style:{textAlign:"center"},children:e.exports.jsxs(t.blockquote,{children:[`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glFramebufferTexture2D.xhtml",children:e.exports.jsx(t.strong,{children:"void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);"})})}),`
@@ -343,6 +342,6 @@ inverse of that color channel.`}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"postprocessing.frag"})," invert the channels of fragColor."]})}),`
 `,e.exports.jsx(t.p,{children:`If you run the program, you should see your sphere has been warped into an inverse shadow\r
 realm! There are many cool effects you can apply using framebuffers, including: kernel-based\r
-image filtering which you will do in Realtime 2, particle effects which you can do in lab #,\r
+image filtering which you will do in Realtime 2, particle effects,\r
 or even draw portals with usage of the FBO's stencil attachment!`}),`
 `,e.exports.jsx(n,{})]})]})}function h(r={}){const{wrapper:t}=r.components||{};return t?e.exports.jsx(t,Object.assign({},r,{children:e.exports.jsx(o,r)})):o(r)}export{h as default,c as documentProps};

@@ -20,19 +20,18 @@
 <h2 id="requirements"><a href="#requirements">Requirements</a></h2>
 <p>This assignment is out of 100 points</p>
 <ul>
-<li>Parsing the scene <strong>(5pts)</strong></li>
-<li>Casting ray from camera <strong>(10pts)</strong></li>
-<li>Intersection check pipeline <strong>(35pts)</strong></li>
-<li>Four shape primitives (implicit functions and normals) <strong>(20pts)</strong>:<!-- -->
+<li>Scene Parser Integration <strong>(5pts)</strong></li>
+<li>Camera <strong>(5pts)</strong></li>
+<li>Shape Implementations <strong>(20pts)</strong>:<!-- -->
 <ul>
 <li>Cube <strong>(5pts)</strong></li>
 <li>Sphere <strong>(5pts)</strong></li>
-<li>Cylinder <strong>(10pts)</strong></li>
-<li>Cone <strong>(10pts)</strong></li>
+<li>Cylinder <strong>(5pts)</strong></li>
+<li>Cone <strong>(5pts)</strong></li>
 </ul>
 </li>
-<li>Efficiency <strong>(15pts)</strong></li>
-<li>Software Engineering &amp; Stability <strong>(10pts)</strong></li>
+<li>Intersection pipeline <strong>(40pts)</strong></li>
+<li>Software Engineering, Efficiency, &amp; Stability <strong>(25pts)</strong></li>
 <li>README <strong>(5pts)</strong></li>
 </ul>
 <h3 id="parsing-the-scene"><a href="#parsing-the-scene">Parsing the scene</a></h3>
@@ -102,25 +101,44 @@ You can refer to the answer to Question 4.2 in the ray 1 ALGO for the correct ma
 <p>To roughly sum it up, you are required to implement texture mapping, different light sources, and phong lighting model with shadow and reflection in your next assignment.</p>
 <h2 id="extra-credits"><a href="#extra-credits">Extra Credits</a></h2>
 <ul>
-<li><strong>Acceleration data structure</strong>: There are various ways to build an acceleration data structure. Here are the approaches that are covered in the lecture.<!-- -->
+<li>
+<p><strong>Acceleration data structure</strong>: There are various ways to build an acceleration data structure. Here are the approaches that are covered in the lecture.</p>
 <ul>
-<li>Octree</li>
-<li>BVH</li>
-<li>KD-Tree</li>
+<li>(5pts) Octree</li>
+<li>(10pts) BVH</li>
+<li>(10pts) KD-Tree</li>
 </ul>
 </li>
-<li><strong>Parallelization</strong>: There are many ways to parallelize your code. It can be as simple as one line of code in OpenMP. It can also go up to a carefully designed task scheduler that acts like Cinebench. Evidently, the grades you receive will be based on the complexity of your implementation. If you have more questions on the rubric and design choice, come to TA hours and we are happy to help.</li>
-<li><strong>Anti-aliasing</strong>: As we are only shooting one ray through the center of each pixel, it can be expected that there will be aliasing. In your filter project, you’ve learnt some ways to fix aliasing as a post-processing approach. Try to figure out if you can integrate your filter into your ray tracer as a post-processing module for your output image.</li>
-<li><strong>Super-sampling</strong>: As mentioned above, the source of aliasing is the low number of samples. So the most direct way to resolve it is to increase the number of samples. Here are a few ways to do super-sampling.<!-- -->
+<li>
+<p><strong>Parallelization</strong>:
+There are many ways to parallelize your code. It can be as simple as one line of code in OpenMP.
+It can also go up to a carefully designed task scheduler that acts like Cinebench.
+Evidently, the grades you receive will be based on the complexity of your implementation.
+If you have more questions on the rubric and design choice, come to TA hours and we are happy to help.</p>
 <ul>
-<li>Naive super-sampling</li>
-<li>Adaptive super-sampling</li>
-<li>A quick comparison between baseline and super-sampling<!-- -->
+<li>(1pt) Level 1</li>
+<li>(2pt) Level 2</li>
+<li>(4pt) Level 3</li>
+<li>(8pt) Level 4</li>
+</ul>
+</li>
+<li>
+<p><strong>Anti-aliasing (3pts)</strong>:
+As we are only shooting one ray through the center of each pixel, it can be expected that there will be aliasing.
+In your filter project, you’ve learnt some ways to fix aliasing as a post-processing approach.
+Try to figure out if you can integrate your filter into your ray tracer as a post-processing module for your output image.</p>
+</li>
+<li>
+<p><strong>Super-sampling</strong>:
+As mentioned above, the source of aliasing is the low number of samples.
+So the most direct way to resolve it is to increase the number of samples. Here are a few ways to do super-sampling.</p>
+<ul>
+<li>(3pts) Naive super-sampling</li>
+<li>(6pts) Adaptive super-sampling</li>
+</ul>
+</li>
+</ul>
 <figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:20%"><img src="/projects/ray1/cylinder_texture.png" alt="TODO"/><img src="/projects/ray1/cylinder_texture_MSAA.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>Left: Baseline; Right: MSAA</figcaption></figure>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="readme"><a href="#readme">README</a></h2>
 <p>You must submit a README in Markdown format. This file should contain basic information about your design choices. You should also include any known bugs or any extra credits you’ve implemented.</p>
 <p>For extra credits, please describe what you&#x27;ve done and roughly point out the related code segment. If you implement any extra feature that requires you to add a parameter for the QSettings and the <code>RayTracer::Config</code>, please also document it accordingly so that the TAs won&#x27;t miss anything when grading your assignment.</p>
@@ -264,5 +282,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/1"}}</script><script type="module" src="/assets/entry-client-routing.57f4ea7f.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/1.page.96e0cf95.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.57f4ea7f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/1"}}</script><script type="module" src="/assets/entry-client-routing.eb265621.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/1.page.7f0f61ab.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.eb265621.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-fffd8fac.js"></body>
     </html>
