@@ -15,7 +15,6 @@ import{j as e}from"../../chunk-903e764a.js";const i={title:"Docs",hideTOC:!0};fu
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/preventing-memory-leaks",children:"Preventing Memory Leaks"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/code-readability-guidelines",children:"Code Readability Guidelines"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/advanced-cpp-tutorial",children:"Advanced C++ Tutorial"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Other Resources",`
