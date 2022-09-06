@@ -39,7 +39,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.d745d91c.js",
+    "file": "assets/pages/index.page.ac43e1f9.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -57,7 +57,7 @@
     ]
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.590dfa6e.js",
+    "file": "assets/renderer/_default.page.client.16997ad8.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -109,7 +109,7 @@
     ]
   },
   "pages/docs/dockerment.page.mdx": {
-    "file": "assets/pages/docs/dockerment.page.a96e64da.js",
+    "file": "assets/pages/docs/dockerment.page.1412dc70.js",
     "src": "pages/docs/dockerment.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -150,7 +150,7 @@
     ]
   },
   "pages/docs/scenefile-documentation.page.mdx": {
-    "file": "assets/pages/docs/scenefile-documentation.page.adc33deb.js",
+    "file": "assets/pages/docs/scenefile-documentation.page.0d756182.js",
     "src": "pages/docs/scenefile-documentation.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -169,8 +169,17 @@
       "_chunk-b2e2a089.js"
     ]
   },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.9ec9482e.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
+    ]
+  },
   "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.bb21e49e.js",
+    "file": "assets/pages/labs/index.page.9dbd164a.js",
     "src": "pages/labs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,7 +188,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.b15e32b3.js",
+    "file": "assets/pages/labs/lab1.page.76b660b0.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -188,30 +197,8 @@
       "_chunk-b2e2a089.js"
     ]
   },
-  "pages/labs/lab10.page.mdx": {
-    "file": "assets/pages/labs/lab10.page.0fa23670.js",
-    "src": "pages/labs/lab10.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab11.page.mdx": {
-    "file": "assets/pages/labs/lab11.page.9119974f.js",
-    "src": "pages/labs/lab11.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.619ef928.js",
+    "file": "assets/pages/labs/lab2.page.ea56e11f.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -221,95 +208,9 @@
       "_chunk-b2e2a089.js"
     ]
   },
-  "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.fe2956ad.js",
-    "src": "pages/labs/lab3.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.09fac7cb.js",
-    "src": "pages/labs/lab4.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.25a99557.js",
-    "src": "pages/labs/lab5.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.a6c69d79.js",
-    "src": "pages/labs/lab6.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab7.page.mdx": {
-    "file": "assets/pages/labs/lab7.page.a185bf1d.js",
-    "src": "pages/labs/lab7.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab8.page.mdx": {
-    "file": "assets/pages/labs/lab8.page.28efa0f2.js",
-    "src": "pages/labs/lab8.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab9.page.mdx": {
-    "file": "assets/pages/labs/lab9.page.a82695c9.js",
-    "src": "pages/labs/lab9.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.c1144e99.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.7a70dca9.js",
-    "src": "pages/projects/final/index.page.mdx",
+  "pages/projects/2D/1-algo.page.mdx": {
+    "file": "assets/pages/projects/2D/1-algo.page.30488ca8.js",
+    "src": "pages/projects/2D/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -317,29 +218,9 @@
       "_chunk-b2e2a089.js"
     ]
   },
-  "pages/projects/raster/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo-ans.page.45e0cc0d.js",
-    "src": "pages/projects/raster/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/raster/1-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo.page.ef586dcc.js",
-    "src": "pages/projects/raster/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/raster/1.page.mdx": {
-    "file": "assets/pages/projects/raster/1.page.d5626eec.js",
-    "src": "pages/projects/raster/1.page.mdx",
+  "pages/projects/2D/1.page.mdx": {
+    "file": "assets/pages/projects/2D/1.page.74fa0b97.js",
+    "src": "pages/projects/2D/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -348,9 +229,9 @@
       "_chunk-30f40460.js"
     ]
   },
-  "pages/projects/raster/2-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo.page.a732ee2b.js",
-    "src": "pages/projects/raster/2-algo.page.mdx",
+  "pages/projects/2D/2-algo.page.mdx": {
+    "file": "assets/pages/projects/2D/2-algo.page.8115abf7.js",
+    "src": "pages/projects/2D/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -359,9 +240,9 @@
       "_chunk-30f40460.js"
     ]
   },
-  "pages/projects/raster/2.page.mdx": {
-    "file": "assets/pages/projects/raster/2.page.03501250.js",
-    "src": "pages/projects/raster/2.page.mdx",
+  "pages/projects/2D/2.page.mdx": {
+    "file": "assets/pages/projects/2D/2.page.888351d7.js",
+    "src": "pages/projects/2D/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -371,7 +252,7 @@
     ]
   },
   "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.3e495090.js",
+    "file": "assets/pages/projects/ray/1-algo.page.433b2fed.js",
     "src": "pages/projects/ray/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -381,19 +262,8 @@
       "_chunk-30f40460.js"
     ]
   },
-  "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.0d768cc3.js",
-    "src": "pages/projects/ray/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js",
-      "_chunk-30f40460.js"
-    ]
-  },
   "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.ec73b414.js",
+    "file": "assets/pages/projects/ray/2-algo.page.57ebb067.js",
     "src": "pages/projects/ray/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -403,66 +273,12 @@
       "_chunk-b2e2a089.js"
     ]
   },
-  "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.0bdbeb69.js",
-    "src": "pages/projects/ray/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.da0c3fe3.js",
-    "src": "pages/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.e9f3b60f.js",
-    "src": "pages/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo.page.454260b3.js",
-    "src": "pages/projects/realtime/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/projects/realtime/2.page.39fd4567.js",
-    "src": "pages/projects/realtime/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js",
-      "_chunk-30f40460.js"
-    ]
-  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.fd126598.js",
+    "file": "assets/entry-client-routing.333a0441.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-683e1824.js"
+      "_chunk-397767ec.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -482,42 +298,25 @@
       "pages/index.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
-      "pages/labs/lab10.page.mdx",
-      "pages/labs/lab11.page.mdx",
       "pages/labs/lab2.page.mdx",
-      "pages/labs/lab3.page.mdx",
-      "pages/labs/lab4.page.mdx",
-      "pages/labs/lab5.page.mdx",
-      "pages/labs/lab6.page.mdx",
-      "pages/labs/lab7.page.mdx",
-      "pages/labs/lab8.page.mdx",
-      "pages/labs/lab9.page.mdx",
       "pages/lectures.page.mdx",
-      "pages/projects/final/index.page.mdx",
+      "pages/projects/2D/1-algo.page.mdx",
+      "pages/projects/2D/1.page.mdx",
+      "pages/projects/2D/2-algo.page.mdx",
+      "pages/projects/2D/2.page.mdx",
       "pages/projects/index.page.mdx",
-      "pages/projects/raster/1-algo-ans.page.mdx",
-      "pages/projects/raster/1-algo.page.mdx",
-      "pages/projects/raster/1.page.mdx",
-      "pages/projects/raster/2-algo.page.mdx",
-      "pages/projects/raster/2.page.mdx",
       "pages/projects/ray/1-algo.page.mdx",
-      "pages/projects/ray/1.page.mdx",
       "pages/projects/ray/2-algo.page.mdx",
-      "pages/projects/ray/2.page.mdx",
-      "pages/projects/realtime/1-algo.page.mdx",
-      "pages/projects/realtime/1.page.mdx",
-      "pages/projects/realtime/2-algo.page.mdx",
-      "pages/projects/realtime/2.page.mdx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.5f856409.js",
+    "file": "assets/entry-server-routing.c73a623e.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-683e1824.js"
+      "_chunk-397767ec.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -537,32 +336,15 @@
       "pages/index.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
-      "pages/labs/lab10.page.mdx",
-      "pages/labs/lab11.page.mdx",
       "pages/labs/lab2.page.mdx",
-      "pages/labs/lab3.page.mdx",
-      "pages/labs/lab4.page.mdx",
-      "pages/labs/lab5.page.mdx",
-      "pages/labs/lab6.page.mdx",
-      "pages/labs/lab7.page.mdx",
-      "pages/labs/lab8.page.mdx",
-      "pages/labs/lab9.page.mdx",
       "pages/lectures.page.mdx",
-      "pages/projects/final/index.page.mdx",
+      "pages/projects/2D/1-algo.page.mdx",
+      "pages/projects/2D/1.page.mdx",
+      "pages/projects/2D/2-algo.page.mdx",
+      "pages/projects/2D/2.page.mdx",
       "pages/projects/index.page.mdx",
-      "pages/projects/raster/1-algo-ans.page.mdx",
-      "pages/projects/raster/1-algo.page.mdx",
-      "pages/projects/raster/1.page.mdx",
-      "pages/projects/raster/2-algo.page.mdx",
-      "pages/projects/raster/2.page.mdx",
       "pages/projects/ray/1-algo.page.mdx",
-      "pages/projects/ray/1.page.mdx",
       "pages/projects/ray/2-algo.page.mdx",
-      "pages/projects/ray/2.page.mdx",
-      "pages/projects/realtime/1-algo.page.mdx",
-      "pages/projects/realtime/1.page.mdx",
-      "pages/projects/realtime/2-algo.page.mdx",
-      "pages/projects/realtime/2.page.mdx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
@@ -582,8 +364,8 @@
       "_chunk-903e764a.js"
     ]
   },
-  "_chunk-683e1824.js": {
-    "file": "assets/chunk-683e1824.js"
+  "_chunk-397767ec.js": {
+    "file": "assets/chunk-397767ec.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
