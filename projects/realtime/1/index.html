@@ -1,138 +1,156 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
         <meta charset="UTF-8">
         <title>Project 5 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
-        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#project-5-lights-camera-">Project 5: Lights, Camera, ...</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#deliverables">Deliverables</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#the-stencil">The Stencil</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#trimeshes-part-2">Trimeshes Part 2</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#detailed-specification">Detailed Specification</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#sceneparser">SceneParser</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#camera-design">Camera design</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#realtime-pipeline">Realtime Pipeline</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shader-program-functionality">Shader Program functionality</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#rubric">Rubric</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#extra-credit">Extra Credit</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#faq">FAQ</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#reference-images">Reference Images</a></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#project-5-lights-camera">Project 5: Lights, Camera</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#requirements">Requirements</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#parsing-the-scene">Parsing the scene</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shape-tessellation">Shape tessellation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#camera">Camera</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#realtime-pipeline">Realtime Pipeline</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#lights">Lights</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#results">Results</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#stencil-code">Stencil Code</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#readme">README</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#grading">Grading</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#extra-credit">Extra Credit</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#faq--hints">FAQ &amp; Hints</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#reference-images">Reference Images</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#submission">Submission</a></li></ol></li></ol></nav><main>
 <!-- -->
-<h1 id="project-5-lights-camera-"><a href="#project-5-lights-camera-">Project 5: Lights, Camera, ...</a></h1>
+<h1 id="project-5-lights-camera"><a href="#project-5-lights-camera">Project 5: Lights, Camera</a></h1>
+<p><a href="https://classroom.github.com/a/1Fjza6bx" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a></p>
 <p>You can find the algo for this project <a href="/projects/realtime/1-algo">here</a>.</p>
+<p>Example scene files to render can be found in <a href="https://github.com/BrownCSCI1230/scenefiles" target="_blank" rel="noopener noreferrer">this Github repo</a>.</p>
 <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
 <figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/glPipeline.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Realtime Pipeline</figcaption></figure>
-<p>In the Ray assignments, you implemented a ray tracer that projects a 3-dimensional scene on a 2-dimensional plane. Ray-tracing, as you probably have experienced, can be very slow.</p>
-<p>In this assignment, you will design a <strong>real-time</strong> sceneviewer. In other words, you will implement from scratch the Real-Time Graphics pipeline using components from previous labs including Parsing, Transformations, Trimeshes, VAOs, and Shaders.</p>
-<h2 id="deliverables"><a href="#deliverables">Deliverables</a></h2>
+<p>In the Ray assignments, you implemented a ray tracer that projects a 3-dimensional scene on a 2-dimensional plane. Ray tracing, as you probably have experienced, can be very slow.</p>
+<p>In this assignment, you will design a <strong>real-time</strong> scene viewer using components from previous labs including Parsing, Transformations, Trimeshes, VAOs, and Shaders.</p>
+<h2 id="requirements"><a href="#requirements">Requirements</a></h2>
+<h3 id="parsing-the-scene"><a href="#parsing-the-scene">Parsing the scene</a></h3>
+<p>Similarly to ray, you will use the same scene parser from the Parsing lab to read in scene
+files. You are expected to call your scene parser to get your metadata and set up the scene
+as you see fit when <code>GLRenderer::sceneChange()</code> is called. You can access the currently stored
+scene file by calling <code>settings.sceneFilePath</code>.</p>
+<p>(Move above to 3.1)
+Refer to section 3.1 on how to work with the parser and scene changes in the codebase.</p>
+<h3 id="shape-tessellation"><a href="#shape-tessellation">Shape tessellation</a></h3>
+<p>In lab 8, you should have implemented tessellation for two shapes: <strong>cube</strong> and <strong>sphere</strong>. In this
+project, you are expected to also include tessellation for <strong>cone</strong> and <strong>cylinder</strong>. The descrptions
+of these shapes remain the same as in ray:</p>
 <ul>
-<li>Tesselation for the following shapes<!-- -->
+<li><strong>Cube</strong>: A unit cube (i.e. sides of length 1) centered at the origin</li>
+<li><strong>Sphere</strong>: A sphere centered at the origin with radius 0.5.</li>
+<li><strong>Cone</strong>: A cone centered at the origin with height 1 whose bottom cap has radius 0.5.</li>
+<li><strong>Cylinder</strong>: A cylinder centered at the origin with height 1 whose top and bottom caps
+have radius 0.5.</li>
+</ul>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/CylinderExample.png" alt="TODO"/><img src="/projects/realtime1/ConeExample.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Tessellated cylinder and cone</figcaption></figure>
+<p>The tessellation parameters should control the vertical and radial tessellations just as they do for the sphere. As a reminder, parameter 1 controls tessellation along the longitude direction while parameter 2 controls tessellation along the latitude direction.</p>
+<p>Be especially careful when calculating normals for the tip of the cone: make sure that they are aligned with the surface of the cone and not pointing straight up.</p>
+<p>We recommend working on these shapes in your lab 8 code prior to porting them into your Lights, Camera project.
+This will allow you to use the visualizer to debug position and normals.</p>
+<p>While the specifics of your tessellation code are up to you, you are expected to design your program in an extensible, object-oriented way. This means minimal code duplication and no 1000 line branch structures (such as if... else... statements). You will lose points if you do not follow these guidelines.</p>
+<h3 id="camera"><a href="#camera">Camera</a></h3>
+<p>Your camera for Ray only needed to produce a view matrix. For Realtime, you must produce <strong>both</strong> a view and projection matrix given the scene file&#x27;s camera parameters. The projection matrix is needed to convert from camera space to clip space for OpenGL to render the scene correctly.</p>
+<p>To implement your view matrix, you <strong>are not</strong> allowed to use <code>glm::lookAt</code>.</p>
+<p>To implement your projection matrix, you <strong>are</strong> allowed to use <code>glm::perspective</code>.</p>
+<p>You will need to design your camera in an extensible manner as you will be expanding on its funcitonality in the next project.</p>
+<h3 id="realtime-pipeline"><a href="#realtime-pipeline">Realtime Pipeline</a></h3>
+<p>Welcome to the meat and potatoes of this project! You will use everything you have learned from lecture and labs to manipulate the OpenGL pipeline to render scene data.
+You will take your parsed scene metadata and use it to construct all necessary VAO/VBO objects and all shader uniform data. Then you will use these in the main render loop of <code>paintGL</code> to finally render the scene.</p>
+<p>To enforce good program design and to make you think about the design behind the
+functionality of OpenGL, we will only allow you to directly call a small amount of
+gl* functions within <code>initializeGl()</code>, <code>paintGl()</code> and <code>resizeGl()</code>. In particular, the
+only allowed OpenGL functions within <code>GLRenderer</code> are: <code>glClear</code>, <code>glClearColor</code>, <code>glEnable</code>, and <code>glDisable</code>.
+The rest must be contained within abstract and extensibly-designed classes.</p>
+<h3 id="lights"><a href="#lights">Lights</a></h3>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/RGB_channel_integration_test.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Color render example (scene: RBG_channel_integration_test.xml)</figcaption></figure>
+<p>For this project, your shader should have the following features:</p>
 <ul>
-<li>From Trimeshes Lab<!-- -->
+<li>Support for directional lights</li>
+<li>Ambient, diffuse, and specular intensity computation</li>
+<li>Final color computation integrating both object and light color</li>
+<li>Support for up to 8 simultaneous lights</li>
+</ul>
+<p>Of course, your shader must also perform all the necessary coordinate space conversions
+(think MVP matricees) as well as the illumination model computation.</p>
+<p>As such, it is important to have completed Lab 10 before attempting this part
+of the project. Refer to section 7 for more details.</p>
+<h3 id="results"><a href="#results">Results</a></h3>
+<p>Here are some sample images of what your realtime renderer should be capable of by the end of this
+assignment.</p>
+<h2 id="stencil-code"><a href="#stencil-code">Stencil Code</a></h2>
+<p>You may notice the stencil code provided is minimal--that is by design. To complete this assignment, you will need to have a good understanding of the OpenGL pipeline.</p>
+<p>We have provided for you the following files which you will interact with:</p>
 <ul>
-<li>Sphere</li>
-<li>Cube</li>
+<li><code>GLRenderer</code> : A file containing the initialization of an OpenGL context as well as functions
+that are automatically called on certain events. These include: initializeGL, paintGL, and resizeGL.</li>
+<li><code>Settings</code> : Initialized with the same <code>.ini</code> file as the Ray projects</li>
+</ul>
+<p>And you have already written the following:</p>
+<ul>
+<li>A scene parser (Lab 05)</li>
+<li>A basic camera class (Ray projects)</li>
+<li>Cube and sphere classes (Lab 08)</li>
+</ul>
+<h2 id="readme"><a href="#readme">README</a></h2>
+<p>Your repo should include a README in Markdown format with the filename <code>README.md</code>. This file should contain basic information about your design choices. You should also include any known bugs and any extra credit you’ve implemented.</p>
+<p>For extra credit, please describe what you&#x27;ve done and point out the related part of your code.
+If you implement any extra features that requires you to add a parameter for <code>QSettings.ini</code>
+and <code>Settings</code>, please also document it accordingly so that te TAs won&#x27;t miss anything when
+grading your assignment.</p>
+<h2 id="grading"><a href="#grading">Grading</a></h2>
+<p>This project is out of 100 points:</p>
+<ul>
+<li>Scene Parser Integration <strong>(5 points)</strong></li>
+<li>Camera <strong>(5 points)</strong>
+<ul>
+<li>View Matrix <strong>(1 point)</strong></li>
+<li>Projection Matrix <strong>(4 points)</strong></li>
 </ul>
 </li>
-<li>Implement for this project<!-- -->
+<li>Shape Implementations <strong>(30 points)</strong>
 <ul>
-<li>Cone</li>
-<li>Cylinder</li>
+<li>Cube <strong>(3 points)</strong></li>
+<li>Sphere <strong>(3 points)</strong></li>
+<li>Cone <strong>(10 points)</strong></li>
+<li>Cylinder <strong>(10 points)</strong></li>
+<li>Proper Tessellation <strong>(4 points)</strong></li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Port your SceneParser from lab 5</li>
-<li>Camera<!-- -->
-<ul>
-<li>Extend implementation with perspective projection</li>
-</ul>
-</li>
-<li>Setup RealTime pipeline to render scene from parsed metadata<!-- -->
-<ul>
-<li>create and load basic shader</li>
-<li>load shape data into VAO/VBO&#x27;s</li>
-<li>pass in shader uniforms</li>
-</ul>
-</li>
-</ul>
-<h2 id="the-stencil"><a href="#the-stencil">The Stencil</a></h2>
-<p>You may notice the stencil code provided is minimal, that is by design. To complete this assignment you will need to have a good understanding of the OpenGL pipeline.</p>
-<p>We have provided for you the following. - <code>GlRenderer</code> : An OpenGL context to draw - <code>Settings</code> : Initialized with the same main.ini as Ray</p>
-<p>And you have already written the following. - A scene parser (Lab 5) - A basic camera class (Ray Project)</p>
-<h2 id="trimeshes-part-2"><a href="#trimeshes-part-2">Trimeshes Part 2</a></h2>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/CylinderExample.png" alt="TODO"/><img src="/projects/realtime1/ConeExample.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Cone and Cylinders should be dimensioned with unit lengths</figcaption></figure>
-<p>In order to render more complex scenes, you are going to need to implement a tesselator for two new shapes: a Cone and a Cylinder.</p>
-<p>We recommend you implement these shapes in the trimeshes lab code and then copy over the relevant generation code. This will allow you to use the visualizer to debug position and normals.</p>
-<p>While the specifics of your tessellation code are up to you, you are expected to design your program in an extensible, object-oriented way. This means minimal code duplication and no 1000 line branch structures. You will lose points if you do not follow these guidelines.</p>
-<h3 id="detailed-specification"><a href="#detailed-specification">Detailed Specification</a></h3>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/coneCylinedDiagram.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Cone and Cylinders should be dimensioned with unit lengths</figcaption></figure>
-<p>The cone and cylinder should have the following properties...</p>
-<ul>
-<li>height 1</li>
-<li>base diameter 1</li>
-<li>axis aligned vertically along (0,1,0)</li>
-<li>the object space origin is centered halfway (0.5) along the central vertical axis.</li>
-</ul>
-<p>The tesselation parameters should control the vertical and radial tesselations like they did for the sphere.</p>
-<p>Be especially careful when calculating normals for the tip of the cone, make sure that they are aligned with the surface of the cone and not pointing straight up.</p>
-<h2 id="sceneparser"><a href="#sceneparser">SceneParser</a></h2>
-<p>As we are using the same scenefile format from Ray for Realtime, you will need to port over your scene parser to convert the raw scene data into renderable objects.</p>
-<p>Of course the final functionality of the scene parser will depend on how you design your classes and abstractions.</p>
-<h2 id="camera-design"><a href="#camera-design">Camera design</a></h2>
-<p>Your camera for Ray only needed to produce a view matrix. For Realtime, you must produce <strong>both</strong> a view and projection matrix given the scene file&#x27;s camera parameters. The Projection matrix is needed to convert from camera space to clip space for OpenGL to render the scene correctly.</p>
-<p>To implement your view matrix, you <strong>are not</strong> allowed to use glm::lookAt.</p>
-<p>To implement your projection matrix, you <strong>are</strong> allowed to use glm::perspective</p>
-<p>You will need to design your camera in an extensible manner as we will be expanding on this funcitonality in Realtime 2.</p>
-<h2 id="realtime-pipeline"><a href="#realtime-pipeline">Realtime Pipeline</a></h2>
-<p>Welcome to the Meat and Potatoes of the project. You will use everything you have learned from lecture and the labs and manipulate the OpenGL pipeline to render the scene data.</p>
-<p>You will take your parsed scene metadata, use it to construct all necessary VAO/VBO objects and all shader uniform data. Then you will use these in the main render loop of paintGL to finally render the scene.</p>
-<p>To enforce good program design and to make you think about the design behind the functionality of OpenGL, we will only allow you to directly call a small amount of gl* functions within initializeGl(), paintGl() and resizeGl() the rest must be contained within abstract and extensibly designed classes.</p>
-<p>You are allowed to directly call...</p>
-<ul>
-<li>glClearColor</li>
-<li>glEnable</li>
-<li>glClear</li>
-<li>glDisable</li>
-</ul>
-<p>All other OpenGL functions may not be called directly.</p>
-<h3 id="shader-program-functionality"><a href="#shader-program-functionality">Shader Program functionality</a></h3>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/RGB_channel_integration_test.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Color Render Example (scene RBG_channel_integration_test.xml)</figcaption></figure>
-<p>As you have implemented a basic phong model in the shader lab, we will ask you to extend that shader with support for object and light colors.</p>
-<p>Thus your shader should, fow now, have the following features...</p>
-<ul>
-<li>directional light support only</li>
-<li>ambient, diffuse, and specular intensity computation</li>
-<li>final color computation integrating both object and light color</li>
-</ul>
-<p>Of course your shader must also perform all the necessary coordinate space conversions (think MVP matricies) as well as the illumination model computation.</p>
-<h2 id="rubric"><a href="#rubric">Rubric</a></h2>
-<p>The deliverables are worth the following...</p>
-<ul>
-<li>5 pts: follow restrictions on OpenGL function calls</li>
-<li>5 pts: does not use glm::lookAt</li>
-<li>TODO etc.</li>
+<li>Realtime Pipeline <strong>(35 points)</strong></li>
+<li>Object Color <strong>(5 points)</strong></li>
+<li>Directional Lights <strong>(10 points)</strong></li>
+<li>Multiple Lights (Up to 8 lights) <strong>(10 points)</strong></li>
+<li>Colored Lights <strong>(5 points)</strong></li>
+<li>Object Positioning <strong>(5 points)</strong></li>
+<li>Software Design <strong>(25 points)</strong></li>
+<li>README <strong>(5 points)</strong></li>
 </ul>
 <h2 id="extra-credit"><a href="#extra-credit">Extra Credit</a></h2>
 <p>Remember that half-credit requirements count as extra credit if you are not enrolled in the half-credit course.</p>
 <ul>
 <li>
-<p>Adaptive level of detail
-Going a step further, you can implement varying degrees of tessellation depending on how many objects in the scene there are. In other words, for scenes with many objects in them, each object should be rendered with fewer triangles than if the scene contained a small number of objects. Look up level of detail for more information. Note: many of the examples you will find discuss distance-based or view-dependent level of detail, which you are not required to do!</p>
+<p><strong>Adaptive level of detail:</strong>
+Vary the degree of tessellation for your shapes based on:</p>
+<ul>
+<li>The number of objects in the scene <strong>(2 points)</strong>: Scenes with more objects have fewer triangles, to keep the scene from getting too complex.</li>
+<li>Distance from the object to the camera <strong>(6 points)</strong>: Objects farther from the camera should have fewer triangles than objects closer to the camera.</li>
+</ul>
 </li>
 <li>
-<p>Create your own scene file
-Create your own scene by writing your own scene file. Refer to the provided scenefiles for formatting. Your scene should be interesting enough to be considered as extra credit (in other words, placing two cubes on top of each other is not interesting enough, but building a snowman with a face would be interesting!).</p>
+<p><strong>Create your own scene file (2 points):</strong>
+Create your own scene by writing your own scene file. Refer to the provided scene files and to the <a href="/docs/scenefile-documentation">scene file documentation</a> for examples/information on how these files are structured. Your scene should be interesting enough to be considered as extra credit (in other words, placing two cubes on top of each other is not interesting enough, but building a snowman with a face would be interesting). If you already received extra credit for a custom scene file in the Intersect project, you cannot receive extra credit for the same scene again.</p>
 </li>
 <li>
-<p>Mesh Loader
-Write your own script to load in .obj and load it into your scene. We would need to provide some scenes that make use of this feature if we are going to include it as extra credit.</p>
+<p><strong>Mesh rendering (5 points):</strong>
+Implement a function to load an .OBJ triangle mesh file and render it with OpenGL (i.e. translate the .OBJ data into VBO/VAO data).
+To receive credit for this feature, you should include at least one scene file that makes use of a mesh.</p>
 </li>
 <li>
-<p>Torus
-Add in tesselation support for a torus.</p>
-</li>
-<li>
-<p>more? there are a lot for realtime 2 so perhaps not</p>
+<p><strong>Torus (5 points):</strong>
+Add in tessellation support for a torus shape.</p>
 </li>
 </ul>
-<h2 id="faq"><a href="#faq">FAQ</a></h2>
+<div class="task-no-number-callout callout"><p>CS 1234/2230 students must earn at least <strong>6 points</strong> of extra credit.</p></div>
+<h2 id="faq--hints"><a href="#faq--hints">FAQ &amp; Hints</a></h2>
 <ul>
-<li>Theres nothing showing up for scene XXX.xml but I know it works on others
-Some Scenes only have point lights in the scene, make sure the scene has directional lights</li>
+<li><strong>Theres nothing showing up for scene <code>XXX.xml</code>, but I know it works on others:</strong>
+Some scenes only have point lights in the scene; make sure the scene has directional lights</li>
 </ul>
 <h2 id="reference-images"><a href="#reference-images">Reference Images</a></h2>
 <figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/realtime1/phongShaderTest.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>phongShaderTest</figcaption></figure>
@@ -142,7 +160,10 @@ Some Scenes only have point lights in the scene, make sure the scene has directi
 <p>transform correctness test file.</p>
 <p>texture mapping per shape test file</p>
 <p>high load adaptive level of detail scene</p>
+<h2 id="submission"><a href="#submission">Submission</a></h2>
+<p>Submit your Github repo for this project to the &quot;Project 5: Lights, Camera&quot; assignment on Gradescope.
+Instructions on using Github and Gradescope are available <a href="/docs/github-gradescope-guide">here</a>.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/realtime/1"}}</script><script type="module" src="/assets/entry-client-routing.538295f4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/realtime/1.page.d18f80c6.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.538295f4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5a4b3448.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/realtime/1"}}</script><script type="module" src="/assets/entry-client-routing.a3d15469.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/realtime/1.page.e9f3b60f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.590dfa6e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a3d15469.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-91851764.js"></body>
     </html>

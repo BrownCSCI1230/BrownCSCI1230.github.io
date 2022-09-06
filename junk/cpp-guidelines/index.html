@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
+        <meta charset="UTF-8">
+        <title>C++ Guidelines | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#c-guidelines-for-stencil-code">C++ Guidelines For Stencil Code</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#syntax--semantics">Syntax &amp; Semantics</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#use-pointers-instead-of-c-arrays">Use Pointers Instead of C Arrays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#prefer-brace-initialization-over-parenthesis-initialization">Prefer Brace Initialization Over Parenthesis Initialization</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#avoid-using-constructors-where-possible">Avoid Using Constructors Where Possible</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#prefer-range-for-for-looping-over-containers">Prefer Range-For For Looping Over Containers</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#use-auto">Use auto</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#use-type-aliases">Use Type Aliases</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#naming--documentation">Naming &amp; Documentation</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#consider-your-target-audience">Consider Your Target Audience</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#generally-use-names-that-describe-purpose-not-implementation">Generally, Use Names That Describe Purpose, Not Implementation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#be-wary-of-abbreviation">Be Wary Of Abbreviation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#err-on-the-side-of-verbosity">Err On The Side Of Verbosity</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#comment-your-functions">Comment Your Functions</a></li></ol></li></ol></li></ol></nav><main>
+<!-- -->
+<h1 id="c-guidelines-for-stencil-code"><a href="#c-guidelines-for-stencil-code">C++ Guidelines For Stencil Code</a></h1>
+<h2 id="syntax--semantics"><a href="#syntax--semantics">Syntax &amp; Semantics</a></h2>
+<h3 id="use-pointers-instead-of-c-arrays"><a href="#use-pointers-instead-of-c-arrays">Use Pointers Instead of C Arrays</a></h3>
+<p>Always use pointers instead of C arrays. This is especially relevant when dealing with <code>QImage</code>&#x27;s data.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">std::<span class="pl-c1">uint8_t</span>[] arr <span class="pl-c">// bad</span>
+</span><span class="code-line">std::<span class="pl-c1">uint8_t</span>*  ptr <span class="pl-c">// good</span>
+</span></code></pre>
+<p>To access elements:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">*(ptr + <span class="pl-c1">1</span>) <span class="pl-c">// good</span>
+</span><span class="code-line">ptr[<span class="pl-c1">1</span>]     <span class="pl-c">// good</span>
+</span></code></pre>
+<h3 id="prefer-brace-initialization-over-parenthesis-initialization"><a href="#prefer-brace-initialization-over-parenthesis-initialization">Prefer Brace Initialization Over Parenthesis Initialization</a></h3>
+<p>In general, most of your variable declarations should look like this:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> x1 = Type{}; <span class="pl-c">// good</span>
+</span><span class="code-line">Type x2 = Type{}; <span class="pl-c">// good</span>
+</span></code></pre>
+<p>We advise against the following:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> y = Type(); <span class="pl-c">// bad</span>
+</span><span class="code-line">Type z{}; <span class="pl-c">// ugly, but okay</span>
+</span><span class="code-line">Type <span class="pl-en">w</span>(); <span class="pl-c">// very bad: this does not create a variable w.</span>
+</span><span class="code-line">          <span class="pl-c">// it declares a function w() which returns an instance of Type.</span>
+</span><span class="code-line">          <span class="pl-c">// this is known as the &quot;most vexing parse&quot; in C/C++</span>
+</span></code></pre>
+<h3 id="avoid-using-constructors-where-possible"><a href="#avoid-using-constructors-where-possible">Avoid Using Constructors Where Possible</a></h3>
+<p>If your class/struct has a construction/initialization process which requires functionality beyond just <code>x = y, z = w, ...</code>, use an explicit initialization member function instead.</p>
+<p>This has to do with certain hard-to-debug bugs that might appear when both (1) using value semantics (passing things around by value) and (2) defining some, but not all, of a class/struct&#x27;s special member functions (constructor, destructor, etc).</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// good</span>
+</span><span class="code-line"><span class="pl-k">auto</span> x = ComplicatedThing{param1, param2, param3};
+</span><span class="code-line">x.initializeSubThing(); <span class="pl-c">// &lt;-- some complex operation must be done, before it can be used</span>
+</span></code></pre>
+<h3 id="prefer-range-for-for-looping-over-containers"><a href="#prefer-range-for-for-looping-over-containers">Prefer Range-For For Looping Over Containers</a></h3>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// good</span>
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; x : container)
+</span><span class="code-line">  <span class="pl-c">// something involving x</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// bad, unless you need i elsewhere in the loop</span>
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> i = <span class="pl-c1">0</span>; i &lt; container.size(); ++i)
+</span><span class="code-line">  <span class="pl-c">// something involving container[i]</span>
+</span></code></pre>
+<h3 id="use-auto"><a href="#use-auto">Use <code>auto</code></a></h3>
+<p>Feel free to use type deduction, e.g. <code>auto myVariable = myValue</code>, within function bodies.</p>
+<p>Avoid using them in function signatures where an explicit type could be used instead.</p>
+<h3 id="use-type-aliases"><a href="#use-type-aliases">Use Type Aliases</a></h3>
+<p>In the event that writing a long, explicit type annotation (as opposed to <code>auto</code>) is unavoidable, feel free to use a type alias instead:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// bad: not very readable</span>
+</span><span class="code-line">std::vector&lt;std::array&lt;SuperLongTypeName, <span class="pl-c1">123</span>&gt;&gt; variable
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// good</span>
+</span><span class="code-line"><span class="pl-k">using</span> InnerType = std::array&lt;SuperLongTypeName, <span class="pl-c1">123</span>&gt;;
+</span><span class="code-line"><span class="pl-k">using</span> ContainerType = std::vector&lt;InnerType&gt;;
+</span><span class="code-line"><span class="pl-k">auto</span> variable = ContainerType{};
+</span></code></pre>
+<h2 id="naming--documentation"><a href="#naming--documentation">Naming &amp; Documentation</a></h2>
+<h3 id="consider-your-target-audience"><a href="#consider-your-target-audience">Consider Your Target Audience</a></h3>
+<p>Use names that would be clear to students at the <strong>expected level of knowledge</strong> <em>at or before</em> the start of the assignment.</p>
+<p>E.g. if you are writing a lab that comes much earlier than the OpenGL parts of the course, avoid introducing the term &quot;shader&quot; in a function/variable name, as students may not appreciate its significance. Worse, they may develop an incorrect understanding of it, which they&#x27;ll have to unlearn later.</p>
+<h3 id="generally-use-names-that-describe-purpose-not-implementation"><a href="#generally-use-names-that-describe-purpose-not-implementation">Generally, Use Names That Describe Purpose, Not Implementation</a></h3>
+<p>Use names that describe the <strong>purpose or intent</strong> of the object.</p>
+<p>Do not use names that describe its underlying implementation, unless:</p>
+<ol>
+<li>The underlying implementation is the thing that students are meant to learn / interact with, OR</li>
+<li>There are multiple implementations of the same thing, and the names help to juxtapose them.<!-- -->
+<ul>
+<li>e.g. <code>dfs()</code> and <code>bfs()</code>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="be-wary-of-abbreviation"><a href="#be-wary-of-abbreviation">Be Wary Of Abbreviation</a></h3>
+<p>Avoid creating <strong>uncommon abbreviations</strong> by deleting letters within a word.</p>
+<p>That said, there are plenty of acceptable abbreviations, so use your own judgement (and refer to the next subsection on <a href="#err-on-the-side-of-verbosity">verbosity vs visibility</a>):</p>
+<pre><code class="language-text code-highlight"><span class="code-line">obj: object
+</span><span class="code-line">col: column
+</span><span class="code-line">mat: matrix
+</span><span class="code-line">vec: vector
+</span><span class="code-line">vert: vertex
+</span><span class="code-line">dist: distance
+</span></code></pre>
+<p>Additionally, all acronyms must have the same case.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-en">printVAO</span>(); <span class="pl-c">// good</span>
+</span><span class="code-line"><span class="pl-en">printVao</span>(); <span class="pl-c">// bad</span>
+</span></code></pre>
+<h3 id="err-on-the-side-of-verbosity"><a href="#err-on-the-side-of-verbosity">Err On The Side Of Verbosity</a></h3>
+<p>Do not worry about saving horizontal space, as it is far more important to make your code immediately understandable by a student.</p>
+<p>Generally speaking, <strong>descriptiveness should be proportional to the name&#x27;s scope of visibility</strong>: e.g. <code>n</code> may be a fine name within a 5-line function, but within the scope of a class, it&#x27;s likely too vague.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// good</span>
+</span><span class="code-line">std::tuple&lt;<span class="pl-k">int</span>, <span class="pl-k">int</span>&gt; <span class="pl-en">countLeafAndNonleafNodes</span>(MyTreeType&amp; ast);
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// bad: no one will understand why there are two return values</span>
+</span><span class="code-line">std::tuple&lt;<span class="pl-k">int</span>, <span class="pl-k">int</span>&gt; <span class="pl-en">countNodes</span>(MyTreeType&amp; ast);
+</span></code></pre>
+<h3 id="comment-your-functions"><a href="#comment-your-functions">Comment Your Functions</a></h3>
+<p>Some software developers in industry prefer keeping inline comments to a minimum, as they are a crutch for bad naming and factorization/abstraction.</p>
+<p>That said, we are writing code for students, not industry professionals, so <strong>comment your functions</strong>. Keep it short and simple, and follow the same guidelines as above.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// good</span>
+</span><span class="code-line"><span class="pl-c">// Returns the number of leaf and non-leaf nodes in a given MyTreeType</span>
+</span><span class="code-line">std::tuple&lt;<span class="pl-k">int</span>, <span class="pl-k">int</span>&gt; <span class="pl-en">countLeafAndNonleafNodes</span>(MyTreeType&amp; ast);
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-c">// bad: implementation detail is irrelevant, and comment is getting too long</span>
+</span><span class="code-line"><span class="pl-c">// Uses DFS to iterate through nodes of given MyTreeType ast, then returns a</span>
+</span><span class="code-line"><span class="pl-c">// tuple containing the count of leaf nodes and the count of non-leaf nodes,</span>
+</span><span class="code-line">std::tuple&lt;<span class="pl-k">int</span>, <span class="pl-k">int</span>&gt; <span class="pl-en">countLeafAndNonleafNodes</span>(MyTreeType&amp; ast);
+</span></code></pre>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/junk/cpp-guidelines"}}</script><script type="module" src="/assets/entry-client-routing.a3d15469.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/junk/cpp-guidelines.page.cb8e71de.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.590dfa6e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a3d15469.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-91851764.js"></body>
+    </html>

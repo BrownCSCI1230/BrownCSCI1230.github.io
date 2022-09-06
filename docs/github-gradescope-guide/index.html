@@ -1,10 +1,10 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
         <meta charset="UTF-8">
         <title>Github + Gradescope Guide | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
-        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       </head>
       <body>
@@ -12,71 +12,71 @@
           <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#github--gradescope-guide">Github + Gradescope Guide</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#tracking-and-pushing-changes">Tracking and Pushing changes</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#handing-in-assignments">Handing in Assignments</a></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="github--gradescope-guide"><a href="#github--gradescope-guide">Github + Gradescope Guide</a></h1>
-<p>If you have not already finished setting up everything you needed from <a href="../labs/lab1">Lab 1</a>, please do so. Otherwise, take a read through this doc which covers how to update your local changes to your Github repo and how to turn in your Github repo as an assignment through Gradescope.</p>
+<p>This doc covers how to update your local changes to your Github repo and how to turn in your Github repo as an assignment through Gradescope. Note that GitHub has updated their terminology and that the master branch has been renamed to the main branch, but its function is unchanged.</p>
 <h2 id="tracking-and-pushing-changes"><a href="#tracking-and-pushing-changes">Tracking and Pushing changes</a></h2>
-<p>Let’s say you’ve edited your source code and now want to track the changes you’ve made. For example, maybe you edited main.cpp.</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image8.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Editing main.cpp in vim</figcaption></figure>
-<p>This is vim, a terminal-based editor, so don’t worry too much if your code doesn’t look like this in Qt Creator.</p>
+<p>Let&#x27;s say you&#x27;ve edited your source code and now want to track the changes you&#x27;ve made. For example, maybe you edited main.cpp.</p>
 <ol>
-<li>
-<p>Check the status of your repository by running git status in the repository directory. You should see a bunch of files marked as not staged for commit.</p>
-</li>
-<li>
-<p>Add your changes by running <code>git add &lt;files to add&gt;</code>. You can also use a pattern instead of filenames, like  <code>git add *.cpp</code> to add all C++ source files. You can check the status of your repository again to verify that all changes you want to track have been added.</p>
-</li>
+<li>Check the status of your repository by running <code>git status</code> in the repository directory. You should see a bunch of files marked as not staged for commit. In our case, we only edited main.cpp, so that should be the only file listed here.</li>
 </ol>
-<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image11.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>The status of the repository before adding changes</figcaption></figure>
-<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image13.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>Adding the changes and checking the the repository status again</figcaption></figure>
-<p>We don&#x27;t recommend adding all changes at once, as this can result in unintended files being tracked in the repository. You should be tracking changes often enough that you should not have many files to add.</p>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image11.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>The status of the repository before adding changes</figcaption></figure>
+<ol start="2">
+<li>Add your changes by running <code>git add &lt;file to add&gt;</code>. You can also use a pattern instead of filenames, like <code>git add *.cpp</code> to add all C++ source files. You can check the status of your repository again to verify that all changes you want to track have been added.</li>
+</ol>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image13.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Adding the changes and checking the the repository status again</figcaption></figure>
+<p>You should be tracking changes often enough that you shouldn&#x27;t have many files to add. If you choose to use <code>git add -A</code> which adds all changes at once, be sure to always check which group of files will be added in order to prevent unintended files from being tracked in the repository.</p>
 <ol start="3">
-<li>Once all files have been added, you can commit your changes to the branch you are currently working on (for most people, this will be the main/master branch). Run <code>git commit -m &lt;commit message&gt;</code> with a short, informative message to add all tracked changes to the repository’s history, also known as the tree.</li>
+<li>Once all files have been added, you can commit your changes to the branch you are currently working on (for most people, this will be the main/master branch). Run <code>git commit -m &lt;commit message&gt;</code> with a short, informative message to add all tracked changes to the repository&#x27;s history, also known as the tree.</li>
 </ol>
-<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image1.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>Making a commit</figcaption></figure>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image1.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>Making a commit</figcaption></figure>
+<p>If you forget to add the <code>-m</code> flag and get stuck on a vim page after running just <code>git commit</code>, you can quit the page by running <code>:q!</code> to return to the terminal and retry committing.</p>
 <ol start="4">
-<li>
-<p>Push your changes to the origin repository (your personal GitHub Classroom repository) using <code>git push origin &lt;branch, typically master\&gt;</code>. You can omit <code>origin &lt;branch&gt;</code>, but it is good practice for students who are newer to Git to make a habit of specifying to cement the idea that git push will update the tree of the origin repository specifically.</p>
-</li>
-<li>
-<p>Commit (and push) your changes often! This will allow you to go back to working versions of your code if you accidentally change something and break your functionality. GitHub also acts as a relatively reliable external backup for your code if for some reason your computer stops working.</p>
-</li>
+<li>Push your changes to the origin repository (your personal GitHub Classroom repository) using <code>git push origin &lt;branch, typically master/main&gt;</code>. You can omit <code>origin &lt;branch&gt;</code>, but it is good practice to specify it to cement the idea that <code>git push</code> will update a specific branch of the origin repository.</li>
 </ol>
-<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image3.png" alt="TODO"/></div><figcaption><strong>Figure 5: </strong>Pushing to origin. The -v flag just makes the output verbose.</figcaption></figure>
-<p>For more information about GitHub, see our <a href="https://www.google.com/url?q=https://docs.google.com/document/d/10O6_m-b3nb1XZx9ilxzsN4iHK7D0hWjAs030H2AXSjI/edit?usp%3Dsharing&amp;sa=D&amp;source=editors&amp;ust=1657229381662616&amp;usg=AOvVaw0viE4gdDdb4vjE8TaZ1po4">GitHub Guide</a>.</p>
+<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image3.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>Pushing to origin. The -v flag just makes the output verbose and doesn&#x27;t need to be included.</figcaption></figure>
+<ol start="5">
+<li>Commit (and push) your changes often! This will allow you to go back to working versions of your code if you have accidentally changed something and broken your functionality. GitHub also acts as a relatively reliable external backup for your code if for some reason your computer stops working.</li>
+</ol>
+<p>For more information about GitHub, see our <a href="https://www.google.com/url?q=https://docs.google.com/document/d/10O6_m-b3nb1XZx9ilxzsN4iHK7D0hWjAs030H2AXSjI/edit?usp%3Dsharing&amp;sa=D&amp;source=editors&amp;ust=1657229381662616&amp;usg=AOvVaw0viE4gdDdb4vjE8TaZ1po4" target="_blank" rel="noopener noreferrer">GitHub Guide</a>.</p>
 <h2 id="handing-in-assignments"><a href="#handing-in-assignments">Handing in Assignments</a></h2>
 <ol>
-<li>Navigate to your repository on GitHub. To verify that your changes have been properly pushed, you can click through the source code folders and files on the repository page.</li>
-<li>Once you are satisfied with the state of your repository, navigate to CS1230 on Gradescope.</li>
+<li>Navigate to your repository on GitHub to verify that your changes have been properly pushed.</li>
+<li>Once you are satisfied with the state of your repository, navigate to the CS1230 course on Gradescope.</li>
 </ol>
-<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image10.png" alt="TODO"/></div><figcaption><strong>Figure 6: </strong>CS1230 on Gradescope</figcaption></figure>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_course.png" alt="TODO"/></div><figcaption><strong>Figure 5: </strong>CS1230 on Gradescope</figcaption></figure>
 <ol start="3">
-<li>Click on the assignment you’d like to hand in.</li>
+<li>Click on the assignment you&#x27;d like to hand in.</li>
 </ol>
-<figure id="figure-7" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image6.png" alt="TODO"/></div><figcaption><strong>Figure 7: </strong>An Assignment on Gradescope</figcaption></figure>
+<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_assignment.png" alt="TODO"/></div><figcaption><strong>Figure 6: </strong>An Assignment on Gradescope</figcaption></figure>
 <ol start="4">
-<li>Click <strong>Connect to GitHub</strong> on the popup submission window.</li>
+<li>Navigate to the GitHub option on the popup submission window. Connect your GitHub account if you haven&#x27;t already by clicking <strong>Connect to GitHub</strong> and following the prompts to connect.</li>
 </ol>
-<figure id="figure-8" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image5.png" alt="TODO"/></div><figcaption><strong>Figure 8: </strong>Connecting GitHub to Gradescope</figcaption></figure>
-<ol start="5">
-<li>Click <strong>Authorize Gradescope</strong> to continue after signing into GitHub.</li>
-</ol>
-<figure id="figure-9" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image9.png" alt="TODO"/></div><figcaption><strong>Figure 9: </strong>Authorizing gradescope</figcaption></figure>
+<figure id="figure-7" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_github_with_connect.png" alt="TODO"/></div><figcaption><strong>Figure 7: </strong>Connecting GitHub to Gradescope</figcaption></figure>
+<details><summary> If your account is already connected, your submission window should look like this... </summary><figure id="figure-8" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_github.png" alt="TODO"/></div><figcaption><strong>Figure 8: </strong>Connected Gradescope submission window</figcaption></figure></details>
 <ol start="6">
-<li>Select your projects repository from the cs123tas organization.</li>
+<li>Click <strong>Select a repository</strong> and select the project repository that you want to submit.</li>
 </ol>
-<figure id="figure-10" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image2.png" alt="TODO"/></div><figcaption><strong>Figure 10: </strong>Specifying which repository to submit</figcaption></figure>
+<figure id="figure-9" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_repository.png" alt="TODO"/></div><figcaption><strong>Figure 9: </strong>Specifying which repository to submit</figcaption></figure>
 <ol start="7">
-<li>Select the branch you’d like to hand in. In most cases, this will be master/main.</li>
+<li>Select the branch you&#x27;d like to hand in. In most cases, this will be <code>master</code> or <code>main</code>.</li>
 </ol>
-<figure id="figure-11" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image7.png" alt="TODO"/></div><figcaption><strong>Figure 11: </strong>Specifying which branch to submit</figcaption></figure>
+<figure id="figure-10" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_branch.png" alt="TODO"/></div><figcaption><strong>Figure 10: </strong>Specifying which branch to submit</figcaption></figure>
 <ol start="8">
-<li>Click Upload to complete your submission.</li>
+<li>Click <strong>Upload</strong> to complete your submission.</li>
 </ol>
-<figure id="figure-12" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image4.png" alt="TODO"/></div><figcaption><strong>Figure 12: </strong>Uploading a Submission</figcaption></figure>
+<figure id="figure-11" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_upload.png" alt="TODO"/></div><figcaption><strong>Figure 11: </strong>Uploading a Submission</figcaption></figure>
 <ol start="9">
-<li>You’ve successfully submitted your assignment! You should see a confirmation message and email.</li>
+<li>You have successfully submitted your assignment! You should see a confirmation message and email.</li>
 </ol>
-<figure id="figure-13" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/image12.png" alt="TODO"/></div><figcaption><strong>Figure 13: </strong>Confirmation message</figcaption></figure>
+<figure id="figure-12" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_submitted.png" alt="TODO"/></div><figcaption><strong>Figure 12: </strong>Confirmation message</figcaption></figure>
+<ol start="10">
+<li>If your project has successfully compiled, you should see something like this!</li>
+</ol>
+<figure id="figure-13" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_compiled.png" alt="TODO"/></div><figcaption><strong>Figure 13: </strong>Compilation Success Message</figcaption></figure>
+<ol start="11">
+<li>If something has gone wrong, you will see something like ths :(</li>
+</ol>
+<figure id="figure-14" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/github-gradescope-guide/gradescope_compile_failed.png" alt="TODO"/></div><figcaption><strong>Figure 14: </strong>Compilation Failure Message</figcaption></figure>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/github-gradescope-guide"}}</script><script type="module" src="/assets/entry-client-routing.538295f4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/github-gradescope-guide.page.ba4fecd2.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.538295f4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5a4b3448.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/github-gradescope-guide"}}</script><script type="module" src="/assets/entry-client-routing.a3d15469.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/github-gradescope-guide.page.44e75fb9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.590dfa6e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a3d15469.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-91851764.js"></body>
     </html>

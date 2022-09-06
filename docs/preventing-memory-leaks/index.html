@@ -1,10 +1,10 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
         <meta charset="UTF-8">
         <title>Preventing Memory Leaks | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
-        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       </head>
       <body>
@@ -14,6 +14,7 @@
 <h1 id="preventing-memory-leaks"><a href="#preventing-memory-leaks">Preventing Memory Leaks</a></h1>
 <p>Preventing and detecting memory leaks is a crucial part of coding in C++. This doc describes the Valgrind Memory Analyzer, a built-in tool in QtCreator that automatically detects memory leaks, as well as some design patterns to keep in mind in order to prevent memory leaks from ever happening.</p>
 <h2 id="valgrind-memory-analyzer"><a href="#valgrind-memory-analyzer">Valgrind Memory Analyzer</a></h2>
+<div class="warning-callout callout"><p>Note that this only works on the deparment machines.</p></div>
 <p>Valgrind is a great tool for automatically detecting memory leaks, and it is built in to QtCreator. To use it, select Analyze &gt; Valgrind Memory Analyzer.</p>
 <figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><img src="/docs/preventing-memory-leaks/image1.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Running Valgrind Memory Analyzer in Qt</figcaption></figure>
 <p>This will run your program, keeping track of the memory that is allocated and freed. After the program has finished running, you will see a message indicating any leaks that occurred. In the example below, we never deleted the ConstantBrush, so 32 bytes of memory were leaked. The message points us to the exact line where this memory was allocated.</p>
@@ -27,13 +28,13 @@
 </span><span class="code-line">        <span class="pl-k">delete</span> object;
 </span><span class="code-line">    }
 </span></code></pre>
-<p>Valgrind can be a very useful tool for detecting memory leaks, but it will not find them if you don’t explicitly cause a certain branch of code to be executed while using it. As a result, you want to make sure you design your program such that memory leaks can be prevented in the first place.</p>
+<p>Valgrind can be a very useful tool for detecting memory leaks, but it will not find them if you don&#x27;t explicitly cause a certain branch of code to be executed while using it. As a result, you want to make sure you design your program such that memory leaks can be prevented in the first place.</p>
 <h2 id="preventing-memory-leaks-1"><a href="#preventing-memory-leaks-1">Preventing Memory Leaks</a></h2>
-<p>The rule of thumb for creating objects in C++ is that every <code>new</code> should correspond to exactly one <code>delete</code>. You shouldn’t need to worry about this if you’re using smart pointers! Remember, don’t allocate dynamic memory to a raw pointer. Another source of common errors is arrays/vectors. As usual, using vectors over arrays whenever possible will solve many of your problems. You might run into the issue where you access or write to indices past the length of the
+<p>The rule of thumb for creating objects in C++ is that every <code>new</code> should correspond to exactly one <code>delete</code>. You shouldn&#x27;t need to worry about this if you&#x27;re using smart pointers! Remember, don&#x27;t allocate dynamic memory to a raw pointer. Another source of common errors is arrays/vectors. As usual, using vectors over arrays whenever possible will solve many of your problems. You might run into the issue where you access or write to indices past the length of the
 vector. If you see unexplained segfaults, check your indices!</p>
 <h2 id="gpu-memory-leaks"><a href="#gpu-memory-leaks">GPU Memory Leaks</a></h2>
-<p>Valgrind will only catch CPU memory leaks, but you can leak GPU memory as well. To avoid this, make sure that each call to a <code>glGen*()</code> function (usually in a constructor) is matched with its corresponding <code>glDelete*()</code> function (usually in the destructor). If you’re using the GL datatype classes you implemented in the labs, you probably won’t need to worry about this either.</p>
+<p>Valgrind will only catch CPU memory leaks, but you can leak GPU memory as well. To avoid this, make sure that each call to a <code>glGen*()</code> function (usually in a constructor) is matched with its corresponding <code>glDelete*()</code> function (usually in the destructor). If you&#x27;re using the GL datatype classes you implemented in the labs, you probably won&#x27;t need to worry about this either.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/preventing-memory-leaks"}}</script><script type="module" src="/assets/entry-client-routing.538295f4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/preventing-memory-leaks.page.ad14af8f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.538295f4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5a4b3448.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/preventing-memory-leaks"}}</script><script type="module" src="/assets/entry-client-routing.a3d15469.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/preventing-memory-leaks.page.0851bc96.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.590dfa6e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a3d15469.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-91851764.js"></body>
     </html>

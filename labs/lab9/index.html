@@ -1,21 +1,23 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.9059ccae.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
         <meta charset="UTF-8">
         <title>Lab 9 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
-        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230,CSCI 1230, Brown University, Providence">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-9-vbos-and-vaos">Lab 9: VBOs and VAOs</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#using-the-khronos-documentation">Using the Khronos Documentation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#debugging-in-opengl">Debugging in OpenGL</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-opengl-state-machine">The OpenGL State Machine</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#vertex-buffer-objects">Vertex Buffer Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-vertex-buffer-object">Creating a Vertex Buffer Object</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#adding-data">Adding Data</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#binding-a-vbo">Binding a VBO</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#defining-a-triangle">Defining a Triangle</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#putting-data-into-a-vbo">Putting Data Into a VBO</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#vertex-array-objects">Vertex Array Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#vertex-attributes">Vertex Attributes</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-vao">Creating a VAO</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#binding-a-vao">Binding a VAO</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#utilizing-a-vao">Utilizing a VAO</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#unbinding-objects">Unbinding Objects</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#drawing-in-opengl">Drawing in OpenGL</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#drawing-overview">Drawing Overview</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-gldrawarrays-call">The glDrawArrays Call</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#memory-management">Memory Management</a></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-9-vbos--vaos">Lab 9: VBOs &amp; VAOs</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#intro">Intro</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#using-the-khronos-documentation">Using the Khronos Documentation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#debugging-in-opengl">Debugging in OpenGL</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-opengl-state-machine">The OpenGL State Machine</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#vertex-buffer-objects">Vertex Buffer Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-vertex-buffer-object">Creating a Vertex Buffer Object</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#adding-data">Adding Data</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#binding-a-vbo">Binding a VBO</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#defining-a-triangle">Defining a Triangle</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#putting-data-into-a-vbo">Putting Data Into a VBO</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#vertex-array-objects">Vertex Array Objects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#vertex-attributes">Vertex Attributes</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#creating-a-vao">Creating a VAO</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#binding-a-vao">Binding a VAO</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#utilizing-a-vao">Utilizing a VAO</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#unbinding-objects">Unbinding Objects</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#drawing-in-opengl">Drawing in OpenGL</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#drawing-overview">Drawing Overview</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-gldrawarrays-call">The glDrawArrays Call</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#memory-management">Memory Management</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#end">End</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#submission">Submission</a></li></ol></li></ol></nav><main>
 <!-- -->
-<h1 id="lab-9-vbos-and-vaos"><a href="#lab-9-vbos-and-vaos">Lab 9: VBOs and VAOs</a></h1>
-<p><a href="todo">Github Classroom</a></p>
+<h1 id="lab-9-vbos--vaos"><a href="#lab-9-vbos--vaos">Lab 9: VBOs &amp; VAOs</a></h1>
+<p><a href="https://classroom.github.com/a/Y8TTg_o8" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a></p>
+<div class="task-no-number-callout callout"><p>Please put your answers to written questions in this lab in a Markdown file named <code>README.md</code> in your lab repo.</p></div>
 <p>Welcome to the world of OpenGL!</p>
 <p>In the last lab, you learned how to construct vertex data for various shapes and put them into a container as continuous floats.
-What you didn’t know is that this representation is actually how OpenGL stores its vertex data as well!</p>
+What you didn&#x27;t know is that this representation is actually how OpenGL stores its vertex data as well!</p>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:90%"><img src="/labs/lab11/pipeline.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Realtime Pipeline</figcaption></figure>
 <p>By the end of this lab, you should be able to</p>
 <ul>
 <li>Understand the difference between a Vertex Buffer Object and a Vertex Array Object and their individual uses,</li>
@@ -27,9 +29,9 @@ What you didn’t know is that this representation is actually how OpenGL stores
 <p>Currently, our data is stored in C++ structures on the <em>CPU</em>, but in this lab you will create OpenGL specific objects to both store and describe the data that
 can be used for drawing on the <em>GPU</em>.</p>
 <p>These objects are: <strong>Vertex Buffer Objects</strong> (<strong>VBOs</strong>) and <strong>Vertex Array Objects</strong> (<strong>VAOs</strong>).</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/VBO_VAO_Overview.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Visualization of VBOs and VAOs</figcaption></figure>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/VBO_VAO_Overview.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of VBOs and VAOs</figcaption></figure>
 <p>At the moment, you can imagine a VBO to be a dumb container, the same as a C++
-vector that doesn’t have a clue about the meaning behind the data that is in it.</p>
+vector that doesn&#x27;t have a clue about the meaning behind the data that is in it.</p>
 <p>The VAO on the other hand acts as a translation manual for the GPU to understand
 what data and what format of data is inside a Vertex Buffer Object.</p>
 <p>While VAO has &quot;array&quot; in its name, a VAO is <strong>NOT</strong> an array of vertex values. Instead,
@@ -42,10 +44,10 @@ OpenGL is no exception, as a matter of fact, OpenGL is made by the Khronos
 group (who now is also developing the Vulkan API) and has extensive documentation
 on any functions across any version of OpenGL you may use.</p>
 <p>The home page for OpenGL 3.1 is located
-<a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/">here</a>.</p>
+<a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <p>While our projects are set up to use OpenGL 4.1, the functions we will be using
 are within OpenGL 3.1.</p>
-<p>Let’s take a look at a function to see what the docs tell us about it!</p>
+<p>Let&#x27;s take a look at a function to see what the docs tell us about it!</p>
 <div class="task-callout callout"><p>Find the function <code>glGetError</code> and open its documentation.</p></div>
 <p>Notice the different sections. The first section, <strong>Name</strong>, says the function name along
 with a short description of what the function is. This is useful if you want to quickly
@@ -60,7 +62,7 @@ is used and sometimes information about the parameters in question such as OpenG
 enums as we see here!</p>
 <p>The fourth section, <strong>API Version Support</strong>, tells us in which OpenGL versions this function
 can be called. Be aware of this if you are trying to use modern OpenGL functions but any
-we cover here will be supported by the stencil’s OpenGL version.</p>
+we cover here will be supported by the stencil&#x27;s OpenGL version.</p>
 <p>Through this lab and your work in OpenGL, we strongly recommend having the docs open in
 another tab to reference, and each function signature will serve as a link to their
 relevant page in the docs.</p>
@@ -79,7 +81,7 @@ will return one of these stored error flags and clear it from storage. Unfortuna
 order in which flags are returned is random, so the best way to overcome this is if
 you encounter errors, check the flags, and check them often.</p>
 <p>In addition to this, each time you check for errors, it is important to call glGetError in
-a loop until it returns GL_NO_ERROR indicating all errors have been cleared. In <code>debug.h</code>
+a loop until it returns <code>GL_NO_ERROR</code> indicating all errors have been cleared. In <code>debug.h</code>
 we have provided you the following function which does this:</p>
 <pre><code class="code-highlight"><span class="code-line">inline void checkOpenGLErrors(){
 </span><span class="code-line">  GLenum error = glGetError();
@@ -98,8 +100,8 @@ include the header file and call the function as: <code>Debug::checkOpenGLErrors
 throught our program, it can be difficult to determine which call is reading in an error.</p>
 <p>How about we change our function to take in a line number and file name so we can use that
 when we print our errors:</p>
-<div class="task-callout callout"><p>Add two input parameters to the <code>checkOpenGLErrors</code> function, one being a
-const char* for the file name, and another being an int for the line number. Edit the print
+<div class="task-callout callout"><p>Add two input parameters to the <code>checkOpenGLErrors</code> function, the first being a
+<code>const char*</code> for the file name, and the second being an <code>int</code> for the line number. Edit the print
 statement to include this information to make the debug statements more descriptive.</p></div>
 <p>This is great, but a pain to input the file and line every time we call the function.
 Luckily, C++ provides preprocessor macros: __LINE__ and __FILE__ which get replaced at
@@ -109,7 +111,7 @@ compile time to an int of the current line number and char* of the current file 
 </span></code></pre>
 <p>We can make this even simpler by using something called a <strong>preprocessor directive</strong>.
 A preprocessor directive is indicated by the use of a hash symbol in the beginning. As a matter
-of fact, you may already be familiar with the #include preprocessor directive.</p>
+of fact, you may already be familiar with the <strong>#include</strong> preprocessor directive.</p>
 <p>The one we will be using is: <strong>#define</strong>. This has a signature of:</p>
 <pre><code class="code-highlight"><span class="code-line">#define identifier replacement
 </span></code></pre>
@@ -134,20 +136,20 @@ to achieve an output.</li>
 </ol>
 <p>Just how action and comedy came together to bring us the Spy Kids film franchise, these function &quot;genres&quot; are
 <strong>NOT</strong> mutually exclusive and some functions will do both!</p>
-<p>Because of this unique behavior, it is important to be careful about managing OpenGL’s
+<p>Because of this unique behavior, it is important to be careful about managing OpenGL&#x27;s
 state during the execution of your programs. There are two strategies for this:</p>
 <ol>
 <li><strong>Assume Nothing</strong>. When writing a function that uses OpenGL, consider that the state could
 be anything. Explicitly set the values of the state parameters you depend on.</li>
 <li><strong>Default Configuration</strong>. Decide on a set of reasonable default state values, and set the
 state to these values at the start of your application. Anywhere you change one of these
-state parameters, restore the parameter to its previous value after you’re done rendering a component of the scene.</li>
+state parameters, restore the parameter to its previous value after you&#x27;re done rendering a component of the scene.</li>
 </ol>
 <p>For the purposes of these labs, we will primarily be using the second option, which you will
 get more experience with in section 4.</p>
-<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/State_Machine.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of OpenGL State Machine</figcaption></figure>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/State_Machine.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>Visualization of OpenGL State Machine</figcaption></figure>
 <blockquote>
-<p>Note: Through this lab, you will primarily be working in the glRenderer.cpp file!</p>
+<p>Note: Through the rest of this lab, you will be working in the <code>glRenderer.cpp</code> file!</p>
 </blockquote>
 <div class="task-callout callout"><p>Search the docs for the <code>glClearColor</code> function and call at the start of <code>initializeGL</code>
 to <strong>set our default state</strong> and change the background color to anything you like! Run the program
@@ -163,10 +165,10 @@ numbers and nothing more. They have no idea of what they contain or what it will
 used for. In this lab we will learn about how to create one of these VBOs and use it
 to later draw shapes of our own!</p>
 <h3 id="creating-a-vertex-buffer-object"><a href="#creating-a-vertex-buffer-object">Creating a Vertex Buffer Object</a></h3>
-<p>Let’s jump straight in by creating a VBO!</p>
-<div class="task-callout callout"><p>Generate a single VBO in <code>InitializeGL</code> and store its id in <code>m_vbo</code>. You may find the
+<p>Let&#x27;s jump straight in by creating a VBO!</p>
+<div class="task-callout callout"><p>Generate a single VBO in <code>initializeGL</code> and store its id in <code>m_vbo</code>. You may find the
 following function useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenBuffers.xhtml"><strong>void glGenBuffers(GLsizei n, GLuint *buffers);</strong></a></p>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenBuffers.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glGenBuffers(GLsizei n, GLuint *buffers);</strong></a></p>
 </blockquote></p><p><strong><code>n</code> :</strong> This indicates the number of vertex buffer objects to create.
 The type GLsizei is an OpenGL alias indicating it is an integer representing some size</p><p><strong><code>buffers</code> :</strong> This is the pointer this function will fill in with an id for the
 generated buffer. This way you can refer to it later by the same stored id.
@@ -175,24 +177,24 @@ sufficient size or some pointer followed by sufficient allocated space.
 GLuint is an OpenGL alias for an unsigned int.</p></div></div>
 <h3 id="adding-data"><a href="#adding-data">Adding Data</a></h3>
 <h4 id="binding-a-vbo"><a href="#binding-a-vbo">Binding a VBO</a></h4>
-<p>Congratulations, you have made a VBO! But…it currently holds no data! Let’s fix that.
+<p>Congratulations, you have made a VBO! But…it currently holds no data! Let&#x27;s fix that.
 As said before, OpenGL is a state machine, so in order to interact with our created
 buffer, we need to bind it to the current state.</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, bind your previously created VBO. You may find the following function
+<div class="task-callout callout"><p>In <code>initializeGL</code>, bind your previously created VBO. You may find the following function
 useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindBuffer.xhtml"><strong>void glBindBuffer(GLenum target, GLuint buffer);</strong></a></p>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindBuffer.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glBindBuffer(GLenum target, GLuint buffer);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This is an enumerable indicating which type of buffer you are binding. For
 our purposes, use <code>GL_ARRAY_BUFFER</code>.</p><p><strong><code>buffer</code> :</strong> This indicates the specific buffer id that should be bound
 (hint: remember the GLuint we created in the last step?)</p></div></div>
-<p>Now our state is all set up to shove our data into our buffer container!
-But before we do this, we actually need some data to put inside. Let’s construct
-an array that represents a triangle.</p>
+<p>Now our state is all set up to shove our data into our buffer container!</p>
+<p>But before we do this, we actually need some data to put inside. Let’s construct
+an <code>std::vector</code> that represents a triangle.</p>
 <h4 id="defining-a-triangle"><a href="#defining-a-triangle">Defining a Triangle</a></h4>
-<p>A triangle as said before is defined by 3 vertices. For now, let’s assume that these
+<p>A triangle as said before is defined by 3 vertices. For now, let&#x27;s assume that these
 vertices are just positions, although in in the last lab you worked with vertex normals
 and in part 2 you will learn about more attributes vertices can hold!</p>
 <p>As a reminder in OpenGL, the screen is defined as in the image below:</p>
-<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 3: </strong>OpenGL Coordinate System</figcaption></figure>
+<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/openglcoordinates.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>OpenGL Coordinate System</figcaption></figure>
 <p>Take note of the x and y ranges of -1 to 1. As a reminder: in OpenGL,
 triangles are defined in a counter clockwise direction.</p>
 <div class="task-callout callout"><p>Pick 3 points that would make a nice triangle. Make sure to pick z values of 0 as well!</p></div>
@@ -200,17 +202,17 @@ triangles are defined in a counter clockwise direction.</p>
 <p>Now how will we actually put this information into our VBO? Let&#x27;s take a
 look at the function to do so first:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBufferData.xhtml"><strong>void glBufferData(GLenum target, GLsizeiptr size, const void *data, GLenum usage);</strong></a></p>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBufferData.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glBufferData(GLenum target, GLsizeiptr size, const void *data, GLenum usage);</strong></a></p>
 </blockquote></p><p><strong><code>target</code> :</strong> This is the same argument seen in glBindBuffer.</p><p><strong><code>size</code> :</strong> This indicates the size in bytes of the input data.</p><p><strong><code>data</code> :</strong> This is a pointer to the first element of the input data array.</p><p><strong><code>usage</code> :</strong> This is an OpenGL enum representing how the data will be used. For
-our purposes, the usage parameter should be GL_STATIC_DRAW which indicates we don&#x27;t
+our purposes, the usage parameter should be <code>GL_STATIC_DRAW</code> which indicates we don&#x27;t
 expect to change the data, so OpenGL can make optimizations based on that.</p></div>
 <p>Lets take a closer look at the data parameter. The function expects a pointer to an input data array,
-but we don’t have that array yet! Let’s use an <code>std::vector</code> to construct our
+but we don&#x27;t have that array yet! Let&#x27;s use an <code>std::vector</code> to construct our
 data container. In OpenGL, rather than separating out values for each individual
 vertex, it expects all of them mashed together into one contiguous collection as
 you did in the previous lab, and the VAO you will learn about soon keeps track
 of where the attributes are for us!</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, construct an <code>std::vector</code> containing your three triangle points in a contiguous
+<div class="task-callout callout"><p>In <code>initializeGL</code>, construct an <code>std::vector</code> containing your three triangle points in a contiguous
 series of floats.</p></div>
 <p>Now to pass this into the function, we can use the <code>data()</code> method of the <code>std::vector</code>
 object. This will return a pointer to the first element as needed.</p>
@@ -220,7 +222,7 @@ to let the program calculate that for us. The size of our data is going to be eq
 <p>To get the first part is simple using <code>std::vector</code> methods. For the second part,
 we can take advantage of the <code>sizeof()</code> function and pass in the data type stored
 in our vector.</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, pass a triangle’s worth of data into your VBO.</p></div>
+<div class="task-callout callout"><p>In <code>initializeGL</code>, pass a triangle&#x27;s worth of data into your VBO.</p></div>
 <h2 id="vertex-array-objects"><a href="#vertex-array-objects">Vertex Array Objects</a></h2>
 <p>Next, we will tell OpenGL the structure of our data using something called a Vertex Array Object or VAO for short.</p>
 <h3 id="vertex-attributes"><a href="#vertex-attributes">Vertex Attributes</a></h3>
@@ -232,25 +234,25 @@ attributes we care about.</p>
 <p>When adding multiple attributes, they should appear in the same order and be repeated
 per vertex in our data. Consider again figure which shows a data layout
 containing positions and colors interleaved:</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/VBO_VAO_Overview.png" alt="TODO"/></div><figcaption><strong>Figure 1: </strong>Visualization of VBOs and VAOs</figcaption></figure>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/VBO_VAO_Overview.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Visualization of VBOs and VAOs</figcaption></figure>
 <div class="task-callout callout"><p>Add colors of your choosing as RGB values to each vertex and integrate them
-into your previous triangle data vector in <code>InitializeGL</code>.</p></div>
+into your previous triangle data vector in <code>initializeGL</code>.</p></div>
 <details><summary>Does your <code>std::vector</code> look familiar?</summary><p>It should! This is the same format of data we worked with in the last lab!
 Without knowing it, you were actually creating VBO/VAO ready data with position
 and normal attributes! Keep that in mind when working on the project!</p></details>
 <h3 id="creating-a-vao"><a href="#creating-a-vao">Creating a VAO</a></h3>
-<p>Now let’s tell OpenGL that we have this extra attribute by making a VAO!</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, generate a single VAO and store its id in <code>m_vao</code>. You may find the
+<p>Now let&#x27;s tell OpenGL that we have this extra attribute by making a VAO!</p>
+<div class="task-callout callout"><p>In <code>initializeGL</code>, generate a single VAO and store its id in <code>m_vao</code>. You may find the
 following function useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenVertexArrays.xhtml"><strong>void glGenVertexArrays(GLsizei n, GLuint *arrays);</strong></a></p>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenVertexArrays.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glGenVertexArrays(GLsizei n, GLuint *arrays);</strong></a></p>
 </blockquote></p><p><strong><code>n</code> :</strong> This indicates the number of vertex array objects to create.</p><p><strong><code>arrays</code> :</strong> This is the pointer this function will fill in with an id
 for the generated array. Similarly to glGenBuffers, you can also fill in an array
 or segment of continuous memory with pointers to vertex array objects.</p></div></div>
 <h3 id="binding-a-vao"><a href="#binding-a-vao">Binding a VAO</a></h3>
 <p>Next to actually use this VAO, we need to bind it to the state.</p>
-<div class="task-callout callout"><p>In <code>InitializeGL</code>, bind your VAO. You may find the following function useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindVertexArray.xhtml"><strong>void glBindVertexArray(GLuint array);</strong></a></p>
-</blockquote></p><p><strong><code>n</code> :</strong> This is the id of the VAO we wish to bind</p></div></div>
+<div class="task-callout callout"><p>In <code>initializeGL</code>, bind your VAO. You may find the following function useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBindVertexArray.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glBindVertexArray(GLuint array);</strong></a></p>
+</blockquote></p><p><strong><code>array</code> :</strong> This is the id of the VAO we wish to bind</p></div></div>
 <h3 id="utilizing-a-vao"><a href="#utilizing-a-vao">Utilizing a VAO</a></h3>
 <p>Now that the VAO is bound, we can actually use it to let OpenGL know the structure
 of our VBO.</p>
@@ -261,7 +263,7 @@ of our VBO.</p>
 </ol>
 <p>For the first part, we call on the following function:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glEnableVertexAttribArray.xhtml"><strong>void glEnableVertexAttribArray(GLuint index);</strong></a></p>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glEnableVertexAttribArray.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glEnableVertexAttribArray(GLuint index);</strong></a></p>
 </blockquote></p><p><strong><code>index</code> :</strong> This indicates the index of the attribute we are identifying. By index, this
 does not refer to an index into our data vector. Rather, this is just some unique unsigned integer
 we use to identify each attribute. We pick this value ourselves and in the next lab, Shaders,
@@ -270,33 +272,33 @@ the shaders for you, we have assigned <strong>position to have index 0</strong> 
 index of 1</strong>.</p></div>
 <p>For the second part, we use a more complex function:</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glVertexAttribPointer.xhtml"><strong>void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glVertexAttribPointer.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean
 normalized, GLsizei stride, const void* pointer);</strong></a></p>
-</blockquote></p><p><strong><code>index</code> :</strong> This is the same index as used in <code>glEnableVertexAttribArray</code> above.</p><p><strong><code>size</code> :</strong> This indicates the length of one vertex’s instance of this attribute,
+</blockquote></p><p><strong><code>index</code> :</strong> This is the same index as used in <code>glEnableVertexAttribArray</code> above.</p><p><strong><code>size</code> :</strong> This indicates the length of one vertex&#x27;s instance of this attribute,
 not the size in bytes. For a position of 3 floats, this would simply be 3. For
 an attribute that has 5 ints, this would be 5.</p><p><strong><code>type</code> :</strong> This indicates the type of variable used for each component in the
-attribute. For floats, this would be GL_FLOAT.</p><p><strong><code>normalized</code> :</strong> This is a bit complicated to do with types, but for now use GL_FALSE.</p><p><strong><code>stride</code> :</strong> This indicates the size in bytes between two vertices.
+attribute. For floats, this would be <code>GL_FLOAT</code>.</p><p><strong><code>normalized</code> :</strong> This is a bit complicated to do with types, but for now use <code>GL_FALSE</code>.</p><p><strong><code>stride</code> :</strong> This indicates the size in bytes between two vertices.
 That is, the distance between the x coordinate of the position of the first vertex
-and the x coordinate of the second vertex in bytes would be this value</p><p><strong><code>pointer</code> :</strong> This is a pointer to the first vertex’s instance of the attribute
+and the x coordinate of the second vertex in bytes would be this value</p><p><strong><code>pointer</code> :</strong> This is a pointer to the first vertex&#x27;s instance of the attribute
 in the array of data. However, this more so refers to the offset into the array in
 which you will find this attribute. That is in the figure 1
 (figure showing position,color,uv), the offset of the color attribute is
 3*sizeof(GLfloat). But to cast this into a void*, we need to use:
-<code>reinterpret_cast&lt;void*&gt;(offset value)</code></p><figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></div><figcaption><strong>Figure 4: </strong>Visualization of Vertex Attribute layouts</figcaption></figure></div>
+<code>reinterpret_cast&lt;void*&gt;(offset value)</code></p><figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></div><figcaption><strong>Figure 5: </strong>Visualization of Vertex Attribute layouts</figcaption></figure></div>
 <blockquote>
 <p>Note: These two functions will assume they apply to whichever VBO is currently bound,
 so be careful of your state when using them. As a matter of fact, you can store separate
 attributes of the same object in different VBOs and link them together in a single VAO as
 in figure 5 below!</p>
 </blockquote>
-<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><img src="/labs/lab9/VAOMultiple.png" alt="TODO"/></div><figcaption><strong>Figure 5: </strong>VAOs w/ Single and Multiple VBOs</figcaption></figure>
-<div class="task-callout callout"><p>Add the two attributes of position and color to your VAO in <code>InitializeGL</code>.</p></div>
+<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><img src="/labs/lab9/VAOMultiple.png" alt="TODO"/></div><figcaption><strong>Figure 6: </strong>VAOs w/ Single and Multiple VBOs</figcaption></figure>
+<div class="task-callout callout"><p>Add the two attributes of position and color to your VAO in <code>initializeGL</code>.</p></div>
 <h2 id="unbinding-objects"><a href="#unbinding-objects">Unbinding Objects</a></h2>
 <p>In section 1.2, we discussed common approaches to handling the OpenGL state machine.
 Here, we will implement these ideas by keeping a common default state set. When we
-started, VBO and VAO ids 0 were bound, which means no VBO or VAO was bound. Let’s
+started, VBO and VAO ids 0 were bound, which means no VBO or VAO was bound. Let&#x27;s
 return to that starting condition before we exit the <code>initializeGL</code> function.</p>
-<div class="task-callout callout"><p>Unbind your VBO and VAO at the end of <code>InitializeGL</code>.</p></div>
+<div class="task-callout callout"><p>Unbind your VBO and VAO at the end of <code>initializeGL</code>.</p></div>
 <h2 id="drawing-in-opengl"><a href="#drawing-in-opengl">Drawing in OpenGL</a></h2>
 <h3 id="drawing-overview"><a href="#drawing-overview">Drawing Overview</a></h3>
 <p>Great! Now you are ready to draw the triangle you have worked so hard to create.
@@ -320,27 +322,26 @@ To do this, these are the general steps you will want to follow each frame.</p>
 <blockquote>
 <p>Note: Notice how all operations including a specific shader and VAO are surrounded by a Bind and Unbind call!</p>
 </blockquote>
-<p>For this, you will only be responsible for steps 1 and 2.2.1 through 2.2.3.
-While steps 2 and 2.2 can run as loops for each shader and for each VAO, oftentimes such as this one you
-will only work with a single shader program and in this case, a single VAO.
-As such, no loops will need to be present in this section of the lab.</p>
-<div class="task-callout callout"><p>In <code>PaintGL</code>, before <code>glUseProgram</code>, clear the screen.</p></div>
-<div class="task-callout callout"><p>In <code>PaintGL</code>, after <code>glUseProgram</code>, bind our VAO.</p></div>
+<p>For this, you will only be responsible for steps 1 and 2.b.i through 2.b.iii. Since we only
+will be using a single shader and a single VAO, we can collapse this into a linear set
+of steps.</p>
+<div class="task-callout callout"><p>In <code>paintGL</code>, before <code>glUseProgram</code>, clear the screen.</p></div>
+<div class="task-callout callout"><p>In <code>paintGL</code>, after <code>glUseProgram</code>, bind our VAO.</p></div>
 <h3 id="the-gldrawarrays-call"><a href="#the-gldrawarrays-call">The glDrawArrays Call</a></h3>
 <p>Now let&#x27;s actually <em>draw</em> our VAOs.</p>
-<div class="task-callout callout"><p>In the middle of <code>PaintGL</code>, draw our triangle. You may find the following useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
-<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDrawArrays.xhtml"><strong>void glDrawArrays(GLenum mode, GLint first, GLsizei count);</strong></a></p>
+<div class="task-callout callout"><p>In the middle of <code>paintGL</code>, draw our triangle. You may find the following useful:</p><div class="success-callout callout"><p style="text-align:center"><blockquote>
+<p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDrawArrays.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glDrawArrays(GLenum mode, GLint first, GLsizei count);</strong></a></p>
 </blockquote></p><p><strong><code>mode</code> :</strong> This indicates the type of primitive to render, for our case, use GL_TRIANGLES.</p><p><strong><code>first</code> :</strong> This indicates the starting index for OpenGL to look in our VBO, and will most usually be 0.</p><p><strong><code>count</code> :</strong> This indicates how many vertices to draw.</p></div></div>
-<div class="task-callout callout"><p>After drawing the triangle in <code>PaintGL</code>, return to default state by unbinding our VAO.</p></div>
+<div class="task-callout callout"><p>After drawing the triangle in <code>paintGL</code>, return to default state by unbinding our VAO.</p></div>
 <p>At this stage, you finally will be able see an iconic rainbow triangle somewhat similar to this!</p>
-<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/FinalTriangle.png" alt="TODO"/></div><figcaption><strong>Figure 6: </strong>Colorful Triangle</figcaption></figure>
+<figure id="figure-7" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/labs/lab9/FinalTriangle.png" alt="TODO"/></div><figcaption><strong>Figure 7: </strong>Colorful Triangle</figcaption></figure>
 <h2 id="memory-management"><a href="#memory-management">Memory Management</a></h2>
 <p>So far, by calling <code>glGenBuffers</code> and <code>glGenVertexArrays</code>, we have <em>allocated</em> space
 to store our data and objects. This memory is <strong>not</strong>
 automatically freed when it goes out of scope. To do this ourselves, we must call on the
 various <code>glDelete</code> functions at our disposal.</p>
-<p>For now we will use two, <a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDeleteBuffers.xhtml">glDeleteBuffers</a>
-which applies to VBOs, and <a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDeleteVertexArrays.xhtml">glDeleteVertexArrays</a>
+<p>For now we will use two, <a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDeleteBuffers.xhtml" target="_blank" rel="noopener noreferrer">glDeleteBuffers</a>
+which applies to VBOs, and <a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glDeleteVertexArrays.xhtml" target="_blank" rel="noopener noreferrer">glDeleteVertexArrays</a>
 which applies to VAOs.</p>
 <p>In general, the glDelete calls are described as follows.</p>
 <div class="success-callout callout"><p style="text-align:center"><blockquote>
@@ -348,6 +349,11 @@ which applies to VAOs.</p>
 </blockquote></p><p><strong><code>n</code> :</strong> This indicates how many of the object to delete.</p><p><strong><code>object</code> :</strong> This is a pointer to the object being deleted. Or as we could create multiple within an array or
 continuous segment of memory, the pointer to the beginning of this memory can also be passed in.</p></div>
 <div class="task-callout callout"><p>In <code>finish</code>, free your VBO and VAO memory.</p></div>
+<h2 id="end"><a href="#end">End</a></h2>
+<p>Congrats on finishing the VBOs &amp; VAOs lab! Now, it&#x27;s time to get checked off by a TA.</p>
+<h2 id="submission"><a href="#submission">Submission</a></h2>
+<p>Submit your Github repo for this lab to the &quot;Lab 09: VBOs &amp; VAOs&quot; assignment on Gradescope, then get checked off by a TA during lab hours.
+Instructions on using Github and Gradescope are available <a href="/docs/github-gradescope-guide">here</a>.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
 mjx-container[jax=&quot;SVG&quot;] {
   direction: ltr;
@@ -466,5 +472,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.538295f4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.7778e71a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-47a93a9e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e84bc917.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9ad3b198.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.bf9d5346.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.538295f4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5a4b3448.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.a3d15469.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.a82695c9.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.590dfa6e.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a3d15469.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-91851764.js"></body>
     </html>
