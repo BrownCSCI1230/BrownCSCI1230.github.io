@@ -22,9 +22,10 @@ import{j as e}from"../../chunk-903e764a.js";import{M as a}from"../../chunk-b2e2a
 `})]})})]})}),`
 `,e.exports.jsx(s.h3,{id:"casing-recommendations",children:e.exports.jsx(s.a,{href:"#casing-recommendations",children:"Casing Recommendations"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Class and file names should be ",e.exports.jsx(s.code,{children:"StyledLikeThis"}),"."]}),`
-`,e.exports.jsxs(s.li,{children:["Variable and function names should be ",e.exports.jsx(s.code,{children:"styledLikeThis"}),"."]}),`
-`,e.exports.jsxs(s.li,{children:["Constants and macros should be ",e.exports.jsx(s.code,{children:"STYLED_LIKE_THIS"}),"."]}),`
+`,e.exports.jsxs(s.li,{children:["File names should be ",e.exports.jsx(s.code,{children:"styledlikethis"}),"."]}),`
+`,e.exports.jsxs(s.li,{children:["Class and Struct names should be ",e.exports.jsx(s.code,{children:"StyledLikeThis"}),"."]}),`
+`,e.exports.jsxs(s.li,{children:["Variable and Function names should be ",e.exports.jsx(s.code,{children:"styledLikeThis"}),"."]}),`
+`,e.exports.jsxs(s.li,{children:["Constants and Macros should be ",e.exports.jsx(s.code,{children:"STYLED_LIKE_THIS"}),"."]}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"whitespace",children:e.exports.jsx(s.a,{href:"#whitespace",children:"Whitespace"})}),`
 `,e.exports.jsx(s.p,{children:e.exports.jsx(s.strong,{children:"Indent your code."})}),`

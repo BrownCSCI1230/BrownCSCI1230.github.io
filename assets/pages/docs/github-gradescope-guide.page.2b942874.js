@@ -62,7 +62,7 @@ import{j as e}from"../../chunk-903e764a.js";import{I as o}from"../../chunk-30f40
 `]}),`
 `,e.exports.jsx(o,{images:[{src:"/docs/github-gradescope-guide/gradescope_compiled.png",alt:"TODO"}],figNumber:13,figCaption:"Compilation Success Message"}),`
 `,e.exports.jsxs(s.ol,{start:"11",children:[`
-`,e.exports.jsx(s.li,{children:"If something has gone wrong, you will see something like ths :("}),`
+`,e.exports.jsx(s.li,{children:"If something has gone wrong, you will see something like this :("}),`
 `]}),`
 `,e.exports.jsx(o,{images:[{src:"/docs/github-gradescope-guide/gradescope_compile_failed.png",alt:"TODO"}],figNumber:14,figCaption:"Compilation Failure Message"}),`
 `,e.exports.jsx(n,{})]})]})}function h(t={}){const{wrapper:s}=t.components||{};return s?e.exports.jsx(s,Object.assign({},t,{children:e.exports.jsx(i,t)})):i(t)}export{h as default,d as documentProps};
