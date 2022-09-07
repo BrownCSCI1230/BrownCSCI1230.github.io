@@ -404,14 +404,14 @@ template</a></strong>.</p></details>
 </span><span class="code-line">}
 </span><span class="code-line">
 </span><span class="code-line"><span class="pl-c">// index-based</span>
-</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> index = <span class="pl-c1">0</span>; index &lt; container.size(); index++) {
-</span><span class="code-line">  element = container[index];
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> index = <span class="pl-c1">0</span>; index &lt; container.size(); ++index) {
+</span><span class="code-line">  <span class="pl-k">auto</span> element = container[index];
 </span><span class="code-line">  <span class="pl-c">// use element</span>
 </span><span class="code-line">}
 </span></code></pre>
 <p>Note that a more efficient way of doing the range-for loop is to use an ampersand after <code>auto</code>. You will learn more about what this means in the section on references.</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// reference based range-for</span>
-</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span> &amp;element : container) {
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; element : container) {
 </span><span class="code-line">  <span class="pl-c">// use element by reference</span>
 </span><span class="code-line">}
 </span></code></pre>
@@ -539,5 +539,5 @@ to the function, and it could lead to serious performance problems!</p>
 <p>Submit your Github repo for this lab to the &quot;Lab 01: Setup &amp; C++&quot; assignment on Gradescope, then get checked off by a TA during lab hours.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.c4771cac.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.76b660b0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.c4771cac.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.16471405.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.d916d60a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.16471405.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>

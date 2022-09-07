@@ -39,7 +39,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.ac43e1f9.js",
+    "file": "assets/pages/index.page.effbb1d0.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -66,36 +66,6 @@
     ],
     "css": [
       "assets/index.a5cf6447.css"
-    ]
-  },
-  "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.9dbd164a.js",
-    "src": "pages/labs/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
-    ]
-  },
-  "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.76b660b0.js",
-    "src": "pages/labs/lab1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.ea56e11f.js",
-    "src": "pages/labs/lab2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -199,6 +169,36 @@
       "_chunk-b2e2a089.js"
     ]
   },
+  "pages/labs/index.page.mdx": {
+    "file": "assets/pages/labs/index.page.9dbd164a.js",
+    "src": "pages/labs/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
+    ]
+  },
+  "pages/labs/lab1.page.mdx": {
+    "file": "assets/pages/labs/lab1.page.d916d60a.js",
+    "src": "pages/labs/lab1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
+    ]
+  },
+  "pages/labs/lab2.page.mdx": {
+    "file": "assets/pages/labs/lab2.page.ea56e11f.js",
+    "src": "pages/labs/lab2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-30f40460.js",
+      "_chunk-b2e2a089.js"
+    ]
+  },
   "pages/projects/index.page.mdx": {
     "file": "assets/pages/projects/index.page.c38ebaf7.js",
     "src": "pages/projects/index.page.mdx",
@@ -252,7 +252,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.c4771cac.js",
+    "file": "assets/entry-client-routing.16471405.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -288,7 +288,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.de953e68.js",
+    "file": "assets/entry-server-routing.5820a3d9.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

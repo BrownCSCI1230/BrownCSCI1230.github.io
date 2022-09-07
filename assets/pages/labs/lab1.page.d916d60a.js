@@ -393,14 +393,14 @@ template`})}),"."]})}),`
 `]}),e.exports.jsx(s.span,{className:"code-line",children:`}
 `}),e.exports.jsx(s.span,{className:"code-line",children:`
 `}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-c",children:"// index-based"}),`
-`]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"for"})," (",e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," index = ",e.exports.jsx(s.span,{className:"pl-c1",children:"0"}),`; index < container.size(); index++) {
-`]}),e.exports.jsx(s.span,{className:"code-line",children:`  element = container[index];
-`}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-c",children:"// use element"}),`
+`]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"for"})," (",e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," index = ",e.exports.jsx(s.span,{className:"pl-c1",children:"0"}),`; index < container.size(); ++index) {
+`]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-k",children:"auto"}),` element = container[index];
+`]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-c",children:"// use element"}),`
 `]}),e.exports.jsx(s.span,{className:"code-line",children:`}
 `})]})}),`
 `,e.exports.jsxs(s.p,{children:["Note that a more efficient way of doing the range-for loop is to use an ampersand after ",e.exports.jsx(s.code,{children:"auto"}),". You will learn more about what this means in the section on references."]}),`
 `,e.exports.jsx(s.pre,{className:"language-cpp",children:e.exports.jsxs(s.code,{className:"language-cpp code-highlight",children:[e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-c",children:"// reference based range-for"}),`
-`]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"for"})," (",e.exports.jsx(s.span,{className:"pl-k",children:"auto"}),` &element : container) {
+`]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"for"})," (",e.exports.jsx(s.span,{className:"pl-k",children:"auto"}),`& element : container) {
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-c",children:"// use element by reference"}),`
 `]}),e.exports.jsx(s.span,{className:"code-line",children:`}
 `})]})}),`
