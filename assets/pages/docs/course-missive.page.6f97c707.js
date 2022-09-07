@@ -109,8 +109,8 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `,e.exports.jsx(s.h3,{id:"labs",children:e.exports.jsx(s.a,{href:"#labs",children:"Labs"})}),`
 `,e.exports.jsxs(s.p,{children:["In addition to the projects, a series of 11 weekly ",e.exports.jsx(s.strong,{children:"labs"})," will provide hands-on experience with various graphics programming topics and tools. Each lab is designed such that the code you write will be helpful for one of the programming projects (or for the final project)."]}),`
 `,e.exports.jsx(s.h3,{id:"expected-time-commitment",children:e.exports.jsx(s.a,{href:"#expected-time-commitment",children:"Expected Time Commitment"})}),`
-`,e.exports.jsx(s.p,{children:"Over 13 weeks, you will spend 3h per week in class (39h total) and approximately 2h per week in labs (20h total). Each project, algo included, typically takes under 10 hours per week, though this heavily depends on how much extra credit you choose to implement."}),`
-`,e.exports.jsx(s.p,{children:"In any case, students will spend a minimum of 8.5 hours per week and 120 hours total on homework by the end of the semester [TODO]."}),`
+`,e.exports.jsx(s.p,{children:"Over 13 weeks, you will spend 3h per week in class (39h total) and approximately 2h per week in labs (20h total). Each project, algos included, typically takes under 8h per week, though this heavily depends on how much extra credit you choose to implement."}),`
+`,e.exports.jsx(s.p,{children:"In any case, students should expect to spend 120 hours total on homework by the end of the semester."}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"Before we can grade any of your assignments, you must complete our collaboration policy agreement. If you do not do so, you cannot pass this course."})}),`
 `,e.exports.jsx(s.p,{children:"Your CSCI 1230 grade consists of 6 rigorously graded projects, 11 labs that are given completion grades, and 1 final project. There are no exams or quizzes."}),`
