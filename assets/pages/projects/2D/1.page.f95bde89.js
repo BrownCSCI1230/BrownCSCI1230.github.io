@@ -63,8 +63,18 @@ Letting `,e.exports.jsx(s.span,{className:"math math-inline",children:e.exports.
 `,e.exports.jsxs(s.p,{children:["The Settings class contains variables tied to all of the GUI elements that users can interact with, including the sliders which change the color, brush radius, and brush alpha values. When something is modified in the GUI, the Settings class is updated and the ",e.exports.jsx(s.code,{children:"settingsChanged()"})," callback function in Canvas2D is invoked."]}),`
 `,e.exports.jsxs(s.p,{children:["You can access the variables in ",e.exports.jsx(s.code,{children:"settings.h"})," by doing ",e.exports.jsx(s.code,{children:"settings.variableName"})," to get the values you need for your brush and use the ",e.exports.jsx(s.code,{children:"settingsChanged()"})," function to make updates. Think about when it is necessary to update, though, as it is inefficient to completely regenerate your brush mask for every little thing that is changed."]}),`
 `,e.exports.jsx(s.h2,{id:"readme",children:e.exports.jsx(s.a,{href:"#readme",children:"README"})}),`
-`,e.exports.jsxs(s.p,{children:["Your repo should include a README in Markdown format with the filename ",e.exports.jsx(s.code,{children:"README.md"}),". This file should contain basic information about your design choices. You should also include any known bugs and any extra credit you've implemented."]}),`
-`,e.exports.jsx(s.p,{children:"For extra credit, please describe what you've done and point out the related part of your code."}),`
+`,e.exports.jsxs(s.p,{children:["Your repo should include a README in Markdown format located at the ",e.exports.jsx(s.strong,{children:"root directory"}),` of your
+project with the filename `,e.exports.jsx(s.code,{children:"README.md"}),`.
+This file should contain the following:`]}),`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Design"}),`: This section should contain any information about your software design or function
+that you think TAs would find useful for grading and/or reading your code.`]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Known Bugs"}),`: If you have any bugs in your code, please document them here. If possible,
+indicate what user input causes the bugs to appear, if you have made any attempts to fix them and,
+if possible, where you believe they stem from in your code.`]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Extra Credit"}),`: If you implemented any extra credit, describe which ones you have implemented
+as well as where the code for each implementation lies within your overall project code.`]}),`
+`]}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:["Color brush masks ",e.exports.jsx(s.strong,{children:"(20 points)"}),`

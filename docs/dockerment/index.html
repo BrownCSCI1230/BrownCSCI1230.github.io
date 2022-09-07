@@ -36,9 +36,13 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 <div class="warning-callout callout"><p>If you are on Windows, you must run these commands in <strong>Git Bash</strong> or <strong>Powershell</strong>.</p><p>Additionally, all filepaths must be specified with <code>//</code> (i.e. you must use these as your filepath separators). This includes the path to the source code <code>SRC_PATH</code> and the the other filepaths present in the command. &quot;Windows-specific versions&quot; of some commands below are included in collapsible sections.</p></div>
 <h3 id="convenience-scripts"><a href="#convenience-scripts">Convenience Scripts</a></h3>
 <p>Included in the repo you just cloned are two convenience python scripts <code>build.py</code> and <code>run.py</code>. These should abstract away many of the docker commands required to compile and run your code in our standardized environment. Example usage shown below.</p>
-<div class="warning-callout callout"><p>If these scripts fail, try either running the explicit docker command printed out by the script, or following the instructions below.</p><pre><code class="code-highlight"><span class="code-line">python3 build.py -s /path/to/src
+<div class="warning-callout callout"><p>If these scripts fail, try either running the explicit docker command printed out by the script, or following the instructions below.</p></div>
+<pre><code class="code-highlight"><span class="code-line">python3 build.py -s /path/to/src
 </span><span class="code-line">python3 run.py -e executable_name
-</span></code></pre><p>See [below](### Building) for more info on the source path and executable name.</p><p>Script usage</p><pre><code class="code-highlight"><span class="code-line">usage: build.py [-h] -s SOURCE [-c CONTAINER] [-i IMAGE]
+</span></code></pre>
+<p>See <code>3.2 Building</code> for more info on the source path and executable name.</p>
+<p>Script usage</p>
+<pre><code class="code-highlight"><span class="code-line">usage: build.py [-h] -s SOURCE [-c CONTAINER] [-i IMAGE]
 </span><span class="code-line">
 </span><span class="code-line">optional arguments:
 </span><span class="code-line">  -h, --help            show this help message and exit
@@ -48,7 +52,8 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">                        name of temporary container (default qt_build)
 </span><span class="code-line">  -i IMAGE, --image IMAGE
 </span><span class="code-line">                        name of image (default qt_project)
-</span></code></pre><pre><code class="code-highlight"><span class="code-line">usage: run.py [-h] [--mode MODE] -e EXECUTABLE [-c CONTAINER] [-i IMAGE]
+</span></code></pre>
+<pre><code class="code-highlight"><span class="code-line">usage: run.py [-h] [--mode MODE] -e EXECUTABLE [-c CONTAINER] [-i IMAGE]
 </span><span class="code-line">
 </span><span class="code-line">optional arguments:
 </span><span class="code-line">  -h, --help            show this help message and exit
@@ -59,15 +64,21 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">                        name of container (default qt_app)
 </span><span class="code-line">  -i IMAGE, --image IMAGE
 </span><span class="code-line">                        name of image (default qt_project)
-</span></code></pre><h3 id="building"><a href="#building">Building</a></h3><p>To begin, we must define some environment variables for naming purposes.</p><pre><code class="code-highlight"><span class="code-line">export SRC_PATH=/absolute-path/to/src \
+</span></code></pre>
+<h3 id="building"><a href="#building">Building</a></h3>
+<p>To begin, we must define some environment variables for naming purposes.</p>
+<pre><code class="code-highlight"><span class="code-line">export SRC_PATH=/absolute-path/to/src \
 </span><span class="code-line">  EXECUTABLE=executable_name \
 </span><span class="code-line">  CONTAINER=qt_app \
 </span><span class="code-line">  IMAGE=cs1230_qt_project
-</span></code></pre><ul>
+</span></code></pre>
+<ul>
 <li><code>SRC_PATH</code> specifies the absolute path to your source code (remember to ensure the filepath uses <code>//</code> separators if you&#x27;re on Windows).</li>
 <li><code>EXECUTABLE</code> specifies the name of the executable which will eventually be run. Note that for all CS 1230 assignments, the executable name is exactly the project name specified in the assignment&#x27;s <code>CMakeLists.txt</code> (it is the first thing in the parentheses in <code>project(...)</code>).</li>
 <li><code>CONTAINER</code> and <code>IMAGE</code> can be anything you want. We suggest keeping the defaults below.</li>
-</ul><p>With these next commands, we&#x27;ll actually build the project—this will take your source code, build it, and write that image to a docker image named <code>IMAGE</code>.</p><pre><code class="code-highlight"><span class="code-line">docker run \
+</ul>
+<p>With these next commands, we&#x27;ll actually build the project—this will take your source code, build it, and write that image to a docker image named <code>IMAGE</code>.</p>
+<pre><code class="code-highlight"><span class="code-line">docker run \
 </span><span class="code-line">    --name ${CONTAINER} \
 </span><span class="code-line">    --platform=linux/amd64 \
 </span><span class="code-line">    -v &quot;${SRC_PATH}:/tmp/src&quot; \
@@ -77,7 +88,8 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">docker image rm ${IMAGE}
 </span><span class="code-line">docker commit ${CONTAINER} ${IMAGE}
 </span><span class="code-line">docker container rm ${CONTAINER}
-</span></code></pre><details><summary>Windows Git Bash Version</summary><pre><code class="code-highlight"><span class="code-line">docker run \
+</span></code></pre>
+<details><summary>Windows Git Bash Version</summary><pre><code class="code-highlight"><span class="code-line">docker run \
 </span><span class="code-line">    --name ${CONTAINER} \
 </span><span class="code-line">    --platform=linux/amd64 \
 </span><span class="code-line">    -v &quot;${SRC_PATH}://tmp//src&quot; \
@@ -87,7 +99,12 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">docker image rm ${IMAGE}
 </span><span class="code-line">docker commit ${CONTAINER} ${IMAGE}
 </span><span class="code-line">docker container rm ${CONTAINER}
-</span></code></pre></details><details><summary>What do the above commands actually do?</summary><p><code>--name</code> specifices the name of the container</p><p><code>--platform</code> specifies the architecture the docker container will run on</p><p><code>-v &quot;${SRC_PATH}:/tmp/src&quot;</code> mounts a volume in the container. The files at <code>SRC_PATH</code> (the project source code) will be accessible at <code>/tmp/src</code> within the container</p><p><code>anc2001/cs1230_env:latest</code> is the name of the Docker Image the container is based on</p><p><code>/opt/build_project.sh</code> is the script the docker container will run upon starting</p><p><code>docker image rm ${IMAGE}</code> - deletes the previous image at <code>IMAGE</code></p><p><code>docker commit ${CONTAINER} ${IMAGE}</code> - saves the container as permanent memory at <code>IMAGE</code>, otherwise the compiled executable will disappear after the container is removed</p><p><code>docker container rm ${CONTAINER}</code> - Remove the container</p></details><h3 id="running"><a href="#running">Running</a></h3><h4 id="graphical-output-raster-and-realtime-projects"><a href="#graphical-output-raster-and-realtime-projects">Graphical Output (Raster and Realtime projects)</a></h4><p>This will run the previously build docker image (<code>cs1230_qt_project</code>) in a docker container and connect it to a graphical display accessible within any modern browser at <code>http://localhost:6080</code>:</p><pre><code class="code-highlight"><span class="code-line">docker run \
+</span></code></pre></details>
+<details><summary>What do the above commands actually do?</summary><p><code>--name</code> specifices the name of the container</p><p><code>--platform</code> specifies the architecture the docker container will run on</p><p><code>-v &quot;${SRC_PATH}:/tmp/src&quot;</code> mounts a volume in the container. The files at <code>SRC_PATH</code> (the project source code) will be accessible at <code>/tmp/src</code> within the container</p><p><code>anc2001/cs1230_env:latest</code> is the name of the Docker Image the container is based on</p><p><code>/opt/build_project.sh</code> is the script the docker container will run upon starting</p><p><code>docker image rm ${IMAGE}</code> - deletes the previous image at <code>IMAGE</code></p><p><code>docker commit ${CONTAINER} ${IMAGE}</code> - saves the container as permanent memory at <code>IMAGE</code>, otherwise the compiled executable will disappear after the container is removed</p><p><code>docker container rm ${CONTAINER}</code> - Remove the container</p></details>
+<h3 id="running"><a href="#running">Running</a></h3>
+<h4 id="graphical-output-raster-and-realtime-projects"><a href="#graphical-output-raster-and-realtime-projects">Graphical Output (Raster and Realtime projects)</a></h4>
+<p>This will run the previously build docker image (<code>cs1230_qt_project</code>) in a docker container and connect it to a graphical display accessible within any modern browser at <code>http://localhost:6080</code>:</p>
+<pre><code class="code-highlight"><span class="code-line">docker run \
 </span><span class="code-line">  --platform=linux/amd64 \
 </span><span class="code-line">  -d \
 </span><span class="code-line">  --name ${CONTAINER} \
@@ -95,7 +112,8 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  -p 6080:6080 \
 </span><span class="code-line">  ${IMAGE} \
 </span><span class="code-line">  /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
-</span></code></pre><details><summary>Windows Git Bash Version</summary><pre><code class="code-highlight"><span class="code-line">docker run \
+</span></code></pre>
+<details><summary>Windows Git Bash Version</summary><pre><code class="code-highlight"><span class="code-line">docker run \
 </span><span class="code-line">  --platform=linux/amd64 \
 </span><span class="code-line">  -d \
 </span><span class="code-line">  --name ${CONTAINER} \
@@ -103,7 +121,13 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  -p 6080:6080 \
 </span><span class="code-line">  ${IMAGE} \
 </span><span class="code-line">  //usr//bin//supervisord -c //etc//supervisor//supervisord.conf
-</span></code></pre></details><details><summary>What do the above commands actually do?</summary><p><code>-d</code> means the container runs in detached mode (i.e. in the background).</p><p><code>--env</code> sets the environment variable <code>APP</code> inside the container. The container will by default look at (sentence abruptly ends here, todo @ adrian)</p><p><code>-p</code> opens up a port at 6080 by default, you can change this if you really want by changing the first argument number.</p><p><code>/usr/bin/supervisord -c /etc/supervisor/supervisord.conf</code> is the command to open up a graphical session and expose it at the corresponding port.</p></details><p>The application should now be available at <code>http://localhost:6080</code></p><p>When you&#x27;re done with the docker container you can run <code>docker stop ${CONTAINER}</code> and <code>docker container rm ${CONTAINER}</code></p><h4 id="command-line-ray-projects"><a href="#command-line-ray-projects">Command Line (Ray projects)</a></h4><p>This will open up the previously built image with an interactive terminal session that allows you to run the executable. Since the example is Ray, It will also mount a volume at <code>RESULTS_PATH</code> so that you can see the resulting images.</p><pre><code class="code-highlight"><span class="code-line">export RESULTS_PATH=/path/to/results
+</span></code></pre></details>
+<details><summary>What do the above commands actually do?</summary><p><code>-d</code> means the container runs in detached mode (i.e. in the background).</p><p><code>--env</code> sets the environment variable <code>APP</code> inside the container. By default the <code>APP</code> environment variable is not set. If the <code>APP</code> environment variable points to an invalid path or is empty, no graphical output will show when connected to the localhost (the container will still run)</p><p><code>-p</code> opens up a port at 6080 by default, you can change this if you really want by changing the first argument number.</p><p><code>/usr/bin/supervisord -c /etc/supervisor/supervisord.conf</code> is the command to open up a graphical session and expose it at the corresponding port.</p></details>
+<p>The application should now be available at <code>http://localhost:6080</code></p>
+<p>When you&#x27;re done with the docker container you can run <code>docker stop ${CONTAINER}</code> and <code>docker container rm ${CONTAINER}</code></p>
+<h4 id="command-line-ray-projects"><a href="#command-line-ray-projects">Command Line (Ray projects)</a></h4>
+<p>This will open up the previously built image with an interactive terminal session that allows you to run the executable. Since the example is Ray, It will also mount a volume at <code>RESULTS_PATH</code> so that you can see the resulting images.</p>
+<pre><code class="code-highlight"><span class="code-line">export RESULTS_PATH=/path/to/results
 </span><span class="code-line">
 </span><span class="code-line">docker run \
 </span><span class="code-line">  --rm \
@@ -112,7 +136,8 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  -v &quot;${RESULTS_PATH}:/tmp/results&quot; \
 </span><span class="code-line">  ${IMAGE} \
 </span><span class="code-line">  /bin/bash
-</span></code></pre><details><summary>Windows Git Bash Version</summary><pre><code class="code-highlight"><span class="code-line">export RESULTS_PATH=//path//to//results
+</span></code></pre>
+<details><summary>Windows Git Bash Version</summary><pre><code class="code-highlight"><span class="code-line">export RESULTS_PATH=//path//to//results
 </span><span class="code-line">
 </span><span class="code-line">docker run \
 </span><span class="code-line">  --rm \
@@ -121,11 +146,21 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  -v &quot;${RESULTS_PATH}://tmp//results&quot; \
 </span><span class="code-line">  ${IMAGE} \
 </span><span class="code-line">  //bin//bash
-</span></code></pre></details><details><summary>What do the above commands actually do?</summary><p><code>-it</code> specifies an interactive session</p><p><code>--rm</code> will remove the container when exited</p><p><code>/bin/bash</code> is the command to open up <code>bash</code> upon starting the container</p></details><p><strong>Ray-specific</strong>: Make sure your <code>.ini</code> files point to an output image at <code>/tmp/results</code> so that you can you see your images!</p><h3 id="running-ta-demos"><a href="#running-ta-demos">Running TA demos</a></h3><p>Within the docker image are TA demos for each of the projects. These demos are runnable through the <code>run.py</code> script. Example usage is shown below where <code>executable_name</code> is name of the project you want to show. If the name has a <code>min</code> suffix, it will run a minimum working solution, and a <code>max</code> suffix will run an implementation with extra credit features implemented.</p><pre><code class="code-highlight"><span class="code-line">python3 run.py --demo -e executable_name -i anc2001/cs1230_env:latest
-</span></code></pre><p>Executable name options</p><ul>
+</span></code></pre></details>
+<details><summary>What do the above commands actually do?</summary><p><code>-it</code> specifies an interactive session</p><p><code>--rm</code> will remove the container when exited</p><p><code>/bin/bash</code> is the command to open up <code>bash</code> upon starting the container</p></details>
+<p><strong>Ray-specific</strong>: Make sure your <code>.ini</code> files point to an output image at <code>/tmp/results</code> so that you can you see your images!</p>
+<h3 id="running-ta-demos"><a href="#running-ta-demos">Running TA demos</a></h3>
+<p>Within the docker image are TA demos for each of the projects. These demos are runnable through either the <code>run.py</code> script or the method explained in sections <code>3.2 - 3.3</code>. Example usage is shown below where <code>executable_name</code> is name of the project you want to show. If the name has a <code>min</code> suffix, it will run the minimum working solution, and a <code>max</code> suffix will run an implementation with extra credit features implemented.</p>
+<pre><code class="code-highlight"><span class="code-line">python3 run.py --demo -e executable_name -i anc2001/cs1230_env:latest
+</span></code></pre>
+<p>Executable name options</p>
+<ul>
 <li><code>projects_2d_min</code></li>
 <li><code>projects_2d_max</code></li>
-</ul><p>You may have noticed that the Ray and Realtime project demos are not yet available. TA demos of those projects will be available when they come out!</p><hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></div></main></div>
+</ul>
+<p>If the python script fails, try going through sections <code>3.2 - 3.3</code> again but with the <code>IMAGE</code> enviornment variable set to <code>anc2001/cs1230_env:latest</code>. In the docker run command for running the graphical application in <code>3.3.1</code>, the <code>APP</code> environment variable should instead be set to <code>/demos/executable_name/build/executable_name_prefix</code> (<code>//</code> variant for windows users). An example of this is <code>APP=/demos/projects_2d_min/build/projects_2d</code></p>
+<div class="warning-callout callout"><p>You may have noticed that the Ray and Realtime project demos are not yet available. TA demos of those projects will be available when they come out!</p></div>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/dockerment"}}</script><script type="module" src="/assets/entry-client-routing.33cd5739.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/dockerment.page.1412dc70.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.33cd5739.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/dockerment"}}</script><script type="module" src="/assets/entry-client-routing.2188b0fc.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/dockerment.page.aea75af7.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.2188b0fc.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>
