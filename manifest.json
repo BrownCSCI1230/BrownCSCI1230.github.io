@@ -169,6 +169,15 @@
       "_chunk-b2e2a089.js"
     ]
   },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.c38ebaf7.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
+    ]
+  },
   "pages/labs/index.page.mdx": {
     "file": "assets/pages/labs/index.page.9dbd164a.js",
     "src": "pages/labs/index.page.mdx",
@@ -197,15 +206,6 @@
       "_chunk-903e764a.js",
       "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.c38ebaf7.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
     ]
   },
   "pages/projects/2D/1-algo.page.mdx": {
