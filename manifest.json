@@ -68,6 +68,36 @@
       "assets/index.fab2b1e4.css"
     ]
   },
+  "pages/labs/index.page.mdx": {
+    "file": "assets/pages/labs/index.page.9dbd164a.js",
+    "src": "pages/labs/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js"
+    ]
+  },
+  "pages/labs/lab1.page.mdx": {
+    "file": "assets/pages/labs/lab1.page.1f0b239a.js",
+    "src": "pages/labs/lab1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-b2e2a089.js"
+    ]
+  },
+  "pages/labs/lab2.page.mdx": {
+    "file": "assets/pages/labs/lab2.page.3fce2807.js",
+    "src": "pages/labs/lab2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-903e764a.js",
+      "_chunk-30f40460.js",
+      "_chunk-b2e2a089.js"
+    ]
+  },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
     "file": "assets/pages/docs/advanced-cpp-tutorial.page.057847cc.js",
     "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
@@ -176,36 +206,6 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js"
-    ]
-  },
-  "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.9dbd164a.js",
-    "src": "pages/labs/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
-    ]
-  },
-  "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.1f0b239a.js",
-    "src": "pages/labs/lab1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
-    ]
-  },
-  "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.3fce2807.js",
-    "src": "pages/labs/lab2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-30f40460.js",
-      "_chunk-b2e2a089.js"
     ]
   },
   "pages/projects/2D/1-algo.page.mdx": {
