@@ -5,7 +5,7 @@ import{j as e}from"../chunk-903e764a.js";import{M as s}from"../chunk-b2e2a089.js
 `,e.exports.jsx(o.h2,{id:"usage",children:e.exports.jsx(o.a,{href:"#usage",children:"Usage"})}),`
 `,e.exports.jsx(o.pre,{className:"language-markdown",children:e.exports.jsxs(o.code,{className:"language-markdown code-highlight",children:[e.exports.jsx(o.span,{className:"code-line",children:`Why do you need me
 `}),e.exports.jsx(o.span,{className:"code-line",children:`To tell you explicitly
-`}),e.exports.jsxs(o.span,{className:"code-line highlight-line",children:["how to use ",e.exports.jsx(o.span,{className:"pl-c1",children:"`these things`"}),`
+`}),e.exports.jsxs(o.span,{className:"code-line",children:["how to use ",e.exports.jsx(o.span,{className:"pl-c1",children:"`these things`"}),`
 `]})]})}),`
 `,e.exports.jsx(o.h2,{id:"examples",children:e.exports.jsx(o.a,{href:"#examples",children:"Examples"})}),`
 `,e.exports.jsxs(o.p,{children:["Lorem ipsum dolor sit amet, ",e.exports.jsx(o.code,{children:"consectetur"})," adipiscing elit, sed do eiusmod ",e.exports.jsxs(o.strong,{children:["tempor ",e.exports.jsx(o.code,{children:"incididunt"})," ut"]})," labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",e.exports.jsx(o.code,{children:"nisi"})," ",e.exports.jsx(o.code,{children:"ut"})," aliquip ex ea commodo consequat. Duis aute irure ",e.exports.jsxs(o.em,{children:["dolor in ",e.exports.jsx(o.code,{children:"reprehenderit"})," in"]})," voluptate velit esse cillum dolore eu fugiat nulla ",e.exports.jsx(o.code,{children:"pariatur"}),". Excepteur sint occaecat cupidatat non ",e.exports.jsx(o.code,{children:"proident"}),", sunt in culpa qui officia deserunt mollit anim id est laborum"]}),`

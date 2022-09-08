@@ -147,17 +147,17 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 `})]})}),`
 `,e.exports.jsx(s.h5,{id:"overloading",children:e.exports.jsx(s.a,{href:"#overloading",children:"Overloading"})}),`
 `,e.exports.jsxs(s.p,{children:["Defining multiple functions with the same names, but different type annotations, allows you to do something called ",e.exports.jsx(s.strong,{children:e.exports.jsx(s.em,{children:"overloading"})}),", which you might be familiar with from languages like Java."]}),`
-`,e.exports.jsx(s.pre,{className:"language-cpp",children:e.exports.jsxs(s.code,{className:"language-cpp code-highlight",children:[e.exports.jsxs(s.span,{className:"code-line highlight-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"int"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"int"}),` x) {
+`,e.exports.jsx(s.pre,{className:"language-cpp",children:e.exports.jsxs(s.code,{className:"language-cpp code-highlight",children:[e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"int"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"int"}),` x) {
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-k",children:"return"})," x + ",e.exports.jsx(s.span,{className:"pl-c1",children:"1"}),`;
-`]}),e.exports.jsx(s.span,{className:"code-line",children:`}
+`]}),e.exports.jsx(s.span,{className:"code-line highlight-line",children:`}
 `}),e.exports.jsx(s.span,{className:"code-line",children:`
-`}),e.exports.jsxs(s.span,{className:"code-line highlight-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"double"}),` x) {
+`}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"double"}),` x) {
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-k",children:"return"})," x + ",e.exports.jsx(s.span,{className:"pl-c1",children:"1"}),`;
-`]}),e.exports.jsx(s.span,{className:"code-line",children:`}
+`]}),e.exports.jsx(s.span,{className:"code-line highlight-line",children:`}
 `}),e.exports.jsx(s.span,{className:"code-line",children:`
-`}),e.exports.jsxs(s.span,{className:"code-line highlight-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"float"}),` x)->float {
+`}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"float"}),` x)->float {
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-k",children:"return"})," x + ",e.exports.jsx(s.span,{className:"pl-c1",children:"1"}),`;
-`]}),e.exports.jsx(s.span,{className:"code-line",children:`}
+`]}),e.exports.jsx(s.span,{className:"code-line highlight-line",children:`}
 `}),e.exports.jsx(s.span,{className:"code-line",children:`
 `}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," x = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"42"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:"// calls plusOne<int>"}),`
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," y = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"3"}),".",e.exports.jsx(s.span,{className:"pl-c1",children:"14f"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:"// calls plusOne<float>; note the float literal"}),`
@@ -165,9 +165,9 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 `]})]})}),`
 `,e.exports.jsx(s.h5,{id:"generic-functions",children:e.exports.jsx(s.a,{href:"#generic-functions",children:"Generic Functions"})}),`
 `,e.exports.jsxs(s.p,{children:["We can improve the code in the example above by making our function generic. This is easy to do in C++: we simply change the type of its input parameter to ",e.exports.jsx(s.code,{children:"auto"}),"."]}),`
-`,e.exports.jsx(s.pre,{className:"language-cpp",children:e.exports.jsxs(s.code,{className:"language-cpp code-highlight",children:[e.exports.jsxs(s.span,{className:"code-line highlight-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"auto"}),` x) {
+`,e.exports.jsx(s.pre,{className:"language-cpp",children:e.exports.jsxs(s.code,{className:"language-cpp code-highlight",children:[e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," ",e.exports.jsx(s.span,{className:"pl-en",children:"plusOne"}),"(",e.exports.jsx(s.span,{className:"pl-k",children:"auto"}),` x) {
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:["  ",e.exports.jsx(s.span,{className:"pl-k",children:"return"})," x + ",e.exports.jsx(s.span,{className:"pl-c1",children:"1"}),`;
-`]}),e.exports.jsx(s.span,{className:"code-line",children:`}
+`]}),e.exports.jsx(s.span,{className:"code-line highlight-line",children:`}
 `}),e.exports.jsx(s.span,{className:"code-line",children:`
 `}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," a = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"1230"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:"// a == 1231, instantiates plusOne<int>"}),`
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," b = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"6"}),".",e.exports.jsx(s.span,{className:"pl-c1",children:"5f"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:"// b == 7.5f, instantiates plusOne<float>"}),`
@@ -525,5 +525,5 @@ to the function, and it could lead to serious performance problems!`]}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsxs(s.p,{children:["Congrats on finishing the C++ lab! Now, it's time to get checked off by a TA! If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our ",e.exports.jsx(s.a,{href:"/docs/advanced-cpp-tutorial",children:"advanced C++ tutorial"}),"."]}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 01: Setup & C++" assignment on Gradescope, then get checked off by a TA during lab hours.'}),`
+`,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 1: Setup & C++" assignment on Gradescope, then get checked off by a TA during lab hours.'}),`
 `,e.exports.jsx(a,{})]})]})}function o(n={}){const{wrapper:s}=n.components||{};return s?e.exports.jsx(s,Object.assign({},n,{children:e.exports.jsx(r,n)})):r(n)}export{o as default,c as documentProps};

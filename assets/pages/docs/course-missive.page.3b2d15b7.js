@@ -58,7 +58,7 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"working-locally",children:e.exports.jsx(s.a,{href:"#working-locally",children:"Working Locally"})}),`
 `,e.exports.jsx(s.p,{children:"Everything in this course can be done through the department machines, including remotely via FastX."}),`
-`,e.exports.jsx(s.p,{children:"If you wish to work on your local machine instead, Lab 1 will walk you through setting things up. Note that your device must meet these requirements:"}),`
+`,e.exports.jsx(s.p,{children:"If you wish to work on your local machine instead, lab 1 will walk you through setting things up. Note that your device must meet these requirements:"}),`
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsxs(s.li,{children:["You must be able to ",e.exports.jsx(s.strong,{children:"access Github, Gradescope, and this website"}),";"]}),`
 `,e.exports.jsxs(s.li,{children:["You must also have ",e.exports.jsx(s.strong,{children:"sufficient free space"})," (about 10 GB; and potentially 30 GB more if you're on MacOS and need to install XCode); and"]}),`
@@ -75,7 +75,7 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:["Understand how to create and manipulate raster images by:",`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:"Simulating interactive paintbrush/airbrush effects, and"}),`
-`,e.exports.jsx(s.li,{children:"Applying filters and transformations, minimizing artifacts such as aliasing (a.k.a. \u201Cjaggies\u201D)."}),`
+`,e.exports.jsx(s.li,{children:"Applying filters and transformations, minimizing artifacts such as aliasing (aka \u201Cjaggies\u201D)."}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Be able to implement the raytracing rendering algorithm for producing pseudo-realistic imagery, including:",`
@@ -98,7 +98,7 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `,e.exports.jsxs(s.p,{children:["The full list of CSCI 1230 topics can be found on the ",e.exports.jsx(s.a,{href:"/lectures",children:"lectures"})," page."]}),`
 `,e.exports.jsx(s.h2,{id:"textbook",children:e.exports.jsx(s.a,{href:"#textbook",children:"Textbook"})}),`
 `,e.exports.jsxs(s.p,{children:["The primary text for this course is the most recent edition of ",e.exports.jsx(s.em,{children:"Computer Graphics: Principles and Practice, by John Hughes, Andy van Dam, Morgan McGuire, David Sklar, Jim Foley, Steve Feiner, and Kurt Akeley"}),"."]}),`
-`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"The book is not required"}),", as the lecture slides for CS1230 are nearly comprehensive. These slides do not replace the textbook, but they are the best source of information that is directly relevant to the assignments."]}),`
+`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"The book is not required"}),", as the lecture slides for CS 1230 are nearly comprehensive. These slides do not replace the textbook, but they are the best source of information that is directly relevant to the assignments."]}),`
 `,e.exports.jsx(s.h2,{id:"coursework",children:e.exports.jsx(s.a,{href:"#coursework",children:"Coursework"})}),`
 `,e.exports.jsx(s.h3,{id:"projects",children:e.exports.jsx(s.a,{href:"#projects",children:"Projects"})}),`
 `,e.exports.jsxs(s.p,{children:["There are 6 2-week programming ",e.exports.jsx(s.strong,{children:"projects"}),", divided into three units (raster graphics, raytracing, and realtime graphics). There is also a 2-week ",e.exports.jsx(s.strong,{children:"final project"}),", which is open-ended and may be completed in groups (all other projects must be done individually)."]}),`

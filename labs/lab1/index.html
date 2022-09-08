@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.fab2b1e4.css">
         <meta charset="UTF-8">
         <title>Lab 1 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
@@ -158,17 +158,17 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 </span></code></pre>
 <h5 id="overloading"><a href="#overloading">Overloading</a></h5>
 <p>Defining multiple functions with the same names, but different type annotations, allows you to do something called <strong><em>overloading</em></strong>, which you might be familiar with from languages like Java.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line highlight-line"><span class="pl-k">int</span> <span class="pl-en">plusOne</span>(<span class="pl-k">int</span> x) {
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">int</span> <span class="pl-en">plusOne</span>(<span class="pl-k">int</span> x) {
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
-</span><span class="code-line">}
+</span><span class="code-line highlight-line">}
 </span><span class="code-line">
-</span><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">double</span> x) {
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">double</span> x) {
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
-</span><span class="code-line">}
+</span><span class="code-line highlight-line">}
 </span><span class="code-line">
-</span><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">float</span> x)-&gt;float {
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">float</span> x)-&gt;float {
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
-</span><span class="code-line">}
+</span><span class="code-line highlight-line">}
 </span><span class="code-line">
 </span><span class="code-line"><span class="pl-k">auto</span> x = plusOne(<span class="pl-c1">42</span>); <span class="pl-c">// calls plusOne&lt;int&gt;</span>
 </span><span class="code-line"><span class="pl-k">auto</span> y = plusOne(<span class="pl-c1">3</span>.<span class="pl-c1">14f</span>); <span class="pl-c">// calls plusOne&lt;float&gt;; note the float literal</span>
@@ -176,9 +176,9 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 </span></code></pre>
 <h5 id="generic-functions"><a href="#generic-functions">Generic Functions</a></h5>
 <p>We can improve the code in the example above by making our function generic. This is easy to do in C++: we simply change the type of its input parameter to <code>auto</code>.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line highlight-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">auto</span> x) {
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">plusOne</span>(<span class="pl-k">auto</span> x) {
 </span><span class="code-line">  <span class="pl-k">return</span> x + <span class="pl-c1">1</span>;
-</span><span class="code-line">}
+</span><span class="code-line highlight-line">}
 </span><span class="code-line">
 </span><span class="code-line"><span class="pl-k">auto</span> a = plusOne(<span class="pl-c1">1230</span>); <span class="pl-c">// a == 1231, instantiates plusOne&lt;int&gt;</span>
 </span><span class="code-line"><span class="pl-k">auto</span> b = plusOne(<span class="pl-c1">6</span>.<span class="pl-c1">5f</span>); <span class="pl-c">// b == 7.5f, instantiates plusOne&lt;float&gt;</span>
@@ -536,8 +536,8 @@ to the function, and it could lead to serious performance problems!</p>
 <h2 id="end"><a href="#end">End</a></h2>
 <p>Congrats on finishing the C++ lab! Now, it&#x27;s time to get checked off by a TA! If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our <a href="/docs/advanced-cpp-tutorial">advanced C++ tutorial</a>.</p>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
-<p>Submit your Github repo for this lab to the &quot;Lab 01: Setup &amp; C++&quot; assignment on Gradescope, then get checked off by a TA during lab hours.</p>
+<p>Submit your Github repo for this lab to the &quot;Lab 1: Setup &amp; C++&quot; assignment on Gradescope, then get checked off by a TA during lab hours.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.2188b0fc.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.d916d60a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.2188b0fc.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.58073a53.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.28ed54a8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.58073a53.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>

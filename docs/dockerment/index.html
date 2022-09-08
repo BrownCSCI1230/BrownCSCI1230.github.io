@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.fab2b1e4.css">
         <meta charset="UTF-8">
         <title>Dockerment | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
@@ -9,10 +9,10 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#docker-grading-environment-guide">Docker Grading Environment Guide</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#docker-overview">Docker Overview</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#terminology">Terminology</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#gradescope">Gradescope</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#running-docker-locally">Running Docker Locally</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#convenience-scripts">Convenience Scripts</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#building">Building</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#running">Running</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#graphical-output-raster-and-realtime-projects">Graphical Output (Raster and Realtime projects)</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#command-line-ray-projects">Command Line (Ray projects)</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#running-ta-demos">Running TA demos</a></li></ol></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#docker-grading-environment-guide">Docker Grading Environment Guide</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#docker-overview">Docker Overview</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#terminology">Terminology</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#gradescope">Gradescope</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#running-docker-locally">Running Docker Locally</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#convenience-scripts">Convenience Scripts</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#building-and-running">Building and Running</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#running-ta-demo">Running TA Demo</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#script-usage">Script usage</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#in-case-of-failure-alternative-method-for-running-docker-locally">In Case of Failure: Alternative Method for Running Docker Locally</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#building">Building</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#running">Running</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#graphical-output-raster-and-realtime-projects">Graphical Output (Raster and Realtime projects)</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#command-line-ray-projects">Command Line (Ray projects)</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#running-ta-demos">Running TA demos</a></li></ol></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="docker-grading-environment-guide"><a href="#docker-grading-environment-guide">Docker Grading Environment Guide</a></h1>
-<p>To grade your assignments, we use a class Docker image to compile, build, and run your code. The following sections explain how you might use this Docker image to ensure you see the same results we do.</p>
+<p>To grade your assignments, we use a class Docker image to compile, build, and run your code. The following sections explain how you might use this Docker image to ensure you see the same results we do. Additionally, the class Docker image contains TA demos of class projects. Setting up Docker locally will give you access to the demos independent of the department filesystem!</p>
 <h2 id="docker-overview"><a href="#docker-overview">Docker Overview</a></h2>
 <p>From the Docker <a href="https://docs.docker.com/get-started/overview/" target="_blank" rel="noopener noreferrer">docs</a>:</p>
 <blockquote>
@@ -20,28 +20,54 @@
 </blockquote>
 <p>For the purposes of this class, you can think of Docker as a virtual machine that contains a standardized build environment. <strong>By checking that your code builds and runs in this standardized environment, you can be sure that we can build and run your code as well.</strong></p>
 <h3 id="terminology"><a href="#terminology">Terminology</a></h3>
-<div class="table-wrapper"><table><thead><tr><th align="left">Term</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">Image</td><td align="left">A Docker image is a read-only template for creating a Docker container. An image is only the instructions for how to setup the environment. What is actually being run is a Docker container.</td></tr><tr><td align="left">Container</td><td align="left">A Docker container is a <em>mostly</em> isolated environment in which you can, for instance, build and run applications.</td></tr><tr><td align="left">Volume</td><td align="left">A Docker volume is more or less a portion of your filesystem which can be accessed by a Docker container. Here, we will use it to share files between your host machine and your Docker container.</td></tr></tbody></table></div>
+<div class="table-wrapper"><table><thead><tr><th align="left">Term</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">Image</td><td align="left">A Docker image is a read-only template for creating a Docker container. An image is only the instructions for how to set up the environment. What is actually being run is a Docker container.</td></tr><tr><td align="left">Container</td><td align="left">A Docker container is a <em>mostly</em> isolated environment in which you can, for instance, build and run applications.</td></tr><tr><td align="left">Volume</td><td align="left">A Docker volume is more or less a portion of your filesystem which can be accessed by a Docker container. Here, we will use it to share files between your host machine and your Docker container.</td></tr></tbody></table></div>
 <h2 id="gradescope"><a href="#gradescope">Gradescope</a></h2>
 <p>If you <em>only</em> want to check that your project compiles, each Gradescope assignment has an autograder setup that only checks if the project successfully compiles when you submit. This requires no local setup on your end!</p>
 <h2 id="running-docker-locally"><a href="#running-docker-locally">Running Docker Locally</a></h2>
 <p>Verifying that your code compiles correctly in the Docker environment should be sufficient.
-However, if you <em>really</em> want to ensure that we are seeing the same graphical output that you&#x27;re seeing, you will need to setup Docker locally.</p>
+However, if you <em>really</em> want to ensure that we are seeing the same graphical output that you&#x27;re seeing, or you want access to the TA demos on your machine, you will need to setup Docker locally.</p>
 <ol>
 <li>Get Docker <a href="https://docs.docker.com/get-docker/" target="_blank" rel="noopener noreferrer">here</a>.</li>
-<li>Pull our grading environment with <code>docker pull anc2001/cs1230_env:latest</code>.</li>
+<li>Pull our grading environment with <code>docker pull anc2001/cs1230_env:latest</code>.<!-- -->
+<ul>
+<li>If any of the steps below fail, try pulling the image again as it will receive periodic updates throughout the semester</li>
+</ul>
+</li>
 <li>If you don&#x27;t already have it, get python <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a></li>
 <li>Clone this <a href="https://github.com/BrownCSCI1230/grading_env.git" target="_blank" rel="noopener noreferrer">repo</a> for access to convenience scripts</li>
 </ol>
 <p>The process of using the class environment involves first building the project into a Docker image, and then running that image as either a graphical session, or as an interactive session if you need to run things from the command line.</p>
-<div class="warning-callout callout"><p>If you are on Windows, you must run these commands in <strong>Git Bash</strong> or <strong>Powershell</strong>.</p><p>Additionally, all filepaths must be specified with <code>//</code> (i.e. you must use these as your filepath separators). This includes the path to the source code <code>SRC_PATH</code> and the the other filepaths present in the command. &quot;Windows-specific versions&quot; of some commands below are included in collapsible sections.</p></div>
+<div class="warning-callout callout"><p>If you are on Windows, you must run these commands in <strong>Git Bash</strong> or <strong>Powershell</strong>.</p><p>Additionally, all filepaths must be specified with <code>//</code> (i.e. you must use these as your filepath separators). This includes the path to the source code <code>SRC_PATH</code> and the other filepaths present in the command. &quot;Windows-specific versions&quot; of some commands below are included in collapsible sections.</p></div>
 <h3 id="convenience-scripts"><a href="#convenience-scripts">Convenience Scripts</a></h3>
 <p>Included in the repo you just cloned are two convenience python scripts <code>build.py</code> and <code>run.py</code>. These should abstract away many of the docker commands required to compile and run your code in our standardized environment. Example usage shown below.</p>
-<div class="warning-callout callout"><p>If these scripts fail, try either running the explicit docker command printed out by the script, or following the instructions below.</p></div>
+<h4 id="building-and-running"><a href="#building-and-running">Building and Running</a></h4>
+<p>First build the project. This command will take the source code at the path given, build it, and then write the necessary files to a docker image called <code>qt_project</code> by default.</p>
 <pre><code class="code-highlight"><span class="code-line">python3 build.py -s /path/to/src
-</span><span class="code-line">python3 run.py -e executable_name
 </span></code></pre>
-<p>See <code>3.2 Building</code> for more info on the source path and executable name.</p>
-<p>Script usage</p>
+<ul>
+<li><code>/path/to/src</code> specifies the absolute path to your source code (remember to ensure the filepath uses <code>//</code> separators if you&#x27;re on Windows).</li>
+</ul>
+<p>Next run the project in a Docker container. This will run the previously built docker image <code>qt_project</code> in a docker container called <code>qt_app</code></p>
+<pre><code class="code-highlight"><span class="code-line">python3 run.py -e executable_name
+</span></code></pre>
+<ul>
+<li><code>executable_name</code> specifies the name of the executable which will eventually be run. Note that for all CS 1230 assignments, the executable name is exactly the project name specified in the assignment&#x27;s <code>CMakeLists.txt</code> (it is the first thing in the parentheses in <code>project(...)</code>).</li>
+</ul>
+<h4 id="running-ta-demo"><a href="#running-ta-demo">Running TA Demo</a></h4>
+<p>Within the docker image are TA demos for each of the projects. These demos are available through the <code>run.py</code> script. Example usage is shown below.</p>
+<pre><code class="code-highlight"><span class="code-line">python3 run.py --demo -e executable_name -i anc2001/cs1230_env:latest
+</span></code></pre>
+<ul>
+<li><code>executable_name</code> is the name of the project you want to show. If the name has a <code>min</code> suffix, it will run the minimum working solution, and a <code>max</code> suffix will run an implementation with extra credit features implemented. The executable name options are<!-- -->
+<ul>
+<li><code>projects_2d_min</code></li>
+<li><code>projects_2d_max</code></li>
+</ul>
+</li>
+</ul>
+<div class="warning-callout callout"><p>You may have noticed that the Ray and Realtime project demos are not yet available. TA demos of those projects will be available when their respective projects are released!</p></div>
+<h4 id="script-usage"><a href="#script-usage">Script usage</a></h4>
+<p>Note that <code>CONTAINER</code> and <code>IMAGE</code> can be anything you want. We suggest keeping the defaults, but feel free to change them if you want.</p>
 <pre><code class="code-highlight"><span class="code-line">usage: build.py [-h] -s SOURCE [-c CONTAINER] [-i IMAGE]
 </span><span class="code-line">
 </span><span class="code-line">optional arguments:
@@ -53,11 +79,12 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  -i IMAGE, --image IMAGE
 </span><span class="code-line">                        name of image (default qt_project)
 </span></code></pre>
-<pre><code class="code-highlight"><span class="code-line">usage: run.py [-h] [--mode MODE] -e EXECUTABLE [-c CONTAINER] [-i IMAGE]
+<pre><code class="code-highlight"><span class="code-line">usage: run.py [-h] [--mode MODE] [--demo] -e EXECUTABLE [-c CONTAINER] [-i IMAGE]
 </span><span class="code-line">
 </span><span class="code-line">optional arguments:
 </span><span class="code-line">  -h, --help            show this help message and exit
 </span><span class="code-line">  --mode MODE           either graphical or cli
+</span><span class="code-line">  --demo                Flag to specify running the TA demo
 </span><span class="code-line">  -e EXECUTABLE, --executable EXECUTABLE
 </span><span class="code-line">                        name of executable (required)
 </span><span class="code-line">  -c CONTAINER, --container CONTAINER
@@ -65,18 +92,15 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  -i IMAGE, --image IMAGE
 </span><span class="code-line">                        name of image (default qt_project)
 </span></code></pre>
+<h2 id="in-case-of-failure-alternative-method-for-running-docker-locally"><a href="#in-case-of-failure-alternative-method-for-running-docker-locally">In Case of Failure: Alternative Method for Running Docker Locally</a></h2>
+<p>In case the convenience scripts fail, try the following steps to build and run your code in the standardized environment. The convenience scripts essentially run these commands for you, but in case of failure, working with Docker commands explicitly is more likely to be successful.</p>
 <h3 id="building"><a href="#building">Building</a></h3>
-<p>To begin, we must define some environment variables for naming purposes.</p>
+<p>To begin, we must define some environment variables for naming purposes. These follow the same naming requirements as the convenience scripts.</p>
 <pre><code class="code-highlight"><span class="code-line">export SRC_PATH=/absolute-path/to/src \
 </span><span class="code-line">  EXECUTABLE=executable_name \
 </span><span class="code-line">  CONTAINER=qt_app \
 </span><span class="code-line">  IMAGE=cs1230_qt_project
 </span></code></pre>
-<ul>
-<li><code>SRC_PATH</code> specifies the absolute path to your source code (remember to ensure the filepath uses <code>//</code> separators if you&#x27;re on Windows).</li>
-<li><code>EXECUTABLE</code> specifies the name of the executable which will eventually be run. Note that for all CS 1230 assignments, the executable name is exactly the project name specified in the assignment&#x27;s <code>CMakeLists.txt</code> (it is the first thing in the parentheses in <code>project(...)</code>).</li>
-<li><code>CONTAINER</code> and <code>IMAGE</code> can be anything you want. We suggest keeping the defaults below.</li>
-</ul>
 <p>With these next commands, we&#x27;ll actually build the project—this will take your source code, build it, and write that image to a docker image named <code>IMAGE</code>.</p>
 <pre><code class="code-highlight"><span class="code-line">docker run \
 </span><span class="code-line">    --name ${CONTAINER} \
@@ -100,7 +124,7 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">docker commit ${CONTAINER} ${IMAGE}
 </span><span class="code-line">docker container rm ${CONTAINER}
 </span></code></pre></details>
-<details><summary>What do the above commands actually do?</summary><p><code>--name</code> specifices the name of the container</p><p><code>--platform</code> specifies the architecture the docker container will run on</p><p><code>-v &quot;${SRC_PATH}:/tmp/src&quot;</code> mounts a volume in the container. The files at <code>SRC_PATH</code> (the project source code) will be accessible at <code>/tmp/src</code> within the container</p><p><code>anc2001/cs1230_env:latest</code> is the name of the Docker Image the container is based on</p><p><code>/opt/build_project.sh</code> is the script the docker container will run upon starting</p><p><code>docker image rm ${IMAGE}</code> - deletes the previous image at <code>IMAGE</code></p><p><code>docker commit ${CONTAINER} ${IMAGE}</code> - saves the container as permanent memory at <code>IMAGE</code>, otherwise the compiled executable will disappear after the container is removed</p><p><code>docker container rm ${CONTAINER}</code> - Remove the container</p></details>
+<details><summary>What do the above commands actually do?</summary><p><code>--name</code> specifies the name of the container</p><p><code>--platform</code> specifies the architecture the docker container will run on</p><p><code>-v &quot;${SRC_PATH}:/tmp/src&quot;</code> mounts a volume in the container. The files at <code>SRC_PATH</code> (the project source code) will be accessible at <code>/tmp/src</code> within the container</p><p><code>anc2001/cs1230_env:latest</code> is the name of the Docker Image the container is based on</p><p><code>/opt/build_project.sh</code> is the script the docker container will run upon starting</p><p><code>docker image rm ${IMAGE}</code> - deletes the previous image at <code>IMAGE</code></p><p><code>docker commit ${CONTAINER} ${IMAGE}</code> - saves the container as permanent memory at <code>IMAGE</code>, otherwise the compiled executable will disappear after the container is removed</p><p><code>docker container rm ${CONTAINER}</code> - Remove the container</p></details>
 <h3 id="running"><a href="#running">Running</a></h3>
 <h4 id="graphical-output-raster-and-realtime-projects"><a href="#graphical-output-raster-and-realtime-projects">Graphical Output (Raster and Realtime projects)</a></h4>
 <p>This will run the previously build docker image (<code>cs1230_qt_project</code>) in a docker container and connect it to a graphical display accessible within any modern browser at <code>http://localhost:6080</code>:</p>
@@ -148,19 +172,18 @@ However, if you <em>really</em> want to ensure that we are seeing the same graph
 </span><span class="code-line">  //bin//bash
 </span></code></pre></details>
 <details><summary>What do the above commands actually do?</summary><p><code>-it</code> specifies an interactive session</p><p><code>--rm</code> will remove the container when exited</p><p><code>/bin/bash</code> is the command to open up <code>bash</code> upon starting the container</p></details>
-<p><strong>Ray-specific</strong>: Make sure your <code>.ini</code> files point to an output image at <code>/tmp/results</code> so that you can you see your images!</p>
+<p><strong>Ray-specific</strong>: Make sure your <code>.ini</code> files point to an output image at <code>/tmp/results</code> so that you can see your images!</p>
 <h3 id="running-ta-demos"><a href="#running-ta-demos">Running TA demos</a></h3>
-<p>Within the docker image are TA demos for each of the projects. These demos are runnable through either the <code>run.py</code> script or the method explained in sections <code>3.2 - 3.3</code>. Example usage is shown below where <code>executable_name</code> is name of the project you want to show. If the name has a <code>min</code> suffix, it will run the minimum working solution, and a <code>max</code> suffix will run an implementation with extra credit features implemented.</p>
-<pre><code class="code-highlight"><span class="code-line">python3 run.py --demo -e executable_name -i anc2001/cs1230_env:latest
-</span></code></pre>
-<p>Executable name options</p>
+<p>If the python script fails when running the TA demo, try going through sections <code>4.1 - 4.2</code> again but with</p>
 <ul>
-<li><code>projects_2d_min</code></li>
-<li><code>projects_2d_max</code></li>
+<li><code>IMAGE</code> environment variable set to <code>anc2001/cs1230_env:latest</code>.</li>
+<li>The docker run command for running the graphical application in <code>4.2.1</code> edited. Replace the value of <code>APP</code> with <code>/demos/executable_name/build/executable_name_prefix</code>. For example</li>
 </ul>
-<p>If the python script fails, try going through sections <code>3.2 - 3.3</code> again but with the <code>IMAGE</code> enviornment variable set to <code>anc2001/cs1230_env:latest</code>. In the docker run command for running the graphical application in <code>3.3.1</code>, the <code>APP</code> environment variable should instead be set to <code>/demos/executable_name/build/executable_name_prefix</code> (<code>//</code> variant for windows users). An example of this is <code>APP=/demos/projects_2d_min/build/projects_2d</code></p>
-<div class="warning-callout callout"><p>You may have noticed that the Ray and Realtime project demos are not yet available. TA demos of those projects will be available when they come out!</p></div>
+<pre><code class="code-highlight"><span class="code-line">--env=&quot;APP=/tmp/build/${EXECUTABLE}&quot;
+</span><span class="code-line">  ===&gt;
+</span><span class="code-line">--env=&quot;APP=/demos/projects_2d_min/build/projects_2d&quot;
+</span></code></pre>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/dockerment"}}</script><script type="module" src="/assets/entry-client-routing.2188b0fc.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/dockerment.page.aea75af7.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.2188b0fc.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/dockerment"}}</script><script type="module" src="/assets/entry-client-routing.58073a53.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/dockerment.page.7bac2b4c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.58073a53.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>

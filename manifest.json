@@ -1,6 +1,6 @@
 {
   "junk/code-blocks.page.mdx": {
-    "file": "assets/junk/code-blocks.page.cf90c991.js",
+    "file": "assets/junk/code-blocks.page.5048101e.js",
     "src": "junk/code-blocks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -29,7 +29,7 @@
     ]
   },
   "junk/inline-code.page.mdx": {
-    "file": "assets/junk/inline-code.page.bdc1b503.js",
+    "file": "assets/junk/inline-code.page.de4fed3b.js",
     "src": "junk/inline-code.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -65,11 +65,11 @@
       "_chunk-903e764a.js"
     ],
     "css": [
-      "assets/index.a5cf6447.css"
+      "assets/index.fab2b1e4.css"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
-    "file": "assets/pages/docs/advanced-cpp-tutorial.page.9dcb2cc0.js",
+    "file": "assets/pages/docs/advanced-cpp-tutorial.page.057847cc.js",
     "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -99,7 +99,7 @@
     ]
   },
   "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.6f97c707.js",
+    "file": "assets/pages/docs/course-missive.page.3b2d15b7.js",
     "src": "pages/docs/course-missive.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -109,7 +109,7 @@
     ]
   },
   "pages/docs/dockerment.page.mdx": {
-    "file": "assets/pages/docs/dockerment.page.aea75af7.js",
+    "file": "assets/pages/docs/dockerment.page.7bac2b4c.js",
     "src": "pages/docs/dockerment.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -119,7 +119,7 @@
     ]
   },
   "pages/docs/github-gradescope-guide.page.mdx": {
-    "file": "assets/pages/docs/github-gradescope-guide.page.2b942874.js",
+    "file": "assets/pages/docs/github-gradescope-guide.page.93b06ec2.js",
     "src": "pages/docs/github-gradescope-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -150,7 +150,7 @@
     ]
   },
   "pages/docs/scenefile-documentation.page.mdx": {
-    "file": "assets/pages/docs/scenefile-documentation.page.0d756182.js",
+    "file": "assets/pages/docs/scenefile-documentation.page.a07bd847.js",
     "src": "pages/docs/scenefile-documentation.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -160,7 +160,7 @@
     ]
   },
   "pages/docs/xcode-CLT-installation-guide.page.mdx": {
-    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.84dfa44f.js",
+    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.193ff8d0.js",
     "src": "pages/docs/xcode-CLT-installation-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,7 +179,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.d916d60a.js",
+    "file": "assets/pages/labs/lab1.page.28ed54a8.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -189,7 +189,7 @@
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.835a0eaf.js",
+    "file": "assets/pages/labs/lab2.page.6573b6e6.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -219,18 +219,18 @@
     ]
   },
   "pages/projects/2D/1.page.mdx": {
-    "file": "assets/pages/projects/2D/1.page.f95bde89.js",
+    "file": "assets/pages/projects/2D/1.page.f8cf409f.js",
     "src": "pages/projects/2D/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js",
-      "_chunk-30f40460.js"
+      "_chunk-30f40460.js",
+      "_chunk-b2e2a089.js"
     ]
   },
   "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.433b2fed.js",
+    "file": "assets/pages/projects/ray/1-algo.page.ed8fc60c.js",
     "src": "pages/projects/ray/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -252,7 +252,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.2188b0fc.js",
+    "file": "assets/entry-client-routing.58073a53.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -288,7 +288,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.5eaf1960.js",
+    "file": "assets/entry-server-routing.12582d0c.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -346,7 +346,7 @@
     "src": "renderer/_default.page.server.jsx?extractStyles&lang.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.a5cf6447.css"
+      "assets/index.fab2b1e4.css"
     ]
   }
 }

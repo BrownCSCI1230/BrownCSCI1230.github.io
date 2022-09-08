@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.a5cf6447.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.fab2b1e4.css">
         <meta charset="UTF-8">
         <title>Project 1 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
@@ -15,7 +15,7 @@
 <p><a href="https://classroom.github.com/a/HxsSZOhE" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a></p>
 <p>You can find the algo for this project <a href="/projects/2D/1-algo">here</a>.</p>
 <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
-<p>Computer graphics often deals with digital images, which are two-dimensional arrays of color data (the pixels on the screen). In <a href="/labs/lab2">Lab 02: Pencil</a> you have already started learning how we can manipulate the values in these arrays to create your own digital images. In this assignment, you will be building upon that to write a painting application that features multiple types of brushes that you can use to paint on a 2D canvas, similar to applications such as MS Paint and Photoshop.</p>
+<p>Computer graphics often deals with digital images, which are two-dimensional arrays of color data (the pixels on the screen). In <a href="/labs/lab2">Lab 2: Pencils</a> you have already started learning how we can manipulate the values in these arrays to create your own digital images. In this assignment, you will be building upon that to write a painting application that features multiple types of brushes that you can use to paint on a 2D canvas, similar to applications such as MS Paint and Photoshop.</p>
 <h2 id="requirements"><a href="#requirements">Requirements</a></h2>
 <h3 id="color-brushes"><a href="#color-brushes">Color Brushes</a></h3>
 <p>You will implement 3 color brushes</p>
@@ -43,7 +43,7 @@ Letting <span class="math math-inline"><mjx-container className="MathJax" jax="S
 <p>All of your brushes should be implemented using masks. This means that each time the mouse is clicked, you should not be finding the distance of every pixel from the click coordinates and comparing it to the radius to calculate how to color it. Instead, we use masks to store a brush&#x27;s distribution of color so that each time you need to put color down on the canvas, you can just index into the brush&#x27;s mask to figure out how much color the brush paints there.</p>
 <p>Masks are arrays that store brush opacity values between 0 and 1 for the bounded region of the brush. For example, a constant brush with a radius of 3 might have a mask that looks like this, where 1 means the final color of the pixel is the brush color and 0 means there is no brush color and the existing canvas color remains unmodified:</p>
 <figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><img src="/projects/2D/1/mask.png" alt="TODO"/></div><figcaption><strong>Figure 2: </strong>Constant brush mask array example</figcaption></figure>
-<p>Keep in mind that brushes must always have an odd width and height (2 * radius + 1) and that for efficiency, you probably don&#x27;t want to use a 2D array for your mask (recall how we stored our canvas in Lab 02).</p>
+<p>Keep in mind that brushes must always have an odd width and height (2 * radius + 1) and that for efficiency, you probably don&#x27;t want to use a 2D array for your mask (recall how we stored our canvas in lab 2).</p>
 <p>Consider also what you need to do when the radius of the brush changes. You will be responsible for updating your brush when a change is made in the GUI that affects the mask.</p>
 <h4 id="mixing-colors"><a href="#mixing-colors">Mixing Colors</a></h4>
 <p>Brush masks store a range of values between 0 and 1. These values indicate how much of the selected brush color should be mixed with the canvas&#x27;s previous color to produce the painted result at each pixel that the brush covers. So a value of 0.6 in the mask means that the resulting color of the canvas pixel would be 0.6 times the brush color added to 0.4 times the previous canvas color at that pixel.</p>
@@ -62,8 +62,8 @@ Letting <span class="math math-inline"><mjx-container className="MathJax" jax="S
 <p>How you choose to create your brush mask is entirely up to you for this project. We have not provided you with any stencil for this, but you should think about how to best design your code.</p>
 <p>Think about what member variables you should store when generating and updating the mask as the parameters in the GUI are modified. Also, consider when you need to update the mask as you should attempt to minimize how often you are regenerating your mask.</p>
 <h3 id="canvas2d"><a href="#canvas2d">Canvas2D</a></h3>
-<p>Canvas2D is our implementation of the 2D canvas that you will be working with to paint with your brushes. You should already be somewhat familiar with this and our representation of the canvas as a 1D vector of RGBA structs from Lab 02.</p>
-<p>Similar to Lab 02, you will need to index into the array and modify the color values to paint on the canvas. However, this time you will not just be changing pixel values one by one--you will need to repeatedly paint many pixels using a brush mask. This will require more generalized code that can modify the canvas for any mask size, distribution, brush color, and coordinates where the painting is occurring.</p>
+<p>Canvas2D is our implementation of the 2D canvas that you will be working with to paint with your brushes. You should already be somewhat familiar with this and our representation of the canvas as a 1D vector of RGBA structs from lab 2.</p>
+<p>Similar to lab 2, you will need to index into the array and modify the color values to paint on the canvas. However, this time you will not just be changing pixel values one by one--you will need to repeatedly paint many pixels using a brush mask. This will require more generalized code that can modify the canvas for any mask size, distribution, brush color, and coordinates where the painting is occurring.</p>
 <h4 id="updating-the-canvas"><a href="#updating-the-canvas">Updating the Canvas</a></h4>
 <p>Updating the RGBA vector that stores the canvas data does not automatically update the canvas&#x27;s appearance in the UI. You need to tell the canvas when there has been a change that needs to be displayed. You can do this by calling the <code>displayImage()</code> function in Canvas2D that we have provided you, which updates the UI to display the current contents of the canvas&#x27;s RGBA vector.</p>
 <h4 id="2d-coordinates-to-1d-index"><a href="#2d-coordinates-to-1d-index">2D Coordinates to 1D Index</a></h4>
@@ -252,5 +252,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/2D/1"}}</script><script type="module" src="/assets/entry-client-routing.2188b0fc.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/2D/1.page.f95bde89.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.2188b0fc.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/2D/1"}}</script><script type="module" src="/assets/entry-client-routing.58073a53.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/2D/1.page.f8cf409f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-30f40460.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.58073a53.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>

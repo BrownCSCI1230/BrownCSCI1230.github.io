@@ -29,9 +29,9 @@ import{j as e}from"../../chunk-903e764a.js";import{I as o}from"../../chunk-30f40
 `,e.exports.jsx(s.h2,{id:"handing-in-assignments",children:e.exports.jsx(s.a,{href:"#handing-in-assignments",children:"Handing in Assignments"})}),`
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsx(s.li,{children:"Navigate to your repository on GitHub to verify that your changes have been properly pushed."}),`
-`,e.exports.jsx(s.li,{children:"Once you are satisfied with the state of your repository, navigate to the CS1230 course on Gradescope."}),`
+`,e.exports.jsx(s.li,{children:"Once you are satisfied with the state of your repository, navigate to the CS 1230 course on Gradescope."}),`
 `]}),`
-`,e.exports.jsx(o,{images:[{src:"/docs/github-gradescope-guide/gradescope_course.png",alt:"TODO"}],figNumber:5,figCaption:"CS1230 on Gradescope"}),`
+`,e.exports.jsx(o,{images:[{src:"/docs/github-gradescope-guide/gradescope_course.png",alt:"TODO"}],figNumber:5,figCaption:"CS 1230 on Gradescope"}),`
 `,e.exports.jsxs(s.ol,{start:"3",children:[`
 `,e.exports.jsx(s.li,{children:"Click on the assignment you'd like to hand in."}),`
 `]}),`
