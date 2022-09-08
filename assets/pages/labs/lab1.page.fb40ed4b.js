@@ -91,7 +91,7 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 `,e.exports.jsx(s.h4,{id:"accessing-things-in-a-namespace",children:e.exports.jsx(s.a,{href:"#accessing-things-in-a-namespace",children:"Accessing Things in a Namespace"})}),`
 `,e.exports.jsxs(s.p,{children:["Imported functionality is usually grouped under a ",e.exports.jsx(s.code,{children:"namespace"}),", and we can access things within a namespace using the double-colon (",e.exports.jsx(s.code,{children:"::"}),") operator. For example, since we included ",e.exports.jsx(s.code,{children:"iostream"})," in our Hello World program, we now have access to the following things in the ",e.exports.jsx(s.code,{children:"std"})," namespace:"]}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.code,{children:"std::cout"}),": prints things to ",e.exports.jsx(s.code,{children:"stdout"}),', i.e. the terminal or the "output" window in Qt Creator']}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.code,{children:"std::cout"}),": prints things to ",e.exports.jsx(s.code,{children:"stdout"}),', i.e. the terminal or the "output" window in Qt Creator.']}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.code,{children:"std::endl"}),": inserts a newline character and flushes the output stream."]}),`
 `]}),`
 `,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.code,{children:"std::cout"})," is usually used in tandem with the ",e.exports.jsxs(s.a,{href:"https://cplusplus.com/reference/ostream/ostream/operator%3C%3C#example",target:"_blank",rel:"noopener noreferrer",children:[e.exports.jsx(s.em,{children:"insertion"})," operator"]})," (",e.exports.jsx(s.code,{children:"<<"}),"). This inserts characters into the current output stream, and it works like string concatenation with ",e.exports.jsx(s.code,{children:"+"})," in some languages."]}),`
@@ -163,7 +163,7 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 `]}),e.exports.jsx(s.span,{className:"code-line",children:`}
 `}),e.exports.jsx(s.span,{className:"code-line",children:`
 `}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," x = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"42"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:"// calls plusOne<int>"}),`
-`]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," y = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"3"}),".",e.exports.jsx(s.span,{className:"pl-c1",children:"14f"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:"// calls plusOne<float>; note the float literal"}),`
+`]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," y = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"3"}),".",e.exports.jsx(s.span,{className:"pl-c1",children:"14f"}),"); ",e.exports.jsx(s.span,{className:"pl-c",children:'// calls plusOne<float>; note the float literal indicated by the letter "f"'}),`
 `]}),e.exports.jsxs(s.span,{className:"code-line",children:[e.exports.jsx(s.span,{className:"pl-k",children:"auto"})," z = plusOne(",e.exports.jsx(s.span,{className:"pl-c1",children:"2.71"}),");  ",e.exports.jsx(s.span,{className:"pl-c",children:"// calls plusOne<double>"}),`
 `]})]})}),`
 `,e.exports.jsx(s.h5,{id:"generic-functions",children:e.exports.jsx(s.a,{href:"#generic-functions",children:"Generic Functions"})}),`
@@ -529,7 +529,7 @@ to the function, and it could lead to serious performance problems!`]}),`
 `]}),e.exports.jsxs(s.p,{children:["Print the results after ",e.exports.jsx(s.code,{children:"doubleEachElement"})," calls, and see if it matches your expectation!"]})]}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Congrats on finishing the C++ lab! Now, it's time to get checked off by a TA."}),`
-`,e.exports.jsxs(s.p,{children:["If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our ",e.exports.jsx(s.a,{href:"/docs/advanced-cpp-tutorial",children:"advanced C++ tutorial"}),"."]}),`
+`,e.exports.jsx(s.p,{children:"If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our advanced C++ tutorial coming soon!"}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
 `,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 1: Setup & C++" assignment on Gradescope, then get checked off by a TA during lab hours.'}),`
 `,e.exports.jsx(a,{})]})]})}function o(n={}){const{wrapper:s}=n.components||{};return s?e.exports.jsx(s,Object.assign({},n,{children:e.exports.jsx(r,n)})):r(n)}export{o as default,c as documentProps};
