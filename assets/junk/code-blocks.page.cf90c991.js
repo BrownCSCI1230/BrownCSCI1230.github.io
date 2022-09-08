@@ -5,19 +5,19 @@ import{j as s}from"../chunk-903e764a.js";import{M as a}from"../chunk-b2e2a089.js
 `,s.exports.jsx(e.h2,{id:"usage",children:s.exports.jsx(e.a,{href:"#usage",children:"Usage"})}),`
 `,s.exports.jsx(e.h3,{id:"specifying-a-language",children:s.exports.jsx(e.a,{href:"#specifying-a-language",children:"Specifying A Language"})}),`
 `,s.exports.jsx(e.p,{children:s.exports.jsx(e.strong,{children:"Source code:"})}),`
-`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
+`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"I'm plain text inside a code block."}),`
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]}),s.exports.jsx(e.span,{className:"code-line",children:`
-`}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```golang"}),`
+`}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```golang"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-k",children:"func"})," ",s.exports.jsx(e.span,{className:"pl-en",children:"main"}),`() {
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["  fmt.",s.exports.jsx(e.span,{className:"pl-c1",children:"Println"}),"(",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:'"'}),"Hello, \u4E16\u754C",s.exports.jsx(e.span,{className:"pl-pds",children:'"'})]}),`)
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:["  fmt.",s.exports.jsx(e.span,{className:"pl-c1",children:"Println"}),"(",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:'"'}),"Hello, \u4E16\u754C",s.exports.jsx(e.span,{className:"pl-pds",children:'"'})]}),`)
 `]}),s.exports.jsx(e.span,{className:"code-line",children:`}
 `}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]}),s.exports.jsx(e.span,{className:"code-line",children:`
-`}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```javascript"}),`
+`}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```javascript"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-en",children:"console"}),".",s.exports.jsx(e.span,{className:"pl-c1",children:"log"}),"(",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:"'"}),"Hello, world!",s.exports.jsx(e.span,{className:"pl-pds",children:"'"})]}),`)
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]})]})}),`
 `,s.exports.jsx(e.p,{children:s.exports.jsx(e.strong,{children:"Output:"})}),`
 `,s.exports.jsx(e.pre,{children:s.exports.jsx(e.code,{className:"code-highlight",children:s.exports.jsx(e.span,{className:"code-line",children:`I'm plain text inside a code block.
@@ -30,38 +30,38 @@ import{j as s}from"../chunk-903e764a.js";import{M as a}from"../chunk-b2e2a089.js
 `]})})}),`
 `,s.exports.jsx(e.h3,{id:"highlighting-lines",children:s.exports.jsx(e.a,{href:"#highlighting-lines",children:"Highlighting Lines"})}),`
 `,s.exports.jsx(e.p,{children:s.exports.jsx(e.strong,{children:"Source code:"})}),`
-`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```markdown {1, 3-4}"}),`
+`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```markdown {1, 3-4}"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"1. \u{1F31D} I will be highlighted"}),`
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"2. \u{1F31A} I will not"}),`
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"2. \u{1F31A} I will not"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"3. \u{1F31D} We will both..."}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"4. \u{1F31D} ...be highlighted!"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]}),s.exports.jsx(e.span,{className:"code-line",children:`
-`}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```{1}"}),`
-`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"This will not work!"}),`
+`}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```{1}"}),`
+`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"This will not work!"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"Markdown always expects the language first, after the backticks."}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]})]})}),`
 `,s.exports.jsx(e.p,{children:s.exports.jsx(e.strong,{children:"Output:"})}),`
-`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-v",children:"1."}),` \u{1F31D} I will be highlighted
+`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-v",children:"1."}),` \u{1F31D} I will be highlighted
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-v",children:"2."}),` \u{1F31A} I will not
 `]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-v",children:"3."}),` \u{1F31D} We will both...
-`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-v",children:"4."}),` \u{1F31D} ...be highlighted!
+`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-v",children:"4."}),` \u{1F31D} ...be highlighted!
 `]})]})}),`
 `,s.exports.jsx(e.pre,{children:s.exports.jsxs(e.code,{className:"language-{1} code-highlight",children:[s.exports.jsx(e.span,{className:"code-line",children:`This will not work!
 `}),s.exports.jsx(e.span,{className:"code-line",children:`Markdown always expects the language first, after the backticks.
 `})]})}),`
 `,s.exports.jsx(e.h3,{id:"showing-line-numbers",children:s.exports.jsx(e.a,{href:"#showing-line-numbers",children:"Showing Line Numbers"})}),`
 `,s.exports.jsx(e.p,{children:s.exports.jsx(e.strong,{children:"Source code:"})}),`
-`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```haiku showLineNumbers"}),`
+`,s.exports.jsx(e.pre,{className:"language-markdown",children:s.exports.jsxs(e.code,{className:"language-markdown code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```haiku showLineNumbers"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"This feature is great"}),`
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"for highlighting certain lines"}),`
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"for highlighting certain lines"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"in your stencil code."}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`
 `]}),s.exports.jsx(e.span,{className:"code-line",children:`
-`}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```javascript showLineNumbers(123)"}),`
+`}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```javascript showLineNumbers(123)"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"// Here is some code deep in the stencil code"}),`
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"try {"}),`
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"try {"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"  settingItTo(wumbo)"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"}"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:[s.exports.jsx(e.span,{className:"pl-c1",children:"```"}),`

@@ -16,24 +16,24 @@
 <h2 id="basic-structure"><a href="#basic-structure">Basic Structure</a></h2>
 <p>The structure of the scenefile is organized as a declaration of the global data, camera, lights, and objects. Scenes are specified in <a href="https://en.wikipedia.org/wiki/XML" target="_blank" rel="noopener noreferrer">xml</a> format. The general format of the file is as follows:</p>
 <pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">scenefile</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">globaldata</span>&gt;
-</span><span class="code-line">    ...
+</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">globaldata</span>&gt;
+</span><span class="code-line highlight-line">    ...
 </span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">globaldata</span>&gt;
-</span><span class="code-line highlight-line">
+</span><span class="code-line">
 </span><span class="code-line highlight-line">	&lt;<span class="pl-ent">cameradata</span>&gt;
-</span><span class="code-line">		...
+</span><span class="code-line highlight-line">		...
 </span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">cameradata</span>&gt;
-</span><span class="code-line highlight-line">
+</span><span class="code-line">
 </span><span class="code-line highlight-line">	&lt;<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line">		...
+</span><span class="code-line highlight-line">		...
 </span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">lightdata</span>&gt;
 </span><span class="code-line highlight-line">	...
 </span><span class="code-line highlight-line">	&lt;<span class="pl-ent">lightdata</span>&gt;
 </span><span class="code-line highlight-line">		...
 </span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line highlight-line">
+</span><span class="code-line">
 </span><span class="code-line highlight-line">	&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">		&lt;<span class="pl-ent">transblock</span>&gt;
+</span><span class="code-line highlight-line">		&lt;<span class="pl-ent">transblock</span>&gt;
 </span><span class="code-line highlight-line">			<span class="pl-c">&lt;!--transformations--&gt;</span>
 </span><span class="code-line highlight-line">			&lt;<span class="pl-ent">object</span>&gt;
 </span><span class="code-line highlight-line">				...
@@ -45,7 +45,7 @@
 </span><span class="code-line highlight-line">	&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span>&gt;
 </span><span class="code-line highlight-line">		...
 </span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line highlight-line">&lt;/<span class="pl-ent">scenefile</span>&gt;
+</span><span class="code-line">&lt;/<span class="pl-ent">scenefile</span>&gt;
 </span></code></pre>
 <p>The value types for each field in this documentation are defined as follows where <code>value</code> is your value for that field. <strong>Note</strong> that each value must be <strong>enclosed in quotation marks</strong> such as <code>&quot;0.7&quot;</code> or <code>&quot;root&quot;</code>. <strong>Note</strong> that all angle values are expected to be in <strong>degrees</strong>.</p>
 <ul>
@@ -238,5 +238,5 @@ Every point light should define a <code>position</code>, its actual position of 
 <p>This format is not as all-encompassing as it could be, but this is intentional as one of the major aims is for it to be simple to parse.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenefile-documentation"}}</script><script type="module" src="/assets/entry-client-routing.58073a53.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenefile-documentation.page.a07bd847.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.58073a53.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenefile-documentation"}}</script><script type="module" src="/assets/entry-client-routing.9c976383.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenefile-documentation.page.c0378967.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.16997ad8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.9c976383.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>

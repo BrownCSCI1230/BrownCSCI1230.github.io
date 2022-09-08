@@ -1,6 +1,6 @@
 {
   "junk/code-blocks.page.mdx": {
-    "file": "assets/junk/code-blocks.page.5048101e.js",
+    "file": "assets/junk/code-blocks.page.cf90c991.js",
     "src": "junk/code-blocks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -29,7 +29,7 @@
     ]
   },
   "junk/inline-code.page.mdx": {
-    "file": "assets/junk/inline-code.page.de4fed3b.js",
+    "file": "assets/junk/inline-code.page.bdc1b503.js",
     "src": "junk/inline-code.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -150,7 +150,7 @@
     ]
   },
   "pages/docs/scenefile-documentation.page.mdx": {
-    "file": "assets/pages/docs/scenefile-documentation.page.a07bd847.js",
+    "file": "assets/pages/docs/scenefile-documentation.page.c0378967.js",
     "src": "pages/docs/scenefile-documentation.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,7 +179,7 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.28ed54a8.js",
+    "file": "assets/pages/labs/lab1.page.1f0b239a.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -189,7 +189,7 @@
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.6573b6e6.js",
+    "file": "assets/pages/labs/lab2.page.3fce2807.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -252,7 +252,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.58073a53.js",
+    "file": "assets/entry-client-routing.9c976383.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -288,7 +288,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.12582d0c.js",
+    "file": "assets/entry-server-routing.13441f08.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

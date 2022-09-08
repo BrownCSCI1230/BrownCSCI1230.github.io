@@ -5,24 +5,24 @@ import{j as s}from"../../chunk-903e764a.js";import{M as n}from"../../chunk-b2e2a
 `,s.exports.jsx(e.h2,{id:"basic-structure",children:s.exports.jsx(e.a,{href:"#basic-structure",children:"Basic Structure"})}),`
 `,s.exports.jsxs(e.p,{children:["The structure of the scenefile is organized as a declaration of the global data, camera, lights, and objects. Scenes are specified in ",s.exports.jsx(e.a,{href:"https://en.wikipedia.org/wiki/XML",target:"_blank",rel:"noopener noreferrer",children:"xml"})," format. The general format of the file is as follows:"]}),`
 `,s.exports.jsx(e.pre,{className:"language-xml",children:s.exports.jsxs(e.code,{className:"language-xml code-highlight",children:[s.exports.jsxs(e.span,{className:"code-line",children:["<",s.exports.jsx(e.span,{className:"pl-ent",children:"scenefile"}),`>
-`]}),s.exports.jsxs(e.span,{className:"code-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"globaldata"}),`>
-`]}),s.exports.jsx(e.span,{className:"code-line",children:`    ...
+`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"globaldata"}),`>
+`]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`    ...
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	</",s.exports.jsx(e.span,{className:"pl-ent",children:"globaldata"}),`>
-`]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`
+`]}),s.exports.jsx(e.span,{className:"code-line",children:`
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"cameradata"}),`>
-`]}),s.exports.jsx(e.span,{className:"code-line",children:`		...
+`]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`		...
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	</",s.exports.jsx(e.span,{className:"pl-ent",children:"cameradata"}),`>
-`]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`
+`]}),s.exports.jsx(e.span,{className:"code-line",children:`
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"lightdata"}),`>
-`]}),s.exports.jsx(e.span,{className:"code-line",children:`		...
+`]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`		...
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	</",s.exports.jsx(e.span,{className:"pl-ent",children:"lightdata"}),`>
 `]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`	...
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"lightdata"}),`>
 `]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`		...
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	</",s.exports.jsx(e.span,{className:"pl-ent",children:"lightdata"}),`>
-`]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`
+`]}),s.exports.jsx(e.span,{className:"code-line",children:`
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"object"})," ",s.exports.jsx(e.span,{className:"pl-e",children:"type"}),"=",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:'"'}),"tree",s.exports.jsx(e.span,{className:"pl-pds",children:'"'})]})," ",s.exports.jsx(e.span,{className:"pl-e",children:"name"}),"=",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:'"'}),"value",s.exports.jsx(e.span,{className:"pl-pds",children:'"'})]}),`>
-`]}),s.exports.jsxs(e.span,{className:"code-line",children:["		<",s.exports.jsx(e.span,{className:"pl-ent",children:"transblock"}),`>
+`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["		<",s.exports.jsx(e.span,{className:"pl-ent",children:"transblock"}),`>
 `]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["			",s.exports.jsx(e.span,{className:"pl-c",children:"<!--transformations-->"}),`
 `]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["			<",s.exports.jsx(e.span,{className:"pl-ent",children:"object"}),`>
 `]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`				...
@@ -34,7 +34,7 @@ import{j as s}from"../../chunk-903e764a.js";import{M as n}from"../../chunk-b2e2a
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	<",s.exports.jsx(e.span,{className:"pl-ent",children:"object"})," ",s.exports.jsx(e.span,{className:"pl-e",children:"type"}),"=",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:'"'}),"tree",s.exports.jsx(e.span,{className:"pl-pds",children:'"'})]})," ",s.exports.jsx(e.span,{className:"pl-e",children:"name"}),"=",s.exports.jsxs(e.span,{className:"pl-s",children:[s.exports.jsx(e.span,{className:"pl-pds",children:'"'}),"value",s.exports.jsx(e.span,{className:"pl-pds",children:'"'})]}),`>
 `]}),s.exports.jsx(e.span,{className:"code-line highlight-line",children:`		...
 `}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["	</",s.exports.jsx(e.span,{className:"pl-ent",children:"object"}),`>
-`]}),s.exports.jsxs(e.span,{className:"code-line highlight-line",children:["</",s.exports.jsx(e.span,{className:"pl-ent",children:"scenefile"}),`>
+`]}),s.exports.jsxs(e.span,{className:"code-line",children:["</",s.exports.jsx(e.span,{className:"pl-ent",children:"scenefile"}),`>
 `]})]})}),`
 `,s.exports.jsxs(e.p,{children:["The value types for each field in this documentation are defined as follows where ",s.exports.jsx(e.code,{children:"value"})," is your value for that field. ",s.exports.jsx(e.strong,{children:"Note"})," that each value must be ",s.exports.jsx(e.strong,{children:"enclosed in quotation marks"})," such as ",s.exports.jsx(e.code,{children:'"0.7"'})," or ",s.exports.jsx(e.code,{children:'"root"'}),". ",s.exports.jsx(e.strong,{children:"Note"})," that all angle values are expected to be in ",s.exports.jsx(e.strong,{children:"degrees"}),"."]}),`
 `,s.exports.jsxs(e.ul,{children:[`

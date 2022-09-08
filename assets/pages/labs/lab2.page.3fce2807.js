@@ -185,7 +185,7 @@ time-consuming re-build, which can be very annoying when developing or debugging
 `,n.exports.jsxs(e.li,{children:["As before, your command line argument should be: ",n.exports.jsx(e.code,{children:"color"}),"."]}),`
 `]})]}),`
 `,n.exports.jsx(e.h2,{id:"end",children:n.exports.jsx(e.a,{href:"#end",children:"End"})}),`
-`,n.exports.jsx(e.p,{children:"Congrats on finishing the Pencils lab! Now, it's time to get checked off by a TA! Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)) and your pencil."}),`
+`,n.exports.jsx(e.p,{children:"Congrats on finishing the Pencils lab! Now, it's time to get checked off by a TA. Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)) and your pencil."}),`
 `,n.exports.jsx(e.h2,{id:"submission",children:n.exports.jsx(e.a,{href:"#submission",children:"Submission"})}),`
 `,n.exports.jsx(e.p,{children:'Submit your Github repo for this lab to the "Lab 2: Pencils" assignment on Gradescope, then get checked off by a TA during lab hours.'}),`
 `,n.exports.jsx(fs,{}),n.exports.jsx(e.style,{children:`
