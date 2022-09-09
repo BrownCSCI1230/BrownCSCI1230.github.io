@@ -99,7 +99,7 @@
     ]
   },
   "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.3b2d15b7.js",
+    "file": "assets/pages/docs/course-missive.page.eb365c19.js",
     "src": "pages/docs/course-missive.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,12 +179,13 @@
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.8956ac62.js",
+    "file": "assets/pages/labs/lab1.page.46cec025.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-903e764a.js",
+      "_chunk-30f40460.js",
       "_chunk-b2e2a089.js"
     ]
   },
@@ -252,7 +253,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.91c0fd17.js",
+    "file": "assets/entry-client-routing.1e3ca2f5.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -288,7 +289,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.5c7a9aa7.js",
+    "file": "assets/entry-server-routing.e6c67d81.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
