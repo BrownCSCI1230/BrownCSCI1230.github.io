@@ -1,4 +1,4 @@
-import{j as e}from"../../chunk-b0d73203.js";import{M as a}from"../../chunk-82f9daf4.js";const c={title:"Lab 1"};function r(n){const s=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",p:"p",div:"div",code:"code",h2:"h2",h3:"h3",strong:"strong",ul:"ul",blockquote:"blockquote",em:"em",pre:"pre",span:"span",table:"table",thead:"thead",tr:"tr",th:"th",tbody:"tbody",td:"td",img:"img",h4:"h4",h5:"h5"},n.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(s.nav,{className:"toc",children:e.exports.jsx(s.ol,{className:"toc-level toc-level-1",children:e.exports.jsxs(s.li,{className:"toc-item toc-item-h1",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h1",href:"#lab-1-setup--c",children:"Lab 1: Setup & C++"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-2",children:[e.exports.jsxs(s.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#introduction",children:"Introduction"}),e.exports.jsx(s.ol,{className:"toc-level toc-level-3",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#objectives",children:"Objectives"})})})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#getting-started",children:"Getting Started"})}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#qt-and-qt-creator",children:"Qt and Qt Creator"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#installation",children:"Installation"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#opening-a-project",children:"Opening a Project"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#interface",children:"Interface"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#building-and-running",children:"Building and Running"})})]})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#c",children:"C++"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-3",children:[e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#hello-world",children:"Hello World"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#include-ing-files",children:"#Include-ing Files"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#accessing-things-in-a-namespace",children:"Accessing Things in a Namespace"})})]})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#primitive-types",children:"Primitive Types"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#variables",children:"Variables"})}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h4",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#functions",children:"Functions"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-5",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h5",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h5",href:"#overloading",children:"Overloading"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h5",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h5",href:"#generic-functions",children:"Generic Functions"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h5",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h5",href:"#extra-lambdas",children:"Extra: Lambdas"})})]})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#a-warning-about-type-deduction",children:"A Warning About Type Deduction"})})]})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#structs-and-classes",children:"Structs and Classes"}),e.exports.jsx(s.ol,{className:"toc-level toc-level-4",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#generic-functions-reprise",children:"Generic Functions (Reprise)"})})})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#other-standard-library-utilities",children:"Other Standard Library Utilities"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#arrays",children:"Arrays"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#vectors",children:"Vectors"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#tuples",children:"Tuples"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#strings",children:"Strings"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#iterating-over-containers",children:"Iterating Over Containers"})})]})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#pointers-and-references",children:"Pointers and References"})})]})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#end",children:"End"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#submission",children:"Submission"})})]})]})})}),e.exports.jsxs(s.main,{children:[`
+import{j as e}from"../../chunk-903e764a.js";import{M as a}from"../../chunk-b2e2a089.js";const o={title:"Lab 1"};function r(n){const s=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",p:"p",div:"div",code:"code",h2:"h2",h3:"h3",strong:"strong",ul:"ul",blockquote:"blockquote",em:"em",pre:"pre",span:"span",table:"table",thead:"thead",tr:"tr",th:"th",tbody:"tbody",td:"td",img:"img",h4:"h4",h5:"h5","mjx-container":"mjx-container",svg:"svg",defs:"defs",path:"path",g:"g",use:"use",style:"style"},n.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(s.nav,{className:"toc",children:e.exports.jsx(s.ol,{className:"toc-level toc-level-1",children:e.exports.jsxs(s.li,{className:"toc-item toc-item-h1",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h1",href:"#lab-1-setup--c",children:"Lab 1: Setup & C++"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-2",children:[e.exports.jsxs(s.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#introduction",children:"Introduction"}),e.exports.jsx(s.ol,{className:"toc-level toc-level-3",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#objectives",children:"Objectives"})})})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#getting-started",children:"Getting Started"})}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#qt-and-qt-creator",children:"Qt and Qt Creator"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-3",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#installation",children:"Installation"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#opening-a-project",children:"Opening a Project"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#interface",children:"Interface"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#building-and-running",children:"Building and Running"})})]})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h2",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#c",children:"C++"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-3",children:[e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#hello-world",children:"Hello World"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#include-ing-files",children:"#Include-ing Files"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#accessing-things-in-a-namespace",children:"Accessing Things in a Namespace"})})]})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#primitive-types",children:"Primitive Types"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#variables",children:"Variables"})}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h4",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#functions",children:"Functions"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-5",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h5",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h5",href:"#overloading",children:"Overloading"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h5",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h5",href:"#generic-functions",children:"Generic Functions"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h5",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h5",href:"#extra-lambdas",children:"Extra: Lambdas"})})]})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#a-warning-about-type-deduction",children:"A Warning About Type Deduction"})})]})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#structs-and-classes",children:"Structs and Classes"}),e.exports.jsx(s.ol,{className:"toc-level toc-level-4",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#generic-functions-reprise",children:"Generic Functions (Reprise)"})})})]}),e.exports.jsxs(s.li,{className:"toc-item toc-item-h3",children:[e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#other-standard-library-utilities",children:"Other Standard Library Utilities"}),e.exports.jsxs(s.ol,{className:"toc-level toc-level-4",children:[e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#arrays",children:"Arrays"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#vectors",children:"Vectors"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#tuples",children:"Tuples"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#strings",children:"Strings"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h4",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h4",href:"#iterating-over-containers",children:"Iterating Over Containers"})})]})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h3",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h3",href:"#pointers-and-references",children:"Pointers and References"})})]})]}),e.exports.jsx(s.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#end",children:"End"})}),e.exports.jsx(s.li,{className:"toc-item toc-item-h2",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h2",href:"#submission",children:"Submission"})})]})]})})}),e.exports.jsxs(s.main,{children:[`
 `,`
 `,e.exports.jsx(s.h1,{id:"lab-1-setup--c",children:e.exports.jsx(s.a,{href:"#lab-1-setup--c",children:"Lab 1: Setup & C++"})}),`
 `,e.exports.jsx(s.p,{children:e.exports.jsx(s.a,{href:"https://classroom.github.com/a/UeYn3xW8",target:"_blank",rel:"noopener noreferrer",children:"Github Classroom assignment"})}),`
@@ -266,6 +266,7 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 `,e.exports.jsxs(s.div,{className:"task-callout callout",children:[e.exports.jsxs(s.p,{children:["Now that we've seen what we can do with ",e.exports.jsx(s.code,{children:"Rectangle"}),", are you ready to create a new type from ground zero?"]}),e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsxs(s.li,{children:["Create a ",e.exports.jsx(s.code,{children:"Circle"})," type using the ",e.exports.jsx(s.code,{children:"struct"})," keyword."]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.code,{children:"Circle"})," should contain a field ",e.exports.jsx(s.code,{children:"radius"})," of type ",e.exports.jsx(s.code,{children:"float"}),", and two methods ",e.exports.jsx(s.code,{children:"calculateArea"})," and ",e.exports.jsx(s.code,{children:"calculatePerimeter"}),"."]}),`
+`,e.exports.jsxs(s.li,{children:["Tip: to use ",e.exports.jsx(s.span,{className:"math math-inline",children:e.exports.jsx(s["mjx-container"],{className:"MathJax",jax:"SVG",children:e.exports.jsxs(s.svg,{style:{verticalAlign:"-0.025ex"},xmlns:"http://www.w3.org/2000/svg",width:"1.29ex",height:"1ex",role:"img",focusable:"false",viewBox:"0 -431 570 442",xmlnsXlink:"http://www.w3.org/1999/xlink",children:[e.exports.jsx(s.defs,{children:e.exports.jsx(s.path,{id:"MJX-1-TEX-I-1D70B",d:"M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"})}),e.exports.jsx(s.g,{stroke:"currentColor",fill:"currentColor",strokeWidth:"0",transform:"scale(1,-1)",children:e.exports.jsx(s.g,{"data-mml-node":"math",children:e.exports.jsx(s.g,{"data-mml-node":"mi",children:e.exports.jsx(s.use,{"data-c":"1D70B",xlinkHref:"#MJX-1-TEX-I-1D70B"})})})})]})})}),", you can use ",e.exports.jsx(s.code,{children:"std::numbers::pi"}),"."]}),`
 `,e.exports.jsxs(s.li,{children:["After completing your ",e.exports.jsx(s.code,{children:"Circle"})," type, create a few instances of ",e.exports.jsx(s.code,{children:"Circle"})," in your ",e.exports.jsx(s.code,{children:"main"})," function, and call some of their methods."]}),`
 `]}),e.exports.jsxs(s.p,{children:["See if your ",e.exports.jsx(s.code,{children:"Circle"})," instances exhibit the expected behaviors when you run the program."]})]}),`
 `,e.exports.jsxs(s.p,{children:["Now, we have 2 types ",e.exports.jsx(s.code,{children:"Rectangle"})," and ",e.exports.jsx(s.code,{children:"Circle"}),", with the same member functions ",e.exports.jsx(s.code,{children:"calculateArea"})," and ",e.exports.jsx(s.code,{children:"calculatePerimeter"}),". Can we define one ",e.exports.jsx(s.code,{children:"printShape"})," function that works for both types?"]}),`
@@ -528,8 +529,125 @@ to the function, and it could lead to serious performance problems!`]}),`
 `,e.exports.jsxs(s.li,{children:["Pass different ",e.exports.jsx(s.code,{children:"std::array"})," and ",e.exports.jsx(s.code,{children:"std::vector"})," objects to ",e.exports.jsx(s.code,{children:"doubleEachElement"})," in your ",e.exports.jsx(s.code,{children:"main"})," function."]}),`
 `]}),e.exports.jsxs(s.p,{children:["Print the results after ",e.exports.jsx(s.code,{children:"doubleEachElement"})," calls, and see if it matches your expectation!"]})]}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
-`,e.exports.jsx(s.p,{children:"Congrats on finishing the C++ lab! Now, it's time to get checked off by a TA."}),`
+`,e.exports.jsx(s.p,{children:"Congrats on finishing the C++ lab! Now, it's time to submit your code and get checked off by a TA."}),`
 `,e.exports.jsx(s.p,{children:"If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our advanced C++ tutorial coming soon!"}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 1: Setup & C++" assignment on Gradescope, then get checked off by a TA during lab hours.'}),`
-`,e.exports.jsx(a,{})]})]})}function o(n={}){const{wrapper:s}=n.components||{};return s?e.exports.jsx(s,Object.assign({},n,{children:e.exports.jsx(r,n)})):r(n)}export{o as default,c as documentProps};
+`,e.exports.jsxs(s.p,{children:['Submit your Github repo for this lab to the "Lab 1: Setup & C++" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA during lab hours"}),"."]}),`
+`,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"You will not get credit for having completed the lab, unless you get it checked off!"})}),`
+`,e.exports.jsx(a,{}),e.exports.jsx(s.style,{children:`
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+`})]})]})}function c(n={}){const{wrapper:s}=n.components||{};return s?e.exports.jsx(s,Object.assign({},n,{children:e.exports.jsx(r,n)})):r(n)}export{c as default,o as documentProps};

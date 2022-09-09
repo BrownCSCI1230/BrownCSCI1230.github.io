@@ -286,6 +286,7 @@ QtCreator may endlessly display prompts to ask for file permission, even if you 
 <div class="task-callout callout"><p>Now that we&#x27;ve seen what we can do with <code>Rectangle</code>, are you ready to create a new type from ground zero?</p><ol>
 <li>Create a <code>Circle</code> type using the <code>struct</code> keyword.</li>
 <li><code>Circle</code> should contain a field <code>radius</code> of type <code>float</code>, and two methods <code>calculateArea</code> and <code>calculatePerimeter</code>.</li>
+<li>Tip: to use <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.025ex" xmlns="http://www.w3.org/2000/svg" width="1.29ex" height="1ex" role="img" focusable="false" viewBox="0 -431 570 442" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D70B" xlink:href="#MJX-1-TEX-I-1D70B"></use></g></g></g></svg></mjx-container></span>, you can use <code>std::numbers::pi</code>.</li>
 <li>After completing your <code>Circle</code> type, create a few instances of <code>Circle</code> in your <code>main</code> function, and call some of their methods.</li>
 </ol><p>See if your <code>Circle</code> instances exhibit the expected behaviors when you run the program.</p></div>
 <p>Now, we have 2 types <code>Rectangle</code> and <code>Circle</code>, with the same member functions <code>calculateArea</code> and <code>calculatePerimeter</code>. Can we define one <code>printShape</code> function that works for both types?</p>
@@ -548,11 +549,128 @@ to the function, and it could lead to serious performance problems!</p>
 <li>Pass different <code>std::array</code> and <code>std::vector</code> objects to <code>doubleEachElement</code> in your <code>main</code> function.</li>
 </ul><p>Print the results after <code>doubleEachElement</code> calls, and see if it matches your expectation!</p></div>
 <h2 id="end"><a href="#end">End</a></h2>
-<p>Congrats on finishing the C++ lab! Now, it&#x27;s time to get checked off by a TA.</p>
+<p>Congrats on finishing the C++ lab! Now, it&#x27;s time to submit your code and get checked off by a TA.</p>
 <p>If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our advanced C++ tutorial coming soon!</p>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
-<p>Submit your Github repo for this lab to the &quot;Lab 1: Setup &amp; C++&quot; assignment on Gradescope, then get checked off by a TA during lab hours.</p>
-<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
+<p>Submit your Github repo for this lab to the &quot;Lab 1: Setup &amp; C++&quot; assignment on Gradescope, <strong>then get checked off by a TA during lab hours</strong>.</p>
+<div class="warning-callout callout"><p>You will not get credit for having completed the lab, unless you get it checked off!</p></div>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.c6f8b9a1.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.304ae549.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.930d7ac0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.c6f8b9a1.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab1"}}</script><script type="module" src="/assets/entry-client-routing.91c0fd17.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab1.page.8956ac62.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-903e764a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b2e2a089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.43d8ccc2.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.91c0fd17.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-be3a7fb4.js"></body>
     </html>
