@@ -210,7 +210,7 @@
     ]
   },
   "pages/projects/2D/1-algo.page.mdx": {
-    "file": "assets/pages/projects/2D/1-algo.page.5c986e5d.js",
+    "file": "assets/pages/projects/2D/1-algo.page.1a783524.js",
     "src": "pages/projects/2D/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -253,7 +253,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.a8db1137.js",
+    "file": "assets/entry-client-routing.a06e3aa1.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -289,7 +289,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.9280dd48.js",
+    "file": "assets/entry-server-routing.b013e56f.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
