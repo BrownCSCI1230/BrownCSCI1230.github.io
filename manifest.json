@@ -1,259 +1,259 @@
 {
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.c5ea2481.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.b7b3723c.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-903e764a.js"
-    ]
-  },
   "junk/code-blocks.page.mdx": {
-    "file": "assets/junk/code-blocks.page.cf90c991.js",
+    "file": "assets/junk/code-blocks.page.b385619c.js",
     "src": "junk/code-blocks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "junk/cpp-guidelines.page.mdx": {
-    "file": "assets/junk/cpp-guidelines.page.cb8e71de.js",
+    "file": "assets/junk/cpp-guidelines.page.9aba83fa.js",
     "src": "junk/cpp-guidelines.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "junk/dummy-page.page.mdx": {
-    "file": "assets/junk/dummy-page.page.6d68477b.js",
+    "file": "assets/junk/dummy-page.page.4159a86b.js",
     "src": "junk/dummy-page.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ]
   },
   "junk/inline-code.page.mdx": {
-    "file": "assets/junk/inline-code.page.bdc1b503.js",
+    "file": "assets/junk/inline-code.page.f8b4d101.js",
     "src": "junk/inline-code.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.0baf8f5d.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.891ee14f.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
     ]
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.43d8ccc2.js",
+    "file": "assets/renderer/_default.page.client.930d7ac0.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ],
     "css": [
       "assets/index.bd0b116c.css"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
-    "file": "assets/pages/docs/advanced-cpp-tutorial.page.057847cc.js",
+    "file": "assets/pages/docs/advanced-cpp-tutorial.page.2453c072.js",
     "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/code-readability-guidelines.page.mdx": {
-    "file": "assets/pages/docs/code-readability-guidelines.page.25bdc331.js",
+    "file": "assets/pages/docs/code-readability-guidelines.page.4971a247.js",
     "src": "pages/docs/code-readability-guidelines.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/collaboration-policy.page.mdx": {
-    "file": "assets/pages/docs/collaboration-policy.page.e6ba1f66.js",
+    "file": "assets/pages/docs/collaboration-policy.page.401118ec.js",
     "src": "pages/docs/collaboration-policy.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.eb365c19.js",
+    "file": "assets/pages/docs/course-missive.page.2efb13fe.js",
     "src": "pages/docs/course-missive.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/dockerment.page.mdx": {
-    "file": "assets/pages/docs/dockerment.page.7bac2b4c.js",
+    "file": "assets/pages/docs/dockerment.page.d577a333.js",
     "src": "pages/docs/dockerment.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/github-gradescope-guide.page.mdx": {
-    "file": "assets/pages/docs/github-gradescope-guide.page.8e5f85f8.js",
+    "file": "assets/pages/docs/github-gradescope-guide.page.a75f4237.js",
     "src": "pages/docs/github-gradescope-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-86b6e8bc.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-bda2ec6e.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.5ad1df23.js",
+    "file": "assets/pages/docs/index.page.6c1c3ee9.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ]
   },
   "pages/docs/preventing-memory-leaks.page.mdx": {
-    "file": "assets/pages/docs/preventing-memory-leaks.page.778b4701.js",
+    "file": "assets/pages/docs/preventing-memory-leaks.page.bdc6f7a3.js",
     "src": "pages/docs/preventing-memory-leaks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-86b6e8bc.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-bda2ec6e.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/scenefile-documentation.page.mdx": {
-    "file": "assets/pages/docs/scenefile-documentation.page.c0378967.js",
+    "file": "assets/pages/docs/scenefile-documentation.page.55dd6dbe.js",
     "src": "pages/docs/scenefile-documentation.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/xcode-CLT-installation-guide.page.mdx": {
-    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.193ff8d0.js",
+    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.d1032061.js",
     "src": "pages/docs/xcode-CLT-installation-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.9dbd164a.js",
+    "file": "assets/pages/labs/index.page.78f74559.js",
     "src": "pages/labs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.37b87dcb.js",
+    "file": "assets/pages/labs/lab1.page.628b378e.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-86b6e8bc.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-bda2ec6e.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.20a6027c.js",
+    "file": "assets/pages/labs/lab2.page.b360ae97.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-86b6e8bc.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-bda2ec6e.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.c38ebaf7.js",
+    "file": "assets/pages/projects/index.page.a659a5df.js",
     "src": "pages/projects/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ]
   },
   "pages/projects/2D/1-algo.page.mdx": {
-    "file": "assets/pages/projects/2D/1-algo.page.5dd49aea.js",
+    "file": "assets/pages/projects/2D/1-algo.page.1850da8b.js",
     "src": "pages/projects/2D/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/2D/1.page.mdx": {
-    "file": "assets/pages/projects/2D/1.page.17c6467a.js",
+    "file": "assets/pages/projects/2D/1.page.ef9b2770.js",
     "src": "pages/projects/2D/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-86b6e8bc.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-bda2ec6e.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.b802a371.js",
+    "file": "assets/pages/projects/ray/1-algo.page.7bb9f3cf.js",
     "src": "pages/projects/ray/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-b2e2a089.js",
-      "_chunk-86b6e8bc.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js",
+      "_chunk-bda2ec6e.js"
     ]
   },
   "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.598a1246.js",
+    "file": "assets/pages/projects/ray/2-algo.page.ccda4910.js",
     "src": "pages/projects/ray/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-903e764a.js",
-      "_chunk-86b6e8bc.js",
-      "_chunk-b2e2a089.js"
+      "_chunk-b0d73203.js",
+      "_chunk-bda2ec6e.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.5adb8464.js",
+    "file": "assets/entry-client-routing.708ae815.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -289,7 +289,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.33008e4e.js",
+    "file": "assets/entry-server-routing.f37a00d6.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -324,19 +324,19 @@
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
   },
-  "_chunk-903e764a.js": {
-    "file": "assets/chunk-903e764a.js"
+  "_chunk-b0d73203.js": {
+    "file": "assets/chunk-b0d73203.js"
   },
-  "_chunk-b2e2a089.js": {
-    "file": "assets/chunk-b2e2a089.js",
+  "_chunk-82f9daf4.js": {
+    "file": "assets/chunk-82f9daf4.js",
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ]
   },
-  "_chunk-86b6e8bc.js": {
-    "file": "assets/chunk-86b6e8bc.js",
+  "_chunk-bda2ec6e.js": {
+    "file": "assets/chunk-bda2ec6e.js",
     "imports": [
-      "_chunk-903e764a.js"
+      "_chunk-b0d73203.js"
     ]
   },
   "_chunk-be3a7fb4.js": {
