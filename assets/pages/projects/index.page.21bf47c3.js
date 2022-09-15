@@ -4,20 +4,20 @@ import{j as e}from"../../chunk-37395b21.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"2D"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Project 1: ",e.exports.jsx(s.a,{href:"/projects/2D/1",children:"Brush"})," (",e.exports.jsx(s.a,{href:"/projects/2D/1-algo",children:"algo"}),")"]}),`
-`,e.exports.jsx(s.li,{children:"Project 2: Filter (algo)"}),`
+`,e.exports.jsxs(s.li,{children:["Project 1: ",e.exports.jsx(s.a,{href:"/projects/2D/1",children:"Brush"})," (",e.exports.jsx(s.a,{href:"/projects/2D/1-algo-ans",children:"Algo Answers"}),")"]}),`
+`,e.exports.jsx(s.li,{children:"Project 2: Filter (Algo)"}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Ray"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"Project 3: Intersect (algo)"}),`
-`,e.exports.jsx(s.li,{children:"Project 4: Illuminate (algo)"}),`
+`,e.exports.jsx(s.li,{children:"Project 3: Intersect (Algo)"}),`
+`,e.exports.jsx(s.li,{children:"Project 4: Illuminate (Algo)"}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Realtime"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"Project 5: Lights, Camera (algo)"}),`
-`,e.exports.jsx(s.li,{children:"Project 6: Action! (algo)"}),`
+`,e.exports.jsx(s.li,{children:"Project 5: Lights, Camera (Algo)"}),`
+`,e.exports.jsx(s.li,{children:"Project 6: Action! (Algo)"}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Final"}),`

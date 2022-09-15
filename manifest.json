@@ -178,15 +178,6 @@
       "_chunk-a40e06f3.js"
     ]
   },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.5adfae13.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-37395b21.js"
-    ]
-  },
   "pages/labs/index.page.mdx": {
     "file": "assets/pages/labs/index.page.a974838a.js",
     "src": "pages/labs/index.page.mdx",
@@ -216,6 +207,15 @@
       "_chunk-37395b21.js",
       "_chunk-3e1e0f24.js",
       "_chunk-a40e06f3.js"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.21bf47c3.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-37395b21.js"
     ]
   },
   "pages/projects/2D/1-algo-ans.page.mdx": {
@@ -272,7 +272,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.306e5375.js",
+    "file": "assets/entry-client-routing.8e2d96fb.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -310,7 +310,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.6bf6b7c6.js",
+    "file": "assets/entry-server-routing.4d5fd098.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
