@@ -1,4 +1,22 @@
 {
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.0baf8f5d.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.bb2a0cba.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.b385619c.js",
     "src": "junk/code-blocks.page.mdx",
@@ -38,24 +56,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.0baf8f5d.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.bb2a0cba.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "renderer/_default.page.client.jsx": {
     "file": "assets/renderer/_default.page.client.b5b9245b.js",
     "src": "renderer/_default.page.client.jsx",
@@ -66,6 +66,37 @@
     ],
     "css": [
       "assets/index.ac7e74a4.css"
+    ]
+  },
+  "pages/labs/index.page.mdx": {
+    "file": "assets/pages/labs/index.page.78f74559.js",
+    "src": "pages/labs/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/labs/lab1.page.mdx": {
+    "file": "assets/pages/labs/lab1.page.d75ca651.js",
+    "src": "pages/labs/lab1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab2.page.mdx": {
+    "file": "assets/pages/labs/lab2.page.be476933.js",
+    "src": "pages/labs/lab2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -175,37 +206,6 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.78f74559.js",
-    "src": "pages/labs/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.d75ca651.js",
-    "src": "pages/labs/lab1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.be476933.js",
-    "src": "pages/labs/lab2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
       "_chunk-82f9daf4.js"
     ]
   },
