@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.a0e306eb.js",
+    "file": "assets/pages/lectures.page.9bd8e87c.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -65,7 +65,7 @@
       "_chunk-37395b21.js"
     ],
     "css": [
-      "assets/index.ac7e74a4.css"
+      "assets/index.3614b4cd.css"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -210,7 +210,7 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.ce373132.js",
+    "file": "assets/pages/labs/lab3.page.1a74b60a.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -261,7 +261,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.d08d2461.js",
+    "file": "assets/entry-client-routing.308868c8.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -298,7 +298,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.2584283f.js",
+    "file": "assets/entry-server-routing.dad5f0b6.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -357,7 +357,7 @@
     "src": "renderer/_default.page.server.jsx?extractStyles&lang.jsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.ac7e74a4.css"
+      "assets/index.3614b4cd.css"
     ]
   }
 }
