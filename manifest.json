@@ -260,9 +260,9 @@
       "_chunk-a40e06f3.js"
     ]
   },
-  "pages/projects/2D/2.algo.page.mdx": {
-    "file": "assets/pages/projects/2D/2.algo.page.caf9eb45.js",
-    "src": "pages/projects/2D/2.algo.page.mdx",
+  "pages/projects/2D/2-algo.page.mdx": {
+    "file": "assets/pages/projects/2D/2-algo.page.7ceade2e.js",
+    "src": "pages/projects/2D/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -283,11 +283,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7ea0ded4.js",
+    "file": "assets/entry-client-routing.08ee0132.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-b65cdb52.js"
+      "_chunk-fad8a104.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -314,7 +314,7 @@
       "pages/projects/2D/1-algo-ans.page.mdx",
       "pages/projects/2D/1-algo.page.mdx",
       "pages/projects/2D/1.page.mdx",
-      "pages/projects/2D/2.algo.page.mdx",
+      "pages/projects/2D/2-algo.page.mdx",
       "pages/projects/2D/2.page.mdx",
       "pages/projects/index.page.mdx",
       "renderer/_default.page.client.jsx",
@@ -322,11 +322,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.9149cbff.js",
+    "file": "assets/entry-server-routing.b92b2563.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-b65cdb52.js"
+      "_chunk-fad8a104.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -353,7 +353,7 @@
       "pages/projects/2D/1-algo-ans.page.mdx",
       "pages/projects/2D/1-algo.page.mdx",
       "pages/projects/2D/1.page.mdx",
-      "pages/projects/2D/2.algo.page.mdx",
+      "pages/projects/2D/2-algo.page.mdx",
       "pages/projects/2D/2.page.mdx",
       "pages/projects/index.page.mdx",
       "renderer/_default.page.client.jsx",
@@ -375,8 +375,8 @@
       "_chunk-37395b21.js"
     ]
   },
-  "_chunk-b65cdb52.js": {
-    "file": "assets/chunk-b65cdb52.js"
+  "_chunk-fad8a104.js": {
+    "file": "assets/chunk-fad8a104.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
