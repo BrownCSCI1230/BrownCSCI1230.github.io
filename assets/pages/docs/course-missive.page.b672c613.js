@@ -75,7 +75,7 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:["Understand how to create and manipulate raster images by:",`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:"Simulating interactive paintbrush/airbrush effects, and"}),`
-`,e.exports.jsx(s.li,{children:"Applying filters and transformations, minimizing artifacts such as aliasing (aka \u201Cjaggies\u201D)."}),`
+`,e.exports.jsx(s.li,{children:'Applying filters and transformations, minimizing artifacts such as aliasing (aka "jaggies").'}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Be able to implement the raytracing rendering algorithm for producing pseudo-realistic imagery, including:",`

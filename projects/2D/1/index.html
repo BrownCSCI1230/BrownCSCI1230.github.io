@@ -58,7 +58,7 @@ Letting <span class="math math-inline"><mjx-container className="MathJax" jax="S
 <p>Brush masks store a range of values between 0 and 1. These values indicate how much of the selected brush color should be mixed with the canvas&#x27;s previous color to produce the painted result at each pixel that the brush covers. So a value of 0.6 in the mask means that the resulting color of the canvas pixel would be 0.6 times the brush color added to 0.4 times the previous canvas color at that pixel.</p>
 <p>Our GUI also has an alpha slider. This adjusts the overall opacity of the brush, independent of the mask distribution. If a mask value is 0.5, but the alpha slider is set to 0.5, then the actual resulting amount of color painted by your brush at that point should be 0.5 * 0.5 = 0.25. Make sure that you account for the alpha value when mixing your brush and canvas colors during the painting process.</p>
 <h3 id="smudge-brush"><a href="#smudge-brush">Smudge Brush</a></h3>
-<p>You will also implement a smudging brush, which creates a smear effect by repeatedly “picking up” and “putting down” color when you click and drag the mouse across the canvas.</p>
+<p>You will also implement a smudging brush, which creates a smear effect by repeatedly &quot;picking up&quot; and &quot;putting down&quot; color when you click and drag the mouse across the canvas.</p>
 <ol>
 <li>Picking up: you will need some sort of data structure in the canvas to store the color values of the canvas to be placed down when the mouse moves.</li>
 <li>Putting down: just like a color brush you should use a mask to blend the brush color with the canvas. Unlike with the color brush you will not be blending a constant color value set by the GUI, but rather the previously picked up color values that you stored and must index into.</li>
@@ -141,8 +141,7 @@ as well as where the code for each implementation lies within your overall proje
 <h3 id="alpha-blending"><a href="#alpha-blending">Alpha Blending</a></h3>
 <figure id="figure-10" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><a href="/projects/2D/1/alphablend.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/2D/1/alphablend.gif" alt="TODO"/></a></div><figcaption><strong>Figure 10: </strong>An example of drawing without fixing alpha blending versus with the extra credit fix.</figcaption></figure>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
-<p>Submit your Github repo for this project to the &quot;Project 1: Brush&quot; assignment on Gradescope.
-Instructions on using Github and Gradescope are available <a href="/docs/github-gradescope-guide">here</a>.</p>
+<p>Submit your Github repo for this project to the &quot;Project 1: Brush&quot; assignment on Gradescope.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
 mjx-container[jax=&quot;SVG&quot;] {
   direction: ltr;
@@ -261,5 +260,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/2D/1"}}</script><script type="module" src="/assets/entry-client-routing.308868c8.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/2D/1.page.8b2bca5a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.308868c8.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-06bc2ad7.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/2D/1"}}</script><script type="module" src="/assets/entry-client-routing.7ea0ded4.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/2D/1.page.ad4fa7b0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7ea0ded4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b65cdb52.js"></body>
     </html>

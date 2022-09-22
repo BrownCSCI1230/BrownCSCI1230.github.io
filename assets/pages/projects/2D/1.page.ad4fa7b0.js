@@ -38,7 +38,7 @@ Letting `,e.exports.jsx(s.span,{className:"math math-inline",children:e.exports.
 `,e.exports.jsx(s.p,{children:"Brush masks store a range of values between 0 and 1. These values indicate how much of the selected brush color should be mixed with the canvas's previous color to produce the painted result at each pixel that the brush covers. So a value of 0.6 in the mask means that the resulting color of the canvas pixel would be 0.6 times the brush color added to 0.4 times the previous canvas color at that pixel."}),`
 `,e.exports.jsx(s.p,{children:"Our GUI also has an alpha slider. This adjusts the overall opacity of the brush, independent of the mask distribution. If a mask value is 0.5, but the alpha slider is set to 0.5, then the actual resulting amount of color painted by your brush at that point should be 0.5 * 0.5 = 0.25. Make sure that you account for the alpha value when mixing your brush and canvas colors during the painting process."}),`
 `,e.exports.jsx(s.h3,{id:"smudge-brush",children:e.exports.jsx(s.a,{href:"#smudge-brush",children:"Smudge Brush"})}),`
-`,e.exports.jsx(s.p,{children:"You will also implement a smudging brush, which creates a smear effect by repeatedly \u201Cpicking up\u201D and \u201Cputting down\u201D color when you click and drag the mouse across the canvas."}),`
+`,e.exports.jsx(s.p,{children:'You will also implement a smudging brush, which creates a smear effect by repeatedly "picking up" and "putting down" color when you click and drag the mouse across the canvas.'}),`
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsx(s.li,{children:"Picking up: you will need some sort of data structure in the canvas to store the color values of the canvas to be placed down when the mouse moves."}),`
 `,e.exports.jsx(s.li,{children:"Putting down: just like a color brush you should use a mask to blend the brush color with the canvas. Unlike with the color brush you will not be blending a constant color value set by the GUI, but rather the previously picked up color values that you stored and must index into."}),`
@@ -121,8 +121,7 @@ as well as where the code for each implementation lies within your overall proje
 `,e.exports.jsx(s.h3,{id:"alpha-blending",children:e.exports.jsx(s.a,{href:"#alpha-blending",children:"Alpha Blending"})}),`
 `,e.exports.jsx(t,{images:[{src:"/projects/2D/1/alphablend.gif",alt:"TODO"}],figNumber:10,targetWidth:"95%",figCaption:"An example of drawing without fixing alpha blending versus with the extra credit fix."}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsxs(s.p,{children:[`Submit your Github repo for this project to the "Project 1: Brush" assignment on Gradescope.
-Instructions on using Github and Gradescope are available `,e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide",children:"here"}),"."]}),`
+`,e.exports.jsx(s.p,{children:'Submit your Github repo for this project to the "Project 1: Brush" assignment on Gradescope.'}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;
