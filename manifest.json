@@ -261,7 +261,7 @@
     ]
   },
   "pages/projects/2D/2-algo.page.mdx": {
-    "file": "assets/pages/projects/2D/2-algo.page.12affc6a.js",
+    "file": "assets/pages/projects/2D/2-algo.page.1b5cebd0.js",
     "src": "pages/projects/2D/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -283,7 +283,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.350f00ad.js",
+    "file": "assets/entry-client-routing.fc2d9b7e.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -322,7 +322,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.09f10b5d.js",
+    "file": "assets/entry-server-routing.928da4e0.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
