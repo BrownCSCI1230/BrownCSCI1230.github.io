@@ -18,7 +18,7 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#advanced-c-tutorial">Advanced C++ Tutorial</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#dynamic-memory-allocation-raii-and-smart-pointers">Dynamic Memory Allocation, RAII and Smart Pointers</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#operator-overloading-and-user-defined-literals">Operator Overloading and User Defined Literals</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#lambdas-and-functional-programming">Lambdas and Functional Programming</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#pointers-and-references-reprise">Pointers and References (Reprise)</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#pointer-arithmetic">Pointer Arithmetic</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#runtime-polymorphism-and-existential-types">Runtime Polymorphism and Existential Types</a></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#advanced-c-tutorial">Advanced C++ Tutorial</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#dynamic-memory-allocation-raii-and-smart-pointers">Dynamic Memory Allocation, RAII and Smart Pointers</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#operator-overloading-and-user-defined-literals">Operator Overloading and User Defined Literals</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#pointers-and-references-reprise">Pointers and References (Reprise)</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#pointer-arithmetic">Pointer Arithmetic</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#lambdas-and-functional-programming">Lambdas and Functional Programming</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#runtime-polymorphism">Runtime Polymorphism</a></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="advanced-c-tutorial"><a href="#advanced-c-tutorial">Advanced C++ Tutorial</a></h1>
 <p>In lab 1, we introduced you to the minimum C++ features you&#x27;ll need for programming work in this course.
@@ -26,8 +26,6 @@ In this lab, we&#x27;ll talk about additional C++ features you can use to improv
 <h2 id="dynamic-memory-allocation-raii-and-smart-pointers"><a href="#dynamic-memory-allocation-raii-and-smart-pointers">Dynamic Memory Allocation, RAII and Smart Pointers</a></h2>
 <p>placeholder</p>
 <h2 id="operator-overloading-and-user-defined-literals"><a href="#operator-overloading-and-user-defined-literals">Operator Overloading and User Defined Literals</a></h2>
-<p>placeholder</p>
-<h2 id="lambdas-and-functional-programming"><a href="#lambdas-and-functional-programming">Lambdas and Functional Programming</a></h2>
 <p>placeholder</p>
 <h2 id="pointers-and-references-reprise"><a href="#pointers-and-references-reprise">Pointers and References (Reprise)</a></h2>
 <p>In lab 1, we mentioned that we can access the entity that a pointer points to by dereferencing the pointer, and that a reference represents an entity at a particular memory address. It seems that there should be a connection between pointers and references, indeed, we obtain a reference when we dereference a pointer:</p>
@@ -86,47 +84,51 @@ In this lab, we&#x27;ll talk about additional C++ features you can use to improv
 </span><span class="code-line">y1[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// this is the same as &#x27;x1[0] = 42&#x27;</span>
 </span><span class="code-line">y2[<span class="pl-c1">0</span>] = <span class="pl-c1">42</span>; <span class="pl-c">// this does nothing to x2, since it&#x27;s a copy</span>
 </span></code></pre><p>The reason behind this oddity is that C arrays automatically decay to the pointer to its first element. Interestingly, the C++ standard only defines the builtin indexing operator on pointers, it is never said that (C) arrays can be indexed. What happens when the compiler sees <code>x1[0]</code> is that, <code>x1</code> first decays to a pointer automatically, then the indexing operator defined on <strong>pointers</strong> gets invoked, and then desugar-ed into <code>*(x1 + 0)</code>. Pointer arithmetic happens behind the scene every time you manipulate an array!</p></details>
-<h2 id="runtime-polymorphism-and-existential-types"><a href="#runtime-polymorphism-and-existential-types">Runtime Polymorphism and Existential Types</a></h2>
-<p>Polymorphism is important in programming; it allows us to abstract over types and write code that works for different types. We already learned one form of polymorphism in lab 1, the generic functions, i.e., parametric polymorphism. These are functions that work on <em>any</em> type, and therefore it implies a universal quantification (∀) on types.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// ∀ type T, identity takes something of type T, and returns something of type T</span>
-</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">identity</span>(<span class="pl-k">auto</span> x) {
-</span><span class="code-line">    <span class="pl-k">return</span> x;
-</span><span class="code-line">}
-</span></code></pre>
-<p>A universally quantified type may convert to any type, e.g., <code>T</code> converts to <code>int</code> when we call <code>identity(42)</code>, and <code>T</code> becomes <code>double</code> when we call <code>identity(3.14)</code>. It always introduces a type parameter representing the type it converts to (hence the name <em>parametric</em> polymorphism). This can be a problem because sometimes we want polymorphic behaviors without introducing additional type parameters, consider the following example:</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// what should we put in ???</span>
+<h2 id="lambdas-and-functional-programming"><a href="#lambdas-and-functional-programming">Lambdas and Functional Programming</a></h2>
+<p>placeholder</p>
+<h2 id="runtime-polymorphism"><a href="#runtime-polymorphism">Runtime Polymorphism</a></h2>
+<p>Polymorphism is important in programming; it allows us to abstract over types and write code that works for different types. We already learned one form of polymorphism in lab 1, the generic functions, i.e., parametric polymorphism. The problem with generic functions (aka function templates) is that they only provide compile-time polymorphism because template instantiation requires information about its type parameters. Note that types are a compile-time construct, the compilation process erases all type information of our program, meaning templates cannot be instantiated at runtime. This implies that we cannot use templates to handle runtime polymorphism, i.e., the polymorphic behavior of some object whose type is determined at runtime, consider the following example:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// the type of each element in &quot;objects&quot; could be determined by some runtime condition</span>
+</span><span class="code-line"><span class="pl-c">// what should we put in ???</span>
 </span><span class="code-line"><span class="pl-k">auto</span> objects = std::vector&lt;???&gt;{ Rectangle{ .<span class="pl-smi">width</span> = <span class="pl-c1">2</span> }, Circle{ .<span class="pl-smi">radius</span> = <span class="pl-c1">1</span> } };
 </span></code></pre>
-<p>what we want is something that does the dual of universal quantification, i.e., instead of converting itself to any type, it converts any type to itself. Indeed, this is possible if we apply existential quantification (∃) on types.</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// ∀ type T, Shape converts something of type T to type Shape</span>
-</span><span class="code-line"><span class="pl-c">// In other words, given an object of type Shape, ∃ type T that the Shape object is constructed upon</span>
-</span><span class="code-line"><span class="pl-k">struct</span> <span class="pl-en">Shape</span> {
-</span><span class="code-line">    std::any object = {};
-</span><span class="code-line">
-</span><span class="code-line">    <span class="pl-c">// an existential type is a type that comes with a universally quantified constructor</span>
-</span><span class="code-line">    <span class="pl-en">Shape</span>(<span class="pl-k">auto</span>&amp;&amp; x) {
-</span><span class="code-line">        <span class="pl-c1">this</span>-&gt;<span class="pl-smi">object</span> = std::forward&lt;<span class="pl-c1">decltype</span>(x)&gt;(x);
-</span><span class="code-line">    }
-</span><span class="code-line">};
-</span><span class="code-line">
+<p>The basic idea is that we need to create a <em>proxy</em> type <code>T</code> which converts any relevant type to itself, then we can use <code>T</code> as an interface to deal with different types uniformly as <code>T</code>. In the above example, <code>T</code> would be something like a <code>Shape</code>.</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// any &quot;Rectangle&quot; or &quot;Circle&quot; object, or potentially an object of some other type,</span>
+</span><span class="code-line"><span class="pl-c">// will be converted to an object of type &quot;Shape&quot;</span>
 </span><span class="code-line"><span class="pl-k">auto</span> objects = std::vector&lt;Shape&gt;{ Rectangle{ .<span class="pl-smi">width</span> = <span class="pl-c1">2</span> }, Circle{ .<span class="pl-smi">radius</span> = <span class="pl-c1">1</span> } };
 </span></code></pre>
-<p>The immediate consequence of using existentials is that we lose all information of the type that the existential is constructed upon because this information is only available to the constructor of the existential, and the information is lost once we leave the scope of the constructor. This is precisely what we want because it allows us to refer to different types (e.g., Rectangle, Circle, etc.) opaquely, and deal with them uniformly (they are all simply instances of Shape to the outer scope). Note that existentials also allow us to achieve runtime polymorphism in C++ because interactions with existentials do not depend on their underlying type. The polymorphic behavior is therefore preserved even though the compilation process erases all type information of our program.</p>
-<p>An empty existential type like the <code>Shape</code> example above is however not very useful, we can&#x27;t do anything with it! A non-trivial existential type would require us to specify its quantification bound, i.e., the things we can do with it. This is somewhat inconvenient to do, if you&#x27;re interested, you can check the following example:</p>
-<details><summary>A basic but non-trivial existential type</summary><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>any<span class="pl-pds">&gt;</span></span>
+<p>The remaining question is, how do we define proxy types like <code>Shape</code>?</p>
+<p>The easiest solution is to use <code>std::function</code> if we only need to deal with <em>function-like</em> types. Take the light functions in ray tracing for instance, these are all functions that take an intersection position, and return (light direction, light color). Therefore, they can be unified by a proxy type as follows:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">namespace</span> <span class="pl-en">Lights</span> {
+</span><span class="code-line">	<span class="pl-c">// Signature: IntersectionPosition -&gt; (LightDirection, LightColor)</span>
+</span><span class="code-line">	<span class="pl-k">using</span> Signature = <span class="pl-k">auto</span>(<span class="pl-k">const</span> glm::vec4&amp;)-&gt;std::tuple&lt;glm::vec4, glm::vec3&gt;;
+</span><span class="code-line">	<span class="pl-k">using</span> Proxy = std::function&lt;Signature&gt;;
+</span><span class="code-line">
+</span><span class="code-line">	<span class="pl-k">auto</span> <span class="pl-en">Point</span>(<span class="pl-k">auto</span>&amp;&amp; Position, <span class="pl-k">auto</span>&amp;&amp; Color, <span class="pl-k">auto</span>&amp;&amp; AttenuationFunction) {
+</span><span class="code-line">		<span class="pl-k">return</span> [=](<span class="pl-k">auto</span>&amp;&amp; IntersectionPosition) { <span class="pl-c">/* ... */</span> };
+</span><span class="code-line">	}
+</span><span class="code-line">	<span class="pl-k">auto</span> <span class="pl-en">Directional</span>(<span class="pl-k">auto</span>&amp;&amp; Direction, <span class="pl-k">auto</span>&amp;&amp; Color) {
+</span><span class="code-line">		<span class="pl-k">return</span> [=](<span class="pl-k">auto</span>&amp;&amp; IntersectionPosition) { <span class="pl-c">/* ... */</span> };
+</span><span class="code-line">	}
+</span><span class="code-line">	<span class="pl-k">auto</span> <span class="pl-en">Spot</span>(<span class="pl-k">auto</span>&amp;&amp; Position, <span class="pl-k">auto</span>&amp;&amp; Axis, <span class="pl-k">auto</span> Theta, <span class="pl-k">auto</span> Penumbra, <span class="pl-k">auto</span>&amp;&amp; Color, <span class="pl-k">auto</span>&amp;&amp; AttenuationFunction) {
+</span><span class="code-line">		<span class="pl-k">return</span> [=](<span class="pl-k">auto</span>&amp;&amp; IntersectionPosition) { <span class="pl-c">/* ... */</span> };
+</span><span class="code-line">	}
+</span><span class="code-line">}
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> LightSources = std::vector&lt;Lights::Proxy&gt;{ <span class="pl-c1">Lights::Point</span>(...), <span class="pl-c1">Lights::Directional</span>(...), <span class="pl-c1">Lights::Spot</span>(...), ... };
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; Light : LightSources) {
+</span><span class="code-line">	<span class="pl-k">auto</span> [LightDirection, LightColor] = <span class="pl-c1">Light</span>(IntersectionPosition);
+</span><span class="code-line">	<span class="pl-c">// do something with LightDirection and LightColor</span>
+</span><span class="code-line">}
+</span></code></pre>
+<p>Non-function proxy types are trickier to define, there’re 2 mainstream approaches in C++ that allow us to do this: existential types and virtual functions. Both approaches are the same under the hood: we have a <code>struct</code> of function pointers and a type-erased object. We store the object along with the (pointers to the) functions that handle the type-erased object properly, so the behaviors of the proxy type are dynamically determined at runtime.</p>
+<p>Existential types are the more common approach in modern C++, it has several important advantages over virtual functions (the more common alternative in older C++) which we’ll explain later. The name &quot;existential&quot; type comes from the fact that the proxy type is an existential quantification over types. The key idea of building an existential type is to have a universally quantified (aka generic) constructor, so it may convert any type to itself. Take the <code>Shape</code> example we saw above for instance:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>any<span class="pl-pds">&gt;</span></span>
 </span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span>
-</span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>concepts<span class="pl-pds">&gt;</span></span>
 </span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>vector<span class="pl-pds">&gt;</span></span>
 </span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>iostream<span class="pl-pds">&gt;</span></span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">template</span>&lt;<span class="pl-k">typename</span> UnknownType, <span class="pl-k">typename</span> ReferenceType&gt;
-</span><span class="code-line"><span class="pl-k">concept </span>SubtypeOf = std::same_as&lt;std::<span class="pl-c1">decay_t</span>&lt;UnknownType&gt;, ReferenceType&gt; || std::derived_from&lt;std::<span class="pl-c1">decay_t</span>&lt;UnknownType&gt;, ReferenceType&gt;;
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">template</span>&lt;<span class="pl-k">typename</span> UnknownType, <span class="pl-k">typename</span> ...ReferenceTypes&gt;
-</span><span class="code-line"><span class="pl-k">concept </span>AnyOf = (SubtypeOf&lt;UnknownType, ReferenceTypes&gt; || ...);
-</span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">template</span>&lt;<span class="pl-k">typename</span> UnknownType, <span class="pl-k">typename</span> ...ReferenceTypes&gt;
-</span><span class="code-line"><span class="pl-k">concept </span>AnyBut = !AnyOf&lt;UnknownType, ReferenceTypes...&gt;;
+</span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>placeholder.hpp<span class="pl-pds">&quot;</span></span> <span class="pl-c">// required for the AnyBut concept</span>
 </span><span class="code-line">
 </span><span class="code-line"><span class="pl-k">struct</span> <span class="pl-en">Rectangle</span> {
 </span><span class="code-line">    <span class="pl-k">double</span> length = <span class="pl-c1">1</span>;
@@ -177,33 +179,69 @@ In this lab, we&#x27;ll talk about additional C++ features you can use to improv
 </span><span class="code-line">    <span class="pl-c">// Rectangle[length: 1.000000, width: 2.000000]</span>
 </span><span class="code-line">    <span class="pl-c">// Circle[radius: 1.000000]</span>
 </span><span class="code-line">}
-</span></code></pre></details>
-<p>Luckily, it is unlikely that you&#x27;ll need to define your own existential types for the assignments of this course. You&#x27;ll only deal with one specific kind of existentials: closures, or stateful lambdas in C++ terminology. Stateful lambdas are existentials because they have a hidden state of some unknown type, and we can use <code>std::function</code> to represent existentials of this kind. Take the light functions in ray tracing for instance, these are all functions that take an intersection position, and return (light direction, light color). Therefore, they can be unified by an existential function type as follows:</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-k">namespace</span> <span class="pl-en">Lights</span> {
-</span><span class="code-line">	<span class="pl-c">// Signature: IntersectionPosition -&gt; (LightDirection, LightColor)</span>
-</span><span class="code-line">	<span class="pl-k">using</span> Signature = <span class="pl-k">auto</span>(<span class="pl-k">const</span> glm::vec4&amp;)-&gt;std::tuple&lt;glm::vec4, glm::vec3&gt;;
-</span><span class="code-line">	<span class="pl-k">using</span> Ǝ = std::function&lt;Signature&gt;;
+</span></code></pre>
+<p>Virtual functions are the traditional way to achieve runtime polymorphism since the creation of C++, its main advantage over existential types is that it might be somewhat easier to define, but it is <em>much</em> harder to use, and it breaks things quite literally: any type with at least one virtual function loses value semantics, and its memory layout would no longer be the <code>standard layout</code>, meaning objects of such type cannot be <code>memcpy</code>-ed, and they cannot penetrate the binary boundary and interact with programs written in other languages. The immediate consequence of losing value semantics is that now every object must be accessed through a pointer, and every object creation requires dynamic memory allocation. You must then use smart pointers or manually manage the lifetime of each object very carefully. Virtual functions also substantially restrict the design space of our program since they are <em>invasive</em>, meaning that it requires top-down thinking, we cannot define an abstraction after the existence of concrete types like existential types. Despite all the inconveniences, we introduce virtual functions as a backup option in case you find it difficult to define existential types. The same <code>Shape</code> example written in a virtual function-based design would be as follows:</p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span>
+</span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>vector<span class="pl-pds">&gt;</span></span>
+</span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>iostream<span class="pl-pds">&gt;</span></span>
+</span><span class="code-line">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>memory<span class="pl-pds">&gt;</span></span>
 </span><span class="code-line">
-</span><span class="code-line">	<span class="pl-k">auto</span> <span class="pl-en">Point</span>(<span class="pl-k">auto</span>&amp;&amp; Position, <span class="pl-k">auto</span>&amp;&amp; Color, <span class="pl-k">auto</span>&amp;&amp; AttenuationFunction) {
-</span><span class="code-line">		<span class="pl-k">return</span> [=](<span class="pl-k">auto</span>&amp;&amp; IntersectionPosition) { <span class="pl-c">/* ... */</span> };
-</span><span class="code-line">	}
-</span><span class="code-line">	<span class="pl-k">auto</span> <span class="pl-en">Directional</span>(<span class="pl-k">auto</span>&amp;&amp; Direction, <span class="pl-k">auto</span>&amp;&amp; Color) {
-</span><span class="code-line">		<span class="pl-k">return</span> [=](<span class="pl-k">auto</span>&amp;&amp; IntersectionPosition) { <span class="pl-c">/* ... */</span> };
-</span><span class="code-line">	}
-</span><span class="code-line">	<span class="pl-k">auto</span> <span class="pl-en">Spot</span>(<span class="pl-k">auto</span>&amp;&amp; Position, <span class="pl-k">auto</span>&amp;&amp; Axis, <span class="pl-k">auto</span> θ, <span class="pl-k">auto</span> Penumbra, <span class="pl-k">auto</span>&amp;&amp; Color, <span class="pl-k">auto</span>&amp;&amp; AttenuationFunction) {
-</span><span class="code-line">		<span class="pl-k">return</span> [=](<span class="pl-k">auto</span>&amp;&amp; IntersectionPosition) { <span class="pl-c">/* ... */</span> };
-</span><span class="code-line">	}
-</span><span class="code-line">}
+</span><span class="code-line"><span class="pl-c">// &quot;class&quot; is more conventional for virtual function based designs</span>
+</span><span class="code-line"><span class="pl-k">class</span> <span class="pl-en">Shape</span> {
+</span><span class="code-line"><span class="pl-k">public:</span>
+</span><span class="code-line">    <span class="pl-k">virtual</span> <span class="pl-k">auto</span> <span class="pl-en">toString</span>()-&gt;std::string = 0;
+</span><span class="code-line">    <span class="pl-c">// destructors must always be virtual if you decide to use virtual functions</span>
+</span><span class="code-line">    <span class="pl-k">virtual</span> <span class="pl-en">~Shape</span>() = <span class="pl-k">default</span>;
+</span><span class="code-line">};
 </span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">auto</span> LightSources = std::vector&lt;Lights::Ǝ&gt;{ <span class="pl-c1">Lights::Point</span>(...), <span class="pl-c1">Lights::Directional</span>(...), <span class="pl-c1">Lights::Spot</span>(...), ... };
+</span><span class="code-line"><span class="pl-c">// concrete types must declare which interfaces they will implement</span>
+</span><span class="code-line"><span class="pl-c">// you cannot do this afterwards like existential types</span>
+</span><span class="code-line"><span class="pl-k">class</span> <span class="pl-en">Rectangle</span> <span class="pl-k">final</span>: public Shape {
+</span><span class="code-line"><span class="pl-k">public:</span>
+</span><span class="code-line">    <span class="pl-k">double</span> length = <span class="pl-c1">1</span>;
+</span><span class="code-line">    <span class="pl-k">double</span> width = <span class="pl-c1">1</span>;
 </span><span class="code-line">
-</span><span class="code-line"><span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; Light : LightSources) {
-</span><span class="code-line">	<span class="pl-k">auto</span> [LightDirection, LightColor] = <span class="pl-c1">Light</span>(IntersectionPosition);
-</span><span class="code-line">	<span class="pl-c">// do something with LightDirection and LightColor</span>
+</span><span class="code-line">    <span class="pl-c">// must manually define constructors and the destructor</span>
+</span><span class="code-line">    <span class="pl-c">// because virtual functions disqualify aggregate initialization</span>
+</span><span class="code-line">    <span class="pl-en">Rectangle</span>() = <span class="pl-k">default</span>;
+</span><span class="code-line">    <span class="pl-en">Rectangle</span>(<span class="pl-k">double</span> _length, <span class="pl-k">double</span> _width): length{ _length }, width{ _width } {}
+</span><span class="code-line">    <span class="pl-en">~Rectangle</span>() <span class="pl-k">override</span> = <span class="pl-k">default</span>;
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-k">auto</span> <span class="pl-en">toString</span>()-&gt;std::string <span class="pl-k">override</span> {
+</span><span class="code-line">        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Rectangle[length: <span class="pl-pds">&quot;</span></span> + <span class="pl-c1">std::to_string</span>(length) + <span class="pl-s"><span class="pl-pds">&quot;</span>, width: <span class="pl-pds">&quot;</span></span> + <span class="pl-c1">std::to_string</span>(width) + <span class="pl-s"><span class="pl-pds">&quot;</span>]<span class="pl-pds">&quot;</span></span>;
+</span><span class="code-line">    }
+</span><span class="code-line">};
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">class</span> <span class="pl-en">Circle</span> <span class="pl-k">final</span>: public Shape {
+</span><span class="code-line"><span class="pl-k">public:</span>
+</span><span class="code-line">    <span class="pl-k">double</span> radius = <span class="pl-c1">1</span>;
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-en">Circle</span>() = <span class="pl-k">default</span>;
+</span><span class="code-line">    <span class="pl-en">Circle</span>(<span class="pl-k">double</span> _radius): radius{ _radius } {}
+</span><span class="code-line">    <span class="pl-en">~Circle</span>() <span class="pl-k">override</span> = <span class="pl-k">default</span>;
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-k">auto</span> <span class="pl-en">toString</span>()-&gt;std::string <span class="pl-k">override</span> {
+</span><span class="code-line">        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Circle[radius: <span class="pl-pds">&quot;</span></span> + <span class="pl-c1">std::to_string</span>(radius) + <span class="pl-s"><span class="pl-pds">&quot;</span>]<span class="pl-pds">&quot;</span></span>;
+</span><span class="code-line">    }
+</span><span class="code-line">};
+</span><span class="code-line">
+</span><span class="code-line"><span class="pl-k">auto</span> <span class="pl-en">main</span>()-&gt;int {
+</span><span class="code-line">    <span class="pl-c">// a vector of &quot;Shape&quot;s is not allowed because virtual functions break value semantics</span>
+</span><span class="code-line">    <span class="pl-c">// you can only have a vector of pointers to shapes</span>
+</span><span class="code-line">    <span class="pl-k">auto</span> objects = std::vector&lt;std::unique_ptr&lt;Shape&gt;&gt;{};
+</span><span class="code-line">
+</span><span class="code-line">    objects.<span class="pl-c1">emplace_back</span>(<span class="pl-k">new</span> Rectangle{ <span class="pl-c1">1</span>, <span class="pl-c1">2</span> });
+</span><span class="code-line">    objects.<span class="pl-c1">emplace_back</span>(<span class="pl-k">new</span> Circle{ <span class="pl-c1">1</span> });
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-k">for</span> (<span class="pl-k">auto</span>&amp; x : objects)
+</span><span class="code-line">        std::cout &lt;&lt; x-&gt;<span class="pl-c1">toString</span>() &lt;&lt; std::endl;
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-c">// you should see that it prints:</span>
+</span><span class="code-line">    <span class="pl-c">// Rectangle[length: 1.000000, width: 2.000000]</span>
+</span><span class="code-line">    <span class="pl-c">// Circle[radius: 1.000000]</span>
 </span><span class="code-line">}
 </span></code></pre>
-<p>There is another way to achieve runtime polymorphism in C++: <a href="https://en.cppreference.com/w/cpp/language/virtual" target="_blank" rel="noopener noreferrer">virtual functions</a>. It is however considerably more restrictive than existentials and therefore not as commonly used in modern C++. Virtual functions are intrusive, using them will make your types lose value semantics and they force you to think top-down (define an interface first, then implement the interface for concrete types), while existentials allow us to think bottom-up (start from simple concrete types, define an abstract existential type later if ever needed). Depending on how we approach the problem, existentials might be easier to reason with.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/advanced-cpp-tutorial"}}</script><script type="module" src="/assets/entry-client-routing.ab62d36f.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/advanced-cpp-tutorial.page.2453c072.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.ab62d36f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e85acf9.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/advanced-cpp-tutorial"}}</script><script type="module" src="/assets/entry-client-routing.47fe3377.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/advanced-cpp-tutorial.page.5ba23c22.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.47fe3377.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e85acf9.js"></body>
     </html>
