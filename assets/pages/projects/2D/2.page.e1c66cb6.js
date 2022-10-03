@@ -100,7 +100,7 @@ import{j as e}from"../../../chunk-37395b21.js";import{I as t}from"../../../chunk
 `,e.exports.jsx(s.h3,{id:"edge-detect",children:e.exports.jsx(s.a,{href:"#edge-detect",children:"Edge Detect"})}),`
 `,e.exports.jsx(t,{images:[{src:"/projects/2D/2/pinwheel_edge_1.png",alt:"cat blur sensitivity 1"},{src:"/projects/2D/2/pinwheel_edge_05.png",alt:"cat blur sensitivity 0.5"}],figNumber:3,targetWidth:"100%",figCaption:"Pinwheel Image with a Sensitivity of 1 and 0.5."}),`
 `,e.exports.jsx(s.h3,{id:"scale",children:e.exports.jsx(s.a,{href:"#scale",children:"Scale"})}),`
-`,e.exports.jsx(t,{images:[{src:"/projects/2D/2/scale_down.png",alt:"scale down"},{src:"/projects/2D/2/scale_up.png",alt:"scale up"}],figNumber:4,targetWidth:"100%",figCaption:"Among Us Image Scaled Down (x = 0.2, y = 0.5) and Scale Up (x = 1.2, y = 1.5)"}),`
+`,e.exports.jsx(t,{images:[{src:"/projects/2D/2/scaled_down.png",alt:"scale down"},{src:"/projects/2D/2/scaled_up.png",alt:"scale up"}],figNumber:4,targetWidth:"100%",figCaption:"Among Us image scaled down (x = 0.5, y = 0.2) and scaled up (x = 1.2, y = 1.5)"}),`
 `,e.exports.jsx(s.h3,{id:"median",children:e.exports.jsx(s.a,{href:"#median",children:"Median"})}),`
 `,e.exports.jsx(t,{images:[{src:"/projects/2D/2/capybara_median_2.png",alt:"capybara median radius 2"},{src:"/projects/2D/2/capybara_median_5.png",alt:"capybara median radius 5"}],figNumber:5,targetWidth:"100%",figCaption:"Capybara Image with a Median Radius of 2 and 5."}),`
 `,e.exports.jsx(s.h3,{id:"chromatic-aberration",children:e.exports.jsx(s.a,{href:"#chromatic-aberration",children:"Chromatic Aberration"})}),`
