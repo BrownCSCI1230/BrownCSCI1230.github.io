@@ -159,10 +159,10 @@
 </span><span class="code-line line-number" line="145">    glm::mat4 matrix;    <span class="pl-c">// Only applicable when transforming by a custom matrix. This is that custom matrix.</span>
 </span><span class="code-line line-number" line="146">};
 </span></code></pre>
-<div class="success-callout callout"><p>Instead of directly copying your code from Lab4, you may find the following methods from the <a href="https://glm.g-truc.net/0.9.9/api/a00362.html" target="_blank" rel="noopener noreferrer">GLM library</a> very helpful for constructing transformation matrices.</p><ul>
-<li>glm::translate</li>
-<li>glm::scale</li>
-<li>glm::rotate</li>
+<div class="success-callout callout"><p>Instead of copying your code from Lab 4, you may find the following methods from the <a href="https://glm.g-truc.net/0.9.9/api/a00362.html" target="_blank" rel="noopener noreferrer">GLM library</a> very helpful for constructing transformation matrices.</p><ul>
+<li><code>glm::translate()</code></li>
+<li><code>glm::scale()</code></li>
+<li><code>glm::rotate()</code></li>
 </ul></div>
 <h3 id="scene-graph-nodes"><a href="#scene-graph-nodes">Scene Graph Nodes</a></h3>
 <p>Our scene graph is composed of nodes, each of which describes zero or more of the following:</p>
@@ -185,7 +185,7 @@
 <p>Now that we have our <code>SceneTransformation</code>s and <code>SceneNode</code>s, we can begin to learn to derive <strong>cumulative transformation matrices</strong> for each primitive.</p>
 <p>A cumulative transformation matrix (CTM) is the composition of <em>all</em> the transformations done to a single primitive, from the root <code>SceneNode</code>, down to the one which contains the primitive itself. This is best demonstrated with an example. Consider the scene graph below, which contains five primitives:</p>
 <figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/example-scenegraph.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/example-scenegraph.png" alt="Scene graph with five primitives"/></a></div><figcaption><strong>Figure 3: </strong>Scene graph with five primitives.</figcaption></figure>
-<details><summary>More about the example scene graph above</summary><p>Remember that all nodes in this tree are <code>SceneNode</code>s.</p><p>In this specific example, the <em>leaf nodes</em> contain only one <code>primitive</code> each (no transformations or children). Meanwhile, the <em>non-leaf nodes</em> contain only lists of <code>transformations</code> (e.g. <code>{T1}</code> and <code>{R1, S1}</code>), plus a list of their <code>children</code> (omitted; this can be easily determined by just looking at the tree).</p><p>Note that even though we&#x27;ve stored the primitives in their own, individual nodes here, there&#x27;s no reason we can&#x27;t just put the primitives in their parent nodes.</p></details>
+<details><summary>More about the example scene graph above</summary><p>Remember that all nodes in this tree are <code>SceneNode</code>s.</p><p>In this specific example, the <em>leaf nodes</em> contain only one <code>primitive</code> each (no transformations or children). Meanwhile, the <em>non-leaf nodes</em> contain only lists of <code>transformations</code> (e.g. <code>{T1}</code> and <code>{R1, S1}</code>), plus a list of their <code>children</code> (omitted; this can be easily determined by just looking at the tree).</p><p>Note that even though we&#x27;ve stored the primitives in their own, individual nodes here, there&#x27;s no reason we can&#x27;t just put the primitives in their parent nodes, alongside the transformations!</p></details>
 <p>We use this tree in the same way we used transformation graphs in lab 4, following three basic rules:</p>
 <div class="success-callout callout"><ol>
 <li>Transformations on non-leaf nodes are applied to their <em>all</em> of their descendants.</li>
@@ -237,17 +237,17 @@
 <li>If you do write a helper function, think carefully about whether you should be passing arguments <em>by reference</em> or <em>by value</em>.</li>
 </ul></div>
 <h3 id="testing-scenes"><a href="#testing-scenes">Testing Scenes</a></h3>
-<p>You should now be able to test if your parser is able to properly load scenes. You can load up any <code>.xml</code> file (like <code>chess.xml</code>), by first running the lab, and then using <code>File &gt; Open</code> in the window that pops up.</p>
+<p>You should now be able to test if your parser is able to properly load scenes. You can load up any <code>.xml</code> file (like <code>chess.xml</code> or <code>test_full_scenenode.xml</code>), by first running the lab, and then using <code>File &gt; Open</code> in the window that pops up.</p>
 <div class="warning-callout callout"><p>Note: on MacOS, the <code>File</code> option will be on the menu bar instead.</p></div>
-<p>If all goes well, you should see an image that looks like this:</p>
-<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/chess.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/chess.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong><p>What you should see if your parser loaded <code>chess.xml</code> correctly.</p></figcaption></figure>
-<div class="warning-callout callout"><p>Note: loading scenes into the window will help you test that your parser got the camera, primitives, and transformations right, but not necessarily the lights, since the shading done by our support code is very basic.</p></div>
+<p>If all goes well, you should get outputs like these:</p>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab5/chess.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/chess.png" alt="TODO"/></a><a href="/labs/lab5/test-full-scenenode.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/test-full-scenenode.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong><p>What you should see if your parser can load <code>chess.xml</code> and <code>test_full_scenenode.xml</code> correctly.</p></figcaption></figure>
+<div class="warning-callout callout"><p>Note: loading scenes into the window will help you test that your parser got the camera, primitives, and transformations right, but not necessarily the lights, since the shading done by our support code is very basic, and does not use the scene&#x27;s lights.</p></div>
 <h2 id="extra-creating-your-own-3d-scenes"><a href="#extra-creating-your-own-3d-scenes">Extra: Creating Your Own 3D Scene(s)</a></h2>
 <p>You might want to work with the scenefiles directly for a final project, in order to create your own 3D scenes.
 Scene files are written using the XML format, which our <code>ScenefileReader</code> reads for you.
 You can refer to this lab for the conceptual aspects of scenefiles, but for the specifics of the XML format, you should check out <a href="/docs/scenefile-documentation">the dedicated page in the Docs tab</a>.</p>
 <h2 id="end"><a href="#end">End</a></h2>
-<p>Congrats on finishing the Parsing lab! Now, it&#x27;s time to submit your code and get checked off by a TA. You should have your answers to all conceptual questions ready in your <code>README.md</code> file (tasks 1-3), and you should be able to show a scene that loads correctly into the window.</p>
+<p>Congrats on finishing the Parsing lab! Now, it&#x27;s time to submit your code and get checked off by a TA. You should have your answers to all conceptual questions ready in your <code>README.md</code> file (tasks 1-3), and you should be able to show that your parser correctly loads scenes into the window.</p>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
 <p>Submit your Github repo for this lab to the &quot;Lab 5: Parsing&quot; assignment on Gradescope, then get checked off by a TA during lab hours.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
@@ -368,5 +368,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.7c167e81.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.c1e6dc01.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7c167e81.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-7382326a.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.927ca9ff.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.8ba6a65a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.927ca9ff.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-7382326a.js"></body>
     </html>

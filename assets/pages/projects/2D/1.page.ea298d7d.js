@@ -121,7 +121,7 @@ as well as where the code for each implementation lies within your overall proje
 `,e.exports.jsx(s.h3,{id:"alpha-blending",children:e.exports.jsx(s.a,{href:"#alpha-blending",children:"Alpha Blending"})}),`
 `,e.exports.jsx(t,{images:[{src:"/projects/2D/1/alphablend.gif",alt:"TODO"}],figNumber:10,targetWidth:"95%",figCaption:"An example of drawing without fixing alpha blending versus with the extra credit fix."}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this project to the "Project 1: Brush" assignment on Gradescope.'}),`
+`,e.exports.jsx(s.p,{children:'Submit your Github repo for this project to the "Project 1: Brush (Code)" assignment on Gradescope.'}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;
