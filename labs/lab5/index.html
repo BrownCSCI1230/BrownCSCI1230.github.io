@@ -159,6 +159,11 @@
 </span><span class="code-line line-number" line="145">    glm::mat4x4 matrix;  <span class="pl-c">// Only applicable to transformations with custom matrices</span>
 </span><span class="code-line line-number" line="146">};
 </span></code></pre>
+<div class="success-callout callout"><p>Instead of directly copying your code from Lab4, you may find the following methods from the <a href="https://glm.g-truc.net/0.9.9/api/a00362.html" target="_blank" rel="noopener noreferrer">GLM library</a> very helpful for constructing transformation matrices.</p><ul>
+<li>glm::translate</li>
+<li>glm::scale</li>
+<li>glm::rotate</li>
+</ul></div>
 <h3 id="scene-graph-nodes"><a href="#scene-graph-nodes">Scene Graph Nodes</a></h3>
 <p>Our scene graph is composed of nodes, each of which describes <em>either</em> a series of transformations and a number of children nodes, <em>or</em> a number of primitives.</p>
 <p>Take a look at the node struct, <code>SceneNode</code>, that we&#x27;ve defined:</p>
@@ -360,5 +365,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.bb6aff5a.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.891ef874.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.bb6aff5a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-aff2798f.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.a6f7620c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.5c71e771.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a6f7620c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-aff2798f.js"></body>
     </html>
