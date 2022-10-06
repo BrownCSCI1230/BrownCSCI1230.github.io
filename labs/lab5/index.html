@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
-      <head><link rel="stylesheet" type="text/css" href="/assets/index.3614b4cd.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.5c15a221.css">
         <meta charset="UTF-8">
         <title>Lab 5 | CSCI 1230</title>
         <meta name="description" content="We teach computer graphics!">
@@ -39,8 +39,8 @@
 <p><strong>However, when rendering a scene</strong>, we don&#x27;t necessarily care about these groupings. Instead, what we&#x27;d really like is to be able to quickly obtain each primitive&#x27;s final transform: thus, we store each primitive&#x27;s <em>cumulative transformation matrix</em> (<code>ctm</code>, for short) with the primitive itself, in a vector/list.</p>
 <div class="success-callout callout"><p>We can think of this as the &quot;render-optimized&quot; representation of a scene, so we will call it <code>RenderData</code>.</p></div>
 <p>Take a look at the two figures below. In this lab, your task will be to write a parser which transforms <code>SceneData</code> to <code>RenderData</code>.</p>
-<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab5/SceneVrsRender.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/SceneVrsRender.png" alt="TODO"/></a></div><figcaption><strong>Figure 1: </strong>Transforming SceneData into RenderData.</figcaption></figure>
-<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab5/SceneVrsRender-2.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/SceneVrsRender-2.png" alt="TODO"/></a></div><figcaption><strong>Figure 2: </strong>Comparing Scene Graphs and List of Primitives data structures</figcaption></figure>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab5/scene-vs-render-1.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/scene-vs-render-1.png" alt="TODO"/></a></div><figcaption><strong>Figure 1: </strong><p>Transforming <code>SceneData</code> into <code>RenderData</code>. Conceptually, they store the same information, just in a different format!</p></figcaption></figure>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab5/scene-vs-render-2.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/scene-vs-render-2.png" alt="TODO"/></a></div><figcaption><strong>Figure 2: </strong>Comparing scene graphs and lists of primitives, as data structures.</figcaption></figure>
 <p>In <a href="#figure-1">Figure 1</a>, observe how the <code>SceneGraph</code> and <code>PrimitivesList</code> are the only things that differentiate <code>SceneData</code> from <code>RenderData</code>. <a href="#figure-2">Figure 2</a> shows how primitives and their transformations are stored differently in these data structures.</p>
 <details><summary>Extra: why do we use a vector/list to render primitives?</summary><p>If you have started <code>Project 3: Intersect</code>, you might have reasoned that one of the reasons ray tracing is so computationally expensive is because we need to check for ray-primitive intersections. This is <em>especially</em> true when there are many primitives in the scene to check against.</p><p>We use a <strong>vector/list</strong> to iterate through all the primitives in the scene because it is simple to implement, and has traditionally been sufficient for the requirements of this course.</p><p>That said, there isn&#x27;t any reason that this part of <code>RenderData</code> <em>has</em> to be a vector/list. If you want to get fancy, there are more efficient alternatives which allow for much faster ray-primitive intersection tests (see: &quot;accelerated&quot; data structures like octrees, bounding-volume hierarchies (BVHs), and KD-trees, all covered in lectures).</p></details>
 <h2 id="scene-data"><a href="#scene-data">Scene Data</a></h2>
@@ -165,25 +165,27 @@
 <li>glm::rotate</li>
 </ul></div>
 <h3 id="scene-graph-nodes"><a href="#scene-graph-nodes">Scene Graph Nodes</a></h3>
-<p>Our scene graph is composed of nodes, each of which describes <em>either</em> a series of transformations and a number of children nodes, <em>or</em> a number of primitives.</p>
+<p>Our scene graph is composed of nodes, each of which describes zero or more of the following:</p>
+<ol>
+<li>a series of transformations,</li>
+<li>a number of primitives, and</li>
+<li>a number of children nodes.</li>
+</ol>
 <p>Take a look at the node struct, <code>SceneNode</code>, that we&#x27;ve defined:</p>
 <pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line line-number" line="148"><span class="pl-c">// Struct which represents a node in the scene graph/tree, to be parsed by the student&#x27;s `SceneParser`.</span>
-</span><span class="code-line line-number" line="149"><span class="pl-c">// If a SceneNode has primitives, it cannot have transformations/children, and vice versa</span>
-</span><span class="code-line line-number" line="150"><span class="pl-k">struct</span> <span class="pl-en">SceneNode</span> {
-</span><span class="code-line line-number" line="151">   std::vector&lt;ScenePrimitive*&gt; primitives;
-</span><span class="code-line line-number" line="152">
-</span><span class="code-line line-number" line="153">   std::vector&lt;SceneTransformation*&gt; transformations; <span class="pl-c">// Note the order of transformations described in lab 5</span>
-</span><span class="code-line line-number" line="154">   std::vector&lt;SceneNode*&gt;           children;
-</span><span class="code-line line-number" line="155">};
-</span><span class="code-line line-number" line="156">
+</span><span class="code-line line-number" line="149"><span class="pl-k">struct</span> <span class="pl-en">SceneNode</span> {
+</span><span class="code-line line-number" line="150">   std::vector&lt;SceneTransformation*&gt; transformations; <span class="pl-c">// Note the order of transformations described in lab 5</span>
+</span><span class="code-line line-number" line="151">   std::vector&lt;ScenePrimitive*&gt;      primitives;
+</span><span class="code-line line-number" line="152">   std::vector&lt;SceneNode*&gt;           children;
+</span><span class="code-line line-number" line="153">};
 </span></code></pre>
-<p>If a <code>SceneNode</code> has <code>children</code>, it will also likely contain <code>transformations</code> to apply to those <code>children</code>, and so on, until we get to a node that has <code>primitives</code>.</p>
+<p>If a <code>SceneNode</code> has <code>transformations</code>, those apply to both its <code>primitives</code> and <code>children</code>.</p>
 <details><summary>Example: how might a city scene be grouped?</summary><p>If our scene describes a cityscape, it would be silly to describe every window&#x27;s position by its distance from the center of the city. It would make much more sense to instead describe each window&#x27;s position relative to the building it is a part of. Using the same logic, we might describe the building&#x27;s position relative to its street, then the street&#x27;s position relative to the city.</p><p>This way, &quot;relocating&quot; a building would only involve applying a single transform to the parent <code>SceneNode</code> which represents it. Then, every descendant of that <code>SceneNode</code> would have that transformation applied, too.</p></details>
 <h3 id="cumulative-transformation-matrices"><a href="#cumulative-transformation-matrices">Cumulative Transformation Matrices</a></h3>
 <p>Now that we have our <code>SceneTransformation</code>s and <code>SceneNode</code>s, we can begin to learn to derive <strong>cumulative transformation matrices</strong> for each primitive.</p>
 <p>A cumulative transformation matrix (CTM) is the composition of <em>all</em> the transformations done to a single primitive, from the root <code>SceneNode</code>, down to the one which contains the primitive itself. This is best demonstrated with an example. Consider the scene graph below, which contains five primitives:</p>
-<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/Parsing_Lab_Graph-1.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/Parsing_Lab_Graph-1.png" alt="Scene graph with five primitives"/></a></div><figcaption><strong>Figure 3: </strong>Scene graph with five primitives.</figcaption></figure>
-<p>As described earlier, all nodes are <code>SceneNode</code>s. <em>Leaf nodes</em> contain lists of <code>primitives</code> (in this example, the leaf nodes happen to have only one primitive each). Meanwhile, <em>non-leaf nodes</em> contain lists of <code>transformations</code> (<code>{T1}</code> and <code>{R1, S1}</code>, for example), plus a list of their <code>children</code> (omitted; this can be easily determined by just looking at the tree).</p>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/example-scenegraph.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/example-scenegraph.png" alt="Scene graph with five primitives"/></a></div><figcaption><strong>Figure 3: </strong>Scene graph with five primitives.</figcaption></figure>
+<details><summary>More about the example scene graph above</summary><p>Remember that all nodes in this tree are <code>SceneNode</code>s.</p><p>In this specific example, the <em>leaf nodes</em> contain only one <code>primitive</code> each (no transformations or children). Meanwhile, the <em>non-leaf nodes</em> contain only lists of <code>transformations</code> (e.g. <code>{T1}</code> and <code>{R1, S1}</code>), plus a list of their <code>children</code> (omitted; this can be easily determined by just looking at the tree).</p><p>Note that even though we&#x27;ve stored the primitives in their own, individual nodes here, there&#x27;s no reason we can&#x27;t just put the primitives in their parent nodes.</p></details>
 <p>We use this tree in the same way we used transformation graphs in lab 4, following three basic rules:</p>
 <div class="success-callout callout"><ol>
 <li>Transformations on non-leaf nodes are applied to their <em>all</em> of their descendants.</li>
@@ -229,6 +231,7 @@
 </ol></div>
 <h4 id="traversing-the-scene-graph"><a href="#traversing-the-scene-graph">Traversing The Scene Graph</a></h4>
 <p>Our next objective is to populate <code>renderData.shapes</code>, which is a <code>std::vector&lt;RenderShapeData&gt;</code>. To do this, we must traverse the scene graph and calculate the cumulative transformation matrix for each of the primitives.</p>
+<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/array.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/array.png" alt="TODO"/></a></div><figcaption><strong>Figure 4: </strong><p>You can think of <code>renderData.shapes</code> as being a list of primitives and their CTMs.</p></figcaption></figure>
 <div class="task-callout callout"><div class="warning-callout callout"><p>This is a much bigger task than the others in this lab. If you get stuck, remember that you can collaborate with others in this course! Debugging is a skill 😉.</p></div><p>First, get the root node of the scene graph from the <code>fileReader</code>.</p><p>Also, <code>clear()</code> <code>renderData.shapes</code>. You will be appending to this shortly.</p><p>Then, traverse the tree in a depth-first manner, starting from the root node of the scene graph. While you are traversing the tree, build your cumulative transformation; for each primitive you encounter, you&#x27;ll want to append the primitive and CTM onto <code>renderData.shapes</code>.</p><ul>
 <li>It will be <em>very</em> helpful to write a helper function to do this.</li>
 <li>If you do write a helper function, think carefully about whether you should be passing arguments <em>by reference</em> or <em>by value</em>.</li>
@@ -237,7 +240,7 @@
 <p>You should now be able to test if your parser is able to properly load scenes. You can load up any <code>.xml</code> file (like <code>chess.xml</code>), by first running the lab, and then using <code>File &gt; Open</code> in the window that pops up.</p>
 <div class="warning-callout callout"><p>Note: on MacOS, the <code>File</code> option will be on the menu bar instead.</p></div>
 <p>If all goes well, you should see an image that looks like this:</p>
-<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/Chess.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/Chess.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong><p>What you should see if your parser loaded <code>chess.xml</code> correctly.</p></figcaption></figure>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab5/chess.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab5/chess.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong><p>What you should see if your parser loaded <code>chess.xml</code> correctly.</p></figcaption></figure>
 <div class="warning-callout callout"><p>Note: loading scenes into the window will help you test that your parser got the camera, primitives, and transformations right, but not necessarily the lights, since the shading done by our support code is very basic.</p></div>
 <h2 id="extra-creating-your-own-3d-scenes"><a href="#extra-creating-your-own-3d-scenes">Extra: Creating Your Own 3D Scene(s)</a></h2>
 <p>You might want to work with the scenefiles directly for a final project, in order to create your own 3D scenes.
@@ -365,5 +368,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.8afe7b6b.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.51358ac1.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.8afe7b6b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-7382326a.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.7c167e81.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.c1e6dc01.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7c167e81.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-7382326a.js"></body>
     </html>
