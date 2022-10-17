@@ -253,6 +253,17 @@
       "_chunk-a40e06f3.js"
     ]
   },
+  "pages/labs/lab7.page.mdx": {
+    "file": "assets/pages/labs/lab7.page.ce9309ee.js",
+    "src": "pages/labs/lab7.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-37395b21.js",
+      "_chunk-3e1e0f24.js",
+      "_chunk-a40e06f3.js"
+    ]
+  },
   "pages/projects/index.page.mdx": {
     "file": "assets/pages/projects/index.page.e806b1e6.js",
     "src": "pages/projects/index.page.mdx",
@@ -327,7 +338,7 @@
     ]
   },
   "pages/projects/ray/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo-ans.page.7a36509d.js",
+    "file": "assets/pages/projects/ray/1-algo-ans.page.527d6bcf.js",
     "src": "pages/projects/ray/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -360,11 +371,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7cc78376.js",
+    "file": "assets/entry-client-routing.edbab240.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-88fe8763.js"
+      "_chunk-209c51d8.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -390,6 +401,7 @@
       "pages/labs/lab4.page.mdx",
       "pages/labs/lab5.page.mdx",
       "pages/labs/lab6.page.mdx",
+      "pages/labs/lab7.page.mdx",
       "pages/lectures.page.mdx",
       "pages/projects/2D/1-algo-ans.page.mdx",
       "pages/projects/2D/1-algo.page.mdx",
@@ -406,11 +418,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.d6e5f545.js",
+    "file": "assets/entry-server-routing.396e5257.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-88fe8763.js"
+      "_chunk-209c51d8.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -436,6 +448,7 @@
       "pages/labs/lab4.page.mdx",
       "pages/labs/lab5.page.mdx",
       "pages/labs/lab6.page.mdx",
+      "pages/labs/lab7.page.mdx",
       "pages/lectures.page.mdx",
       "pages/projects/2D/1-algo-ans.page.mdx",
       "pages/projects/2D/1-algo.page.mdx",
@@ -466,8 +479,8 @@
       "_chunk-37395b21.js"
     ]
   },
-  "_chunk-88fe8763.js": {
-    "file": "assets/chunk-88fe8763.js"
+  "_chunk-209c51d8.js": {
+    "file": "assets/chunk-209c51d8.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
