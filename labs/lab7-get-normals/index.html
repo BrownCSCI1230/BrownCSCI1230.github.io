@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.5c15a221.css">
+        <meta charset="UTF-8">
+        <title>Lab 7: Vertex Normals Solution | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-263NEZCW0C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-263NEZCW0C');
+        </script>
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-7-terrain-vertex-normals-solution">Lab 7: Terrain (Vertex Normals Solution)</a></li></ol></nav><main>
+<!-- -->
+<h1 id="lab-7-terrain-vertex-normals-solution"><a href="#lab-7-terrain-vertex-normals-solution">Lab 7: Terrain (Vertex Normals Solution)</a></h1>
+<p>Here&#x27;s the code for obtaining a given vertex&#x27;s normals.</p>
+<p>It&#x27;s fine to copy-and-paste this code, but do try to understand it!</p>
+<p><a href="/labs/lab7#getting-the-normal">Back to that section</a></p>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// Computes the normal of a vertex by averaging neighbors</span>
+</span><span class="code-line">glm::vec3 <span class="pl-en">TerrainGenerator::getNormal</span>(<span class="pl-k">int</span> row, <span class="pl-k">int</span> col) {
+</span><span class="code-line">    <span class="pl-c">// Task 9: Compute the average normal for the given input indices</span>
+</span><span class="code-line">
+</span><span class="code-line">    <span class="pl-c">// TA SOLUTION</span>
+</span><span class="code-line">    glm::vec3 normal = <span class="pl-c1">glm::vec3</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+</span><span class="code-line">    std::vector&lt;std::vector&lt;<span class="pl-k">int</span>&gt;&gt; neighborOffsets = { <span class="pl-c">// Counter-clockwise around the vertex</span>
+</span><span class="code-line">     {-<span class="pl-c1">1</span>, -<span class="pl-c1">1</span>},
+</span><span class="code-line">     { <span class="pl-c1">0</span>, -<span class="pl-c1">1</span>},
+</span><span class="code-line">     { <span class="pl-c1">1</span>, -<span class="pl-c1">1</span>},
+</span><span class="code-line">     { <span class="pl-c1">1</span>,  <span class="pl-c1">0</span>},
+</span><span class="code-line">     { <span class="pl-c1">1</span>,  <span class="pl-c1">1</span>},
+</span><span class="code-line">     { <span class="pl-c1">0</span>,  <span class="pl-c1">1</span>},
+</span><span class="code-line">     {-<span class="pl-c1">1</span>,  <span class="pl-c1">1</span>},
+</span><span class="code-line">     {-<span class="pl-c1">1</span>,  <span class="pl-c1">0</span>}
+</span><span class="code-line">    };
+</span><span class="code-line">    glm::vec3 V = <span class="pl-c1">getPosition</span>(row,col);
+</span><span class="code-line">    <span class="pl-k">for</span> (<span class="pl-k">int</span> i = <span class="pl-c1">0</span>; i &lt; <span class="pl-c1">8</span>; ++i) {
+</span><span class="code-line">     <span class="pl-k">int</span> n1RowOffset = neighborOffsets[i][<span class="pl-c1">0</span>];
+</span><span class="code-line">     <span class="pl-k">int</span> n1ColOffset = neighborOffsets[i][<span class="pl-c1">1</span>];
+</span><span class="code-line">     <span class="pl-k">int</span> n2RowOffset = neighborOffsets[(i + <span class="pl-c1">1</span>) % <span class="pl-c1">8</span>][<span class="pl-c1">0</span>];
+</span><span class="code-line">     <span class="pl-k">int</span> n2ColOffset = neighborOffsets[(i + <span class="pl-c1">1</span>) % <span class="pl-c1">8</span>][<span class="pl-c1">1</span>];
+</span><span class="code-line">     glm::vec3 n1 = <span class="pl-c1">getPosition</span>(row + n1RowOffset, col + n1ColOffset);
+</span><span class="code-line">     glm::vec3 n2 = <span class="pl-c1">getPosition</span>(row + n2RowOffset, col + n2ColOffset);
+</span><span class="code-line">     normal = normal + <span class="pl-c1">glm::cross</span>(n1 - V, n2 - V);
+</span><span class="code-line">    }
+</span><span class="code-line">    <span class="pl-k">return</span> <span class="pl-c1">glm::normalize</span>(normal);
+</span><span class="code-line">}
+</span></code></pre></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab7-get-normals"}}</script><script type="module" src="/assets/entry-client-routing.1baa5791.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab7-get-normals.page.e41f010b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.1baa5791.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1a570ad8.js"></body>
+    </html>
