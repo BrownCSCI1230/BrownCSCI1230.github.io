@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.5c15a221.css">
+        <meta charset="UTF-8">
+        <title>Lab 8 | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-263NEZCW0C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-263NEZCW0C');
+        </script>
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#lab-8-trimeshes">Lab 8: Trimeshes</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#objectives">Objectives</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#conceptual-background">Conceptual Background</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#objects-as-trimeshes">Objects As Trimeshes</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#level-of-detail-tessellation-parameters">Level Of Detail (Tessellation Parameters)</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#single-triangles">Single Triangles</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#positions">Positions</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#normals">Normals</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#positions-and-normals">Positions And Normals</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#multiple-triangles">Multiple Triangles</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#summary">Summary</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#getting-started">Getting Started</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#stencil-code">Stencil Code</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-application-window">The Application Window</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#drawing-a-triangle">Drawing A Triangle</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#cubes">Cubes</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#tiles">Tiles</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#cube-faces">Cube Faces</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#full-cubes">Full Cubes</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#spheres">Spheres</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#spherical-coordinates">Spherical Coordinates</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#wedge">Wedge</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#full-spheres">Full Spheres</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#end">End</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#submission">Submission</a></li></ol></li></ol></nav><main>
+<!-- -->
+<h1 id="lab-8-trimeshes"><a href="#lab-8-trimeshes">Lab 8: Trimeshes</a></h1>
+<p><a href="https://classroom.github.com/a/RqmmNf2u" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a></p>
+<div class="task-no-number-callout callout"><p>Please put your answers to written questions in this lab, if any, in a Markdown file named <code>README.md</code> in your lab repo.</p></div>
+<h2 id="introduction"><a href="#introduction">Introduction</a></h2>
+<p>Welcome to lab 8!</p>
+<p>At this point in the semester, you must&#x27;ve had some experience with <em>implicit shapes</em>. These represent <strong>surfaces</strong> via a set of constraints (i.e. equations and inequalities), such that all points which satisfy these constraints lie on the surface of the shape. That&#x27;s rather indirect!</p>
+<p>In this lab, we will learn a different representation of surfaces—<strong>triangle meshes</strong>, or <strong>trimeshes</strong> for short—which more <em>explicitly</em> describes points on a surface. We will spend some time today understanding what they are, how they work, and how we can generate our own.</p>
+<h3 id="objectives"><a href="#objectives">Objectives</a></h3>
+<ol>
+<li>Learn about <strong>trimeshes</strong> and how they are used to approximate an object&#x27;s surface;</li>
+<li>Implement generators for <strong>cube</strong> and <strong>sphere</strong> trimeshes at varying levels of detail.</li>
+</ol>
+<h2 id="conceptual-background"><a href="#conceptual-background">Conceptual Background</a></h2>
+<h3 id="objects-as-trimeshes"><a href="#objects-as-trimeshes">Objects As Trimeshes</a></h3>
+<p>Most objects can be represented as surfaces, which can, in turn, be approximated by a collection of connected triangles. We call such a representation of an object a <strong>trimesh</strong>:</p>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/intro-trimesh-examples.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/intro-trimesh-examples.jpg" alt="Examples of triangle meshes."/></a></div><figcaption><strong>Figure 1: </strong>Examples of triangle meshes.</figcaption></figure>
+<details><summary>Extra: can all objects be represented as trimeshes?</summary><p>Fog, clouds, and smoke cannot easily be represented as surfaces, and are thus typically not represented as trimeshes.</p><p>In these cases, we instead rely on volumetric representations. If you&#x27;re interested, you can read more about how such objects are rendered, through a process known as <a href="https://en.wikipedia.org/wiki/Volume_rendering" target="_blank" rel="noopener noreferrer">volumetric rendering</a>.</p></details>
+<h3 id="level-of-detail-tessellation-parameters"><a href="#level-of-detail-tessellation-parameters">Level Of Detail (Tessellation Parameters)</a></h3>
+<p>As the number of triangles used in a trimesh (i.e. its tri-count) increases, the mesh looks more and more like the surface it is approximating. However, the cost of rendering it also increases.</p>
+<p>To manage this tradeoff, we often vary a mesh&#x27;s tri-count based on how much detail we want in the resulting 3D shape. This is loosely expressed as the trimesh&#x27;s <strong>level of detail</strong>, which can be captured in the form of one or more <strong>tessellation parameters</strong>.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/intro-level-of-detail.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/intro-level-of-detail.jpg" alt="A face represented by a triangle mesh, at increasing levels of detail."/></a></div><figcaption><strong>Figure 2: </strong>A face represented by a triangle mesh, at increasing levels of detail.</figcaption></figure>
+<h3 id="single-triangles"><a href="#single-triangles">Single Triangles</a></h3>
+<p>Each triangle in a trimesh is defined by its three vertices, which may have <strong>attributes</strong> like positions, normals, or colors. First, let&#x27;s consider only their <strong>positions</strong>.</p>
+<h4 id="positions"><a href="#positions">Positions</a></h4>
+<p>We can store a triangle&#x27;s vertices&#x27; positions in a <code>vector</code>, adopting a <strong>counter-clockwise winding order</strong> by convention. This simply means that we list the vertices in counter-clockwise order as viewed from the &quot;front&quot; of the triangle.</p>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/intro-vertex-positions.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/intro-vertex-positions.jpg" alt="Counter-clockwise Vertex Positions"/></a></div><figcaption><strong>Figure 3: </strong>A triangle&#x27;s vertices&#x27; positions can be listed in a vector, in counter-clockwise order.</figcaption></figure>
+<h4 id="normals"><a href="#normals">Normals</a></h4>
+<p>If we&#x27;re alright with every point on our triangle having the same normal, we can use <strong>per-face normals</strong>. With three vertices, we can get two vectors; taking the cross product of these gives us the triangle&#x27;s normal.</p>
+<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab8/intro-per-face-normals.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/intro-per-face-normals.jpg" alt="A triangle&#x27;s normal can be computed with just its vertices&#x27; positions."/></a></div><figcaption><strong>Figure 4: </strong>A triangle&#x27;s normal can be computed with just its vertices&#x27; positions.</figcaption></figure>
+<p>However, we usually want points on our triangle to have different, spatially-varying normals, so that our lighting can (eventually) appear smoother. In such cases, we&#x27;d instead use <strong>per-vertex normals</strong>.</p>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab8/per-vertex-normals-sphere.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/per-vertex-normals-sphere.png" alt="normals on a sphere"/></a><a href="/labs/lab8/per-vertex-normals-cone.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/per-vertex-normals-cone.png" alt="normals on a cone"/></a></div><figcaption><strong>Figure 5: </strong>Per-vertex normals on spheres and cones.</figcaption></figure>
+<div class="success-callout callout"><p>For our purposes in CS 1230, we will be using per-vertex normals.</p></div>
+<div class="warning-callout callout"><p><strong>Warning</strong>: observe how the tip of the cone in the image above has many normals defined for what appears to be the same vertex. This highlights a critical distinction: by &quot;per-vertex&quot;, we don&#x27;t mean &quot;per-spatial-location&quot;, we mean &quot;per-vertex-per-triangle&quot;. Many triangles have a vertex located at the tip of the cone, and each of those vertices can have a unique normal.</p></div>
+<h4 id="positions-and-normals"><a href="#positions-and-normals">Positions And Normals</a></h4>
+<p>Putting it all together, we can represent each triangle vertex with 6 float values: <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.566ex" xmlns="http://www.w3.org/2000/svg" width="7.227ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3194.3 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-1-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path id="MJX-1-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-1-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-1-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"></path><path id="MJX-1-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D465" xlink:href="#MJX-1-TEX-I-1D465"></use></g><g data-mml-node="mo" transform="translate(961,0)"><use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1405.7,0)"><use data-c="1D466" xlink:href="#MJX-1-TEX-I-1D466"></use></g><g data-mml-node="mo" transform="translate(1895.7,0)"><use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(2340.3,0)"><use data-c="1D467" xlink:href="#MJX-1-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(2805.3,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"></use></g></g></g></svg></mjx-container></span> for its position, and <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.664ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2945.3 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-2-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-2-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-2-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-2-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJX-2-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-2-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-2-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D456" xlink:href="#MJX-2-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(734,0)"><use data-c="2C" xlink:href="#MJX-2-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1178.7,0)"><use data-c="1D457" xlink:href="#MJX-2-TEX-I-1D457"></use></g><g data-mml-node="mo" transform="translate(1590.7,0)"><use data-c="2C" xlink:href="#MJX-2-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(2035.3,0)"><use data-c="1D458" xlink:href="#MJX-2-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(2556.3,0)"><use data-c="29" xlink:href="#MJX-2-TEX-N-29"></use></g></g></g></svg></mjx-container></span> for its normal.</p>
+<p>Seeing that each triangle has three vertices, and recalling that we&#x27;re using a counter-clockwise winding order, we can derive something like <code>m_vertexData</code> below:</p>
+<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/intro-vertex-positions-normals.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/intro-vertex-positions-normals.jpg" alt="normals on a cone"/></a></div><figcaption><strong>Figure 6: </strong><p><code>m_vertexData</code> represents a single triangle&#x27;s positions and normals,</p></figcaption></figure>
+<details><summary>Extra: why does winding order matter?</summary><p>In all subsequent assignments in CS 1230, you will need to use the correct <strong>winding order</strong> of vertex attributes (e.g. positions and normals) to be able to properly render anything.</p><p>This is because, as one of the real-time pipeline&#x27;s many optimizations, <a href="https://www.easytechjunkie.com/what-is-back-face-culling.htm" target="_blank" rel="noopener noreferrer"><strong>backface culling</strong></a> is enabled by default. This simply means that the &quot;back&quot; faces of each triangle won&#x27;t be rendered:</p><figure id="figure-7" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab8/backfaceCulling.gif" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/backfaceCulling.gif" alt="Backface culling, as seen on a rotating triangle"/></a></div><figcaption><strong>Figure 7: </strong>Backface culling, as seen on a rotating triangle.</figcaption></figure></details>
+<h3 id="multiple-triangles"><a href="#multiple-triangles">Multiple Triangles</a></h3>
+<p>To represent a collection of triangles, we simply append the information for each new triangle to the back of our earlier list, i.e.. <code>m_vertexData</code>. Notice that:</p>
+<ul>
+<li>Positions and normals are interleaved, just as before; and</li>
+<li>Positions might be repeated, which is totally fine—multiple triangles can reasonably share the same position for some of their vertices.</li>
+</ul>
+<figure id="figure-8" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab8/intro-multi-triangles.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/intro-multi-triangles.jpg" alt="visualization of m_vertexData"/></a></div><figcaption><strong>Figure 8: </strong>The vertex data for a cube.</figcaption></figure>
+<h3 id="summary"><a href="#summary">Summary</a></h3>
+<p>To summarize the above:</p>
+<ol>
+<li>An object can be represented as a number of triangles, varying with its level of detail; and</li>
+<li>A collection of triangles can be represented as a list of interleaved positions and normals.</li>
+</ol>
+<h2 id="getting-started"><a href="#getting-started">Getting Started</a></h2>
+<p>With that out of the way, we&#x27;re finally at this lab&#x27;s overarching &quot;super-task&quot;:</p>
+<div class="task-no-number-callout callout"><p>You will implement two &quot;trimesh generators&quot;, one for unit <strong>cubes</strong> and another for unit <strong>spheres</strong>. These should take in some <strong>tessellation parameters</strong>, then produce <strong>lists of vertex data</strong>.</p></div>
+<h3 id="stencil-code"><a href="#stencil-code">Stencil Code</a></h3>
+<p>Take a look at our stencil code. The only files you need to concern yourself with in this lab are <code>Triangle.cpp</code>, <code>Cube.cpp</code>, and <code>Sphere.cpp</code>, each located in the <code>src/shapes/</code> directory.</p>
+<blockquote>
+<p><em>There are two additional files in that directory: <code>Cylinder</code> and <code>Cone</code>. These can be ignored for now, but you may use them in Project 5.</em></p>
+</blockquote>
+<p>Each shape class contains a member variable <code>std::vector&lt;GLfloat&gt; m_vertexData</code>. Note: a GLFloat is just a float by a different name.</p>
+<p>In the body of each shape class&#x27; <code>setVertexData()</code> function, you will populate <code>m_vertexData</code> with the positions and normals of your shape&#x27;s vertices, based on the tessellation parameters provided in <code>m_param1</code> and <code>m_param2</code>. These tessellation parameters correspond to the parameter sliders in the application window.</p>
+<h3 id="the-application-window"><a href="#the-application-window">The Application Window</a></h3>
+<p>When you first run the program, you&#x27;ll see a GUI pop-up that looks like this:</p>
+<figure id="figure-9" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/gui.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/gui.png" alt="The application window for this lab"/></a></div><figcaption><strong>Figure 9: </strong>The application window for this lab.</figcaption></figure>
+<p>On the left sidebar, there are toggles to change the shape and sliders to change tessellation parameters <code>1</code> and <code>2</code>. These control the level of detail of each shape—we&#x27;ll provide more detail about these later in the handout.</p>
+<p>On the right side of the GUI, you will eventually see the shapes generated from <code>m_vertexData</code>. You won&#x27;t see anything right now because <code>m_vertexData</code> is empty.</p>
+<h3 id="drawing-a-triangle"><a href="#drawing-a-triangle">Drawing A Triangle</a></h3>
+<p>Your first task is draw a triangle to the screen.</p>
+<div class="task-callout callout"><p>In <code>Triangle.cpp</code>, fill out the <code>setVertexData()</code> function. This function should update <code>m_vertexData</code> with positions and normals. Remember that the normals must be <em>unit vectors</em>.</p><p>For your triangle&#x27;s vertices, please use these positions (listed in no particular order):</p><ol>
+<li><code>(-0.5, 0.5, 0.0)</code></li>
+<li><code>(-0.5, -0.5, 0.0)</code></li>
+<li><code>(0.5, -0.5, 0.0)</code></li>
+</ol><p>Which of these positions correspond to which points on the triangle? You don&#x27;t have to write this one down, but you should be able to answer this question with ease.</p></div>
+<p>Your triangle should look like this:</p>
+<figure id="figure-10" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/output-triangle.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/output-triangle.png" alt="triangle"/></a></div><figcaption><strong>Figure 10: </strong>Expected output of drawing a triangle to the screen.</figcaption></figure>
+<blockquote>
+<p>Observe that if you click and drag to spin the triangle around, it&#x27;ll disappear at certain angles. This is <strong>backface culling</strong>! Refer to <a href="#positions-and-normals">the dropdown in this section</a> on why winding order matters.</p>
+</blockquote>
+<h2 id="cubes"><a href="#cubes">Cubes</a></h2>
+<p>Now that you know how to create a triangle, it&#x27;s time to render a cube :)</p>
+<div class="success-callout callout"><p>This cube&#x27;s dimensions are identical to those of the implicit cube from your raytracer. It is centered at the origin, has a side length of <code>1</code>, and is axis-aligned.</p></div>
+<h3 id="tiles"><a href="#tiles">Tiles</a></h3>
+<p>To create our cube, you&#x27;ll first create a &quot;tile&quot;: a plane comprising two triangles.</p>
+<div class="task-callout callout"><p>In <code>Cube.cpp</code>:</p><ol>
+<li>Uncomment the <code>makeTile()</code> function call in <code>setVertexData()</code>.</li>
+<li>Implement the <code>makeTile()</code> function. This function should update <code>m_vertexData</code> with a plane made of two triangles created from the input points.<!-- -->
+<ul>
+<li>Use what you learned from making a triangle to do this!</li>
+<li>You will use this function for the next task.</li>
+</ul>
+</li>
+</ol><blockquote>
+<p>You may find the following glm functions helpful:</p>
+<ul>
+<li><code>glm::vec3 glm::normalize(glm::vec3 v);</code></li>
+<li><code>glm::vec3 glm::cross(glm::vec3 v1, glm::vec3 v2);</code></li>
+</ul>
+</blockquote></div>
+<p>Your tile should look like this:</p>
+<figure id="figure-11" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/output-tile.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/output-tile.png" alt="tile"/></a></div><figcaption><strong>Figure 11: </strong>Expected output of drawing a tile to the screen</figcaption></figure>
+<h3 id="cube-faces"><a href="#cube-faces">Cube Faces</a></h3>
+<p>Now that you can make individual tiles, you can tessellate a cube face!</p>
+<p>Observe how parameter 1 controls the number of tiles in each row and column:</p>
+<figure id="figure-12" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/tileParams.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/tileParams.png" alt="tile parameters"/></a></div><figcaption><strong>Figure 12: </strong>Cube faces are increasingly tessellated at higher levels of detail.</figcaption></figure>
+<div class="task-callout callout"><p>In <code>Cube.cpp</code></p><ol>
+<li>Comment out the <code>makeTile()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeFace()</code> function call.</li>
+<li>Complete the <code>makeFace()</code> function using the <code>makeTile()</code> function you wrote in the previous task. <code>m_param1</code> contains the parameter 1 value.</li>
+</ol></div>
+<p>Your face should look like this:</p>
+<figure id="figure-13" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/output-cube-face.gif" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/output-cube-face.gif" alt="cube face tessellation"/></a></div><figcaption><strong>Figure 13: </strong>Expected output of drawing a cube face to the screen, at different levels of detail.</figcaption></figure>
+<h3 id="full-cubes"><a href="#full-cubes">Full Cubes</a></h3>
+<p>From here, completing your cube should be a fairly simple task!</p>
+<div class="task-callout callout"><p>Implement the remaining 5 sides of your Cube using the <code>makeFace()</code> function you implemented in the previous task.</p><blockquote>
+<p><em>It may be helpful to draw a diagram of the Cube to figure out the positions of all its corners!</em></p>
+</blockquote></div>
+<p>Your cube should now look like this:</p>
+<figure id="figure-14" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/output-cube.gif" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/output-cube.gif" alt="A Cube Tessellating"/></a></div><figcaption><strong>Figure 14: </strong>Expected output of drawing a cube to the screen, at different levels of detail</figcaption></figure>
+<h2 id="spheres"><a href="#spheres">Spheres</a></h2>
+<p>Next, we&#x27;ll set our sights on making a sphere.</p>
+<div class="success-callout callout"><p>This sphere&#x27;s dimensions are identical to those of the implicit sphere from your raytracer. It is centered at the origin and has a radius of <code>0.5</code>.</p><p>Caught on by now? All the trimesh shapes you&#x27;ll make have the same dimensions as your implicit ones. This includes the cylinder and cone you&#x27;ll implement in project 5.</p></div>
+<p>But how do we tessellate a sphere? One way to do so is (bear with us) to think of a sphere like an orange. Oranges are can be sliced into wedges, and each wedge is made up segments. We can therefore build an orange (i.e. a sphere) by procedurally generating a collection of orange wedges.</p>
+<details><summary>Extra: this form of sphere tessellation seems familiar to me...</summary><p>If you&#x27;ve any experience with 3D modelling software like Blender, you&#x27;ll recognize this to be a <strong>UV-sphere</strong>, as distinct from an ico-sphere (which is based on subdividing an icosahedron). Here&#x27;s <a href="https://blender.stackexchange.com/questions/72/what-is-the-difference-between-a-uv-sphere-and-an-icosphere" target="_blank" rel="noopener noreferrer">a pretty good StackExchange discussion</a> about them both.</p><p>We use a UV-sphere because it&#x27;s good enough for our purposes, and it&#x27;s fairly easy to program. If you&#x27;re interested in learning about how an ico-sphere is made, you might be interested in searching up different methods for <strong>mesh subdivision</strong>. Incidentally, <a href="https://en.wikipedia.org/wiki/Loop_subdivision_surface" target="_blank" rel="noopener noreferrer">Loop subdivision</a> is one of the mesh operations covered in CSCI 2240: Interactive Computer Graphics.</p></details>
+<figure id="figure-15" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/orange.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/orange.jpg" alt="orange anatomy"/></a></div><figcaption><strong>Figure 15: </strong>Orange segments make up orange wedges, that in turn make up oranges.</figcaption></figure>
+<p>This analogy is helpful for understanding the sphere&#x27;s tessellation parameters. Parameter 1 controls the number of &#x27;orange segments&#x27; (i.e. divisions in latitude), and parameter 2 controls the number of &#x27;orange wedges&#x27; (i.e. divisions in longitude).</p>
+<details><summary>Refresher: what do latitude and longitude look like, again?</summary><p>Incidentally, the grid lines in this image show what our sphere will look like, more or less:</p><p><img src="/labs/lab8/latitude-longitude.gif" alt="lat_long"/></p></details>
+<figure id="figure-16" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/sphereParams.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/sphereParams.jpg" alt="sphere parameters"/></a></div><figcaption><strong>Figure 16: </strong>Spheres faces are increasingly tessellated at higher levels of detail.</figcaption></figure>
+<h3 id="spherical-coordinates"><a href="#spherical-coordinates">Spherical Coordinates</a></h3>
+<p>We can represent this &#x27;orange wedge and segment&#x27; idea using spherical coordinates. In terms of spherical coordinates, parameter 1 controls <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.464ex" xmlns="http://www.w3.org/2000/svg" width="1.348ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 596 899" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-3-TEX-I-1D719" d="M409 688Q413 694 421 694H429H442Q448 688 448 686Q448 679 418 563Q411 535 404 504T392 458L388 442Q388 441 397 441T429 435T477 418Q521 397 550 357T579 260T548 151T471 65T374 11T279 -10H275L251 -105Q245 -128 238 -160Q230 -192 227 -198T215 -205H209Q189 -205 189 -198Q189 -193 211 -103L234 -11Q234 -10 226 -10Q221 -10 206 -8T161 6T107 36T62 89T43 171Q43 231 76 284T157 370T254 422T342 441Q347 441 348 445L378 567Q409 686 409 688ZM122 150Q122 116 134 91T167 53T203 35T237 27H244L337 404Q333 404 326 403T297 395T255 379T211 350T170 304Q152 276 137 237Q122 191 122 150ZM500 282Q500 320 484 347T444 385T405 400T381 404H378L332 217L284 29Q284 27 285 27Q293 27 317 33T357 47Q400 66 431 100T475 170T494 234T500 282Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D719" xlink:href="#MJX-3-TEX-I-1D719"></use></g></g></g></svg></mjx-container></span> and parameter 2 controls <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.023ex" xmlns="http://www.w3.org/2000/svg" width="1.061ex" height="1.618ex" role="img" focusable="false" viewBox="0 -705 469 715" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-4-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D703" xlink:href="#MJX-4-TEX-I-1D703"></use></g></g></g></svg></mjx-container></span>.</p>
+<details><summary>Refresher: the spherical coordinate system</summary><p>Remember polar coordinates <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.566ex" xmlns="http://www.w3.org/2000/svg" width="4.848ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2142.7 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-5-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-5-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-5-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-5-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path><path id="MJX-5-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-5-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D45F" xlink:href="#MJX-5-TEX-I-1D45F"></use></g><g data-mml-node="mo" transform="translate(840,0)"><use data-c="2C" xlink:href="#MJX-5-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1284.7,0)"><use data-c="1D703" xlink:href="#MJX-5-TEX-I-1D703"></use></g><g data-mml-node="mo" transform="translate(1753.7,0)"><use data-c="29" xlink:href="#MJX-5-TEX-N-29"></use></g></g></g></svg></mjx-container></span> from high school geometry? Spherical coordinates are like polar coordinates, but in 3D, with an added angle of elevation <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.464ex" xmlns="http://www.w3.org/2000/svg" width="1.348ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 596 899" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-6-TEX-I-1D719" d="M409 688Q413 694 421 694H429H442Q448 688 448 686Q448 679 418 563Q411 535 404 504T392 458L388 442Q388 441 397 441T429 435T477 418Q521 397 550 357T579 260T548 151T471 65T374 11T279 -10H275L251 -105Q245 -128 238 -160Q230 -192 227 -198T215 -205H209Q189 -205 189 -198Q189 -193 211 -103L234 -11Q234 -10 226 -10Q221 -10 206 -8T161 6T107 36T62 89T43 171Q43 231 76 284T157 370T254 422T342 441Q347 441 348 445L378 567Q409 686 409 688ZM122 150Q122 116 134 91T167 53T203 35T237 27H244L337 404Q333 404 326 403T297 395T255 379T211 350T170 304Q152 276 137 237Q122 191 122 150ZM500 282Q500 320 484 347T444 385T405 400T381 404H378L332 217L284 29Q284 27 285 27Q293 27 317 33T357 47Q400 66 431 100T475 170T494 234T500 282Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D719" xlink:href="#MJX-6-TEX-I-1D719"></use></g></g></g></svg></mjx-container></span>.</p><p>The spherical coordinate system thus specifies a 3D point in space using <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.566ex" xmlns="http://www.w3.org/2000/svg" width="7.202ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3183.3 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-7-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-7-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-7-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-7-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path><path id="MJX-7-TEX-I-1D719" d="M409 688Q413 694 421 694H429H442Q448 688 448 686Q448 679 418 563Q411 535 404 504T392 458L388 442Q388 441 397 441T429 435T477 418Q521 397 550 357T579 260T548 151T471 65T374 11T279 -10H275L251 -105Q245 -128 238 -160Q230 -192 227 -198T215 -205H209Q189 -205 189 -198Q189 -193 211 -103L234 -11Q234 -10 226 -10Q221 -10 206 -8T161 6T107 36T62 89T43 171Q43 231 76 284T157 370T254 422T342 441Q347 441 348 445L378 567Q409 686 409 688ZM122 150Q122 116 134 91T167 53T203 35T237 27H244L337 404Q333 404 326 403T297 395T255 379T211 350T170 304Q152 276 137 237Q122 191 122 150ZM500 282Q500 320 484 347T444 385T405 400T381 404H378L332 217L284 29Q284 27 285 27Q293 27 317 33T357 47Q400 66 431 100T475 170T494 234T500 282Z"></path><path id="MJX-7-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-7-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D45F" xlink:href="#MJX-7-TEX-I-1D45F"></use></g><g data-mml-node="mo" transform="translate(840,0)"><use data-c="2C" xlink:href="#MJX-7-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(1284.7,0)"><use data-c="1D703" xlink:href="#MJX-7-TEX-I-1D703"></use></g><g data-mml-node="mo" transform="translate(1753.7,0)"><use data-c="2C" xlink:href="#MJX-7-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(2198.3,0)"><use data-c="1D719" xlink:href="#MJX-7-TEX-I-1D719"></use></g><g data-mml-node="mo" transform="translate(2794.3,0)"><use data-c="29" xlink:href="#MJX-7-TEX-N-29"></use></g></g></g></svg></mjx-container></span>. for more details, please refer to this <a href="https://en.wikipedia.org/wiki/Spherical_coordinate_system" target="_blank" rel="noopener noreferrer">Wikipedia article on the Spherical Coordinate System</a>.</p></details>
+<figure id="figure-17" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/sphericalCoordSys.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/sphericalCoordSys.jpg" alt="spherical coordinate system"/></a></div><figcaption><strong>Figure 17: </strong>The spherical coordinate system</figcaption></figure>
+<h3 id="wedge"><a href="#wedge">Wedge</a></h3>
+<p>Similar to making a cube, the first step in creating a sphere is to create a tile that can be replicated across the sphere, depending on the level of detail.</p>
+<div class="task-callout callout"><p>In <code>Sphere.cpp</code>, implement the <code>makeTile()</code> function. This function should update <code>m_vertexData</code>.</p><blockquote>
+<p><strong>Remember:</strong> sphere normals are calculated differently than cube normals.</p>
+<figure id="figure-18" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab8/sphereNormals.jpg" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/sphereNormals.jpg" alt="sphere normals"/></a></div><figcaption><strong>Figure 18: </strong>Sphere normals emanate from the origin.</figcaption></figure>
+</blockquote></div>
+<p>Once you&#x27;ve implemented <code>makeTile()</code>, you can use it to make a single wedge:</p>
+<div class="task-callout callout"><ol>
+<li>Uncomment the <code>makeWedge()</code> function call in <code>setVertexData()</code>.</li>
+<li>Implement the <code>makeWedge()</code> function using the <code>makeTile()</code> function you wrote.</li>
+</ol><p>Remember that we are making a wedge, so you need to pay attention to <code>m_param1</code> and <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.464ex" xmlns="http://www.w3.org/2000/svg" width="1.348ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 596 899" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-8-TEX-I-1D719" d="M409 688Q413 694 421 694H429H442Q448 688 448 686Q448 679 418 563Q411 535 404 504T392 458L388 442Q388 441 397 441T429 435T477 418Q521 397 550 357T579 260T548 151T471 65T374 11T279 -10H275L251 -105Q245 -128 238 -160Q230 -192 227 -198T215 -205H209Q189 -205 189 -198Q189 -193 211 -103L234 -11Q234 -10 226 -10Q221 -10 206 -8T161 6T107 36T62 89T43 171Q43 231 76 284T157 370T254 422T342 441Q347 441 348 445L378 567Q409 686 409 688ZM122 150Q122 116 134 91T167 53T203 35T237 27H244L337 404Q333 404 326 403T297 395T255 379T211 350T170 304Q152 276 137 237Q122 191 122 150ZM500 282Q500 320 484 347T444 385T405 400T381 404H378L332 217L284 29Q284 27 285 27Q293 27 317 33T357 47Q400 66 431 100T475 170T494 234T500 282Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D719" xlink:href="#MJX-8-TEX-I-1D719"></use></g></g></g></svg></mjx-container></span>. Refer to the top half of <a href="#figure-16">Figure 16</a> for how <code>m_param1</code> affects the level of detail. Also note that everything is in radians.</p><blockquote>
+<p>You might find the following functions helpful:</p>
+<ul>
+<li><code>float glm::radians(float x)</code></li>
+<li><code>float glm::sin(float x)</code></li>
+<li><code>float glm::cos(float x)</code></li>
+</ul>
+<p>You might also find these equations useful:</p>
+<ul>
+<li><code>x = r * sin(phi) * cos(theta)</code></li>
+<li><code>y = r * cos(phi)</code></li>
+<li><code>z = r * sin(phi) * sin(theta)</code></li>
+</ul>
+</blockquote></div>
+<p>Your single wedge should look like this:</p>
+<figure id="figure-19" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/output-wedge.gif" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/output-wedge.gif" alt="wedge tessellating"/></a></div><figcaption><strong>Figure 19: </strong>Expected output of drawing a wedge to the screen, at different levels of detail.</figcaption></figure>
+<h3 id="full-spheres"><a href="#full-spheres">Full Spheres</a></h3>
+<p>We can now use our <code>makeWedge()</code> function to generate a full sphere!</p>
+<div class="task-callout callout"><ol>
+<li>Comment out the <code>makeWedge()</code> function call in <code>setVertexData()</code> and uncomment the <code>makeOrange()</code> function call.</li>
+<li>Implement the <code>makeOrange()</code> function using <code>makeWedge()</code>.</li>
+</ol><p>Remember that we are making multiple wedges (i.e. a sphere), so you need to pay attention to <code>m_param2</code> and <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:-0.023ex" xmlns="http://www.w3.org/2000/svg" width="1.061ex" height="1.618ex" role="img" focusable="false" viewBox="0 -705 469 715" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-9-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D703" xlink:href="#MJX-9-TEX-I-1D703"></use></g></g></g></svg></mjx-container></span>. Refer to the bottom half of <a href="#figure-16">Figure 16</a> for how <code>m_param2</code> affects the level of detail.</p></div>
+<p>Your sphere should look like this:</p>
+<figure id="figure-20" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab8/output-sphere.gif" target="_blank" rel="noopener noreferrer"><img src="/labs/lab8/output-sphere.gif" alt="Completed Sphere"/></a></div><figcaption><strong>Figure 20: </strong>Expected output of drawing a sphere to the screen, at different levels of detail.</figcaption></figure>
+<h2 id="end"><a href="#end">End</a></h2>
+<p>Congrats on finishing the Trimeshes lab! Now, it&#x27;s time to submit your code and get checked off by a TA.</p>
+<h2 id="submission"><a href="#submission">Submission</a></h2>
+<p>Submit your Github repo for this lab to the &quot;Lab 8: Trimeshes&quot; assignment on Gradescope, then get checked off by a TA during lab hours.</p>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab8"}}</script><script type="module" src="/assets/entry-client-routing.82b83353.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab8.page.758e5f68.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.82b83353.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-36b0534b.js"></body>
+    </html>
