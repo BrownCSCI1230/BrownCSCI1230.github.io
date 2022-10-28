@@ -149,9 +149,9 @@ import{j as e}from"../../chunk-37395b21.js";import{I as t}from"../../chunk-3e1e0
 `]}),`
 `,e.exports.jsx(s.p,{children:"You might also find these equations useful:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"x = r * sin(phi) * cos(theta)"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"x = r * sin(phi) * sin(theta)"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"y = r * cos(phi)"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"z = r * sin(phi) * sin(theta)"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"z = r * sin(phi) * cos(theta)"})}),`
 `]}),`
 `]})]}),`
 `,e.exports.jsx(s.p,{children:"Your single wedge should look like this:"}),`
