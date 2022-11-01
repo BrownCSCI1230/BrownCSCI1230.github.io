@@ -100,7 +100,7 @@ Every point light should define a `,s.exports.jsx(e.code,{children:"position"}),
 `}),s.exports.jsxs(e.span,{className:"code-line",children:["	</",s.exports.jsx(e.span,{className:"pl-ent",children:"object"}),`>
 `]}),s.exports.jsxs(e.span,{className:"code-line",children:["</",s.exports.jsx(e.span,{className:"pl-ent",children:"transblock"}),`>
 `]})]})}),`
-`,s.exports.jsxs(e.p,{children:['You can use any number of any of these listed transformations in any order at the location marked "your transformations here", but typically you will only use either the transformation vectors or the transformation matricies per transformation block. They will be executed in the reverse order that they are listed, meaning that ',s.exports.jsx(e.strong,{children:"the last transformation type listed will be the first to be applied to the enclosed object."})]}),`
+`,s.exports.jsxs(e.p,{children:['You can use any number of any of these listed transformations in any order at the location marked "your transformations here", but typically you will only use either the transformation vectors or the transformation matrices per transformation block. They will be executed in the reverse order that they are listed, meaning that ',s.exports.jsx(e.strong,{children:"the last transformation type listed will be the first to be applied to the enclosed object."})]}),`
 `,s.exports.jsxs(e.ul,{children:[`
 `,s.exports.jsxs(e.li,{children:[`
 `,s.exports.jsxs(e.p,{children:[s.exports.jsx(e.code,{children:"rotate"})," - a rotation angle represented as a float follows the rotation vector"]}),`
