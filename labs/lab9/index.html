@@ -79,7 +79,7 @@ What you didn&#x27;t know is that this representation is actually how OpenGL sto
 <p>In addition to this, each time you check for errors, it is important to call glGetError in
 a loop until it returns <code>GL_NO_ERROR</code> indicating all errors have been cleared. In <code>debug.h</code>,
 we have provided you the following function which does this:</p>
-<pre><code class="code-highlight"><span class="code-line">inline void checkOpenGLErrors(){
+<pre><code class="code-highlight"><span class="code-line">inline void glErrorCheck(){
 </span><span class="code-line">  GLenum error = glGetError();
 </span><span class="code-line">  while(error != GL_NO_ERROR){
 </span><span class="code-line">    std::cout&lt;&lt;error&lt;&lt;std::endl;
@@ -87,14 +87,14 @@ we have provided you the following function which does this:</p>
 </span><span class="code-line">  }
 </span><span class="code-line">}
 </span></code></pre>
-<div class="success-callout callout"><p>Feel free to use this header file in your OpenGL projects. You are not expected to understand <strong>namespace</strong> and <strong>inline</strong>; to use the <code>checkOpenGLErrors</code> function in another file, just include this header file and call the function as <code>Debug::checkOpenGLErrors()</code>.</p></div>
+<div class="success-callout callout"><p>Feel free to use this header file in your OpenGL projects. You are not expected to understand <strong>namespace</strong> and <strong>inline</strong>; to use the <code>glErrorCheck</code> function in another file, just include this header file and call the function as <code>Debug::glErrorCheck()</code>.</p></div>
 <p>This function is very useful! However, if we call it multiple times in different locations throught our program, it can be difficult to determine which call is producing an error.</p>
 <p>Let&#x27;s change our function to take in a file name and line number so we can include that information when we print out errors:</p>
-<div class="task-callout callout"><p>Add two input parameters to the <code>checkOpenGLErrors</code> function, the first being a <code>const char*</code> for the file name, and the second being an <code>int</code> for the line number. Edit the print statement to include this information to make the debug statements more descriptive (Include the file name and line number).</p></div>
+<div class="task-callout callout"><p>Add two input parameters to the <code>glErrorCheck</code> function, the first being a <code>const char*</code> for the file name, and the second being an <code>int</code> for the line number. Edit the print statement to include this information to make the debug statements more descriptive (Include the file name and line number).</p></div>
 <p>This is great, but it&#x27;s a pain to manually type out the file name and line number every time we call the function. Luckily, C++ provides two preprocessor macros, <code>__LINE__</code> and <code>__FILE__</code>, which get replaced at
 compile time to an int of the current line number and char* of the current file name, respectively.</p>
 <p>As such, each time you call this function, you could instead write:</p>
-<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-en">Debug::checkOpenGLErrors</span>(__FILE__, __LINE__);
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-en">Debug::glErrorCheck</span>(__FILE__, __LINE__);
 </span></code></pre>
 <p>We can make this even simpler by using something called a <strong>preprocessor directive</strong>. A preprocessor directive is indicated by the use of a hash symbol in the beginning. You&#x27;re already be familiar with at least one such directory: <code>#include</code>.</p>
 <p>The preprocessor directive we will be using is called <code>#define</code>. This has a signature of:</p>
@@ -102,7 +102,7 @@ compile time to an int of the current line number and char* of the current file 
 </span></code></pre>
 <p>The way it works is that the preproccessor will replace every instance of the identifier in the
 code with what is put in the replacement.</p>
-<div class="task-callout callout"><p>After defining our <code>checkOpenGLErrors</code> function, add the following preprocessor directive:</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">define</span> <span class="pl-en">checkOpenGLErrors</span>() checkOpenGLErrors(__FILE__, __LINE__)
+<div class="task-callout callout"><p>After defining our <code>glErrorCheck</code> function, add the following preprocessor directive:</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line">#<span class="pl-k">define</span> <span class="pl-en">glErrorCheck</span>() glErrorCheck(__FILE__, __LINE__)
 </span></code></pre></div>
 <p>Now we can call the function with no arguments (just as we did originally), and the preprocessor
 will do the tedious work of writing in the arguments for us.</p>
@@ -434,5 +434,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.13b448be.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.9ba53e09.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.13b448be.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-aa8238de.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.90867145.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.65644cef.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.90867145.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-aa8238de.js"></body>
     </html>
