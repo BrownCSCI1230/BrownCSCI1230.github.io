@@ -123,7 +123,7 @@ functions.</p>
 </ol>
 <p>Just how action and comedy came together to bring us the Spy Kids film franchise, these function &quot;genres&quot; are
 <strong>NOT</strong> mutually exclusive: some functions will do both state setting and state using.</p>
-<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab9/State_Machine.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab9/State_Machine.png" alt="TODO"/></a></div><figcaption><strong>Figure 3: </strong>Visualization of the OpenGL State Machine. Here, we show how using the state setting function `glClearColor`` changes the state of the context, and how using the state using function `glClear` uses the state of the context to clear the screen to a particular color.</figcaption></figure>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab9/State_Machine.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab9/State_Machine.png" alt="TODO"/></a></div><figcaption><strong>Figure 3: </strong><p>Visualization of the OpenGL State Machine. Here, we show how using the state setting function <code>glClearColor</code> changes the state of the context, and how using the state using function <code>glClear</code> uses the state of the context to clear the screen to a particular color.</p></figcaption></figure>
 <p>It is important to be careful about managing OpenGL&#x27;s state during the execution of your programs. There are two strategies for this:</p>
 <ol>
 <li><strong>Assume Nothing:</strong> When writing a function that uses OpenGL, consider that the state could be anything. Explicitly set the values of the state parameters you depend on.</li>
@@ -135,6 +135,7 @@ functions.</p>
 <p>Before continuing, with knowledge of what the OpenGL state machine or context is, we can now greater understand Qt&#x27;s inner workings and some of its OpenGL-specific functions.</p>
 <h3 id="intializegl"><a href="#intializegl"><code>intializeGL</code></a></h3>
 <p>This is called once near the start of the program <strong>after</strong> the constructor of <code>glrenderer.cpp</code> has been called. It also is called before the first call to <code>paintGL()</code>. However, you <strong>cannot</strong> use any draw calls in this function. Rather, we use it to initialize any OpenGL related information we may need, <strong>after</strong> the GLEW initialization calls as commented.</p>
+<details><summary>What is GLEW?</summary><p><a href="https://glew.sourceforge.net/" target="_blank" rel="noopener noreferrer">GLEW (GL Extension Wrangler Library)</a> is an <em>extension loading library</em>. Its purpose is to determine at run-time which OpenGL features are available (version and extensions) and to load function definitions from your graphics driver for you to use.</p></details>
 <h3 id="paintgl"><a href="#paintgl"><code>paintGL</code></a></h3>
 <p>This is called whenever the OpenGL context changes, i.e. when you make some state-altering OpenGL call. This is an optimization Qt makes to not redraw a screen that isn&#x27;t any different than before.</p>
 <h2 id="vertex-buffer-objects"><a href="#vertex-buffer-objects">Vertex Buffer Objects</a></h2>
@@ -177,7 +178,7 @@ our purposes, use <code>GL_ARRAY_BUFFER</code>.</p>
 look at the function to do so first:</p>
 <blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBufferData.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glBufferData(GLenum target, GLsizeiptr size, const void *data, GLenum usage);</strong></a></p>
-<p><strong><code>target</code>:</strong> This is the same argument seen in glBindBuffer.</p>
+<p><strong><code>target</code>:</strong> This is the same argument seen in <code>glBindBuffer</code>.</p>
 <p><strong><code>size</code>:</strong> the size, in <strong>bytes</strong>, of the input data array. Something like <code>sizeof(float) * data.size()</code>.</p>
 <p><strong><code>data</code>:</strong> a pointer to the first element of the input data array.</p>
 <p><strong><code>usage</code>:</strong> an OpenGL enum representing how the data will be used. For
@@ -215,7 +216,7 @@ and normal attributes--keep that in mind when working on the project.</p></detai
 <div class="task-callout callout"><p>In <code>initializeGL()</code>, generate a single VAO and store its id in <code>m_vao</code>. You may find the following function useful:</p><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenVertexArrays.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glGenVertexArrays(GLsizei n, GLuint *arrays);</strong></a></p>
 <p><strong><code>n</code>:</strong> the number of vertex array objects to create.</p>
-<p><strong><code>arrays</code>:</strong> the pointer this function will fill in with an ID for the generated array. Similarly to `glGenBuffers``, you can also fill in an array or segment of continuous memory with pointers to multiple vertex array objects.</p>
+<p><strong><code>arrays</code>:</strong> the pointer this function will fill in with an ID for the generated array. Similarly to <code>glGenBuffers</code>, you can also fill in an array or segment of continuous memory with pointers to multiple vertex array objects.</p>
 </blockquote></div>
 <h3 id="binding-a-vao"><a href="#binding-a-vao">Binding A VAO</a></h3>
 <p>Next, to actually use this VAO, we need to bind it.</p>
@@ -236,8 +237,8 @@ of our VBO.</p>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glEnableVertexAttribArray.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glEnableVertexAttribArray(GLuint index);</strong></a></p>
 <p><strong><code>index</code>:</strong> the index of the attribute we are identifying. By index, this
 does not refer to an index into our data vector. Rather, this is just some unique unsigned integer
-we use to identify each attribute. We pick this value ourselves; in the next lab, Shaders,
-you will see how we use this index when doing shader programming. In this lab, because we have written
+we use to identify each attribute. We pick this value ourselves; in the <strong>next</strong> lab, Shaders,
+you will see how we use this index when doing shader programming. In <strong>this</strong> lab, because we have written
 the shaders for you, we have assigned <strong>position to have index 0</strong> and <strong>color to have an
 index of 1</strong>.</p>
 </blockquote>
@@ -248,9 +249,9 @@ normalized, GLsizei stride, const void* offset);</strong></a></p>
 <p><strong><code>index</code>:</strong> the same index as used in <code>glEnableVertexAttribArray</code> above.</p>
 <p><strong><code>size</code>:</strong> the length of one vertex&#x27;s instance of this attribute, <em>not</em> the size in bytes. For a position (consisting of 3 floats), this would simply be <code>3</code>. For an attribute that has 5 ints, this would be <code>5</code>.</p>
 <p><strong><code>type</code>:</strong> the type of variable used for each component in the attribute. For floats, this would be <code>GL_FLOAT</code>.</p>
-<p><strong><code>normalized</code>:</strong> this is a bit complicated and has to do with types; for now, just use <code>GL_FALSE</code>.</p>
+<p><strong><code>normalized</code>:</strong> this parameter has to do with the types you use as data and whether you need to scale their values; for now, just use <code>GL_FALSE</code>. If you wish to know more, OpenGL specifies that having normalized set to GL_TRUE will convert any signed values to range [-1, 1] and any unsigned values to the range [0, 1]. This may be useful for converting a uint8_t to floating point representation for example.</p>
 <p><strong><code>stride</code>:</strong> the size, in <strong>bytes</strong>, between two vertices. E.g. for position, this would be the distance (in bytes) between the x coordinate of the position of the first vertex and the x coordinate of the second vertex.</p>
-<p><strong><code>offset</code>:</strong> the offset, in <strong>bytes</strong>, of the first vertex&#x27;s instance of the attribute in the array of data. For example, in <a href="#figure-6">figure 6</a> below, the offset of the color attribute is <code>3 * sizeof(GL_FLOAT)</code>. To cast this offset into a <code>void *</code> (as expected by this function), we need to use <code>reinterpret_cast&lt;void*&gt;()</code>.</p>
+<p><strong><code>offset</code>:</strong> the offset, in <strong>bytes</strong>, of the first vertex&#x27;s instance of the attribute in the array of data. For example, in <a href="#figure-6">figure 6</a> below, the offset of the color attribute is <code>3 * sizeof(GL_FLOAT)</code>. We <em>strongly</em> reccomend to leave the offset in (length of data) * (size of data) format to stay organized. <strong>Important:</strong> To cast this offset into a <code>void *</code> (as expected by this function), we need to use <code>reinterpret_cast&lt;void*&gt;()</code>.</p>
 </blockquote>
 <figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab9/Stride_Offset_White_Background.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab9/Stride_Offset_White_Background.png" alt="TODO"/></a></div><figcaption><strong>Figure 6: </strong>Visualizing how different components of a VAO specify different parts of a VBO.</figcaption></figure>
 <div class="warning-callout callout"><p><strong>Note:</strong> These two functions (<code>glEnableVertexArrayAttrib</code> and <code>glVertexAttribPointer</code>) will assume they apply to whichever VBO is currently bound, so be careful of your state when using them. In fact, you can store separate attributes of the same object in different VBOs and link them together with a single VAO, as in figure 7 below:</p></div>
@@ -433,5 +434,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.cb5baecb.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.4eec1378.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.cb5baecb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-46fec304.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.13b448be.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.9ba53e09.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.13b448be.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-aa8238de.js"></body>
     </html>
