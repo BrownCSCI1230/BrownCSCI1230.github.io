@@ -16,7 +16,7 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Realtime"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"Project 5: Lights, Camera (Algo)"}),`
+`,e.exports.jsxs(s.li,{children:["Project 5: ",e.exports.jsx(s.a,{href:"/projects/realtime/1",children:"Lights, Camera"})," (",e.exports.jsx(s.a,{href:"/projects/realtime/1-algo",children:"Algo"}),")"]}),`
 `,e.exports.jsx(s.li,{children:"Project 6: Action! (Algo)"}),`
 `]}),`
 `]}),`

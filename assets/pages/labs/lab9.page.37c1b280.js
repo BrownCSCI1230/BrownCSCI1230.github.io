@@ -160,7 +160,7 @@ look at the function to do so first:`}),`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBufferData.xhtml",target:"_blank",rel:"noopener noreferrer",children:e.exports.jsx(t.strong,{children:"void glBufferData(GLenum target, GLsizeiptr size, const void *data, GLenum usage);"})})}),`
 `,e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"target"}),":"]})," This is the same argument seen in ",e.exports.jsx(t.code,{children:"glBindBuffer"}),"."]}),`
 `,e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"size"}),":"]})," the size, in ",e.exports.jsx(t.strong,{children:"bytes"}),", of the input data array. Something like ",e.exports.jsx(t.code,{children:"sizeof(GLfloat) * data.size()"}),"."]}),`
-`,e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"data"}),":"]})," a pointer to the first element of the input data array."]}),`
+`,e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"data"}),":"]})," a pointer to the first element of the input data array. If you are using an ",e.exports.jsx(t.code,{children:"std::vector"}),", be sure to use its ",e.exports.jsx(t.code,{children:".data()"})," method to get this pointer!"]}),`
 `,e.exports.jsxs(t.p,{children:[e.exports.jsxs(t.strong,{children:[e.exports.jsx(t.code,{children:"usage"}),":"]}),` an OpenGL enum representing how the data will be used. For
 our purposes, the usage parameter should be `,e.exports.jsx(t.code,{children:"GL_STATIC_DRAW"}),` which indicates we don't
 expect to change the data, so OpenGL can make optimizations based on that.`]}),`
@@ -188,7 +188,7 @@ normals.
 It is our job to tell OpenGL what attributes we care about and where to find them in the VBO.`}),`
 `,e.exports.jsx(t.p,{children:"Consider again this figure, which shows a data layout containing positions and colors interleaved:"}),`
 `,e.exports.jsx(s,{images:[{src:"/labs/lab9/VBO_VAO_Overview.png",alt:"TODO"}],figNumber:5,targetWidth:"100%",figCaption:"Visualization of a Vertex Buffer Object (VBOs) and a Vertex Array Object (VAO). The VBO stores per-vertex attributes (in this case, 3 floats for position and 3 floats for color), and the VAO contains information about how these attributes are laid out in the VBO."}),`
-`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Add colors of your choosing as RGB values to each vertex and integrate them into your previous triangle data vector in ",e.exports.jsx(t.code,{children:"initializeGL()"}),"."]})}),`
+`,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["Add colors of your choosing as RGB values (",e.exports.jsx(t.strong,{children:"no alpha value!"}),") to each vertex and integrate them into your previous triangle data vector in ",e.exports.jsx(t.code,{children:"initializeGL()"}),"."]})}),`
 `,e.exports.jsxs("details",{children:[e.exports.jsxs("summary",{children:["Does your ",e.exports.jsx(t.code,{children:"std::vector"})," look familiar?"]}),e.exports.jsx(t.p,{children:`It should! This is the same format of data we worked with in the last lab.
 Without knowing it, you were actually creating VBO/VAO-ready data with position
 and normal attributes--keep that in mind when working on the project.`})]}),`
@@ -414,4 +414,4 @@ foreignObject[data-mjx-xml] {
 mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   stroke-width: 3;
 }
-`})]})]})}function h(r={}){const{wrapper:t}=r.components||{};return t?e.exports.jsx(t,Object.assign({},r,{children:e.exports.jsx(n,r)})):n(r)}export{h as default,c as documentProps};
+`})]})]})}function d(r={}){const{wrapper:t}=r.components||{};return t?e.exports.jsx(t,Object.assign({},r,{children:e.exports.jsx(n,r)})):n(r)}export{d as default,c as documentProps};

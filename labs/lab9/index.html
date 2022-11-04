@@ -180,7 +180,7 @@ look at the function to do so first:</p>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glBufferData.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glBufferData(GLenum target, GLsizeiptr size, const void *data, GLenum usage);</strong></a></p>
 <p><strong><code>target</code>:</strong> This is the same argument seen in <code>glBindBuffer</code>.</p>
 <p><strong><code>size</code>:</strong> the size, in <strong>bytes</strong>, of the input data array. Something like <code>sizeof(GLfloat) * data.size()</code>.</p>
-<p><strong><code>data</code>:</strong> a pointer to the first element of the input data array.</p>
+<p><strong><code>data</code>:</strong> a pointer to the first element of the input data array. If you are using an <code>std::vector</code>, be sure to use its <code>.data()</code> method to get this pointer!</p>
 <p><strong><code>usage</code>:</strong> an OpenGL enum representing how the data will be used. For
 our purposes, the usage parameter should be <code>GL_STATIC_DRAW</code> which indicates we don&#x27;t
 expect to change the data, so OpenGL can make optimizations based on that.</p>
@@ -208,7 +208,7 @@ normals.
 It is our job to tell OpenGL what attributes we care about and where to find them in the VBO.</p>
 <p>Consider again this figure, which shows a data layout containing positions and colors interleaved:</p>
 <figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/labs/lab9/VBO_VAO_Overview.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab9/VBO_VAO_Overview.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong>Visualization of a Vertex Buffer Object (VBOs) and a Vertex Array Object (VAO). The VBO stores per-vertex attributes (in this case, 3 floats for position and 3 floats for color), and the VAO contains information about how these attributes are laid out in the VBO.</figcaption></figure>
-<div class="task-callout callout"><p>Add colors of your choosing as RGB values to each vertex and integrate them into your previous triangle data vector in <code>initializeGL()</code>.</p></div>
+<div class="task-callout callout"><p>Add colors of your choosing as RGB values (<strong>no alpha value!</strong>) to each vertex and integrate them into your previous triangle data vector in <code>initializeGL()</code>.</p></div>
 <details><summary>Does your <code>std::vector</code> look familiar?</summary><p>It should! This is the same format of data we worked with in the last lab.
 Without knowing it, you were actually creating VBO/VAO-ready data with position
 and normal attributes--keep that in mind when working on the project.</p></details>
@@ -436,5 +436,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.b7007180.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.f4a35c2b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.b7007180.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-aa8238de.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab9"}}</script><script type="module" src="/assets/entry-client-routing.d75bd920.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab9.page.37c1b280.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.d75bd920.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a7c0ce13.js"></body>
     </html>
