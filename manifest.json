@@ -169,7 +169,7 @@
     ]
   },
   "pages/docs/viewports.page.mdx": {
-    "file": "assets/pages/docs/viewports.page.7627e881.js",
+    "file": "assets/pages/docs/viewports.page.f3557031.js",
     "src": "pages/docs/viewports.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -187,15 +187,6 @@
     "imports": [
       "_chunk-37395b21.js",
       "_chunk-a40e06f3.js"
-    ]
-  },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.91f9559c.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-37395b21.js"
     ]
   },
   "pages/labs/index.page.mdx": {
@@ -335,6 +326,15 @@
       "_chunk-37395b21.js",
       "_chunk-3e1e0f24.js",
       "_chunk-a40e06f3.js"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.91f9559c.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-37395b21.js"
     ]
   },
   "pages/projects/2D/1-algo-ans.page.mdx": {
@@ -543,7 +543,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.cb21989c.js",
+    "file": "assets/entry-client-routing.3867ee6a.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -606,7 +606,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.098e5a16.js",
+    "file": "assets/entry-server-routing.82fb8a8a.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
