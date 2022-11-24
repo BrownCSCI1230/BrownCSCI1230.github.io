@@ -170,7 +170,7 @@ vertex correspond to. The lower left corner is set to be (0, 0) and the upper ri
 to be (1, 1) as in the following image:</p>
 <figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:95%"><a href="/labs/lab11/UVCoordinates.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab11/UVCoordinates.png" alt="TODO"/></a></div><figcaption><strong>Figure 4: </strong>UV Coordinates in OpenGL</figcaption></figure>
 <div class="warning-callout callout"><p>Ahead is a small chunk of tasks in order to add UV coordinates to your fullscreen quad. Do not fret! Most of these calls are reminiscent and reminders of ones you have seen before.</p></div>
-<div class="task-callout callout"><p>Pick 6 corresponding UV coordinates to pair with each vertex position in <code>m_fullscreen_data</code>.
+<div class="task-callout callout"><p>Pick 6 corresponding UV coordinates to pair with each vertex position in <code>fullscreen_quad_data</code>.
 Make sure the bottom left corner of the fullscreen quad correlates with the bottom left corner
 of the texture and the upper right corner of the fullscreen quad correlates with the
 upper right corner of the texture!</p><blockquote>
@@ -353,8 +353,7 @@ from a value of 0 to 2. If still nothing shows up, please let a TA know.</p></di
 <p>On high pixel density displays such as that of retina displays of Mac laptops, you may see
 the image appear in the bottom left quadrant rather than the full screen. Why is this?</p>
 <h3 id="glviewport"><a href="#glviewport">glViewport</a></h3>
-<p>OpenGL
-This is because when we drew to our custom framebuffer, we never told OpenGL what size &quot;screen&quot;
+<p>This is because when we drew to our custom framebuffer, we never told OpenGL what size &quot;screen&quot;
 it was drawing to! As we have seen before, OpenGL space is represented by a box with x and y
 dimensions ranging from -1 to 1. What OpenGL needs to know is how to map the pixel space on
 the screen, say 600 x 400 to the OpenGL space as just defined with limits of -1 to 1 on both
@@ -534,5 +533,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.086f4360.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.6338ac68.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.086f4360.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-39a4cf1b.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.2b60b8f0.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.49dd98ed.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-37395b21.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-3e1e0f24.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-a40e06f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.05a9d992.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.2b60b8f0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-28837cfa.js"></body>
     </html>
