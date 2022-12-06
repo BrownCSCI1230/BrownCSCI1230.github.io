@@ -57,7 +57,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.49dca27d.js",
+    "file": "assets/pages/lectures.page.bb2efc87.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -196,6 +196,15 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.8fe30829.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
     ]
   },
   "pages/labs/index.page.mdx": {
@@ -337,13 +346,14 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.8fe30829.js",
-    "src": "pages/projects/index.page.mdx",
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.abfe55f6.js",
+    "src": "pages/projects/final/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/2D/1-algo-ans.page.mdx": {
@@ -407,16 +417,6 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.abfe55f6.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
     ]
   },
@@ -563,7 +563,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.1ed8226f.js",
+    "file": "assets/entry-client-routing.8958db45.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -628,7 +628,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.0eee3ff1.js",
+    "file": "assets/entry-server-routing.8a075558.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
