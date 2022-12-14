@@ -1,31 +1,4 @@
 {
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.0baf8f5d.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal-todos.page.mdx": {
-    "file": "assets/pages/internal-todos.page.6e7ffad8.js",
-    "src": "pages/internal-todos.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.f3601ca2.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.b385619c.js",
     "src": "junk/code-blocks.page.mdx",
@@ -63,6 +36,42 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.0baf8f5d.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal-notes.page.mdx": {
+    "file": "assets/pages/internal-notes.page.7d38fc1a.js",
+    "src": "pages/internal-notes.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal-todos.page.mdx": {
+    "file": "assets/pages/internal-todos.page.6e7ffad8.js",
+    "src": "pages/internal-todos.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.f3601ca2.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
     ]
   },
   "renderer/_default.page.client.jsx": {
@@ -196,6 +205,15 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.8fe30829.js",
+    "src": "pages/projects/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
     ]
   },
   "pages/labs/index.page.mdx": {
@@ -337,15 +355,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.8fe30829.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "pages/projects/2D/1-algo-ans.page.mdx": {
     "file": "assets/pages/projects/2D/1-algo-ans.page.724ae6b7.js",
     "src": "pages/projects/2D/1-algo-ans.page.mdx",
@@ -407,6 +416,16 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.61408933.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
     ]
   },
@@ -487,16 +506,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.abfe55f6.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
   "pages/projects/realtime/1-algo-ans.page.mdx": {
     "file": "assets/pages/projects/realtime/1-algo-ans.page.7bd70ec6.js",
     "src": "pages/projects/realtime/1-algo-ans.page.mdx",
@@ -563,11 +572,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.896d139d.js",
+    "file": "assets/entry-client-routing.0e849f4a.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-e14260e4.js"
+      "_chunk-01bded7f.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -587,6 +596,7 @@
       "pages/docs/viewports.page.mdx",
       "pages/docs/xcode-CLT-installation-guide.page.mdx",
       "pages/index.page.mdx",
+      "pages/internal-notes.page.mdx",
       "pages/internal-todos.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
@@ -628,11 +638,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.712ce4cc.js",
+    "file": "assets/entry-server-routing.264455ea.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-e14260e4.js"
+      "_chunk-01bded7f.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -652,6 +662,7 @@
       "pages/docs/viewports.page.mdx",
       "pages/docs/xcode-CLT-installation-guide.page.mdx",
       "pages/index.page.mdx",
+      "pages/internal-notes.page.mdx",
       "pages/internal-todos.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
@@ -707,8 +718,8 @@
       "_chunk-b0d73203.js"
     ]
   },
-  "_chunk-e14260e4.js": {
-    "file": "assets/chunk-e14260e4.js"
+  "_chunk-01bded7f.js": {
+    "file": "assets/chunk-01bded7f.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
