@@ -116,10 +116,9 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `,e.exports.jsx(s.li,{children:"Labs: 2 hours x 11 labs = 22 hours"}),`
 `,e.exports.jsx(s.li,{children:"Projects: 11 hours x 6 projects = 66 hours"}),`
 `,e.exports.jsx(s.li,{children:"Final project: 33 hours"}),`
-`,e.exports.jsx(s.li,{children:`Office hours, Edstem: 20 hours
-\u2248
-Total: 180 hours`}),`
+`,e.exports.jsx(s.li,{children:"Office hours, Edstem: 20 hours"}),`
 `]}),`
+`,e.exports.jsx(s.p,{children:"Total: 180 hours"}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"Before we can grade any of your assignments, you must complete our collaboration policy agreement. If you do not do so, you cannot pass this course."})}),`
 `,e.exports.jsx(s.p,{children:"Your CSCI 1230 grade consists of 6 rigorously graded projects, 11 labs that are given completion grades, and 1 final project. There are no exams or quizzes."}),`

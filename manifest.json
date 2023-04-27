@@ -1,4 +1,40 @@
 {
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.0baf8f5d.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal-notes.page.mdx": {
+    "file": "assets/pages/internal-notes.page.7d38fc1a.js",
+    "src": "pages/internal-notes.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal-todos.page.mdx": {
+    "file": "assets/pages/internal-todos.page.6e7ffad8.js",
+    "src": "pages/internal-todos.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.f3601ca2.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.b385619c.js",
     "src": "junk/code-blocks.page.mdx",
@@ -36,42 +72,6 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.0baf8f5d.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal-notes.page.mdx": {
-    "file": "assets/pages/internal-notes.page.7d38fc1a.js",
-    "src": "pages/internal-notes.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal-todos.page.mdx": {
-    "file": "assets/pages/internal-todos.page.6e7ffad8.js",
-    "src": "pages/internal-todos.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.f3601ca2.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
     ]
   },
   "renderer/_default.page.client.jsx": {
@@ -117,7 +117,7 @@
     ]
   },
   "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.e82d9d19.js",
+    "file": "assets/pages/docs/course-missive.page.bcee0065.js",
     "src": "pages/docs/course-missive.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -355,6 +355,16 @@
       "_chunk-b0d73203.js"
     ]
   },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.062b58a2.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
   "pages/projects/2D/1-algo-ans.page.mdx": {
     "file": "assets/pages/projects/2D/1-algo-ans.page.724ae6b7.js",
     "src": "pages/projects/2D/1-algo-ans.page.mdx",
@@ -411,81 +421,6 @@
   "pages/projects/2D/2.page.mdx": {
     "file": "assets/pages/projects/2D/2.page.2bdbe3e6.js",
     "src": "pages/projects/2D/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.062b58a2.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo-ans.page.7bd70ec6.js",
-    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.1cfe8c2a.js",
-    "src": "pages/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.25984805.js",
-    "src": "pages/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo-ans.page.a7aaa7fa.js",
-    "src": "pages/projects/realtime/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo.page.25e2155d.js",
-    "src": "pages/projects/realtime/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/projects/realtime/2.page.a7ff9163.js",
-    "src": "pages/projects/realtime/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -571,8 +506,73 @@
       "_chunk-82f9daf4.js"
     ]
   },
+  "pages/projects/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo-ans.page.7bd70ec6.js",
+    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/1-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo.page.1cfe8c2a.js",
+    "src": "pages/projects/realtime/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/1.page.mdx": {
+    "file": "assets/pages/projects/realtime/1.page.25984805.js",
+    "src": "pages/projects/realtime/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/projects/realtime/2-algo-ans.page.a7aaa7fa.js",
+    "src": "pages/projects/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/2-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/2-algo.page.25e2155d.js",
+    "src": "pages/projects/realtime/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/2.page.mdx": {
+    "file": "assets/pages/projects/realtime/2.page.a7ff9163.js",
+    "src": "pages/projects/realtime/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.29f4956b.js",
+    "file": "assets/entry-client-routing.a52c25f8.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -638,7 +638,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.6af9c927.js",
+    "file": "assets/entry-server-routing.bcb828f8.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
