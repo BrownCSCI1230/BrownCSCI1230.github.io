@@ -110,14 +110,16 @@ Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
 `,e.exports.jsx(s.h3,{id:"labs",children:e.exports.jsx(s.a,{href:"#labs",children:"Labs"})}),`
 `,e.exports.jsxs(s.p,{children:["In addition to the projects, a series of 11 weekly ",e.exports.jsx(s.strong,{children:"labs"})," will provide hands-on experience with various graphics programming topics and tools. Each lab is designed such that the code you write will be helpful for one of the programming projects (or for the final project). Unlike projects, labs can be completed collaboratively and are graded on a check-off basis."]}),`
 `,e.exports.jsx(s.h3,{id:"expected-time-commitment",children:e.exports.jsx(s.a,{href:"#expected-time-commitment",children:"Expected Time Commitment"})}),`
-`,e.exports.jsx(s.p,{children:"Over 13 weeks, you will spend 3 hours per week in class (39 hours total) and approximately 2 hours per week per lab (22 hours total). Each project, algos included, typically takes under 8h per week, though this heavily depends on how much extra credit you choose to implement. In summary:"}),`
+`,e.exports.jsx(s.p,{children:"Over 13 weeks, you will spend 3 hours per week in class (39 hours total) and approximately 2 hours per week per lab (22 hours total). Each project, algos included, typically takes under 11 hours per week, though this heavily depends on how much extra credit you choose to implement. In summary:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:"Lecture: 3 hours x 13 weeks = 39 hours"}),`
 `,e.exports.jsx(s.li,{children:"Labs: 2 hours x 11 labs = 22 hours"}),`
-`,e.exports.jsx(s.li,{children:"Projects: 8 hours x 6 projects = 48 hours"}),`
-`,e.exports.jsx(s.li,{children:"Final project: ~11 hours"}),`
+`,e.exports.jsx(s.li,{children:"Projects: 11 hours x 6 projects = 66 hours"}),`
+`,e.exports.jsx(s.li,{children:"Final project: 33 hours"}),`
+`,e.exports.jsx(s.li,{children:`Office hours, Edstem: 20 hours
+\u2248
+Total: 180 hours`}),`
 `]}),`
-`,e.exports.jsx(s.p,{children:"Total: 120 hours"}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"Before we can grade any of your assignments, you must complete our collaboration policy agreement. If you do not do so, you cannot pass this course."})}),`
 `,e.exports.jsx(s.p,{children:"Your CSCI 1230 grade consists of 6 rigorously graded projects, 11 labs that are given completion grades, and 1 final project. There are no exams or quizzes."}),`
