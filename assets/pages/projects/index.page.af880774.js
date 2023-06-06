@@ -2,7 +2,7 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsx(s.h1,{id:"projects",children:e.exports.jsx(s.a,{href:"#projects",children:"Projects"})}),`
 `,e.exports.jsx(s.p,{children:"CS 1230 has 6 projects + 1 final project. Each spans 2 weeks."}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"2D"}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Raster"}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:["Project 1: ",e.exports.jsx(s.a,{href:"/projects/2D/1",children:"Brush"})," (",e.exports.jsx(s.a,{href:"/projects/2D/1-algo-ans",children:"Algo Answers"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:["Project 2: ",e.exports.jsx(s.a,{href:"/projects/2D/2",children:"Filter"})," (",e.exports.jsx(s.a,{href:"/projects/2D/2-algo-ans",children:"Algo Answers"}),")"]}),`
