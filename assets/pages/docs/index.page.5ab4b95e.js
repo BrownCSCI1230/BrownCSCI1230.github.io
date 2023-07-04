@@ -27,6 +27,7 @@ import{j as e}from"../../chunk-b0d73203.js";const i={title:"Docs",hideTOC:!0};fu
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Previous Offerings of This Course",`
 `,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"http://cs1230.graphics/website-fall-22/",target:"_blank",rel:"noopener noreferrer",children:"Fall 2022"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"http://cs.brown.edu/courses/cs123/archive/2021/",target:"_blank",rel:"noopener noreferrer",children:"Fall 2021"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"http://cs.brown.edu/courses/cs123/archive/2020/",target:"_blank",rel:"noopener noreferrer",children:"Fall 2020"})}),`
 `]}),`
