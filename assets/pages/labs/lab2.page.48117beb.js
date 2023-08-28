@@ -182,6 +182,7 @@ time-consuming re-build, which can be very annoying when developing or debugging
 `,n.exports.jsx(Z,{images:[{src:"/labs/lab2/pencil-proper.gif",alt:"Proper Pencil"}],targetWidth:"50%",figNumber:11,figCaption:"A proper pencil."}),`
 `,n.exports.jsxs(e.div,{className:"task-callout callout",children:[n.exports.jsxs(e.p,{children:["To implement the proper pencil, implement the ",n.exports.jsx(e.code,{children:"mouseDown()"})," and ",n.exports.jsx(e.code,{children:"mouseUp()"})," functions and modify the ",n.exports.jsx(e.code,{children:"mouseMove()"})," function in the ",n.exports.jsx(e.code,{children:"ColorCanvas"})," class."]}),n.exports.jsxs(e.ul,{children:[`
 `,n.exports.jsxs(e.li,{children:["Ensure the pencil applies color ",n.exports.jsx(e.em,{children:"only"})," when the LMB is held down. Tip: set and use ",n.exports.jsx(e.code,{children:"m_isDown"}),"."]}),`
+`,n.exports.jsxs(e.li,{children:["Make sure the pencil works even when the mouse is clicked once without being dragged (i.e., ",n.exports.jsx(e.code,{children:"mouseDown()"})," is called but not ",n.exports.jsx(e.code,{children:"mouseMove()"}),")."]}),`
 `,n.exports.jsx(e.li,{children:n.exports.jsxs(e.strong,{children:["Be sure to check that the input ",n.exports.jsx(e.code,{children:"(x, y)"})," coordinate is within the bounds of the canvas."]})}),`
 `,n.exports.jsxs(e.li,{children:["As before, your command line argument should be: ",n.exports.jsx(e.code,{children:"color"}),"."]}),`
 `]})]}),`

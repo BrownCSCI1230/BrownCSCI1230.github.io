@@ -198,20 +198,20 @@ So do not worry about these for now!`]}),`
 `,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Adaptive level of detail:"}),`
 Vary the degree of tessellation for your shapes based on:`]}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["The number of objects in the scene ",e.exports.jsx(s.strong,{children:"(3 points)"}),": Scenes with more objects have fewer triangles, to keep the scene from getting too complex."]}),`
-`,e.exports.jsxs(s.li,{children:["Distance from the object to the camera ",e.exports.jsx(s.strong,{children:"(7 points)"}),": Objects farther from the camera should have fewer triangles than objects closer to the camera."]}),`
+`,e.exports.jsxs(s.li,{children:["The number of objects in the scene ",e.exports.jsx(s.strong,{children:"(up to 3 points)"}),": Scenes with more objects have fewer triangles, to keep the scene from getting too complex."]}),`
+`,e.exports.jsxs(s.li,{children:["Distance from the object to the camera ",e.exports.jsx(s.strong,{children:"(up to 7 points)"}),": Objects farther from the camera should have fewer triangles than objects closer to the camera."]}),`
 `]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"Your shapes should still vary in tessellation based on the slider parameters."})}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
-`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Create your own scene file (2 points):"}),`
+`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Create your own scene file (up to 2 points):"}),`
 Create your own scene by writing your own scene file. Refer to the provided scenefiles and to the `,e.exports.jsx(s.a,{href:"/docs/scenefile-documentation",children:"scene file documentation"})," for examples/information on how these files are structured. Your scene should be interesting enough to be considered as extra credit (in other words, placing two cubes on top of each other is not interesting enough, but building a snowman with a face would be interesting). If you already received extra credit for a custom scene file in the Intersect project, you cannot receive extra credit for the same scene again."]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
 `,e.exports.jsx(s.p,{children:e.exports.jsx(s.strong,{children:"Mesh rendering:"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Using pre-written ",e.exports.jsx(s.code,{children:"obj"})," loader/parser ",e.exports.jsx(s.strong,{children:"(4 points)"}),": Using a pre-existing ",e.exports.jsx(s.code,{children:"obj"})," loader, create trimeshes from any mesh objects and render them in their appropriate scenes."]}),`
-`,e.exports.jsxs(s.li,{children:["Using self-written ",e.exports.jsx(s.code,{children:"obj"})," loader/parser ",e.exports.jsx(s.strong,{children:"(8 points)"}),": To recieve a bonus 4 points, write the ",e.exports.jsx(s.code,{children:"obj"})," loader you use from scratch!"]}),`
+`,e.exports.jsxs(s.li,{children:["Using pre-written ",e.exports.jsx(s.code,{children:"obj"})," loader/parser ",e.exports.jsx(s.strong,{children:"(up to 4 points)"}),": Using a pre-existing ",e.exports.jsx(s.code,{children:"obj"})," loader, create trimeshes from any mesh objects and render them in their appropriate scenes."]}),`
+`,e.exports.jsxs(s.li,{children:["Using self-written ",e.exports.jsx(s.code,{children:"obj"})," loader/parser ",e.exports.jsx(s.strong,{children:"(up to 8 points)"}),": To recieve a bonus 4 points, write the ",e.exports.jsx(s.code,{children:"obj"})," loader you use from scratch!"]}),`
 `]}),`
 `]}),`
 `]}),`

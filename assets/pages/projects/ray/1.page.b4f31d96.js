@@ -157,9 +157,9 @@ C++ provides a couple of ways to achieve this common object-oriented design patt
 `,e.exports.jsxs(s.li,{children:[`
 `,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Acceleration data structure"}),": There are many types of spatial data structures you could use to accelerate ray/object intersections. Here are the approaches that are covered in lecture:"]}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Octree ",e.exports.jsx(s.strong,{children:"(7 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["BVH ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["KD-Tree ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Octree ",e.exports.jsx(s.strong,{children:"(up to 7 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["BVH ",e.exports.jsx(s.strong,{children:"(up to 10 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["KD-Tree ",e.exports.jsx(s.strong,{children:"(up to 10 points)"})]}),`
 `]}),`
 `,e.exports.jsxs(s.div,{className:"warning-callout callout",children:[e.exports.jsxs(s.p,{children:["A correctly implemented acceleration data structure should allow you to render ",e.exports.jsx(s.strong,{children:"every scene"})," we have in the scenefile repo in seconds (even with a single thread)."]}),e.exports.jsx(s.p,{children:'By "render", it means that the time for constructing the data structure is excluded.'}),e.exports.jsx(s.p,{children:"Your implementation are expected to achieve a similar performance level."})]}),`
 `]}),`
@@ -169,14 +169,14 @@ There are many ways to parallelize your code, ranging from a single-line OpenMP 
 The amount of extra credit you receive will be based on the sophistication of your implementation.
 If you have more questions on the rubric or design choices, come to TA hours and we are happy to help.`]}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Level 1: OpenMP based ",e.exports.jsx(s.strong,{children:"(1 point)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Level 2: Qt based, simple implementation ",e.exports.jsx(s.strong,{children:"(2 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Level 3: Qt based, relative sophisticated implementation ",e.exports.jsx(s.strong,{children:"(4 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Level 4: Qt based, extensive implementation ",e.exports.jsx(s.strong,{children:"(6 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Level 1: OpenMP based ",e.exports.jsx(s.strong,{children:"(up to 1 point)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Level 2: Qt based, simple implementation ",e.exports.jsx(s.strong,{children:"(up to 2 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Level 3: Qt based, relative sophisticated implementation ",e.exports.jsx(s.strong,{children:"(up to 4 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Level 4: Qt based, extensive implementation ",e.exports.jsx(s.strong,{children:"(up to 6 points)"})]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
-`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Anti-aliasing (3 points)"}),`:
+`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Anti-aliasing (up to 3 points)"}),`:
 If you only shoot one ray through the center of each pixel, you'll see jaggies (aliasing) due to undersampling of high-frequency parts of the scene (e.g. object edges).
 In the Filter unit, we discussed some ways to ameliorate (but not completely fix) aliasing with some post-processing.
 See if you can integrate your Filter code into your ray tracer as a post-processing module for your output image.`]}),`
@@ -186,18 +186,18 @@ See if you can integrate your Filter code into your ray tracer as a post-process
 As mentioned above, the source of aliasing is the low number of ray-per-pixel samples.
 The most direct way to resolve the problem is to increase the number of samples. Here are a few ways to do super-sampling:`]}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Na\xEFve super-sampling ",e.exports.jsx(s.strong,{children:"(3 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Adaptive super-sampling ",e.exports.jsx(s.strong,{children:"(6 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Na\xEFve super-sampling ",e.exports.jsx(s.strong,{children:"(up to 3 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Adaptive super-sampling ",e.exports.jsx(s.strong,{children:"(up to 6 points)"})]}),`
 `]}),`
 `,e.exports.jsx(r,{images:[{src:"/projects/ray/1/cylinder_texture.png",alt:"TODO"},{src:"/projects/ray/1/cylinder_texture_MSAA.png",alt:"TODO"}],figNumber:5,targetWidth:"100%",figCaption:"Left: one ray per pixel. Right: multiple rays per pixel"}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"Depending on your strategy, adaptive super-sampling can increase your computation cost exponetially, but don't worry, it is acceptable."})}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
-`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Create your own scene file (2 points):"}),`
+`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Create your own scene file (up to 2 points):"}),`
 Create your own scene by writing your own scene file. Refer to the provided scenefiles and to the `,e.exports.jsx(s.a,{href:"/docs/scenefile-documentation",children:"scene file documentation"})," for examples/information on how these files are structured. Your scene should be interesting enough to be considered as extra credit (in other words, placing two cubes on top of each other is not interesting enough, but building a snowman with a face would be interesting)."]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
-`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Mesh rendering (7 points)"}),`:
+`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Mesh rendering (up to 7 points)"}),`:
 Implement a function to load an .OBJ triangle mesh file and render it with ray-triangle intersections.
 Note that if you choose to implement this feature, you will probably want to have an acceleration structure, too, as meshes with many triangles can be very slow to render otherwise.
 To receive credit for this feature, you should include at least one scene file that makes use of a mesh.`]}),`

@@ -125,16 +125,16 @@ For this project, the new settings you will have to use are:`}),`
 `,e.exports.jsxs(t.ul,{children:[`
 `,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Implement More Filters"}),`
 `,e.exports.jsxs(t.ul,{children:[`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Per-Pixel Filter (2 Points)"}),": Implement another per-pixel based filter"]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Kernel-Based or Multi-Stage Filter (3-5 Points, check with staff)"}),`: Besides the 2 listed filters, there are many other filters that require multiple stages in a render pipeline. These can include things such as bloom or even edge detection having 2 sobel kernels as you experienced in the filter project!
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Per-Pixel Filter (up to 2 points)"}),": Implement another per-pixel based filter"]}),`
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Kernel-Based or Multi-Stage Filter (3-5 points, check with staff)"}),`: Besides the 2 listed filters, there are many other filters that require multiple stages in a render pipeline. These can include things such as bloom or even edge detection having 2 sobel kernels as you experienced in the filter project!
 `,e.exports.jsx(t.strong,{children:"Note"}),": You may implement a maximum of 2 per-pixel and 2 kernel-based filters for extra credit!"]}),`
 `]}),`
 `]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Screen Space Ambient Occlusion (10 Points)"}),": Screen space ambient occlusion is one way to help fake global illumination in a directly illuminated model. Implement the algorithm in your realtime pipeline for some extra credit!"]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Directional Light Shadow Maps (10 Points)"}),": Implement shadow mapping for directional lights."]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Texture Mapping (8 Points)"}),": Add uv coordinates to your shapes and use them to give your shapes the textures they are assigned in their materials."]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Fast Approximate Anti-Aliasing (10 Points)"}),": Implement the ",e.exports.jsx(t.a,{href:"https://developer.download.nvidia.com/assets/gamedev/files/sdk/11/FXAA_WhitePaper.pdf",target:"_blank",rel:"noopener noreferrer",children:"FXAA algorithm"})," in a GLSL shader."]}),`
-`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Connect Your Real Time Renderer to Your Raytracer (5 points)"}),`: Professional
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Screen Space Ambient Occlusion (up to 10 points)"}),": Screen space ambient occlusion is one way to help fake global illumination in a directly illuminated model. Implement the algorithm in your realtime pipeline for some extra credit!"]}),`
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Directional Light Shadow Maps (up to 10 points)"}),": Implement shadow mapping for directional lights."]}),`
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Texture Mapping (up to 8 points)"}),": Add uv coordinates to your shapes and use them to give your shapes the textures they are assigned in their materials."]}),`
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Fast Approximate Anti-Aliasing (up to 10 points)"}),": Implement the ",e.exports.jsx(t.a,{href:"https://developer.download.nvidia.com/assets/gamedev/files/sdk/11/FXAA_WhitePaper.pdf",target:"_blank",rel:"noopener noreferrer",children:"FXAA algorithm"})," in a GLSL shader."]}),`
+`,e.exports.jsxs(t.li,{children:[e.exports.jsx(t.strong,{children:"Connect Your Real Time Renderer to Your Raytracer (up to 5 points)"}),`: Professional
 3D software packages (such as Blender or Maya) provide an interactive 3D viewport
 onto the scene being modeled, but they also provide interfaces to render the scene
 with higher-quality methods (such as ray tracing). Add a button to the UI for this project which calls your ray tracer to render the

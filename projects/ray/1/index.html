@@ -177,9 +177,9 @@ C++ provides a couple of ways to achieve this common object-oriented design patt
 <li>
 <p><strong>Acceleration data structure</strong>: There are many types of spatial data structures you could use to accelerate ray/object intersections. Here are the approaches that are covered in lecture:</p>
 <ul>
-<li>Octree <strong>(7 points)</strong></li>
-<li>BVH <strong>(10 points)</strong></li>
-<li>KD-Tree <strong>(10 points)</strong></li>
+<li>Octree <strong>(up to 7 points)</strong></li>
+<li>BVH <strong>(up to 10 points)</strong></li>
+<li>KD-Tree <strong>(up to 10 points)</strong></li>
 </ul>
 <div class="warning-callout callout"><p>A correctly implemented acceleration data structure should allow you to render <strong>every scene</strong> we have in the scenefile repo in seconds (even with a single thread).</p><p>By &quot;render&quot;, it means that the time for constructing the data structure is excluded.</p><p>Your implementation are expected to achieve a similar performance level.</p></div>
 </li>
@@ -189,14 +189,14 @@ There are many ways to parallelize your code, ranging from a single-line OpenMP 
 The amount of extra credit you receive will be based on the sophistication of your implementation.
 If you have more questions on the rubric or design choices, come to TA hours and we are happy to help.</p>
 <ul>
-<li>Level 1: OpenMP based <strong>(1 point)</strong></li>
-<li>Level 2: Qt based, simple implementation <strong>(2 points)</strong></li>
-<li>Level 3: Qt based, relative sophisticated implementation <strong>(4 points)</strong></li>
-<li>Level 4: Qt based, extensive implementation <strong>(6 points)</strong></li>
+<li>Level 1: OpenMP based <strong>(up to 1 point)</strong></li>
+<li>Level 2: Qt based, simple implementation <strong>(up to 2 points)</strong></li>
+<li>Level 3: Qt based, relative sophisticated implementation <strong>(up to 4 points)</strong></li>
+<li>Level 4: Qt based, extensive implementation <strong>(up to 6 points)</strong></li>
 </ul>
 </li>
 <li>
-<p><strong>Anti-aliasing (3 points)</strong>:
+<p><strong>Anti-aliasing (up to 3 points)</strong>:
 If you only shoot one ray through the center of each pixel, you&#x27;ll see jaggies (aliasing) due to undersampling of high-frequency parts of the scene (e.g. object edges).
 In the Filter unit, we discussed some ways to ameliorate (but not completely fix) aliasing with some post-processing.
 See if you can integrate your Filter code into your ray tracer as a post-processing module for your output image.</p>
@@ -206,18 +206,18 @@ See if you can integrate your Filter code into your ray tracer as a post-process
 As mentioned above, the source of aliasing is the low number of ray-per-pixel samples.
 The most direct way to resolve the problem is to increase the number of samples. Here are a few ways to do super-sampling:</p>
 <ul>
-<li>Naïve super-sampling <strong>(3 points)</strong></li>
-<li>Adaptive super-sampling <strong>(6 points)</strong></li>
+<li>Naïve super-sampling <strong>(up to 3 points)</strong></li>
+<li>Adaptive super-sampling <strong>(up to 6 points)</strong></li>
 </ul>
 <figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/projects/ray/1/cylinder_texture.png" target="_blank" rel="noopener noreferrer"><img src="/projects/ray/1/cylinder_texture.png" alt="TODO"/></a><a href="/projects/ray/1/cylinder_texture_MSAA.png" target="_blank" rel="noopener noreferrer"><img src="/projects/ray/1/cylinder_texture_MSAA.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong>Left: one ray per pixel. Right: multiple rays per pixel</figcaption></figure>
 <div class="warning-callout callout"><p>Depending on your strategy, adaptive super-sampling can increase your computation cost exponetially, but don&#x27;t worry, it is acceptable.</p></div>
 </li>
 <li>
-<p><strong>Create your own scene file (2 points):</strong>
+<p><strong>Create your own scene file (up to 2 points):</strong>
 Create your own scene by writing your own scene file. Refer to the provided scenefiles and to the <a href="/docs/scenefile-documentation">scene file documentation</a> for examples/information on how these files are structured. Your scene should be interesting enough to be considered as extra credit (in other words, placing two cubes on top of each other is not interesting enough, but building a snowman with a face would be interesting).</p>
 </li>
 <li>
-<p><strong>Mesh rendering (7 points)</strong>:
+<p><strong>Mesh rendering (up to 7 points)</strong>:
 Implement a function to load an .OBJ triangle mesh file and render it with ray-triangle intersections.
 Note that if you choose to implement this feature, you will probably want to have an acceleration structure, too, as meshes with many triangles can be very slow to render otherwise.
 To receive credit for this feature, you should include at least one scene file that makes use of a mesh.</p>
@@ -373,5 +373,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/1"}}</script><script type="module" src="/assets/entry-client-routing.434f793f.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/1.page.8bb9328c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.434f793f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-01bded7f.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/1"}}</script><script type="module" src="/assets/entry-client-routing.ab03ddf3.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/1.page.b4f31d96.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.ab03ddf3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-01bded7f.js"></body>
     </html>

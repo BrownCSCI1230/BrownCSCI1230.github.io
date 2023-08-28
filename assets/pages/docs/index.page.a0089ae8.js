@@ -20,7 +20,6 @@ import{j as e}from"../../chunk-b0d73203.js";const i={title:"Docs",hideTOC:!0};fu
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Other Resources",`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/textbook-index.pdf",children:"Textbook Index"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/xcode-CLT-installation-guide",children:"Xcode Command Line Tools Installation Guide"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/demos",children:"Demos"})}),`
 `]}),`
