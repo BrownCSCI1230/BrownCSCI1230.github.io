@@ -7,15 +7,14 @@ import{j as e}from"../../chunk-b0d73203.js";const i={title:"Docs",hideTOC:!0};fu
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.strong,{children:e.exports.jsx(s.a,{href:"/docs/course-missive",children:"Course Missive"})})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/collaboration-policy",children:"Collaboration Policy"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide",children:"Github + Gradescope Guide"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/dockerment",children:"Docker Grading Environment Guide"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/scenefile-documentation",children:"Scenefile Documentation"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Coding",`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/preventing-memory-leaks",children:"Preventing Memory Leaks"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/advanced-cpp-tutorial",children:"Going Deeper with C++"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/code-readability-guidelines",children:"Code Readability Guidelines"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/advanced-cpp-tutorial",children:"Advanced C++ Tutorial"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/preventing-memory-leaks",children:"Preventing Memory Leaks"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Other Resources",`

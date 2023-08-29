@@ -7,31 +7,32 @@ import{j as e}from"../../chunk-b0d73203.js";import{M as o}from"../../chunk-82f9d
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Professor:"}),e.exports.jsx("br",{}),`
 Daniel Ritchie (`,e.exports.jsx(s.code,{children:"dritchi1"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"HTAs:"}),e.exports.jsx("br",{}),`
-Zack Cheng (`,e.exports.jsx(s.code,{children:"zcheng12"}),`),
-Logan Dooley (`,e.exports.jsx(s.code,{children:"ldooley"}),")"]}),`
+Dylan Hu (`,e.exports.jsx(s.code,{children:"dhu24"}),`),
+William Sun (`,e.exports.jsx(s.code,{children:"wsun28"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"UTAs:"}),e.exports.jsx("br",{}),`
-Adrian Chang (`,e.exports.jsx(s.code,{children:"achang57"}),`),
-Anna Zhao (`,e.exports.jsx(s.code,{children:"azhao26"}),`),
-Derick Toth (`,e.exports.jsx(s.code,{children:"dtoth1"}),`),
+Orion Bloomfield (`,e.exports.jsx(s.code,{children:"obloomfi"}),`),
+Jared Cambier (`,e.exports.jsx(s.code,{children:"jcambier"}),`),
+Jamie Chen (`,e.exports.jsx(s.code,{children:"achen309"}),`),
+Thomas Dougan (`,e.exports.jsx(s.code,{children:"tdougan1"}),`),
+Austin Funk (`,e.exports.jsx(s.code,{children:"afunk3"}),`),
+Kazen Gallman (`,e.exports.jsx(s.code,{children:"kgallman"}),`),
 Helen Huang (`,e.exports.jsx(s.code,{children:"hhuang65"}),`),
-Jianxin Gu (`,e.exports.jsx(s.code,{children:"jgu26"}),`),
-Marc Mapeke (`,e.exports.jsx(s.code,{children:"mmapeke"}),`),
 Mehek Jethani (`,e.exports.jsx(s.code,{children:"mjethani"}),`),
-Nick Huang (`,e.exports.jsx(s.code,{children:"yhuan170"}),`),
-Sean Zhan (`,e.exports.jsx(s.code,{children:"xzhan2"}),`),
-Yiwen Chen (`,e.exports.jsx(s.code,{children:"ychen485"}),")"]}),`
+Stewart Morris (`,e.exports.jsx(s.code,{children:"smorri21"}),`),
+Sebastian Park (`,e.exports.jsx(s.code,{children:"spark265"}),`),
+Anh Truong (`,e.exports.jsx(s.code,{children:"dtruong7"}),`),
+Nick Vadasz (`,e.exports.jsx(s.code,{children:"nvadasz"}),`),
+Smriti Vaidyanathan (`,e.exports.jsx(s.code,{children:"svaidya4"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Course Development-Only TAs:"}),e.exports.jsx("br",{}),`
-Angela Xing (`,e.exports.jsx(s.code,{children:"axing2"}),`),
-Geoffrey Hazard (`,e.exports.jsx(s.code,{children:"ghazard"}),`),
-Ziang Liu (`,e.exports.jsx(s.code,{children:"zliu177"}),")"]}),`
+Krishi Saripalli (`,e.exports.jsx(s.code,{children:"ksaripal"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"TA Mailing List:"}),e.exports.jsx("br",{}),`
 `,e.exports.jsx(s.a,{href:"mailto:cs1230tas@cs.brown.edu",children:"cs1230tas@cs.brown.edu"})]}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"essential-info",children:e.exports.jsx(s.a,{href:"#essential-info",children:"Essential Info"})}),`
 `,e.exports.jsx(s.h3,{id:"lectures",children:e.exports.jsx(s.a,{href:"#lectures",children:"Lectures"})}),`
-`,e.exports.jsx(s.p,{children:"Lectures are held Tues & Thurs 10:30am - 11:50am, at Location TBD. Recordings will be made available online through Panopto."}),`
+`,e.exports.jsx(s.p,{children:"Lectures are held Tues & Thurs 10:30am - 11:50am at Friedman 202. Recordings will be made available online."}),`
 `,e.exports.jsx(s.h3,{id:"ed",children:e.exports.jsx(s.a,{href:"#ed",children:"Ed"})}),`
-`,e.exports.jsxs(s.p,{children:["Feel free to ask questions on our ",e.exports.jsx(s.a,{href:"https://edstem.org/us/courses/24281/",target:"_blank",rel:"noopener noreferrer",children:"Ed discussion page"})," (",e.exports.jsx(s.a,{href:"https://edstem.org/us/join/YMdKua",target:"_blank",rel:"noopener noreferrer",children:"sign-up link"}),")!"]}),`
+`,e.exports.jsxs(s.p,{children:["Feel free to ask questions on our ",e.exports.jsx(s.a,{href:"https://edstem.org/us/courses/45620",target:"_blank",rel:"noopener noreferrer",children:"Ed discussion page"})," (",e.exports.jsx(s.a,{href:"https://edstem.org/us/join/z44edc",target:"_blank",rel:"noopener noreferrer",children:"sign-up link"}),")!"]}),`
 `,e.exports.jsx(s.p,{children:"Our TAs monitor Ed and answer questions during Ed hours throughout the week; these can be found on the course calendar. Outside of these times, you should not expect a prompt response from a TA. In particular, please note that we do not have Ed hours from 9pm - 9am or on weekends."}),`
 `,e.exports.jsx(s.p,{children:"However, your fellow students may be monitoring Ed as well, and they can be a great resource. We encourage you to answer each other's questions on Ed; your record of helping out fellow students on Ed is something we factor in when determining final grades for borderline cases."}),`
 `,e.exports.jsx(s.h3,{id:"ta-hours",children:e.exports.jsx(s.a,{href:"#ta-hours",children:"TA hours"})}),`
