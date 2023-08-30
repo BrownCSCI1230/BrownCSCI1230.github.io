@@ -13,7 +13,7 @@ William Sun (`,e.exports.jsx(s.code,{children:"wsun28"}),")"]}),`
 Orion Bloomfield (`,e.exports.jsx(s.code,{children:"obloomfi"}),`),
 Jared Cambier (`,e.exports.jsx(s.code,{children:"jcambier"}),`),
 Jamie Chen (`,e.exports.jsx(s.code,{children:"achen309"}),`),
-Thomas Dougan (`,e.exports.jsx(s.code,{children:"tdougan1"}),`),
+Tomas Dougan (`,e.exports.jsx(s.code,{children:"tdougan1"}),`),
 Austin Funk (`,e.exports.jsx(s.code,{children:"afunk3"}),`),
 Kazen Gallman (`,e.exports.jsx(s.code,{children:"kgallman"}),`),
 Helen Huang (`,e.exports.jsx(s.code,{children:"hhuang65"}),`),
@@ -30,7 +30,7 @@ Krishi Saripalli (`,e.exports.jsx(s.code,{children:"ksaripal"}),")"]}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"essential-info",children:e.exports.jsx(s.a,{href:"#essential-info",children:"Essential Info"})}),`
 `,e.exports.jsx(s.h3,{id:"lectures",children:e.exports.jsx(s.a,{href:"#lectures",children:"Lectures"})}),`
-`,e.exports.jsx(s.p,{children:"Lectures are held Tues & Thurs 10:30am - 11:50am at Friedman 202. Recordings will be made available online."}),`
+`,e.exports.jsx(s.p,{children:"Lectures are held Tues & Thurs 10:30am - 11:50am in List Art Building Room 120. Recordings will be made available online."}),`
 `,e.exports.jsx(s.h3,{id:"ed",children:e.exports.jsx(s.a,{href:"#ed",children:"Ed"})}),`
 `,e.exports.jsxs(s.p,{children:["Feel free to ask questions on our ",e.exports.jsx(s.a,{href:"https://edstem.org/us/courses/45620",target:"_blank",rel:"noopener noreferrer",children:"Ed discussion page"})," (",e.exports.jsx(s.a,{href:"https://edstem.org/us/join/z44edc",target:"_blank",rel:"noopener noreferrer",children:"sign-up link"}),")!"]}),`
 `,e.exports.jsx(s.p,{children:"Our TAs monitor Ed and answer questions during Ed hours throughout the week; these can be found on the course calendar. Outside of these times, you should not expect a prompt response from a TA. In particular, please note that we do not have Ed hours from 9pm - 9am or on weekends."}),`
