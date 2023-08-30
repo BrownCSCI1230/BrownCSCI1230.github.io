@@ -39,7 +39,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.e0e6cdb7.js",
+    "file": "assets/pages/index.page.b0185c2a.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -572,7 +572,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.6476175b.js",
+    "file": "assets/entry-client-routing.9bbb789c.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -638,7 +638,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.a2e9d59d.js",
+    "file": "assets/entry-server-routing.c889e5d6.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
