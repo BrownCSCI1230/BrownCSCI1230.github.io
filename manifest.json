@@ -355,16 +355,6 @@
       "_chunk-91776ecf.js"
     ]
   },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.c5ed868e.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-91776ecf.js",
-      "_chunk-cab91a23.js"
-    ]
-  },
   "pages/projects/2D/1-algo-ans.page.mdx": {
     "file": "assets/pages/projects/2D/1-algo-ans.page.fefc3601.js",
     "src": "pages/projects/2D/1-algo-ans.page.mdx",
@@ -429,68 +419,13 @@
       "_chunk-cab91a23.js"
     ]
   },
-  "pages/projects/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo-ans.page.eb828d43.js",
-    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.c5ed868e.js",
+    "src": "pages/projects/final/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-91776ecf.js",
-      "_chunk-31e79074.js",
-      "_chunk-cab91a23.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.4e3c8e62.js",
-    "src": "pages/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-91776ecf.js",
-      "_chunk-31e79074.js",
-      "_chunk-cab91a23.js"
-    ]
-  },
-  "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.06361ada.js",
-    "src": "pages/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-91776ecf.js",
-      "_chunk-31e79074.js",
-      "_chunk-cab91a23.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo-ans.page.a75a57c7.js",
-    "src": "pages/projects/realtime/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-91776ecf.js",
-      "_chunk-31e79074.js",
-      "_chunk-cab91a23.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo.page.50d1db80.js",
-    "src": "pages/projects/realtime/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-91776ecf.js",
-      "_chunk-cab91a23.js"
-    ]
-  },
-  "pages/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/projects/realtime/2.page.75d57e66.js",
-    "src": "pages/projects/realtime/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-91776ecf.js",
-      "_chunk-31e79074.js",
       "_chunk-cab91a23.js"
     ]
   },
@@ -563,6 +498,71 @@
   "pages/projects/ray/2.page.mdx": {
     "file": "assets/pages/projects/ray/2.page.3ee9498a.js",
     "src": "pages/projects/ray/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-91776ecf.js",
+      "_chunk-31e79074.js",
+      "_chunk-cab91a23.js"
+    ]
+  },
+  "pages/projects/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo-ans.page.eb828d43.js",
+    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-91776ecf.js",
+      "_chunk-31e79074.js",
+      "_chunk-cab91a23.js"
+    ]
+  },
+  "pages/projects/realtime/1-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo.page.4e3c8e62.js",
+    "src": "pages/projects/realtime/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-91776ecf.js",
+      "_chunk-31e79074.js",
+      "_chunk-cab91a23.js"
+    ]
+  },
+  "pages/projects/realtime/1.page.mdx": {
+    "file": "assets/pages/projects/realtime/1.page.06361ada.js",
+    "src": "pages/projects/realtime/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-91776ecf.js",
+      "_chunk-31e79074.js",
+      "_chunk-cab91a23.js"
+    ]
+  },
+  "pages/projects/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/projects/realtime/2-algo-ans.page.a75a57c7.js",
+    "src": "pages/projects/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-91776ecf.js",
+      "_chunk-31e79074.js",
+      "_chunk-cab91a23.js"
+    ]
+  },
+  "pages/projects/realtime/2-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/2-algo.page.50d1db80.js",
+    "src": "pages/projects/realtime/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-91776ecf.js",
+      "_chunk-cab91a23.js"
+    ]
+  },
+  "pages/projects/realtime/2.page.mdx": {
+    "file": "assets/pages/projects/realtime/2.page.75d57e66.js",
+    "src": "pages/projects/realtime/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
