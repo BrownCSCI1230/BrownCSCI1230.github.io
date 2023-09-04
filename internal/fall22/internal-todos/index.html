@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.5c15a221.css">
+        <meta charset="UTF-8">
+        <title>Internal TODOs | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-263NEZCW0C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-263NEZCW0C');
+        </script>
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#internal-todos">Internal TODOs</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#most-impactful">Most Impactful</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#projects">Projects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#project-1-brush">Project 1: Brush</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#project-2-filter">Project 2: Filter</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#project-3-intersect">Project 3: Intersect</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#project-4-illuminate">Project 4: Illuminate</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#project-5-lights-camera">Project 5: Lights, Camera</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#project-6-action">Project 6: Action!</a></li></ol></li></ol></li></ol></nav><main>
+<h1 id="internal-todos"><a href="#internal-todos">Internal TODOs</a></h1>
+<p>This is a list of small things to fix or improve upon, based on our TAs&#x27; experiences and student feedback gathered during Fall 2022&#x27;s run of CS 1230.</p>
+<blockquote>
+<p>If you have inherited this document, godspeed.</p>
+</blockquote>
+<h2 id="most-impactful"><a href="#most-impactful">Most Impactful</a></h2>
+<p>These are the three most impactful changes that can be made. Everything else is small stuff.</p>
+<div class="success-callout callout"><ol>
+<li>Create an executable demo for each project, using our minimal and maximal solutions.</li>
+</ol></div>
+<div class="success-callout callout"><ol start="2">
+<li>Rework the <code>scenefiles</code> repository to better facilitate incremental testing. Get rid of fluff, and especially get rid of confusing bench images.</li>
+</ol></div>
+<div class="success-callout callout"><ol start="3">
+<li>Attempt to partially, if not fully, automate the grading of assignments. If partial, make this accessible to students so they can &quot;grade&quot; their implementations themselves.</li>
+</ol></div>
+<h2 id="projects"><a href="#projects">Projects</a></h2>
+<ul>
+<li>Make every extra credit item (both on Gradescope&#x27;s rubrics and on the handouts) &quot;up to X points&quot;, instead of &quot;X points&quot;.</li>
+</ul>
+<h3 id="project-1-brush"><a href="#project-1-brush">Project 1: Brush</a></h3>
+<ul>
+<li>Stencil Code<!-- -->
+<ul>
+<li>Fix <code>clearCanvas()</code>... why does it make the canvas bigger lmao</li>
+<li>Make project 1 and lab 2 work the same way re: <code>mouseDragged()</code> requiring a left mouse button (LMB) check. They&#x27;ll have to implement the LMB-is-down boolean themselves.</li>
+</ul>
+</li>
+<li>General<!-- -->
+<ul>
+<li>Specify that students <em>should</em> paint on <code>mouseDown()</code>. This applies to lab 2 as well, and both handouts should be edited.<!-- -->
+<ul>
+<li>This has an added bonus: we can grade their mask just by clicking once.</li>
+</ul>
+</li>
+<li>Specify that if your brush center is off-canvas, but its radius is big enough that it should be drawing on the canvas, then it must draw on the canvas.</li>
+</ul>
+</li>
+<li>Efficiency<!-- -->
+<ul>
+<li>Emphasize that they should only re-create the brush mask when necessary, i.e. they must check for changes in radius and brush type.<!-- -->
+<ul>
+<li>Modify gradescope rubric&#x27;s efficiency part to account for this.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Constant<!-- -->
+<ul>
+<li>Fix constant brush.<!-- -->
+<ul>
+<li>EITHER:<!-- -->
+<ul>
+<li>Specify that constant brush should draw 1 pixel at radius 1, i.e. <code>distance &lt; radius</code>;</li>
+<li>Specify that constant brush should draw 5 pixels at radius 1, i.e. <code>distance ≤ radius</code>; or</li>
+<li>(Preferred) use this nifty formula: <code>distance &lt; radius - sqrt(2)/2</code>. It produces a much nicer circle, that looks like the kind a pixel art app would produce. Ask <code>zcheng12</code> or <code>dtoth1</code> for details.</li>
+</ul>
+</li>
+<li>Important: this will require changing all examples of the constant brush (videos, images, etc)!</li>
+</ul>
+</li>
+<li>Possibly move constant brush into lab 2: pencil, as an optional final task. This would mean that students can collaborate on it, so weigh the tradeoffs accordingly. As it is, brush is a little too easy.</li>
+</ul>
+</li>
+<li>Smudge<!-- -->
+<ul>
+<li>Fix smudging from edges: use transparent (<code>RGBA{0,0,0,0}</code>) instead of black.</li>
+<li>In the handout, warn them not to re-create their data structure every time <code>mouseDragged()</code> is called. It&#x27;s especially easy to forget that <code>clear()</code> will cause this to happen, requiring a reallocation of memory afterwards.</li>
+<li>Specify to use linear or quadratic (please pick one) for smudging, to make our grading easier. Do not permit using the constant brush.</li>
+<li>(Recommended, but optional) Change project requirements so that smudge brush must be affected by alpha.<!-- -->
+<ul>
+<li>In this case, we can say: when alpha is <code>255</code>, however much I smudge in a single stroke (within the canvas), the pixel under the cursor should always stay the same.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Spray<!-- -->
+<ul>
+<li>Emphasize that spray should spray dots of the same color, i.e. THE BRUSH COLOR, accounting for the alpha.</li>
+<li>Specify that spray should do a DIFFERENT distribution of points every time it is &quot;painted&quot; to the screen.</li>
+<li>Specify that spray should fill <code>density</code> proportion of its mask: if <code>density = 100</code>, it&#x27;s basically constant brush; if <code>density = 0</code>, it does nothing</li>
+<li>Specify that the brush should be a circle centered on the mouse x,y</li>
+<li>Make a note about using <code>rand()</code> or <code>arc4_random()</code></li>
+</ul>
+</li>
+<li>Fill<!-- -->
+<ul>
+<li>Specify that it should fill on mouse down, not on mouse dragged.</li>
+<li>Specify that fill should fill the canvas if clicked on an empty canvas; in general, it should treat the canvas bounds as... bounds.</li>
+</ul>
+</li>
+<li>Alpha Blending<!-- -->
+<ul>
+<li>Specify the correct implementation of alpha blending: the &quot;effect&quot; of the brush is &quot;capped&quot; at its current alpha value. This is what Photoshop does, though Procreate might behave differently.</li>
+<li>(Optional) specify that it&#x27;s fine for alpha blending not to work with their other extra credit brushes. Possibly give more extra credit if they fix those too.</li>
+</ul>
+</li>
+</ul>
+<h3 id="project-2-filter"><a href="#project-2-filter">Project 2: Filter</a></h3>
+<ul>
+<li>General<!-- -->
+<ul>
+<li>Be clearer in the handout about what we expect their filters to produce at edge cases, e.g. when blurring sigma = 0.</li>
+<li>Change function names for Project 2: Filter in the projects_2D stencil, to match those in Lab 3: Convolution</li>
+</ul>
+</li>
+<li>Scaling<!-- -->
+<ul>
+<li>Specify in the handout to <code>round</code> the output size if the scale factor times the width or height produces a non-integer value. <code>floor</code> is fine, too, but be consistent.<!-- -->
+<ul>
+<li>It&#x27;s very important to be consistent. Many students messed this up, causing a 45° shearing of their image due to an indexing mismatch of 1 pixel per row.</li>
+</ul>
+</li>
+<li>When at boundaries, instead of using <code>getPixelReflected()</code> or whatever, ask students to divide by the sum of the weights used when summing over the triangle. This is possibly more correct, but feel free to disagree.</li>
+</ul>
+</li>
+<li>Edge Detection<!-- -->
+<ul>
+<li>Fix sensitivity and be clearer about what it should do.</li>
+</ul>
+</li>
+<li>Extra Credit<!-- -->
+<ul>
+<li>Reduce point values for:<!-- -->
+<ul>
+<li>Basic chromatic aberration: 4 --&gt; 3</li>
+<li>Spatially-aware: 8 --&gt; 6</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rotation<!-- -->
+<ul>
+<li>Specify in the handout that, as with all filters, rotation should be able to be applied consecutively on the same image!</li>
+</ul>
+</li>
+</ul>
+<h3 id="project-3-intersect"><a href="#project-3-intersect">Project 3: Intersect</a></h3>
+<h3 id="project-4-illuminate"><a href="#project-4-illuminate">Project 4: Illuminate</a></h3>
+<h3 id="project-5-lights-camera"><a href="#project-5-lights-camera">Project 5: Lights, Camera</a></h3>
+<h3 id="project-6-action"><a href="#project-6-action">Project 6: Action!</a></h3></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/internal/fall22/internal-todos"}}</script><script type="module" src="/assets/entry-client-routing.d726b85a.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/internal/fall22/internal-todos.page.02425ff4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.d726b85a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-af64ca44.js"></body>
+    </html>
