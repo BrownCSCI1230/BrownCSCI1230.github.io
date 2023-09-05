@@ -1,22 +1,4 @@
 {
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.a71cc24b.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.7e9f751d.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.46542e4d.js",
     "src": "junk/code-blocks.page.mdx",
@@ -56,6 +38,24 @@
       "_chunk-48b30f72.js"
     ]
   },
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.a71cc24b.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.7e9f751d.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
   "renderer/_default.page.client.jsx": {
     "file": "assets/renderer/_default.page.client.d1ab9429.js",
     "src": "renderer/_default.page.client.jsx",
@@ -66,6 +66,136 @@
     ],
     "css": [
       "assets/index.5c15a221.css"
+    ]
+  },
+  "pages/docs/advanced-cpp-tutorial.page.mdx": {
+    "file": "assets/pages/docs/advanced-cpp-tutorial.page.7d582ca9.js",
+    "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/code-readability-guidelines.page.mdx": {
+    "file": "assets/pages/docs/code-readability-guidelines.page.d6a78691.js",
+    "src": "pages/docs/code-readability-guidelines.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/collaboration-policy.page.mdx": {
+    "file": "assets/pages/docs/collaboration-policy.page.86f5dab1.js",
+    "src": "pages/docs/collaboration-policy.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/course-missive.page.mdx": {
+    "file": "assets/pages/docs/course-missive.page.383e87b4.js",
+    "src": "pages/docs/course-missive.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/demos.page.mdx": {
+    "file": "assets/pages/docs/demos.page.196ec185.js",
+    "src": "pages/docs/demos.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/docs/dockerment.page.mdx": {
+    "file": "assets/pages/docs/dockerment.page.c98ed9aa.js",
+    "src": "pages/docs/dockerment.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/github-gradescope-guide.page.mdx": {
+    "file": "assets/pages/docs/github-gradescope-guide.page.d01f3491.js",
+    "src": "pages/docs/github-gradescope-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/index.page.mdx": {
+    "file": "assets/pages/docs/index.page.42e61555.js",
+    "src": "pages/docs/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/docs/mentor-meetings-guide.page.mdx": {
+    "file": "assets/pages/docs/mentor-meetings-guide.page.816b12ce.js",
+    "src": "pages/docs/mentor-meetings-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/docs/preventing-memory-leaks.page.mdx": {
+    "file": "assets/pages/docs/preventing-memory-leaks.page.80135772.js",
+    "src": "pages/docs/preventing-memory-leaks.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/scenefile-documentation.page.mdx": {
+    "file": "assets/pages/docs/scenefile-documentation.page.9653ff63.js",
+    "src": "pages/docs/scenefile-documentation.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/viewports.page.mdx": {
+    "file": "assets/pages/docs/viewports.page.90474834.js",
+    "src": "pages/docs/viewports.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/xcode-CLT-installation-guide.page.mdx": {
+    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.b385f6e5.js",
+    "src": "pages/docs/xcode-CLT-installation-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/internal/index.page.mdx": {
@@ -222,136 +352,6 @@
     "imports": [
       "_chunk-137b9351.js",
       "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/advanced-cpp-tutorial.page.mdx": {
-    "file": "assets/pages/docs/advanced-cpp-tutorial.page.7d582ca9.js",
-    "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/code-readability-guidelines.page.mdx": {
-    "file": "assets/pages/docs/code-readability-guidelines.page.d6a78691.js",
-    "src": "pages/docs/code-readability-guidelines.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/collaboration-policy.page.mdx": {
-    "file": "assets/pages/docs/collaboration-policy.page.86f5dab1.js",
-    "src": "pages/docs/collaboration-policy.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.383e87b4.js",
-    "src": "pages/docs/course-missive.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/demos.page.mdx": {
-    "file": "assets/pages/docs/demos.page.196ec185.js",
-    "src": "pages/docs/demos.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/docs/dockerment.page.mdx": {
-    "file": "assets/pages/docs/dockerment.page.c98ed9aa.js",
-    "src": "pages/docs/dockerment.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/github-gradescope-guide.page.mdx": {
-    "file": "assets/pages/docs/github-gradescope-guide.page.d01f3491.js",
-    "src": "pages/docs/github-gradescope-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.42e61555.js",
-    "src": "pages/docs/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/docs/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/docs/mentor-meetings-guide.page.816b12ce.js",
-    "src": "pages/docs/mentor-meetings-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/docs/preventing-memory-leaks.page.mdx": {
-    "file": "assets/pages/docs/preventing-memory-leaks.page.80135772.js",
-    "src": "pages/docs/preventing-memory-leaks.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/scenefile-documentation.page.mdx": {
-    "file": "assets/pages/docs/scenefile-documentation.page.26b76dca.js",
-    "src": "pages/docs/scenefile-documentation.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/viewports.page.mdx": {
-    "file": "assets/pages/docs/viewports.page.90474834.js",
-    "src": "pages/docs/viewports.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/docs/xcode-CLT-installation-guide.page.mdx": {
-    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.b385f6e5.js",
-    "src": "pages/docs/xcode-CLT-installation-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
       "_chunk-48b30f72.js"
     ]
   },
@@ -599,7 +599,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.877496f3.js",
+    "file": "assets/entry-client-routing.693a7865.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -668,7 +668,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.43caf8fc.js",
+    "file": "assets/entry-server-routing.388372fa.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

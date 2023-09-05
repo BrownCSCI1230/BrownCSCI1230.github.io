@@ -18,234 +18,444 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#scenefile-documentation">Scenefile Documentation</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#basic-structure">Basic Structure</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#global-data">Global data</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#camera-data">Camera Data</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#light-data">Light Data</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#objects--transformations">Objects &amp; Transformations</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#transformations">Transformations</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#objects">Objects</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#primitives">Primitives</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#masters">Masters</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#trees">Trees</a></li></ol></li></ol></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#scenefile-documentation">Scenefile Documentation</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#basic-structure">Basic Structure</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#global-data">Global Data</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#camera-data">Camera Data</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#groups">Groups</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#template-groups">Template Groups</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#lights">Lights</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#primitives">Primitives</a></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="scenefile-documentation"><a href="#scenefile-documentation">Scenefile Documentation</a></h1>
 <p>Scenefiles are the way we specify the information needed to generate 3D scenes in this class. The structure documented here is specific to the way our scene parser was designed. Once lab 5 is released, you can refer to it for complementary information/specific examples.</p>
 <h2 id="basic-structure"><a href="#basic-structure">Basic Structure</a></h2>
-<p>The structure of the scenefile is organized as a declaration of the global data, camera, lights, and objects. Scenes are specified in <a href="https://en.wikipedia.org/wiki/XML" target="_blank" rel="noopener noreferrer">xml</a> format. The general format of the file is as follows:</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">scenefile</span>&gt;
-</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">globaldata</span>&gt;
-</span><span class="code-line highlight-line">    ...
-</span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">globaldata</span>&gt;
-</span><span class="code-line">
-</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">cameradata</span>&gt;
-</span><span class="code-line highlight-line">		...
-</span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">cameradata</span>&gt;
-</span><span class="code-line">
-</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line highlight-line">		...
-</span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line highlight-line">	...
-</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line highlight-line">		...
-</span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line">
-</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line highlight-line">		&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line highlight-line">			<span class="pl-c">&lt;!--transformations--&gt;</span>
-</span><span class="code-line highlight-line">			&lt;<span class="pl-ent">object</span>&gt;
-</span><span class="code-line highlight-line">				...
-</span><span class="code-line highlight-line">			&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line highlight-line">		&lt;/<span class="pl-ent">translbock</span>&gt;
-</span><span class="code-line highlight-line">		...
-</span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line highlight-line">	...
-</span><span class="code-line highlight-line">	&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line highlight-line">		...
-</span><span class="code-line highlight-line">	&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">&lt;/<span class="pl-ent">scenefile</span>&gt;
+<p>The structure of the scenefile is organized as a declaration of the <code>globalData</code>, <code>cameraData</code>, <code>templateGroup</code>s (optional), and <code>group</code>s. Scenes are specified in <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" rel="noopener noreferrer">json</a> format. The general format of the file is as follows:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;globalData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;cameraData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;templateGroups&quot;</span>: {
+</span><span class="code-line">    <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Group Name<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;rotate&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;scale&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;lights&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ],
+</span><span class="code-line">      <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ],
+</span><span class="code-line">      <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  ]
+</span><span class="code-line">}
 </span></code></pre>
-<p>The value types for each field in this documentation are defined as follows where <code>value</code> is your value for that field. <strong>Note</strong> that each value must be <strong>enclosed in quotation marks</strong> such as <code>&quot;0.7&quot;</code> or <code>&quot;root&quot;</code>. <strong>Note</strong> that all angle values are expected to be in <strong>degrees</strong>.</p>
+<p>Below we have a few of the most basic field-value pairings we use for attributes of the scenefile. This is mainly included so as to be referenced in later sections and so that you can get a feel for the syntax of the scenefile.</p>
 <ul>
-<li><code>float</code> — a single floating point number with syntax:<!-- -->
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">v=&quot;value&quot;
+<li><code>float</code> — a single floating point number with syntax (ex: <code>10.2</code>):<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{ <span class="pl-ent">&quot;field&quot;</span>: <span class="pl-c1">10.2</span> }
 </span></code></pre>
 </li>
-<li><code>vector</code> — three floating point numbers that represent a vector for a displacement, axis of rotation, or scaling factors in the x-y-z plane with syntax:<!-- -->
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">x=&quot;value&quot; y=&quot;value&quot; z=&quot;value&quot;
+<li><code>vec3</code> — three floating point numbers that represent a vector for a displacement or scaling factors in the x-y-z plane with syntax (ex: <code>(10.2, 3.9, 8.6)</code>):<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{ <span class="pl-ent">&quot;field&quot;</span>: [<span class="pl-c1">10.2</span>, <span class="pl-c1">3.9</span>, <span class="pl-c1">8.6</span>] }
 </span></code></pre>
 </li>
-<li><code>color</code> — three floating point numbers that represent a color in the red-green-blue (values 0-1) color space with syntax:<!-- -->
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">r=&quot;value&quot; g=&quot;value&quot; b=&quot;value&quot;
+<li><code>vec4</code> - four floating point numbers that represent the axis of rotation (x, y, z) as well as the angle of rotation in degrees (w) with syntax (ex: <code>(1.0, 0.0, 0.0), 90°</code>):<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{ <span class="pl-ent">&quot;field&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">90</span>] }
 </span></code></pre>
 </li>
-<li><code>function</code> — three floating point numbers that allow one to specify the coefficients of the constant, linear, and quadratic term in a function, respectively, with syntax:<!-- -->
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">v1=&quot;value&quot; v2=&quot;value&quot; v3=&quot;value&quot;
+<li><code>RGBSchema</code> — three floating point numbers that represent a color in the red-green-blue (values 0-1) color space with syntax (ex: <code>R: 0.5, G: 0.5, B: 0.5</code>):<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{ <span class="pl-ent">&quot;field&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>] }
+</span></code></pre>
+</li>
+<li><code>string</code> - a string of characters that represents a file path, name, primitive/light type, with syntax (ex: <code>&quot;hello world&quot;</code>):<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{ <span class="pl-ent">&quot;field&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>hello world<span class="pl-pds">&quot;</span></span> }
+</span></code></pre>
+</li>
+<li><code>non-negative max-1 float</code> - a single floating point number with minimum <code>value</code> 0.0 and maximum value <code>1.0</code> that represents coefficients for lighting properties (where returning &gt;1 or &lt;0 of incoming light would be illogical) with syntax (ex: <code>0.5</code>):<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{ <span class="pl-ent">&quot;field&quot;</span>: <span class="pl-c1">0.5</span> }
+</span></code></pre>
+</li>
+<li><code>Mat4Schema</code> - a 4-length array containing 4-length arrays of <code>float</code> that represent a transformation with syntax:<!-- -->
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;field&quot;</span>: [
+</span><span class="code-line">    [<span class="pl-c1">1.3</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    [<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>]
+</span><span class="code-line">  ]
+</span><span class="code-line">}
 </span></code></pre>
 </li>
 </ul>
-<h2 id="global-data"><a href="#global-data">Global data</a></h2>
-<p>Your scenefile will still work if you leave this section out. It allows the scenefile writer to specify certain constants used while rendering. Each of the coefficients has a certain place in the lighting equation; they are all floating point constants that are used to scale the diffuse, ambient, transparent, and specular components respectively. These constants are helpful for scenes with very few or very many lights.</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">globaldata</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">diffusecoeff</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">ambientcoeff</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transparentcoeff</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">specularcoeff</span> float/&gt;
-</span><span class="code-line">&lt;/<span class="pl-ent">globaldata</span>&gt;
+<p>While these represent the basic value types, there are more complex types that correspond to how exactly a <code>light</code>, <code>primitive</code>, and so forth are represented in the scene. These are explained in more depth below.</p>
+<h2 id="global-data"><a href="#global-data">Global Data</a></h2>
+<p>Global data specifies certain constants used while rendering. Each of the coefficients has a certain place in the lighting equation; they are all <code>non-negative max-1 float</code> that are used to scale the diffuse, ambient, transparent, and specular components respectively. These constants are helpful for scenes with very few or very many lights. An example of <code>globalData</code> is as follows:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line"><span class="pl-ent">&quot;globalData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;ambientCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;diffuseCoeff&quot;</span>: <span class="pl-c1">0.7</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;specularCoeff&quot;</span>: <span class="pl-c1">0.54</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;transparentCoeff&quot;</span>: <span class="pl-c1">1</span>
+</span><span class="code-line">}
 </span></code></pre>
 <h2 id="camera-data"><a href="#camera-data">Camera Data</a></h2>
-<p>There can only be one camera in the scene. If none is specified a default camera will be used. In a camera block, there must be listed the position (<code>pos</code>), look vector (<code>look</code>), up vector (<code>up</code>), and height angle (<code>angle</code>). Note that it is possible to replace the look vector with a focal point (denoted by the keyword <code>focus</code>), if so desired. Also note that the two fields for aperature and focal length are optional and only need to be included when implementing certain extra credit features.</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">cameradata</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">pos</span> vector/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">focus</span> vector/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">look</span> vector/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">up</span> vector/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">heightangle</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">aperature</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">focallength</span> float/&gt;
-</span><span class="code-line">&lt;/<span class="pl-ent">cameradata</span>&gt;
+<p>There can only be one camera in the scene. In a camera block, there must be listed the position (<code>pos</code>), look vector (<code>look</code>), up vector (<code>up</code>), and height angle (<code>angle</code>). Note that it is possible to replace the look vector with a focal point (denoted by the keyword <code>focus</code>), if so desired. Also note that the two fields for aperature and focal length are optional and only need to be included when implementing certain extra credit features. An example of a <code>cameraData</code> is as follows:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line"><span class="pl-ent">&quot;cameraData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;position&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">5</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;up&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;look&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;heightAngle&quot;</span>: <span class="pl-c1">45</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;aperture&quot;</span>: <span class="pl-c1">3</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;focalLength&quot;</span>: <span class="pl-c1">5</span>
+</span><span class="code-line">}
 </span></code></pre>
-<h2 id="light-data"><a href="#light-data">Light Data</a></h2>
-<p>The <code>lighttype</code> can be defined as a <strong>point</strong>, <strong>directional</strong>, <strong>spot</strong> or <strong>area</strong> light. If none is given, the light type will default to a point light. There can be up to 8 lights in the scene, and each light should be defined in its own subsection. The id of a particular light is a float where the value is its index from 0 to 7.
-Every point light should define a <code>position</code>, its actual position of the light in the scene, and a <code>color</code>, the color of the light in rgb. Directional lights will not have a position - they will instead have a <code>direction</code>. Spotlights, or cone shaped lights, need both <code>position</code> and <code>direction</code>, as well as <code>penumbra</code>. Lastly, there is a parameter, <code>function</code>, that allows one to specify the coefficients of the lighting function.</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">lightdata</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">id</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">type</span> lighttype/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">position</span> vector/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">color</span> color/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">function</span> function/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">direction</span> vector/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">penumbra</span> float/&gt;
-</span><span class="code-line">&lt;/<span class="pl-ent">lightdata</span>&gt;
+<h2 id="groups"><a href="#groups">Groups</a></h2>
+<p><code>groups</code> are the <strong>most substantial building block</strong> of scenefiles. Essentially, <code>group</code>s are wrappers that allow us to apply transformations to contained <code>primitive</code>s, <code>light</code>s, or even other <code>group</code>s. Nested <code>group</code>s allow us to position objects relative to one another when helpful (as a contained <code>group</code> will still possess the transformations declared by the parent <code>group</code>).</p>
+<p>A <code>group</code> optionally possesses a name (which become useful for <code>templateGroups</code> as explained later), as well as a transformation defined by fields of <code>rotate</code>, <code>translate</code>, <code>scale</code> which are of form <code>vec4</code>, <code>vec3</code>, and <code>vec3</code> respectively. Alternatively, a transformation may be defined as a <code>Mat4Schema</code> <code>matrix</code>. Additionally, a <code>group</code> contains an array of <code>primitive</code> and/or <code>light</code>. Typically, a <code>group</code> will contain only a single <code>light</code> or a <code>primitive</code> as all primitives and objects within the same exact <code>group</code> possess the identical transformations and as a result would be stacked on top of one another. Finally, a <code>group</code> may also contain its own sub<code>group</code>s to take advantage of the recursive transformation process as discussed before in the <code>groups</code> field. An example group could be as follows (with the <code>primitives</code> array and <code>groups</code> array contents excluded):</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Group Name<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;rotate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">    }
+</span><span class="code-line">  ],
+</span><span class="code-line">  <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">    }
+</span><span class="code-line">  ]
+</span><span class="code-line">}
 </span></code></pre>
-<h2 id="objects--transformations"><a href="#objects--transformations">Objects &amp; Transformations</a></h2>
-<p>Objects and Transformations are located at the bottom of our scenefile and hold all the shapes that, when combined, build our scene. On the outer layer, we have can have any number of trees which are explained in more depth below. However, every object besides the outer most layer tree must be wrapped in a transformation block that details where that object or group of objects will go. Let&#x27;s go over transformations first.</p>
-<h3 id="transformations"><a href="#transformations">Transformations</a></h3>
-<p>Each nested object in the scene must be immediately surrounded by a transformation block. The first portion of a transformation block is a list of the transformations that will be applied to the object within. The other part of a transformation block is the object itself. There can be only one object per transformation block, though the object can be of any type (types defined below), and nothing should follow the object. If anything is found after the first object in a translation block, it should be ignored.</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	<span class="pl-c">&lt;!--your transformations here--&gt;</span>
-</span><span class="code-line">	&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=type <span class="pl-e">object</span>=object&gt;
-</span><span class="code-line">		...
-</span><span class="code-line">	&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">&lt;/<span class="pl-ent">transblock</span>&gt;
+<h3 id="template-groups"><a href="#template-groups">Template Groups</a></h3>
+<p><code>templateGroups</code> are identical to groups except that they require a name and are not rendered. Instead, <code>templateGroups</code> may be declared and then reused within the first real <code>groups</code> array as a manner by which to reduce the amount of repeated code. An example of a <code>templateGroup</code> is as follows:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">  <span class="pl-ent">&quot;templateGroups&quot;</span>: {
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Template Group 1<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;rotate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Group Name<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;rotate&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;scale&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Template Group 1<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  ]
+</span><span class="code-line">}
 </span></code></pre>
-<p>You can use any number of any of these listed transformations in any order at the location marked &quot;your transformations here&quot;, but typically you will only use either the transformation vectors or the transformation matrices per transformation block. They will be executed in the reverse order that they are listed, meaning that <strong>the last transformation type listed will be the first to be applied to the enclosed object.</strong></p>
+<p>As you can see, <code>templateGroups</code> are instantiated by the reusing the name of the <code>templateGroup</code> within the <code>groups</code> array of the <code>root</code> object, as well as any subsequent <code>groups</code> array. Note that <code>templateGroups</code> may also contain other <code>templateGroups</code> within their <code>groups</code> array.</p>
+<h2 id="lights"><a href="#lights">Lights</a></h2>
+<p>The specific behavior of a <code>light</code> is defined by the <code>type</code> field contained within itself that is of type <code>string</code>. The <code>type</code> field may be one of the following: <code>point</code>, <code>directional</code>, or <code>spot</code>. Regardless of <code>type</code>, a light may possess a <code>name</code> and must possess <code>color</code> of <code>RGBSchema</code> type. Regarding specific light types...</p>
 <ul>
-<li>
-<p><code>rotate</code> - a rotation angle represented as a float follows the rotation vector</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">rotate</span> vector float/&gt;
-</span></code></pre>
-</li>
-<li>
-<p><code>translate</code></p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">translate</span> vector/&gt;
-</span></code></pre>
-</li>
-<li>
-<p><code>scale</code></p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">scale</span> vector/&gt;
-</span></code></pre>
-</li>
-<li>
-<p><code>matrix</code> - in row-major order</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">	&lt;<span class="pl-ent">matrix</span>&gt;
-</span><span class="code-line">		&lt;<span class="pl-ent">row0</span> <span class="pl-e">v1</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v2</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v3</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v4</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> /&gt;
-</span><span class="code-line">		&lt;<span class="pl-ent">row1</span> <span class="pl-e">v1</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v2</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v3</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v4</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> /&gt;
-</span><span class="code-line">		&lt;<span class="pl-ent">row2</span> <span class="pl-e">v1</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v2</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v3</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v4</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> /&gt;
-</span><span class="code-line">		&lt;<span class="pl-ent">row3</span> <span class="pl-e">v1</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v2</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v3</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v4</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> /&gt;
-</span><span class="code-line">	&lt;/<span class="pl-ent">matrix</span>&gt;
-</span></code></pre>
-</li>
+<li><code>point</code> lights must contain a <code>attenuationCoeff</code> of <code>vector</code> type.</li>
+<li><code>directional</code> lights must contain a <code>direction</code> of <code>vector</code> type.</li>
+<li><code>spot</code> lights must contain a <code>direction</code> of <code>vector</code> type as well as a <code>penumbra</code> and <code>angle</code> of <code>float</code> type.</li>
 </ul>
-<h3 id="objects"><a href="#objects">Objects</a></h3>
-<p>There are three main types of objects - <code>primitive</code>, <code>master</code> and <code>tree</code>.</p>
-<h4 id="primitives"><a href="#primitives">Primitives</a></h4>
-<p><code>Primitive</code>s are the most basic object and are at the lowest level what the scene is comprised of. Primitives are those which represent three-dimensional shapes, namely, <code>cubes</code>, <code>cylinders</code>, <code>cones</code>, <code>spheres</code>, and <code>meshes</code>, which we specify the type of in the object field of the primitive.</p>
-<p>Primitives contain in their block a combination of optional surface characteristic definitions: diffuse color <code>diffuse</code>, ambient color hack <code>ambient</code>, reflected color <code>reflective</code>, specular color <code>specular</code>, specular exponent <code>shininess</code>, transparency <code>transparent</code>, and index of refraction <code>ior</code>. There is also the ability to provide <code>texture</code> to an object using a bitmap or to use a <code>bumpmap</code>. Both of these fields have optional u,v coefficient fields for the scaling of the texture which both default to a value of 1 if not specified.</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>primitive<span class="pl-pds">&quot;</span></span> <span class="pl-e">object</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>shape<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">diffuse</span> color/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">specular</span> color/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">ambient</span> color/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">reflective</span> color/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transparent</span> color/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">shininess</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">blend</span> float/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">texture</span> <span class="pl-e">file</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>path\to\file<span class="pl-pds">&quot;</span></span> <span class="pl-e">u</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span>/&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">bumpmap</span> <span class="pl-e">file</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>path\to\file<span class="pl-pds">&quot;</span></span> <span class="pl-e">u</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span> <span class="pl-e">v</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>value<span class="pl-pds">&quot;</span></span>/&gt;
-</span><span class="code-line">&lt;/<span class="pl-ent">object</span>&gt;
+<p>An example of a <code>light</code> is as follows:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Point Light 1<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>point<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;color&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;attenuationCoeff&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>]
+</span><span class="code-line">}
 </span></code></pre>
-<p>Note that meshes have their own object definition with an additional <code>meshfile</code> field which looks like this:</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>primitive<span class="pl-pds">&quot;</span></span> <span class="pl-e">object</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mesh<span class="pl-pds">&quot;</span></span> <span class="pl-e">meshfile</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>path\to\mesh<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">...
-</span><span class="code-line">&lt;/<span class="pl-ent">object</span>&gt;
+<p><strong>Note</strong> that with regards to directional lights, <strong>ALL</strong> translations applied are ignored (as a directional light is simulated as a point inifinitely far away in the given direction). Similarly, spot and point lights are affected by translations, but not rotation or scaling operations.</p>
+<h2 id="primitives"><a href="#primitives">Primitives</a></h2>
+<p>A <code>Primitive</code> is the most basic object and are at the lowest level what the scene is comprised of. Primitives are those which represent three-dimensional shapes, namely, <code>cube</code>, <code>cylinder</code>, <code>cone</code>, <code>sphere</code>, and <code>mesh</code> which are specified by the <code>type</code> field of type <code>string</code>.</p>
+<p>Primitives contain in their block a combination of optional surface characteristic definitions: diffuse color <code>diffuse</code>, ambient color <code>ambient</code>, reflected color <code>reflective</code>, specular color <code>specular</code>, specular exponent <code>shininess</code>, transparency <code>transparent</code>. There is also the ability to provide <code>texture</code> to an object using a bitmap or to use a <code>bumpmap</code>. Both of these fields have optional u,v coefficient fields for the scaling of the texture which both default to a value of 1 if not specified. Primitives may also have an optional name. All fields of <code>primitive</code> may be represented as follows:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Primitive Name<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cube<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;reflective&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;transparent&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">10</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;texture&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/texture.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;textureU&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;textureV&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;bumpMap&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/bumpmap.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;bumpMapU&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;bumpMapV&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;meshFile&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/mesh.obj<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">}
 </span></code></pre>
-<h4 id="masters"><a href="#masters">Masters</a></h4>
-<p><code>Master</code>s are trees(more below) that essentially act as instance variables in our scene and are typically used when the same set of objects and transforms are repeated throughout a scene. They are originally defined as type <code>tree</code> and are referred to as type <code>master</code> when being instantiated. These masters must all be defined ahead of the tree in which they are used, and they must be given a unique name which is used to reference the master during instantiation. Masters can also be nested, so masters can contain other masters. Here&#x27;s an example of defining and using a <code>master</code> type:</p>
-<pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mymaster<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--my primitive--&gt;</span>
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	...
-</span><span class="code-line">&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">
-</span><span class="code-line">&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mymasterlevel2<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>master<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=mymaster<span class="pl-s"><span class="pl-pds">&quot;</span> /&gt;</span>
-</span><span class="code-line"><span class="pl-s">	&lt;/transblock&gt;</span>
-</span><span class="code-line"><span class="pl-s">	&lt;transblock&gt;</span>
-</span><span class="code-line"><span class="pl-s">		&lt;!--some transformations--&gt;</span>
-</span><span class="code-line"><span class="pl-s">		&lt;object type=<span class="pl-pds">&quot;</span></span>master<span class="pl-s"><span class="pl-pds">&quot;</span> name=mymaster<span class="pl-pds">&quot;</span></span> /&gt;
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>master<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=mymaster<span class="pl-s"><span class="pl-pds">&quot;</span> /&gt;</span>
-</span><span class="code-line"><span class="pl-s">	&lt;/transblock&gt;</span>
-</span><span class="code-line"><span class="pl-s">&lt;/object&gt;</span>
+<p>Note that the above primitive would never be seen in the wild. For example, a <code>meshFile</code> may only be provided if the <code>primitive</code> is of type <code>mesh</code>. Similarly, <code>textureU</code> and <code>textureV</code> ought only be provided if <code>texture</code> is provided. The same goes for <code>bumpMapU</code> and <code>bumpMapV</code>. The following is a more realistic example of a <code>primitive</code>:</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Primitive Name<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cube<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;reflective&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">10</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;texture&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/texture.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;textureU&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;textureV&quot;</span>: <span class="pl-c1">0.5</span>
+</span><span class="code-line">}
 </span></code></pre>
-<h4 id="trees"><a href="#trees">Trees</a></h4>
-<p><code>Tree</code>s are more complex structures that our scenefile uses to place <code>primitive</code>s and/or <code>master</code>s into the scene. A tree can contain any number of transformation blocks, and we can also nest trees within transformation blocks to group transforamtions for a set of objects and build more complex scenes. Since trees are a type of object, they can be nested in the same way that our <code>primitive</code>s and <code>master</code>s are in that they are surrounded by a transformation block. Our scene is defined in one <code>root</code> tree which can be composed of other sub-trees, primitives, and/or masters. The name <code>&quot;root&quot;</code> should be reserved for the main scene graph and signifies to our parser that all masters have been declared.</p>
-<details><summary> Comprehensive Objects &amp; Transformations Sample </summary><p>Below we have a root tree that uses a primitive object, a master, and a subtree.</p><pre class="language-xml"><code class="language-xml code-highlight"><span class="code-line">&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=mymaster&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>primitive<span class="pl-pds">&quot;</span></span> <span class="pl-e">object</span>=object&gt;
-</span><span class="code-line">			&lt;<span class="pl-ent">diffuse</span> color/&gt;
-</span><span class="code-line">			&lt;<span class="pl-ent">specular</span> color/&gt;
-</span><span class="code-line">		&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		...
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	...
-</span><span class="code-line">&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">
-</span><span class="code-line">&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>primitive<span class="pl-pds">&quot;</span></span> <span class="pl-e">object</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>shape<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">			...
-</span><span class="code-line">		&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>master<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mymaster<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">			...
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span>/&gt;
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">		<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mysubtree<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">			&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">				<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">				&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>primitive<span class="pl-pds">&quot;</span></span> <span class="pl-e">object</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>shape<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">					...
-</span><span class="code-line">				&lt;/<span class="pl-ent">object</span>&gt;
-</span><span class="code-line">			&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">			&lt;<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">				<span class="pl-c">&lt;!--some transformations--&gt;</span>
-</span><span class="code-line">				&lt;<span class="pl-ent">object</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>tree<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>mysecondsubtree<span class="pl-pds">&quot;</span></span>&gt;
-</span><span class="code-line">					...
-</span><span class="code-line">				&lt;<span class="pl-ent">object</span>/&gt;
-</span><span class="code-line">			&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">			...
-</span><span class="code-line">		&lt;<span class="pl-ent">object</span>/&gt;
-</span><span class="code-line">	&lt;/<span class="pl-ent">transblock</span>&gt;
-</span><span class="code-line">	...
-</span><span class="code-line">&lt;/<span class="pl-ent">object</span>&gt;
+<details><summary> Comprehensive Sample List</summary><p>Below we have a simple scenefile composed of just a single <code>directional</code> light and single <code>cube</code>.</p><pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;globalData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;ambientCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;diffuseCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;specularCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;transparentCoeff&quot;</span>: <span class="pl-c1">0.5</span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;cameraData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;position&quot;</span>: [<span class="pl-c1">3</span>, <span class="pl-c1">3</span>, <span class="pl-c1">3</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;up&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;heightAngle&quot;</span>: <span class="pl-c1">30</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;focus&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>]
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;lights&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>directional<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;color&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;direction&quot;</span>: [<span class="pl-c1">-3</span>, <span class="pl-c1">-2</span>, <span class="pl-c1">-1</span>]
+</span><span class="code-line">        }
+</span><span class="code-line">      ],
+</span><span class="code-line">      <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cube<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">25</span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  ]
+</span><span class="code-line">}
+</span></code></pre><p>Below is a more complex scene featuring 2 <code>point</code> lights, 1 <code>directional</code> light, 2 <code>cones</code>, 1 <code>cube</code>, 1 <code>cylinder</code>, and 1 <code>sphere</code> with a nested <code>group</code> that applies inherited transformations.</p><pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;globalData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;ambientCoeff&quot;</span>: <span class="pl-c1">0.2</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;diffuseCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;specularCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;transparentCoeff&quot;</span>: <span class="pl-c1">1</span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;cameraData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;position&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">5.0</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;up&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;look&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;heightAngle&quot;</span>: <span class="pl-c1">45.0</span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;lights&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>directional<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;color&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;direction&quot;</span>: [<span class="pl-c1">-2.0</span>, <span class="pl-c1">-4.0</span>, <span class="pl-c1">-6.0</span>]
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    },
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">9.0</span>, <span class="pl-c1">-3.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;lights&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>point<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;color&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;attenuationCoeff&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>]
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    },
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">-9.0</span>, <span class="pl-c1">-3.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;lights&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>point<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;color&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;attenuationCoeff&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>]
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    },
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">-5.0</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">1.5</span>, <span class="pl-c1">1.5</span>, <span class="pl-c1">1.5</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">            {
+</span><span class="code-line">              <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cylinder<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">              <span class="pl-ent">&quot;ambient&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">30.0</span>
+</span><span class="code-line">            }
+</span><span class="code-line">          ]
+</span><span class="code-line">        },
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">-8.0</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;rotate&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">90.0</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">            {
+</span><span class="code-line">              <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">4.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">                {
+</span><span class="code-line">                  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>sphere<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">                  <span class="pl-ent">&quot;ambient&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">30.0</span>
+</span><span class="code-line">                }
+</span><span class="code-line">              ]
+</span><span class="code-line">            },
+</span><span class="code-line">            {
+</span><span class="code-line">              <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">-4.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">                {
+</span><span class="code-line">                  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cone<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">                  <span class="pl-ent">&quot;ambient&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">30.0</span>
+</span><span class="code-line">                }
+</span><span class="code-line">              ]
+</span><span class="code-line">            },
+</span><span class="code-line">            {
+</span><span class="code-line">              <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">4.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">                {
+</span><span class="code-line">                  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cube<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">                  <span class="pl-ent">&quot;ambient&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">0.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">30.0</span>
+</span><span class="code-line">                }
+</span><span class="code-line">              ]
+</span><span class="code-line">            },
+</span><span class="code-line">            {
+</span><span class="code-line">              <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0.0</span>, <span class="pl-c1">-4.0</span>, <span class="pl-c1">0.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>, <span class="pl-c1">3.0</span>],
+</span><span class="code-line">              <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">                {
+</span><span class="code-line">                  <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>cone<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">                  <span class="pl-ent">&quot;ambient&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>, <span class="pl-c1">1.0</span>],
+</span><span class="code-line">                  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">30.0</span>
+</span><span class="code-line">                }
+</span><span class="code-line">              ]
+</span><span class="code-line">            }
+</span><span class="code-line">          ]
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  ]
+</span><span class="code-line">}
+</span></code></pre><p>Finally, below we have a scenefile that features 1 <code>point</code> lights and 1 <code>templateGroup</code> containing a <code>sphere</code> with numerous material properties as well as a normal group that creates another <code>sphere</code> as well as instantiates that <code>templateGroup</code>.</p><pre class="language-json"><code class="language-json code-highlight"><span class="code-line">{
+</span><span class="code-line">  <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>root<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;globalData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;ambientCoeff&quot;</span>: <span class="pl-c1">0.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;diffuseCoeff&quot;</span>: <span class="pl-c1">0.7</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;specularCoeff&quot;</span>: <span class="pl-c1">0.54</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;transparentCoeff&quot;</span>: <span class="pl-c1">1</span>
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;cameraData&quot;</span>: {
+</span><span class="code-line">    <span class="pl-ent">&quot;position&quot;</span>: [<span class="pl-c1">10</span>, <span class="pl-c1">4.1</span>, <span class="pl-c1">16</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;up&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">    <span class="pl-ent">&quot;heightAngle&quot;</span>: <span class="pl-c1">49.5</span>,
+</span><span class="code-line">    <span class="pl-ent">&quot;look&quot;</span>: [<span class="pl-c1">-9</span>, <span class="pl-c1">-3.2</span>, <span class="pl-c1">-16</span>]
+</span><span class="code-line">  },
+</span><span class="code-line">  <span class="pl-ent">&quot;templateGroups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>level 1<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">3</span>, <span class="pl-c1">3</span>, <span class="pl-c1">3</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>sphere<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;reflective&quot;</span>: [<span class="pl-c1">0.75</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0.75</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">0.75</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0.75</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">25</span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;textureFile&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>image/marsTexture.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;textureU&quot;</span>: <span class="pl-c1">1</span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;textureV&quot;</span>: <span class="pl-c1">1</span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;blend&quot;</span>: <span class="pl-c1">0.75</span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  ],
+</span><span class="code-line">  <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>Point Light<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">10</span>, <span class="pl-c1">10</span>, <span class="pl-c1">10</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;lights&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>point<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;color&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;attenuationCoeff&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>]
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    },
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>level 0<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;scale&quot;</span>: [<span class="pl-c1">6</span>, <span class="pl-c1">6</span>, <span class="pl-c1">6</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;primitives&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;type&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>sphere<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;reflective&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">0.75</span>, <span class="pl-c1">0.75</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;diffuse&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">0.75</span>, <span class="pl-c1">0.75</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">25</span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;specular&quot;</span>: [<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span>],
+</span><span class="code-line">          <span class="pl-ent">&quot;textureFile&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>image/marsTexture.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;textureU&quot;</span>: <span class="pl-c1">1</span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;textureV&quot;</span>: <span class="pl-c1">1</span>,
+</span><span class="code-line">          <span class="pl-ent">&quot;blend&quot;</span>: <span class="pl-c1">0.75</span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    },
+</span><span class="code-line">    {
+</span><span class="code-line">      <span class="pl-ent">&quot;translate&quot;</span>: [<span class="pl-c1">-4.5</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;rotate&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">90</span>],
+</span><span class="code-line">      <span class="pl-ent">&quot;groups&quot;</span>: [
+</span><span class="code-line">        {
+</span><span class="code-line">          <span class="pl-ent">&quot;name&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>level 1<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">        }
+</span><span class="code-line">      ]
+</span><span class="code-line">    }
+</span><span class="code-line">  ]
+</span><span class="code-line">}
 </span></code></pre></details>
 <p>This format is not as all-encompassing as it could be, but this is intentional as one of the major aims is for it to be simple to parse.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenefile-documentation"}}</script><script type="module" src="/assets/entry-client-routing.877496f3.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenefile-documentation.page.26b76dca.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.877496f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-af64ca44.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenefile-documentation"}}</script><script type="module" src="/assets/entry-client-routing.693a7865.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenefile-documentation.page.9653ff63.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.693a7865.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-af64ca44.js"></body>
     </html>
