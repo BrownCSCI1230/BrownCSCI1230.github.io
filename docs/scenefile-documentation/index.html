@@ -115,8 +115,8 @@
 </span><span class="code-line">    <span class="pl-ent">&quot;up&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">0</span>],
 </span><span class="code-line">    <span class="pl-ent">&quot;look&quot;</span>: [<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">1</span>],
 </span><span class="code-line">    <span class="pl-ent">&quot;heightAngle&quot;</span>: <span class="pl-c1">45</span>,
-</span><span class="code-line">    <span class="pl-ent">&quot;aperture&quot;</span>: <span class="pl-c1">3</span>,
-</span><span class="code-line">    <span class="pl-ent">&quot;focalLength&quot;</span>: <span class="pl-c1">5</span>
+</span><span class="code-line">    <span class="pl-ent">&quot;aperture&quot;</span>: <span class="pl-c1">3</span>,         <span class="pl-ii">// optional</span>
+</span><span class="code-line">    <span class="pl-ent">&quot;focalLength&quot;</span>: <span class="pl-c1">5</span>       <span class="pl-ii">// optional</span>
 </span><span class="code-line">}
 </span></code></pre>
 <h2 id="groups"><a href="#groups">Groups</a></h2>
@@ -200,13 +200,13 @@
 </span><span class="code-line">  <span class="pl-ent">&quot;reflective&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
 </span><span class="code-line">  <span class="pl-ent">&quot;transparent&quot;</span>: [<span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>, <span class="pl-c1">0.5</span>],
 </span><span class="code-line">  <span class="pl-ent">&quot;shininess&quot;</span>: <span class="pl-c1">10</span>,
-</span><span class="code-line">  <span class="pl-ent">&quot;texture&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/texture.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;texture&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/texture.png<span class="pl-pds">&quot;</span></span>, <span class="pl-ii">// optional (with U,V)</span>
 </span><span class="code-line">  <span class="pl-ent">&quot;textureU&quot;</span>: <span class="pl-c1">0.5</span>,
 </span><span class="code-line">  <span class="pl-ent">&quot;textureV&quot;</span>: <span class="pl-c1">0.5</span>,
-</span><span class="code-line">  <span class="pl-ent">&quot;bumpMap&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/bumpmap.png<span class="pl-pds">&quot;</span></span>,
+</span><span class="code-line">  <span class="pl-ent">&quot;bumpMap&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/bumpmap.png<span class="pl-pds">&quot;</span></span>, <span class="pl-ii">// optional (with U,V)</span>
 </span><span class="code-line">  <span class="pl-ent">&quot;bumpMapU&quot;</span>: <span class="pl-c1">0.5</span>,
 </span><span class="code-line">  <span class="pl-ent">&quot;bumpMapV&quot;</span>: <span class="pl-c1">0.5</span>,
-</span><span class="code-line">  <span class="pl-ent">&quot;meshFile&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/mesh.obj<span class="pl-pds">&quot;</span></span>
+</span><span class="code-line">  <span class="pl-ent">&quot;meshFile&quot;</span>: <span class="pl-s"><span class="pl-pds">&quot;</span>path/to/mesh.obj<span class="pl-pds">&quot;</span></span>    <span class="pl-ii">// if type: mesh</span>
 </span><span class="code-line">}
 </span></code></pre>
 <p>Note that the above primitive would never be seen in the wild. For example, a <code>meshFile</code> may only be provided if the <code>primitive</code> is of type <code>mesh</code>. Similarly, <code>textureU</code> and <code>textureV</code> ought only be provided if <code>texture</code> is provided. The same goes for <code>bumpMapU</code> and <code>bumpMapV</code>. The following is a more realistic example of a <code>primitive</code>:</p>
@@ -457,5 +457,5 @@
 <p>This format is not as all-encompassing as it could be, but this is intentional as one of the major aims is for it to be simple to parse.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenefile-documentation"}}</script><script type="module" src="/assets/entry-client-routing.693a7865.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenefile-documentation.page.9653ff63.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.693a7865.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-af64ca44.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenefile-documentation"}}</script><script type="module" src="/assets/entry-client-routing.e3a6a51c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenefile-documentation.page.96099667.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-91776ecf.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cab91a23.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.5cd5f793.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.e3a6a51c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-af64ca44.js"></body>
     </html>
