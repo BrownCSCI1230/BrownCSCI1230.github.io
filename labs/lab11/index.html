@@ -49,8 +49,8 @@ framebuffer objects comes in!</p>
 <p>Before we dive into the 2D data we draw to, let&#x27;s think about a common form of
 2D data we use in our own scenes…Textures!</p>
 <h3 id="what-is-a-texture"><a href="#what-is-a-texture">What is a Texture?</a></h3>
-<p>In OpenGL, a texture is a regular grid of values which can be read from and written to. We&#x27;ll only be interacting with 2D textures in this lab, though OpenGL also supports 1D and 3D (i.e. volumetric) textures. Texture data can flow between the CPU
-and GPU (just like vertex data) to be read in a shader.</p>
+<p>In OpenGL, a texture is a regular grid of values which can be read from and written to. We&#x27;ll only be interacting with 2D textures in this lab, though OpenGL also supports 1D and 3D (i.e. volumetric) textures. Texture data can flow from the CPU
+and GPU (just like vertex data) to be read in a shader. Or the other way around if you’d like to export a texture to the CPU.</p>
 <h3 id="creating-a-texture-on-the-cpu"><a href="#creating-a-texture-on-the-cpu">Creating a Texture on the CPU</a></h3>
 <h4 id="qimages"><a href="#qimages">QImages</a></h4>
 <p>In Qt creator, the most common form of an image is called a <code>QImage</code>. Let&#x27;s create one
@@ -72,7 +72,7 @@ To start, we need to generate a texture using the following function:</p>
 may find the following function useful:</p><blockquote>
 <p><a href="https://registry.khronos.org/OpenGL-Refpages/es3.1/html/glGenTextures.xhtml" target="_blank" rel="noopener noreferrer"><strong>void glGenTextures(GLsizei n, GLuint * textures);</strong></a></p>
 <p><strong><code>n</code> :</strong> This indicates the number of textures we wish to generate.</p>
-<p><strong><code>textures</code> :</strong> This is the pointer this function will fill in with an id for the generated texture. Multiple buffers can be filled in using a pointer to the first element of an array of sufficient size or some pointer followed by sufficient allocated space.</p>
+<p><strong><code>textures</code> :</strong> This is the pointer this function will fill in with an id for the generated texture. Multiple textures can be filled in using a pointer to the first element of an array of sufficient size or some pointer followed by sufficient allocated space.</p>
 </blockquote></div>
 <p>Before we work with the texture, we need to bind it to the state machine.</p>
 <div class="task-callout callout"><p>In <code>initializeGL</code>, bind our <code>m_kitten_texture</code>. You may find the following function useful:</p><blockquote>
@@ -146,7 +146,7 @@ should set our uniform value to 0 etc.</p>
 to be the same texture slot number we bound our texture to. Remember to call <code>glUseProgram</code> with <code>m_texture_shader</code>
 and get the variable location before setting it! Also be sure to return to default state
 of program 0 afterwards.</p><p>In <code>paintTexture</code>, before calling <code>glDrawArrays</code>, be sure to bind the input parameter <code>texture</code> to
-texture slot 0.</p></div>
+texture slot 0 (Consider using <code>glActiveTexture</code> and <code>glBindTexture</code>).</p></div>
 <h3 id="using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates"><a href="#using-a-texture-in-the-gpu-fullscreen-quads-and-uv-coordinates">Using a Texture in the GPU: Fullscreen Quads and UV Coordinates</a></h3>
 <p>At this point, we have set our uniform variable for our texture, and are going to use it
 within our shader program. However, we currently have no triangles to draw our textures
@@ -194,8 +194,15 @@ UV coordinate. You can sample a <code>sampler2D</code> uniform with the followin
 <p><strong><code>P</code> :</strong> This is the UV coordinate we wish to sample the texture at.</p>
 </blockquote></div>
 <details> <summary>What is <code>gvec4</code> and <code>gsampler2D</code>?</summary><p>In glsl, there are special types for vectors of ints, unsigned ints, doubles, and floats which are given by <code>ivec4</code>, <code>uvec4</code>, <code>dvec4</code>, and <code>vec4</code> respectively. The same goes for sampler2Ds. The g in <code>gvec4</code> and <code>gsampler2D</code> is just a placeholder for any one of these types.</p></details>
-<p>At this stage, you should see something cute like this on your screen!</p>
-<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><a href="/labs/lab11/FinalKitten.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab11/FinalKitten.png" alt="TODO"/></a></div><figcaption><strong>Figure 4: </strong>FBO Attachments</figcaption></figure>
+<blockquote>
+<p><strong>Uh Oh</strong> 😦 <br/>
+<!-- -->If you run the program at this stage only half of the cat is visible!
+Check <code>paintTexture</code> to see if you can find the bug! <br/>
+<!-- -->Hint: It looks like only half of the fullscreen quad&#x27;s vertices were drawn</p>
+</blockquote>
+<figure id="figure-4.1" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><a href="/labs/lab11/HalfKitten.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab11/HalfKitten.png" alt="TODO"/></a></div><figcaption><strong>Figure 4.1: </strong>Half of the Kitten</figcaption></figure>
+<p>With the bug fixed, you should see something cute like this on your screen!</p>
+<figure id="figure-4.2" class="image-wrapper"><div class="image-grid" style="--target-width:80%"><a href="/labs/lab11/FinalKitten.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab11/FinalKitten.png" alt="TODO"/></a></div><figcaption><strong>Figure 4.2: </strong>Complete Kitten Image</figcaption></figure>
 <div class="success-callout callout"><p>Congrats on making it through textures in OpenGL! Feel free to treat this point as a stopping point for week 1 of this lab. Take a well deserved break and come back for the finale: <strong>framebuffers!</strong></p></div>
 <h2 id="framebuffer-objects-fbos"><a href="#framebuffer-objects-fbos">Framebuffer Objects (FBOs)</a></h2>
 <h3 id="what-is-an-fbo"><a href="#what-is-an-fbo">What is an FBO?</a></h3>
@@ -290,7 +297,7 @@ may find the following functions useful:</p><blockquote>
 <p><strong><code>target</code> :</strong> This indicates the type of framebuffer we wish to work with. For our purposes, use <code>GL_RENDERBUFFER</code>.</p>
 <p><strong><code>internalformat</code> :</strong> This indicates the pixel data format that will be contained within the renderbuffer. We wiil be using <code>GL_DEPTH24_STENCIL8</code> which indicates 24 bits will be used for the depth component and 8 for the stencil component.</p>
 <p><strong><code>width</code> :</strong> This is the width of the desired renderbuffer. For our purposes, use <code>m_fbo_width</code>.</p>
-<p><strong><code>height</code> :</strong> This is the height of the desired renderbuffer. For our purposes, use <code>m_fbo_height</code>.</p>
+<p><strong><code>height</code> :</strong> This is the height of the desired renderbuffer. For our purposes, use <code>m_fbo_height</code>.3</p>
 </blockquote><blockquote>
 <p><strong>Be sure to unbind our Renderbuffer once we have set its configuration!</strong></p>
 </blockquote></div>
@@ -415,7 +422,7 @@ and <code>glDeleteFramebuffers</code>.</p><p>Then, call <code>makeFBO</code> to 
 <p>Before we exit, it is important to delete any memory we generated with <code>glGen</code> calls.</p>
 <div class="task-callout callout"><p>In <code>finish</code>, delete our kitten texture, FBO texture, FBO renderbuffer, and FBO itself.</p></div>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
-<p>Submit your Github repo for this lab to the &quot;Lab 11: Textures &amp; FBOs&quot; assignment on Gradescope, then get checked off by a TA during hours.</p>
+<p>Submit your Github repo for this lab to the &quot;Lab 11: Textures &amp; FBOs&quot; assignment on Gradescope, then get checked off at your mentor meeting.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
 mjx-container[jax=&quot;SVG&quot;] {
   direction: ltr;
@@ -534,5 +541,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.526c9e4c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.ed75fd28.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.526c9e4c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cb9fcd79.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab11"}}</script><script type="module" src="/assets/entry-client-routing.7c19c77a.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab11.page.1389f84d.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1f744403.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7c19c77a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cb9fcd79.js"></body>
     </html>

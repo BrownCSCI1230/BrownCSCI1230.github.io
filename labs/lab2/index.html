@@ -197,18 +197,20 @@ time-consuming re-build, which can be very annoying when developing or debugging
 <figure id="figure-8" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab2/canvas-color.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab2/canvas-color.png" alt="Color canvas"/></a></div><figcaption><strong>Figure 8: </strong><p>A canvas filled with a teal color, corresponding to RGB color <code>(0, 123, 123)</code>.</p></figcaption></figure>
 <h3 id="making-a-stamp"><a href="#making-a-stamp">Making A Stamp</a></h3>
 <p>Remember when you modified each pixel one by one to draw a heart? <em>Good times, good times.</em> This time, we&#x27;ll make a stamp function and call it repeatedly instead.</p>
-<p>First, let&#x27;s implement a helper function to convert pixel positions to pixel indices, if you haven&#x27;t already:</p>
-<div class="task-callout callout"><p>In the <code>ColorCanvas</code> class, implement the <code>posToIndex()</code> function in order to convert an <code>(x, y)</code> position into a index.</p><ul>
+<p>First, we will need a helper function to convert pixel positions to pixel indices.</p>
+<div class="task-callout callout"><p>In the <code>ColorCanvas</code> class, we have implemented a <strong><em>buggy</em></strong> <code>posToIndex()</code> function that converts an <code>(x, y)</code> position into an index. We have also written a visualizer that tests this function called <code>testPosToIndex()</code>.</p><p>Uncomment <code>testPosToIndex()</code> in <code>initializeColorCanvas()</code> and run the program. Based on what you see on your canvas and the positions colored in <code>testPosToIndex()</code>, can you find what&#x27;s wrong with <code>posToIndex()</code>?</p><p><strong>Fix the bug and be prepared to explain what the bug was.</strong></p><blockquote>
+<p>Note that the convention for pixel positions in CS1230 is:</p>
+<ul>
 <li><code>x</code> is the horizontal axis; <code>y</code> is the vertical axis.</li>
-<li>Position <code>(0, 0)</code> is at the top-left corner.</li>
-</ul></div>
-<p>Then, let&#x27;s get to making that stamp!</p>
-<div class="task-callout callout"><p>In the <code>ColorCanvas</code> class, implement the <code>drawFlower()</code> function. This function should draw a flower centered on the input position (see <a href="#figure-9">figure 9</a> for an example of three such flowers).</p><figure id="figure-9" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab2/flowers.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab2/flowers.png" alt="Flowers"/></a></div><figcaption><strong>Figure 9: </strong>Three flowers drawn on a color canvas.</figcaption></figure><p>Call the stamp function a few times with different input positions in <code>initializeColorCanvas()</code>. <strong>Then, take a screenshot of your creation!</strong></p><ul>
+<li>Position <code>(0, 0)</code> is at the top-left corner.
+:::</li>
+</ul>
+</blockquote><p>Now, let&#x27;s get to making that stamp!</p><div class="task-callout callout"><p>In the <code>ColorCanvas</code> class, implement the <code>drawFlower()</code> function. This function should draw a flower centered on the input position (see <a href="#figure-9">figure 9</a> for an example of three such flowers).</p><figure id="figure-9" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab2/flowers.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab2/flowers.png" alt="Flowers"/></a></div><figcaption><strong>Figure 9: </strong>Three flowers drawn on a color canvas.</figcaption></figure><p>Call the stamp function a few times with different input positions in <code>initializeColorCanvas()</code>. <strong>Then, take a screenshot of your creation!</strong></p><ul>
 <li>Feel free to make your flower any color you like.</li>
 <li>Naturally, you&#x27;re going to want to use your <code>posToIndex()</code> function.</li>
 <li><strong>Don&#x27;t forget to check for edge cases!</strong></li>
 <li>As before, your command line argument should be: <code>color</code>.</li>
-</ul></div>
+</ul></div></div>
 <h2 id="the-pencil-tool"><a href="#the-pencil-tool">The Pencil Tool</a></h2>
 <p>Hope you had fun with that! For the last part of this lab, instead of modifying our canvas in code, we&#x27;re going to try to modify it <strong>interactively</strong> with a Photoshop-like pencil.</p>
 <h3 id="for-your-info-event-handlers"><a href="#for-your-info-event-handlers">For Your Info: Event Handlers</a></h3>
@@ -233,7 +235,7 @@ time-consuming re-build, which can be very annoying when developing or debugging
 <li>As before, your command line argument should be: <code>color</code>.</li>
 </ul></div>
 <h2 id="end"><a href="#end">End</a></h2>
-<p>Congrats on finishing the Pencils lab! Now, it&#x27;s time to submit your code and get checked off by a TA. Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)) and your pencil.</p>
+<p>Congrats on finishing the Pencils lab! Now, it&#x27;s time to submit your code and get checked off by a TA. Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)), explain what the bug was rfom task 7, and your pencil.</p>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
 <p>Submit your Github repo for this lab to the &quot;Lab 2: Pencils&quot; assignment on Gradescope, then get checked off by a TA during hours.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
@@ -354,5 +356,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab2"}}</script><script type="module" src="/assets/entry-client-routing.526c9e4c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab2.page.2f018064.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.526c9e4c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cb9fcd79.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab2"}}</script><script type="module" src="/assets/entry-client-routing.7c19c77a.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab2.page.62b3be51.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1f744403.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7c19c77a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cb9fcd79.js"></body>
     </html>

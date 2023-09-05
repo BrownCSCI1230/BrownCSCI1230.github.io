@@ -45,7 +45,7 @@
 <figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:75%"><a href="/labs/lab3/application-window.png" target="_blank" rel="noopener noreferrer"><img src="/labs/lab3/application-window.png" alt="Application window"/></a></div><figcaption><strong>Figure 1: </strong>The application window, with no image or filter selected.</figcaption></figure>
 <p>These buttons are fairly self-explanatory, but we&#x27;ll go through them anyway:</p>
 <ul>
-<li>The <code>Choose Image</code> button allow you to select any image file from your computer to upload to the canvas. We have provided you with some images in the <code>resources</code> directory.</li>
+<li>The <code>Choose Image</code> button allows you to select any image file from your computer to upload to the canvas. We have provided you with some images in the <code>resources</code> directory.</li>
 <li>The <code>Apply Filter</code> button applies the currently-selected filter to the image. Currently, this does nothing because you have neither implemented, nor selected, any filters.</li>
 <li>The <code>Revert to Original Image</code> button reverts the image to its original state.</li>
 </ul>
@@ -128,7 +128,7 @@
 <li>Finally, set the value of the output image at that position to this sum.</li>
 </ul>
 </li>
-</ol><details><summary> Why do we need to &quot;flip&quot; the kernel? </summary><p>If we were didn&#x27;t flip the kernel, we would technically be implementing <strong>correlation</strong>.</p><p>You are welcome to read more about their differences <a href="https://towardsdatascience.com/convolution-vs-correlation-af868b6b4fb5" target="_blank" rel="noopener noreferrer">here</a>.</p></details></div>
+</ol><details><summary> Why do we need to &quot;flip&quot; the kernel? </summary><p>If we were didn&#x27;t flip the kernel, we would technically be implementing <strong>correlation</strong>.</p><p>You are welcome to read more about their differences <a href="https://towardsdatascience.com/convolution-vs-correlation-af868b6b4fb5" target="_blank" rel="noopener noreferrer">here</a> or <a href="https://glassboxmedicine.com/2019/07/26/convolution-vs-cross-correlation/" target="_blank" rel="noopener noreferrer">here</a>.</p></details></div>
 <p>Let&#x27;s look at an example below.</p>
 <h3 id="worked-example"><a href="#worked-example">Worked Example</a></h3>
 <p>For simplicity, let us represent our image(s) with only one color channel. In general, convolution is performed per-channel anyway, so this isn&#x27;t too much of a stretch.</p>
@@ -219,18 +219,9 @@
 <p>Good work! You&#x27;re done with the hardest part of this lab, and, in following sections, we&#x27;ll use the <code>convolve2D</code> function you just implemented to perform some basic filtering. We will do so by defining <strong>different kernels for each filter</strong>, then convolving our input image with those kernels.</p>
 <h2 id="identity-filter"><a href="#identity-filter">Identity Filter</a></h2>
 <p>An identity filter convolves the input image with an <strong>identity kernel</strong>, returning the original image.</p>
-<div class="task-callout callout"><p>In <code>filterIdentity()</code>, initialize an identity kernel. You will have to figure out what this identity kernel is by yourself!</p><ul>
-<li>The kernel should be a <code>std::vector&lt;float&gt;</code>.</li>
-<li>The side length of the kernel can be any odd number.<!-- -->
-<ul>
-<li>While technically correct, please don&#x27;t create a <code>1 x 1</code> kernel.</li>
-<li>Remember that if the kernel is too large, convolution can be very slow.</li>
-</ul>
-</li>
-</ul></div>
-<div class="task-callout callout"><p>In the same function, call <code>FilterUtils::convolve2D()</code>. You will need to pass in the kernel you made in task 13 and the relevant canvas data (found in <code>canvas2d.h</code>). <code>convolve2D()</code> will convolve your image with the identity kernel.</p></div>
+<div class="task-callout callout"><p>In <code>filterIdentity()</code>, we have created an identity kernel for you. However, something is wrong with the kernel we created.</p><p>Run the program with <code>identity</code> as your command line argument. Convolution with the identity kernel should return the original image, but what is happening with our current identity kernel?</p><p>Identify the bug and fix it such that when convolving the image with identity kernel, it results in the original image. Be ready to discuss with the TA what the original bug was and how you fixed it.</p></div>
 <div class="success-callout callout"><p><strong>Running and Testing:</strong></p><p>Pass in <code>identity</code> as your command line argument.</p></div>
-<p>Your filter should produce the following output:</p>
+<p>Your (corrected) filter should produce the following output:</p>
 <figure id="figure-11" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/labs/lab3/identity.gif" target="_blank" rel="noopener noreferrer"><img src="/labs/lab3/identity.gif" alt="An identity filter being applied to an image"/></a></div><figcaption><strong>Figure 11: </strong>An identity filter being applied to an image</figcaption></figure>
 <h2 id="shift-filter"><a href="#shift-filter">Shift Filter</a></h2>
 <p>A shift filter shifts the image by some number of pixels.</p>
@@ -365,5 +356,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab3"}}</script><script type="module" src="/assets/entry-client-routing.526c9e4c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab3.page.d29422ab.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.526c9e4c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cb9fcd79.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab3"}}</script><script type="module" src="/assets/entry-client-routing.7c19c77a.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab3.page.56cb4480.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1f744403.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7c19c77a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cb9fcd79.js"></body>
     </html>
