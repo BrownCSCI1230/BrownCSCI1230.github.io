@@ -364,6 +364,16 @@
       "_chunk-137b9351.js"
     ]
   },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.acafe911.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
   "pages/internal/fall22/internal-notes.page.mdx": {
     "file": "assets/pages/internal/fall22/internal-notes.page.ba004d44.js",
     "src": "pages/internal/fall22/internal-notes.page.mdx",
@@ -380,16 +390,6 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-137b9351.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.acafe911.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
     ]
   },
   "pages/projects/raster/1-algo-ans.page.mdx": {
