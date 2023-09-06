@@ -156,15 +156,16 @@ time-consuming re-build, which can be very annoying when developing or debugging
 `,n.exports.jsx(e.p,{children:"Note that the convention for pixel positions in CS1230 is:"}),`
 `,n.exports.jsxs(e.ul,{children:[`
 `,n.exports.jsxs(e.li,{children:[n.exports.jsx(e.code,{children:"x"})," is the horizontal axis; ",n.exports.jsx(e.code,{children:"y"})," is the vertical axis."]}),`
-`,n.exports.jsxs(e.li,{children:["Position ",n.exports.jsx(e.code,{children:"(0, 0)"}),` is at the top-left corner.
-:::`]}),`
+`,n.exports.jsxs(e.li,{children:["Position ",n.exports.jsx(e.code,{children:"(0, 0)"})," is at the top-left corner."]}),`
 `]}),`
-`]}),n.exports.jsx(e.p,{children:"Now, let's get to making that stamp!"}),n.exports.jsxs(e.div,{className:"task-callout callout",children:[n.exports.jsxs(e.p,{children:["In the ",n.exports.jsx(e.code,{children:"ColorCanvas"})," class, implement the ",n.exports.jsx(e.code,{children:"drawFlower()"})," function. This function should draw a flower centered on the input position (see ",n.exports.jsx(e.a,{href:"#figure-9",children:"figure 9"})," for an example of three such flowers)."]}),n.exports.jsx(Z,{images:[{src:"/labs/lab2/flowers.png",alt:"Flowers"}],targetWidth:"50%",figNumber:9,figCaption:"Three flowers drawn on a color canvas."}),n.exports.jsxs(e.p,{children:["Call the stamp function a few times with different input positions in ",n.exports.jsx(e.code,{children:"initializeColorCanvas()"}),". ",n.exports.jsx(e.strong,{children:"Then, take a screenshot of your creation!"})]}),n.exports.jsxs(e.ul,{children:[`
+`]})]}),`
+`,n.exports.jsx(e.p,{children:"Now, let's get to making that stamp!"}),`
+`,n.exports.jsxs(e.div,{className:"task-callout callout",children:[n.exports.jsxs(e.p,{children:["In the ",n.exports.jsx(e.code,{children:"ColorCanvas"})," class, implement the ",n.exports.jsx(e.code,{children:"drawFlower()"})," function. This function should draw a flower centered on the input position (see ",n.exports.jsx(e.a,{href:"#figure-9",children:"figure 9"})," for an example of three such flowers)."]}),n.exports.jsx(Z,{images:[{src:"/labs/lab2/flowers.png",alt:"Flowers"}],targetWidth:"50%",figNumber:9,figCaption:"Three flowers drawn on a color canvas."}),n.exports.jsxs(e.p,{children:["Call the stamp function a few times with different input positions in ",n.exports.jsx(e.code,{children:"initializeColorCanvas()"}),". ",n.exports.jsx(e.strong,{children:"Then, take a screenshot of your creation!"})]}),n.exports.jsxs(e.ul,{children:[`
 `,n.exports.jsx(e.li,{children:"Feel free to make your flower any color you like."}),`
 `,n.exports.jsxs(e.li,{children:["Naturally, you're going to want to use your ",n.exports.jsx(e.code,{children:"posToIndex()"})," function."]}),`
 `,n.exports.jsx(e.li,{children:n.exports.jsx(e.strong,{children:"Don't forget to check for edge cases!"})}),`
 `,n.exports.jsxs(e.li,{children:["As before, your command line argument should be: ",n.exports.jsx(e.code,{children:"color"}),"."]}),`
-`]})]})]}),`
+`]})]}),`
 `,n.exports.jsx(e.h2,{id:"the-pencil-tool",children:n.exports.jsx(e.a,{href:"#the-pencil-tool",children:"The Pencil Tool"})}),`
 `,n.exports.jsxs(e.p,{children:["Hope you had fun with that! For the last part of this lab, instead of modifying our canvas in code, we're going to try to modify it ",n.exports.jsx(e.strong,{children:"interactively"})," with a Photoshop-like pencil."]}),`
 `,n.exports.jsx(e.h3,{id:"for-your-info-event-handlers",children:n.exports.jsx(e.a,{href:"#for-your-info-event-handlers",children:"For Your Info: Event Handlers"})}),`
@@ -188,7 +189,7 @@ time-consuming re-build, which can be very annoying when developing or debugging
 `,n.exports.jsxs(e.li,{children:["As before, your command line argument should be: ",n.exports.jsx(e.code,{children:"color"}),"."]}),`
 `]})]}),`
 `,n.exports.jsx(e.h2,{id:"end",children:n.exports.jsx(e.a,{href:"#end",children:"End"})}),`
-`,n.exports.jsx(e.p,{children:"Congrats on finishing the Pencils lab! Now, it's time to submit your code and get checked off by a TA. Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)), explain what the bug was rfom task 7, and your pencil."}),`
+`,n.exports.jsx(e.p,{children:"Congrats on finishing the Pencils lab! Now, it's time to submit your code and get checked off by a TA. Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)), explain what the bug was from task 7, and your pencil."}),`
 `,n.exports.jsx(e.h2,{id:"submission",children:n.exports.jsx(e.a,{href:"#submission",children:"Submission"})}),`
 `,n.exports.jsx(e.p,{children:'Submit your Github repo for this lab to the "Lab 2: Pencils" assignment on Gradescope, then get checked off by a TA at hours.'}),`
 `,n.exports.jsx(fs,{}),n.exports.jsx(e.style,{children:`
