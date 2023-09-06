@@ -39,7 +39,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.651bde53.js",
+    "file": "assets/pages/index.page.dcc7ee28.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -66,24 +66,6 @@
     ],
     "css": [
       "assets/index.5c15a221.css"
-    ]
-  },
-  "pages/internal/index.page.mdx": {
-    "file": "assets/pages/internal/index.page.9398bb41.js",
-    "src": "pages/internal/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/internal/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/internal/mentor-meetings-guide.page.a81a93bc.js",
-    "src": "pages/internal/mentor-meetings-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -157,7 +139,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.fc70c898.js",
+    "file": "assets/pages/docs/index.page.e173ad58.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -225,6 +207,24 @@
     "imports": [
       "_chunk-137b9351.js",
       "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/index.page.mdx": {
+    "file": "assets/pages/internal/index.page.9398bb41.js",
+    "src": "pages/internal/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/internal/mentor-meetings-guide.page.mdx": {
+    "file": "assets/pages/internal/mentor-meetings-guide.page.a81a93bc.js",
+    "src": "pages/internal/mentor-meetings-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
     ]
   },
   "pages/labs/index.page.mdx": {
@@ -610,7 +610,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.8fa6502e.js",
+    "file": "assets/entry-client-routing.ed048e91.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -680,7 +680,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.4dc70e06.js",
+    "file": "assets/entry-server-routing.b36777ac.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
