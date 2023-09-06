@@ -572,8 +572,9 @@ Like most other debuggers, it allows you to interactively pause program executio
 `,e.exports.jsxs(s.div,{className:"task-callout callout",children:[e.exports.jsxs(s.p,{children:["Execute each line of ",e.exports.jsx(s.code,{children:"generateSequence"}),' one at a time by repeatedly pressing the "step over" button.']}),e.exports.jsx(n,{images:[{src:"/labs/lab1/debugger_execution.jpg",alt:"QtCreator Debug Mode"}],targetWidth:"75%",figNumber:7,figCaption:"Step Over button in the execution control panel"}),e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[`Pay attention to how the variable values in the locals panel update after each line is executed - You can view
 the elements inside a container (e.g. `,e.exports.jsx(s.code,{children:"std::vector"}),`) by clicking on the triangle next to their variable name in
-the locals panel once the variable has been initialized. :::`]}),`
-`]}),e.exports.jsxs(s.div,{className:"task-callout callout",children:[e.exports.jsxs(s.ol,{children:[`
+the locals panel once the variable has been initialized.`]}),`
+`]})]}),`
+`,e.exports.jsxs(s.div,{className:"task-callout callout",children:[e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsxs(s.li,{children:[`
 `,e.exports.jsxs(s.p,{children:["Find and correct the bug! You only need to edit the code in ",e.exports.jsx(s.code,{children:"generateSequence"}),"."]}),`
 `,e.exports.jsxs(s.ul,{children:[`
@@ -584,7 +585,7 @@ the locals panel once the variable has been initialized. :::`]}),`
 `,e.exports.jsxs(s.li,{children:[`
 `,e.exports.jsxs(s.p,{children:["Verify that you've fixed the bug by letting the program finish executing. ",e.exports.jsx(s.strong,{children:"You should no longer see the error message"}),"."]}),`
 `]}),`
-`]}),e.exports.jsxs("details",{children:[e.exports.jsx("summary",{children:e.exports.jsx(s.em,{children:"Hint"})}),e.exports.jsxs(s.p,{children:["Pay special attention to the ",e.exports.jsx(s.code,{children:"temp"})," variable. It will be helpful to use the debugger to inspect its properties."]})]})]})]}),`
+`]}),e.exports.jsxs("details",{children:[e.exports.jsx("summary",{children:e.exports.jsx(s.em,{children:"Hint"})}),e.exports.jsxs(s.p,{children:["Pay special attention to the ",e.exports.jsx(s.code,{children:"temp"})," variable. It will be helpful to use the debugger to inspect its properties."]})]})]}),`
 `,e.exports.jsx(s.p,{children:"It may have been possible to spot the bug simply by inspection in this task, but this is seldom the case in more complex codebases like the ones you'll build for your projects: bugs can be far subtler, so getting comfortable with the debugger will save you significant time and tears!"}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Congrats on finishing the Setup & C++ lab! Now, it's time to submit your code and get checked off by a TA. If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our advanced C++ tutorial coming soon!"}),`
