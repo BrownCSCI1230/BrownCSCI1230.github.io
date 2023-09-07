@@ -6,7 +6,7 @@ import{j as e}from"../../chunk-137b9351.js";const i={title:"Docs",hideTOC:!0};fu
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.strong,{children:e.exports.jsx(s.a,{href:"/docs/course-missive",children:"Course Missive"})})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/collaboration-policy",children:"Collaboration Policy"})}),`
-`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide",children:"Github + Gradescope Guide"}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide",children:"GitHub + Gradescope Guide"}),`
 `,`
 `]}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/screen-recording",children:"Screen Recording Guide"})}),`
