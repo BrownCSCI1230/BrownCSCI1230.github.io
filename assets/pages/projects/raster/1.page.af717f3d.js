@@ -141,8 +141,8 @@ if possible, where you believe they stem from in your code.`]}),`
 as well as where the code for each implementation lies within your overall project code.`]}),`
 `]}),`
 `,e.exports.jsx(s.h3,{id:"submitting-to-gradescope",children:e.exports.jsx(s.a,{href:"#submitting-to-gradescope",children:"Submitting to Gradescope"})}),`
-`,e.exports.jsx(s.p,{children:'Submit to "Project 1: Brush (Code)" assignment on Gradescope.'}),`
-`,e.exports.jsxs(s.p,{children:["Reference the projects section of the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
+`,e.exports.jsx(s.p,{children:'Submit your GitHub link and commit ID to the "Project 1: Brush (Code)" assignment on Gradescope.'}),`
+`,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;
