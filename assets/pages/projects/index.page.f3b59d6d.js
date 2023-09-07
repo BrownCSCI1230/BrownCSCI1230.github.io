@@ -4,7 +4,9 @@ import{j as e}from"../../chunk-137b9351.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Raster"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/raster/1",children:"Project 1: Brush"})}),`
+`,e.exports.jsxs(s.li,{children:["Project 1: Brush",`
+`,`
+`]}),`
 `,e.exports.jsxs(s.li,{children:["Project 2: Filter",`
 `,`
 `]}),`
@@ -35,4 +37,4 @@ import{j as e}from"../../chunk-137b9351.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `]}),`
 `]}),`
-`]})]})]})}function c(n={}){const{wrapper:s}=n.components||{};return s?e.exports.jsx(s,Object.assign({},n,{children:e.exports.jsx(r,n)})):r(n)}export{c as default,o as documentProps};
+`]})]})]})}function l(n={}){const{wrapper:s}=n.components||{};return s?e.exports.jsx(s,Object.assign({},n,{children:e.exports.jsx(r,n)})):r(n)}export{l as default,o as documentProps};
