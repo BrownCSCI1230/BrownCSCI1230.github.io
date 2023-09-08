@@ -269,7 +269,8 @@ To get this value for a given shader uniform variable, we can use the function `
 `,e.exports.jsx(t,{images:[{src:"/labs/lab10/outputAfterSpecular.png",alt:"TODO"}],figNumber:11,targetWidth:"50%",figCaption:"Final expected output, using the default shininess value of 15."}),`
 `,e.exports.jsx(s.p,{children:"Once your output looks like this, it's time to submit your code and get checked off by a TA."}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 10: Shaders" assignment on Gradescope, then get checked off by a TA at hours.'}),`
+`,e.exports.jsxs(s.p,{children:['Submit your GitHub link and commit ID to the "Lab 10: Shaders" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

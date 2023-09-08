@@ -590,7 +590,8 @@ the locals panel once the variable has been initialized.`]}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Congrats on finishing the Setup & C++ lab! Now, it's time to submit your code and get checked off by a TA. If you wish to have a deeper understanding of C++ or learn advanced C++ features to better your program design, you can find more information in our advanced C++ tutorial coming soon!"}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsxs(s.p,{children:['Submit your Github repo for this lab to the "Lab 1: Setup & C++" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:['Submit your GitHub link and commit ID to the "Lab 1: Setup & C++" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"You will not get credit for having completed the lab, unless you get it checked off!"})}),`
 `,e.exports.jsx(l,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {

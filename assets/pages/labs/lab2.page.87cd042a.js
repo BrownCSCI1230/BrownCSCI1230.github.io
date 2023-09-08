@@ -191,7 +191,8 @@ time-consuming re-build, which can be very annoying when developing or debugging
 `,n.exports.jsx(e.h2,{id:"end",children:n.exports.jsx(e.a,{href:"#end",children:"End"})}),`
 `,n.exports.jsx(e.p,{children:"Congrats on finishing the Pencils lab! Now, it's time to submit your code and get checked off by a TA. Be prepared to show the TA your 2 screenshots (from tasks 5 (heart) and 8 (flowers)), explain what the bug was from task 7, and your pencil."}),`
 `,n.exports.jsx(e.h2,{id:"submission",children:n.exports.jsx(e.a,{href:"#submission",children:"Submission"})}),`
-`,n.exports.jsx(e.p,{children:'Submit your Github repo for this lab to the "Lab 2: Pencils" assignment on Gradescope, then get checked off by a TA at hours.'}),`
+`,n.exports.jsxs(e.p,{children:['Submit your GitHub link and commit ID to the "Lab 2: Pencils" assignment on Gradescope, ',n.exports.jsx(e.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,n.exports.jsxs(e.p,{children:["Reference the GitHub + Gradescope Guide ",n.exports.jsx(e.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,n.exports.jsx(fs,{}),n.exports.jsx(e.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

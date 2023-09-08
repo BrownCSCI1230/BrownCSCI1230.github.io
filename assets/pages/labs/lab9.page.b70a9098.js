@@ -313,7 +313,8 @@ continuous segment of memory, the pointer to the beginning of this memory can al
 `,e.exports.jsx(t.h2,{id:"end",children:e.exports.jsx(t.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(t.p,{children:"Congrats on finishing the VBOs & VAOs lab! Now, it's time to submit your code and get checked off by a TA."}),`
 `,e.exports.jsx(t.h2,{id:"submission",children:e.exports.jsx(t.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(t.p,{children:'Submit your Github repo for this lab to the "Lab 9: VBOs & VAOs" assignment on Gradescope, then get checked off by a TA at hours.'}),`
+`,e.exports.jsxs(t.p,{children:['Submit your GitHub link and commit ID to the "Lab 9: VBOs and VAOs" assignment on Gradescope, ',e.exports.jsx(t.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(t.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(t.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(o,{}),e.exports.jsx(t.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

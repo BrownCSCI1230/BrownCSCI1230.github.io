@@ -196,7 +196,8 @@ sphere relative to its own central origin, and then use its model matrix to get 
 `,e.exports.jsx(s.h3,{id:"looking-ahead",children:e.exports.jsx(s.a,{href:"#looking-ahead",children:"Looking Ahead"})}),`
 `,e.exports.jsxs(s.p,{children:["In this lab, you implemented your own functions to build transformation matrices, and learned how to create cumulative transformation matrices, which you will continue to work on in the next lab, ",e.exports.jsx(s.strong,{children:"Lab 5: Parsing"}),". Though you wrote the matrices yourself this time, you might find built-in functions such as ",e.exports.jsx(s.code,{children:"glm::scale"}),", ",e.exports.jsx(s.code,{children:"glm::rotate"}),", and ",e.exports.jsx(s.code,{children:"glm::translate"})," to be helpful and save you some time in the future. Always remember to look at the documentation, though, as you'll notice some differences like how ",e.exports.jsx(s.code,{children:"glm::rotate"})," uses the ",e.exports.jsx(s.strong,{children:"angle-axis representation"})," of rotation instead."]}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 4: Transforms" assignment on Gradescope, then get checked off by a TA at hours.'}),`
+`,e.exports.jsxs(s.p,{children:['Submit your GitHub link and commit ID to the "Lab 4: Transforms" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(x,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

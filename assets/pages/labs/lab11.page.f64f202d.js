@@ -402,7 +402,8 @@ and `,e.exports.jsx(t.code,{children:"glDeleteFramebuffers"}),"."]}),e.exports.j
 `,e.exports.jsxs(t.p,{children:["Before we exit, it is important to delete any memory we generated with ",e.exports.jsx(t.code,{children:"glGen"})," calls."]}),`
 `,e.exports.jsx(t.div,{className:"task-callout callout",children:e.exports.jsxs(t.p,{children:["In ",e.exports.jsx(t.code,{children:"finish"}),", delete our kitten texture, FBO texture, FBO renderbuffer, and FBO itself."]})}),`
 `,e.exports.jsx(t.h2,{id:"submission",children:e.exports.jsx(t.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(t.p,{children:'Submit your Github repo for this lab to the "Lab 11: Textures & FBOs" assignment on Gradescope, then get checked off by a TA at hours.'}),`
+`,e.exports.jsxs(t.p,{children:['Submit your GitHub link and commit ID to the "Lab 11: Textures & FBOs" assignment on Gradescope, ',e.exports.jsx(t.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(t.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(t.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(t.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

@@ -161,7 +161,8 @@ We've also called this function for you according to the equation above.`]}),e.e
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Congrats on finishing the Lighting lab! Now, it's time to submit your code and get checked off by a TA."}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this lab to the "Lab 6: Light" assignment on Gradescope, then get checked off by a TA at hours.'}),`
+`,e.exports.jsxs(s.p,{children:['Submit your GitHub link and commit ID to the "Lab 6: Light" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(T,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;
