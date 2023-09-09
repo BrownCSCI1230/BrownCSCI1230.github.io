@@ -64,7 +64,7 @@ Krishi Saripalli (`,e.exports.jsx(s.code,{children:"ksaripal"}),")"]}),`
 `,e.exports.jsx(s.p,{children:"If you wish to work on your local machine instead, lab 1 will walk you through setting things up. Note that your device must meet these requirements:"}),`
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsxs(s.li,{children:["You must be able to ",e.exports.jsx(s.strong,{children:"access Github, Gradescope, and this website"}),";"]}),`
-`,e.exports.jsxs(s.li,{children:["You must also have ",e.exports.jsx(s.strong,{children:"sufficient free space"})," (about 10 GB; and potentially 30 GB more if you're on MacOS and need to install XCode); and"]}),`
+`,e.exports.jsxs(s.li,{children:["You must also have ",e.exports.jsx(s.strong,{children:"sufficient free space"})," (about 10 GB; and potentially 30 GB more if you're on macOS and need to install XCode); and"]}),`
 `,e.exports.jsxs(s.li,{children:["Your machine must ",e.exports.jsx(s.strong,{children:"support OpenGL 3.1 or newer"}),". You'll likely have no problem if:",`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:"Your computer is newer than 2012, and has Intel, AMD, or NVIDIA graphics hardware, or"}),`
@@ -99,6 +99,8 @@ Krishi Saripalli (`,e.exports.jsx(s.code,{children:"ksaripal"}),")"]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.p,{children:["The full list of CSCI 1230 topics can be found on the ",e.exports.jsx(s.a,{href:"/lectures",children:"lectures"})," page."]}),`
+`,`
+`,`
 `,`
 `,e.exports.jsx(s.h2,{id:"coursework",children:e.exports.jsx(s.a,{href:"#coursework",children:"Coursework"})}),`
 `,e.exports.jsx(s.h3,{id:"projects",children:e.exports.jsx(s.a,{href:"#projects",children:"Projects"})}),`
