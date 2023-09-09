@@ -71,17 +71,17 @@ Letting `,e.exports.jsx(s.span,{className:"math math-inline",children:e.exports.
 `,e.exports.jsx(s.div,{className:"error-callout callout",children:e.exports.jsxs("details",{children:[e.exports.jsxs("summary",{children:[e.exports.jsx(s.strong,{children:"macOS warning:"}),' "____ cannot be opened because the developer cannot be verified."']}),e.exports.jsxs(s.p,{children:["If you see this warning, ",e.exports.jsx(s.strong,{children:"don't eject the disk image"}),". You can allow the application to be opened from your system settings:"]}),e.exports.jsxs(s.p,{children:['System Settings > Privacy & Security > Security > "____ was blocked from use because it is not from an identified developer." > ',e.exports.jsx(s.strong,{children:'Click "Allow Anyway"'})]}),e.exports.jsx(s.p,{children:"You may need to repeat this action multiple times - keep trying to open the application and allowing it until it works."})]})}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Color Brush Masks ",e.exports.jsx(s.strong,{children:"(20 points)"}),`
+`,e.exports.jsxs(s.li,{children:["General painting functionality ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Color brush masks ",e.exports.jsx(s.strong,{children:"(30 points)"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Constant ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Linear ",e.exports.jsx(s.strong,{children:"(6 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Quadratic ",e.exports.jsx(s.strong,{children:"(9 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Constant ",e.exports.jsx(s.strong,{children:"(8 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Linear ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Quadratic ",e.exports.jsx(s.strong,{children:"(12 points)"})]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Smudge Brush ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Painting Functionality ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Software Engineering, Efficiency, & Stability ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Submission Template Sections on Design Choices, Collaboration, and Known Bugs ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Software engineering, efficiency, & stability ",e.exports.jsx(s.strong,{children:"(15 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Filled out submission template sections on design choices, collaboration, and known bugs ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"extra-credit",children:e.exports.jsx(s.a,{href:"#extra-credit",children:"Extra Credit"})}),`
 `,e.exports.jsx(s.p,{children:"For extra credit, we encourage you to try implementing some extra brushes/painting tools of your choice. Here are some suggestions (though you are free to come up with your own, too):"}),`
