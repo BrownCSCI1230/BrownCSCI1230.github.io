@@ -1,620 +1,652 @@
 {
   "junk/code-blocks.page.mdx": {
-    "file": "assets/junk/code-blocks.page.b385619c.js",
+    "file": "assets/junk/code-blocks.page.46542e4d.js",
     "src": "junk/code-blocks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "junk/cpp-guidelines.page.mdx": {
-    "file": "assets/junk/cpp-guidelines.page.9aba83fa.js",
+    "file": "assets/junk/cpp-guidelines.page.ba5bfe2f.js",
     "src": "junk/cpp-guidelines.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "junk/dummy-page.page.mdx": {
-    "file": "assets/junk/dummy-page.page.4159a86b.js",
+    "file": "assets/junk/dummy-page.page.9db81e0d.js",
     "src": "junk/dummy-page.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "junk/inline-code.page.mdx": {
-    "file": "assets/junk/inline-code.page.f8b4d101.js",
+    "file": "assets/junk/inline-code.page.71b1afb3.js",
     "src": "junk/inline-code.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.05918413.js",
+    "file": "assets/pages/index.page.d091dfac.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.fd7af823.js",
+    "file": "assets/pages/lectures.page.40c635f1.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.b5b9245b.js",
+    "file": "assets/renderer/_default.page.client.d1ab9429.js",
     "src": "renderer/_default.page.client.jsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ],
     "css": [
       "assets/index.5c15a221.css"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
-    "file": "assets/pages/docs/advanced-cpp-tutorial.page.3c70bae5.js",
+    "file": "assets/pages/docs/advanced-cpp-tutorial.page.7d582ca9.js",
     "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/code-readability-guidelines.page.mdx": {
-    "file": "assets/pages/docs/code-readability-guidelines.page.4971a247.js",
+    "file": "assets/pages/docs/code-readability-guidelines.page.d6a78691.js",
     "src": "pages/docs/code-readability-guidelines.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/collaboration-policy.page.mdx": {
-    "file": "assets/pages/docs/collaboration-policy.page.01aeb88d.js",
+    "file": "assets/pages/docs/collaboration-policy.page.86f5dab1.js",
     "src": "pages/docs/collaboration-policy.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/course-missive.page.mdx": {
-    "file": "assets/pages/docs/course-missive.page.45eb3c13.js",
+    "file": "assets/pages/docs/course-missive.page.6293f25a.js",
     "src": "pages/docs/course-missive.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/demos.page.mdx": {
-    "file": "assets/pages/docs/demos.page.721a8a62.js",
+    "file": "assets/pages/docs/demos.page.196ec185.js",
     "src": "pages/docs/demos.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/docs/dockerment.page.mdx": {
-    "file": "assets/pages/docs/dockerment.page.d577a333.js",
+    "file": "assets/pages/docs/dockerment.page.c98ed9aa.js",
     "src": "pages/docs/dockerment.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/github-gradescope-guide.page.mdx": {
-    "file": "assets/pages/docs/github-gradescope-guide.page.fc2ae908.js",
+    "file": "assets/pages/docs/github-gradescope-guide.page.330902c0.js",
     "src": "pages/docs/github-gradescope-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.59542d4c.js",
+    "file": "assets/pages/docs/index.page.bf35d8a9.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/docs/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/docs/mentor-meetings-guide.page.37587dc9.js",
+    "file": "assets/pages/docs/mentor-meetings-guide.page.c93d5007.js",
     "src": "pages/docs/mentor-meetings-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/preventing-memory-leaks.page.mdx": {
-    "file": "assets/pages/docs/preventing-memory-leaks.page.de8fa0ae.js",
+    "file": "assets/pages/docs/preventing-memory-leaks.page.80135772.js",
     "src": "pages/docs/preventing-memory-leaks.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/scenefile-documentation.page.mdx": {
-    "file": "assets/pages/docs/scenefile-documentation.page.3562ed89.js",
+    "file": "assets/pages/docs/scenefile-documentation.page.038576a1.js",
     "src": "pages/docs/scenefile-documentation.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/screen-recording.page.mdx": {
-    "file": "assets/pages/docs/screen-recording.page.cf02d768.js",
+    "file": "assets/pages/docs/screen-recording.page.d4946c6a.js",
     "src": "pages/docs/screen-recording.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/viewports.page.mdx": {
-    "file": "assets/pages/docs/viewports.page.fbf463ee.js",
+    "file": "assets/pages/docs/viewports.page.90474834.js",
     "src": "pages/docs/viewports.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/docs/xcode-CLT-installation-guide.page.mdx": {
-    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.5ae1fc88.js",
+    "file": "assets/pages/docs/xcode-CLT-installation-guide.page.5a1be8de.js",
     "src": "pages/docs/xcode-CLT-installation-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/internal/index.page.mdx": {
-    "file": "assets/pages/internal/index.page.1cb01b82.js",
-    "src": "pages/internal/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/internal/mentor-meetings-guide.page.0db2d7ba.js",
-    "src": "pages/internal/mentor-meetings-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.a04990f8.js",
+    "file": "assets/pages/labs/index.page.fd117910.js",
     "src": "pages/labs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.d9fc4aba.js",
+    "file": "assets/pages/labs/lab1.page.9e7f1128.js",
     "src": "pages/labs/lab1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab10.page.mdx": {
-    "file": "assets/pages/labs/lab10.page.62341d1b.js",
+    "file": "assets/pages/labs/lab10.page.4f0d1ac8.js",
     "src": "pages/labs/lab10.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab11.page.mdx": {
-    "file": "assets/pages/labs/lab11.page.937fa711.js",
+    "file": "assets/pages/labs/lab11.page.f64f202d.js",
     "src": "pages/labs/lab11.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.33980620.js",
+    "file": "assets/pages/labs/lab2.page.d339adca.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.c3417743.js",
+    "file": "assets/pages/labs/lab3.page.7ac8eb06.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.d1eb34fd.js",
+    "file": "assets/pages/labs/lab4.page.e8530274.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.7ac56ae8.js",
+    "file": "assets/pages/labs/lab5.page.9e8b65f3.js",
     "src": "pages/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.ff37c7cd.js",
+    "file": "assets/pages/labs/lab6.page.434a7638.js",
     "src": "pages/labs/lab6.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab7-get-normals.page.mdx": {
-    "file": "assets/pages/labs/lab7-get-normals.page.9242340a.js",
+    "file": "assets/pages/labs/lab7-get-normals.page.7effe38b.js",
     "src": "pages/labs/lab7-get-normals.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/labs/lab7.page.mdx": {
-    "file": "assets/pages/labs/lab7.page.ddb5e834.js",
+    "file": "assets/pages/labs/lab7.page.6a420554.js",
     "src": "pages/labs/lab7.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab8.page.mdx": {
-    "file": "assets/pages/labs/lab8.page.d19f8527.js",
+    "file": "assets/pages/labs/lab8.page.2bdd5a0a.js",
     "src": "pages/labs/lab8.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/labs/lab9.page.mdx": {
-    "file": "assets/pages/labs/lab9.page.cc6eff70.js",
+    "file": "assets/pages/labs/lab9.page.b70a9098.js",
     "src": "pages/labs/lab9.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.380b9c41.js",
+    "file": "assets/pages/projects/index.page.d85fcd8a.js",
     "src": "pages/projects/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/internal/fall22/internal-notes.page.mdx": {
-    "file": "assets/pages/internal/fall22/internal-notes.page.bd7c5b25.js",
+    "file": "assets/pages/internal/fall22/internal-notes.page.ba004d44.js",
     "src": "pages/internal/fall22/internal-notes.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/internal/fall22/internal-todos.page.mdx": {
-    "file": "assets/pages/internal/fall22/internal-todos.page.02425ff4.js",
+    "file": "assets/pages/internal/fall22/internal-todos.page.e43418a6.js",
     "src": "pages/internal/fall22/internal-todos.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.f4f4581f.js",
-    "src": "pages/projects/final/index.page.mdx",
+  "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.6459ecc6.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js"
     ]
   },
-  "pages/projects/ray/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo-ans.page.d24320b7.js",
-    "src": "pages/projects/ray/1-algo-ans.page.mdx",
+  "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.e1aaeb2f.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js",
-      "_chunk-e3efcf8b.js"
-    ]
-  },
-  "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.4afb00ac.js",
-    "src": "pages/projects/ray/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js",
-      "_chunk-e3efcf8b.js"
-    ]
-  },
-  "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.a1c528b7.js",
-    "src": "pages/projects/ray/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/ray/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo-ans.page.516f1c7b.js",
-    "src": "pages/projects/ray/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/ray/2-algo.ans.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.ans.page.c4a3b13f.js",
-    "src": "pages/projects/ray/2-algo.ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.21c308cf.js",
-    "src": "pages/projects/ray/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.435d1c10.js",
-    "src": "pages/projects/ray/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo-ans.page.7bd70ec6.js",
-    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.1cfe8c2a.js",
-    "src": "pages/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.7eff5144.js",
-    "src": "pages/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo-ans.page.a7aaa7fa.js",
-    "src": "pages/projects/realtime/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo.page.25e2155d.js",
-    "src": "pages/projects/realtime/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/projects/realtime/2.page.bdb25711.js",
-    "src": "pages/projects/realtime/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js"
     ]
   },
   "pages/projects/raster/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo-ans.page.670115cc.js",
+    "file": "assets/pages/projects/raster/1-algo-ans.page.591eca61.js",
     "src": "pages/projects/raster/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/projects/raster/1-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo.page.9c7d23f0.js",
+    "file": "assets/pages/projects/raster/1-algo.page.2f298f60.js",
     "src": "pages/projects/raster/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/projects/raster/1.page.mdx": {
-    "file": "assets/pages/projects/raster/1.page.157879ff.js",
+    "file": "assets/pages/projects/raster/1.page.f29f729b.js",
     "src": "pages/projects/raster/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "pages/projects/raster/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo-ans.page.e4b9c503.js",
+    "file": "assets/pages/projects/raster/2-algo-ans.page.6747c058.js",
     "src": "pages/projects/raster/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
-  "pages/projects/raster/2-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo.page.727674ec.js",
-    "src": "pages/projects/raster/2-algo.page.mdx",
+  "pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.96f80614.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
     ]
   },
-  "pages/projects/raster/2.page.mdx": {
-    "file": "assets/pages/projects/raster/2.page.9f2e2f6b.js",
-    "src": "pages/projects/raster/2.page.mdx",
+  "pages/internal/uhvd9823busdv8hf832/raster/1-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/1-algo.page.e8ffafe0.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/raster/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/raster/1.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/1.page.0c19cf23.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/raster/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/raster/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/2-algo-ans.page.2eae58cd.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/raster/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/raster/2-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/2-algo.page.5b270635.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/raster/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/raster/2.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/2.page.20dd040d.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/raster/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/1-algo-ans.page.78eb770a.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js",
+      "_chunk-1f744403.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/1-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/1-algo.page.6f4592cd.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js",
+      "_chunk-1f744403.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/1.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/1.page.b302a08c.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/2-algo-ans.page.1bfae086.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/2-algo.ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/2-algo.ans.page.28ede3c5.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/2-algo.ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/2-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/2-algo.page.d75cdedb.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/ray/2.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/ray/2.page.6e269cf7.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/ray/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/realtime/1-algo-ans.page.69d277d1.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/realtime/1-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/realtime/1-algo.page.cb605880.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/realtime/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/realtime/1.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/realtime/1.page.6a77dce9.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/realtime/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/realtime/2-algo-ans.page.a16d29af.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/realtime/2-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/realtime/2-algo.page.8b731265.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/realtime/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/realtime/2.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/realtime/2.page.c3e54318.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/realtime/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.292ae64b.js",
+    "file": "assets/entry-client-routing.dff9c8c6.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-cb9fcd79.js"
+      "_chunk-904e1e59.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -638,8 +670,27 @@
       "pages/index.page.mdx",
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
-      "pages/internal/index.page.mdx",
-      "pages/internal/mentor-meetings-guide.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/1-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/1.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/2-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/2.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/1-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/1.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2-algo.ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/1-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/1.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/2-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/2.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
       "pages/labs/lab10.page.mdx",
@@ -654,37 +705,21 @@
       "pages/labs/lab8.page.mdx",
       "pages/labs/lab9.page.mdx",
       "pages/lectures.page.mdx",
-      "pages/projects/final/index.page.mdx",
       "pages/projects/index.page.mdx",
       "pages/projects/raster/1-algo-ans.page.mdx",
       "pages/projects/raster/1-algo.page.mdx",
       "pages/projects/raster/1.page.mdx",
       "pages/projects/raster/2-algo-ans.page.mdx",
-      "pages/projects/raster/2-algo.page.mdx",
-      "pages/projects/raster/2.page.mdx",
-      "pages/projects/ray/1-algo-ans.page.mdx",
-      "pages/projects/ray/1-algo.page.mdx",
-      "pages/projects/ray/1.page.mdx",
-      "pages/projects/ray/2-algo-ans.page.mdx",
-      "pages/projects/ray/2-algo.ans.page.mdx",
-      "pages/projects/ray/2-algo.page.mdx",
-      "pages/projects/ray/2.page.mdx",
-      "pages/projects/realtime/1-algo-ans.page.mdx",
-      "pages/projects/realtime/1-algo.page.mdx",
-      "pages/projects/realtime/1.page.mdx",
-      "pages/projects/realtime/2-algo-ans.page.mdx",
-      "pages/projects/realtime/2-algo.page.mdx",
-      "pages/projects/realtime/2.page.mdx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.0d3acdeb.js",
+    "file": "assets/entry-server-routing.c33e8619.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-cb9fcd79.js"
+      "_chunk-904e1e59.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -708,8 +743,27 @@
       "pages/index.page.mdx",
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
-      "pages/internal/index.page.mdx",
-      "pages/internal/mentor-meetings-guide.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/1-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/1.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/2-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/raster/2.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/1-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/1.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2-algo.ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/ray/2.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/1-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/1.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/2-algo.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/realtime/2.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
       "pages/labs/lab10.page.mdx",
@@ -724,48 +778,32 @@
       "pages/labs/lab8.page.mdx",
       "pages/labs/lab9.page.mdx",
       "pages/lectures.page.mdx",
-      "pages/projects/final/index.page.mdx",
       "pages/projects/index.page.mdx",
       "pages/projects/raster/1-algo-ans.page.mdx",
       "pages/projects/raster/1-algo.page.mdx",
       "pages/projects/raster/1.page.mdx",
       "pages/projects/raster/2-algo-ans.page.mdx",
-      "pages/projects/raster/2-algo.page.mdx",
-      "pages/projects/raster/2.page.mdx",
-      "pages/projects/ray/1-algo-ans.page.mdx",
-      "pages/projects/ray/1-algo.page.mdx",
-      "pages/projects/ray/1.page.mdx",
-      "pages/projects/ray/2-algo-ans.page.mdx",
-      "pages/projects/ray/2-algo.ans.page.mdx",
-      "pages/projects/ray/2-algo.page.mdx",
-      "pages/projects/ray/2.page.mdx",
-      "pages/projects/realtime/1-algo-ans.page.mdx",
-      "pages/projects/realtime/1-algo.page.mdx",
-      "pages/projects/realtime/1.page.mdx",
-      "pages/projects/realtime/2-algo-ans.page.mdx",
-      "pages/projects/realtime/2-algo.page.mdx",
-      "pages/projects/realtime/2.page.mdx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
   },
-  "_chunk-b0d73203.js": {
-    "file": "assets/chunk-b0d73203.js"
+  "_chunk-137b9351.js": {
+    "file": "assets/chunk-137b9351.js"
   },
-  "_chunk-82f9daf4.js": {
-    "file": "assets/chunk-82f9daf4.js",
+  "_chunk-48b30f72.js": {
+    "file": "assets/chunk-48b30f72.js",
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
-  "_chunk-e3efcf8b.js": {
-    "file": "assets/chunk-e3efcf8b.js",
+  "_chunk-1f744403.js": {
+    "file": "assets/chunk-1f744403.js",
     "imports": [
-      "_chunk-b0d73203.js"
+      "_chunk-137b9351.js"
     ]
   },
-  "_chunk-cb9fcd79.js": {
-    "file": "assets/chunk-cb9fcd79.js"
+  "_chunk-904e1e59.js": {
+    "file": "assets/chunk-904e1e59.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
