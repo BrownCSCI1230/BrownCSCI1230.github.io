@@ -139,7 +139,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.bf35d8a9.js",
+    "file": "assets/pages/docs/index.page.26f46d21.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -148,7 +148,7 @@
     ]
   },
   "pages/docs/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/docs/mentor-meetings-guide.page.c93d5007.js",
+    "file": "assets/pages/docs/mentor-meetings-guide.page.241ef184.js",
     "src": "pages/docs/mentor-meetings-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -376,7 +376,7 @@
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.6459ecc6.js",
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.04758167.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -385,7 +385,7 @@
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.e1aaeb2f.js",
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.842fae99.js",
     "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -414,7 +414,7 @@
     ]
   },
   "pages/projects/raster/1.page.mdx": {
-    "file": "assets/pages/projects/raster/1.page.f29f729b.js",
+    "file": "assets/pages/projects/raster/1.page.1fe86630.js",
     "src": "pages/projects/raster/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -631,7 +631,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.574515f3.js",
+    "file": "assets/entry-client-routing.44a0d4f5.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -703,7 +703,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.299b588d.js",
+    "file": "assets/entry-server-routing.7d2574c8.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
