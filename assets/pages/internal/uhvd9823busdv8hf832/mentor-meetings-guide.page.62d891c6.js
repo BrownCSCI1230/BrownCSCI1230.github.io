@@ -60,7 +60,7 @@ import{j as e}from"../../../chunk-137b9351.js";const i={title:"Mentor Meetings G
 `,e.exports.jsxs(t.li,{children:["Run ",e.exports.jsx(t.code,{children:"git status"})," again to make sure you are on the correct commit."]}),`
 `,e.exports.jsxs(t.li,{children:["Run ",e.exports.jsx(t.code,{children:"qtcreator ."})," to open the project in Qt Creator. If you do not have the ",e.exports.jsx(t.code,{children:"qtcreator"})," command installed, you can open the project by opening Qt Creator and selecting ",e.exports.jsx(t.code,{children:"File > Open File or Project..."})," and selecting the project directory."]}),`
 `]})}),`
-`,e.exports.jsx(t.p,{children:"Review any areas of concern you identified during your initial grading pass."}),`
 `,e.exports.jsx(t.h4,{id:"spot-check-1",children:e.exports.jsx(t.a,{href:"#spot-check-1",children:"Spot check"})}),`
+`,e.exports.jsx(t.p,{children:"Do the spot check at the beginning, especially if the task is time-consuming, such as rendering a scene."}),`
 `,e.exports.jsxs(t.p,{children:["Refer to the ",e.exports.jsx(t.code,{children:"#hours"})," channel on Slack for the spot check of the week. Ask the student to run their code according to the spot check and verify that it matches the output in their submission."]}),`
 `,e.exports.jsx(t.p,{children:"If a student fails the spot check, refer the incident to an HTA."})]})]})}function r(s={}){const{wrapper:t}=s.components||{};return t?e.exports.jsx(t,Object.assign({},s,{children:e.exports.jsx(o,s)})):o(s)}export{r as default,i as documentProps};
