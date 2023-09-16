@@ -424,17 +424,6 @@
       "_chunk-48b30f72.js"
     ]
   },
-  "pages/projects/raster/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo-ans.page.6747c058.js",
-    "src": "pages/projects/raster/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.96f80614.js",
     "src": "pages/internal/uhvd9823busdv8hf832/raster/1-algo-ans.page.mdx",
@@ -642,11 +631,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.dff9c8c6.js",
+    "file": "assets/entry-client-routing.574515f3.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-904e1e59.js"
+      "_chunk-053964ff.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -709,17 +698,16 @@
       "pages/projects/raster/1-algo-ans.page.mdx",
       "pages/projects/raster/1-algo.page.mdx",
       "pages/projects/raster/1.page.mdx",
-      "pages/projects/raster/2-algo-ans.page.mdx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.c33e8619.js",
+    "file": "assets/entry-server-routing.299b588d.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-904e1e59.js"
+      "_chunk-053964ff.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -782,7 +770,6 @@
       "pages/projects/raster/1-algo-ans.page.mdx",
       "pages/projects/raster/1-algo.page.mdx",
       "pages/projects/raster/1.page.mdx",
-      "pages/projects/raster/2-algo-ans.page.mdx",
       "renderer/_default.page.client.jsx",
       "renderer/_default.page.server.jsx?extractStyles&lang.jsx"
     ]
@@ -802,8 +789,8 @@
       "_chunk-137b9351.js"
     ]
   },
-  "_chunk-904e1e59.js": {
-    "file": "assets/chunk-904e1e59.js"
+  "_chunk-053964ff.js": {
+    "file": "assets/chunk-053964ff.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
