@@ -281,24 +281,6 @@
       "_chunk-137b9351.js"
     ]
   },
-  "pages/internal/fall22/internal-notes.page.mdx": {
-    "file": "assets/pages/internal/fall22/internal-notes.page.ba004d44.js",
-    "src": "pages/internal/fall22/internal-notes.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/internal/fall22/internal-todos.page.mdx": {
-    "file": "assets/pages/internal/fall22/internal-todos.page.e43418a6.js",
-    "src": "pages/internal/fall22/internal-todos.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.c9d12f2a.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
@@ -311,6 +293,24 @@
   "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.eba54968.js",
     "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/internal/fall22/internal-notes.page.mdx": {
+    "file": "assets/pages/internal/fall22/internal-notes.page.ba004d44.js",
+    "src": "pages/internal/fall22/internal-notes.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/internal/fall22/internal-todos.page.mdx": {
+    "file": "assets/pages/internal/fall22/internal-todos.page.e43418a6.js",
+    "src": "pages/internal/fall22/internal-todos.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -585,6 +585,71 @@
       "_chunk-48b30f72.js"
     ]
   },
+  "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.944ebb44.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo.page.92d97dcf.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/projects/realtime/1.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/1.page.ad5bb4ea.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.081fba0c.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo.page.a832c38a.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.93ffd9d6.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
   "pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo-ans.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo-ans.page.7d919977.js",
     "src": "pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo-ans.page.mdx",
@@ -654,71 +719,6 @@
   "pages/internal/uhvd9823busdv8hf832/projects/ray/2.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/ray/2.page.c6eaab52.js",
     "src": "pages/internal/uhvd9823busdv8hf832/projects/ray/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.944ebb44.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo.page.92d97dcf.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/1.page.ad5bb4ea.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.081fba0c.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo.page.a832c38a.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.93ffd9d6.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
