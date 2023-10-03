@@ -230,13 +230,12 @@
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.714aa688.js",
+    "file": "assets/pages/labs/lab2.page.d339adca.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-137b9351.js",
-      "_chunk-d24ddf9a.js",
       "_chunk-1f744403.js",
       "_chunk-48b30f72.js"
     ]
@@ -264,7 +263,7 @@
     ]
   },
   "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.9e8b65f3.js",
+    "file": "assets/pages/labs/lab5.page.7da0f48d.js",
     "src": "pages/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -392,17 +391,6 @@
       "_chunk-48b30f72.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/labs/lab1.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab1.page.9a012f30.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/labs/lab1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab10.page.f5667e09.js",
     "src": "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx",
@@ -417,51 +405,6 @@
   "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab11.page.96319fe2.js",
     "src": "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/labs/lab2.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab2.page.a248c68f.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/labs/lab2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-d24ddf9a.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/labs/lab3.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab3.page.45cb7163.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/labs/lab3.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/labs/lab4.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab4.page.e61cc7c9.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/labs/lab4.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/labs/lab5.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab5.page.5a9d48b4.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -515,70 +458,6 @@
   "pages/internal/uhvd9823busdv8hf832/labs/lab9.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab9.page.b9ecb00d.js",
     "src": "pages/internal/uhvd9823busdv8hf832/labs/lab9.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo-ans.page.8aeb670c.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo.page.6e82efe1.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/raster/1.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/raster/1.page.5db63b63.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/raster/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo-ans.page.143a0261.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo.page.3527109f.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/projects/raster/2.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/raster/2.page.c125a6c3.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/raster/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -730,11 +609,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.884dd5ac.js",
+    "file": "assets/entry-client-routing.7a940297.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-cd4f9448.js"
+      "_chunk-02d7e396.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -759,25 +638,14 @@
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab1.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab2.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab3.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab4.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab5.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab6.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab7-get-normals.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab7.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab8.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab9.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo-ans.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/1.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo-ans.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/2.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo-ans.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/ray/1.page.mdx",
@@ -811,11 +679,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.40ed234d.js",
+    "file": "assets/entry-server-routing.70e2627b.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-cd4f9448.js"
+      "_chunk-02d7e396.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -840,25 +708,14 @@
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab1.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab2.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab3.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab4.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab5.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab6.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab7-get-normals.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab7.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab8.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab9.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo-ans.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/1-algo.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/1.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo-ans.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/2-algo.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/raster/2.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo-ans.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/ray/1-algo.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/ray/1.page.mdx",
@@ -906,14 +763,8 @@
       "_chunk-137b9351.js"
     ]
   },
-  "_chunk-d24ddf9a.js": {
-    "file": "assets/chunk-d24ddf9a.js",
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "_chunk-cd4f9448.js": {
-    "file": "assets/chunk-cd4f9448.js"
+  "_chunk-02d7e396.js": {
+    "file": "assets/chunk-02d7e396.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",

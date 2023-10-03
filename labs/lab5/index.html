@@ -241,12 +241,10 @@ Fix <code>dfsPrintTree()</code> such that when you run the program successfully,
 <div class="warning-callout callout"><p>Be aware that there is no <code>SceneData</code> struct. All of the information you need can be obtained by calling <code>fileReader</code>&#x27;s methods; and you can find their declarations in <code>src/parser/scenefilereader.h</code>:</p><pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-c">// All the methods that you will be using, from class `ScenefileReader`</span>
 </span><span class="code-line">SceneGlobalData             <span class="pl-en">getGlobalData</span>() <span class="pl-k">const</span>;
 </span><span class="code-line">SceneCameraData             <span class="pl-en">getCameraData</span>() <span class="pl-k">const</span>;
-</span><span class="code-line">std::vector&lt;SceneLightData&gt; <span class="pl-en">getLights</span>()     <span class="pl-k">const</span>;
 </span><span class="code-line">SceneNode*                  <span class="pl-en">getRootNode</span>()   <span class="pl-k">const</span>;
 </span></code></pre></div>
-<div class="task-callout callout"><p>The first step in populating <code>renderData</code> is to obtain global data, lights, and camera data for the scene. In <code>SceneParser::parse()</code>, use the <code>fileReader</code>&#x27;s methods to assign the following into fields in the <code>renderData</code> struct:</p><ol>
-<li>Global data,</li>
-<li>Lights, and</li>
+<div class="task-callout callout"><p>The first step in populating <code>renderData</code> is to obtain global data and and camera data for the scene. In <code>SceneParser::parse()</code>, use the <code>fileReader</code>&#x27;s methods to assign the following into fields in the <code>renderData</code> struct:</p><ol>
+<li>Global data</li>
 <li>Camera data</li>
 </ol></div>
 <h4 id="traversing-the-scene-graph"><a href="#traversing-the-scene-graph">Traversing The Scene Graph</a></h4>
@@ -390,5 +388,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.884dd5ac.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.9e8b65f3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1f744403.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.884dd5ac.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-cd4f9448.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/labs/lab5"}}</script><script type="module" src="/assets/entry-client-routing.7a940297.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/labs/lab5.page.7da0f48d.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1f744403.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.7a940297.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-02d7e396.js"></body>
     </html>
