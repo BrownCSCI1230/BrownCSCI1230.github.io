@@ -69,17 +69,17 @@ import{j as e}from"../../../chunk-137b9351.js";import{I as t}from"../../../chunk
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsx(s.p,{children:"This assignment is out of 100 points:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["3 Filters ",e.exports.jsx(s.strong,{children:"(60 points)"}),`
+`,e.exports.jsxs(s.li,{children:["3 Filters ",e.exports.jsx(s.strong,{children:"(70 points)"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Blur ",e.exports.jsx(s.strong,{children:"(18 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Edge Detect ",e.exports.jsx(s.strong,{children:"(18 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Scaling ",e.exports.jsx(s.strong,{children:"(24 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Blur ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Edge Detect ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Scaling ",e.exports.jsx(s.strong,{children:"(30 points)"})]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["General Functionality ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Software Engineering, Efficiency, & Stability ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Submission Template Sections on Design Choices, Collaboration, and Known Bugs ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Software Engineering, Efficiency, & Stability ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
 `]}),`
+`,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Remember that filling out the ",e.exports.jsx(s.code,{children:"submission-filter.md"})," template is critical for grading. You will be penalized if you do not fill it out."]})}),`
 `,e.exports.jsx(s.h2,{id:"extra-credit",children:e.exports.jsx(s.a,{href:"#extra-credit",children:"Extra Credit"})}),`
 `,e.exports.jsx(s.p,{children:"For extra credit we encourage you to try implementing some extra filters of your choice. Below we provide a list of suggestions, though you are also welcome to come up with your own:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
