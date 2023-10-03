@@ -61,7 +61,7 @@ import{j as e}from"../../../chunk-137b9351.js";const t={title:"Internal",hideTOC
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab2",children:"Pencils"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab3",children:"Convolution"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab4",children:"Transforms"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/labs/lab5",children:"Scene Parsing"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab5",children:"Scene Parsing"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/labs/lab6",children:"Light"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/labs/lab7",children:"Terrain"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/labs/lab8",children:"Trimeshes"})}),`

@@ -6,7 +6,7 @@ import{j as e}from"../../chunk-137b9351.js";const t={title:"Labs",hideTOC:!0};fu
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab2",children:"Pencils"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab3",children:"Convolution"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab4",children:"Transforms"})}),`
-`,e.exports.jsx(s.li,{children:"Scene Parsing"}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab5",children:"Scene Parsing"})}),`
 `,e.exports.jsx(s.li,{children:"Light"}),`
 `,e.exports.jsx(s.li,{children:"Terrain"}),`
 `,e.exports.jsx(s.li,{children:"Trimeshes"}),`
