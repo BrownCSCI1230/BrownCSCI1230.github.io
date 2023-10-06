@@ -23,7 +23,6 @@
 <h1 id="project-4-illuminate"><a href="#project-4-illuminate">Project 4: Illuminate</a></h1>
 <p><a href="https://classroom.github.com/a/-kOF59bt" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a> (same assignment as before)</p>
 <p>You can find the algo for this project <a href="/projects/ray/2-algo">here</a>.</p>
-<p>Example scenefiles to render can be found in <a href="https://github.com/BrownCSCI1230/student_scenefiles" target="_blank" rel="noopener noreferrer">our <code>student_scenefiles</code> repository</a>.</p>
 <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
 <p>In Intersect, you saw a glimpse of what the raytracing algorithm can do. However, our rendered images are still rather plain. So, in Illuminate, you will build upon your previous code by implementing more complex lighting effects, shinier surfaces, shadows, and texture mapping. You&#x27;re well on your way to having a fully-fledged raytracer!</p>
 <h2 id="requirements"><a href="#requirements">Requirements</a></h2>
@@ -94,7 +93,7 @@ A <code>blend</code> value is supplied as a material property for objects that a
 <li>If the blend value is 0, then the texture will be invisible.</li>
 <li>If the blend value is between 0 and 1, then you should perform linear interpolation between the <strong>diffuse color</strong> and the texture. Note: the diffuse color you are blending with should have already been multiplied by global diffuse coefficient.</li>
 </ul>
-<div class="warning-callout callout"><p>All of our scenefiles and textures are in the <code>student_scenefiles</code> repo. Texture images in the scenefiles are specified by their relative paths, so please don&#x27;t move any files around within the repo.</p></div>
+<div class="warning-callout callout"><p>All of our scenefiles and textures are in the <code>scenefiles</code> folder. Texture images in the scenefiles are specified by their relative paths, so please don&#x27;t move any files around within the folder.</p></div>
 <h4 id="texture-filtering"><a href="#texture-filtering">Texture Filtering</a></h4>
 <p>For this assignment, you only need to use nearest-neighbor for texture filtering to retrieve the color from a texture image at a given UV coordinate. More sophisticated texture filtering approaches can be implemented for extra credit.</p>
 <h2 id="codebase--design"><a href="#codebase--design">Codebase &amp; Design</a></h2>
@@ -102,7 +101,7 @@ A <code>blend</code> value is supplied as a material property for objects that a
 We have provided the data structures for object material and light sources in <code>SceneData.h</code>, which you may already have noticed.</p>
 <p>As before, the structure of this project is entirely up to you: you can add new classes, files, etc.
 However, you should not alter any command line interfaces we have implemented in the code base.</p>
-<p>We provide all the rendering results of the scenes we have in the <code>student_scenefiles</code> repo in <code>illuminate/required_outputs</code>, <code>illuminate/optional_outputs</code>, and <code>illuminate/extra_credit_outputs</code>.
+<p>We provide all the rendered results of the scenes we have in the <code>scenefiles</code> folder under <code>illuminate/required_outputs</code>, <code>illuminate/optional_outputs</code>, and <code>illuminate/extra_credit_outputs</code>.
 They serve as references for you to check the correctness of your implementation.</p>
 <div class="warning-callout callout"><p>You may notice that features like shadows, reflection and many other extra credit features are part of the config that is specified in the <code>QSettings</code> file,
 which indicates that they should be able to be toggled on / off based on the input configuration. We expect your implementation to respect this behavior.</p><p>If you implement any additional extra credit feature that is not covered by the template config , make sure to rememeber adding the additional flag to
@@ -118,8 +117,7 @@ your <code>RayTracer::Config</code> and document it properly in your <code>READM
 <p>On Windows and Linux:</p>
 <p><code>./projects_illuminate_&lt;min/max&gt; &lt;/absolute/filepath.ini&gt;</code></p>
 <h2 id="submission"><a href="#submission">Submission</a></h2>
-<p>Your repo should include a submission template file in Markdown format with the filename <code>submission_illuminate.md</code>. Like the last project, this is where you&#x27;ll document your outputs for all
-scenefiles in the <code>illuminate/required</code> folder (see the top of the page for a link to the <code>student_scenefiles</code> repository). We also provide the exact scenefiles
+<p>Your repo should include a submission template file in Markdown format with the filename <code>submission-illuminate.md</code>. We provide the exact scenefiles
 you should use to generate the outputs. You should also list some basic information about your design choices, the names of students you collaborated with, any
 known bugs, and the extra credit you&#x27;ve implemented.</p>
 <p>For extra credit, please describe what you&#x27;ve done and point out the related part of your code. If you implement any extra features that requires you to add a parameter for <code>QSettings.ini</code> and <code>RayTracer::Config</code>, please also document it accordingly so that the TAs won&#x27;t miss anything when grading your assignment.</p>
@@ -280,5 +278,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/internal/uhvd9823busdv8hf832/projects/ray/2"}}</script><script type="module" src="/assets/entry-client-routing.fb90f8b3.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/internal/uhvd9823busdv8hf832/projects/ray/2.page.ffc593cf.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.fb90f8b3.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-02d7e396.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/internal/uhvd9823busdv8hf832/projects/ray/2"}}</script><script type="module" src="/assets/entry-client-routing.ee5df34c.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/internal/uhvd9823busdv8hf832/projects/ray/2.page.e8d2b279.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-1f744403.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.ee5df34c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-d4cc3a5b.js"></body>
     </html>
