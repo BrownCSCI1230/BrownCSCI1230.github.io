@@ -9,7 +9,14 @@ import{j as e}from"../../chunk-137b9351.js";const i={title:"Docs",hideTOC:!0};fu
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide",children:"GitHub + Gradescope Guide"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/mentor-meetings-guide",children:"Mentor Meetings Guide"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/screen-recording",children:"Screen Recording Guide"})}),`
+`]}),`
+`]}),`
+`,e.exports.jsxs(s.li,{children:["Scenefiles",`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"https://scenes.cs1230.graphics",target:"_blank",rel:"noopener noreferrer",children:"Scenes"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/scenes-tutorial",children:"Scenes Tutorial"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/docs/scenefile-documentation",children:"Scenefile Documentation"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"https://github.com/BrownCSCI1230/scenefiles",target:"_blank",rel:"noopener noreferrer",children:"Scenefiles Repository"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Coding",`

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.5c15a221.css">
+        <meta charset="UTF-8">
+        <title>Scenes Tutorial | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-263NEZCW0C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-263NEZCW0C');
+        </script>
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#scenes-tutorial">Scenes Tutorial</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#getting-started">Getting Started</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#viewport">Viewport</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#sidebar">Sidebar</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#outline">Outline</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#editor">Editor</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#json">JSON</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#camera">Camera</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#using-scenes">Using Scenes</a></li></ol></li></ol></nav><main>
+<!-- -->
+<h1 id="scenes-tutorial"><a href="#scenes-tutorial">Scenes Tutorial</a></h1>
+<p>Welcome! <b><a href="https://scenes.cs1230.graphics" target="_blank">Scenes</a></b> is a scenefile editor built by the CS 1230 staff that allows you to visualize and modify scenes in the course&#x27;s JSON scenefile format. This tutorial will walk you through the basics of using Scenes. We recommend reading the <a href="/docs/scenefile-documentation">scenefile documentation</a> before continuing. With that said, let&#x27;s get started!</p>
+<h2 id="getting-started"><a href="#getting-started">Getting Started</a></h2>
+<p>Upon opening Scenes, you will be greeted with the following screen:</p>
+<p><img src="/docs/scenes-tutorial/welcome.png" alt="welcome"/></p>
+<h3 id="viewport"><a href="#viewport">Viewport</a></h3>
+<p>The window taking up the majority of the screen, starting on the leftside, is the viewport. This is where all that is contained in the scene will be rendered. You start with what we call the &quot;default&quot; scene: a single cube and point light. To change scenes, you can either a scenefile you possess
+locally by clicking the &quot;Upload&quot; button in the top right, or you can click the expandable dropdown menu which allows you to select from some pre-made scenes that we have provided.</p>
+<p>Note that switching between scenes will cause you to lose any unsaved changes to your current scene. When in doubt, you can always export the scene as it currently is by clicking the &quot;Download&quot; button situated next to &quot;Upload.&quot; This will export the current scene as a <code>.json</code> file to your computer which may be uploaded back into Scenes at a later time or used in your own Ray implementations.</p>
+<h3 id="sidebar"><a href="#sidebar">Sidebar</a></h3>
+<p>Finally, you may notice the sidebar placed to the right of the scene, broken into 3 tabs: &quot;Outline&quot;, &quot;Editor&quot;, and &quot;JSON&quot;. Let&#x27;s go over each of these tabs in detail.</p>
+<h4 id="outline"><a href="#outline">Outline</a></h4>
+<p>The Outline provides a hierarchical view of the scene, allowing you to see its structure and the objects contained within it. Selecting items in the Outline will open up their controls in the Editor, which we will discuss in the next section.</p>
+<p>Groups are represented as dropdowns - you can click on a group to expand or collapse it and reveal or hide its children. Primitives and lights are indicated by their corresponding icons.</p>
+<p>On groups you will notice a small &quot;plus&quot; icon. Clicking this will add a new child to the group: either a new group, primitive, or light. In most cases where you are trying to add some element that you can move freely about the scene, you will want to start by adding a new group, and then adding a primitive or light to the group you just created.</p>
+<div class="warning-callout callout"><p>On primitives, lights, and groups, you will notice a small &quot;trash&quot; icon. Clicking this will delete the item from the scene. Note that this action cannot be undone, so be careful!</p></div>
+<h4 id="editor"><a href="#editor">Editor</a></h4>
+<p>Selecting an element in the scene, either by clicking it in the viewport or selecting it in the outline, will target it so that it can be modified by the Editor. The attributes modifiable by the Editor are dependent on the type of object selected. For example, selecting a primitive will allow you to modify its material properties, while selecting a group will allow you to modify its transforms. Note that clicking the top-most item of the outline will select the scene itself, which will allow you to modify the global material properties. Changes made in the editor are immediately reflected in the viewport.</p>
+<h4 id="json"><a href="#json">JSON</a></h4>
+<p>The JSON panel displays the current state of the scene in the JSON scenefile format. This is useful for debugging purposes, or if you want to see the exact structure of the scene as it will be exported. Note that you cannot modify the scene by editing the JSON directly.</p>
+<h3 id="camera"><a href="#camera">Camera</a></h3>
+<p>One of the most important elements in a scene is the camera.</p>
+<p>In the viewport, the camera helper shows you where the camera is positioned and oriented, and its blue triangle indicates the direction of its up vector.</p>
+<p>In the Outline, the camera is always right underneath the root of the scene. Selecting the camera will allow you to modify its position, orientation, and height angle. Additionally, it allows you to save the current view of the viewport as the scene camera&#x27;s view with the &quot;Save View&quot; button. If you ever get lost or simply want to see the scene from the perspective when rendered, you may click &quot;Reset viewport&quot; so as to make the viewport aligned with the view of the camera.</p>
+<h2 id="using-scenes"><a href="#using-scenes">Using Scenes</a></h2>
+<p>Now that we have gone over the basics of the interface, let&#x27;s go over how to really use Scenes!</p>
+<p>Let&#x27;s choose an initial scene to work with. For this tutorial, we will be using the <code>phong_total</code> scene, one of the presets provided by Scenes. As mentioned, you can select these presets by clicking the dropdown in the top right:</p>
+<p><img src="/docs/scenes-tutorial/presets.png" alt="presets"/></p>
+<p>Upon selecting the phong_total scene, we should now see the scene rendered in the viewport and the corresponding scene structure in the Outline.</p>
+<p><img src="/docs/scenes-tutorial/phong_total.png" alt="phong_total"/></p>
+<p>Now, we can see how it will be rendered by selecting the camera in the Editor and clicking &quot;Reset viewport&quot;:</p>
+<p><img src="/docs/scenes-tutorial/reset_viewport.png" alt="reset viewport"/></p>
+<p>After clicking &quot;Reset viewport&quot;, the viewport should now be aligned with the camera&#x27;s view. We can now see the scene as it will be rendered:</p>
+<p><img src="/docs/scenes-tutorial/rendered.png" alt="rendered"/></p>
+<p>From here, let&#x27;s delete all the cones in the scene. We can do this by selecting each group containing a cone in the outline and clicking the trash icon:</p>
+<p><img src="/docs/scenes-tutorial/delete.png" alt="delete"/></p>
+<p>After deleting all the cones, we should now see:</p>
+<p><img src="/docs/scenes-tutorial/no_cones.png" alt="no cones"/></p>
+<p>Now, lets make a new cone, and lets place it to the left of the sphere. There is no correct way to do this, but a useful trick is to make this group a child of the group which contains the sphere already. This way, we can use the sphere&#x27;s position as a reference point for the cone. Let&#x27;s create a new group as a child of the group containing the sphere:</p>
+<p><img src="/docs/scenes-tutorial/new_group.png" alt="new group"/></p>
+<p>Now there is a new group as a child of sphere, also called &quot;Untitled Group&quot;. Click the plus icon for this new group and select Primitive &gt; Cone.</p>
+<p><img src="/docs/scenes-tutorial/new_cone_menu.png" alt="new cone menu"/></p>
+<p>Now we see the new cone appear in the Outline and in the viewport:</p>
+<p><img src="/docs/scenes-tutorial/new_cone.png" alt="new cone"/></p>
+<p>Notice that the new cone has appeared inside the sphere - this is because the cone inherits the transforms of the sphere&#x27;s group.</p>
+<p>To move the cone, let&#x27;s click on the new group we made containing the cone and translate it. Because its parent group has previously been rotated, we find that in order to move the cone to the right in our view, we will have to decrease the Y term. <code>-1.5</code> should be a good value.</p>
+<div class="success-callout callout"><p><strong>Tip:</strong> you can click and drag the input fields in the Editor to change their values!</p></div>
+<p><img src="/docs/scenes-tutorial/translated.png" alt="translated"/></p>
+<p>Looks great! From here, we can adjust the material properties of this new cone. Let&#x27;s make the cone a nice red color. We can do this by selecting the cone in the outline and changing the &quot;Ambient&quot; color in the Editor to <code>[0.5, 0, 0]</code> and the &quot;Diffuse&quot; color to <code>[1, 0, 0]</code>.</p>
+<p><img src="/docs/scenes-tutorial/red_cone.png" alt="red cone"/></p>
+<p>Fantastic! Finally, let&#x27;s render the scene from a different perspective. We could manually adjust the camera position and orientation with the Editor controls, but there&#x27;s something a lot easier we can do. Let&#x27;s click, drag, and scroll in the viewport to set its view to something we like:</p>
+<p><img src="/docs/scenes-tutorial/new_view.png" alt="new view"/></p>
+<p>We can set the scene&#x27;s camera to match our current viewport view - just select the Camera in the Outline and clikc &quot;Save view&quot; in the Editor.</p>
+<p><img src="/docs/scenes-tutorial/save_view.png" alt="save view"/></p>
+<p>Now, the camera has moved to our current view - isn&#x27;t that so easy?</p>
+<p>Now that we&#x27;re done making edits, we can export the scene by clicking the &quot;Download&quot; button. The JSON scenefile file (in this case, called &quot;phong_total.json&quot;) will be downloaded to your computer. Now, you can render your new scene in your own or a TA Ray implementation, or you can import it back into Scenes at a later time.</p>
+<p>Here&#x27;s a render of our final scene in the TA solution demo of intersect:</p>
+<p><img src="/docs/scenes-tutorial/final_render.png" alt="final render"/></p>
+<p>Now, you are ready to start using Scenes. Have fun!</p>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/docs/scenes-tutorial"}}</script><script type="module" src="/assets/entry-client-routing.be936db1.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/docs/scenes-tutorial.page.6150a201.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-137b9351.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-48b30f72.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.d1ab9429.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.be936db1.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-339232d4.js"></body>
+    </html>

@@ -1,4 +1,22 @@
 {
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.d091dfac.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.0a6a5ae6.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js"
+    ]
+  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.46542e4d.js",
     "src": "junk/code-blocks.page.mdx",
@@ -36,24 +54,6 @@
     "imports": [
       "_chunk-137b9351.js",
       "_chunk-48b30f72.js"
-    ]
-  },
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.d091dfac.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.0a6a5ae6.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js"
     ]
   },
   "renderer/_default.page.client.jsx": {
@@ -139,7 +139,7 @@
     ]
   },
   "pages/docs/index.page.mdx": {
-    "file": "assets/pages/docs/index.page.26f46d21.js",
+    "file": "assets/pages/docs/index.page.9832db08.js",
     "src": "pages/docs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -171,6 +171,16 @@
   "pages/docs/scenefile-documentation.page.mdx": {
     "file": "assets/pages/docs/scenefile-documentation.page.4fd523bc.js",
     "src": "pages/docs/scenefile-documentation.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/docs/scenes-tutorial.page.mdx": {
+    "file": "assets/pages/docs/scenes-tutorial.page.6150a201.js",
+    "src": "pages/docs/scenes-tutorial.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -609,11 +619,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.ee5df34c.js",
+    "file": "assets/entry-client-routing.be936db1.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-d4cc3a5b.js"
+      "_chunk-339232d4.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -631,6 +641,7 @@
       "pages/docs/mentor-meetings-guide.page.mdx",
       "pages/docs/preventing-memory-leaks.page.mdx",
       "pages/docs/scenefile-documentation.page.mdx",
+      "pages/docs/scenes-tutorial.page.mdx",
       "pages/docs/screen-recording.page.mdx",
       "pages/docs/viewports.page.mdx",
       "pages/docs/xcode-CLT-installation-guide.page.mdx",
@@ -679,11 +690,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.fd14b3ea.js",
+    "file": "assets/entry-server-routing.d36b1d4b.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-d4cc3a5b.js"
+      "_chunk-339232d4.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -701,6 +712,7 @@
       "pages/docs/mentor-meetings-guide.page.mdx",
       "pages/docs/preventing-memory-leaks.page.mdx",
       "pages/docs/scenefile-documentation.page.mdx",
+      "pages/docs/scenes-tutorial.page.mdx",
       "pages/docs/screen-recording.page.mdx",
       "pages/docs/viewports.page.mdx",
       "pages/docs/xcode-CLT-installation-guide.page.mdx",
@@ -763,8 +775,8 @@
       "_chunk-137b9351.js"
     ]
   },
-  "_chunk-d4cc3a5b.js": {
-    "file": "assets/chunk-d4cc3a5b.js"
+  "_chunk-339232d4.js": {
+    "file": "assets/chunk-339232d4.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
