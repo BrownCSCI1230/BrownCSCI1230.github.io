@@ -108,15 +108,15 @@ known bugs, and the extra credit you've implemented.`]}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsx(s.p,{children:"This assignment is out of 100 points."}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Point Lights ",e.exports.jsx(s.strong,{children:"(3 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Spot Lights ",e.exports.jsx(s.strong,{children:"(7 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Point Lights ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Spot Lights ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Attenuation ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Reflection ",e.exports.jsx(s.strong,{children:"(15 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Shadows ",e.exports.jsx(s.strong,{children:"(18 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Texture Mapping ",e.exports.jsx(s.strong,{children:"(22 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Software Engineering, Efficiency, & Stability ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Submission Template Sections on Design Choices, Collaboration, and Known Bugs ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Shadows ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Texture Mapping ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Software engineering, efficiency, & stability ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
 `]}),`
+`,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Remember that filling out the ",e.exports.jsx(s.code,{children:"submission-illuminate.md"})," template is critical for grading. You will be penalized if you do not fill it out."]})}),`
 `,e.exports.jsx(s.h2,{id:"extra-credit",children:e.exports.jsx(s.a,{href:"#extra-credit",children:"Extra Credit"})}),`
 `,e.exports.jsxs(s.p,{children:["All of the ",e.exports.jsx(s.a,{href:"/projects/ray/1#extra-credit",children:"extra credit options from Intersect"}),` are also valid options here (provided you haven't already done them for Intersect).
 In addition, you can consider the following options (or come up with your own ideas):`]}),`
@@ -143,7 +143,7 @@ You can validate them with manually calculated values in the simplest scenes.`})
 `,e.exports.jsx(s.h3,{id:"my-ray-tracer-runs-very-slowly-",children:e.exports.jsx(s.a,{href:"#my-ray-tracer-runs-very-slowly-",children:"My ray tracer runs very slowly :("})}),`
 `,e.exports.jsxs(s.p,{children:["We've provided some hints on how to address such issues in the ",e.exports.jsx(s.a,{href:"/projects/ray/1/#my-ray-tracer-runs-very-slowly-",children:"Intersect handout"}),"."]}),`
 `,e.exports.jsx(s.h2,{id:"submission-1",children:e.exports.jsx(s.a,{href:"#submission-1",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this project to the "Project 4: Illuminate (Code)" assignment on Gradescope.'}),`
+`,e.exports.jsx(s.p,{children:'Submit your GitHub repo and commit ID for this project to the "Project 4: Illuminate (Code)" assignment on Gradescope.'}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;

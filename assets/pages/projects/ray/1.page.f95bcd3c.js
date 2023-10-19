@@ -213,7 +213,7 @@ Our default rendering resolution is `,e.exports.jsx(s.span,{className:"math math
 And of course, you don't want to start with a complex scene.`]}),e.exports.jsxs(s.p,{children:["In particular, you may want to avoid working with ",e.exports.jsx(s.code,{children:"intersect/optional/recursive_sphere_5.xml"})," and up until after you've already successfully rendered simpler scenefiles."]})]}),`
 `,e.exports.jsxs("details",{children:[e.exports.jsx("summary",{children:"When you have finished the basic requirements and are looking for more:"}),e.exports.jsx(s.p,{children:"As mentioned in the lecture, ray tracing is 'embarrassingly parallel,' so you can boost performance simply by making your ray tracer parallel. There are many ways to achieve this; please refer to the Extra Credit section above for more information."}),e.exports.jsxs(s.p,{children:["It's worth noting that acceleration data structures also offer a ",e.exports.jsx(s.strong,{children:"significant"})," performance boost. Again, consult the Extra Credit section."]})]}),`
 `,e.exports.jsx(s.h2,{id:"submission-1",children:e.exports.jsx(s.a,{href:"#submission-1",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:'Submit your Github repo for this project to the "Project 3: Intersect (Code)" assignment on Gradescope.'}),`
+`,e.exports.jsx(s.p,{children:'Submit your GitHub repo and commit ID for this project to the "Project 3: Intersect (Code)" assignment on Gradescope.'}),`
 `,e.exports.jsx(o,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
   direction: ltr;
