@@ -304,7 +304,7 @@
     ]
   },
   "pages/labs/lab7.page.mdx": {
-    "file": "assets/pages/labs/lab7.page.6a420554.js",
+    "file": "assets/pages/labs/lab7.page.2d095b6b.js",
     "src": "pages/labs/lab7.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -674,7 +674,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.96f30e13.js",
+    "file": "assets/entry-client-routing.a0708b5c.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -750,7 +750,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.8e19016a.js",
+    "file": "assets/entry-server-routing.627e0054.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
