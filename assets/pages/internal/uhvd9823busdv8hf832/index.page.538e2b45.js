@@ -66,6 +66,6 @@ import{j as e}from"../../../chunk-137b9351.js";const t={title:"Internal",hideTOC
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab7",children:"Terrain"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab8",children:"Trimeshes"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab9",children:"VBOs & VAOs"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/labs/lab10",children:"Shaders"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab10",children:"Shaders"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/labs/lab11",children:"Textures & FBOs"})}),`
 `]})]})]})}function o(r={}){const{wrapper:s}=r.components||{};return s?e.exports.jsx(s,Object.assign({},r,{children:e.exports.jsx(n,r)})):n(r)}export{o as default,t as documentProps};

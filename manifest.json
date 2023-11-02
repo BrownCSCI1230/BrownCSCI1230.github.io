@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.ee29b47a.js",
+    "file": "assets/pages/lectures.page.3739c884.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -220,7 +220,7 @@
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.35b87ce4.js",
+    "file": "assets/pages/labs/index.page.634e35d2.js",
     "src": "pages/labs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -231,6 +231,17 @@
   "pages/labs/lab1.page.mdx": {
     "file": "assets/pages/labs/lab1.page.9e7f1128.js",
     "src": "pages/labs/lab1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
+  "pages/labs/lab10.page.mdx": {
+    "file": "assets/pages/labs/lab10.page.4f0d1ac8.js",
+    "src": "pages/labs/lab10.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -364,7 +375,7 @@
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.cf614a09.js",
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.538e2b45.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -533,17 +544,6 @@
       "_chunk-48b30f72.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab10.page.f5667e09.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/labs/lab11.page.96319fe2.js",
     "src": "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx",
@@ -599,11 +599,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.84417fb6.js",
+    "file": "assets/entry-client-routing.8e182c98.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-813b7269.js"
+      "_chunk-d07d211b.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -629,7 +629,6 @@
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.mdx",
@@ -638,6 +637,7 @@
       "pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
+      "pages/labs/lab10.page.mdx",
       "pages/labs/lab2.page.mdx",
       "pages/labs/lab3.page.mdx",
       "pages/labs/lab4.page.mdx",
@@ -668,11 +668,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.0fb52bcf.js",
+    "file": "assets/entry-server-routing.f5e39cec.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-813b7269.js"
+      "_chunk-d07d211b.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -698,7 +698,6 @@
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/labs/lab10.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/labs/lab11.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans.page.mdx",
@@ -707,6 +706,7 @@
       "pages/internal/uhvd9823busdv8hf832/projects/realtime/2.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
+      "pages/labs/lab10.page.mdx",
       "pages/labs/lab2.page.mdx",
       "pages/labs/lab3.page.mdx",
       "pages/labs/lab4.page.mdx",
@@ -751,8 +751,8 @@
       "_chunk-137b9351.js"
     ]
   },
-  "_chunk-813b7269.js": {
-    "file": "assets/chunk-813b7269.js"
+  "_chunk-d07d211b.js": {
+    "file": "assets/chunk-d07d211b.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
