@@ -173,30 +173,31 @@ So do not worry about these for now!`]}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
 `,e.exports.jsx(s.p,{children:"This project is out of 100 points:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Camera Data ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Shape Implementations ",e.exports.jsx(s.strong,{children:"(25 points)"}),`
+`,e.exports.jsxs(s.li,{children:["Camera data ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Shape implementations ",e.exports.jsx(s.strong,{children:"(30 points)"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Cube + Sphere ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Cube ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Sphere ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Cone ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Cylinder ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `]}),`
 `]}),`
-`,e.exports.jsxs(s.li,{children:["Data Handling ",e.exports.jsx(s.strong,{children:"(25 points)"}),`
+`,e.exports.jsxs(s.li,{children:["Data handling ",e.exports.jsx(s.strong,{children:"(25 points)"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Vertex Attributes ",e.exports.jsx(s.strong,{children:"(15 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Vertex attributes ",e.exports.jsx(s.strong,{children:"(15 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Uniforms ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Shaders ",e.exports.jsx(s.strong,{children:"(15 points)"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Phong Illumination ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Support for Multiple Lights ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Per-Vertex Transformations ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Phong illumination ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Support for multiple lights ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Per-vertex transformations ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
 `]}),`
 `]}),`
-`,e.exports.jsxs(s.li,{children:["Software Engineering, Efficiency, & Stability ",e.exports.jsx(s.strong,{children:"(25 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["README ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Software engineering, efficiency, & stability ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
 `]}),`
+`,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Remember that filling out the ",e.exports.jsx(s.code,{children:"submission-lights-camera.md"})," template is critical for grading. You will be penalized if you do not fill it out."]})}),`
 `,`
 `,e.exports.jsx(s.h2,{id:"extra-credit",children:e.exports.jsx(s.a,{href:"#extra-credit",children:"Extra Credit"})}),`
 `,e.exports.jsx(s.p,{children:"Remember that half-credit requirements count as extra credit if you are not enrolled in the half-credit course."}),`
