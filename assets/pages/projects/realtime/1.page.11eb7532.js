@@ -181,10 +181,10 @@ known bugs, and the extra credit you've implemented.`]}),`
 `,e.exports.jsxs(s.li,{children:["Projection matrix ",e.exports.jsx(s.strong,{children:"(8 points)"})]}),`
 `]}),`
 `]}),`
-`,e.exports.jsxs(s.li,{children:["Shape implementations ",e.exports.jsx(s.strong,{children:"(40 points)"}),`
+`,e.exports.jsxs(s.li,{children:["Shape implementations ",e.exports.jsx(s.strong,{children:"(30 points)"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["Cube ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Sphere ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Cube ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Sphere ",e.exports.jsx(s.strong,{children:"(5 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Cone ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Cylinder ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `]}),`
@@ -195,6 +195,7 @@ known bugs, and the extra credit you've implemented.`]}),`
 `,e.exports.jsxs(s.li,{children:["Support for multiple lights ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `]}),`
 `]}),`
+`,e.exports.jsxs(s.li,{children:["Tessellation (responds to changes in parameters) ",e.exports.jsx(s.strong,{children:"(10 points)"})]}),`
 `,e.exports.jsxs(s.li,{children:["Software engineering, efficiency, & stability ",e.exports.jsx(s.strong,{children:"(20 points)"})]}),`
 `]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Remember that filling out the ",e.exports.jsx(s.code,{children:"submission-lights-camera.md"})," template is critical for grading. You will be penalized if you do not fill it out."]})}),`
