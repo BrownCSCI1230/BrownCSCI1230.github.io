@@ -39,7 +39,7 @@ import{j as e}from"../../../chunk-137b9351.js";const t={title:"Internal",hideTOC
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/1",children:"Project 5: Lights, Camera"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/projects/realtime/1-algo-ans",children:"Algo Answers"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/1-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/projects/realtime/2",children:"Project 6: Action!"}),`
@@ -51,7 +51,7 @@ import{j as e}from"../../../chunk-137b9351.js";const t={title:"Internal",hideTOC
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Final"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/projects/final",children:"Project 7: Final Project"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/final",children:"Project 7: Final Project"})}),`
 `]}),`
 `]}),`
 `]}),`
