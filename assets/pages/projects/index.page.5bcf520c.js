@@ -37,7 +37,11 @@ import{j as e}from"../../chunk-137b9351.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/1-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/2",children:"Project 6: Action!"})}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/2",children:"Project 6: Action!"}),`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/2-algo-ans",children:"Algo Answers"})}),`
+`]}),`
+`]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Final"}),`

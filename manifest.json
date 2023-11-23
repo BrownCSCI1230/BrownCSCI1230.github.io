@@ -359,7 +359,7 @@
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.0e059f09.js",
+    "file": "assets/pages/projects/index.page.5bcf520c.js",
     "src": "pages/projects/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -386,7 +386,7 @@
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.c5c27e95.js",
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.4c845408.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -576,6 +576,17 @@
       "_chunk-48b30f72.js"
     ]
   },
+  "pages/projects/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/projects/realtime/2-algo-ans.page.80c8703f.js",
+    "src": "pages/projects/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-137b9351.js",
+      "_chunk-1f744403.js",
+      "_chunk-48b30f72.js"
+    ]
+  },
   "pages/projects/realtime/2-algo.page.mdx": {
     "file": "assets/pages/projects/realtime/2-algo.page.b15e9671.js",
     "src": "pages/projects/realtime/2-algo.page.mdx",
@@ -597,23 +608,12 @@
       "_chunk-48b30f72.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.081fba0c.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-137b9351.js",
-      "_chunk-1f744403.js",
-      "_chunk-48b30f72.js"
-    ]
-  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7d7cfd11.js",
+    "file": "assets/entry-client-routing.317f03c9.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-3daef01e.js"
+      "_chunk-8ae24936.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -640,7 +640,6 @@
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
       "pages/labs/lab10.page.mdx",
@@ -672,6 +671,7 @@
       "pages/projects/realtime/1-algo-ans.page.mdx",
       "pages/projects/realtime/1-algo.page.mdx",
       "pages/projects/realtime/1.page.mdx",
+      "pages/projects/realtime/2-algo-ans.page.mdx",
       "pages/projects/realtime/2-algo.page.mdx",
       "pages/projects/realtime/2.page.mdx",
       "renderer/_default.page.client.jsx",
@@ -679,11 +679,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.18623e9b.js",
+    "file": "assets/entry-server-routing.efe05471.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-3daef01e.js"
+      "_chunk-8ae24936.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -710,7 +710,6 @@
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
-      "pages/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
       "pages/labs/lab10.page.mdx",
@@ -742,6 +741,7 @@
       "pages/projects/realtime/1-algo-ans.page.mdx",
       "pages/projects/realtime/1-algo.page.mdx",
       "pages/projects/realtime/1.page.mdx",
+      "pages/projects/realtime/2-algo-ans.page.mdx",
       "pages/projects/realtime/2-algo.page.mdx",
       "pages/projects/realtime/2.page.mdx",
       "renderer/_default.page.client.jsx",
@@ -763,8 +763,8 @@
       "_chunk-137b9351.js"
     ]
   },
-  "_chunk-3daef01e.js": {
-    "file": "assets/chunk-3daef01e.js"
+  "_chunk-8ae24936.js": {
+    "file": "assets/chunk-8ae24936.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",

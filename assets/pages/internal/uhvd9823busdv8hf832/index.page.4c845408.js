@@ -44,7 +44,7 @@ import{j as e}from"../../../chunk-137b9351.js";const t={title:"Internal",hideTOC
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/2",children:"Project 6: Action!"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/projects/realtime/2-algo-ans",children:"Algo Answers"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/2-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `]}),`
