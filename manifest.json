@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.975808fa.js",
+    "file": "assets/pages/lectures.page.7e2fe4eb.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -386,7 +386,7 @@
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.977e56bf.js",
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.4f8861d5.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -397,6 +397,15 @@
   "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.978672d3.js",
     "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.01902f74.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -609,11 +618,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.f0a2241c.js",
+    "file": "assets/entry-client-routing.05ddac52.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-8ae24936.js"
+      "_chunk-870850d4.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -640,6 +649,7 @@
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
       "pages/labs/lab10.page.mdx",
@@ -679,11 +689,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.a0b96a9b.js",
+    "file": "assets/entry-server-routing.aa48dd16.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-8ae24936.js"
+      "_chunk-870850d4.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -710,6 +720,7 @@
       "pages/internal/fall22/internal-todos.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
       "pages/labs/index.page.mdx",
       "pages/labs/lab1.page.mdx",
       "pages/labs/lab10.page.mdx",
@@ -763,8 +774,8 @@
       "_chunk-b0d73203.js"
     ]
   },
-  "_chunk-8ae24936.js": {
-    "file": "assets/chunk-8ae24936.js"
+  "_chunk-870850d4.js": {
+    "file": "assets/chunk-870850d4.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",

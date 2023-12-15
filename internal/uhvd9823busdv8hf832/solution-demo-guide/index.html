@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.5c15a221.css">
+        <meta charset="UTF-8">
+        <title>Solution Demo Guide | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-263NEZCW0C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-263NEZCW0C');
+        </script>
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#compiling-new-solution-demos">Compiling New Solution Demos</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#macos">MacOS</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#windows">Windows</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#department-machines">Department Machines</a></li></ol></li></ol></nav><main>
+<h1 id="compiling-new-solution-demos"><a href="#compiling-new-solution-demos">Compiling New Solution Demos</a></h1>
+<p>Solution demos can currently be found in <a href="https://drive.google.com/drive/u/3/folders/1aEA3WocKI2GgdwfuE2FV5nU57mn2RCqU" target="_blank" rel="noopener noreferrer">this Google Drive folder</a>.</p>
+<p>These are all created from the solutions found in the <a href="https://github.com/BrownCSCI1230/base/" target="_blank" rel="noopener noreferrer">CSCI1230 base repo</a>.</p>
+<h2 id="macos"><a href="#macos">MacOS</a></h2>
+<div class="error-callout callout"><details><summary><strong>A note on version compatibility</strong></summary><p>It seems like solutions that have been built on machines that are MacOS 13.0 or later might not be backwards compatible. However, solutions built on older machines with MacOS &lt; 13.0 do seem to work on newer devices.</p></details></div>
+<ol>
+<li>Open the project in QtCreator and open <code>CMakeLists.txt</code>.</li>
+<li><em>(Optionally)</em> Rename the project to something that indicates which solution it is by modifying this line which should be at the top of the file:</li>
+</ol>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"># Sets project name
+</span><span class="code-line"><span class="pl-en">project</span>(projects_raster_min_solution LANGUAGES CXX C)
+</span></code></pre>
+<ol start="3">
+<li>Add the following snippet to the file. This will create a <code>.app</code> on Mac when building which can then be deployed to create a standalone application.</li>
+</ol>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"><span class="pl-en">set_target_properties</span>(${PROJECT_NAME} PROPERTIES
+</span><span class="code-line">    MACOSX_BUNDLE <span class="pl-c1">TRUE</span>
+</span><span class="code-line">)
+</span></code></pre>
+<ol start="4">
+<li>
+<p>Build the project in <strong>Release</strong>.</p>
+</li>
+<li>
+<p>In your system file browser find the folder where Qt is installed on your computer. From there go to <code>[Qt Version Number] &gt; macos &gt; bin</code>. You should have a preinstalled tool called <code>macdeployqt</code>. Copy the full filepath to this binary.<br/>
+<!-- -->For example, if you had Qt version 6.2.4 installed in your home directory, the path should look like this: <code>~/Qt/6.2.4/macos/bin/macdeployqt</code>.</p>
+</li>
+<li>
+<p>In a terminal navigate to the build folder of the project you just built. Inside there should be a <code>.app</code> file with the name of the project as defined in the <code>CMakeLists.txt</code> such as <code>projects_raster_min_solution.app</code>.</p>
+</li>
+<li>
+<p>Paste the path to <code>macdeployqt</code> copied in Step 5 followed by the name of the <code>.app</code> bundle. If you are planning on uploading this demo to Google Drive, also include the <code>-dmg</code> argument which will create a disk image that can be downloaded and installed by others. Google Drive will not let you upload just the <code>.app</code>.<br/>
+<!-- -->The full command should look something like this: <code>~/Qt/6.2.4/macos/bin/macdeployqt projects_raster_min_solution.app -dmg</code>.</p>
+</li>
+<li>
+<p>After this is run, you should have a <code>.dmg</code> file in the build folder like <code>projects_raster_min_solution.dmg</code>.</p>
+</li>
+</ol>
+<h2 id="windows"><a href="#windows">Windows</a></h2>
+<ol>
+<li>Open the project in QtCreator.</li>
+<li><em>(Optionally)</em> Open <code>CMakeLists.txt</code> and rename the project to something that indicates which solution it is by modifying this line which should be at the top of the file:</li>
+</ol>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"># Sets project name
+</span><span class="code-line"><span class="pl-en">project</span>(projects_raster_min_solution LANGUAGES CXX C)
+</span></code></pre>
+<ol start="3">
+<li>
+<p>Build the project in <strong>Release</strong>.</p>
+</li>
+<li>
+<p>In your system file browser find the folder where Qt is installed on your computer. From there go to <code>[Qt Version Number] &gt; mingw_64 &gt; bin</code>. You should have a preinstalled tool called <code>windeployqt</code>. Copy the full filepath to this binary.<br/>
+<!-- -->For example, if you had Qt version 6.2.4 installed in your C drive, the path should look like this: <code>C:/Qt/6.2.4/mingw_64/bin/windeployqt</code>.</p>
+</li>
+<li>
+<p>In a terminal navigate to the build folder of the project you just built. Inside there should be a <code>.exe</code> file with the name of the project as defined in the <code>CMakeLists.txt</code> such as <code>projects_raster_min_solution.exe</code>.</p>
+</li>
+<li>
+<p>Paste the path to <code>windeployqt</code> copied in Step 5 followed by the name of the <code>.exe</code> like this: <code>C:/Qt/6.2.4/mingw_64/bin/windeployqt projects_raster_min_solution.exe</code>.</p>
+</li>
+<li>
+<p>Unfortunately, <code>windeployqt</code> does not package everything into a nice little app bundle the way <code>macdeployqt</code> does so <strong>to share the solution you need to provide the entire build folder</strong> which has the copied dynamically linked libraries (the <code>.dll</code> files you probably see in the folder). However, to cut down on the size you can eliminate unecessary files by attempting to delete the build folder while running the executable. Windows will prompt you to skip files that cannot be deleted because they are used by the program. All others can be deleted. (Note: sometimes Windows doesn&#x27;t let you delete the <code>.cmake</code> folder but you don&#x27;t need this and can delete it manually by doing <code>rm -r .cmake</code>)</p>
+</li>
+<li>
+<p>Compress the build folder into a <code>.zip</code> and rename it.</p>
+</li>
+</ol>
+<h2 id="department-machines"><a href="#department-machines">Department Machines</a></h2>
+<p>Qt does not provide an included tool for deployment outside of Mac or Windows. Yay. Thanks Qt. Instead here&#x27;s a workaround. (Most of the instructions are available on <a href="https://appimage-builder.readthedocs.io/en/latest/intro/tutorial.html" target="_blank" rel="noopener noreferrer">this page</a>, but are also summarized here.)</p>
+<ol>
+<li>Get <code>appimage-builder</code> by running these commands in a terminal somewhere you can access the executable (like your user home directory):</li>
+</ol>
+<pre class="language-powershell"><code class="language-powershell code-highlight"><span class="code-line">wget <span class="pl-k">-</span>O appimage<span class="pl-k">-</span>builder<span class="pl-k">-</span>x86_64.AppImage https:<span class="pl-k">//</span><span class="pl-c1">github.com</span><span class="pl-k">/</span>AppImageCrafters<span class="pl-k">/</span>appimage<span class="pl-k">-</span>builder<span class="pl-k">/</span>releases<span class="pl-k">/</span>download<span class="pl-k">/</span>v1.<span class="pl-c1">1.0</span><span class="pl-k">/</span>appimage<span class="pl-k">-</span>builder<span class="pl-k">-</span><span class="pl-c1">1.1</span>.<span class="pl-c1">0</span><span class="pl-k">-</span>x86_64.AppImage
+</span><span class="code-line">chmod <span class="pl-k">+</span>x appimage<span class="pl-k">-</span>builder<span class="pl-k">-</span>x86_64.AppImage
+</span></code></pre>
+<ol start="2">
+<li><em>(Optionally)</em> Open <code>CMakeLists.txt</code> and rename the project to something that indicates which solution it is by modifying this line which should be at the top of the file:</li>
+</ol>
+<pre class="language-cpp"><code class="language-cpp code-highlight"><span class="code-line"># Sets project name
+</span><span class="code-line"><span class="pl-en">project</span>(projects_raster_min_solution LANGUAGES CXX C)
+</span></code></pre>
+<ol start="3">
+<li>
+<p>Build the project in <strong>Release</strong>.</p>
+</li>
+<li>
+<p>Navigate to the build folder of the project you just built. Inside there should be an executable file with the name of the project as defined in the <code>CMakeLists.txt</code> such as <code>projects_raster_min_solution</code>.</p>
+</li>
+<li>
+<p>In this build folder, move all the contents into nested folders such that you have a folder structure <code>AppDir/usr/bin/</code> where <code>bin</code> contains all the build files including the executable.</p>
+</li>
+<li>
+<p>Copy the filepath to your <code>appimage-builder</code> executable wherever you installed it in step 1. For example, if you put it in your user&#x27;s home directory it would look like <code>~/appimage-builder-x86_64.AppImage</code>.</p>
+</li>
+<li>
+<p>In a terminal navigate to the build folder (the level above <code>AppDir</code>) and run the <code>appimage-builder</code> executable with the flag <code>--generate</code>. For example, <code>~/appimage-builder-x86_64.AppImage --generate</code>.</p>
+</li>
+<li>
+<p>You will be prompted to fill in a bunch of application information for which you can use the defaults like so:</p>
+</li>
+</ol>
+<pre class="language-powershell"><code class="language-powershell code-highlight"><span class="code-line">INFO:Generator:Searching AppDir
+</span><span class="code-line"><span class="pl-k">?</span> ID [<span class="pl-k">Eg</span>: <span class="pl-k">com.example.app</span>]: projects_raster_min_solution
+</span><span class="code-line"><span class="pl-k">?</span> Application Name: projects_raster_min_solution
+</span><span class="code-line"><span class="pl-k">?</span> Icon: application<span class="pl-k">-</span>vnd.appimage
+</span><span class="code-line"><span class="pl-k">?</span> Executable path: usr<span class="pl-k">/</span>bin<span class="pl-k">/</span>projects_raster_min_solution
+</span><span class="code-line"><span class="pl-k">?</span> Arguments [<span class="pl-k">Default</span>: $@]: $@
+</span><span class="code-line"><span class="pl-k">?</span> Version [<span class="pl-k">Eg</span>: <span class="pl-c1">1.0</span>.<span class="pl-c1">0</span>]: latest
+</span><span class="code-line"><span class="pl-k">?</span> Update Information [<span class="pl-k">Default</span>: <span class="pl-k">guess</span>]: guess
+</span><span class="code-line"><span class="pl-k">?</span> Architecture: x86_64
+</span></code></pre>
+<ol start="9">
+<li>
+<p>Run <code>~/appimage-builder-x86_64.AppImage --recipe AppImageBuilder.yml</code>.</p>
+</li>
+<li>
+<p>The resulting project executable (ex: <code>projects_raster_min_solution.AppImage</code>) should be in the current working directory.</p>
+</li>
+</ol></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/internal/uhvd9823busdv8hf832/solution-demo-guide"}}</script><script type="module" src="/assets/entry-client-routing.05ddac52.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.01902f74.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.05ddac52.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
+    </html>

@@ -4,6 +4,7 @@ import{j as e}from"../../../chunk-b0d73203.js";const t={title:"Internal",hideTOC
 `,e.exports.jsx(s.h2,{id:"docs",children:e.exports.jsx(s.a,{href:"#docs",children:"Docs"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/mentor-meetings-guide",children:"Mentor Meetings Guide"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/internal/uhvd9823busdv8hf832/solution-demo-guide",children:"Solution Demo Guide"})}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"projects",children:e.exports.jsx(s.a,{href:"#projects",children:"Projects"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
