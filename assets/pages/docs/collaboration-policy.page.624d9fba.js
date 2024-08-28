@@ -23,7 +23,7 @@ The only scenario in which it is acceptable to look at another student's code is
 `,e.exports.jsxs(o.p,{children:["Because the final project can be big and open-ended, there may be cases where it makes sense for you to make use of ",e.exports.jsx(o.strong,{children:"third-party software/libraries"}),". If you think this is necessary and appropriate for your project, please check with your mentor TA. If they approve it, then be sure to cite the software/library in your final project submission."]}),`
 `,e.exports.jsxs(o.p,{children:["Regarding collaboration between teams, please abide by our policy for ",e.exports.jsx(o.a,{href:"#projects-code",children:"projects"})," above."]}),`
 `,e.exports.jsx(o.h2,{id:"ta-hours",children:e.exports.jsx(o.a,{href:"#ta-hours",children:"TA Hours"})}),`
-`,e.exports.jsx(o.p,{children:`In recognition of the long queues that can form during TA hours, we're running hours a little differently this year.
+`,e.exports.jsx(o.p,{children:`In recognition of the long queues that can form during TA hours, we're running hours a little differently.
 Rather than structuring hours as TAs helping individual students in sequence, we're instead turning every hours session into a community help space, where students can help each other under the supervision of the TAs.
 We permit (and encourage!) students to help each other work through conceptual issues, to discuss project design and organization, and even to help each other debug code.
 In fact, if you're particularly helpful to hours during hours, we'll take this into account when we compute final grades.`}),`

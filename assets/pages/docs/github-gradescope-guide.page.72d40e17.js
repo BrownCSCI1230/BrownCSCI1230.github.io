@@ -27,7 +27,7 @@ import{j as e}from"../../chunk-b0d73203.js";import{I as o}from"../../chunk-e3efc
 `,e.exports.jsx(t.p,{children:"This section covers how to hand in your work through Gradescope for both projects and labs in CS 1230."}),`
 `,e.exports.jsxs(t.ol,{children:[`
 `,e.exports.jsx(t.li,{children:"Navigate to your repository on GitHub to verify that your changes have been properly pushed."}),`
-`,e.exports.jsxs(t.li,{children:["Once you are satisfied with the state of your repository, navigate to the ",e.exports.jsx(t.a,{href:"https://www.gradescope.com/courses/563920",target:"_blank",rel:"noopener noreferrer",children:"CS 1230 course on Gradescope"}),"."]}),`
+`,e.exports.jsxs(t.li,{children:["Once you are satisfied with the state of your repository, navigate to the ",e.exports.jsx(t.a,{href:"https://www.gradescope.com/courses/843712",target:"_blank",rel:"noopener noreferrer",children:"CS 1230 course on Gradescope"}),"."]}),`
 `,e.exports.jsx(t.li,{children:"Click on the assignment you'd like to hand in."}),`
 `]}),`
 `,e.exports.jsx(t.p,{children:"You will see two questions:"}),`
