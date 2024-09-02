@@ -18,11 +18,12 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#project-4-illuminate">Project 4: Illuminate</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#requirements">Requirements</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#light-sources">Light Sources</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#point-lights">Point Lights</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#spot-lights">Spot Lights</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#adding-attenuation-to-phong-lighting">Adding Attenuation To Phong Lighting</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shadows">Shadows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#reflection">Reflection</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#texture-mapping">Texture Mapping</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#uv-coordinates">UV Coordinates</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#blending">Blending</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#texture-filtering">Texture Filtering</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#codebase--design">Codebase &amp; Design</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#scenes-viewer">Scenes Viewer</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#ta-demos">TA Demos</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#instructions-for-running">Instructions for Running</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#submission">Submission</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#grading">Grading</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#extra-credit">Extra Credit</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#faq--hints">FAQ &amp; Hints</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-colors-in-my-rendered-images-look-different-from-the-reference-images">The colors in my rendered images look different from the reference images.</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#my-images-have-many-black-dots">My images have many black dots.</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#my-ray-tracer-runs-very-slowly-">My ray tracer runs very slowly :(</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#submission-1">Submission</a></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#project-4-illuminate">Project 4: Illuminate</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#introduction">Introduction</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#requirements">Requirements</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#light-sources">Light Sources</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#point-lights">Point Lights</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#spot-lights">Spot Lights</a></li></ol></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#adding-attenuation-to-phong-lighting">Adding Attenuation To Phong Lighting</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shadows">Shadows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#reflection">Reflection</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#texture-mapping">Texture Mapping</a><ol class="toc-level toc-level-4"><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#uv-coordinates">UV Coordinates</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#blending">Blending</a></li><li class="toc-item toc-item-h4"><a class="toc-link toc-link-h4" href="#texture-filtering">Texture Filtering</a></li></ol></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#codebase--design">Codebase &amp; Design</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#scenes-viewer">Scenes Viewer</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#ta-demos">TA Demos</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#instructions-for-running">Instructions for Running</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#grading">Grading</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#extra-credit">Extra Credit</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#faq--hints">FAQ &amp; Hints</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#the-colors-in-my-rendered-images-look-different-from-the-reference-images">The colors in my rendered images look different from the reference images.</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#my-images-have-many-black-dots">My images have many black dots.</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#my-ray-tracer-runs-very-slowly-">My ray tracer runs very slowly :(</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#milestones">Milestones</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#submission">Submission</a></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="project-4-illuminate"><a href="#project-4-illuminate">Project 4: Illuminate</a></h1>
 <p><a href="https://classroom.github.com/a/-kOF59bt" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a> (same assignment as before)</p>
 <p>You can find the algo for this project <a href="/projects/ray/2-algo">here</a>.</p>
+<div class="warning-callout callout"><p>Please read this project handout <strong>before</strong> going to algo section!</p></div>
 <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
 <p>In Intersect, you saw a glimpse of what the raytracing algorithm can do. However, our rendered images are still rather plain. So, in Illuminate, you will build upon your previous code by implementing more complex lighting effects, shinier surfaces, shadows, and texture mapping. You&#x27;re well on your way to having a fully-fledged raytracer!</p>
 <h2 id="requirements"><a href="#requirements">Requirements</a></h2>
@@ -72,7 +73,7 @@ You may discover more interesting ways to add shadows in the Extra Credit sectio
 <h3 id="reflection"><a href="#reflection">Reflection</a></h3>
 <p>Smooth, polished surfaces in the real world often exhibit mirror-like reflections.
 In this project, you are required to implement this effect via recursive raytracing (i.e. tracing a ray in the mirror reflection direction about a surface normal).
-As such reflections only occur on shiny surfaces, you should only enable reflections for objects which have a nonzero reflective material component.</p>
+As such reflections only occur on shiny surfaces, you should only enable reflections for objects which have a nonzero reflective material component (reflections are a recursive process, so we want to prevent unnecessary calculations).</p>
 <figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/ray/2/reflection.png" target="_blank" rel="noopener noreferrer"><img src="/projects/ray/2/reflection.png" alt="TODO"/></a></div><figcaption><strong>Figure 4: </strong>An illustration of mirror reflection</figcaption></figure>
 <p>In scenes with multiple specular surfaces, it is possible for reflection rays to bounce recursively many (potentially infinitely many) times.
 To avoid infinite loop / recursion, you probably want to have a maximum depth. For reference, the TA demo uses <span class="math math-inline"><mjx-container className="MathJax" jax="SVG"><svg style="vertical-align:0" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 500 677" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-38-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="34" xlink:href="#MJX-38-TEX-N-34"></use></g></g></g></svg></mjx-container></span> by default and is customizable through
@@ -84,7 +85,7 @@ This allows us to simulate objects that have a more complicated appearance than 
 <p>To put a texture onto a surface, each point on the surface must map to a corresponding point in the texture image.
 These per-point image coordinates are called <em>UV coordinates</em>.
 For example, on each face of a cube, the UV coordinate system may originate from the left bottom corner and use the left and bottom edges of the face as its axes.
-You should think about how that applies to other shapes (e.g. cylinders, spheres, cones) on your own.</p>
+You should think about how that applies to other shapes (e.g. cylinders, spheres, cones) on your own. Refer to the surface parameterization section of the texture mapping lecture slides for further guidance.</p>
 <h4 id="blending"><a href="#blending">Blending</a></h4>
 <p>Another aspect of texture mapping is how the texture image interacts with the material properties for the surface specified in the scene file.
 A <code>blend</code> value is supplied as a material property for objects that are texture mapped.</p>
@@ -93,7 +94,8 @@ A <code>blend</code> value is supplied as a material property for objects that a
 <li>If the blend value is 0, then the texture will be invisible.</li>
 <li>If the blend value is between 0 and 1, then you should perform linear interpolation between the <strong>diffuse color</strong> and the texture. Note: the diffuse color you are blending with should have already been multiplied by global diffuse coefficient.</li>
 </ul>
-<div class="warning-callout callout"><p>All of our scenefiles and textures are in the <code>scenefiles</code> folder. Texture images in the scenefiles are specified by their relative paths, so please don&#x27;t move any files around within the folder.</p></div>
+<div class="warning-callout callout"><p>All of our scenefiles and textures are in the <code>scenefiles</code> folder. Texture images in the scenefiles are specified by their relative paths, so please don&#x27;t move any files around within the folder. To help you with this, we have provided an interface for you
+to load image data from a given path in <code>utils/imagereader.h</code>.</p></div>
 <h4 id="texture-filtering"><a href="#texture-filtering">Texture Filtering</a></h4>
 <p>For this assignment, you only need to use nearest-neighbor for texture filtering to retrieve the color from a texture image at a given UV coordinate. More sophisticated texture filtering approaches can be implemented for extra credit.</p>
 <h2 id="codebase--design"><a href="#codebase--design">Codebase &amp; Design</a></h2>
@@ -120,11 +122,6 @@ your <code>RayTracer::Config</code> and document it properly in your <code>READM
 <p><code>open projects_illuminate_&lt;min/max&gt;.app --args &lt;/absolute/filepath.ini&gt;</code></p>
 <p>On Windows and Linux:</p>
 <p><code>./projects_illuminate_&lt;min/max&gt; &lt;/absolute/filepath.ini&gt;</code></p>
-<h2 id="submission"><a href="#submission">Submission</a></h2>
-<p>Your repo should include a submission template file in Markdown format with the filename <code>submission-illuminate.md</code>. We provide the exact scenefiles
-you should use to generate the outputs. You should also list some basic information about your design choices, the names of students you collaborated with, any
-known bugs, and the extra credit you&#x27;ve implemented.</p>
-<p>For extra credit, please describe what you&#x27;ve done and point out the related part of your code. If you implement any extra features that requires you to add a parameter for <code>QSettings.ini</code> and <code>RayTracer::Config</code>, please also document it accordingly so that the TAs won&#x27;t miss anything when grading your assignment.</p>
 <h2 id="grading"><a href="#grading">Grading</a></h2>
 <p>This assignment is out of 100 points.</p>
 <ul>
@@ -162,8 +159,42 @@ You can validate them with manually calculated values in the simplest scenes.</p
 <p>This may be due to shadow rays intersecting their starting surface. Check if your code correctly prevents such erroneous self-intersections.</p>
 <h3 id="my-ray-tracer-runs-very-slowly-"><a href="#my-ray-tracer-runs-very-slowly-">My ray tracer runs very slowly :(</a></h3>
 <p>We&#x27;ve provided some hints on how to address such issues in the <a href="/projects/ray/1/#my-ray-tracer-runs-very-slowly-">Intersect handout</a>.</p>
-<h2 id="submission-1"><a href="#submission-1">Submission</a></h2>
+<h2 id="milestones"><a href="#milestones">Milestones</a></h2>
+<p>Although how you approach the steps of the project is entirely up to you, we have provided a rough milestone of steps to help you code incrementally. Since this is a just an outline, please double check the <a href="/projects/ray/2#requirements">submission requirements</a> to ensure you have completed all necessary functionalities.</p>
+<p><strong>Week 1</strong>:</p>
+<ul>
+<li>Implement point and spot light<!-- -->
+<ul>
+<li>Consider how the addition of position in these lights affects implementation</li>
+<li>Incorporate the attenuation factor for these lights</li>
+</ul>
+</li>
+<li>Implement shadows<!-- -->
+<ul>
+<li>Double check edge cases (consider distance relationships between the intersection points and lights)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Week 2</strong>:</p>
+<ul>
+<li>Implement reflections and incorporate into the lighting calculations<!-- -->
+<ul>
+<li>Consider how you can refactor your code to reuse ray casting logic and support recursion</li>
+</ul>
+</li>
+<li>Implement texture mapping<!-- -->
+<ul>
+<li>Calculate the uv coordinates for each shape</li>
+<li>Blend the texture with the diffuse color of the shape</li>
+</ul>
+</li>
+</ul>
+<h2 id="submission"><a href="#submission">Submission</a></h2>
 <p>Submit your GitHub repo and commit ID for this project to the &quot;Project 4: Illuminate (Code)&quot; assignment on Gradescope.</p>
+<p>Your repo should include a submission template file in Markdown format with the filename <code>submission-illuminate.md</code>. We provide the exact scenefiles
+you should use to generate the outputs. You should also list some basic information about your design choices, the names of students you collaborated with, any
+known bugs, and the extra credit you&#x27;ve implemented.</p>
+<p>For extra credit, please describe what you&#x27;ve done and point out the related part of your code. If you implement any extra features that requires you to add a parameter for <code>QSettings.ini</code> and <code>RayTracer::Config</code>, please also document it accordingly so that the TAs won&#x27;t miss anything when grading your assignment.</p>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p><style>
 mjx-container[jax=&quot;SVG&quot;] {
   direction: ltr;
@@ -282,5 +313,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/2"}}</script><script type="module" src="/assets/entry-client-routing.94e8c016.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/2.page.705b30fb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.94e8c016.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/2"}}</script><script type="module" src="/assets/entry-client-routing.fbf60730.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/2.page.21d8e7ee.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.fbf60730.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
     </html>
