@@ -25,7 +25,7 @@
 <div class="warning-callout callout"><p>When cloning the stencil code for this assignment, be sure to clone submodules. You can do this by running</p><pre class="language-sh"><code class="language-sh code-highlight"><span class="code-line">git clone --recurse-submodules <span class="pl-k">&lt;</span>repo-url<span class="pl-k">&gt;</span>
 </span></code></pre><p>Or, if you have already cloned the repo, you can run</p><pre class="language-sh"><code class="language-sh code-highlight"><span class="code-line">git submodule update --init --recursive
 </span></code></pre></div>
-<p>You can find the algo for this project <a href="/projects/ray/1-algo">here</a>.</p>
+<p>You can find the section handout for this project <a href="/projects/ray/1-algo">here</a>.</p>
 <div class="warning-callout callout"><p>Please read this project handout <strong>before</strong> going to algo section!</p></div>
 <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
 <p>In this assignment, you will implement the first (and most fundamental) part of a ray tracer: a pipeline for shooting rays into a scene and checking what (if anything) they hit.</p>
@@ -128,6 +128,9 @@ C++ provides a couple of ways to achieve this common object-oriented design patt
 <p>As mentioned in the <a href="#codebase">codebase section</a> earlier, to run your program, you will need to create a <code>.ini</code> file containing the raytracing parameters, an <strong>absolute</strong> filepath to the scenefile, and an <strong>absolute</strong> filepath to the output image.</p>
 <div class="warning-callout callout"><p>Note that all filepaths within Qt and the <code>.ini</code> file should be written using <strong>forward slashes (<code>/</code>)</strong>. This is the default filepath separator on macOS and Linux, but not always(?) on Windows.</p></div>
 <p>By the way, you can create your <code>.ini</code> file anywhere on your disk, as you will be passing its absolute filepath as a command line argument to your program.</p>
+<div class="success-callout callout"><p>We also provide an automated script, <code>run-intersect.sh</code>, included in the stencil, to run your ray tracer on all required scenes for submission. This script is compatible with macOS, Linux, and <strong>Git Bash</strong> on Windows. To run it, make sure
+you have built a <strong>Release</strong> version of your project in Qt, and then simply run:</p><pre class="language-sh"><code class="language-sh code-highlight"><span class="code-line">sh run-intersect.sh
+</span></code></pre></div>
 <h2 id="scenes-viewer"><a href="#scenes-viewer">Scenes Viewer</a></h2>
 <p>To assist with creating and modifying scene files, we have made a web viewer called <a href="https://scenes.cs1230.graphics/" target="_blank" rel="noopener noreferrer">Scenes</a>. From this site, you are able to upload scenefiles or start from a template, modify properties, then download the scene JSON to render with your raytracer.</p>
 <p>We hope that this is a fun and helpful tool as you implement the rest of the projects in the course which all use this scenefile format!</p>
@@ -408,5 +411,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/1"}}</script><script type="module" src="/assets/entry-client-routing.0b4acefb.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/1.page.138df73d.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9f704a88.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-15c32039.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-c61fc691.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.109f2ba5.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.0b4acefb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/1"}}</script><script type="module" src="/assets/entry-client-routing.d6994089.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/1.page.8f038b58.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9f704a88.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-15c32039.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-c61fc691.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.109f2ba5.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.d6994089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
     </html>

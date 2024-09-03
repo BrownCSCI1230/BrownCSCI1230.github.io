@@ -5,7 +5,7 @@ import{j as e}from"../../../chunk-9f704a88.js";import{I as t}from"../../../chunk
 `,e.exports.jsxs(s.div,{className:"warning-callout callout",children:[e.exports.jsx(s.p,{children:"When cloning the stencil code for this assignment, be sure to clone submodules. You can do this by running"}),e.exports.jsx(s.pre,{className:"language-sh",children:e.exports.jsx(s.code,{className:"language-sh code-highlight",children:e.exports.jsxs(s.span,{className:"code-line",children:["git clone --recurse-submodules ",e.exports.jsx(s.span,{className:"pl-k",children:"<"}),"repo-url",e.exports.jsx(s.span,{className:"pl-k",children:">"}),`
 `]})})}),e.exports.jsx(s.p,{children:"Or, if you have already cloned the repo, you can run"}),e.exports.jsx(s.pre,{className:"language-sh",children:e.exports.jsx(s.code,{className:"language-sh code-highlight",children:e.exports.jsx(s.span,{className:"code-line",children:`git submodule update --init --recursive
 `})})})]}),`
-`,e.exports.jsxs(s.p,{children:["You can find the algo for this project ",e.exports.jsx(s.a,{href:"/projects/realtime/1-algo",children:"here"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["You can find the section handout for this project ",e.exports.jsx(s.a,{href:"/projects/realtime/1-algo",children:"here"}),"."]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Please read this project handout ",e.exports.jsx(s.strong,{children:"before"})," going to algo section!"]})}),`
 `,e.exports.jsx(s.h2,{id:"introduction",children:e.exports.jsx(s.a,{href:"#introduction",children:"Introduction"})}),`
 `,e.exports.jsx(t,{images:[{src:"/labs/lab11/pipeline.png",alt:"TODO"}],figNumber:1,targetWidth:"95%",figCaption:"Realtime Pipeline"}),`

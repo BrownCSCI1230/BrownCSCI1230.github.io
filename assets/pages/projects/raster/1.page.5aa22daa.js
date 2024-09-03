@@ -2,7 +2,7 @@ import{j as e}from"../../../chunk-9f704a88.js";import{I as t}from"../../../chunk
 `,`
 `,e.exports.jsx(s.h1,{id:"project-1-brush",children:e.exports.jsx(s.a,{href:"#project-1-brush",children:"Project 1: Brush"})}),`
 `,e.exports.jsx(s.p,{children:e.exports.jsx(s.a,{href:"https://classroom.github.com/a/czuipei4",target:"_blank",rel:"noopener noreferrer",children:"Github Classroom assignment"})}),`
-`,e.exports.jsxs(s.p,{children:["You can find the algo for this project ",e.exports.jsx(s.a,{href:"/projects/raster/1-algo",children:"here"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["You can find the section handout for this project ",e.exports.jsx(s.a,{href:"/projects/raster/1-algo",children:"here"}),"."]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Please read this project handout ",e.exports.jsx(s.strong,{children:"before"})," going to algo section!"]})}),`
 `,e.exports.jsx(s.h2,{id:"introduction",children:e.exports.jsx(s.a,{href:"#introduction",children:"Introduction"})}),`
 `,e.exports.jsxs(s.p,{children:["Computer graphics often deals with digital images, which are two-dimensional arrays of color data (the pixels on the screen). In ",e.exports.jsx(s.a,{href:"/labs/lab2",children:"Lab 2: Pencils"})," you have already started learning how we can manipulate the values in these arrays to create your own digital images. In this assignment, you will be building upon that to write a painting application that features multiple types of brushes that you can use to paint on a 2D canvas, similar to applications such as MS Paint and Photoshop."]}),`

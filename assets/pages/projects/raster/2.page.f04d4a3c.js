@@ -2,7 +2,7 @@ import{j as e}from"../../../chunk-9f704a88.js";import{I as t}from"../../../chunk
 `,`
 `,e.exports.jsx(s.h1,{id:"project-2-filter",children:e.exports.jsx(s.a,{href:"#project-2-filter",children:"Project 2: Filter"})}),`
 `,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.a,{href:"https://classroom.github.com/a/czuipei4",target:"_blank",rel:"noopener noreferrer",children:"Github Classroom assignment"})," (same assignment as before)"]}),`
-`,e.exports.jsxs(s.p,{children:["You can find the algo for this project ",e.exports.jsx(s.a,{href:"/projects/raster/2-algo",children:"here"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["You can find the section handout for this project ",e.exports.jsx(s.a,{href:"/projects/raster/2-algo",children:"here"}),"."]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsxs(s.p,{children:["Please read this project handout ",e.exports.jsx(s.strong,{children:"before"})," going to algo section!"]})}),`
 `,e.exports.jsx(s.h2,{id:"introduction",children:e.exports.jsx(s.a,{href:"#introduction",children:"Introduction"})}),`
 `,e.exports.jsxs(s.p,{children:["In ",e.exports.jsx(s.a,{href:"/projects/raster/1",children:"Brush"}),", you modified arrays of pixels to create your own digital images. In Filter, you'll instead be using image processing techniques to manipulate ",e.exports.jsx(s.em,{children:"existing"})," images."]}),`

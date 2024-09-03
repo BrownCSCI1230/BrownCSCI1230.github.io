@@ -39,7 +39,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.9bc164be.js",
+    "file": "assets/pages/index.page.2c876652.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -262,7 +262,7 @@
     ]
   },
   "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.5884709f.js",
+    "file": "assets/pages/labs/lab2.page.63245464.js",
     "src": "pages/labs/lab2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -273,7 +273,7 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.3f539fd4.js",
+    "file": "assets/pages/labs/lab3.page.7b9414e5.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -284,7 +284,7 @@
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.524c486b.js",
+    "file": "assets/pages/labs/lab4.page.bbd123d4.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -295,7 +295,7 @@
     ]
   },
   "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.8b15964a.js",
+    "file": "assets/pages/labs/lab5.page.129fbefa.js",
     "src": "pages/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -348,7 +348,7 @@
     ]
   },
   "pages/labs/lab9.page.mdx": {
-    "file": "assets/pages/labs/lab9.page.f3ea1306.js",
+    "file": "assets/pages/labs/lab9.page.4f703cc5.js",
     "src": "pages/labs/lab9.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -423,7 +423,7 @@
     ]
   },
   "pages/projects/raster/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo-ans.page.d38ece6f.js",
+    "file": "assets/pages/projects/raster/1-algo-ans.page.43ec2301.js",
     "src": "pages/projects/raster/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -433,7 +433,7 @@
     ]
   },
   "pages/projects/raster/1-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/1-algo.page.75a13c8a.js",
+    "file": "assets/pages/projects/raster/1-algo.page.1776fbdd.js",
     "src": "pages/projects/raster/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -443,7 +443,7 @@
     ]
   },
   "pages/projects/raster/1.page.mdx": {
-    "file": "assets/pages/projects/raster/1.page.d2b1bccf.js",
+    "file": "assets/pages/projects/raster/1.page.5aa22daa.js",
     "src": "pages/projects/raster/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -454,7 +454,7 @@
     ]
   },
   "pages/projects/raster/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo-ans.page.0b645801.js",
+    "file": "assets/pages/projects/raster/2-algo-ans.page.2a052838.js",
     "src": "pages/projects/raster/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -465,7 +465,7 @@
     ]
   },
   "pages/projects/raster/2-algo.page.mdx": {
-    "file": "assets/pages/projects/raster/2-algo.page.85c8c8ea.js",
+    "file": "assets/pages/projects/raster/2-algo.page.c7cc12c6.js",
     "src": "pages/projects/raster/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -476,7 +476,7 @@
     ]
   },
   "pages/projects/raster/2.page.mdx": {
-    "file": "assets/pages/projects/raster/2.page.80536029.js",
+    "file": "assets/pages/projects/raster/2.page.f04d4a3c.js",
     "src": "pages/projects/raster/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -487,7 +487,7 @@
     ]
   },
   "pages/projects/ray/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo-ans.page.151911e4.js",
+    "file": "assets/pages/projects/ray/1-algo-ans.page.341dc189.js",
     "src": "pages/projects/ray/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -498,7 +498,7 @@
     ]
   },
   "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.dcf88436.js",
+    "file": "assets/pages/projects/ray/1-algo.page.f6fefb22.js",
     "src": "pages/projects/ray/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -509,7 +509,7 @@
     ]
   },
   "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.138df73d.js",
+    "file": "assets/pages/projects/ray/1.page.8f038b58.js",
     "src": "pages/projects/ray/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -520,7 +520,7 @@
     ]
   },
   "pages/projects/ray/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo-ans.page.3e009bf5.js",
+    "file": "assets/pages/projects/ray/2-algo-ans.page.701c39bc.js",
     "src": "pages/projects/ray/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -531,7 +531,7 @@
     ]
   },
   "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.1fb6c6dd.js",
+    "file": "assets/pages/projects/ray/2-algo.page.a00a26fe.js",
     "src": "pages/projects/ray/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -542,7 +542,7 @@
     ]
   },
   "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.cb1aee89.js",
+    "file": "assets/pages/projects/ray/2.page.a4ebfa9a.js",
     "src": "pages/projects/ray/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -553,7 +553,7 @@
     ]
   },
   "pages/projects/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo-ans.page.4f560759.js",
+    "file": "assets/pages/projects/realtime/1-algo-ans.page.901f3827.js",
     "src": "pages/projects/realtime/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -564,7 +564,7 @@
     ]
   },
   "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.d2018e7f.js",
+    "file": "assets/pages/projects/realtime/1-algo.page.6f2aad2a.js",
     "src": "pages/projects/realtime/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -575,7 +575,7 @@
     ]
   },
   "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.aabe2626.js",
+    "file": "assets/pages/projects/realtime/1.page.2a2f7b3e.js",
     "src": "pages/projects/realtime/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -586,7 +586,7 @@
     ]
   },
   "pages/projects/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo-ans.page.178d9211.js",
+    "file": "assets/pages/projects/realtime/2-algo-ans.page.a3dd4c76.js",
     "src": "pages/projects/realtime/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -597,7 +597,7 @@
     ]
   },
   "pages/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo.page.36c7fc7d.js",
+    "file": "assets/pages/projects/realtime/2-algo.page.c870f3d8.js",
     "src": "pages/projects/realtime/2-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -607,7 +607,7 @@
     ]
   },
   "pages/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/projects/realtime/2.page.b7e0c9e1.js",
+    "file": "assets/pages/projects/realtime/2.page.52385417.js",
     "src": "pages/projects/realtime/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -618,7 +618,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.0b4acefb.js",
+    "file": "assets/entry-client-routing.d6994089.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -689,7 +689,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.9fe3fa2b.js",
+    "file": "assets/entry-server-routing.08f4b7b1.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

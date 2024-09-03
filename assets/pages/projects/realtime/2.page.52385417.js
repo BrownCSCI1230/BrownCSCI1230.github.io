@@ -2,7 +2,7 @@ import{j as e}from"../../../chunk-9f704a88.js";import{I as s}from"../../../chunk
 `,`
 `,e.exports.jsx(t.h1,{id:"project-6-action",children:e.exports.jsx(t.a,{href:"#project-6-action",children:"Project 6: Action!"})}),`
 `,e.exports.jsx(t.p,{children:e.exports.jsx(t.a,{href:"https://classroom.github.com/a/0TJLr5QJ",target:"_blank",rel:"noopener noreferrer",children:"Github Classroom assignment"})}),`
-`,e.exports.jsxs(t.p,{children:["You can find the algo for this project ",e.exports.jsx(t.a,{href:"/projects/realtime/2-algo",children:"here"}),"."]}),`
+`,e.exports.jsxs(t.p,{children:["You can find the section handout for this project ",e.exports.jsx(t.a,{href:"/projects/realtime/2-algo",children:"here"}),"."]}),`
 `,e.exports.jsx(t.div,{className:"warning-callout callout",children:e.exports.jsxs(t.p,{children:["Please read this project handout ",e.exports.jsx(t.strong,{children:"before"})," going to algo section!"]})}),`
 `,e.exports.jsx(t.h2,{id:"introduction",children:e.exports.jsx(t.a,{href:"#introduction",children:"Introduction"})}),`
 `,e.exports.jsx(t.p,{children:"In the last project, you set up the foundation to render a static scene using a scene parser, a camera, VBOs/VAOs, and shaders."}),`
@@ -105,6 +105,8 @@ For this project, the new settings you will have to use are:`}),`
 `,e.exports.jsx(t.p,{children:"Please also, as described in the FBO section, include an explanation for TAs to quickly change the value of the default framebuffer such that they can run your code on their machines if needed."}),`
 `,e.exports.jsx(t.p,{children:"For extra credit, please describe what you've done and point out the related part of your code."}),`
 `,e.exports.jsx(t.h2,{id:"grading",children:e.exports.jsx(t.a,{href:"#grading",children:"Grading"})}),`
+`,e.exports.jsx(t.div,{className:"error-callout callout",children:e.exports.jsx(t.p,{children:`For points deducted regarding software engineering/efficiency in your implementation of Project 5: Lights, Camera,
+you will have the same points deducted again for this part of the project if these are not corrected.`})}),`
 `,e.exports.jsx(t.p,{children:"This project is out of 100 points:"}),`
 `,e.exports.jsxs(t.ul,{children:[`
 `,e.exports.jsxs(t.li,{children:["Camera Interactability ",e.exports.jsx(t.strong,{children:"(30 points)"}),`

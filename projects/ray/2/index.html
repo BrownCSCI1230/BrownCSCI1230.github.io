@@ -22,7 +22,7 @@
 <!-- -->
 <h1 id="project-4-illuminate"><a href="#project-4-illuminate">Project 4: Illuminate</a></h1>
 <p><a href="https://classroom.github.com/a/-kOF59bt" target="_blank" rel="noopener noreferrer">Github Classroom assignment</a> (same assignment as before)</p>
-<p>You can find the algo for this project <a href="/projects/ray/2-algo">here</a>.</p>
+<p>You can find the section handout for this project <a href="/projects/ray/2-algo">here</a>.</p>
 <div class="warning-callout callout"><p>Please read this project handout <strong>before</strong> going to algo section!</p></div>
 <h2 id="introduction"><a href="#introduction">Introduction</a></h2>
 <p>In Intersect, you saw a glimpse of what the raytracing algorithm can do. However, our rendered images are still rather plain. So, in Illuminate, you will build upon your previous code by implementing more complex lighting effects, shinier surfaces, shadows, and texture mapping. You&#x27;re well on your way to having a fully-fledged raytracer!</p>
@@ -108,6 +108,9 @@ They serve as references for you to check the correctness of your implementation
 <div class="warning-callout callout"><p>You may notice that features like shadows, reflection and many other extra credit features are part of the config that is specified in the <code>QSettings</code> file,
 which indicates that they should be able to be toggled on / off based on the input configuration. We expect your implementation to respect this behavior.</p><p>If you implement any additional extra credit feature that is not covered by the template config , make sure to rememeber adding the additional flag to
 your <code>RayTracer::Config</code> and document it properly in your <code>README</code></p></div>
+<div class="success-callout callout"><p>We also provide an automated script, <code>run-illuminate.sh</code>, included in the stencil, to run your ray tracer on all required scenes for submission. This script is compatible with macOS, Linux, and <strong>Git Bash</strong> on Windows. To run it, make sure
+you have built a <strong>Release</strong> version of your project in Qt, and then simply run:</p><pre class="language-sh"><code class="language-sh code-highlight"><span class="code-line">sh run-illuminate.sh
+</span></code></pre></div>
 <figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/projects/ray/2/feature_test_shadow_test.png" target="_blank" rel="noopener noreferrer"><img src="/projects/ray/2/feature_test_shadow_test.png" alt="TODO"/></a></div><figcaption><strong>Figure 5: </strong>Demo scene combining shadows, reflections and textures. (feature_test/shadow_test.xml)</figcaption></figure>
 <h2 id="scenes-viewer"><a href="#scenes-viewer">Scenes Viewer</a></h2>
 <p>To assist with creating and modifying scene files, we have made a web viewer called <a href="https://scenes.cs1230.graphics/" target="_blank" rel="noopener noreferrer">Scenes</a>. From this site, you are able to upload scenefiles or start from a template, modify properties, then download the scene JSON to render with your raytracer.</p>
@@ -123,6 +126,8 @@ your <code>RayTracer::Config</code> and document it properly in your <code>READM
 <p>On Windows and Linux:</p>
 <p><code>./projects_illuminate_&lt;min/max&gt; &lt;/absolute/filepath.ini&gt;</code></p>
 <h2 id="grading"><a href="#grading">Grading</a></h2>
+<div class="error-callout callout"><p>For points deducted regarding software engineering/efficiency in your implementation of Project 3: Intersect,
+you will have the same points deducted again for this part of the project if these are not corrected.</p></div>
 <p>This assignment is out of 100 points.</p>
 <ul>
 <li>Point Lights <strong>(5 points)</strong></li>
@@ -313,5 +318,5 @@ mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quo
 }
 </style></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/2"}}</script><script type="module" src="/assets/entry-client-routing.0b4acefb.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/2.page.cb1aee89.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9f704a88.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-15c32039.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-c61fc691.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.109f2ba5.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.0b4acefb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/ray/2"}}</script><script type="module" src="/assets/entry-client-routing.d6994089.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/ray/2.page.a4ebfa9a.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-9f704a88.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-15c32039.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-c61fc691.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.109f2ba5.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.d6994089.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-870850d4.js"></body>
     </html>
