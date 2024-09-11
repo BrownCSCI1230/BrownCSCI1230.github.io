@@ -110,7 +110,7 @@ You are graded based on attendance and participation.`}),`
 `,`
 `,`
 `,e.exports.jsx(s.h3,{id:"labs",children:e.exports.jsx(s.a,{href:"#labs",children:"Labs"})}),`
-`,e.exports.jsxs(s.p,{children:["In addition to the projects, a series of 11 weekly ",e.exports.jsx(s.strong,{children:"labs"})," will provide hands-on experience with various graphics programming topics and tools. Each lab is designed such that the code you write will be helpful for one of the programming projects (or for the final project). Unlike projects, labs can be completed collaboratively and are graded on a check-off basis."]}),`
+`,e.exports.jsxs(s.p,{children:["In addition to the projects, a series of 11 weekly ",e.exports.jsx(s.strong,{children:"labs"})," will provide hands-on experience with various graphics programming topics and tools. Each lab is designed such that the code you write will be helpful for one of the programming projects (or for the final project). Unlike projects, labs can be completed collaboratively and are graded on a check-off basis. See the Late Policy for more info on Lab check-offs."]}),`
 `,e.exports.jsx(s.h3,{id:"expected-time-commitment",children:e.exports.jsx(s.a,{href:"#expected-time-commitment",children:"Expected Time Commitment"})}),`
 `,e.exports.jsx(s.p,{children:"Over 13 weeks, you will spend 3 hours per week in class (39 hours total) and approximately 2 hours per week per lab (22 hours total). Each project (algo included) typically takes under 11 hours per week, though this heavily depends on how much extra credit you choose to implement. In summary:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
