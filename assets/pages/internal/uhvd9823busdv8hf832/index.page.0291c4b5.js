@@ -17,7 +17,7 @@ import{j as e}from"../../../chunk-9f704a88.js";const t={title:"Internal",hideTOC
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/raster/2",children:"Project 2: Filter"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/raster/2-algo-ans",children:"Algo Answers"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"algo-answers/raster/2-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `]}),`
@@ -31,7 +31,7 @@ import{j as e}from"../../../chunk-9f704a88.js";const t={title:"Internal",hideTOC
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/ray/2",children:"Project 4: Illuminate"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/ray/2-algo-ans",children:"Algo Answers"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"algo-answers/ray/2-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `]}),`
@@ -40,12 +40,12 @@ import{j as e}from"../../../chunk-9f704a88.js";const t={title:"Internal",hideTOC
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/1",children:"Project 5: Lights, Camera"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/1-algo-ans",children:"Algo Answers"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"algo-answers/realtime/1-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/2",children:"Project 6: Action!"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/2-algo-ans",children:"Algo Answers"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"algo-answers/realtime/2-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `]}),`
