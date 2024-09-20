@@ -562,12 +562,77 @@
       "_chunk-c61fc691.js"
     ]
   },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.529ce880.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.6042f8da.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.5f731685.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js",
+      "_chunk-15c32039.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.dfd4ed36.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.3c7cbb0f.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.ab1569a1.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.ec061323.js",
+    "file": "assets/entry-client-routing.13498b14.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-1b1e62b2.js"
+      "_chunk-a44cdcc0.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -592,6 +657,12 @@
       "pages/index.page.mdx",
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
@@ -629,11 +700,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.c6322578.js",
+    "file": "assets/entry-server-routing.91e21595.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-1b1e62b2.js"
+      "_chunk-a44cdcc0.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -658,6 +729,12 @@
       "pages/index.page.mdx",
       "pages/internal/fall22/internal-notes.page.mdx",
       "pages/internal/fall22/internal-todos.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx",
+      "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
       "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
@@ -709,8 +786,8 @@
       "_chunk-9f704a88.js"
     ]
   },
-  "_chunk-1b1e62b2.js": {
-    "file": "assets/chunk-1b1e62b2.js"
+  "_chunk-a44cdcc0.js": {
+    "file": "assets/chunk-a44cdcc0.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",
