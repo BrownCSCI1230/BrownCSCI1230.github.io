@@ -9,9 +9,10 @@ import{j as e}from"../../chunk-9f704a88.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/raster/1-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/raster/2",children:"Project 2: Filter"}),`
+`,`
 `]}),`
-`,`
-`,`
+`]}),`
 `]}),`
 `]}),`
 `,`
