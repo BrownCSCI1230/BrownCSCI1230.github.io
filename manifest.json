@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.ffcfcea4.js",
+    "file": "assets/pages/lectures.page.9e8e5527.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -385,6 +385,33 @@
       "_chunk-9f704a88.js"
     ]
   },
+  "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.0291c4b5.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.8c3c9111.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.457ddae7.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js"
+    ]
+  },
   "pages/projects/final/index.page.mdx": {
     "file": "assets/pages/projects/final/index.page.231d8f49.js",
     "src": "pages/projects/final/index.page.mdx",
@@ -392,50 +419,6 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-9f704a88.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.f6fefb22.js",
-    "src": "pages/projects/ray/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-c61fc691.js",
-      "_chunk-15c32039.js"
-    ]
-  },
-  "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.8f038b58.js",
-    "src": "pages/projects/ray/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.a00a26fe.js",
-    "src": "pages/projects/ray/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.a4ebfa9a.js",
-    "src": "pages/projects/ray/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
       "_chunk-c61fc691.js"
     ]
   },
@@ -503,6 +486,50 @@
       "_chunk-c61fc691.js"
     ]
   },
+  "pages/projects/ray/1-algo.page.mdx": {
+    "file": "assets/pages/projects/ray/1-algo.page.f6fefb22.js",
+    "src": "pages/projects/ray/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js",
+      "_chunk-15c32039.js"
+    ]
+  },
+  "pages/projects/ray/1.page.mdx": {
+    "file": "assets/pages/projects/ray/1.page.8f038b58.js",
+    "src": "pages/projects/ray/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/ray/2-algo.page.mdx": {
+    "file": "assets/pages/projects/ray/2-algo.page.a00a26fe.js",
+    "src": "pages/projects/ray/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/ray/2.page.mdx": {
+    "file": "assets/pages/projects/ray/2.page.a4ebfa9a.js",
+    "src": "pages/projects/ray/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
   "pages/projects/realtime/1-algo.page.mdx": {
     "file": "assets/pages/projects/realtime/1-algo.page.6f2aad2a.js",
     "src": "pages/projects/realtime/1-algo.page.mdx",
@@ -546,31 +573,25 @@
       "_chunk-c61fc691.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.0291c4b5.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.529ce880.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-9f704a88.js"
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.8c3c9111.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.6042f8da.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-9f704a88.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.457ddae7.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js"
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx": {
@@ -587,27 +608,6 @@
   "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.dfd4ed36.js",
     "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.529ce880.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.6042f8da.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/raster/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -639,7 +639,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.a22a42d4.js",
+    "file": "assets/entry-client-routing.ca835954.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -712,7 +712,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.82ac245d.js",
+    "file": "assets/entry-server-routing.7f7db4ac.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
