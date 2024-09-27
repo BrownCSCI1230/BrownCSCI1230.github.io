@@ -385,6 +385,16 @@
       "_chunk-9f704a88.js"
     ]
   },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.231d8f49.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.0291c4b5.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
@@ -412,13 +422,90 @@
       "_chunk-9f704a88.js"
     ]
   },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.231d8f49.js",
-    "src": "pages/projects/final/index.page.mdx",
+  "pages/projects/realtime/1-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo.page.6f2aad2a.js",
+    "src": "pages/projects/realtime/1-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/realtime/1.page.mdx": {
+    "file": "assets/pages/projects/realtime/1.page.2a2f7b3e.js",
+    "src": "pages/projects/realtime/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/realtime/2-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/2-algo.page.c870f3d8.js",
+    "src": "pages/projects/realtime/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/realtime/2.page.mdx": {
+    "file": "assets/pages/projects/realtime/2.page.52385417.js",
+    "src": "pages/projects/realtime/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/ray/1-algo.page.mdx": {
+    "file": "assets/pages/projects/ray/1-algo.page.f6fefb22.js",
+    "src": "pages/projects/ray/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-c61fc691.js",
+      "_chunk-15c32039.js"
+    ]
+  },
+  "pages/projects/ray/1.page.mdx": {
+    "file": "assets/pages/projects/ray/1.page.8f038b58.js",
+    "src": "pages/projects/ray/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/ray/2-algo.page.mdx": {
+    "file": "assets/pages/projects/ray/2-algo.page.a00a26fe.js",
+    "src": "pages/projects/ray/2-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
+      "_chunk-c61fc691.js"
+    ]
+  },
+  "pages/projects/ray/2.page.mdx": {
+    "file": "assets/pages/projects/ray/2.page.a4ebfa9a.js",
+    "src": "pages/projects/ray/2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9f704a88.js",
+      "_chunk-15c32039.js",
       "_chunk-c61fc691.js"
     ]
   },
@@ -476,95 +563,8 @@
     ]
   },
   "pages/projects/raster/2.page.mdx": {
-    "file": "assets/pages/projects/raster/2.page.29f86131.js",
+    "file": "assets/pages/projects/raster/2.page.3cff5c81.js",
     "src": "pages/projects/raster/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/ray/1-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo.page.f6fefb22.js",
-    "src": "pages/projects/ray/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-c61fc691.js",
-      "_chunk-15c32039.js"
-    ]
-  },
-  "pages/projects/ray/1.page.mdx": {
-    "file": "assets/pages/projects/ray/1.page.8f038b58.js",
-    "src": "pages/projects/ray/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/ray/2-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo.page.a00a26fe.js",
-    "src": "pages/projects/ray/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.a4ebfa9a.js",
-    "src": "pages/projects/ray/2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.6f2aad2a.js",
-    "src": "pages/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.2a2f7b3e.js",
-    "src": "pages/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-15c32039.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/realtime/2-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/2-algo.page.c870f3d8.js",
-    "src": "pages/projects/realtime/2-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-9f704a88.js",
-      "_chunk-c61fc691.js"
-    ]
-  },
-  "pages/projects/realtime/2.page.mdx": {
-    "file": "assets/pages/projects/realtime/2.page.52385417.js",
-    "src": "pages/projects/realtime/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -639,7 +639,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.ca835954.js",
+    "file": "assets/entry-client-routing.75b66297.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -712,7 +712,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.7f7db4ac.js",
+    "file": "assets/entry-server-routing.9af29bad.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
