@@ -68,8 +68,9 @@ import{j as e}from"../../chunk-9f704a88.js";import{I as t}from"../../chunk-15c32
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsxs(s.li,{children:["A ",e.exports.jsx(s.strong,{children:"point light"})," is a single point in space that emits light equally in all directions (e.g. an infinitesimally small lightbulb). It is defined by its color and position."]}),`
 `,e.exports.jsxs(s.li,{children:["A ",e.exports.jsx(s.strong,{children:"directional light"})," is a global light which simulates light from a source that is infinitely far away (e.g. the sun, as we experience it on earth). It is defined by its color and direction."]}),`
-`,e.exports.jsxs(s.li,{children:["A ",e.exports.jsx(s.strong,{children:"spot light"})," is much more interesting\u2014it is effectively a point light, but it emits light only in a cone shape (e.g. a flashlight). It is defined by its color, position, and direction, as well as a penumbra and angle, which describe its cone. More information can be found in ",e.exports.jsx("a",{href:"https://cs1230.graphics/projects/ray/2/#spot-lights",children:"Project 4 Illuminate"})]}),`
+`,e.exports.jsxs(s.li,{children:["A ",e.exports.jsx(s.strong,{children:"spot light"})," is much more interesting\u2014it is effectively a point light, but it emits light only in a cone shape (e.g. a flashlight). It is defined by its color, position, and direction, as well as a penumbra and angle, which describe its cone."]}),`
 `]}),`
+`,`
 `,e.exports.jsxs(s.p,{children:["Documentation about virtual lights commonly used in 3D scenes can be readily found online, such as in the ",e.exports.jsx(s.a,{href:"https://docs.unity3d.com/Manual/Lighting.html",target:"_blank",rel:"noopener noreferrer",children:"Unity3D manual"}),"."]}),`
 `,e.exports.jsx(s.h3,{id:"camera-data",children:e.exports.jsx(s.a,{href:"#camera-data",children:"Camera Data"})}),`
 `,e.exports.jsxs(s.p,{children:["For the camera, we'll inspect ",e.exports.jsx(s.code,{children:"SceneCameraData"}),"."]}),`
