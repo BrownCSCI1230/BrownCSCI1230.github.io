@@ -19,7 +19,9 @@ import{j as e}from"../../chunk-9f704a88.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Ray"}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/ray/1",children:"Project 3: Intersect"}),`
-`,`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/ray/1-algo",children:"Algo"})}),`
+`]}),`
 `]}),`
 `]}),`
 `,`
