@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.6f8db08a.js",
+    "file": "assets/pages/lectures.page.6db6a3d2.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -385,16 +385,6 @@
       "_chunk-b0d73203.js"
     ]
   },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.3706d67b.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.0e620857.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
@@ -420,6 +410,16 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.3706d67b.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/raster/1-algo-ans.page.mdx": {
@@ -650,7 +650,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.887841ba.js",
+    "file": "assets/entry-client-routing.7332ed46.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -724,7 +724,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.b2d8279d.js",
+    "file": "assets/entry-server-routing.86c063df.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
