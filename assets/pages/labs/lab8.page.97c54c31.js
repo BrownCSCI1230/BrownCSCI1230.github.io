@@ -151,7 +151,7 @@ import{j as e}from"../../chunk-9f704a88.js";import{I as t}from"../../chunk-15c32
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"x = r * sin(phi) * cos(theta)"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"y = r * cos(phi)"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"z = r * sin(phi) * sin(theta)"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.code,{children:"z = -r * sin(phi) * sin(theta)"})}),`
 `]}),`
 `]})]}),`
 `,e.exports.jsx(s.p,{children:"Your single wedge should look like this:"}),`
