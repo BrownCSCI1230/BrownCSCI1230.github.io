@@ -359,22 +359,12 @@
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.86b68826.js",
+    "file": "assets/pages/projects/index.page.3a9114a8.js",
     "src": "pages/projects/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.57254d7b.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
     ]
   },
   "pages/internal/fall22/internal-notes.page.mdx": {
@@ -420,6 +410,16 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.57254d7b.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/raster/1-algo-ans.page.mdx": {
@@ -672,7 +672,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.5a517fcd.js",
+    "file": "assets/entry-client-routing.818ca7a0.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -748,7 +748,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.2deac0ff.js",
+    "file": "assets/entry-server-routing.d7742944.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
