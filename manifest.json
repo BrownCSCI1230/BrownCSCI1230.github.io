@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.df310bbd.js",
+    "file": "assets/pages/lectures.page.cc9219c4.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -616,28 +616,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.3134e319.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js",
-      "_chunk-e3efcf8b.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.f79ace10.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.6289c67b.js",
     "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx",
@@ -660,8 +638,30 @@
       "_chunk-82f9daf4.js"
     ]
   },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.3134e319.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js",
+      "_chunk-e3efcf8b.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.f79ace10.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.da9f4c31.js",
+    "file": "assets/entry-client-routing.153f7256.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -736,7 +736,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.35f3a69d.js",
+    "file": "assets/entry-server-routing.31dbf87d.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
