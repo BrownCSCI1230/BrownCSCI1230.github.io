@@ -34,7 +34,7 @@ import{j as e}from"../../chunk-9f704a88.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/1",children:"Project 5: Lights, Camera"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/1-algo",children:"Algo"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/realtime/1-algo-ans",children:"Algo Answers"})}),`
 `]}),`
 `]}),`
 `]}),`
@@ -43,7 +43,11 @@ import{j as e}from"../../chunk-9f704a88.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Final"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/final",children:"Project 7: Final Project"})}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/final",children:"Project 7: Final Project"}),`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/final/realtime-final-ideas",children:"Real-time Project Ideas"})}),`
+`]}),`
+`]}),`
 `]}),`
 `]}),`
 `]})]})]})}function l(r={}){const{wrapper:s}=r.components||{};return s?e.exports.jsx(s,Object.assign({},r,{children:e.exports.jsx(n,r)})):n(r)}export{l as default,o as documentProps};
