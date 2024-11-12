@@ -1,22 +1,4 @@
 {
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.7e34433c.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.4b79cafe.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.b385619c.js",
     "src": "junk/code-blocks.page.mdx",
@@ -66,6 +48,24 @@
     ],
     "css": [
       "assets/index.5c15a221.css"
+    ]
+  },
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.7e34433c.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.f2ffaae9.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -219,15 +219,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.c5b1a52c.js",
-    "src": "pages/projects/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "pages/labs/index.page.mdx": {
     "file": "assets/pages/labs/index.page.75b058a3.js",
     "src": "pages/labs/index.page.mdx",
@@ -356,18 +347,9 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/internal/fall22/internal-notes.page.mdx": {
-    "file": "assets/pages/internal/fall22/internal-notes.page.bd7c5b25.js",
-    "src": "pages/internal/fall22/internal-notes.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal/fall22/internal-todos.page.mdx": {
-    "file": "assets/pages/internal/fall22/internal-todos.page.02425ff4.js",
-    "src": "pages/internal/fall22/internal-todos.page.mdx",
+  "pages/projects/index.page.mdx": {
+    "file": "assets/pages/projects/index.page.c5b1a52c.js",
+    "src": "pages/projects/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -395,6 +377,24 @@
   "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.01902f74.js",
     "src": "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal/fall22/internal-notes.page.mdx": {
+    "file": "assets/pages/internal/fall22/internal-notes.page.bd7c5b25.js",
+    "src": "pages/internal/fall22/internal-notes.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal/fall22/internal-todos.page.mdx": {
+    "file": "assets/pages/internal/fall22/internal-todos.page.02425ff4.js",
+    "src": "pages/internal/fall22/internal-todos.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -626,28 +626,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.6289c67b.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.c109ac5c.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
   "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx": {
     "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.3134e319.js",
     "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/ray/1-algo-ans.page.mdx",
@@ -670,8 +648,30 @@
       "_chunk-82f9daf4.js"
     ]
   },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.6289c67b.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.c109ac5c.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/algo-answers/realtime/2-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.34901738.js",
+    "file": "assets/entry-client-routing.41561746.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -747,7 +747,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.c09c56a8.js",
+    "file": "assets/entry-server-routing.0111c811.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
