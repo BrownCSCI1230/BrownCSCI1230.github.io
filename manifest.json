@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.2b14aa8b.js",
+    "file": "assets/pages/lectures.page.348a3fd3.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -66,6 +66,145 @@
     ],
     "css": [
       "assets/index.5c15a221.css"
+    ]
+  },
+  "pages/labs/index.page.mdx": {
+    "file": "assets/pages/labs/index.page.b610f480.js",
+    "src": "pages/labs/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/labs/lab1.page.mdx": {
+    "file": "assets/pages/labs/lab1.page.38331180.js",
+    "src": "pages/labs/lab1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab10.page.mdx": {
+    "file": "assets/pages/labs/lab10.page.bcd6581f.js",
+    "src": "pages/labs/lab10.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab11.page.mdx": {
+    "file": "assets/pages/labs/lab11.page.0f7ba951.js",
+    "src": "pages/labs/lab11.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab2.page.mdx": {
+    "file": "assets/pages/labs/lab2.page.0d6b220b.js",
+    "src": "pages/labs/lab2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab3.page.mdx": {
+    "file": "assets/pages/labs/lab3.page.742eddb8.js",
+    "src": "pages/labs/lab3.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab4.page.mdx": {
+    "file": "assets/pages/labs/lab4.page.a6a175f4.js",
+    "src": "pages/labs/lab4.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab5.page.mdx": {
+    "file": "assets/pages/labs/lab5.page.7010e121.js",
+    "src": "pages/labs/lab5.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab6.page.mdx": {
+    "file": "assets/pages/labs/lab6.page.0062d4d7.js",
+    "src": "pages/labs/lab6.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab7-get-normals.page.mdx": {
+    "file": "assets/pages/labs/lab7-get-normals.page.9242340a.js",
+    "src": "pages/labs/lab7-get-normals.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/labs/lab7.page.mdx": {
+    "file": "assets/pages/labs/lab7.page.872a75c0.js",
+    "src": "pages/labs/lab7.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab8.page.mdx": {
+    "file": "assets/pages/labs/lab8.page.4dac8bca.js",
+    "src": "pages/labs/lab8.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab9.page.mdx": {
+    "file": "assets/pages/labs/lab9.page.75fcff43.js",
+    "src": "pages/labs/lab9.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -216,145 +355,6 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.b610f480.js",
-    "src": "pages/labs/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.38331180.js",
-    "src": "pages/labs/lab1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab10.page.mdx": {
-    "file": "assets/pages/labs/lab10.page.bcd6581f.js",
-    "src": "pages/labs/lab10.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab11.page.mdx": {
-    "file": "assets/pages/labs/lab11.page.0f7ba951.js",
-    "src": "pages/labs/lab11.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.0d6b220b.js",
-    "src": "pages/labs/lab2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.742eddb8.js",
-    "src": "pages/labs/lab3.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.a6a175f4.js",
-    "src": "pages/labs/lab4.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.7010e121.js",
-    "src": "pages/labs/lab5.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.0062d4d7.js",
-    "src": "pages/labs/lab6.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab7-get-normals.page.mdx": {
-    "file": "assets/pages/labs/lab7-get-normals.page.9242340a.js",
-    "src": "pages/labs/lab7-get-normals.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/labs/lab7.page.mdx": {
-    "file": "assets/pages/labs/lab7.page.872a75c0.js",
-    "src": "pages/labs/lab7.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab8.page.mdx": {
-    "file": "assets/pages/labs/lab8.page.4dac8bca.js",
-    "src": "pages/labs/lab8.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab9.page.mdx": {
-    "file": "assets/pages/labs/lab9.page.75fcff43.js",
-    "src": "pages/labs/lab9.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
       "_chunk-82f9daf4.js"
     ]
   },
@@ -682,7 +682,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.da514a53.js",
+    "file": "assets/entry-client-routing.d86692ad.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -759,7 +759,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.ca31a64c.js",
+    "file": "assets/entry-server-routing.772b6a99.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
