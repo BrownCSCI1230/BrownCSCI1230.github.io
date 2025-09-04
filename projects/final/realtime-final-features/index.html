@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head><link rel="stylesheet" type="text/css" href="/assets/index.a2008b3d.css">
+        <meta charset="UTF-8">
+        <title>Realtime Final Features List | CSCI 1230</title>
+        <meta name="description" content="We teach computer graphics!">
+        <meta name="keywords" content="Computer Science, Computer Graphics, CS 1230, CSCI 1230, Brown University, Providence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-263NEZCW0C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-263NEZCW0C');
+        </script>
+      </head>
+      <body>
+        <div id="root">
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#recommended-technical-features">Recommended Technical Features</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#realtime-features-list">Realtime Features List</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#ray-features-list">Ray Features List</a></li></ol></li></ol></nav><main>
+<!-- -->
+<h1 id="recommended-technical-features"><a href="#recommended-technical-features">Recommended Technical Features</a></h1>
+<p>We suggest referring to this document while working on both <code>Project 6: Final Project Gear Up</code> and <code>Project 7: Final Project</code>. See the instructions in each handout for more info on what we&#x27;re looking for.</p>
+<h2 id="realtime-features-list"><a href="#realtime-features-list">Realtime Features List</a></h2>
+<h3> (XX pts): Deferred Lighting </h3>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/deferred-shading.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/deferred-shading.png" alt="deferred shading"/></a></div><figcaption><strong>Figure 1: </strong>Deferred Shading Breakdown</figcaption></figure>
+<p>Resources: <a href="https://learnopengl.com/Advanced-Lighting/Deferred-Shading" target="_blank" rel="noopener noreferrer">OpenGL Tutorial</a>, <a href="https://va3c.github.io/three.js/examples/webgldeferred_pointlights.html" target="_blank" rel="noopener noreferrer">Three.js</a>, <a href="https://www.youtube.com/watch?v=vB2svwmjGUg" target="_blank" rel="noopener noreferrer">Erkaman</a></p>
+<p><h3> (XX pts): HDR Rendering </h3>
+High-dynamic range rendering, perhaps with bloom.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/hdr.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/hdr.png" alt="hdr"/></a></div><figcaption><strong>Figure 2: </strong>HDR Example</figcaption></figure>
+<p>Resources: <a href="https://en.wikipedia.org/wiki/High-dynamic-range_rendering" target="_blank" rel="noopener noreferrer">Wikipedia</a>, <a href="learnopengl.com/#!Advanced-Lighting/HDR">OpenGL Tutorial</a>, <a href="https://threejs.org/examples/?q=hdr#webgl_hdr" target="_blank" rel="noopener noreferrer">Three.js</a>, <a href="https://www.youtube.com/watch?v=S59u7YB5gPM" target="_blank" rel="noopener noreferrer">Schwarzschild Black Hole</a></p>
+<p><h3> (XX pts): Shadow Mapping </h3>
+E.g. with the ability to toggle on / off.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/shadow-mapping.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/shadow-mapping.png" alt="shadow mapping"/></a></div><figcaption><strong>Figure 2: </strong>Shadow Mapping</figcaption></figure>
+<p>Resources: <a href="www.opengl-tutorial.org/intermediate-tutorials/tutorial-16-shadow-mapping/">OpenGL Tutorial</a>, <a href="https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping" target="_blank" rel="noopener noreferrer">LearnOpenGL</a>, <a href="alteredqualia.com/three/examples/webgl_shadowmap.html">Three.js</a></p>
+<p>Possible improvements: Percentage close filtering (PCF), <a href="developer.download.nvidia.com/SDK/10.5/opengl/src/cascaded_shadow_maps/doc/cascaded_shadow_maps.pdf">Cascaded Shadow Mapping</a>, <a href="https://www.youtube.com/watch?v=LGFDifcbsoQ&amp;ab_channel=thebennybox" target="_blank" rel="noopener noreferrer">Variance Shadow maps Tutorial video</a></p>
+<p><h3> (XX pts): Environment Maps </h3>
+E.g. cube maps / skyboxes.</p>
+<p><h3> (XX pts): Ambient Occlusion </h3>
+Screen-space ambient occlusion (SSAO)</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:40%"><a href="/projects/final/ssao.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/ssao.png" alt="SSAO"/></a></div><figcaption><strong>Figure 2: </strong>Screen-space ambient occlusion (SSAO)</figcaption></figure>
+<p>Resources: <a href="john-chapman-graphics.blogspot.com/2013/01/ssao-tutorial.html">John Chapman Graphics</a>, <a href="www.learnopengl.com/#!Advanced-Lighting/SSAO">OpenGL Tutorial</a>, <a href="threejs.org/examples/#webgl_postprocessing_ssao">Three.js</a></p>
+<p><h3> (XX pts): Depth-of-field  </h3>
+Distributed ray tracing or screen-space effects.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:40%"><a href="/projects/final/dof-3.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/dof-3.png" alt="dof-realtime"/></a></div><figcaption><strong>Figure 2: </strong>Depth-of-field</figcaption></figure>
+<p>Resources: <a href="https://developer.nvidia.com/gpugems/gpugems/part-iv-image-processing/chapter-23-depth-field-survey-techniques" target="_blank" rel="noopener noreferrer">NVIDIA GPU Gems</a>, <a href="casual-effects.blogspot.com/2013/09/the-skylanders-swap-force-depth-of.html">Casual Effects</a>, <a href="bartwronski.com">Wronski</a>, <a href="threejs.org/examples/webgl_postprocessing_dof.html">Three.js</a></p>
+<p><h3> (XX pts): Bump/normal/displacement mapping </h3>
+E.g. with the ability to toggle on / off.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/normal-map.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/normal-map.png" alt="Bump/normal/displacement mapping"/></a></div><figcaption><strong>Figure 2: </strong>Bump/normal/displacement Map</figcaption></figure>
+<p>Resources: <a href="https://ogldev.org/www/tutorial26/tutorial26.html" target="_blank" rel="noopener noreferrer">OGLDev Tutorial</a>, <a href="www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/">Open GL Tutorial</a>, <a href="https://threejs.org/examples/webgl_materials_normalmap.html" target="_blank" rel="noopener noreferrer">Three.js</a>, <a href="www.3dkingdoms.com/tutorial.htm">3D Kingdoms</a>, <a href="https://apoorvaj.io/exploring-bump-mapping-with-webgl/" target="_blank" rel="noopener noreferrer">Another demo</a>, Textbook p.647</p>
+<p><h3> (XX pts): Collision Detection  </h3>
+With bounding boxes / spheres, or at the polygon level.</p>
+<p><h3> (XX pts): Bezier Curve Movement </h3>
+Camera or object motion along a path defined by a piecewise Bezier curve. E.g. to render a ride on a roller coaster.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/bezier-cam.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/bezier-cam.gif" alt="Bump/normal/displacement mapping"/></a></div><figcaption><strong>Figure 2: </strong>Roblox Bezier Camera Movement</figcaption></figure>
+<p>Resources: <a href="https://www.scss.tcd.ie/publications/tech-reports/reports.94/TCD-CS-94-18.pdf" target="_blank" rel="noopener noreferrer">Paper</a></p>
+<p><h3> (XX pts): Shadow Volumes  </h3>
+With the ability to toggle on / off.</p>
+<h3> (XX pts): Fog / Atmospheric Scattering </h3>
+<p><h3> (XX pts): Crowds / Flocks </h3>
+E.g. <a href="https://www.youtube.com/watch?v=bqtqltqcQhw" target="_blank" rel="noopener noreferrer">Boids</a>: bird-like flocking behavior; something that you might easily add to any realtime project to spice it up a little :) (Another interactive <a href="https://threejs.org/examples/webgl_gpgpu_birds.html" target="_blank" rel="noopener noreferrer">demo</a>).</p>
+<figure id="figure-3" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/boid.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/boid.gif" alt="Flocking Example"/></a></div><figcaption><strong>Figure 3: </strong>Example of Boids Flocking with boid criteria</figcaption></figure>
+<p><h3> (XX pts): Portal Rendering  </h3>
+<a href="https://www.youtube.com/watch?v=cWpFZbjtSQg" target="_blank" rel="noopener noreferrer">Portals</a>: lots of trickery involved—mesh and camera duplication, slicing, rotated clipping planes, just to name a few.</p>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/portals.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/portals.gif" alt="Portals Example"/></a></div><figcaption><strong>Figure 5: </strong>Example of Portals</figcaption></figure>
+<h3> (XX pts): Inverse Kinematics </h3>
+<h3> (XX pts): Anti-Aliasing </h3>
+<p><h3> (XX pts): Procedural Generation </h3>
+For art, buildings/cities, environments, and/or geometry.</p>
+<p><h3> (XX pts): L-Systems </h3>
+Lindenmayer systems (for trees, plants, etc.).</p>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/l-systems.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/l-systems.gif" alt="L-Systems"/></a></div><figcaption><strong>Figure 5: </strong>L-Systems</figcaption></figure>
+<p>Resources: <a href="https://en.wikipedia.org/wiki/L-system" target="_blank" rel="noopener noreferrer">Wikipedia</a>, <a href="algorithmicbotany.org/papers/abop/abop-ch1.pdf">Algorithmic botany</a>, <a href="morphocode.com/3d-branching-structures-with-rabbit/">Morphocode</a></p>
+<h3> (XX pts): Basic Physics Simulation </h3>
+<h3> (XX pts): Spring &amp; Mass Systems </h3>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/spring-mass.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/spring-mass.png" alt="spring mass"/></a></div><figcaption><strong>Figure 5: </strong>Spring</figcaption></figure>
+<p>Resources: <a href="www.cs.cmu.edu/~barbic/jellocube_bw.pdf">CMU Course Slides</a>, <a href="https://github.com/alecjacobson/computer-graphics-mass-spring-systems" target="_blank" rel="noopener noreferrer">UToronto Assignment</a>, <a href="https://graphics.stanford.edu/~mdfisher/cloth.html" target="_blank" rel="noopener noreferrer">Matt&#x27;s Webcorner</a></p>
+<h3> (XX pts): Particle Systems </h3>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/particle.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/particle.png" alt="Particle System"/></a></div><figcaption><strong>Figure 5: </strong>Particle System</figcaption></figure>
+<p>Resources: <a href="www.gamasutra.com/view/feature/130535/building_a_millionparticle_system.php">Gamasutra</a>, <a href="https://directtovideo.wordpress.com/2009/10/06/a-thoroughly-modern-particle-system/" target="_blank" rel="noopener noreferrer">DirectToVideo</a>, <a href="https://threejs.org/examples/webgl_points_sprites.html" target="_blank" rel="noopener noreferrer">Three.js</a>, <a href="https://www.youtube.com/watch?v=I0JobHULJiE" target="_blank" rel="noopener noreferrer">&#x27;17 Final Project Example</a></p>
+<h3> (XX pts): Pixel Art Shading </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/pixel-shader.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/pixel-shader.gif" alt="Pixel Shader Gem"/></a></div><figcaption><strong>Figure 2: </strong>Example of Pixel Shader</figcaption></figure>
+<p>Resources: <a href="https://www.youtube.com/watch?v=jFevm02NJ5M" target="_blank" rel="noopener noreferrer">Pixel Shader w/ Outlines</a>: a simple, if slightly brittle shader (plus, <a href="https://raw.githack.com/KodyJKing/three.js/outlined-pixel-example/examples/webgl_postprocessing_pixel.html" target="_blank" rel="noopener noreferrer">interactive demo</a>).</p>
+<h3> (XX pts): Non-Photorealistic / Stylized Rendering </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/projects/final/toon-shade.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/toon-shade.png" alt="Toon Shading"/></a><a href="/projects/final/stylized-shader.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/stylized-shader.png" alt="Stylized Shader"/></a></div><figcaption><strong>Figure 2: </strong>Stylized Shaders</figcaption></figure>
+<p>Resources: <a href="www.lighthouse3d.com/tutorials/glsl-12-tutorial/toon-shading/">Toon Shader Tutorial</a></p>
+<h3> (XX pts): Crepuscular rays </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/crep-rays.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/crep-rays.png" alt="Crepuscular Rays"/></a></div><figcaption><strong>Figure 2: </strong>Crepuscular Rays</figcaption></figure>
+<p>Resources: <a href="https://en.wikipedia.org/wiki/Crepuscular_rays" target="_blank" rel="noopener noreferrer">Wikipedia</a>, <a href="https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch13.html" target="_blank" rel="noopener noreferrer">GPU Gems Tutorial</a>, <a href="fabiensanglard.net/lightScattering/">Sanglard Implementation</a>, <a href="https://en.wikipedia.org/wiki/Anticrepuscular_rays" target="_blank" rel="noopener noreferrer">Anticrepuscular Rays</a>, <a href="https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter16.html" target="_blank" rel="noopener noreferrer">Atmospheric Scattering</a></p>
+<h3> (XX pts): Piecewise Bezier Surfaces </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/bezier-surface.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/bezier-surface.png" alt="Bezier Surface"/></a></div><figcaption><strong>Figure 2: </strong>Piecewise Bezier Surface</figcaption></figure>
+<p>Resources: <a href="https://cs184.eecs.berkeley.edu/sp21/docs/proj2" target="_blank" rel="noopener noreferrer">UC Berkeley Assignment</a></p>
+<p><h3> (XX pts): Wave Function Collapse </h3>
+<a href="https://www.youtube.com/watch?v=2SuvO4Gi7uY" target="_blank" rel="noopener noreferrer">WFC</a>: generating random maps, etc, using a set of pieces and pre-defined constraints on how they fit together. This algorithm was invented by a Brown Visual Computing Ph.D. student!</p>
+<figure id="figure-4" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/wfc.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/wfc.gif" alt="WFC Example"/></a></div><figcaption><strong>Figure 4: </strong>Example of Wave Function Collapse</figcaption></figure>
+<h3> (XX pts): Geometry and Tesselation Shaders </h3>
+<p><h3> (XX pts): Volumetric Rendering </h3>
+<a href="https://www.youtube.com/watch?v=4QOcCGI6xOU" target="_blank" rel="noopener noreferrer">Noise, Clouds, and (Cheap) Volumetric Rendering</a>: Worley noise and some volumetric rendering tricks help make clouds look good.</p>
+<figure id="figure-7" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/clouds.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/clouds.gif" alt="Clouds Example"/></a></div><figcaption><strong>Figure 7: </strong>Example of Real-time Volumetric Clouds</figcaption></figure>
+<p><h3> (XX pts): Interactive Snow </h3>
+<a href="https://www.youtube.com/watch?v=BXo97H55EhA&amp;t=557s" target="_blank" rel="noopener noreferrer">&quot;Interactive&quot; Snow</a>: many of the coolest things you see in video games are actually just textures and shaders in disguise. This is another one of those things!</p>
+<figure id="figure-8" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/snow.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/snow.gif" alt="Snow Example"/></a></div><figcaption><strong>Figure 8: </strong>Example of Interactive Snow</figcaption></figure>
+<p><h3> (XX pts): Scrolling Displacement Maps </h3>
+<a href="https://www.youtube.com/watch?v=8rCRsOLiO7k" target="_blank" rel="noopener noreferrer">Water and Scrolling Displacement Maps</a>: a pretty simple way to efficiently implement something like a lapping / flowing water texture.</p>
+<figure id="figure-9" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/water-displacement.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/water-displacement.gif" alt="Scrolling Displacement Example"/></a></div><figcaption><strong>Figure 9: </strong>Example of Scrolling Displacement Maps</figcaption></figure>
+<p><h3> (XX pts): Pivot Caching </h3>
+<a href="https://www.youtube.com/watch?v=V1nkv8g-oi0" target="_blank" rel="noopener noreferrer">Wobbly Leaves and Pivot Caching</a>: storing vertex attributes in textures, then using vertex shaders to make performant animations.</p>
+<figure id="figure-1" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/wobbly.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/wobbly.gif" alt="Wobbly Leaves Tree"/></a></div><figcaption><strong>Figure 1: </strong>Example of Pivot Caching</figcaption></figure>
+<p><h3> (XX pts): Stencil Buffers </h3>
+<a href="https://www.youtube.com/watch?v=ncJ6B_FkhIA" target="_blank" rel="noopener noreferrer">Anime Eyes and Stencil Buffers</a>: render anime-style eyes-over-hair using stencil buffers, the lesser known sibling of depth and color buffers.</p>
+<figure id="figure-6" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/stencil-buffer.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/stencil-buffer.gif" alt="Stencil Buffer Example"/></a></div><figcaption><strong>Figure 6: </strong>Example of Stencil Buffers</figcaption></figure>
+<p><h3> (XX pts): GPU Raytracing  </h3>
+In fragment/compute shaders, or using modern raytracing APIs (e.g. OptiX).</p>
+<hr/>
+<h2 id="ray-features-list"><a href="#ray-features-list">Ray Features List</a></h2>
+<h3> (XX pts): Ambient Occlusion </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/ao-ray.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/ao-ray.png" alt="Ambient Occlusion"/></a></div><figcaption><strong>Figure 2: </strong>Ambient Occlusion</figcaption></figure>
+<p>Resources: <a href="https://en.wikipedia.org/wiki/Ambient_occlusion" target="_blank" rel="noopener noreferrer">Wikipedia</a></p>
+<p><h3> (XX pts): Depth of Field </h3>
+Sampling-based depth of field.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/projects/final/dof-1.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/dof-1.png" alt="Dof1"/></a><a href="/projects/final/dof-2.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/dof-2.png" alt="Dof2"/></a></div><figcaption><strong>Figure 2: </strong>Depth of Field</figcaption></figure>
+<p>Resources: <a href="https://pathtracing.home.blog/depth-of-field/" target="_blank" rel="noopener noreferrer">Pathtracing.home</a>, <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html#defocusblur" target="_blank" rel="noopener noreferrer">Ray Tracing in a weekend</a></p>
+<h3> (XX pts): Ray Marching </h3>
+<p><h3> (XX pts): Fractals </h3>
+E.g. Mandelbulbs. Almost always combined with ray marching.</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/fractals.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/fractals.png" alt="Fractal"/></a></div><figcaption><strong>Figure 2: </strong>Fractals</figcaption></figure>
+<p>Resources: <a href="https://en.wikipedia.org/wiki/Mandelbulb" target="_blank" rel="noopener noreferrer">Wikipedia</a>, <a href="https://www.mandelbulb.com/" target="_blank" rel="noopener noreferrer">Mandelbulb.com</a>, [ShaderToy #1]
+<h3> (XX pts): HDR Rendering  </h3></p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/hdr-img-based.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/hdr-img-based.png" alt="HDR Image-based Lighting"/></a></div><figcaption><strong>Figure 2: </strong>HDR Image-based Lighting</figcaption></figure>
+<p>Resources: <a href="https://cglearn.codelight.eu/pub/computer-graphics/environment-mapping" target="_blank" rel="noopener noreferrer">CG Learn</a>, <a href="https://www.comp.nus.edu.sg/~cs4340/lecture/ibl.pdf" target="_blank" rel="noopener noreferrer">NUS Slides</a></p>
+<h3> (XX pts): Area Lights/Soft Shadows </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/soft-shadows.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/soft-shadows.png" alt="Soft Shadows"/></a></div><figcaption><strong>Figure 2: </strong>Soft Shadows Example</figcaption></figure>
+<p>Resources: <a href="raytracerchallenge.com/bonus/area-light.html">Raytracer challenge</a>, <a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html#rectanglesandlights" target="_blank" rel="noopener noreferrer">Ray Tracing in One Weekend</a></p>
+<p><h3> (XX pts): Motion Blur </h3>
+Sampling-based motion blur</p>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:60%"><a href="/projects/final/sampling-motion-blur.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/sampling-motion-blur.png" alt="Sampling Based Motion Blur"/></a></div><figcaption><strong>Figure 2: </strong>Sampling Based Motion Blur</figcaption></figure>
+<p>Resources: <a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html#motionblur" target="_blank" rel="noopener noreferrer">Peter Shirley Book</a></p>
+<p><h3> (XX pts): Portal Rendering </h3>
+<a href="https://www.youtube.com/watch?v=cWpFZbjtSQg" target="_blank" rel="noopener noreferrer">Portals</a>: lots of trickery involved—mesh and camera duplication, slicing, rotated clipping planes, just to name a few.</p>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/portals.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/portals.gif" alt="Portals Example"/></a></div><figcaption><strong>Figure 5: </strong>Example of Portals</figcaption></figure>
+<h3> (XX pts): Dynamic Acceleration Structures </h3>
+<figure id="figure-2" class="image-wrapper"><div class="image-grid" style="--target-width:100%"><a href="/projects/final/dynamic-accel.png" target="_blank" rel="noopener noreferrer"><img src="/projects/final/dynamic-accel.png" alt="Dynamic acceleration structures"/></a></div><figcaption><strong>Figure 2: </strong>Screenshots from an animated 180,000 triangle scenes with moving dragonfly, fairy, and plants. At 1024 x 1024 pixels the scene is ray traced at roughly 3.7 frames per second.</figcaption></figure>
+<h3> (XX pts): Lens Assemblies </h3>
+<p><h3> (XX pts): L-Systems  </h3>
+Lindenmayer systems (for trees, plants, etc.).</p>
+<figure id="figure-5" class="image-wrapper"><div class="image-grid" style="--target-width:50%"><a href="/projects/final/l-systems.gif" target="_blank" rel="noopener noreferrer"><img src="/projects/final/l-systems.gif" alt="L-Systems"/></a></div><figcaption><strong>Figure 5: </strong>L-Systems</figcaption></figure>
+<p>Resources: <a href="https://en.wikipedia.org/wiki/L-system" target="_blank" rel="noopener noreferrer">Wikipedia</a>, <a href="algorithmicbotany.org/papers/abop/abop-ch1.pdf">Algorithmic botany</a>, <a href="morphocode.com/3d-branching-structures-with-rabbit/">Morphocode</a></p>
+<hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
+        </div>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/final/realtime-final-features"}}</script><script type="module" src="/assets/entry-client-routing.a913a7aa.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/final/realtime-final-features.page.67a8b768.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-e3efcf8b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a913a7aa.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-818a0b95.js"></body>
+    </html>
