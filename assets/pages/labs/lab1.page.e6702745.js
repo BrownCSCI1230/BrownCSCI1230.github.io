@@ -21,7 +21,7 @@ If you need a refresher on any of this, check out `,e.exports.jsx(s.a,{href:"/do
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsxs(s.li,{children:["Read our course's ",e.exports.jsx(s.a,{href:"/docs/collaboration-policy",children:"collaboration policy"})]}),`
 `,e.exports.jsxs(s.li,{children:["Join the CS 1230 ",e.exports.jsx(s.a,{href:"https://edstem.org/us/join/dJdr3H",target:"_blank",rel:"noopener noreferrer",children:"Ed discussion page"})]}),`
-`,e.exports.jsxs(s.li,{children:["Enroll in this course over on ",e.exports.jsx(s.a,{href:"http://www.gradescope.com/",target:"_blank",rel:"noopener noreferrer",children:"Gradescope"})," using our entry code, ",e.exports.jsx(s.code,{children:"VDE5B2"}),","]}),`
+`,e.exports.jsxs(s.li,{children:["Enroll in this course over on ",e.exports.jsx(s.a,{href:"http://www.gradescope.com/",target:"_blank",rel:"noopener noreferrer",children:"Gradescope"})," using our entry code, ",e.exports.jsx(s.code,{children:"KD7GN6"}),","]}),`
 `,e.exports.jsxs(s.li,{children:["Accept this lab's assignment from ",e.exports.jsx(s.a,{href:"https://classroom.github.com/a/GsurCI6m",target:"_blank",rel:"noopener noreferrer",children:"Github Classroom"}),", and"]}),`
 `,e.exports.jsx(s.li,{children:"Clone the resulting repository to your local machine."}),`
 `]}),`
