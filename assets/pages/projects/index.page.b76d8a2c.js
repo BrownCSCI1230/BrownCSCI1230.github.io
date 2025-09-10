@@ -5,7 +5,9 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Raster"}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/raster/1",children:"Project 1: Brush"}),`
-`,`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/raster/1-algo-ans",children:"Algo Answers"})}),`
+`]}),`
 `]}),`
 `]}),`
 `]}),`
