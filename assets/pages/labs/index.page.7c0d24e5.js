@@ -4,7 +4,7 @@ import{j as e}from"../../chunk-b0d73203.js";const l={title:"Labs",hideTOC:!0};fu
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab1",children:"Setup & C++"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab2",children:"Pencils"})}),`
-`,e.exports.jsx(s.li,{children:"Transforms"}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab3",children:"Transforms"})}),`
 `,e.exports.jsx(s.li,{children:"Scene Parsing"}),`
 `,e.exports.jsx(s.li,{children:"Light"}),`
 `,e.exports.jsx(s.li,{children:"Convolution"}),`
@@ -14,7 +14,6 @@ import{j as e}from"../../chunk-b0d73203.js";const l={title:"Labs",hideTOC:!0};fu
 `,e.exports.jsx(s.li,{children:"Shaders"}),`
 `,e.exports.jsx(s.li,{children:"Textures & FBOs"}),`
 `]}),`
-`,`
 `,`
 `,`
 `,`
