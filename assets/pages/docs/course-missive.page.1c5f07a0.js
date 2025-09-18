@@ -14,7 +14,8 @@ Arin Idhant (`,e.exports.jsx(s.code,{children:"aidhant"}),`),
 Ryan Lee (`,e.exports.jsx(s.code,{children:"xlee4"}),`),
 Apoorva Talwakar (`,e.exports.jsx(s.code,{children:"atalwalk"}),`),
 Faisal Zaghloul (`,e.exports.jsx(s.code,{children:"fzaghlou"}),`),
-Hannah Zhang (`,e.exports.jsx(s.code,{children:"hzhan196"}),")"]}),`
+Hannah Zhang (`,e.exports.jsx(s.code,{children:"hzhan196"}),`),
+Trey Wiedmann (`,e.exports.jsx(s.code,{children:"twiedman"}),")"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"TA Mailing List:"}),e.exports.jsx("br",{}),`
 `,e.exports.jsx(s.a,{href:"mailto:cs1230tas@cs.brown.edu",children:"cs1230tas@cs.brown.edu"})]}),`
 `]}),`
