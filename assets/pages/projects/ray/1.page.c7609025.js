@@ -15,7 +15,7 @@ Your goal in this assignment is to implement a system that does this with any gi
 `,e.exports.jsx(s.h2,{id:"requirements",children:e.exports.jsx(s.a,{href:"#requirements",children:"Requirements"})}),`
 `,e.exports.jsx(s.h3,{id:"parsing-the-scene",children:e.exports.jsx(s.a,{href:"#parsing-the-scene",children:"Parsing The Scene"})}),`
 `,e.exports.jsxs(s.p,{children:[`You will use the same scenefiles from the Parsing lab to describe a scene. For your ray tracer, you will load the scene from a scene file, parse it, and then render the scene with the ray tracing algorithm.
-Hence, you first need to correctly parse the scene. `,e.exports.jsx(s.strong,{children:"Please make sure you finish the parsing lab first before starting on this project."})]}),`
+Hence, you first need to correctly parse the scene. `,e.exports.jsx(s.strong,{children:"Please make sure you finish the parsing lab first before starting on this section."})]}),`
 `,e.exports.jsx(s.p,{children:"Refer to section 3.1 on where in the codebase to implement the parser."}),`
 `,e.exports.jsx(s.h3,{id:"generating-and-casting-rays",children:e.exports.jsx(s.a,{href:"#generating-and-casting-rays",children:"Generating And Casting Rays"})}),`
 `,e.exports.jsxs(s.p,{children:[`To generate and cast rays into the scene, you will need to shoot rays through a pixel on the viewplane.
@@ -43,10 +43,10 @@ Please think thoroughly which step should happen in what space, and how to trans
 `]}),`
 `,e.exports.jsx(s.div,{className:"warning-callout callout",children:e.exports.jsx(s.p,{children:"Consider the cost of recomputing the CTM at every interesection, and how you can modify your parsing code to make this more efficient."})}),`
 `,e.exports.jsx(s.h3,{id:"lighting",children:e.exports.jsx(s.a,{href:"#lighting",children:"Lighting"})}),`
-`,e.exports.jsx(s.p,{children:"If you haven't finished Lab 6: Light, please go finish it before making further progress. It will walk you through Phong illumination model with point light."}),`
+`,e.exports.jsx(s.p,{children:"If you haven't finished Lab 5: Light, please go finish it before making further progress. It will walk you through Phong illumination model with point light."}),`
 `,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"However, for this assignment, you are only required to implement the Phong illumination model with directional light."}),`
 You will handle other types of light sources in the next assignment.`]}),`
-`,e.exports.jsxs(s.div,{className:"warning-callout callout",children:[e.exports.jsx(s.p,{children:"You are certainly welcome to push yourself further and implement point light ahead of schedule, because that's already covered in Lab 6."}),e.exports.jsxs(s.p,{children:["However, please make sure that your submission for ",e.exports.jsx(s.code,{children:"Project 2: Intersect"})," ",e.exports.jsx(s.strong,{children:"does not"})," contain support for point light, because your image output may look different with both point light and directional light support."]})]}),`
+`,e.exports.jsxs(s.div,{className:"warning-callout callout",children:[e.exports.jsx(s.p,{children:"You are certainly welcome to push yourself further and implement point light ahead of schedule, because that's already covered in Lab 5."}),e.exports.jsxs(s.p,{children:["However, please make sure that your submission for ",e.exports.jsx(s.code,{children:"Project 2: Intersect"})," ",e.exports.jsx(s.strong,{children:"does not"})," contain support for point light, because your image output may look different with both point light and directional light support."]})]}),`
 `,e.exports.jsxs(s.p,{children:["Regardless of whether or not you've done the lab a helpful step is to use the normals as the object color. This will allow you to verify that your normals are correct before implementing Phong Illumination. The equation we use for normal-to-color mapping in the solution is ",e.exports.jsx(s.code,{children:"color = (normal + 1) / 2"})," where the components of the normal correspond to the red, green, and blue channels of the color respectively. Rendering normals in that way produces the following images:"]}),`
 `,e.exports.jsx(r,{images:[{src:"/projects/ray/1/normals-cube.png",alt:"A cube rendered with its normals as its color"},{src:"/projects/ray/1/normals-cylinder.png",alt:"A cylinder rendered with its normals as its color"},{src:"/projects/ray/1/normals-cone.png",alt:"A cone rendered with its normals as its color"},{src:"/projects/ray/1/normals-sphere.png",alt:"A sphere rendered with its normals as its color"}],figNumber:2,targetWidth:"100%",children:e.exports.jsxs(s.p,{children:["Unit primitives rendered with their normals as their colors. Based on ",e.exports.jsx(s.code,{children:"unit_cube.json"}),", ",e.exports.jsx(s.code,{children:"unit_cylinder.json"}),", ",e.exports.jsx(s.code,{children:"unit_cone.json"}),", and ",e.exports.jsx(s.code,{children:"unit_sphere.json"}),"."]})}),`
 `,e.exports.jsxs(s.p,{children:["You can run the demo (see the ",e.exports.jsx(s.a,{href:"#TA-Demos",children:"TA Demos"})," section) with ",e.exports.jsx(s.code,{children:"only-render-normals = true"})," in the QSettings.ini file to produce more expected outputs like this."]}),`
@@ -226,6 +226,9 @@ And of course, you don't want to start with a complex scene.`]}),e.exports.jsxs(
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
+`,e.exports.jsx(s.p,{children:"Complete lab 4 (Parsing)"}),`
+`]}),`
+`,e.exports.jsxs(s.li,{children:[`
 `,e.exports.jsx(s.p,{children:"Work on the scene parser"}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
@@ -258,7 +261,7 @@ And of course, you don't want to start with a complex scene.`]}),e.exports.jsxs(
 `,e.exports.jsx(s.li,{children:"Repeat the debugging steps for the respective unit_shape scenefiles"}),`
 `]}),`
 `]}),`
-`,e.exports.jsx(s.li,{children:"Complete lab 6"}),`
+`,e.exports.jsx(s.li,{children:"Complete lab 5 (Light)"}),`
 `,e.exports.jsx(s.li,{children:"Implement the phong illumination model for directional lights alone."}),`
 `,e.exports.jsxs(s.li,{children:["Debugging steps:",`
 `,e.exports.jsxs(s.ul,{children:[`
