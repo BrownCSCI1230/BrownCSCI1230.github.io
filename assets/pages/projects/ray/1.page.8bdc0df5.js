@@ -161,9 +161,8 @@ The amount of extra credit you receive will be based on the sophistication of yo
 If you have more questions on the rubric or design choices, come to TA hours and we are happy to help.`]}),`
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:["Level 1: OpenMP based ",e.exports.jsx(s.strong,{children:"(up to 1 point)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Level 2: Qt based, simple implementation ",e.exports.jsx(s.strong,{children:"(up to 2 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Level 3: Qt based, relative sophisticated implementation ",e.exports.jsx(s.strong,{children:"(up to 4 points)"})]}),`
-`,e.exports.jsxs(s.li,{children:["Level 4: Qt based, extensive implementation ",e.exports.jsx(s.strong,{children:"(up to 6 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Level 2: Thread-based, simple implementation ",e.exports.jsx(s.strong,{children:"(up to 3 points)"})]}),`
+`,e.exports.jsxs(s.li,{children:["Level 3: Thread-based, sophisticated implementation ",e.exports.jsx(s.strong,{children:"(up to 6 points)"})]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
