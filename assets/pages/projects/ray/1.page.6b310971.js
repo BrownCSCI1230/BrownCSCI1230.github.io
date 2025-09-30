@@ -167,12 +167,6 @@ If you have more questions on the rubric or design choices, come to TA hours and
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[`
-`,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Anti-aliasing (up to 3 points)"}),`:
-If you only shoot one ray through the center of each pixel, you'll see jaggies (aliasing) due to undersampling of high-frequency parts of the scene (e.g. object edges).
-In the Filter unit, we discussed some ways to ameliorate (but not completely fix) aliasing with some post-processing.
-See if you can integrate your Filter code into your ray tracer as a post-processing module for your output image.`]}),`
-`]}),`
-`,e.exports.jsxs(s.li,{children:[`
 `,e.exports.jsxs(s.p,{children:[e.exports.jsx(s.strong,{children:"Create your own scene file (up to 3 points):"}),`
 Create your own scene by writing your own scenefile or by using `,e.exports.jsx(s.a,{href:"https://scenes.cs1230.graphics",target:"_blank",rel:"noopener noreferrer",children:"Scenes"}),". Refer to the provided scenefiles and to the ",e.exports.jsx(s.a,{href:"/docs/scenefile-documentation",children:"scenefile documentation"})," for examples/information on how these files are structured. Your scene should be interesting enough to be considered as extra credit (in other words, placing two cubes on top of each other is not interesting enough, but building a snowman with a face would be interesting)."]}),`
 `]}),`
