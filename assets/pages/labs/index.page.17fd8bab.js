@@ -7,16 +7,13 @@ import{j as s}from"../../chunk-b0d73203.js";const t={title:"Labs",hideTOC:!0};fu
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab3",children:"Transforms"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab4",children:"Parsing"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab5",children:"Light"})}),`
-`,s.exports.jsx(e.li,{children:"Convolution"}),`
+`,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab6",children:"Convolution"})}),`
 `,s.exports.jsx(e.li,{children:"Terrain"}),`
 `,s.exports.jsx(e.li,{children:"Trimeshes"}),`
 `,s.exports.jsx(e.li,{children:"VBOs & VAOs"}),`
 `,s.exports.jsx(e.li,{children:"Shaders"}),`
 `,s.exports.jsx(e.li,{children:"Textures & FBOs"}),`
 `]}),`
-`,`
-`,`
-`,`
 `,`
 `,`
 `,`
