@@ -68,145 +68,6 @@
       "assets/index.a2008b3d.css"
     ]
   },
-  "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.d0193cf9.js",
-    "src": "pages/labs/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/labs/lab1.page.mdx": {
-    "file": "assets/pages/labs/lab1.page.e6702745.js",
-    "src": "pages/labs/lab1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab10.page.mdx": {
-    "file": "assets/pages/labs/lab10.page.86447586.js",
-    "src": "pages/labs/lab10.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab11.page.mdx": {
-    "file": "assets/pages/labs/lab11.page.0dbdc764.js",
-    "src": "pages/labs/lab11.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab2.page.mdx": {
-    "file": "assets/pages/labs/lab2.page.2f8be879.js",
-    "src": "pages/labs/lab2.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.f2dc5baa.js",
-    "src": "pages/labs/lab3.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.25ecac7f.js",
-    "src": "pages/labs/lab4.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.210871fd.js",
-    "src": "pages/labs/lab5.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.f52d6134.js",
-    "src": "pages/labs/lab6.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab7-get-normals.page.mdx": {
-    "file": "assets/pages/labs/lab7-get-normals.page.9242340a.js",
-    "src": "pages/labs/lab7-get-normals.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/labs/lab7.page.mdx": {
-    "file": "assets/pages/labs/lab7.page.f12795b3.js",
-    "src": "pages/labs/lab7.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab8.page.mdx": {
-    "file": "assets/pages/labs/lab8.page.c46941ee.js",
-    "src": "pages/labs/lab8.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/labs/lab9.page.mdx": {
-    "file": "assets/pages/labs/lab9.page.7e48c6c2.js",
-    "src": "pages/labs/lab9.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
     "file": "assets/pages/docs/advanced-cpp-tutorial.page.3c70bae5.js",
     "src": "pages/docs/advanced-cpp-tutorial.page.mdx",
@@ -355,6 +216,145 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/index.page.mdx": {
+    "file": "assets/pages/labs/index.page.d0193cf9.js",
+    "src": "pages/labs/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/labs/lab1.page.mdx": {
+    "file": "assets/pages/labs/lab1.page.e6702745.js",
+    "src": "pages/labs/lab1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab10.page.mdx": {
+    "file": "assets/pages/labs/lab10.page.86447586.js",
+    "src": "pages/labs/lab10.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab11.page.mdx": {
+    "file": "assets/pages/labs/lab11.page.0dbdc764.js",
+    "src": "pages/labs/lab11.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab2.page.mdx": {
+    "file": "assets/pages/labs/lab2.page.2f8be879.js",
+    "src": "pages/labs/lab2.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab3.page.mdx": {
+    "file": "assets/pages/labs/lab3.page.f2dc5baa.js",
+    "src": "pages/labs/lab3.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab4.page.mdx": {
+    "file": "assets/pages/labs/lab4.page.25ecac7f.js",
+    "src": "pages/labs/lab4.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab5.page.mdx": {
+    "file": "assets/pages/labs/lab5.page.210871fd.js",
+    "src": "pages/labs/lab5.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab6.page.mdx": {
+    "file": "assets/pages/labs/lab6.page.f52d6134.js",
+    "src": "pages/labs/lab6.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab7-get-normals.page.mdx": {
+    "file": "assets/pages/labs/lab7-get-normals.page.9242340a.js",
+    "src": "pages/labs/lab7-get-normals.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/labs/lab7.page.mdx": {
+    "file": "assets/pages/labs/lab7.page.f12795b3.js",
+    "src": "pages/labs/lab7.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab8.page.mdx": {
+    "file": "assets/pages/labs/lab8.page.c46941ee.js",
+    "src": "pages/labs/lab8.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/labs/lab9.page.mdx": {
+    "file": "assets/pages/labs/lab9.page.7e48c6c2.js",
+    "src": "pages/labs/lab9.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
       "_chunk-82f9daf4.js"
     ]
   },
@@ -556,7 +556,7 @@
     ]
   },
   "pages/projects/ray/3-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/3-algo-ans.page.cb53ca30.js",
+    "file": "assets/pages/projects/ray/3-algo-ans.page.58fb6bf4.js",
     "src": "pages/projects/ray/3-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -567,7 +567,7 @@
     ]
   },
   "pages/projects/ray/3-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/3-algo.page.32f99137.js",
+    "file": "assets/pages/projects/ray/3-algo.page.b8807bb7.js",
     "src": "pages/projects/ray/3-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -654,7 +654,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7888b1a0.js",
+    "file": "assets/entry-client-routing.322061b4.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -728,7 +728,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.266bd0a9.js",
+    "file": "assets/entry-server-routing.5317f17b.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
