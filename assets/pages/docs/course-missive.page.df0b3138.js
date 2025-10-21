@@ -30,7 +30,7 @@ Trey Wiedmann (`,e.exports.jsx(s.code,{children:"twiedman"}),")"]}),`
 `,e.exports.jsx(s.h3,{id:"ta-hours",children:e.exports.jsx(s.a,{href:"#ta-hours",children:"TA hours"})}),`
 `,e.exports.jsx(s.p,{children:"Our TAs hold regularly-scheduled TA hours, during which you may ask questions about the course and assignments; these can be found on the course calendar."}),`
 `,e.exports.jsxs(s.p,{children:["On ",e.exports.jsx(s.em,{children:"very"})," rare occasions, we may have to cancel or reschedule a TA hour session due to external circumstances. These will be announced on Ed, and changes will be reflected on the course calendar."]}),`
-`,e.exports.jsxs(s.p,{children:["The professor also holds office hours each week; you can book an appointment with him via ",e.exports.jsx(s.a,{href:"https://calendar.app.google/Y7uudbexTA5wXaaC9",target:"_blank",rel:"noopener noreferrer",children:"this link"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:["The professor also holds office hours each week; you can book an appointment with him via ",e.exports.jsx(s.a,{href:"https://calendar.app.google/Hk4xQj3TzPHDNVtM9",target:"_blank",rel:"noopener noreferrer",children:"this link"}),"."]}),`
 `,e.exports.jsx(s.h2,{id:"public-health",children:e.exports.jsx(s.a,{href:"#public-health",children:"Public Health"})}),`
 `,e.exports.jsx(s.p,{children:"Feeling sick? Please do not come to lecture or use public computer labs. Ask a friend to fill you in, and review the slides and lectures online. Lectures will be recorded. We'd like to keep everyone in good health."}),`
 `,e.exports.jsx(s.h2,{id:"registration",children:e.exports.jsx(s.a,{href:"#registration",children:"Registration"})}),`
