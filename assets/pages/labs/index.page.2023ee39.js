@@ -10,10 +10,9 @@ import{j as s}from"../../chunk-b0d73203.js";const t={title:"Labs",hideTOC:!0};fu
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab6",children:"Convolution"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab7",children:"Terrain"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab8",children:"Trimeshes"})}),`
-`,s.exports.jsx(e.li,{children:"VBOs & VAOs"}),`
+`,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab9",children:"VBOs & VAOs"})}),`
 `,s.exports.jsx(e.li,{children:"Shaders"}),`
 `,s.exports.jsx(e.li,{children:"Textures & FBOs"}),`
 `]}),`
-`,`
 `,`
 `]})]})}function i(r={}){const{wrapper:e}=r.components||{};return e?s.exports.jsx(e,Object.assign({},r,{children:s.exports.jsx(n,r)})):n(r)}export{i as default,t as documentProps};
