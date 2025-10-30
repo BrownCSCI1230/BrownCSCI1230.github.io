@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.3caad608.js",
+    "file": "assets/pages/lectures.page.278d5151.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -337,7 +337,7 @@
     ]
   },
   "pages/labs/lab8.page.mdx": {
-    "file": "assets/pages/labs/lab8.page.c6b1fb3e.js",
+    "file": "assets/pages/labs/lab8.page.fa455859.js",
     "src": "pages/labs/lab8.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -523,7 +523,7 @@
     ]
   },
   "pages/projects/ray/2-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/2-algo-ans.page.2934e1f1.js",
+    "file": "assets/pages/projects/ray/2-algo-ans.page.e8515ecb.js",
     "src": "pages/projects/ray/2-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -545,7 +545,7 @@
     ]
   },
   "pages/projects/ray/2.page.mdx": {
-    "file": "assets/pages/projects/ray/2.page.45fe2fa9.js",
+    "file": "assets/pages/projects/ray/2.page.b6c0ab82.js",
     "src": "pages/projects/ray/2.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -611,7 +611,7 @@
     ]
   },
   "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.5e1ccbe7.js",
+    "file": "assets/pages/projects/realtime/1.page.73c58755.js",
     "src": "pages/projects/realtime/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -654,7 +654,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.f93e7de7.js",
+    "file": "assets/entry-client-routing.c7ffc9f5.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -728,7 +728,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.7971cf95.js",
+    "file": "assets/entry-server-routing.05241039.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

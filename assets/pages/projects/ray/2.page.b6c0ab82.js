@@ -126,7 +126,7 @@ you have built a `,e.exports.jsx(s.strong,{children:"Release"})," version of you
 `,e.exports.jsx(s.p,{children:"On Windows and Linux:"}),`
 `,e.exports.jsx(s.p,{children:e.exports.jsx(s.code,{children:"./projects_illuminate_<min/max> </absolute/filepath.ini>"})}),`
 `,e.exports.jsx(s.h2,{id:"grading",children:e.exports.jsx(s.a,{href:"#grading",children:"Grading"})}),`
-`,e.exports.jsx(s.div,{className:"error-callout callout",children:e.exports.jsx(s.p,{children:`For points deducted regarding software engineering/efficiency in your implementation of Project 3: Intersect,
+`,e.exports.jsx(s.div,{className:"error-callout callout",children:e.exports.jsx(s.p,{children:`For points deducted regarding software engineering/efficiency in your implementation of Project 2: Intersect,
 you will have the same points deducted again for this part of the project if these are not corrected.`})}),`
 `,e.exports.jsx(s.p,{children:"This assignment is out of 100 points."}),`
 `,e.exports.jsxs(s.ul,{children:[`
