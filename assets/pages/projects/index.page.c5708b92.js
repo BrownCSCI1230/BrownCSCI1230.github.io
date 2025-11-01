@@ -32,10 +32,10 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Realtime"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"Project 5: Realtime"}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/realtime/1",children:"Project 5: Realtime"}),`
+`,`
 `]}),`
-`,`
-`,`
+`]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Final"}),`
 `,e.exports.jsxs(s.ul,{children:[`
