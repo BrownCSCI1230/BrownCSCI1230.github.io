@@ -131,8 +131,8 @@ See the `,e.exports.jsx(s.a,{href:"#late-policy",children:"Late Policy"})," for 
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 3: Illuminate"}),": 13%"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 4: Antialias"}),": 12%"]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 5: Realtime"}),": 12%"]}),`
-`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 6: Final Project Gear-Up"}),": 11%"]}),`
-`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 7: Final Project"}),": 15%"]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 6: Final Project Gear-Up"}),": 14%"]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Project 7: Final Project"}),": 12%"]}),`
 `]}),`
 `]}),`
 `]}),`
