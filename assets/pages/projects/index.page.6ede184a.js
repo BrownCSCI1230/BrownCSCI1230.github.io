@@ -41,11 +41,9 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Final"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"Project 6: Final Project Gear Up"}),`
-`,e.exports.jsx(s.li,{children:"Project 7: Final Project"}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/final/final-features",children:"Technical Features"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/final/gear-up",children:"Project 6: Final Project Gear Up"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/final",children:"Project 7: Final Project"})}),`
 `]}),`
-`,`
-`,`
-`,`
 `]}),`
 `]})]})]})}function l(r={}){const{wrapper:s}=r.components||{};return s?e.exports.jsx(s,Object.assign({},r,{children:e.exports.jsx(n,r)})):n(r)}export{l as default,o as documentProps};
