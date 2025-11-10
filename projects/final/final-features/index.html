@@ -18,7 +18,7 @@
       </head>
       <body>
         <div id="root">
-          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#recommended-technical-features">Recommended Technical Features</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#generic">Generic</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#depth-buffers">Depth Buffers</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#g-buffers">G-Buffers</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#camera-effects">Camera Effects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-depth-of-field">Ray Traced Depth of Field</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-depth-of-field">Screen Space Depth of Field</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#lens-assemblies">Lens Assemblies</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-motion-blur">Ray Traced Motion Blur</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-motion-blur">Screen Space Motion Blur</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#camera-paths">Camera Paths</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#lighting-pipeline">Lighting Pipeline</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#deferred-lighting">Deferred Lighting</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-ambient-occlusion">Ray Traced Ambient Occlusion</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-ambient-occlusion">Screen Space Ambient Occlusion</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-bloom">Screen Space Bloom</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#shadows">Shadows</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shadow-mapping">Shadow Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shadow-volumes">Shadow Volumes</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#realtime-soft-shadows">Realtime Soft Shadows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-soft-shadows">Ray Traced Soft Shadows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#image-based-lighting">Image-based Lighting</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#volumetrics">Volumetrics</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#realtime-fog">Realtime Fog</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#crepuscular-rays">Crepuscular Rays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#volume-ray-tracing">Volume Ray Tracing</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#animation">Animation</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#kinematic-skeletons">Kinematic Skeletons</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#linear-blend-skinning">Linear Blend Skinning</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#inverse-kinematics">Inverse Kinematics</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#physics">Physics</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rigid-body-translation">Rigid Body Translation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rigid-body-rotation">Rigid Body Rotation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rigid-body-constraints">Rigid Body Constraints</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#collision-detection">Collision Detection</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#spring-mass-systems">Spring-Mass Systems</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#cloth-simulation">Cloth Simulation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#particle-systems">Particle Systems</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#realtime-post-processing">Realtime Post-Processing</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#post-processing-pipeline">Post-Processing Pipeline</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#stylized-filters">Stylized Filters</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#color-grading">Color Grading</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#procedural-generation">Procedural Generation</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#l-systems">L-Systems</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#3d-fractals">3D Fractals</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#wave-function-collapse">Wave Function Collapse</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#texture-effects">Texture Effects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#normal-mapping">Normal Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#bump-mapping">Bump Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#scrolling-textures">Scrolling Textures</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#geometry">Geometry</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#offline-bezier-surface-tesselation">Offline Bezier Surface Tesselation</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#realtime-surface-tesselation">Realtime Surface Tesselation</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#geometry-shaders">Geometry Shaders</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#rendering">Rendering</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#instanced-rendering">Instanced Rendering</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#acceleration-structures">Acceleration Structures</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-marching">Ray Marching</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#sphere-tracing">Sphere Tracing</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#hdr-rendering">HDR Rendering</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#gpu-ray-tracing">GPU Ray Tracing</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#portals">Portals</a></li></ol></li></ol></li></ol></nav><main>
+          <nav id="nav-bar"><div id="nav-bar-inner"><a id="logo" class="no-select" href="/" aria-label="home" style="--duration:450ms"><div id="logo-box-1"></div><div id="logo-box-2"></div><div id="logo-box-3"></div><div id="logo-box-4"></div><div id="logo-box-5"></div><div id="logo-box-6"></div></a><div id="nav-items"><div id="nav-items-inner"><a href="/" class="nav-item">Home</a><a href="/docs" class="nav-item">Docs</a><a href="/lectures" class="nav-item">Lectures</a><a href="/labs" class="nav-item">Labs</a><a href="/projects" class="nav-item">Projects</a></div></div></div></nav><div id="page" class=""><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h1"><a class="toc-link toc-link-h1" href="#recommended-technical-features">Recommended Technical Features</a><ol class="toc-level toc-level-2"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#generic">Generic</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#depth-buffers">Depth Buffers</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#g-buffers">G-Buffers</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#camera-effects">Camera Effects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-depth-of-field">Ray Traced Depth of Field</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-depth-of-field">Screen Space Depth of Field</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#lens-assemblies">Lens Assemblies</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-motion-blur">Ray Traced Motion Blur</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-motion-blur">Screen Space Motion Blur</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#camera-paths">Camera Paths</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#lighting-pipeline">Lighting Pipeline</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#deferred-lighting">Deferred Lighting</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-ambient-occlusion">Ray Traced Ambient Occlusion</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-ambient-occlusion">Screen Space Ambient Occlusion</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#screen-space-bloom">Screen Space Bloom</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#shadows">Shadows</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shadow-mapping">Shadow Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#shadow-volumes">Shadow Volumes</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#realtime-soft-shadows">Realtime Soft Shadows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-traced-soft-shadows">Ray Traced Soft Shadows</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#image-based-lighting">Image-based Lighting</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#volumetrics">Volumetrics</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#realtime-fog">Realtime Fog</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#crepuscular-rays">Crepuscular Rays</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#volume-ray-tracing">Volume Ray Tracing</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#animation">Animation</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#kinematic-skeletons">Kinematic Skeletons</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#linear-blend-skinning">Linear Blend Skinning</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#inverse-kinematics">Inverse Kinematics</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#physics">Physics</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rigid-body-translation">Rigid Body Translation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rigid-body-rotation">Rigid Body Rotation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#rigid-body-constraints">Rigid Body Constraints</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#spring-mass-systems">Spring-Mass Systems</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#cloth-simulation">Cloth Simulation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#particle-systems">Particle Systems</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#realtime-post-processing">Realtime Post-Processing</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#post-processing-pipeline">Post-Processing Pipeline</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#stylized-filters">Stylized Filters</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#color-grading">Color Grading</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#procedural-generation">Procedural Generation</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#l-systems">L-Systems</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#3d-fractals">3D Fractals</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#wave-function-collapse">Wave Function Collapse</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#texture-effects">Texture Effects</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#normal-mapping">Normal Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#bump-mapping">Bump Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#parallax-mapping">Parallax Mapping</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#scrolling-textures">Scrolling Textures</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#geometry">Geometry</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#offline-bezier-surface-tesselation">Offline Bezier Surface Tesselation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#realtime-surface-tesselation">Realtime Surface Tesselation</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#geometry-shaders">Geometry Shaders</a></li></ol></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#rendering">Rendering</a><ol class="toc-level toc-level-3"><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#instanced-rendering">Instanced Rendering</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#acceleration-structures">Acceleration Structures</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#ray-marching">Ray Marching</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#sphere-tracing">Sphere Tracing</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#hdr-rendering">HDR Rendering</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#gpu-ray-tracing">GPU Ray Tracing</a></li><li class="toc-item toc-item-h3"><a class="toc-link toc-link-h3" href="#portals">Portals</a></li></ol></li></ol></li></ol></nav><main>
 <!-- -->
 <h1 id="recommended-technical-features"><a href="#recommended-technical-features">Recommended Technical Features</a></h1>
 <p>We suggest referring to this document while working on both <code>Project 6: Final Project Gear Up</code> and <code>Project 7: Final Project</code>. See the instructions in each handout for more info on what we&#x27;re looking for.</p>
@@ -40,129 +40,295 @@
 <p>Depth buffers store per-pixel depth information to determine which objects are in front of others. OpenGL computes a depth buffer by default, as long as <code>GL_DEPTH_TEST</code> is enabled. For this feature, you&#x27;ll need to store that depth buffer in a texture that can be accessed in shaders.</p>
 <h3 id="g-buffers"><a href="#g-buffers">G-Buffers</a></h3>
 <p>G-buffers (short for Geometry Buffers) store multiple per-pixel attributes such as normals, albedo, and material properties, enabling deferred shading for efficient lighting calculations.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-Lighting/Deferred-Shading" target="_blank" rel="noopener noreferrer">OpenGL deferred shading tutorial</a></li>
+<li>Deferred shading examples: <a href="https://va3c.github.io/three.js/examples/webgldeferred_pointlights.html" target="_blank" rel="noopener noreferrer">Three.js</a>, <a href="https://github.com/Erkaman/cute-deferred-shading" target="_blank" rel="noopener noreferrer">Erkaman</a></li>
+</ul></details>
 <h2 id="camera-effects"><a href="#camera-effects">Camera Effects</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Ray Traced Depth of Field</td><td align="center">Depth Buffers <em>(Generic)</em></td><td align="center"><strong>Ray Tracing only</strong></td><td align="center">⭐</td></tr><tr><td align="center">Screen Space Depth of Field</td><td align="center">Depth Buffers <em>(Generic)</em></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Lens Assemblies</td><td align="center"></td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐⭐⭐⭐⭐</td></tr><tr><td align="center">Ray Traced Motion Blur</td><td align="center"></td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Screen Space Motion Blur</td><td align="center">G-Buffers <em>(Generic)</em></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Camera Paths</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr></tbody></table></div>
 <h3 id="ray-traced-depth-of-field"><a href="#ray-traced-depth-of-field">Ray Traced Depth of Field</a></h3>
 <p>Tracing rays from non-pinhole camera (i.e. a lens with finite aperture) to simulate realistic defocus blur effects.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://pathtracing.home.blog/depth-of-field/" target="_blank" rel="noopener noreferrer">Pathtracing.home</a></li>
+<li><a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html#defocusblur" target="_blank" rel="noopener noreferrer">Ray Tracing in One Weekend</a></li>
+</ul></details>
 <h3 id="screen-space-depth-of-field"><a href="#screen-space-depth-of-field">Screen Space Depth of Field</a></h3>
 <p>Mimicking depth of field effects as a screen space post-processing effect by blurring pixels based on their depth relative to the focal plane.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems/part-iv-image-processing/chapter-23-depth-field-survey-techniques" target="_blank" rel="noopener noreferrer">NVIDIA GPU Gems</a></li>
+<li><a href="http://casual-effects.blogspot.com/2013/09/the-skylanders-swap-force-depth-of.html" target="_blank" rel="noopener noreferrer">Casual Effects</a></li>
+<li><a href="http://bartwronski.com/2014/04/07/bokeh-depth-of-field-going-insane-part-1/" target="_blank" rel="noopener noreferrer">Wronski</a></li>
+<li>Demos: <a href="http://threejs.org/examples/webgl_postprocessing_dof.html" target="_blank" rel="noopener noreferrer">Three.js</a></li>
+</ul></details>
 <h3 id="lens-assemblies"><a href="#lens-assemblies">Lens Assemblies</a></h3>
 <p>Simulating physically realistic camera lenses by tracing rays through multiple lens elements to capture effects like distortion and chromatic aberration.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="http://mentallandscape.com/Papers_siggraph95.pdf" target="_blank" rel="noopener noreferrer">Kolb, Mitchell, Hanrahan paper</a></li>
+<li><a href="https://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/project2_old.html" target="_blank" rel="noopener noreferrer">WPI assignment</a></li>
+</ul></details>
 <h3 id="ray-traced-motion-blur"><a href="#ray-traced-motion-blur">Ray Traced Motion Blur</a></h3>
 <p>Tracing rays over a time interval to simulate motion blur for fast-moving objects or camera motion.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html#motionblur" target="_blank" rel="noopener noreferrer">Ray Tracing in One Weekend</a></li>
+</ul></details>
 <h3 id="screen-space-motion-blur"><a href="#screen-space-motion-blur">Screen Space Motion Blur</a></h3>
 <p>Applying motion blur as a screen space post-processing effect by blurring pixels based on the velocity of the objects they cover. Per pixel velocity can be written to two channels of a G-buffer.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-27-motion-blur-post-processing-effect" target="_blank" rel="noopener noreferrer">NVIDIA GPU Gems</a></li>
+</ul></details>
 <h3 id="camera-paths"><a href="#camera-paths">Camera Paths</a></h3>
 <p>Allow the camera to move along predefined splines or curves. Useful for cinematic shots and cutscenes.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://publications.scss.tcd.ie/tech-reports/reports.94/TCD-CS-94-18.pdf" target="_blank" rel="noopener noreferrer">Colm Buckley paper</a></li>
+</ul></details>
 <h2 id="lighting-pipeline"><a href="#lighting-pipeline">Lighting Pipeline</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Deferred Lighting</td><td align="center">G-Buffers <em>(Generic)</em></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Ray Traced Ambient Occlusion</td><td align="center"></td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Screen Space Ambient Occlusion</td><td align="center">Deferred Lighting</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Screen Space Bloom</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr></tbody></table></div>
 <h3 id="deferred-lighting"><a href="#deferred-lighting">Deferred Lighting</a></h3>
 <p>Calculates lighting in screen space after geometry rendering, allowing effecient handling of many lights.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-Lighting/Deferred-Shading" target="_blank" rel="noopener noreferrer">OpenGL deferred shading tutorial</a></li>
+<li>Deferred shading examples: <a href="https://va3c.github.io/three.js/examples/webgldeferred_pointlights.html" target="_blank" rel="noopener noreferrer">Three.js</a>, <a href="https://github.com/Erkaman/cute-deferred-shading" target="_blank" rel="noopener noreferrer">Erkaman</a></li>
+</ul></details>
 <h3 id="ray-traced-ambient-occlusion"><a href="#ray-traced-ambient-occlusion">Ray Traced Ambient Occlusion</a></h3>
 <p>Use ray tracing from surface points to determine what percentage visible/occluded they are. This percentage is used to modulate the ambient term in the lighting equation, leading to realistic darkening in corners and crevices.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://en.wikipedia.org/wiki/Ambient_occlusion" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+</ul></details>
 <h3 id="screen-space-ambient-occlusion"><a href="#screen-space-ambient-occlusion">Screen Space Ambient Occlusion</a></h3>
 <p>Approximate ambient occlusion using depth information in screen space. Much faster than ray traced ambient occlusion but less accurate.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="http://john-chapman-graphics.blogspot.com/2013/01/ssao-tutorial.html" target="_blank" rel="noopener noreferrer">John Chapman Graphics</a></li>
+<li><a href="http://www.learnopengl.com/" target="_blank" rel="noopener noreferrer">Learn OpenGL tutorial</a></li>
+<li>Demos: <a href="http://threejs.org/examples/" target="_blank" rel="noopener noreferrer">Three.js</a></li>
+</ul></details>
 <h3 id="screen-space-bloom"><a href="#screen-space-bloom">Screen Space Bloom</a></h3>
 <p>Emphasize bright light sources by adding a glow around them. The glow is created by blurring bright areas of the image and compositing them back to the original image.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-Lighting/Bloom" target="_blank" rel="noopener noreferrer">Learn OpenGL tutorial</a></li>
+</ul></details>
 <h2 id="shadows"><a href="#shadows">Shadows</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Shadow Mapping</td><td align="center">Depth Buffers <em>(Generic)</em></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Shadow Volumes</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Realtime Soft Shadows</td><td align="center">Shadow Mapping</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Ray Traced Soft Shadows</td><td align="center"></td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Image-based Lighting</td><td align="center">Ray Traced Soft Shadows</td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐</td></tr></tbody></table></div>
 <h3 id="shadow-mapping"><a href="#shadow-mapping">Shadow Mapping</a></h3>
 <p>Create shadows by rendering the scene from the light’s perspective into a depth map, then using these depths to check whether points visible from the camera are blocked from seeing the light.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-16-shadow-mapping/" target="_blank" rel="noopener noreferrer">OpenGL tutorial</a></li>
+<li><a href="https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+<li>Demos: <a href="http://threejs.org/examples/webgl_shadowmap.html" target="_blank" rel="noopener noreferrer">Three.js</a></li>
+</ul></details>
 <h3 id="shadow-volumes"><a href="#shadow-volumes">Shadow Volumes</a></h3>
 <p>Create hard-edged shadows extruding silhouette edges from meshes to create volumes representing shadowed regions of space.
 Can be implemented efficiently in OpenGL using the stencil buffer.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems/part-ii-lighting-and-shadows/chapter-9-efficient-shadow-volume-rendering" target="_blank" rel="noopener noreferrer">NVIDIA GPU Gems</a></li>
+</ul></details>
 <h3 id="realtime-soft-shadows"><a href="#realtime-soft-shadows">Realtime Soft Shadows</a></h3>
 <p>Soften the edges of shadows by using multiple pixels in the shadow map to determine how much a point is shadowed.
-Also known as Percentage Closer Filtering (PCF).</p>
+Also known as Percentage Closer Filtering (PCF). More sophisticated variants exist (e.g. Cascaded Shadow Maps, Variance Shadow Maps).</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems/part-ii-lighting-and-shadows/chapter-11-shadow-map-antialiasing" target="_blank" rel="noopener noreferrer">Percentage Closer Filtering</a></li>
+<li><a href="https://learnopengl.com/Guest-Articles/2021/CSM" target="_blank" rel="noopener noreferrer">Cascaded Shadow Maps</a></li>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems3/part-ii-light-and-shadows/chapter-8-summed-area-variance-shadow-maps" target="_blank" rel="noopener noreferrer">Variance Shadow Maps</a></li>
+</ul></details>
 <h3 id="ray-traced-soft-shadows"><a href="#ray-traced-soft-shadows">Ray Traced Soft Shadows</a></h3>
 <p>Compute soft shadows by tracing multiple shadow rays from a surface point to an area light source.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="http://raytracerchallenge.com/bonus/area-light.html" target="_blank" rel="noopener noreferrer">Raytracerchallenge.com</a></li>
+<li><a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html" target="_blank" rel="noopener noreferrer">Ray tracing in one weekend</a></li>
+</ul></details>
 <h3 id="image-based-lighting"><a href="#image-based-lighting">Image-based Lighting</a></h3>
-<p>Wrap your scene in an environment map and treat it as a giant area light source to create realistic ambient lighting and reflections.</p>
+<p>Wrap your scene in an environment map and treat it as a giant area light source to create realistic ambient lighting, shadows, and reflections.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems/part-iii-materials/chapter-19-image-based-lighting" target="_blank" rel="noopener noreferrer">NVIDIA GPU Gems</a></li>
+</ul></details>
 <h2 id="volumetrics"><a href="#volumetrics">Volumetrics</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Realtime Fog</td><td align="center">Depth Buffer</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐</td></tr><tr><td align="center">Crepuscular Rays</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Volume Ray Tracing</td><td align="center"></td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐⭐⭐⭐</td></tr></tbody></table></div>
 <h3 id="realtime-fog"><a href="#realtime-fog">Realtime Fog</a></h3>
 <p>Add atmospheric haze based on distance from the camera.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://opengl-notes.readthedocs.io/en/latest/topics/texturing/aliasing.html#fog" target="_blank" rel="noopener noreferrer">OpenGL Notes</a></li>
+</ul></details>
 <h3 id="crepuscular-rays"><a href="#crepuscular-rays">Crepuscular Rays</a></h3>
 <p>Crepuscular rays (colloquially known as &quot;god rays&quot;) are the visible light shafts that form when sunlight passes through gaps in clouds or other obstacles. These can be simulated efficiently in real-time using screen-space techniques.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems3/part-ii-light-and-shadows/chapter-13-volumetric-light-scattering-post-process" target="_blank" rel="noopener noreferrer">NVIDIA GPU Gems</a></li>
+</ul></details>
 <h3 id="volume-ray-tracing"><a href="#volume-ray-tracing">Volume Ray Tracing</a></h3>
-<p>Simulate light interaction with volumetric media (like fog, smoke, or clouds) by tracing rays through the volume and accumulating volumetric density along the ray path.</p>
+<p>Render volumetric data by tracing rays through the volume and accumulating volumetric density along the ray path.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://en.wikipedia.org/wiki/Volume_ray_casting" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+</ul></details>
 <h2 id="animation"><a href="#animation">Animation</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Kinematic Skeletons</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Linear Blend Skinning</td><td align="center">Kinematic Skeletons</td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Inverse Kinematics</td><td align="center">Kinematic Skeletons</td><td align="center"></td><td align="center">⭐⭐⭐⭐</td></tr></tbody></table></div>
 <h3 id="kinematic-skeletons"><a href="#kinematic-skeletons">Kinematic Skeletons</a></h3>
 <p>Create a hierarchical structure of connected, articulatable bones to control character movement.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Guest-Articles/2020/Skeletal-Animation" target="_blank" rel="noopener noreferrer">LearnOpenGL Skeletal Animation</a></li>
+</ul></details>
 <h3 id="linear-blend-skinning"><a href="#linear-blend-skinning">Linear Blend Skinning</a></h3>
 <p>Deform a character&#x27;s mesh based on the transformations of its underlying skeleton using weighted vertex influences.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://graphics.cs.cmu.edu/courses/15-466-f17/notes/skinning.html" target="_blank" rel="noopener noreferrer">CMU course notes</a></li>
+</ul></details>
 <h3 id="inverse-kinematics"><a href="#inverse-kinematics">Inverse Kinematics</a></h3>
 <p>Calculate joint angles needed to position an end effector (like a hand or foot) at a desired location, allowing for more intuitive animation control.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://en.wikipedia.org/wiki/Inverse_kinematics#Numerical_solutions_to_IK_problems" target="_blank" rel="noopener noreferrer">Wikipedia</a>: describes the Jacobian (Pseudo)inverse method for solving IK; also references Cyclic Coordinate Descent (CCD), another popular approach.</li>
+<li><a href="https://www.alanzucconi.com/2017/04/10/robotic-arms/" target="_blank" rel="noopener noreferrer">Alan Zucconi blog post</a>: more detailed walkthrough of solving IK for a robotic arm (using a finite-difference gradient descent approximation).</li>
+</ul></details>
 <h2 id="physics"><a href="#physics">Physics</a></h2>
-<div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Rigid Body Rotation</td><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Rigid Body Constraints</td><td align="center">Rigid Body Rotation</td><td align="center"></td><td align="center">⭐⭐⭐⭐</td></tr><tr><td align="center">Collision Detection</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Spring-Mass Systems</td><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Cloth Simulation</td><td align="center">Spring-Mass Systems</td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Particle Systems</td><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center">⭐⭐</td></tr></tbody></table></div>
+<div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Rigid Body Rotation</td><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Rigid Body Constraints</td><td align="center">Rigid Body Rotation</td><td align="center"></td><td align="center">⭐⭐⭐⭐</td></tr><tr><td align="center">Spring-Mass Systems</td><td align="center">Rigid Body Translation</td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Cloth Simulation</td><td align="center">Spring-Mass Systems</td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Particle Systems</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr></tbody></table></div>
 <h3 id="rigid-body-translation"><a href="#rigid-body-translation">Rigid Body Translation</a></h3>
 <p>Simulate solid, non-deformable objects translating under the influence of forces like gravity.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://www.cs.cmu.edu/~baraff/sigcourse/notesd1.pdf" target="_blank" rel="noopener noreferrer">David Baraff&#x27;s SIGGRAPH course notes</a></li>
+</ul></details>
 <h3 id="rigid-body-rotation"><a href="#rigid-body-rotation">Rigid Body Rotation</a></h3>
 <p>Simulate solid, non-deformable objects rotating under the influence of torques.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://www.cs.cmu.edu/~baraff/sigcourse/notesd1.pdf" target="_blank" rel="noopener noreferrer">David Baraff&#x27;s SIGGRAPH course notes</a></li>
+</ul></details>
 <h3 id="rigid-body-constraints"><a href="#rigid-body-constraints">Rigid Body Constraints</a></h3>
 <p>Restrict the movement of rigid bodies to create realistic physical assemblies, such as hinges or chains.</p>
-<h3 id="collision-detection"><a href="#collision-detection">Collision Detection</a></h3>
-<p>Determine when simulated objects intersect and apply appropriate responses to prevent inter-penetration.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://www.cs.cmu.edu/~baraff/sigcourse/notesd2.pdf" target="_blank" rel="noopener noreferrer">David Baraff&#x27;s SIGGRAPH course notes (part II)</a></li>
+</ul></details>
 <h3 id="spring-mass-systems"><a href="#spring-mass-systems">Spring-Mass Systems</a></h3>
 <p>Approximately simulate the motion of deformable objects using a network of point masses connected by springs.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="http://www.cs.cmu.edu/~barbic/jellocube_bw.pdf" target="_blank" rel="noopener noreferrer">CMU course slides</a></li>
+<li><a href="https://github.com/alecjacobson/computer-graphics-mass-spring-systems" target="_blank" rel="noopener noreferrer">UToronto assignment</a></li>
+</ul></details>
 <h3 id="cloth-simulation"><a href="#cloth-simulation">Cloth Simulation</a></h3>
 <p>Implement a spring-mass system specifically designed to simulate realistic cloth behavior, including bending and stretching.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://graphics.stanford.edu/~mdfisher/cloth.html" target="_blank" rel="noopener noreferrer">Matt’s Webcorner</a></li>
+</ul></details>
 <h3 id="particle-systems"><a href="#particle-systems">Particle Systems</a></h3>
 <p>Simulate large numbers of small, independent objects interacting to create effects such as fire, smoke, rain, or sparks.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Particles" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+<li><a href="https://www.opengl-tutorial.org/intermediate-tutorials/billboards-particles/particles-instancing/" target="_blank" rel="noopener noreferrer">OpenGL Tutorial</a></li>
+</ul></details>
 <h2 id="realtime-post-processing"><a href="#realtime-post-processing">Realtime Post-Processing</a></h2>
-<div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Post-Processing Pipeline</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Sylized Filters</td><td align="center">Post-Processing Pipeline</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐</td></tr><tr><td align="center">Color Grading</td><td align="center">Post-Processing Pipeline</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐</td></tr></tbody></table></div>
+<div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Post-Processing Pipeline</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Sylized Filters</td><td align="center">Post-Processing Pipeline</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr><tr><td align="center">Color Grading</td><td align="center">Post-Processing Pipeline</td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐</td></tr></tbody></table></div>
 <h3 id="post-processing-pipeline"><a href="#post-processing-pipeline">Post-Processing Pipeline</a></h3>
 <p>Implement a basic framework to apply a series of image-space effects after rendering the scene.
 This involves multiple render passes and framebuffer management.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="/labs/lab11/">CS 1230 Lab 11</a></li>
+</ul></details>
 <h3 id="stylized-filters"><a href="#stylized-filters">Stylized Filters</a></h3>
 <p>Apply non-photorealistic screen-space filters, such as edge detection, to achieve a specific artistic style.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/In-Practice/2D-Game/Postprocessing" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+<li><a href="https://en.wikibooks.org/wiki/OpenGL_Programming/Post-Processing" target="_blank" rel="noopener noreferrer">WikiBooks OpenGL Programming</a></li>
+</ul></details>
 <h3 id="color-grading"><a href="#color-grading">Color Grading</a></h3>
 <p>Adjusts image colors to achieve a desired mood or cinematic tone.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems2/part-iii-high-quality-rendering/chapter-24-using-lookup-tables-accelerate-color" target="_blank" rel="noopener noreferrer">GPU Gems</a></li>
+<li><a href="https://marti.works/posts/post-color-grading-in-opengl-es-2-0/post/" target="_blank" rel="noopener noreferrer">Color Grading in OpenGL ES 2.0</a></li>
+</ul></details>
 <h2 id="procedural-generation"><a href="#procedural-generation">Procedural Generation</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">L-Systems</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">3D Fractals</td><td align="center">Ray Marching <em>(Rendering)</em></td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Wave Function Collapse</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐⭐</td></tr></tbody></table></div>
 <h3 id="l-systems"><a href="#l-systems">L-Systems</a></h3>
 <p>L-Systems generate recursive, fractal-like structures, often used to model plants and trees.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://algorithmicbotany.org/papers/#abop" target="_blank" rel="noopener noreferrer">The Algorithmic Beauty of Plants</a></li>
+</ul></details>
 <h3 id="3d-fractals"><a href="#3d-fractals">3D Fractals</a></h3>
-<p>Implement a 3D fractal generation algorithm, such as the Mandelbulb or Menger Sponge.
+<p>Implement a 3D fractal generation algorithm, such as the Mandelbulb.
 You&#x27;ll need ray marching to visualize these fractals effectively.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://www.mandelbulb.com/" target="_blank" rel="noopener noreferrer">Mandelbulb.com</a></li>
+<li><a href="https://iquilezles.org/articles/mandelbulb/" target="_blank" rel="noopener noreferrer">iq&#x27;s Mandelbulb page</a></li>
+<li>ShaderToy demos: <a href="https://www.shadertoy.com/view/wdjGWR" target="_blank" rel="noopener noreferrer">one</a>, <a href="https://www.shadertoy.com/view/WsySDR" target="_blank" rel="noopener noreferrer">two</a></li>
+</ul></details>
 <h3 id="wave-function-collapse"><a href="#wave-function-collapse">Wave Function Collapse</a></h3>
 <p>Generate tile-based patterns that are locally similar to a given input example pattern.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://github.com/mxgmn/WaveFunctionCollapse" target="_blank" rel="noopener noreferrer">Original Github Repo</a>: note that the author, Maxim Gumin, is a PhD student in Daniel&#x27;s lab :)</li>
+</ul></details>
 <div class="task-no-number-callout callout"><p>There are many other procedural generation techniques not listed here (e.g. algorithms for procedural building and city generation)! Feel free to discuss other ideas with a TA or the professor. We encourage you to explore and get creative :)</p></div>
 <h2 id="texture-effects"><a href="#texture-effects">Texture Effects</a></h2>
-<div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Normal Mapping</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Bump Mapping</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Scrolling Textures</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr></tbody></table></div>
+<div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Normal Mapping</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐</td></tr><tr><td align="center">Bump Mapping</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Parallax Mapping</td><td align="center">Bump Mapping</td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Scrolling Textures</td><td align="center"></td><td align="center"></td><td align="center">⭐</td></tr></tbody></table></div>
 <h3 id="normal-mapping"><a href="#normal-mapping">Normal Mapping</a></h3>
 <p>Normal Mapping uses a texture to store surface normal perturbations, adding detailed surface features without increasing geometry complexity.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://ogldev.org/www/tutorial26/tutorial26.html" target="_blank" rel="noopener noreferrer">OGLDev tutorial</a></li>
+<li><a href="http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/" target="_blank" rel="noopener noreferrer">Open GL tutorial</a></li>
+</ul></details>
 <h3 id="bump-mapping"><a href="#bump-mapping">Bump Mapping</a></h3>
 <p>Like normal mapping, but uses a height map to simulate surface detail by perturbing surface normals during lighting calculations.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://cgl.ethz.ch/teaching/former/gdv1_04/GDV1_WS04/exercise/P6_Bump_mapping_hints.pdf" target="_blank" rel="noopener noreferrer">ETHZ slides</a></li>
+</ul></details>
+<h3 id="parallax-mapping"><a href="#parallax-mapping">Parallax Mapping</a></h3>
+<p>Parallax Mapping enhances bump mapping by adjusting texture coordinates based on the view angle and height map, creating a more pronounced 3D effect.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-Lighting/Parallax-Mapping" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+</ul></details>
 <h3 id="scrolling-textures"><a href="#scrolling-textures">Scrolling Textures</a></h3>
 <p>Animate textures over time, often used for moving water, clouds, or conveyor belts.</p>
 <h2 id="geometry"><a href="#geometry">Geometry</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Offline Bezier Surface Tesselation</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐⭐⭐</td></tr><tr><td align="center">Realtime Surface Tesselation</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Geometry Shaders</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐</td></tr></tbody></table></div>
 <h3 id="offline-bezier-surface-tesselation"><a href="#offline-bezier-surface-tesselation">Offline Bezier Surface Tesselation</a></h3>
 <p>As a CPU preprocessing step, take a Bezier surface and tessellate it into triangles.</p>
-<h2 id="realtime-surface-tesselation"><a href="#realtime-surface-tesselation">Realtime Surface Tesselation</a></h2>
+<details><summary>Resources</summary><ul>
+<li><a href="https://cs184.eecs.berkeley.edu/sp21/docs/proj2#s1" target="_blank" rel="noopener noreferrer">UC Berkeley assignment</a> (just Section 1)</li>
+</ul></details>
+<h3 id="realtime-surface-tesselation"><a href="#realtime-surface-tesselation">Realtime Surface Tesselation</a></h3>
 <p>Dynamically tessellate Bezier surfaces on the GPU using OpenGL tessellation shaders.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://people.eecs.ku.edu/~jrmiller/Courses/672/InClass/OtherGLSLShaders/TessellationShaders.html" target="_blank" rel="noopener noreferrer">KU course</a></li>
+<li><a href="https://github.com/CleisthenesH/Tessellating-Bezier-Curves-and-Surface" target="_blank" rel="noopener noreferrer">CleisthenesH Github repo</a></li>
+</ul></details>
 <h3 id="geometry-shaders"><a href="#geometry-shaders">Geometry Shaders</a></h3>
 <p>Use OpenGL geometry shaders to manipulate and generate geometry on the GPU, such as turning points into billboard quads or densifying particle systems.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-OpenGL/Geometry-Shader" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+</ul></details>
 <h2 id="rendering"><a href="#rendering">Rendering</a></h2>
 <div class="table-wrapper"><table><thead><tr><th align="center">Feature</th><th align="center">Dependencies</th><th align="center">Notes</th><th align="center">Difficulty</th></tr></thead><tbody><tr><td align="center">Instanced Rendering</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐</td></tr><tr><td align="center">Acceleration Structures</td><td align="center"></td><td align="center"><strong>Ray Tracing only!</strong></td><td align="center">⭐⭐⭐⭐</td></tr><tr><td align="center">Ray Marching</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">Sphere Tracing</td><td align="center"></td><td align="center">Ray Marching</td><td align="center">⭐⭐</td></tr><tr><td align="center">HDR Rendering</td><td align="center"></td><td align="center"></td><td align="center">⭐⭐⭐</td></tr><tr><td align="center">GPU Ray Tracing</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐⭐⭐</td></tr><tr><td align="center">Portals</td><td align="center"></td><td align="center"><strong>Realtime only!</strong></td><td align="center">⭐⭐⭐⭐⭐</td></tr></tbody></table></div>
 <h3 id="instanced-rendering"><a href="#instanced-rendering">Instanced Rendering</a></h3>
 <p>Instanced Rendering allows rendering many copies of an object efficiently with a single draw call.
 You&#x27;ll need to demonstrate your implementation by rendering a scene with a huge number of repeated objects (e.g., a forest of trees) at high framerates.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-OpenGL/Instancing" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+</ul></details>
 <h3 id="acceleration-structures"><a href="#acceleration-structures">Acceleration Structures</a></h3>
 <p>Acceleration Structures speed up ray tracing by organizing scene geometry for faster intersection tests.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://docs.google.com/file/d/1UpzNHQ_x1nrIAw7xQE_MyOq4yNdfWa6c/edit?usp=sharing&amp;ouid=114892003088852070829&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">CS 1230 Acceleration Structures Slides</a></li>
+</ul></details>
 <h3 id="ray-marching"><a href="#ray-marching">Ray Marching</a></h3>
 <p>Render arbitary implicit surfaces (including fractals) by iteratively stepping along rays to find surface intersections.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://iquilezles.org/articles/terrainmarching/" target="_blank" rel="noopener noreferrer">iq&#x27;s Terrain raymarching example</a></li>
+</ul></details>
 <h3 id="sphere-tracing"><a href="#sphere-tracing">Sphere Tracing</a></h3>
 <p>When your implicit surface is a signed distance field (SDF), you can use sphere tracing to efficiently find ray-surface intersections by taking steps proportional to the distance to the surface.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://michaelwalczyk.com/blog-ray-marching.html" target="_blank" rel="noopener noreferrer">Michael Walczyk blog</a></li>
+<li><a href="https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/" target="_blank" rel="noopener noreferrer">Maxime Heckel blog</a></li>
+</ul></details>
 <h3 id="hdr-rendering"><a href="#hdr-rendering">HDR Rendering</a></h3>
 <p>Make all of your lighting calculations use physical units of light intensity, then implement tone mapping to convert the resulting rendered hight-dynamic ranges (HDR) images to low-dynamic range (LDR) for display.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://learnopengl.com/Advanced-Lighting/HDR" target="_blank" rel="noopener noreferrer">LearnOpenGL</a></li>
+</ul></details>
 <h3 id="gpu-ray-tracing"><a href="#gpu-ray-tracing">GPU Ray Tracing</a></h3>
 <p>There are many different frameworks for this, such as NVIDIA OptiX, DirectX Raytracing (DXR), and Vulkan Ray Tracing; any of these is acceptable.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://developer.nvidia.com/rtx/ray-tracing/optix" target="_blank" rel="noopener noreferrer">NVIDIA Optix</a></li>
+</ul></details>
 <h3 id="portals"><a href="#portals">Portals</a></h3>
 <p>Implement portal rendering, where looking through a portal shows a view into another part of the scene.</p>
+<details><summary>Resources</summary><ul>
+<li><a href="https://en.wikibooks.org/wiki/OpenGL_Programming/Mini-Portal" target="_blank" rel="noopener noreferrer">OpenGL Programming Wiki</a></li>
+<li><a href="https://danielilett.com/2019-12-01-tut4-intro-portals/" target="_blank" rel="noopener noreferrer">Daniel Ilett blog series</a></li>
+</ul></details>
 <hr class="footer-hr"/><p class="footer-p">Please let us know if you find any mistakes, inconsistencies, or confusing language in this or any other CS 1230 document by filling out our <a href="https://forms.gle/ZYY519pzSvu8YaZK6" target="_blank">anonymous feedback form</a>.</p></main></div>
         </div>
-      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/final/final-features"}}</script><script type="module" src="/assets/entry-client-routing.23d66352.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/final/final-features.page.3f10ae3c.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.23d66352.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5cfa8467.js"></body>
+      <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/projects/final/final-features"}}</script><script type="module" src="/assets/entry-client-routing.a0d6ebbf.js" async></script><link rel="modulepreload" as="script" type="text/javascript" href="/assets/pages/projects/final/final-features.page.22196a1f.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-b0d73203.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-82f9daf4.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/renderer/_default.page.client.b5b9245b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/entry-client-routing.a0d6ebbf.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/chunk-5cfa8467.js"></body>
     </html>
