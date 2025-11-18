@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.85fa48a7.js",
+    "file": "assets/pages/lectures.page.841803cc.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -395,7 +395,7 @@
     ]
   },
   "pages/projects/final/final-features.page.mdx": {
-    "file": "assets/pages/projects/final/final-features.page.b6f93c75.js",
+    "file": "assets/pages/projects/final/final-features.page.ea5947b1.js",
     "src": "pages/projects/final/final-features.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -664,7 +664,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.8563662f.js",
+    "file": "assets/entry-client-routing.2fd5f004.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -739,7 +739,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.a874591e.js",
+    "file": "assets/entry-server-routing.77b80dca.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

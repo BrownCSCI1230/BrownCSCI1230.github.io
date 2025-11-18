@@ -55,6 +55,7 @@ import{j as e}from"../../../chunk-b0d73203.js";import{M as n}from"../../../chunk
 `,e.exports.jsx(r.p,{children:"Applying motion blur as a screen space post-processing effect by blurring pixels based on the velocity of the objects they cover. Per pixel velocity can be written to two channels of a G-buffer."}),`
 `,e.exports.jsxs("details",{children:[e.exports.jsx("summary",{children:"Resources"}),e.exports.jsxs(r.ul,{children:[`
 `,e.exports.jsx(r.li,{children:e.exports.jsx(r.a,{href:"https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-27-motion-blur-post-processing-effect",target:"_blank",rel:"noopener noreferrer",children:"NVIDIA GPU Gems"})}),`
+`,e.exports.jsx(r.li,{children:e.exports.jsx(r.a,{href:"https://www.pauldebevec.com/Probes/",target:"_blank",rel:"noopener noreferrer",children:"Light Probe Images"})}),`
 `]})]}),`
 `,e.exports.jsx(r.h3,{id:"camera-paths",children:e.exports.jsx(r.a,{href:"#camera-paths",children:"Camera Paths"})}),`
 `,e.exports.jsx(r.p,{children:"Allow the camera to move along predefined splines or curves. Useful for cinematic shots and cutscenes."}),`
@@ -228,6 +229,7 @@ You'll need ray marching to visualize these fractals effectively.`}),`
 `,e.exports.jsx(r.p,{children:"Generate tile-based patterns that are locally similar to a given input example pattern."}),`
 `,e.exports.jsxs("details",{children:[e.exports.jsx("summary",{children:"Resources"}),e.exports.jsxs(r.ul,{children:[`
 `,e.exports.jsxs(r.li,{children:[e.exports.jsx(r.a,{href:"https://github.com/mxgmn/WaveFunctionCollapse",target:"_blank",rel:"noopener noreferrer",children:"Original Github Repo"}),": note that the author, Maxim Gumin, is a PhD student in Daniel's lab :)"]}),`
+`,e.exports.jsx(r.li,{children:e.exports.jsx(r.a,{href:"https://www.youtube.com/watch?v=2SuvO4Gi7uY",target:"_blank",rel:"noopener noreferrer",children:"Video: Superpositions, Sudoku, the Wave Function Collapse algorithm"})}),`
 `]})]}),`
 `,e.exports.jsx(r.div,{className:"task-no-number-callout callout",children:e.exports.jsx(r.p,{children:"There are many other procedural generation techniques not listed here (e.g. algorithms for procedural building and city generation)! Feel free to discuss other ideas with a TA or the professor. We encourage you to explore and get creative :)"})}),`
 `,e.exports.jsx(r.h2,{id:"texture-effects",children:e.exports.jsx(r.a,{href:"#texture-effects",children:"Texture Effects"})}),`
