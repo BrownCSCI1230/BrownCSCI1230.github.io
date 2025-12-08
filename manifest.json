@@ -395,7 +395,7 @@
     ]
   },
   "pages/projects/final/final-features.page.mdx": {
-    "file": "assets/pages/projects/final/final-features.page.ba36b01c.js",
+    "file": "assets/pages/projects/final/final-features.page.dfb6e15f.js",
     "src": "pages/projects/final/final-features.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -664,7 +664,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.8ff2445f.js",
+    "file": "assets/entry-client-routing.37668fbb.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -739,7 +739,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.45966e03.js",
+    "file": "assets/entry-server-routing.8af5b022.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
