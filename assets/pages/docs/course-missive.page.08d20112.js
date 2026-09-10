@@ -20,7 +20,7 @@ Sue An Park(`,e.exports.jsx(s.code,{children:"spark324"}),")"]}),`
 `]}),`
 `,e.exports.jsx(s.h2,{id:"essential-info",children:e.exports.jsx(s.a,{href:"#essential-info",children:"Essential Info"})}),`
 `,e.exports.jsx(s.h3,{id:"lectures",children:e.exports.jsx(s.a,{href:"#lectures",children:"Lectures"})}),`
-`,e.exports.jsxs(s.p,{children:["Lectures are held Tues & Thurs 10:30am - 11:50am in Smith-Buonanno Hall 106. Slides and recordings will be made available online; see the ",e.exports.jsx(s.a,{href:"/lectures",children:"lectures page"})," for links."]}),`
+`,e.exports.jsxs(s.p,{children:["Lectures are held Tues & Thurs 10:30am - 11:50am in Friedman Hall 202. Slides and recordings will be made available online; see the ",e.exports.jsx(s.a,{href:"/lectures",children:"lectures page"})," for links."]}),`
 `,e.exports.jsx(s.h3,{id:"ed",children:e.exports.jsx(s.a,{href:"#ed",children:"Ed"})}),`
 `,e.exports.jsxs(s.p,{children:["Feel free to ask questions on our ",e.exports.jsx(s.a,{href:"https://edstem.org/us/courses/105328",target:"_blank",rel:"noopener noreferrer",children:"Ed discussion page"})," (",e.exports.jsx(s.a,{href:"https://edstem.org/us/join/fduQv8",target:"_blank",rel:"noopener noreferrer",children:"sign-up link"}),")!"]}),`
 `,e.exports.jsx(s.p,{children:"Our TAs monitor Ed and answer questions during Ed hours throughout the week. Please note TAs will not respond to Ed questions between the hours of 10pm - 6am."}),`
