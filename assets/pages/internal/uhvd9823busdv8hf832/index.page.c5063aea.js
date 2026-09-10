@@ -58,11 +58,11 @@ import{j as e}from"../../../chunk-faee50d8.js";const t={title:"Internal",hideTOC
 `,e.exports.jsxs(s.ol,{children:[`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab1",children:"Setup & C++"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab2",children:"Pencils"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab3",children:"Transforms"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab4",children:"Scene Parsing"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab5",children:"Light"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab3",children:"Transforms & Parsing"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab4",children:"Light"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab5",children:"Terrain"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab6",children:"Convolution & Mipmapping"})}),`
-`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab7",children:"Terrain"})}),`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab7",children:"Signals"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab8",children:"Trimeshes"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab9",children:"VBOs & VAOs"})}),`
 `,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/labs/lab10",children:"Shaders"})}),`

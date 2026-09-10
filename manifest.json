@@ -39,7 +39,7 @@
     ]
   },
   "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.2eb8c538.js",
+    "file": "assets/pages/index.page.f87e43aa.js",
     "src": "pages/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -273,7 +273,7 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.4cd7255e.js",
+    "file": "assets/pages/labs/lab3.page.b223cf88.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -283,7 +283,7 @@
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.9a2191dc.js",
+    "file": "assets/pages/labs/lab4.page.2aa9c7fc.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -303,7 +303,7 @@
     ]
   },
   "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.5eed45f6.js",
+    "file": "assets/pages/labs/lab5.page.b52eadb8.js",
     "src": "pages/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -314,7 +314,7 @@
     ]
   },
   "pages/labs/lab6.page.mdx": {
-    "file": "assets/pages/labs/lab6.page.d5bbd5d7.js",
+    "file": "assets/pages/labs/lab6.page.b5cda242.js",
     "src": "pages/labs/lab6.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -324,9 +324,9 @@
       "_chunk-5c1670a3.js"
     ]
   },
-  "pages/labs/lab77.page.mdx": {
-    "file": "assets/pages/labs/lab77.page.d6f82762.js",
-    "src": "pages/labs/lab77.page.mdx",
+  "pages/labs/lab7.page.mdx": {
+    "file": "assets/pages/labs/lab7.page.a4e1c59b.js",
+    "src": "pages/labs/lab7.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -367,7 +367,7 @@
     ]
   },
   "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.53c22d33.js",
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.c5063aea.js",
     "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -587,7 +587,7 @@
     ]
   },
   "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.af97f170.js",
+    "file": "assets/pages/projects/realtime/1.page.e72c4087.js",
     "src": "pages/projects/realtime/1.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -598,11 +598,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.80f9d500.js",
+    "file": "assets/entry-client-routing.9cea8d6f.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-b313549c.js"
+      "_chunk-e623f22f.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -638,7 +638,7 @@
       "pages/labs/lab5-get-normals.page.mdx",
       "pages/labs/lab5.page.mdx",
       "pages/labs/lab6.page.mdx",
-      "pages/labs/lab77.page.mdx",
+      "pages/labs/lab7.page.mdx",
       "pages/labs/lab8.page.mdx",
       "pages/labs/lab9.page.mdx",
       "pages/lectures.page.mdx",
@@ -667,11 +667,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.9cd20878.js",
+    "file": "assets/entry-server-routing.e4ebd5fb.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-b313549c.js"
+      "_chunk-e623f22f.js"
     ],
     "dynamicImports": [
       "junk/code-blocks.page.mdx",
@@ -707,7 +707,7 @@
       "pages/labs/lab5-get-normals.page.mdx",
       "pages/labs/lab5.page.mdx",
       "pages/labs/lab6.page.mdx",
-      "pages/labs/lab77.page.mdx",
+      "pages/labs/lab7.page.mdx",
       "pages/labs/lab8.page.mdx",
       "pages/labs/lab9.page.mdx",
       "pages/lectures.page.mdx",
@@ -750,8 +750,8 @@
       "_chunk-faee50d8.js"
     ]
   },
-  "_chunk-b313549c.js": {
-    "file": "assets/chunk-b313549c.js"
+  "_chunk-e623f22f.js": {
+    "file": "assets/chunk-e623f22f.js"
   },
   "renderer/_default.page.server.jsx?extractStyles&lang.jsx": {
     "file": "assets/chunk-c55c22c8.js",

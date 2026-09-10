@@ -183,7 +183,7 @@ that are automatically called on certain events. These include: `,e.exports.jsx(
 `]}),`
 `,e.exports.jsx(s.p,{children:"And you have already written the following:"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsxs(s.li,{children:["A scene parser (",e.exports.jsx(s.a,{href:"/labs/lab4",children:"lab 4"}),")"]}),`
+`,e.exports.jsxs(s.li,{children:["A scene parser (",e.exports.jsx(s.a,{href:"/labs/lab3",children:"lab 3"}),")"]}),`
 `,e.exports.jsx(s.li,{children:"A basic camera class (Ray projects)"}),`
 `,e.exports.jsxs(s.li,{children:["Cube, Cone and Sphere classes (",e.exports.jsx(s.a,{href:"/labs/lab8",children:"lab 8"}),")"]}),`
 `]}),`
