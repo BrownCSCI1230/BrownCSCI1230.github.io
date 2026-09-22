@@ -1,4 +1,4 @@
-import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};function r(t){const s=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",p:"p",ul:"ul"},t.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(s.nav,{className:"toc",children:e.exports.jsx(s.ol,{className:"toc-level toc-level-1",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h1",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h1",href:"#demos",children:"Demos"})})})}),e.exports.jsxs(s.main,{children:[`
+import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};function t(r){const s=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",p:"p",ul:"ul"},r.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(s.nav,{className:"toc",children:e.exports.jsx(s.ol,{className:"toc-level toc-level-1",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h1",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h1",href:"#demos",children:"Demos"})})})}),e.exports.jsxs(s.main,{children:[`
 `,e.exports.jsx(s.h1,{id:"demos",children:e.exports.jsx(s.a,{href:"#demos",children:"Demos"})}),`
 `,e.exports.jsx(s.p,{children:"Interactive web demos illustrating various course concepts."}),`
 `,e.exports.jsxs(s.ul,{children:[`
@@ -19,6 +19,7 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};f
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Viewing",`
 `,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/camera_diagram",target:"_blank",rel:"noopener noreferrer",children:"Idealized Thin-Lens Camera"}),": Interactive illustration of how a thin-lens camera works, including the effects of focal length, aperture size, and focus distance."]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/camera",target:"_blank",rel:"noopener noreferrer",children:"Camera Transformations"}),": This WebGL Demo takes you through all of the important concepts about the basic camera model. This demo is best viewed using Google Chrome."]}),`
 `]}),`
 `]}),`
@@ -36,4 +37,4 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};f
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/metamers",target:"_blank",rel:"noopener noreferrer",children:"Metamers"}),": This applet lets users experiment with metamers: different spectral distributions that are perceived as identical colors."]}),`
 `]}),`
 `]}),`
-`]})]})]})}function i(t={}){const{wrapper:s}=t.components||{};return s?e.exports.jsx(s,Object.assign({},t,{children:e.exports.jsx(r,t)})):r(t)}export{i as default,o as documentProps};
+`]})]})]})}function i(r={}){const{wrapper:s}=r.components||{};return s?e.exports.jsx(s,Object.assign({},r,{children:e.exports.jsx(t,r)})):t(r)}export{i as default,o as documentProps};
