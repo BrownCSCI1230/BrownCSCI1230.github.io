@@ -13,11 +13,9 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.strong,{children:"Ray"}),`
 `,e.exports.jsxs(s.ul,{children:[`
-`,e.exports.jsx(s.li,{children:"Project 2: Intersect"}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/ray/1",children:"Project 2: Intersect"}),`
+`,`
 `]}),`
-`,`
-`,`
-`,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsx(s.li,{children:"Project 3: Illuminate"}),`
 `]}),`
 `,`
