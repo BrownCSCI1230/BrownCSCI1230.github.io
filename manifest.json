@@ -273,7 +273,7 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.1f66a4cd.js",
+    "file": "assets/pages/labs/lab3.page.e829a814.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -466,7 +466,7 @@
     ]
   },
   "pages/projects/ray/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/1-algo-ans.page.cba3d7a5.js",
+    "file": "assets/pages/projects/ray/1-algo-ans.page.7b7d2eb1.js",
     "src": "pages/projects/ray/1-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -598,7 +598,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.2075cb9f.js",
+    "file": "assets/entry-client-routing.16e7b05d.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -667,7 +667,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.3bf45ac8.js",
+    "file": "assets/entry-server-routing.ad573b64.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
