@@ -1,4 +1,4 @@
-import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};function n(t){const s=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",p:"p",ul:"ul"},t.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(s.nav,{className:"toc",children:e.exports.jsx(s.ol,{className:"toc-level toc-level-1",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h1",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h1",href:"#demos",children:"Demos"})})})}),e.exports.jsxs(s.main,{children:[`
+import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};function r(t){const s=Object.assign({nav:"nav",ol:"ol",li:"li",a:"a",main:"main",h1:"h1",p:"p",ul:"ul"},t.components);return e.exports.jsxs(e.exports.Fragment,{children:[e.exports.jsx(s.nav,{className:"toc",children:e.exports.jsx(s.ol,{className:"toc-level toc-level-1",children:e.exports.jsx(s.li,{className:"toc-item toc-item-h1",children:e.exports.jsx(s.a,{className:"toc-link toc-link-h1",href:"#demos",children:"Demos"})})})}),e.exports.jsxs(s.main,{children:[`
 `,e.exports.jsx(s.h1,{id:"demos",children:e.exports.jsx(s.a,{href:"#demos",children:"Demos"})}),`
 `,e.exports.jsx(s.p,{children:"Interactive web demos illustrating various course concepts."}),`
 `,e.exports.jsxs(s.ul,{children:[`
@@ -25,6 +25,7 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};f
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Geometry",`
 `,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/octree",target:"_blank",rel:"noopener noreferrer",children:"Octree Construction"}),": This demo visualizes the step-by-step construction of an octree, a data structure used to partition 3D space for accelerated ray/object intersection tests."]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://www.jasondavies.com/animated-bezier/",target:"_blank",rel:"noopener noreferrer",children:"Bezier splines"}),": This applet introduces the user to the usage and mathematics of spline curves."]}),`
 `]}),`
 `]}),`
@@ -32,7 +33,7 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};f
 `,e.exports.jsxs(s.ul,{children:[`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/attenuation",target:"_blank",rel:"noopener noreferrer",children:"Light attenuation"}),": Comparing different light attenuation models and their effects on the appearance of a scene."]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://math.hws.edu/graphicsbook/demos/c4/smooth-vs-flat.html",target:"_blank",rel:"noopener noreferrer",children:"Smooth vs. flat shading"}),": This demo shows the differences between smooth and flat shading."]}),`
-`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"http://sklardevelopment.com/webgl_graftext_labs/phong_illum/index.html",target:"_blank",rel:"noopener noreferrer",children:"Phony Illumination Model"}),": WebGL implementation of the Phong illumination model with adjustable parameters."]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"http://sklardevelopment.com/webgl_graftext_labs/phong_illum/index.html",target:"_blank",rel:"noopener noreferrer",children:"Phong Illumination Model"}),": WebGL implementation of the Phong illumination model with adjustable parameters."]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Color",`
@@ -43,4 +44,4 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};f
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/metamers",target:"_blank",rel:"noopener noreferrer",children:"Metamers"}),": This applet lets users experiment with metamers: different spectral distributions that are perceived as identical colors."]}),`
 `]}),`
 `]}),`
-`]})]})]})}function i(t={}){const{wrapper:s}=t.components||{};return s?e.exports.jsx(s,Object.assign({},t,{children:e.exports.jsx(n,t)})):n(t)}export{i as default,o as documentProps};
+`]})]})]})}function i(t={}){const{wrapper:s}=t.components||{};return s?e.exports.jsx(s,Object.assign({},t,{children:e.exports.jsx(r,t)})):r(t)}export{i as default,o as documentProps};
