@@ -38,18 +38,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "renderer/_default.page.client.jsx": {
-    "file": "assets/renderer/_default.page.client.b5b9245b.js",
-    "src": "renderer/_default.page.client.jsx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ],
-    "css": [
-      "assets/index.8a3eb5c9.css"
-    ]
-  },
   "pages/index.page.mdx": {
     "file": "assets/pages/index.page.7f841f85.js",
     "src": "pages/index.page.mdx",
@@ -60,12 +48,24 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.0da0ef9f.js",
+    "file": "assets/pages/lectures.page.bfbf87eb.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js"
+    ]
+  },
+  "renderer/_default.page.client.jsx": {
+    "file": "assets/renderer/_default.page.client.b5b9245b.js",
+    "src": "renderer/_default.page.client.jsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ],
+    "css": [
+      "assets/index.8a3eb5c9.css"
     ]
   },
   "pages/docs/advanced-cpp-tutorial.page.mdx": {
@@ -273,7 +273,7 @@
     ]
   },
   "pages/labs/lab3.page.mdx": {
-    "file": "assets/pages/labs/lab3.page.e829a814.js",
+    "file": "assets/pages/labs/lab3.page.8d32330d.js",
     "src": "pages/labs/lab3.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -283,7 +283,7 @@
     ]
   },
   "pages/labs/lab4.page.mdx": {
-    "file": "assets/pages/labs/lab4.page.7894c410.js",
+    "file": "assets/pages/labs/lab4.page.c70e02f4.js",
     "src": "pages/labs/lab4.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -303,7 +303,7 @@
     ]
   },
   "pages/labs/lab5.page.mdx": {
-    "file": "assets/pages/labs/lab5.page.10dee850.js",
+    "file": "assets/pages/labs/lab5.page.2e1ba36c.js",
     "src": "pages/labs/lab5.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -598,7 +598,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.c272628b.js",
+    "file": "assets/entry-client-routing.5804174d.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -667,7 +667,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.635ef557.js",
+    "file": "assets/entry-server-routing.2dc22671.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

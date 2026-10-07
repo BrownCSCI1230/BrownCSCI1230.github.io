@@ -341,7 +341,7 @@ the 4 colored axes. We recommend rereading the paragraphs above this task if you
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Congrats on finishing the transforms and parsing lab! By this point, you should be able to explain the transformation rules, the camera view matrix, and how a scene graph becomes render data."}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsx(s.p,{children:"Submit your GitHub link and commit ID to the combined lab assignment on Gradescope, then get checked off by a TA at hours."}),`
+`,e.exports.jsx(s.p,{children:'Submit your GitHub link and commit ID to the "Lab 3: Transforms & Parsing" assignment on Gradescope, then get checked off by a TA at hours.'}),`
 `,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(n,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {

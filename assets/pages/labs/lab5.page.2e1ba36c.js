@@ -247,7 +247,7 @@ you see a smoother terrain similar to the expected one.`})]}),`
 `,e.exports.jsx(s.h2,{id:"end",children:e.exports.jsx(s.a,{href:"#end",children:"End"})}),`
 `,e.exports.jsx(s.p,{children:"Congrats on finishing the Terrain lab! Now, it's time to submit your code and get checked off by a TA."}),`
 `,e.exports.jsx(s.h2,{id:"submission",children:e.exports.jsx(s.a,{href:"#submission",children:"Submission"})}),`
-`,e.exports.jsxs(s.p,{children:['Submit your GitHub link and commit ID to the "Lab 7: Terrain" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
+`,e.exports.jsxs(s.p,{children:['Submit your GitHub link and commit ID to the "Lab 5: Terrain" assignment on Gradescope, ',e.exports.jsx(s.strong,{children:"then get checked off by a TA at hours"}),"."]}),`
 `,e.exports.jsxs(s.p,{children:["Reference the GitHub + Gradescope Guide ",e.exports.jsx(s.a,{href:"/docs/github-gradescope-guide#handing-in-assignments",children:"here"}),"."]}),`
 `,e.exports.jsx(o,{}),e.exports.jsx(s.style,{children:`
 mjx-container[jax="SVG"] {
