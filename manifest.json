@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.6f6907a9.js",
+    "file": "assets/pages/lectures.page.b54068bc.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -366,6 +366,33 @@
       "_chunk-b0d73203.js"
     ]
   },
+  "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.2fb34279.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.3fe12fcd.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx": {
+    "file": "assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.4ca0e146.js",
+    "src": "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
   "pages/projects/final/final-features.page.mdx": {
     "file": "assets/pages/projects/final/final-features.page.dfb6e15f.js",
     "src": "pages/projects/final/final-features.page.mdx",
@@ -537,33 +564,6 @@
       "_chunk-82f9daf4.js"
     ]
   },
-  "pages/internal/uhvd9823busdv8hf832/index.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/index.page.2fb34279.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.3fe12fcd.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/mentor-meetings-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx": {
-    "file": "assets/pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.4ca0e146.js",
-    "src": "pages/internal/uhvd9823busdv8hf832/solution-demo-guide.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "pages/projects/realtime/1-algo-ans.page.mdx": {
     "file": "assets/pages/projects/realtime/1-algo-ans.page.cadd717b.js",
     "src": "pages/projects/realtime/1-algo-ans.page.mdx",
@@ -598,7 +598,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.9aa49904.js",
+    "file": "assets/entry-client-routing.6b56d66a.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -667,7 +667,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.f66f4e5f.js",
+    "file": "assets/entry-server-routing.9ba22090.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
