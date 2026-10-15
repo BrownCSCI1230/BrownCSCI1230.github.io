@@ -19,7 +19,9 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Projects",hideTOC:!0
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"/projects/ray/2",children:"Project 3: Illuminate"}),`
-`,`
+`,e.exports.jsxs(s.ul,{children:[`
+`,e.exports.jsx(s.li,{children:e.exports.jsx(s.a,{href:"/projects/ray/2-algo-ans",children:"Algo Answers"})}),`
+`]}),`
 `]}),`
 `,e.exports.jsx(s.li,{children:"Project 4: Antialias"}),`
 `]}),`
