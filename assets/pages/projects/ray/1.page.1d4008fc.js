@@ -208,7 +208,7 @@ Note that if you choose to implement this feature, you will probably want to hav
 To receive credit for this feature, you should include at least one scene file that makes use of a mesh.`]}),`
 `]}),`
 `]}),`
-`,e.exports.jsx(s.div,{className:"task-no-number-callout callout",children:e.exports.jsxs(s.p,{children:["CS 1234/2230 students must attempt at least ",e.exports.jsx(s.strong,{children:"14 points"})," of extra credit, which must include an implementation of one acceleration data structure. The acceleration data sctucture will only need to be completed by the deadline of Illuminate. However, the points earned for completion at that time will be applied to your Intersect grade."]})}),`
+`,e.exports.jsx(s.div,{className:"task-no-number-callout callout",children:e.exports.jsxs(s.p,{children:["CS 1234/2230 students must attempt at least ",e.exports.jsx(s.strong,{children:"14 points"})," of extra credit, which must include an implementation of one acceleration data structure. The acceleration data structure will only need to be completed by the deadline of Illuminate. However, the points earned for completion at that time will be applied to your Intersect grade."]})}),`
 `,e.exports.jsx(s.h2,{id:"faq--hints",children:e.exports.jsx(s.a,{href:"#faq--hints",children:"FAQ & Hints"})}),`
 `,e.exports.jsx(s.h3,{id:"nothing-shows-up",children:e.exports.jsx(s.a,{href:"#nothing-shows-up",children:"Nothing Shows Up"})}),`
 `,e.exports.jsxs(s.ul,{children:[`
