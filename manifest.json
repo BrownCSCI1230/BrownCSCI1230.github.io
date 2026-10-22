@@ -48,7 +48,7 @@
     ]
   },
   "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.30230fa4.js",
+    "file": "assets/pages/lectures.page.f8ddc35c.js",
     "src": "pages/lectures.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -393,80 +393,6 @@
       "_chunk-b0d73203.js"
     ]
   },
-  "pages/projects/final/final-features.page.mdx": {
-    "file": "assets/pages/projects/final/final-features.page.dfb6e15f.js",
-    "src": "pages/projects/final/final-features.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/gear-up.page.mdx": {
-    "file": "assets/pages/projects/final/gear-up.page.2bd989d7.js",
-    "src": "pages/projects/final/gear-up.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.cd407d00.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/realtime-final-features.page.mdx": {
-    "file": "assets/pages/projects/final/realtime-final-features.page.67a8b768.js",
-    "src": "pages/projects/final/realtime-final-features.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo-ans.page.cadd717b.js",
-    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1-algo.page.mdx": {
-    "file": "assets/pages/projects/realtime/1-algo.page.7e7dda40.js",
-    "src": "pages/projects/realtime/1-algo.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/realtime/1.page.mdx": {
-    "file": "assets/pages/projects/realtime/1.page.c7f2b2b6.js",
-    "src": "pages/projects/realtime/1.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
   "pages/projects/raster/1-algo-ans.page.mdx": {
     "file": "assets/pages/projects/raster/1-algo-ans.page.47a394ad.js",
     "src": "pages/projects/raster/1-algo-ans.page.mdx",
@@ -597,8 +523,82 @@
       "_chunk-82f9daf4.js"
     ]
   },
+  "pages/projects/final/final-features.page.mdx": {
+    "file": "assets/pages/projects/final/final-features.page.dfb6e15f.js",
+    "src": "pages/projects/final/final-features.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/gear-up.page.mdx": {
+    "file": "assets/pages/projects/final/gear-up.page.2bd989d7.js",
+    "src": "pages/projects/final/gear-up.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.cd407d00.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/realtime-final-features.page.mdx": {
+    "file": "assets/pages/projects/final/realtime-final-features.page.67a8b768.js",
+    "src": "pages/projects/final/realtime-final-features.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/1-algo-ans.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo-ans.page.cadd717b.js",
+    "src": "pages/projects/realtime/1-algo-ans.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/1-algo.page.mdx": {
+    "file": "assets/pages/projects/realtime/1-algo.page.7e7dda40.js",
+    "src": "pages/projects/realtime/1-algo.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/realtime/1.page.mdx": {
+    "file": "assets/pages/projects/realtime/1.page.c7f2b2b6.js",
+    "src": "pages/projects/realtime/1.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.5d7f20fb.js",
+    "file": "assets/entry-client-routing.7aceb4a6.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -667,7 +667,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.74d31b5e.js",
+    "file": "assets/entry-server-routing.847562a5.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
