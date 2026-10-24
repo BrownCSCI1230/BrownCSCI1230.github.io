@@ -358,7 +358,7 @@
     ]
   },
   "pages/projects/index.page.mdx": {
-    "file": "assets/pages/projects/index.page.2d35e497.js",
+    "file": "assets/pages/projects/index.page.ce0e6d61.js",
     "src": "pages/projects/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -391,6 +391,47 @@
     "isDynamicEntry": true,
     "imports": [
       "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/projects/final/final-features.page.mdx": {
+    "file": "assets/pages/projects/final/final-features.page.dfb6e15f.js",
+    "src": "pages/projects/final/final-features.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/gear-up.page.mdx": {
+    "file": "assets/pages/projects/final/gear-up.page.2bd989d7.js",
+    "src": "pages/projects/final/gear-up.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/index.page.mdx": {
+    "file": "assets/pages/projects/final/index.page.cd407d00.js",
+    "src": "pages/projects/final/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/projects/final/realtime-final-features.page.mdx": {
+    "file": "assets/pages/projects/final/realtime-final-features.page.67a8b768.js",
+    "src": "pages/projects/final/realtime-final-features.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js",
+      "_chunk-e3efcf8b.js",
+      "_chunk-82f9daf4.js"
     ]
   },
   "pages/projects/raster/1-algo-ans.page.mdx": {
@@ -491,7 +532,7 @@
     ]
   },
   "pages/projects/ray/3-algo-ans.page.mdx": {
-    "file": "assets/pages/projects/ray/3-algo-ans.page.b53fa034.js",
+    "file": "assets/pages/projects/ray/3-algo-ans.page.1f011286.js",
     "src": "pages/projects/ray/3-algo-ans.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -502,7 +543,7 @@
     ]
   },
   "pages/projects/ray/3-algo.page.mdx": {
-    "file": "assets/pages/projects/ray/3-algo.page.496a9432.js",
+    "file": "assets/pages/projects/ray/3-algo.page.2e229828.js",
     "src": "pages/projects/ray/3-algo.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -515,47 +556,6 @@
   "pages/projects/ray/3.page.mdx": {
     "file": "assets/pages/projects/ray/3.page.a7dd7095.js",
     "src": "pages/projects/ray/3.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-e3efcf8b.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/final-features.page.mdx": {
-    "file": "assets/pages/projects/final/final-features.page.dfb6e15f.js",
-    "src": "pages/projects/final/final-features.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/gear-up.page.mdx": {
-    "file": "assets/pages/projects/final/gear-up.page.2bd989d7.js",
-    "src": "pages/projects/final/gear-up.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/index.page.mdx": {
-    "file": "assets/pages/projects/final/index.page.cd407d00.js",
-    "src": "pages/projects/final/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js",
-      "_chunk-82f9daf4.js"
-    ]
-  },
-  "pages/projects/final/realtime-final-features.page.mdx": {
-    "file": "assets/pages/projects/final/realtime-final-features.page.67a8b768.js",
-    "src": "pages/projects/final/realtime-final-features.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -598,7 +598,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7aceb4a6.js",
+    "file": "assets/entry-client-routing.e69cf747.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -667,7 +667,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.847562a5.js",
+    "file": "assets/entry-server-routing.63d93054.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
