@@ -176,7 +176,7 @@ In addition, you can consider the following options (or come up with your own id
 `]}),`
 `]}),`
 `]}),`
-`,e.exports.jsx(t.div,{className:"task-no-number-callout callout",children:e.exports.jsxs(t.p,{children:["CS 1234/2230 students must attempt at least ",e.exports.jsx(t.strong,{children:"14 points"})," of extra credit, which must include an implementation of full ray differentials for recursive reflection rays."]})}),`
+`,e.exports.jsx(t.div,{className:"task-no-number-callout callout",children:e.exports.jsxs(t.p,{children:["CS 1234/2230 students must attempt at least ",e.exports.jsx(t.strong,{children:"14 points"})," of extra credit, which must include an implementation of some method for footprint determination forrecursive reflection rays (either ray differentials or cone tracing)."]})}),`
 `,e.exports.jsx(t.h2,{id:"tips--hints",children:e.exports.jsx(t.a,{href:"#tips--hints",children:"Tips & Hints"})}),`
 `,e.exports.jsxs(t.ul,{children:[`
 `,e.exports.jsxs(t.li,{children:["When implementing mipmapping, we ",e.exports.jsx(t.em,{children:"highly recommend"})," that you visualize the mipmap levels you are generating to ensure that they look sensible (i.e. like downsampled versions of the original texture). If you store your mipmaps as ",e.exports.jsx(t.code,{children:"QImage"}),"s, you can easily save them to disk using ",e.exports.jsx(t.code,{children:"QImage::save(filename)"}),", where ",e.exports.jsx(t.code,{children:"filename"})," is a string containing the path to the file you want to save to. You can use a naming scheme like ",e.exports.jsx(t.code,{children:"texture_mip_0.png"}),", ",e.exports.jsx(t.code,{children:"texture_mip_1.png"}),", etc. to keep track of the different levels."]}),`
