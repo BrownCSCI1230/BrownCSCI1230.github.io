@@ -22,6 +22,7 @@ import{j as e}from"../../chunk-b0d73203.js";const o={title:"Demos",hideTOC:!0};f
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/camera_diagram",target:"_blank",rel:"noopener noreferrer",children:"Idealized Thin-Lens Camera"}),": Interactive illustration of how a thin-lens camera works, including the effects of focal length, aperture size, and focus distance."]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/camera",target:"_blank",rel:"noopener noreferrer",children:"Camera Transformations"}),": This WebGL Demo takes you through all of the important concepts about the basic camera model. This demo is best viewed using Google Chrome."]}),`
 `,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/clipping",target:"_blank",rel:"noopener noreferrer",children:"Clipping"}),": This demo illustrates the necessity of clipping before performing perspective division, to prevent spurious geometry from appearing in the final image."]}),`
+`,e.exports.jsxs(s.li,{children:[e.exports.jsx(s.a,{href:"https://browncsci1230.github.io/demos/z_compression",target:"_blank",rel:"noopener noreferrer",children:"Z Compression"}),": This demo illustrates how perspective projection compresses the z-axis, which can lead to depth buffer precision issues."]}),`
 `]}),`
 `]}),`
 `,e.exports.jsxs(s.li,{children:["Geometry",`
