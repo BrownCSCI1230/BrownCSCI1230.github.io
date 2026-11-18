@@ -1,22 +1,4 @@
 {
-  "pages/index.page.mdx": {
-    "file": "assets/pages/index.page.7f841f85.js",
-    "src": "pages/index.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
-  "pages/lectures.page.mdx": {
-    "file": "assets/pages/lectures.page.9c3089db.js",
-    "src": "pages/lectures.page.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-b0d73203.js"
-    ]
-  },
   "junk/code-blocks.page.mdx": {
     "file": "assets/junk/code-blocks.page.b385619c.js",
     "src": "junk/code-blocks.page.mdx",
@@ -54,6 +36,24 @@
     "imports": [
       "_chunk-b0d73203.js",
       "_chunk-82f9daf4.js"
+    ]
+  },
+  "pages/index.page.mdx": {
+    "file": "assets/pages/index.page.7f841f85.js",
+    "src": "pages/index.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
+    ]
+  },
+  "pages/lectures.page.mdx": {
+    "file": "assets/pages/lectures.page.9c3089db.js",
+    "src": "pages/lectures.page.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-b0d73203.js"
     ]
   },
   "renderer/_default.page.client.jsx": {
@@ -220,7 +220,7 @@
     ]
   },
   "pages/labs/index.page.mdx": {
-    "file": "assets/pages/labs/index.page.c4334324.js",
+    "file": "assets/pages/labs/index.page.455e5f8e.js",
     "src": "pages/labs/index.page.mdx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -598,7 +598,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.f84a7dd8.js",
+    "file": "assets/entry-client-routing.73c2cad7.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -667,7 +667,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.5bccc4e7.js",
+    "file": "assets/entry-server-routing.402635ba.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

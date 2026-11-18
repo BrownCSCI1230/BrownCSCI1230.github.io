@@ -12,6 +12,5 @@ import{j as s}from"../../chunk-b0d73203.js";const t={title:"Labs",hideTOC:!0};fu
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab8",children:"Trimeshes"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab9",children:"VBOs & VAOs"})}),`
 `,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab10",children:"Shaders"})}),`
-`,s.exports.jsx(e.li,{children:"Textures & FBOs"}),`
-`]}),`
-`]})]})}function a(r={}){const{wrapper:e}=r.components||{};return e?s.exports.jsx(e,Object.assign({},r,{children:s.exports.jsx(l,r)})):l(r)}export{a as default,t as documentProps};
+`,s.exports.jsx(e.li,{children:s.exports.jsx(e.a,{href:"/labs/lab11",children:"Textures & FBOs"})}),`
+`]})]})]})}function a(r={}){const{wrapper:e}=r.components||{};return e?s.exports.jsx(e,Object.assign({},r,{children:s.exports.jsx(l,r)})):l(r)}export{a as default,t as documentProps};
